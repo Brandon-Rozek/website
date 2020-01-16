@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Introduction to Connectivity Based Models</h1>
+<p>Hierarchical algorithms combine observations to form clusters based on their distance.</p>
+<h2>Connectivity Methods</h2>
+<p>Hierarchal Clustering techniques can be subdivided depending on the method of going about it.</p>
+<p>First there are two different methods in forming the clusters <em>Agglomerative</em> and <em>Divisive</em></p>
+<p><u>Agglomerative</u> is when you combine the n individuals into groups through each iteration</p>
+<p><u>Divisive</u> is when you are separating one giant group into finer groupings with each iteration.</p>
+<p>Hierarchical methods are an irrevocable algorithm, once it joins or separates a grouping, it cannot be undone. As Kaufman and Rousseeuw (1990) colorfully comment: <em>&quot;A hierarchical method suffers from the defect that it can never repair what was done in previous steps&quot;</em>. </p>
+<p>It is the job of the statistician to decide when to stop the agglomerative or decisive algorithm, since having one giant cluster containing all observations or having each observation be a cluster isn't particularly useful.</p>
+<p>At different distances, different clusters are formed and are more readily represented using a <strong>dendrogram</strong>. These algorithms do not provide a unique solution but rather provide an extensive hierarchy of clusters that merge or divide at different distances.</p>
+<h2>Linkage Criterion</h2>
+<p>Apart from the method of forming clusters, the user also needs to decide on a linkage criterion to use. Meaning, how do you want to optimize your clusters.</p>
+<p>Do you want to group based on the nearest points in each cluster? Nearest Neighbor Clustering</p>
+<p>Or do you want to based on the farthest observations in each cluster? Farthest neighbor clustering.</p>
+<p><img src="http://www.multid.se/genex/onlinehelp/clustering_distances.png" alt="http://www.multid.se/genex/onlinehelp/clustering_distances.png" /></p>
+<h2>Shortcomings</h2>
+<p>This method is not very robust towards outliers, which will either show up as additional clusters or even cause other clusters to merge depending on the clustering method.</p>
+<p>As we go through this section, we will go into detail about the different linkage criterion and other parameters of this model.</p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

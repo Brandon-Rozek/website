@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Principal Component Analysis Part 2: Formal Theory</h1>
+<h2>Properties of PCA</h2>
+<p>There are a number of ways to maximize the variance of a principal component. To create an unique solution we should impose a constraint. Let us say that the sum of the square of the coefficients must equal 1. In vector notation this is the same as
+$$
+a_i^Ta_i = 1
+$$
+Every future principal component is said to be orthogonal to all the principal components previous to it.
+$$
+a_j^Ta<em>i = 0, i &lt; j
+$$
+The total variance of the $q$ principal components will equal the total variance of the original variables
+$$
+\sum</em>{i = 1}^q {\lambda_i} = trace(S)
+$$
+Where $S$ is the sample covariance matrix.</p>
+<p>The proportion of accounted variation in each principle component is
+$$
+P_j = \frac{\lambda<em>j}{trace(S)}
+$$
+From this, we can generalize to the first $m$ principal components where $m &lt; q$ and find the proportion $P^{(m)}$ of variation accounted for
+$$
+P^{(m)} = \frac{\sum</em>{i = 1}^m{\lambda_i}}{trace(S)}
+$$
+You can think of the first principal component as the line of best fit that minimizes the residuals orthogonal to it.</p>
+<h3>What to watch out for</h3>
+<p>As a reminder to the last lecture, <em>PCA is not scale-invariant</em>. Therefore, transformations done to the dataset before PCA and after PCA often lead to different results and possibly conclusions.</p>
+<p>Additionally, if there are large differences between the variances of the original variables, then those whose variances are largest will tend to dominate the early components.</p>
+<p>Therefore, principal components should only be extracted from the sample covariance matrix when all of the original variables have roughly the <strong>same scale</strong>.</p>
+<h3>Alternatives to using the Covariance Matrix</h3>
+<p>But it is rare in practice to have a scenario when all of the variables are of the same scale. Therefore, principal components are typically extracted from the <strong>correlation matrix</strong> $R$</p>
+<p>Choosing to work with the correlation matrix rather than the covariance matrix treats the variables as all equally important when performing PCA.</p>
+<h2>Example Derivation: Bivariate Data</h2>
+<p>Let $R$ be the correlation matrix
+$$
+R = \begin{pmatrix}
+1 &amp; r \
+r &amp; 1
+\end{pmatrix}
+$$
+Let us find the eigenvectors and eigenvalues of the correlation matrix
+$$
+det(R - \lambda I) = 0
+$$</p>
+<p>$$
+(1-\lambda)^2 - r^2 = 0
+$$</p>
+<p>$$
+\lambda_1 = 1 + r, \lambda_2 = 1 - r
+$$</p>
+<p>Let us remember to check the condition &quot;sum of the principal components equals the trace of the correlation matrix&quot;:
+$$
+\lambda_1 + \lambda_2 = 1+r + (1 - r) = 2 = trace(R)
+$$</p>
+<h3>Finding the First Eigenvector</h3>
+<p>Looking back at the characteristic equation
+$$
+Ra_1 = \lambda a<em>1
+$$
+We can get the following two formulas
+$$
+a</em>{11} + ra<em>{12} = (1+r)a</em>{11} \tag{1}
+$$</p>
+<p>$$
+ra<em>{11} + a</em>{12} = (1 + r)a_{12} \tag{2}
+$$</p>
+<p>Now let us find out what $a<em>{11}$ and $a</em>{12}$ equal. First let us solve for $a<em>{11}$ using equation $(1)$
+$$
+ra</em>{12} = (1+r)a<em>{11} - a</em>{11}
+$$</p>
+<p>$$
+ra<em>{12} = a</em>{11}(1 + r - 1)
+$$</p>
+<p>$$
+ra<em>{12} = ra</em>{11}
+$$</p>
+<p>$$
+a<em>{12} = a</em>{11}
+$$</p>
+<p>Where $r$ does not equal $0$.</p>
+<p>Now we must apply the condition of sum squares
+$$
+a_1^Ta_1 = 1
+$$</p>
+<p>$$
+a<em>{11}^2 + a</em>{12}^2  = 1
+$$</p>
+<p>Recall that $a<em>{12} = a</em>{11}$
+$$
+2a_{11}^2 = 1
+$$</p>
+<p>$$
+a_{11}^2 = \frac{1}{2}
+$$</p>
+<p>$$
+a_{11} =\pm \frac{1}{\sqrt{2}}
+$$</p>
+<p>For sake of choosing a value, let us take the principal root and say $a_{11} = \frac{1}{\sqrt{2}}$</p>
+<h3>Finding the Second Eigenvector</h3>
+<p>Recall the fact that each subsequent eigenvector is orthogonal to the first. This means
+$$
+a<em>{11}a</em>{21} + a<em>{12}a</em>{22} = 0
+$$
+Substituting the values for $a<em>{11}$ and $a</em>{12}$ calculated in the previous section
+$$
+\frac{1}{\sqrt{2}}a<em>{21} + \frac{1}{\sqrt{2}}a</em>{22} = 0
+$$</p>
+<p>$$
+a<em>{21} + a</em>{22} = 0
+$$</p>
+<p>$$
+a<em>{21} = -a</em>{22}
+$$</p>
+<p>Since this eigenvector also needs to satisfy the first condition, we get the following values
+$$
+a<em>{21} = \frac{1}{\sqrt{2}} , a</em>{22} = \frac{-1}{\sqrt{2}}
+$$</p>
+<h3>Conclusion of Example</h3>
+<p>From this, we can say that the first principal components are given by
+$$
+y_1 = \frac{1}{\sqrt{2}}(x_1 + x_2), y_2 = \frac{1}{\sqrt{2}}(x_1-x_2)
+$$
+With the variance of the first principal component being given by $(1+r)$ and the second by $(1-r)$</p>
+<p>Due to this, as $r$ increases, so does the variance explained in the first principal component. This in turn, lowers the variance explained in the second principal component.</p>
+<h2>Choosing a Number of Principal Components</h2>
+<p>Principal Component Analysis is typically used in dimensionality reduction efforts. Therefore, there are several strategies for picking the right number of principal components to keep. Here are a few:</p>
+<ul>
+<li>Retain enough principal components to account for 70%-90% of the variation</li>
+<li>Exclude principal components where eigenvalues are less than the average eigenvalue</li>
+<li>Exclude principal components where eigenvalues are less than one.</li>
+<li>Generate a Scree Plot
+<ul>
+<li>Stop when the plot goes from &quot;steep&quot; to &quot;shallow&quot;</li>
+<li>Stop when it essentially becomes a straight line.</li>
+</ul></li>
+</ul>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

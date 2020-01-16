@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>CURE and TSNE</h1>
+<h2>Clustering Using Representatives (CURE)</h2>
+<p>Clustering using Representatives is a Hierarchical clustering technique in which you can represent a cluster using a <strong>set</strong> of well-scattered representative points.</p>
+<p>This algorithm has a parameter $\alpha$ which defines the factor of the points in which to shrink towards the centroid.</p>
+<p>CURE is known to be robust to outliers and able to identify clusters that have a <strong>non-spherical</strong> shape and size variance.</p>
+<p>The clusters with the closest pair of representatives are the clusters that are merged at each step of CURE's algorithm.</p>
+<p>This algorithm cannot be directly applied to large datasets due to high runtime complexity. Several enhancements were added to address this requirement</p>
+<ul>
+<li>Random sampling: This involves a trade off between accuracy and efficiency. One would hope that the random sample they obtain is representative of the population</li>
+<li>Partitioning: The idea is to partition the sample space into $p$ partitions</li>
+</ul>
+<p>Youtube Video: <a href="https://www.youtube.com/watch?v=JrOJspZ1CUw">https://www.youtube.com/watch?v=JrOJspZ1CUw</a></p>
+<p>Steps</p>
+<ol>
+<li>Pick a random sample of points that fit in main memory</li>
+<li>Cluster sample points hierarchically to create the initial clusters</li>
+<li>Pick representative point<strong>s</strong>
+<ol>
+<li>For each cluster, pick $k$ representative points, as dispersed as possible</li>
+<li>Move each representative points to a fixed fraction $\alpha$ toward the centroid of the cluster</li>
+</ol></li>
+<li>Rescan the whole dataset and visit each point $p$ in the data set</li>
+<li>Place it in the &quot;closest cluster&quot;
+<ol>
+<li>Closest as in shortest distance among all the representative points.</li>
+</ol></li>
+</ol>
+<h2>TSNE</h2>
+<p>TSNE allows us to reduce the dimensionality of a dataset to two which allows us to visualize the data.</p>
+<p>It is able to do this since many real-world datasets have a low intrinsic dimensionality embedded within the high-dimensional space. </p>
+<p>Since the technique needs to conserve the structure of the data, two corresponding mapped points must be close to each other distance wise as well. Let $|x_i - x_j|$ be the Euclidean distance between two data points, and $|y_i - y<em>j|$ he distance between the map points. This conditional similarity between two data points is:
+$$
+p</em>{j|i} = \frac{exp(-|x_i-x_j|^2 / (2\sigma<em>i^2))}{\sum</em>{k \ne i}{exp(-|x_i-x_k|^2/(2\sigma_i^2))}}
+$$
+Where we are considering the <strong>Gaussian distribution</strong> surrounding the distance between $x_j$ from $x_i$ with a given variance $\sigma_i^2$. The variance is different for every point; it is chosen such that points in dense areas are given a smaller variance than points in sparse areas.</p>
+<p>Now the similarity matrix for mapped points are
+$$
+q_{ij} = \frac{f(|x_i - x<em>j|)}{\sum</em>{k \ne i}{f(|x_i - x_k)}}
+$$
+Where $f(z) = \frac{1}{1 + z^2}$</p>
+<p>This has the same idea as the conditional similarity between two data points, except this is based on the <strong>Cauchy distribution</strong>.</p>
+<p>TSNE works at minimizing the Kullback-Leiber divergence between the two distributions $p<em>{ij}$ and $q</em>{ij}$
+$$
+KL(P || Q)  = \sum<em>{i,j}{p</em>{i,j} \log{\frac{p<em>{ij}}{q</em>{ij}}}}
+$$
+To minimize this score, gradient descent is typically performed
+$$
+\frac{\partial KL(P||Q)}{\partial y_i} = 4\sum<em>j{(p</em>{ij} - q_{ij})}
+$$</p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

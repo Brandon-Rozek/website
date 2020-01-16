@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for February 13</h1>
+<h2>Loops</h2>
+<h3>Why Loops?</h3>
+<p>While some check is true, repeat the work.</p>
+<p>While the cookies aren't baked, keep baking</p>
+<h3>Loop Building Process</h3>
+<ol>
+<li>Identify one test that must be true when the loop is finished</li>
+<li>Use the <strong>opposite</strong> form of the test</li>
+<li>Within loop, make <em>progress</em> towards completion of the goal.</li>
+</ol>
+<h3>While syntax</h3>
+<pre><code class="language-java">while (expression) {
+  // Loop body executes if expression is true
+}
+// Statements execute after expression is false</code></pre>
+<h3>Getting Input (Songs in a Playlist Psuedocode)</h3>
+<pre><code class="language-java">// Ask user about first song
+while (user says play next song) {
+    // play next song
+    // ask user about next song
+}</code></pre>
+<h3>Nested Loops</h3>
+<p>You can have loops inside loops</p>
+<pre><code class="language-java">int outer = 1;
+while (outer &lt; 4) {
+  int inner = 1;
+  while (inner &lt; 4) {
+    System.out.println(outer + ":" + inner);
+    inner++;
+  }
+  outer++;
+}</code></pre>
+<p>This code does the following</p>
+<pre><code class="language-reStructuredText">1:1
+1:2
+1:3
+2:1
+2:2
+2:3
+3:1
+3:2
+3:3</code></pre>
+<h3>Break Down the Problem</h3>
+<p>Never write the entire program at once! This makes it incredibly hard to debug. Instead break it into small parts.</p>
+<p>Write one part -&gt; debug until it works</p>
+<p>Write second part -&gt; debug until it works</p>
+<p>This way you know which part of your code failed, instead of having everything fail.</p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

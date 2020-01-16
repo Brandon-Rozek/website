@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for November 27</h1>
+<h2>Recursion</h2>
+<p>When doing recursion, make sure not to use loops.</p>
+<p>Recursion is when a function makes a function call to itself.</p>
+<p>It consists of two parts:</p>
+<ul>
+<li>Base Case: This tell it when to stop</li>
+<li>Smaller Caller Case: Helps you get closer to the base case</li>
+</ul>
+<p>You can have one or more base cases or caller cases.</p>
+<p>To teach recursion, we'll start with a problem that should be written iteratively (with loops) but we'll show how to do it with recursion.</p>
+<h3>Example: Counting Down</h3>
+<pre><code class="language-java">void CountDown(int number) {
+  while (number &gt; 0) {
+    System.out.println(number + " ");
+    number = number - 1;
+  }
+  System.out.println("Blast Off")
+}</code></pre>
+<ol>
+<li>How does this loop stop? -- Base Case</li>
+<li>How does this loop change each time through? -- Smaller caller case</li>
+</ol>
+<p>Base Case: It stops when the number equals 0</p>
+<pre><code class="language-java">// Base Case
+if (number == 0) {
+  System.out.println("Blast Off");
+  return;
+}</code></pre>
+<p>Smaller Caller Case: It decreases number by 1</p>
+<pre><code class="language-java">// Smaller Caller Case
+System.out.print(number + " ");
+countDownRecursive(number - 1);</code></pre>
+<p>Put it together...</p>
+<pre><code class="language-java">void countDownRecursive(int number) {
+  if (number == 0) {
+    System.out.println("Blast Off");
+  } else {
+    System.out.print(number + " ");
+    countDownRecursive(number - 1);
+  }
+}</code></pre>
+<p>Prints <code>10 9 8 7 6 5 4 3 2 1 Blast Off</code></p>
+<h3>Stack Snapshots</h3>
+<p>Every time you make a recursive call, it keeps track of all the local variables at the current function call and pushes it onto the stack.</p>
+<p>That means if you make 10 recursive calls, you'll have 10 slots added onto the stack. If you want to return back to the beginning, you would need to return 10 times.</p>
+<h3>Order Matters</h3>
+<p>Whether you do the recursive step first or some other action, it completely changes the output. Look at the following example that's similar to <code>countDownRecursive</code>.</p>
+<pre><code class="language-java">void countUpRecursive(int number) {
+  if (number == 0) {
+    System.out.println("Blast Off");
+  } else {
+    // Notice the swapping of the next two lines
+    countUpRecursive(number - 1);
+    System.out.print(number + " ");
+  }
+}</code></pre>
+<p>This would print out <code>Blast Off 1 2 3 4 5 6 7 8 9 10</code></p>
+<h3>Example: Summing up to a number</h3>
+<p>This would be our iterative solution</p>
+<pre><code class="language-java">int sum(int number) {
+  int sum = 0;
+  while (number &gt; 0) {
+    sum += number;
+    number--;
+  }
+  return sum;
+}</code></pre>
+<p>How does this loop stop?</p>
+<p>​   Same as before. Think about it, if the number you pass in is zero, what should be the result of sum? Zero. Since adding up from 0 to 0 is just 0.</p>
+<pre><code class="language-java">if (number == 0) {
+  return 0;
+}</code></pre>
+<p>How does this loop change each time through?</p>
+<p>​   You want to update your sum, so return the sum of the next call to the current sum.</p>
+<pre><code class="language-java">return (number + sum(number - 1));</code></pre>
+<p>Putting it all together</p>
+<pre><code class="language-java">int sumRecursive(int number) {
+  if (number == 0) {
+    return 0;
+  } else {
+    return number + sumRecursive(number - 1);   
+  }
+}</code></pre>
+<h3>Example: Linear Search</h3>
+<p>How to do it iteratively.</p>
+<pre><code class="language-java">void linearSearch(int[] array, int number) {
+  int i = 0;
+  while (i &lt; array.length &amp;&amp; number != array[i]) {
+    i++;
+  }
+  if (i == array.length) {
+    System.out.println("Not Found");
+  } else {
+    System.out.println("Found");
+  }
+}</code></pre>
+<p>Base Case: There are two base cases, when it reaches the end of the array and when it finds the number</p>
+<pre><code class="language-java">if (array.length == i) {
+  System.out.println("Not Found");
+} else (array[i] == number) {
+  System.out.println(number + " found at index " + i);
+}</code></pre>
+<p>Smaller Caller Case: Check the next element</p>
+<pre><code class="language-java">linearSearchRecursion(number, array, i + 1);</code></pre>
+<p>Putting it all together...</p>
+<pre><code class="language-java">void linearSearchRecursion(int[] array, int number) {
+  if (array.length == i) {
+    System.out.println("Not Found");
+  } else if (array[i] == number) {
+    System.out.println(number + " found at index " + index);
+  } else {
+    linearSearchRecursion(number, array, i + 1);
+  }
+}</code></pre>
+<h2>Binary Search</h2>
+<p>This is a much more efficient search than the linear search we have been doing. The only condition is that your array must be sorted beforehand.</p>
+<p>A regular linear search  <code>O(n)</code> -- Check at most all of the elements of the array.</p>
+<p>Binary Search <code>O(log(n))</code> -- Checks at most <code>ceil(log(n))</code> elements of an array.</p>
+<p>To demonstrate this with real numbers, let's take an array of 100 elements</p>
+<ul>
+<li>With linear search this will take at most 100 iterations</li>
+<li>With binary search this will take at most <strong>7</strong>.</li>
+</ul>
+<p>Crazy right?</p>
+<h3>Implementation</h3>
+<p><strong>Iterative approach</strong></p>
+<pre><code class="language-java">void binarySearch(int number, int[] array) {
+  int lower = 0;
+  int upper = array.length - 1;
+  int mid = (lower + upper) / 2
+  while (lower &lt;= upper &amp;&amp; array[mid] != number) {
+    mid = (lower + upper) / 2;
+    if (array[mid] &lt; number) {
+      lower = mid + 1;
+    } else if () {
+      upper = mid -1;
+    }
+  }
+  if (lower &gt; upper) {
+    System.out.println("Not Found");
+  } else {
+    System.out.println(number + " found at index " + mid);
+  }
+}</code></pre>
+<p><strong>Recursive Approach</strong></p>
+<p>Base Case: There are two cases, you either found it, or you made it to the end of the array without finding it</p>
+<pre><code class="language-java">if (lower &gt; upper) {
+  System.out.println("Not Found");
+} else if (array[mid] == number) {
+  System.out.println(number + " found at index " + mid);
+}</code></pre>
+<p>Smaller Caller Case: Change the lower or upper bounds to cut the search in half</p>
+<pre><code class="language-java">if (array[mid] &lt; number) {
+  lower = mid + 1;
+  binarySearchRecursive(number, array, lower, upper);
+} else if (array[mid] &gt; number) {
+  upper = mid - 1;
+  binarySearchRecursive(number, array, lower, upper);
+}</code></pre>
+<p>Putting it together....</p>
+<pre><code class="language-java">binarySearch(int number, int[] array, int lower, int upper) {
+  if (lower &gt; upper) {
+    System.out.println("Not Found");
+  } else if (array[mid] == number) {
+    System.out.println(number + " found at index " + mid);
+  }
+  else if (array[mid] &lt; number) {
+    lower = mid + 1;
+    binarySearchRecursive(number, array, lower, upper);
+  } else if (array[mid] &gt; number) {
+    upper = mid - 1;
+    binarySearchRecursive(number, array, lower, upper);
+  }
+}</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

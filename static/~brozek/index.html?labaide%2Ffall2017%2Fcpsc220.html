@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>CPSC 220 Computer Programming and Problem Solving Fall 2017</h1>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Fsept6.html">Lecture 3 -- September 6</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Fsept11.html">Lecture 4 -- September 11</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Fsept20.html">Lecture 7 -- September 20</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Fsept25.html">Lecture 9 -- September 25</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Foct2.html">Lecture 10 -- October 2</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Foct4.html">Lecture 11 -- October 4</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Foct9.html">Lecture 12 -- October 9</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Foct11.html">Lecture 13 -- October 11</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Foct18.html">Lecture 15 -- October 18</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Foct23.html">Lecture 16 -- October 23</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Foct25.html">Lecture 17 -- October 25</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Foct30.html">Lecture 18 -- October 30</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Fexam2review.html">Exam 2 Review -- October 30</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Fnov6.html">Lecture 19 -- November 6</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Fnov13.html">Lecture 20 -- November 13</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Fnov15.html">Lecture 21 -- November 15</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Fnov20.html">Lecture 22 -- November 20</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Fnov27.html">Lecture 23 -- November 27</a></p>
+<p><a href="index.html%3Flabaide%252Ffall2017%252Fcpsc220%252Fdec6.html">Lecture 25 -- December 6</a></p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

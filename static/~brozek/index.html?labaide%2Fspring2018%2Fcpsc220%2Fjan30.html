@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for January 30</h1>
+<h2>Random Number Generator</h2>
+<p>One of the ways you can do a random number generator is through this method:</p>
+<p>Import a class called random </p>
+<pre><code class="language-java">import java.util.Random;</code></pre>
+<p>Then you need to create a <code>Random</code> object</p>
+<pre><code class="language-java">Random rand = new Random();</code></pre>
+<p>After this you can call the  <code>nextInt()</code> method to get a random number between 0 and $2^{32}$</p>
+<pre><code class="language-java">int randInt = rand.nextInt();</code></pre>
+<p>If you don't want a random number between 0 and $2^{32}$ but instead to another maximum value, then you can call  the <code>nextInt</code> method inserting the max integer as a parameter.</p>
+<p>Random Integer from 0-10 (not including 10)</p>
+<pre><code class="language-java">int randInt2 = rand.nextInt(10);</code></pre>
+<h2>Output</h2>
+<p>We have already encountered <code>System.out.println</code> and <code>System.out.print</code> but let us go over the differences again.</p>
+<p><code>System.out.println()</code> prints the contents inside the parenthesis and appends a newline character afterwards so that the next output is on a new line</p>
+<p><code>System.out.print()</code> prints the contents inside the parenthesis and does not output a newline character</p>
+<h3>Formatting Output</h3>
+<p>If you want more control on how your output is displayed, it is recommended that you use <code>System.out.printf</code> to format your output</p>
+<p>First, you need to specify your type using the % instruction</p>
+<ul>
+<li>d for integer</li>
+<li>f for decimal</li>
+</ul>
+<p>Example:</p>
+<pre><code class="language-java">int sum = 50;
+System.out.printf("Total = %d", sum);</code></pre>
+<p>This outputs </p>
+<pre><code class="language-reS">Total = 50</code></pre>
+<p>Notice here that there is no concatenation required like the previous two methods, instead you insert the variables as parameters</p>
+<p>Let us deconstruct the % instruction</p>
+<p>% <strong> </strong> . <strong> </strong></p>
+<p>The first underline is the + - 0 space (sometimes we want to pad the money with zeros)</p>
+<p>The second underline is the width of the text</p>
+<p>The third underline is the number of decimal places</p>
+<p>The the final underline is the specifier <code>f</code> for decimal and <code>d</code> for integer</p>
+<p><u>Example</u></p>
+<pre><code class="language-java">double amount = 0.5;
+System.out.printf("Total Due: %0.2f")</code></pre>
+<p>This outputs</p>
+<pre><code class="language-reStructuredText">Total Due: 0.50</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

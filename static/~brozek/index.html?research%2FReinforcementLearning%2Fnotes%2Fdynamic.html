@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Chapter 4: Dynamic Programming</h1>
+<p>Dynamic programming refers to a collection of algorithms that can be used to compute optimal policies given a perfect model of the environment as a Markov decision process (MDP).</p>
+<p>Classic DP algorithms are of limited utility due to their assumption of a perfect model and their great computational expense.</p>
+<p>Let's assume that the environment is a finite MDP. We assume its state, action, and reward sets, $\mathcal{S}, \mathcal{A}, \mathcal{R}$ are finite, and that its dynamics are given by a set of probabilities $p(s^\prime, r | s , a)$.</p>
+<p>The key idea of dynamic programming, and of reinforcement learning is the use of value functions to organize and structure the search for good policies. In this chapter, we show how dynamic programming can be used to compute the value functions defined in Chapter 3. We can easily obtain optimal policies once we have found the optimal value functions which satisfy the Bellman optimality equations.</p>
+<h2>Policy Evaluation</h2>
+<p>First we consider how to compute the state-value function for an arbitrary policy. The existence and uniqueness of a state-value function for an arbitrary policy are guaranteed as long as either the discount rate is less than one or eventual termination is guaranteed from all states under the given policy.</p>
+<p>Consider a sequence of approximate value functions. The initial approximation, $v<em>0$, is chosen arbitrarily (except that the terminal state must be given a value of zero) and each successive approximation is obtained by using the Bellman equation for $v</em>\pi$ as an update rule:
+$$
+v<em>{k + 1} = \sum</em>{a}{\pi(a |s)\sum_{s^\prime, r}{p(s^\prime,r|s,a)[r + \gamma v_k(s^\prime)]}}
+$$
+This algorithm is called <em>iterative policy evaluation</em>.</p>
+<p>To produce each successive approximation, $v_{k + 1}$ from $v_k$, iterative policy evaluation applies the same operation to each state $s$: it replaces the old value of $s$ with a new value obtained from the old values of the successor states of $s$, and the expected immediate rewards, along all the one-step transitions possible under the policy being evaluated.</p>
+<p><u><strong>Iterative Policy Evaluation</strong></u></p>
+<pre><code>Input π, the policy to be evaluated
+Initialize an array V(s) = 0, for all s ∈ S+
+Repeat
+  ∆ ← 0
+  For each s ∈ S:
+    v ← V(s)
+    V(s) ← ∑_a π(a|s) ∑_s′,r p(s′,r|s,a)[r+γV(s′)]
+    ∆ ← max(∆,|v−V(s)|)
+until ∆ &lt; θ (a small positive number)
+Output V ≈ v_π</code></pre>
+<h3>Grid World Example</h3>
+<p>Consider a grid world where the top left and bottom right squares are the terminal state. Now consider that every other square, produces a reward of -1, and the available actions on each state is {up, down, left, right} as long as that action keeps the agent on the grid. Suppose our agent follows the equiprobable random policy. </p>
+<p>![1540262811089](/home/rozek/Documents/Research/Reinforcement Learning/1540262811089.png)</p>
+<h2>Policy Improvement</h2>
+<p>One reason for computing the value function for a policy is to help find better policies. Suppose we have determined the value function $v<em>\pi$ for an arbitrary deterministic policy $\pi$. For some state $s$ we would like to know whether or not we should change the policy to determinatically chose another action. We know how good it is to follow the current policy from $s$, that is $v</em>\pi(s)$, but would it be better or worse to change to the new policy? </p>
+<p>One way to answer this question is to consider selecting $a$ in $s$ and thereafter follow the existing policy, $\pi$. The key criterion is whether the this produces a value greater than or less than $v_\pi(s)$. If it is greater, then one would expect it to be better still to select $a$ every time $s$ is encountered, and that the new policy would in fact be a better one overall.</p>
+<p>That this is true is a special case of a general result called the <em>policy improvement theorem</em>. Let $\pi$ and $\pi^\prime$ be any pair of deterministic policies such that for all $s \in \mathcal{S}$.
+$$
+q<em>\pi(s, \pi^\prime(s)) \ge v</em>\pi(s)
+$$
+So far we have seen how, given a policy and its value function, we can easily evaluate a change in the policy at a single state to a particular action. It is a natural extension to consider changes at all states and to all possible actions, selecting at each state the action that appears best according to $q<em>\pi(s, a)$. In other words, to consider the new <em>greedy</em> policy, $\pi^\prime$, given by:
+$$
+\pi^\prime = argmax (q</em>\pi(s, a))
+$$
+So far in this section we have considered the case of deterministic policies. We will not go through the details, but in fact all the ideas of this section extend easily to stochastic policies.</p>
+<h2>Policy Iteration</h2>
+<p>Once a policy, $\pi$, has been improved using $v<em>\pi$ to yield a better policy, $\pi^\prime$, we can then compute $v</em>{\pi^\prime}$ and improve it again to yield an even better $\pi^{\prime\prime}$. We can thus obtain a sequence of monotonically improving policies and value functions.</p>
+<p>Each policy is guaranteed to be a strict improvement over the previous one (unless its already optimal). Since a finite MDP has only a finite number of policies, this process must converge to an optimal policy and optimal value function in a finite number of iterations.</p>
+<p>This way of finding an optimal policy is called <em>policy iteration</em>.</p>
+<p><u>Algorithm</u></p>
+<pre><code>1.  Initialization
+  V(s) ∈ R and π(s) ∈ A(s) arbitrarily for all s ∈ S
+2.  Policy Evaluation
+  Repeat
+    ∆ ← 0
+    For each s∈S:
+      v ← V(s)
+      V(s) ← ∑_{s′,r} p(s′,r|s,π(s))[r + γV(s′)]
+      ∆ ← max(∆,|v − V(s)|)
+  until ∆ &lt; θ (a small positive number)
+3.  Policy Improvement
+  policy-stable ← true
+  For each s ∈ S:
+    old-action ← π(s)
+    π(s) ← arg max_a ∑_{s′,r} p(s′,r|s,a)[r + γV(s′)]
+    If old-action != π(s), then policy-stable ← false
+  If policy-stable, then stop and return V ≈ v_∗,
+  and π ≈ π_∗; else go to 2</code></pre>
+<h2>Value Iteration</h2>
+<p>One drawback to policy iteration is that each of its iterations involve policy evaluation, which may itself be a protracted iterative computation requiring multiple sweeps through the state set. If policy evaluation is done iteratively, then convergence exactly to $v_\pi$ occurs only in the limit. Must we wait for exact convergence, or can we stop short of that?</p>
+<p>In fact, the policy evaluation step of policy iteration can be truncated in several ways without losing the convergence guarantee of policy iteration. One important special case is when policy evaluation is stopped after one sweep. This algorithm is called value iteration. </p>
+<p>Another way of understanding value iteration is by reference to the Bellman optimality equation. Note that value iteration is obtained simply by turning the Bellman optimality equation into an update rule. Also note how value iteration is identical to the policy evaluation update except that it requires the maximum to be taken over all actions.</p>
+<p>Finally, let us consider how value iteration terminates. Like policy evaluation, value iteration formally requires an infinite number of iterations to converge exactly. In practice, we stop once the value function changes by only a small amount.</p>
+<pre><code>Initialize array V arbitrarily (e.g., V(s) = 0 for all
+s ∈ S+)
+
+Repeat
+  ∆ ← 0
+  For each s ∈ S:
+    v ← V(s)
+    V(s) ← max_a∑_{s′,r} p(s′,r|s,a)[r + γV(s′)]
+    ∆ ← max(∆, |v − V(s)|)
+until ∆ &lt; θ (a small positive number)
+
+Output a deterministic policy, π ≈ π_∗, such that
+  π(s) = arg max_a ∑_{s′,r} p(s′,r|s,a)[r + γV(s′)]</code></pre>
+<p>Value iteration effectively combines, in each of its sweeps, one sweep of policy evaluation and one sweep of policy improvement. Faster convergence is often achieved by interposing multiple policy evaluation sweeps between each policy improvement sweep. </p>
+<h2>Asynchronous Dynamic Programming</h2>
+<p><em>Asynchronous</em> DP algorithms are in-place DP algorithms that are not organized in terms of systematic sweeps of the state set. These algorithms update the values of states in any order whatsoever, using whatever value of other states happen to be available.</p>
+<p>To converge correctly, however, an asynchronous algorithm must continue to update the value of all the states: it can't ignore any state after some point in the computation.</p>
+<h2>Generalized Policy Iteration</h2>
+<p>Policy iteration consists of two simultaneous, iterating processes, one making the value function consistent with the current policy (policy evaluation) and the other making the policy greedy with respect to the current value function (policy improvement).</p>
+<p>We use the term <em>generalized policy iteration</em> (GPI) to competing and cooperating. They compete in the sense that they pull in opposing directions. Making the policy greedy with respect to the value function typically makes the value function incorrect for the changed policy. Making the value function consistent with the policy typically causes the policy to be greedy. In the long run, however, the two processes interact to find a single joint solution. </p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

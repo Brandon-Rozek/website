@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>October 18th</h1>
+<h2>ArrayLists in classes</h2>
+<pre><code class="language-java">public class Numbers {
+  private ArrayList&lt;Integer&gt; used;
+  private ArrayList&lt;Integer&gt; unused;
+  numbers () {
+    // Debug: System.out.println("1. Constructor Entry Point");
+    used = new ArrayList&lt;Integer&gt;();
+    unused = new ArrayList&lt;Integer&gt;();
+    // Debug: System.out.println("2, Constructor Size of ArrayLists" + used.size() + " " + unused.size())
+  }
+  // Adds the numbers 1-5 into the used ArrayList
+  public void fillUsedArrayList() {
+    for (int i = 0; i &lt; 5; i++) {
+        used.add(i + 1);
+    }
+  }
+  // Move an item from the unused ArrayList to the used ArrayList
+  public int moveIt(int index) {
+    int temp = used.get(index);
+    unused.add(temp);
+    // Debug: System.out.println("Adding to used array:" + (i + 1));
+    used.remove(index);
+    return temp;
+  }
+  // The method below is created for debugging purposes
+  public void printBothArrayLists() {
+    // Print the used arraylist
+    System.out.println("Used ArrayList");
+    for (int i = 0; i &lt; used.size(); i++) {
+        System.out.println(used.get(i));
+    }
+
+    // Print the unused arraylist
+    System.out.println("Unused ArrayList");
+    for (int i = 0; i &lt; unused.size(); i ++) {
+        System.out.println(unused.get(i));
+    }
+  }
+}</code></pre>
+<p>Recall that you can compile the code above but you cannot run it. To run code, you must have a main method.</p>
+<h2>NumberTester</h2>
+<pre><code class="language-java">public class NumberTester {
+    public static void main(String[] args) {
+      Numbers list;
+      list = new Numbers();
+      list.fillUsedArrayList();
+      list.printBothArrayLists();
+    }
+}</code></pre>
+<h2>Difference between Array and ArrayList</h2>
+<p>An Array is a <strong>static</strong> structure of contiguous memory of a single type.</p>
+<p>An ArrayList is a <strong>dynamic</strong> structure of contiguous memory of a single type   </p>
+<p>To get the size of an array you use <code>.length</code></p>
+<p>To get the size of an ArrayList you use <code>.size()</code></p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Confidence Interval Lab</h1>
+<p><strong>Written by Brandon Rozek</strong></p>
+<h2>Introduction</h2>
+<p>Confidence intervals expands the concept of a point estimation by giving a margin of error such that one can be confident that a certain percentage of the time the true parameter falls within that interval.</p>
+<p>In this lab, we will look at confidence intervals for a mean. This lab focuses on a certain method of confidence intervals that depends on the distribution of sample means being Normal. We will show how the violation of this assumption impacts the probability that the true parameter falls within the interval.</p>
+<h2>Methods</h2>
+<p>The observed level of confidence tells us the proportion of times the true mean falls within a confidence interval. To show how the violation of the Normality assumption affects this, we will sample from both a Normal distribution, T distribution, and exponential distribution with different sample sizes.</p>
+<p>The normal and T distributions are sampled with a mean of 5 and a standard deviation of 2. The exponential deviation is sampled with a lambda of 2 or mean of 0.5.</p>
+<p>From the samples, we obtain the mean and the upper/lower bounds of the confidence interval. This is performed 100,000 times. That way we obtain a distribution of these statistics.</p>
+<p>We know that a confidence interval is valid, if the lower bound is no more than the true mean and the upper bound is no less than the true mean.  From this definition, we can compute a proportion of observed confidence from the simulations</p>
+<h3>Visualizations</h3>
+<p>From the distributions of statistics, we can create visualizations to support the understanding of confidence intervals.</p>
+<p>The first one is a scatterplot of lower bounds vs upper bounds. This plot demonstrates the valid confidence intervals in blue and the invalid ones in red. It demonstrates how confidence intervals that are invalid are not located inside the box.</p>
+<p>The second visualization is a histogram of all the sample means collected. The sample means that didn't belong to a valid confidence interval are shaded in red. This graphic helps demonstrate the type I errors on both sides of the distribution. </p>
+<p>In this lab, we're interested in seeing how our observed level of confidence differs from our theoretical level of confidence (95%) when different sample sizes and distributions are applied.</p>
+<h2>Results</h2>
+<p>We can see from the table section in the Appendix that sampling from a Normal or t distribution does not adversely affect our observed level of confidence. The observed level of confidence varies slightly from the theoretical level of confidence of 0.95.</p>
+<p>When sampling from the exponential distribution, however, the observed level of confidence highly depends upon the sample size.</p>
+<p>Looking at Table III, we can see that for a sample size of 10, the observed level of confidence is at a meager 90%. This is 5% off from our theoretical level of confidence.  This shows how the normality assumption is vital to the precision of our estimate. </p>
+<p>This comes from the fact that using this type of confidence interval on a mean from a  non-normal distribution requires a large sample size for the central limit theorem to take affect.</p>
+<p>The central limit theorem states that if the sample size is &quot;large&quot;, the distribution of sample means approach the normal distribution. You can see how in Figure XVIII, the distribution of sample means is skewed, though as the sample size increases, the distribution of sample means become more symmetric (Figure XIX).</p>
+<h2>Conclusion</h2>
+<p>From this, we can conclude that violating the underlying assumption of normality decreases the observed level of confidence. We can mitigate the decrease of the observed level of confidence when sampling means from a non-normal distribution by having a larger sample size. This is due to the central limit theorem.</p>
+<h2>Appendix</h2>
+<h3>Tables</h3>
+<h4>Table I. Sampling from Normal</h4>
+<table>
+<thead>
+<tr>
+<th>Sample Size</th>
+<th>Proportion of Means Within CI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>0.94849</td>
+</tr>
+<tr>
+<td>20</td>
+<td>0.94913</td>
+</tr>
+<tr>
+<td>50</td>
+<td>0.95045</td>
+</tr>
+<tr>
+<td>100</td>
+<td>0.94955</td>
+</tr>
+</tbody>
+</table>
+<h4>Table II. Sampling from T Distribution</h4>
+<table>
+<thead>
+<tr>
+<th>Sample Size</th>
+<th>Proportion of Means Within CI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>0.94966</td>
+</tr>
+<tr>
+<td>20</td>
+<td>0.94983</td>
+</tr>
+<tr>
+<td>50</td>
+<td>0.94932</td>
+</tr>
+<tr>
+<td>100</td>
+<td>0.94999</td>
+</tr>
+</tbody>
+</table>
+<h4>Table III. Sampling from Exponential Distribution</h4>
+<table>
+<thead>
+<tr>
+<th>Sample Size</th>
+<th>Proportion of Means Within CI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>0.89934</td>
+</tr>
+<tr>
+<td>20</td>
+<td>0.91829</td>
+</tr>
+<tr>
+<td>50</td>
+<td>0.93505</td>
+</tr>
+<tr>
+<td>100</td>
+<td>0.94172</td>
+</tr>
+</tbody>
+</table>
+<h3>Figures</h3>
+<h4>Normal Distribution</h4>
+<h5>Figure I. Scatterplot of Bounds for Normal Distribution of Sample Size 10</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/normal10scatter.png" alt="normal10scatter" /></p>
+<h5>Figure II. Histogram of Sample Means for Normal Distribution of Sample Size 10</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/normal10hist.png" alt="normal10hist" /></p>
+<h5>Figure III. Scatterplot of Bounds for Normal Distribution of Sample Size 20</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/normal20scatterplot.png" alt="normal20scatterplot" /></p>
+<h5>Figure IV. Histogram of Sample Means for Normal Distribution of Sample Size 20</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/normal20hist.png" alt="normal20hist" /></p>
+<h5>Figure VScatterplot of Bounds for Normal Distribution of Sample Size 50</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/normal50scatterplot.png" alt="normal50scatterplot" /></p>
+<h5>Figure VI. Histogram of Sample Means for Normal Distribution of Sample Size 50</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/normal50hist.png" alt="normal50hist" /></p>
+<h5>Figure VII. Scatterplot of Bounds for Normal Distribution of Sample Size 100</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/normal100scatterplot.png" alt="normal100scatterplot" /></p>
+<h5>Figure VIII. Histogram of Sample Means for Normal Distribution of Sample Size 100</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/normal100hist.png" alt="normal100hist" /></p>
+<h4>T Distribution</h4>
+<h5>Figure IX. Scatterplot of Bounds for T Distribution of Sample Size 10</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/t10scatterplot.png" alt="t10scatterplot" /></p>
+<h5>Figure X. Histogram of Sample Means for T Distribution of Sample Size 10</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/t10hist.png" alt="t10hist" /></p>
+<h5>Figure XI. Scatterplot of Bounds for T Distribution of Sample Size 20</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/t20scatterplot.png" alt="t20scatterplot" /></p>
+<h5>Figure XII. Histogram of Sample Means for T Distribution of Sample Size 20</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/t20hist.png" alt="t20hist" /></p>
+<h5>Figure XIII. Scatterplot of Bounds for T Distribution of Sample Size 50</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/t50scatter.png" alt="t50scatter" /></p>
+<h5>Figure XIV. Histogram of Sample Means for T Distribution of Sample Size 50</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/t50hist.png" alt="t50hist" /></p>
+<h5>Figure XV. Scatterplot of Bounds for T Distribution of Sample Size 100</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/t100scatter.png" alt="t100scatter" /></p>
+<h5>Figure XVI. Histogram of Sample Means for T Distribution of Sample Size 100</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/t100hist.png" alt="t100hist" /></p>
+<h4>Exponential Distribution</h4>
+<h5>Figure XVII. Scatterplot of Bounds for Exponential Distribution of Sample Size 10</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/exp10scatter.png" alt="exp10scatter" /></p>
+<h5>Figure XVIII. Histogram of Sample Means for Exponential Distribution of Sample Size 10</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/exp10hist.png" alt="exp10hist" /></p>
+<h5>Figure XIX. Scatterplot of Bounds for Exponential Distribution of Sample Size 20</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/exp20scatter.png" alt="exp20scatter" /></p>
+<h5>Figure XX. Histogram of Sample Means for Exponential Distribution of Sample Size 20</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/exp20hist.png" alt="exp20hist" /></p>
+<h5>Figure XXI. Scatterplot of Bounds for Exponential Distribution of Sample Size 50</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/exp50scatter.png" alt="exp50scatter" /></p>
+<h5>Figure XXII. Histogram of Sample Means for Exponential Distribution of Sample Size 50</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/exp50hist.png" alt="exp50hist" /></p>
+<h5>Figure XXIII. Scatterplot of Bounds for Exponential Distribution of Sample Size 100</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/exp100scatter.png" alt="exp100scatter" /></p>
+<h5>Figure XXIV. Histogram of Sample Means for Exponential Distribution of Sample Size 100</h5>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/statlab4/exp100hist.png" alt="exp100hist" /></p>
+<h3>R Code</h3>
+<pre><code class="language-R">rm(list=ls())
+library(ggplot2)
+library(functional) # For function currying
+
+proportion_in_CI = function(n, mu, dist) {
+
+  # Preallocate vectors
+  lower_bound = numeric(100000)
+  upper_bound = numeric(100000)
+  means = numeric(100000)
+
+  number_within_CI = 0
+
+  ME = 1.96 * 2 / sqrt(n) ## Normal Margin of Error
+
+  for (i in 1:100000) {
+    x = numeric(n)
+
+    # Sample from distribution
+    if (dist == "Normal" | dist == "t") {
+      x = rnorm(n,mu,2)
+    } else if (dist == "Exponential") {
+      x = rexp(n, 1 / mu)
+    }
+
+    ## Correct ME if non-normal
+    if (dist != "Normal") {
+      ME = qt(0.975,n-1)*sd(x)/sqrt(n)
+    }
+
+    ## Store statistics
+    means[i] = mean(x)
+    lower_bound[i] = mean(x) - ME
+    upper_bound[i] = mean(x) + ME
+
+    # Is Confidence Interval Valid?
+    if (lower_bound[i] &lt; mu &amp; upper_bound[i] &gt; mu) {
+      number_within_CI = number_within_CI + 1 
+    }
+  }
+
+  # Prepare for plotting
+  lbub = data.frame(lower_bound, upper_bound, means)
+  lbub$col = ifelse(lbub$lower_bound &lt; mu &amp; lbub$upper_bound &gt; mu, 'Within CI', 'Outside CI')
+  print(ggplot(lbub, aes(x = lower_bound, y = upper_bound, col = col)) +
+          geom_point(pch = 1) +
+          geom_hline(yintercept = mu, col = '#000055') +
+          geom_vline(xintercept = mu, col = '#000055') +
+          ggtitle(paste("Plot of Lower Bounds vs Upper Bounds with Sample Size of ", n)) +
+          xlab("Lower Bound") +
+          ylab("Upper Bounds") +
+          theme_bw()
+  )
+  print(ggplot(lbub, aes(x = means, fill = col)) +
+          geom_histogram(color = 'black') +
+          ggtitle(paste("Histogram of Sample Means with Sample Size of ", n)) +
+          xlab("Sample Mean") +
+          ylab("Count") +
+          theme_bw()
+  )
+
+  # Return proportion within CI
+  number_within_CI / 100000
+}
+
+sample_sizes = c(10, 20, 50, 100)
+
+### PART I
+proportion_in_CI_Normal = Curry(proportion_in_CI, dist = "Normal", mu = 5)
+p_norm = sapply(sample_sizes, proportion_in_CI_Normal)
+sapply(p_norm, function(x) {
+  cat("The observed proportion of intervals containing mu is", x, "\n")
+  invisible(x)
+})
+
+### PART II
+proportion_in_CI_T = Curry(proportion_in_CI, dist = "t", mu = 5)
+p_t = sapply(sample_sizes, proportion_in_CI_T)
+sapply(p_t, function(x) {
+  cat("The observed proportion of intervals containing mu is", x, "\n")
+  invisible(x)
+})
+
+### PART III
+proportion_in_CI_Exp = Curry(proportion_in_CI, dist = "Exponential", mu = 0.5)
+p_exp = sapply(sample_sizes, proportion_in_CI_Exp)
+sapply(p_exp, function(x) {
+  cat("The observed proportion of intervals containing mu is", x, "\n")
+  invisible(x)
+})</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

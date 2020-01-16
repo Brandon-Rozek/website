@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h2>Coding Standards for R</h2>
+<ol>
+<li>Always use text files/text editor</li>
+<li>Indent your code</li>
+<li>Limit the width of your code (80 columns?)</li>
+<li>Author suggests indentation of 4 spaces at minimum</li>
+<li>Limit the length of individual functions</li>
+</ol>
+<h2>What is Markdown?</h2>
+<p>Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it structurally to valid XHTML/HTML</p>
+<h2>Markdown Syntax</h2>
+<p><code>*This text will appear italicized!*</code></p>
+<p><em>This text will appear italicized!</em></p>
+<p><code>**This text will appear bold!**</code></p>
+<p><strong>This text will appear bold</strong></p>
+<p><code>## This is a secondary heading</code></p>
+<p><code>###This is a tertiary heading</code></p>
+<h2>This is a secondary heading</h2>
+<h3>This is a tertiary heading</h3>
+<p>Unordered Lists</p>
+<p><code>- first item in list</code></p>
+<p><code>- second item in list</code></p>
+<ul>
+<li>first item in list</li>
+<li>second item in list</li>
+</ul>
+<p>Ordered lists</p>
+<p><code>1. first item in list</code></p>
+<p><code>2. second item in list</code></p>
+<p><code>3. third item in list</code></p>
+<ol>
+<li>first item in list</li>
+<li>second item in list</li>
+<li>third item in list</li>
+</ol>
+<p>Create links</p>
+<p><code>[Download R](http://www.r-project.org/)</code></p>
+<p><a href="http://www.r-project.org/">Download R</a></p>
+<p>Advanced linking</p>
+<p><code>I spent so much time reading [R bloggers][1] and [Simply Statistics][2]!</code></p>
+<p><code>[1]: http://www.r-bloggers.com/    "R bloggers"</code></p>
+<p><code>[2]: http://simplystatistics.org/  "Simply Statistics"</code></p>
+<p>I spent so much time reading <a href="http://www.r-bloggers.com/" title="R bloggers">R bloggers</a> and <a href="http://simplystatistics.org/" title="Simply Statistics">Simply Statistics</a>!</p>
+<p>Newlines require a double space after the end of a line</p>
+<h2>What is Markdown?</h2>
+<p>Created by John Gruber and Aaron Swartz. It is a simplified version of &quot;markup&quot; languages. It allows one to focus on writing as opposed to formatting. Markdown provides a simple, minimal, and intuitive way of formatting elements. </p>
+<p>You can easily convert Markdown to valid HTML (and other formats) using existing tools.</p>
+<h2>What is R Markdown?</h2>
+<p>R Markdown is the integration of R code with markdown. It allows one to create documents containing &quot;live&quot; R code. R code is evaluated as part of the processing of the markdown and its results are inserted into the Markdown document. R Markdown is a core tool in <strong>literate statistical programming</strong></p>
+<p>R Markdown can be converted to standard markdown using <code>knitr</code> package in R. Markdown can then be converted to HTML using the <code>markdown</code> package in R. This workflow can be easily managed using R Studio. One can create powerpoint like slides using the <code>slidify</code> package.</p>
+<h2>Problems, Problems</h2>
+<ul>
+<li>Authors must undertake considerable effort to put data/results on the web</li>
+<li>Readers must download data/results individually and piece together which data go with which code sections, etc.</li>
+<li>Authors/readers must manually interact with websites</li>
+<li>There is no single documents to integrate data analysis with textual representations; i.e data, code, and text are not linked</li>
+</ul>
+<p>One of the ways to resolve this is to simply put the data and code together in the same document so that people can execute the code in the right order, and the data are read at the right times. You can have a single document that integrates the data analysis with all the textual representations.</p>
+<h2>Literate Statistical Programming</h2>
+<ul>
+<li>Original idea comes from Don Knuth</li>
+<li>An article is a stream of <strong>text</strong> and <strong>code</strong></li>
+<li>Analysis code is divded into text and code &quot;chunks&quot;</li>
+<li>Presentation code formats results (tables, figures, etc.)</li>
+<li>Article text explains what is going on</li>
+<li>Literate programs are weaved to produce human-readable documents and tangled to produce machine-readable documents.</li>
+</ul>
+<h2>Literate Statistical Programming</h2>
+<ul>
+<li>Literate programming is a general concept. We need
+<ul>
+<li>A documentation language</li>
+<li>A programming language</li>
+</ul></li>
+<li><code>knitr</code> supports a variety of documentation languages</li>
+</ul>
+<h2>How Do I Make My Work Reproducible?</h2>
+<ul>
+<li>Decide to do it (ideally from the start)</li>
+<li>Keep track of everything, hopefully through a version control system</li>
+<li>Use software in which operations can be coded</li>
+<li>Don't save output</li>
+<li>Save data in non-proprietary formats</li>
+</ul>
+<h2>Literate Programming: Pros</h2>
+<ul>
+<li>Text and code all in one place, logical order</li>
+<li>Data, results automatically updated to reflect external changes</li>
+<li>Code is live -- automatic &quot;regression test&quot; when building a document</li>
+</ul>
+<h2>Literate Programming: Cons</h2>
+<ul>
+<li>Text and code are all in one place; can make documents difficult to read, especially if there is a lot of code</li>
+<li>Can substantially slow down processing of documents (although there are tools to help)</li>
+</ul>
+<h2>What is Knitr Good For?</h2>
+<ul>
+<li>Manuals</li>
+<li>Short/Medium-Length technical documents</li>
+<li>Tutorials</li>
+<li>Reports (Especially if generated periodically)</li>
+<li>Data Preprocessing documents/summaries</li>
+</ul>
+<h2>What is knitr NOT good for?</h2>
+<ul>
+<li>Very long research articles</li>
+<li>Complex time-consuming computations</li>
+<li>Documents that require precise formatting</li>
+</ul>
+<h2>Non-GUI Way of Creating R Markdown documents</h2>
+<pre><code class="language-R">library(knitr)
+setwd(&lt;working directory&gt;)
+knit2html('document.Rmd')
+browseURL('document.html')</code></pre>
+<h2>A few notes about knitr</h2>
+<ul>
+<li>
+<p>knitr will fill a new document with filler text; delete it</p>
+</li>
+<li>
+<p>Code chunks begin with <code>```{r}</code> and ends with <code>```</code> </p>
+</li>
+<li>
+<p>All R code goes in between these markers</p>
+</li>
+<li>
+<p>Code chunks can have names, which is useful when we start making graphics</p>
+<p><code>```{r firstchunk}</code></p>
+<p><code>## R code goes here</code></p>
+<p><code>```</code></p>
+</li>
+<li>By default, code in a code chunk is echoed, as will the results of the computation (if there are results to print)</li>
+</ul>
+<h2>Processing of knitr documents</h2>
+<ul>
+<li>You write RMarkdown document (.Rmd)</li>
+<li>knitr produces a Markdown document (.md)</li>
+<li>knitr converts the Markdown document into HTML (by default)</li>
+<li>.Rmd -&gt; .md -&gt; .html</li>
+<li>You should NOT edit (or save) the .md or .html documents until you are finished</li>
+</ul>
+<h2>Inline Text Computations</h2>
+<p>You can reference variable in RMarkdown through the following</p>
+<pre><code>`The current time is `r time`. My favorite random number is `r rand`</code></pre>
+<h2>Setting Global Options</h2>
+<ul>
+<li>Sometimes we want to set options for every code chunk that are different from the defaults</li>
+<li>For example, we may want to suppress all code echoing and results output</li>
+<li>We have to write some code to set these global options</li>
+</ul>
+<p>Example for suppressing all code chunks</p>
+<pre><code class="language-R">​```{r setoptions, echo=FALSE}
+opts_chunk$set(echo=False, results = "hide")
+​```</code></pre>
+<h2>Some Common Options</h2>
+<ul>
+<li>Output
+<ul>
+<li>Results: &quot;axis&quot;, &quot;hide&quot;</li>
+<li>echo: TRUE, FALSE</li>
+</ul></li>
+<li>Figures
+<ul>
+<li>fig.height: numeric</li>
+<li>fig.width: numeric</li>
+</ul></li>
+</ul>
+<h2>Caching Computations</h2>
+<ul>
+<li>What if one chunk takes a long time to run?</li>
+<li>All chunks have to be re-computed every time you re-knit the file</li>
+<li>The <code>cache=TRUE</code> option can be set on a chunk-by-chunk basis to store results of computation</li>
+<li>After the first run, results are loaded from cache</li>
+</ul>
+<h2>Caching Caveats</h2>
+<ul>
+<li>If the data or code (or anything external) changes, you need to re-run the cache code chunks</li>
+<li>Dependencies are not checked explicitly!!!!</li>
+<li>Chunks with significant <em>side effects</em> may not be cacheable</li>
+</ul>
+<h2>Summary of knitr</h2>
+<ul>
+<li>Literate statistical programming can be a useful way to put text, code, data, output all in one document</li>
+<li>knitr is a powerful tool for iterating code and text in a simple document format</li>
+</ul>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

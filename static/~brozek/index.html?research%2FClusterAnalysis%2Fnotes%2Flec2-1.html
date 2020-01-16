@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Why use different distance measures?</h1>
+<p>I made an attempt to find out in what situations people use different distance measures. Looking around in the Internet usually produces the results &quot;It depends on the problem&quot; or &quot;I typically just always use Euclidean&quot;</p>
+<p>Which as you might imagine, isn't a terribly useful answer. Since it doesn't give me any examples of which types of problems different distances solve.</p>
+<p>Therefore, let's think about it in a different way. What properties do different distance measures have that make them desirable?</p>
+<h2>Manhattan Advantages</h2>
+<ul>
+<li>The gradient of this function has a constant magnitude. There's no power in the formula</li>
+<li>Unusual values affect distances on Euclidean more since the difference is squared</li>
+</ul>
+<p><a href="https://datascience.stackexchange.com/questions/20075/when-would-one-use-manhattan-distance-as-opposite-to-euclidean-distance">https://datascience.stackexchange.com/questions/20075/when-would-one-use-manhattan-distance-as-opposite-to-euclidean-distance</a></p>
+<h2>Mahalanobis Advantages</h2>
+<p>Variables can be on different scales. The Mahalanobis formula has a built in variance-covariance matrix which allows you to rescale your variables to make distances of different variables more comparable.</p>
+<p><a href="https://stats.stackexchange.com/questions/50949/why-use-the-mahalanobis-distance#50956">https://stats.stackexchange.com/questions/50949/why-use-the-mahalanobis-distance#50956</a></p>
+<h2>Euclidean Disadvantages</h2>
+<p>In higher dimensions, the points essentially become uniformly distant from one another. This is a problem observed in most distance metrics but it's more obvious with the Euclidean one.</p>
+<p><a href="https://stats.stackexchange.com/questions/99171/why-is-euclidean-distance-not-a-good-metric-in-high-dimensions/">https://stats.stackexchange.com/questions/99171/why-is-euclidean-distance-not-a-good-metric-in-high-dimensions/</a></p>
+<p>Hopefully in this course, we'll discover more properties as to why it makes sense to use different distance measures since it can have a impact on how our clusters are formed.</p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

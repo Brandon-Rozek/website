@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>K-Medoids</h1>
+<p>A medoid can be defined as the object of a cluster whose average dissimilarity to all the objects in the cluster is minimal.</p>
+<p>The K-medoids algorithm is related to k-means and the medoidshift algorithm. Both the k-means and k-medoids algorithms are partition and both attempt to minimize the distance between points in the cluster to it's center. In contrast to k-means, it chooses data points as centers and uses the Manhattan Norm to define the distance between data points instead of the Euclidean.</p>
+<p>This method is known to be more robust to noise and outliers compared to k-means since it minimizes the sum of pairwise dissimilarities instead of the sum of squared Euclidean distances.</p>
+<h2>Algorithms</h2>
+<p>There are several algorithms that have been created as an optimization to an exhaustive search. In this section, we'll discuss PAM and Voronoi iteration method.</p>
+<h3>Partitioning Around Medoids (PAM)</h3>
+<ol>
+<li>Select $k$ of the $n$ data points as medoids</li>
+<li>Associate each data point to the closes medoid</li>
+<li>While the cost of the configuration decreases:
+<ol>
+<li>For each medoid $m$, for each non-medoid data point $o$:
+<ol>
+<li>Swap $m$ and $o$, recompute the cost (sum of distances of points to their medoid)</li>
+<li>If the total cost of the configuration increased in the previous step, undo the swap</li>
+</ol></li>
+</ol></li>
+</ol>
+<h3>Voronoi Iteration Method</h3>
+<ol>
+<li>Select $k$ of the $n$ data points as medoids</li>
+<li>While the cost of the configuration decreases
+<ol>
+<li>In each cluster, make the point that minimizes the sum of distances within the cluster the medoid</li>
+<li>Reassign each point to the cluster defined by the closest medoid determined in the previous step.</li>
+</ol></li>
+</ol>
+<h3>Clustering Large Applications (CLARA</h3>
+<p>This is a variant of the PAM algorithm that relies on the sampling approach to handle large datasets. The cost of a particular cluster configuration is the mean cost of all the dissimilarities.</p>
+<h2>R Implementations</h2>
+<p>Both PAM and CLARA are defined in the <code>cluster</code> package in R.</p>
+<pre><code class="language-R">clara(x, k, metric = "euclidean", stand = FALSE, samples = 5, 
+      sampsize = min(n, 40 + 2 * k), trace = 0, medoids.x = TRUE,
+      keep.data = medoids.x, rngR = FALSE)</code></pre>
+<pre><code class="language-R">pam(x, k, metric = "euclidean", stand = FALSE)</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

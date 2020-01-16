@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for January 18</h1>
+<h2>Variables and Assignment</h2>
+<p>Think about variables as buckets that hold information. Once the bucket is created, only one type of item can go in the bucket.</p>
+<pre><code class="language-java">sand bucket1;</code></pre>
+<p>We can say that bucket1 is of type <code>sand</code>, that means the only thing that can go in the bucket is sand.</p>
+<pre><code class="language-java">int bucket1;
+double bucket2;</code></pre>
+<p>From the two lines above, we have <em>declared</em> the variable.</p>
+<p>Variables store state, they are a name for a location in memory. </p>
+<p>Always remember to initialize your variables. Otherwise there's nothing in the bucket!</p>
+<pre><code class="language-java">bucket1 = 5;</code></pre>
+<p>You can combine both the declaration and initialization</p>
+<pre><code class="language-java">int count = 15;</code></pre>
+<p>Remember when dealing with variables to stay true with the type, don't mix a bucket of water with a bucket of sand.</p>
+<p>We can update <code>count</code> to contain a true value</p>
+<pre><code class="language-java">count = 55;</code></pre>
+<p><code>count</code> no longer has the value of <code>15</code> in it. There's no record of it! It has been overwritten with the value <code>55</code></p>
+<h3>Primitive Types</h3>
+<p>There are 8 primitive types in Java</p>
+<ul>
+<li>boolean</li>
+<li>char</li>
+<li>byte</li>
+<li>short</li>
+<li>int</li>
+<li>long</li>
+<li>float</li>
+<li>double</li>
+</ul>
+<p>byte through double are all <em>numeric</em> types</p>
+<h4>Boolean</h4>
+<p><code>boolean</code> can only be equal to <code>true</code> or <code>false</code></p>
+<pre><code class="language-java">boolean student = true;</code></pre>
+<h4>Char</h4>
+<p>Stores a single character from the Unicode set</p>
+<p>There are 16 bits per character which adds up to 65,536 characters</p>
+<p>ASCII is the US subset of the characters. You can look this up online when needing to deal with ASCII values</p>
+<pre><code class="language-java">char firstLetter = 'A';</code></pre>
+<h3>Numeric types</h3>
+<p>The different numeric types determine the precision of your number. Since numbers are not represented the same in the computer as they are in real life, there are some approximations.</p>
+<p>The default type you can use your code is <code>int</code> for integers and <code>double</code> for numbers with a decimal point</p>
+<p>There are certain types of operations you can perform on numeric type</p>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Example</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>addition</td>
+<td>43 + 8</td>
+<td>51</td>
+</tr>
+<tr>
+<td>-</td>
+<td>subtraction</td>
+<td>43.0-8.0</td>
+<td>35.0</td>
+</tr>
+<tr>
+<td>*</td>
+<td>multiplication</td>
+<td>43 * 8</td>
+<td>344</td>
+</tr>
+<tr>
+<td>/</td>
+<td>division</td>
+<td>43.0 / 8.0</td>
+<td>5.375</td>
+</tr>
+<tr>
+<td>%</td>
+<td>remainder / mod</td>
+<td>43 % 8</td>
+<td>3</td>
+</tr>
+<tr>
+<td>-</td>
+<td>unary minus</td>
+<td>-43</td>
+<td>-43</td>
+</tr>
+</tbody>
+</table>
+<h4>Increment/ Decrement</h4>
+<p>There are two types of in/decrementers postfix and prefix</p>
+<p>Postfix:</p>
+<pre><code class="language-java">int x = 0;
+int y = 7;
+x++; // Shortcut for x = x + 1
+y--; // Shortcut for y = y - 1</code></pre>
+<p>Prefix</p>
+<pre><code class="language-java">int x = 0, y = 7, z;
+z = y * x++; // Equivalent to (y * x) + 1 = 7 * 0
+z = y * ++x; // Equivalent to y * (x + 1) = 7 * 1</code></pre>
+<h3>Data Conversion</h3>
+<p>There are two types of data conversion, implicit and explicit</p>
+<p>The compiler can perform implicit data conversion automatically.</p>
+<p>Performing an explicit data conversion requires additional work on the programmer's part</p>
+<p>A conversion is implicit if you do <strong>not</strong> lose any information in it</p>
+<pre><code class="language-java">double price = 6.99;
+int sale = 3;
+double total = price - sale;</code></pre>
+<p>A <em>cast</em> is an explicit data conversion. This is requested by a programmer, this can lead to loss of information</p>
+<pre><code class="language-java">int nextChar = 'b';
+Character.isAlphabetic( (char) nextChar); // Let's you print the actual letter 'b' instead of the number corresponding to it
+
+float price = 6.99;
+int cost = (int) price; // cost is now 6</code></pre>
+<h3>Printing variables</h3>
+<p>You can print the values of variables using <code>System.out.println</code> and <code>System.out.print</code></p>
+<p>The difference is that <code>System.out.println</code> adds a new line at the end. Meaning the next print out will be on the next line.</p>
+<pre><code class="language-java">int cost = 5;
+double sale = .30;
+System.out.print(cost);
+System.out.print(sale);
+// Prints out '5.30`
+System.out.println(cost);
+System.out.println(sale);
+// Prints out '5'
+// Prints out '0.30'</code></pre>
+<p>To add a space between two variables in a print, add <code>" "</code> to the expression in between the two variables</p>
+<pre><code class="language-java">System.out.println("The total cost is " + 5 " dollars and" + " " + 93 + " cents");
+// The total cost is 5 dollars and 94 cents</code></pre>
+<h3>Input from User</h3>
+<p>You can get import from the user, we can do this using the <code>Scanner</code> class.</p>
+<p>First import it  at the top of your file</p>
+<pre><code class="language-java">import java.util.Scanner;</code></pre>
+<p>All you can do with <code>Scanner</code> is outlined in the Java API at this link <a href="https://docs.oracle.com/javase/8/docs/api/index.html?java/util/Scanner.html">https://docs.oracle.com/javase/8/docs/api/index.html?java/util/Scanner.html</a></p>
+<p>Create a Scanner object</p>
+<pre><code class="language-java">Scanner input = new Scanner(System.in);
+System.out.print("Please enter an integer: ");
+price = input.nextInt(); // The integer that the user inputs is now stored in price
+System.out.println("Your input: " + price);</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture Notes Oct 2nd</h1>
+<h2>Array</h2>
+<p><code>array</code> is not a reserved word, it's a concept. Arrays are able to hold multiple values under one name of the same type.</p>
+<p>For instance, you can have an array of integers.</p>
+<p>Properties of an array</p>
+<ul>
+<li>Size (n)</li>
+<li>index [0, n - 1]</li>
+</ul>
+<p>You can declare arrays by saying the type '[]' and the name of the array</p>
+<pre><code class="language-java">int[] numbers;
+double[] gpas;
+float[] grades;</code></pre>
+<p>Before you can use the array, you must <code>new</code> it</p>
+<pre><code class="language-java">numbers = new int[10];</code></pre>
+<p>Where 10 is the size of the array.</p>
+<p>You can combine both the declaration and initialization</p>
+<pre><code class="language-java">double[] points = new double[7];</code></pre>
+<p>You can access individual elements of the array by using its index. Indexes start from zero</p>
+<pre><code class="language-java">points[0] = 5.4; // The first element in the point array is 5.4</code></pre>
+<p>The <code>.length</code> property of an array gives the size of the array</p>
+<h2>For-Loops + Arrays</h2>
+<p>You can print out each element in the array using a for loop</p>
+<pre><code class="language-java">for (int i = 0; i &lt; numbers.length; i++) {
+    System.out.println(numbers[i]);
+}</code></pre>
+<p>You can ask a user to input a value to each element in the array</p>
+<pre><code class="language-java">for (int i = 0; i &lt; points.length; i++) {
+    System.out.print("Enter a number: ");
+    points[i] = scnr.nextInt();
+}</code></pre>
+<h2>While-Loops + Arrays</h2>
+<p>You can use a while loop to search the array</p>
+<pre><code class="language-java">int i = 0;
+int number = 5;
+// While the index is within the array size and the number isn't found
+while (i != number.length &amp;&amp; number != numbers[i]) {
+    i++
+}
+if (i == numbers.length) {
+    System.out.println(number + " was not found.")
+} else {
+    System.out.println(number + " was found at index " + i)
+}</code></pre>
+<p>If you don't include the <code>i != number.length</code> you will obtain an <code>IndexOutOfBounds</code> error.</p>
+<p>The example above is called a <em>Linear Search</em>. </p>
+<p>Linear searches work on an unsorted and sorted arrays.</p>
+<h2>Methods + Arrays</h2>
+<p>You can pass an array into a method</p>
+<pre><code class="language-java">public static void exampleMethod(int[] sample) {
+    // Do something
+}
+public static void main(String[] args) {
+    int[] s = new int[30];
+    exampleMethod(s);
+}</code></pre>
+<h2>Do-While Loops</h2>
+<p>For-loops can run 0 or more times. If you want something to execute at least once. Use a do-while loop.</p>
+<pre><code class="language-java">do {
+    // Code
+} while (condition);</code></pre>
+<p>For example, to search at least once and asking whether the user wants to search again</p>
+<pre><code class="language-java">// Assume linearSearch and array are defined
+char answer;
+Scanner input = new Scanner(System.in);
+do { 
+  linearSearch(array, input);
+  System.out.print("Do you want to search again? (Y/N) ");
+  input.nextLine();
+  answer = input.next().charAt(0);
+} while( answer != 'N');</code></pre>
+<p>You can create any type of loop just by using a while loop.</p>
+<h2>Example: Finding the Max</h2>
+<p>You can find the max of an array using the following method</p>
+<pre><code class="language-java">double max = arrayName[0];
+for (int i = 1; i &lt; arrayName.length; i++) {
+    if (max &lt; arrayName[i]) {
+        max = arrayName[i];
+    }
+}
+System.out.println("The max is " + max);</code></pre>
+<h2>Example: Summing up an array</h2>
+<p>You can sum the array using the following method</p>
+<pre><code class="language-java">double sum = 0;
+for (int i = 0; i &lt; arrayName.length; i++) {
+    sum += arrayName[i];
+}
+System.out.println("The sum is " + sum);</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

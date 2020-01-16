@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Oct 30 Lecture</h1>
+<h2>Sorting</h2>
+<h3>Bubble Sort</h3>
+<p>These instructions are to sort in descending order, to sort in ascending order just negate the condition.</p>
+<p>This sort is a series of iterations, for each iteration you go to the bottom of the array. Then compare if the value is greater than the element before it. If it is, then you </p>
+<ol>
+<li>Go to the bottom of the array</li>
+<li>Compare the value to the one before it
+<ol>
+<li>If it's greater than the element before it -&gt; swap</li>
+</ol></li>
+<li>Move on to the value before it and repeat step 2.</li>
+</ol>
+<p>Once you go through an iteration, the last thing being compared is the greatest value of the entire array. That means you don't have to check it every time anymore. </p>
+<p>Keep going through all the iterations until n, where n is the size of the array, iterations have been completed.</p>
+<h3>Swapping Values</h3>
+<p>If you try to swap variables by saying</p>
+<pre><code class="language-java">y = x;
+x = y;</code></pre>
+<p>then you'll end up overwriting y's value with x and both variable would have x's value.</p>
+<p>If you want to actually swap variables, you must create a temporary variable that saves y's value so that it can be properly assigned to x.</p>
+<pre><code class="language-java">int temp;
+temp = y;
+y = x;
+x = temp;</code></pre>
+<h3>Implementation (Not Complete)</h3>
+<pre><code class="language-java">// Each iteration
+for (int j = 0; j &lt; array.length - 1; j++) {
+  // Each element in the list
+  for (int i = 0; i &lt; array.length - 1; i++) {
+    // Is the element greater than the one after it?
+    if (array[i] &gt; array[i + 1]) {
+     // Swap
+      int temp = array[i + 1];
+      array[i + 1] = array[i];
+      array[i] = temp;
+    }
+  }
+}</code></pre>
+<p>This here compares each of the values each time. If you remember before, I said that you don't have to compare the topmost each time.</p>
+<h3>Implementation</h3>
+<p>To change this,  just change the second loop condition</p>
+<pre><code class="language-java">// Each iteration
+for (int j = 0; j &lt; array.length - 1; j++) {
+  // Each element in the list
+  for (int i = 0; i &lt; array.length - 1 - i; i++) { // Note this line
+    // Is the element greater than the one after it?
+    if (array[i] &gt; array[i + 1]) {
+     // Swap
+      int temp = array[i + 1];
+      array[i + 1] = array[i];
+      array[i] = temp;
+    }
+  }
+}</code></pre>
+<h2>Compare</h2>
+<p>In Java, you can compare numbers, strings, and even your own customized objects. To compare your own customize object, you must write a method called <code>compare</code> in your class.</p>
+<h3>To use your compare method in the sorting algorithm</h3>
+<pre><code class="language-java">// Each iteration
+for (int j = 0; j &lt; array.length - 1; j++) {
+  // Each element in the list
+  for (int i = 0; i &lt; array.length - 1 - i; i++) {
+    // Is the element greater than the one after it?
+    if (array[i].compare(array[i + 1])) { // Note this line
+     // Swap
+      int temp = array[i + 1];
+      array[i + 1] = array[i];
+      array[i] = temp;
+    }
+  }
+}</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

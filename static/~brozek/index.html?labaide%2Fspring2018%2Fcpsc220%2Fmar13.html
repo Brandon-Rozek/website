@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for March 13th</h1>
+<h2>Methods</h2>
+<p>Methods are small blocks of statements that make it easier to solve a problem. It usually focuses on solving a small part of the overall problem.</p>
+<p>Usually in methods you provide some sort of input and get some output out of it.</p>
+<h3>Advantages</h3>
+<ul>
+<li>Code readability</li>
+<li>Modular program development (break up the problem in chunks)</li>
+<li>Incremental development</li>
+<li>No redundant code!</li>
+</ul>
+<h3>Method definition</h3>
+<p>Consists of a method name, input and output and the block of statements.</p>
+<p>Usually this is succinctly written using JavaDocs which is what you see in the JavaAPI</p>
+<h3>Method Call</h3>
+<p>A method call is the execution of the method. The statements defined in the method is what will execute.</p>
+<h3>Method Stubs</h3>
+<p>Recall from method definition the parts of the method definition. Now look at the following method</p>
+<pre><code class="language-java">String[] split(String s)</code></pre>
+<p>The output here is <code>String[]</code></p>
+<p>The method name is <code>split</code></p>
+<p>The input is <code>String s</code></p>
+<h2>Modular Programming</h2>
+<p>Let us look at the following example:</p>
+<p>The program should have a list of grocery prices. It should be able to calculate the total cost of groceries. The store gives a student discount of 5%. The program should calculate this discount and update the total, it should calculate and add the 2.5% tax.</p>
+<ul>
+<li>First you should add it all up</li>
+<li>Then compute the discount</li>
+<li>Then add the tax</li>
+</ul>
+<h2>Parts of a method definition</h2>
+<pre><code class="language-java">public static int timesTwo(int num) {
+    int two = num * 2;
+    return two;
+}</code></pre>
+<p>It first starts off by declaring the visibility <code>public</code></p>
+<p>The return type if <code>int</code></p>
+<p>The method name is <code>timesTwo</code></p>
+<p>The input parameter is <code>int num</code></p>
+<p>Between the curly braces is the <em>body</em> of the method</p>
+<h2>Calling a Method</h2>
+<pre><code class="language-java">int a = 5;
+int b = 3;
+
+int ans = multiply(a, b)</code></pre>
+<p>The method call is <code>multiply(a, b)</code> and the result is stored in the variable <code>ans</code></p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

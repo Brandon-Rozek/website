@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture on March 22nd</h1>
+<h2>Method Documentation</h2>
+<p>Java has a special way that you can document your methods such that it will create documentation for you if you follow the convention.</p>
+<p>The Java API actually uses this technique to produce its own documentation.</p>
+<p>To create this, indicate a method with special comments that begin with <code>/**</code> and ends with <code>*/</code></p>
+<p>It contains <em>block tags</em> that describe input and output parameters</p>
+<p><code>@param</code> and <code>@return</code></p>
+<h3>Example</h3>
+<pre><code class="language-java">/**
+ * @param y an integer to sum
+ * @param x an integer to sum
+ * @return the sum of x and y
+ */
+public int multiply(int x, int y) {
+    return x + y;
+}</code></pre>
+<h2>Passing a Scanner</h2>
+<p>We only want to create one <strong>user input scanner</strong> per program, we also only want one <strong>file input scanner</strong> per program.</p>
+<p>If a method needs a scanner, you can pass the one you already created in as an input parameter.</p>
+<h2>Array as Input Parameter</h2>
+<p>Primitive types (<code>int</code>, <code>char</code>, <code>double</code>, etc.) are passed by value. Modifications made inside a method cannot be seen outside the method.</p>
+<p>Arrays on the other hand, is pass by reference. Changes made to an array inside the method can be seen outside the method.</p>
+<pre><code class="language-java">public static void main(String[] args) {
+    int[] nums = {1, 3, 5, 7, 9};
+
+    timesTwo(nums);
+}
+public static void timesTwo(int[] arr) {
+    for (int i = 0; i &lt; arr.length; i++) {
+        arr[i] *= 2;
+    }
+}</code></pre>
+<p>At the end of the <code>timesTwo</code> method call, the variable <code>nums</code> would have <code>{2, 6, 10, 14, 18}</code></p>
+<h2>Sizes of Arrays</h2>
+<h3>Perfect Size Arrays</h3>
+<p>When we declare an array, Java automatically fills every slot of the array with the type in memory. So if you know that you need exactly 8 slots, then you only ask for 8.</p>
+<h3>Oversize Arrays</h3>
+<p>This is when we don't know how many slots we need. Therefore, we ask for more than we think we'll need. That way we don't go out of bounds.</p>
+<p>If we do this, then we don't know how many elements we have already inserted into the array. Since the length is the number of slots.</p>
+<p>So we can create another variable, which will keep track of the index in where we can add the next element.</p>
+<p>We use oversized arrays when the size of the array is unknown or may change.</p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

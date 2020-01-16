@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for January 16 2018</h1>
+<h2>Comments</h2>
+<p>You can use multi-line comments or single line comments to note about a piece of code. This helps you so that you don't forget what was happening in the code</p>
+<pre><code class="language-java">/* Multi Line Comment
+I am multiple lines woo!
+*/
+
+System.out.println("Hello"); // I am an inline comment</code></pre>
+<h3>Javadocs</h3>
+<p>This is a standardized method in Java to describe your functions and classes</p>
+<pre><code class="language-java">/**
+ * This is a Javadoc comment. A description of your class should appear here
+ * @author Brandon
+ * @version 2018
+ */
+public class Example{
+  /** Another Javadoc comment.
+   * A description of your program should go here
+   */
+  public static void main(String[] args) {
+
+  }
+}</code></pre>
+<h2>Variables</h2>
+<p>Convention in Java is for all of your functions/method names to be lowercase.</p>
+<p>Class names should be title cased, each word is capitalized ex: <code>IntroExample</code></p>
+<h2>Java API</h2>
+<p>The Java API is publicly accessible and is extremely useful for finding methods in existing classes.</p>
+<p>The API documentation for the <code>String</code> class is located here: <a href="https://docs.oracle.com/javase/8/docs/api/index.html?java/lang/String.html">https://docs.oracle.com/javase/8/docs/api/index.html?java/lang/String.html</a></p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

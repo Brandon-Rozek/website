@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for January 25</h1>
+<h2>Strings</h2>
+<p>These are concatenated chars</p>
+<pre><code class="language-java">'d' + 'o' + 'g' // equivalent to "dog"</code></pre>
+<pre><code class="language-java">"straw" + "berry" // strawberry</code></pre>
+<p>Strings are denoted by double quotes <code>""</code> rather than a string which is denoted by single quotes <code>''</code></p>
+<p>String is not a primitive type, it is a class. Hence, why it is capitalized in Java.</p>
+<p>The <code>java.lang.String</code> is automatically imported in Java.</p>
+<p>To declare and initialize a String</p>
+<pre><code class="language-java">String name = "Henry";</code></pre>
+<p>In memory it appears as</p>
+<table>
+<thead>
+<tr>
+<th>H</th>
+<th>'e'</th>
+<th>'n'</th>
+<th>'r'</th>
+<th>'y'</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>String Methods</h3>
+<pre><code class="language-java">int length()</code></pre>
+<pre><code class="language-java">boolean equals(String another)</code></pre>
+<pre><code class="language-java">boolean startsWith(String prefix)</code></pre>
+<pre><code class="language-java">boolean endsWith(String suffix)</code></pre>
+<pre><code class="language-java">String substring(int start, int end)</code></pre>
+<pre><code class="language-java">int indexOf(int ch)</code></pre>
+<pre><code class="language-java">String toLowerCase()</code></pre>
+<h3>Using String Methods</h3>
+<pre><code class="language-java">char first = name.charAt(0);</code></pre>
+<p>Remember in Java, that it starts counting from zero! If you try to access a letter that doesn't exist, it will produce an <code>IndexOutOfBounds</code> error.</p>
+<h2>Errors</h2>
+<p>There are two types of errors, compile-type errors and run-time errors.  Later we will talk about debugging skills such as making &quot;breakpoints&quot; in your code so you can analyze the different variable values.</p>
+<h3>Compile Time Errors</h3>
+<p>Compile time errors are generated due to syntax errors. Forgot a semicolon? Missing a brace? </p>
+<h3>Run-time Errors</h3>
+<p>These are logic errors. Not derived from syntax errors. An example of one that was discussed earlier is the <code>IndexOutOfBounds</code> error.</p>
+<h2>Tricky Thing About Input</h2>
+<p>Let's talk about input right now. Let's say you have the following scenario</p>
+<pre><code class="language-java">Scanner input = new Scanner(System.in);
+System.out.println("Enter pet's age: ");
+int age = input.nextInt();
+System.out.println("Enter pet's name: ");
+String name = input.nextLine();
+System.out.println("Enter pet's breed: ");
+String breed = input.next();</code></pre>
+<p>Then when we start to run the program...</p>
+<pre><code class="language-reStructuredText">Enter pet's age: 
+14
+Enter pet's name:
+Enter pet's breed:
+Labradoodle</code></pre>
+<p>Why did it skip pet's name? Let's run through the process again</p>
+<pre><code class="language-reStructuredText">Enter pet's age: 
+14 [ENTER]
+Enter pet's name:
+Enter pet's breed:
+Labradoodle</code></pre>
+<p>Here the [ENTER] key gets saved into name.</p>
+<p>To resolve this, just use an <code>input.nextLine()</code> to throw away that [ENTER]</p>
+<pre><code class="language-java">Scanner input = new Scanner(System.in);
+System.out.println("Enter pet's age: ");
+int age = input.nextInt();
+System.out.println("Enter pet's name: ");
+input.nextLine();
+String name = input.nextLine();
+System.out.println("Enter pet's breed: ");
+String breed = input.next();</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

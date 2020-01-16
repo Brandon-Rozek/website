@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for January 23</h1>
+<h2>Java Class</h2>
+<p>In Java, your code must live in a class.</p>
+<pre><code class="language-java">public class NameOfClass {
+  public static void main(String[] args) {
+    // All program code
+  }
+}</code></pre>
+<p>It is important that <code>NameOfClass</code> is named meaningfully for the code. It is convention to use CamelCase when using classes. (Capitalize your class names!)</p>
+<p>All methods have a method signature, it is unique to it. For main it is the words <code>public static void</code> and the argument <code>String[] args</code>.</p>
+<p><code>public</code> means that any other piece of code can reference it.</p>
+<p><code>void</code> means that the method returns nothing</p>
+<p><code>main</code> is the name of the method. It is important to have <code>main</code> since that tells the Java Interpreter where to start in your program.</p>
+<p><code>String[] args</code> is the command line arguments inputted into the program. For this part of the class, we don't need to worry about it.</p>
+<p>If you noticed <code>String</code> is a class, it is not a primitive type. This is denoted in Java by having it capitalized.</p>
+<h2>Arithmetic Expressions</h2>
+<p>There is an order of operations in programming as well. It goes like this:</p>
+<ol>
+<li>Parenthesis</li>
+<li>Unary Operations</li>
+<li>*, /, %</li>
+<li>+, -</li>
+</ol>
+<p>And from there you read from left to right.</p>
+<h2>Constant Variables</h2>
+<p>These are variables that can never be changed</p>
+<pre><code class="language-java">final int MINUTES_PER_HOUR = 60</code></pre>
+<p>The keyword <code>final</code> indicates to the Java compiler that it is a constant variable.</p>
+<p>By convention, constants are in all caps with underscores being separated between the words</p>
+<h2>Java Math Library</h2>
+<p>There are some arithmetic expressions that we want to be able to do and we cannot achieve that simply with the standard operations</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Math.sqrt(x)</td>
+<td>square root</td>
+</tr>
+<tr>
+<td>Math.abs(x)</td>
+<td>absolute value</td>
+</tr>
+<tr>
+<td>Math.pow(a, b)</td>
+<td>exponentiation $a^b$</td>
+</tr>
+<tr>
+<td>Math.max(a, b)</td>
+<td>returns the maximum of a or b</td>
+</tr>
+<tr>
+<td>Math.min(a, b)</td>
+<td>returns the minimum of a or b</td>
+</tr>
+<tr>
+<td>Math.round(x)</td>
+<td>rounds to the nearest integer</td>
+</tr>
+</tbody>
+</table>
+<h2>Example: Finding Areas</h2>
+<pre><code class="language-java">public class MoreVariables
+  public static void main(String[] args) {
+    // Decrate a variable
+    int x;
+
+    // Initialize ia variable
+    x = 5;
+
+    // Area of a square
+    int squareArea = x * x;
+    System.out.println("Area of a square: " + squareArea);
+    double newSquare = Math.pow(x, 2);
+    System.out.println("Area of square: " + newSquare);
+
+    // Area of Circle
+    final double PI = 3.14159;
+    double radius = 3;
+    double circleArea = radius * radius * PI;
+    System.out.println("Area of circle: " + circleArea);
+
+}</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

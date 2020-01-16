@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for February 27th</h1>
+<h2>Review for midterm</h2>
+<p>Chapter 1 -- Code Style, API</p>
+<p>Chapter 2 -- Variables &amp; Assignments, strings</p>
+<p>Chapter 3 -- input &amp; output</p>
+<p>Chapter 4 -- branches (if, if/else, switch)</p>
+<p>Chapter 5 -- loops (while, for), scope</p>
+<p>Chapter 6 -- File Reading and Writing</p>
+<h2>Separated vs Connected Branches</h2>
+<p>What is the output of this code?</p>
+<pre><code class="language-java">String preferredLanguage = "Spanish";
+if (preferredLanguage.equals("Chinese")) {
+    System.out.println("Ni hao!");
+}
+if (preferredLanguage.equals("Spanish")) {
+    System.out.println("Hola!");
+}
+if (preferredLanguage.equals("French")) {
+    System.out.println("Bonjour!");
+}
+if (preferredLanguage.equals("German")) {
+    System.out.println("Gutentag!")
+} else {
+    System.out.println("Hello!")
+}</code></pre>
+<p>The output is</p>
+<pre><code class="language-reStructuredText">Hola!
+Hello!</code></pre>
+<p>This is because each of the if statements are independent from each other. Whether or not the if statement gets check is not affected by the if statements around it.</p>
+<p>Since the preferred language equals Spanish it outputs <code>Hola!</code> But since the language is also <em>not German</em> it prints out <code>Hello!</code> as well.</p>
+<h2>Using an Array</h2>
+<p>Square brackets notation is used to access elements, array slots can be used as variables</p>
+<pre><code class="language-java">int[] array = new int[7]; // Creates an integer array of size 7
+array[0] = 5;</code></pre>
+<h2>Swapping Elements</h2>
+<p>You can swap <code>x</code> and <code>y</code> in the following way with a <em>temporary</em> variable</p>
+<pre><code class="language-java">int x = 6;
+int y = 1;
+
+int temp = x;
+
+x = y;
+y = temp;</code></pre>
+<h2>Two-Dimensional Arrays</h2>
+<pre><code class="language-java">// Creates a 2D array of two rows and three columns
+int[][] a = new int[2][3]</code></pre>
+<p>You can access an element of this 2D array using the conventional square bracket notation</p>
+<pre><code class="language-java">a[0][0] = 5;</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

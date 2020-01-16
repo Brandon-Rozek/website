@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Reinforcement Learning</h1>
+<p>The goal of this independent study is to gain an introduction to the topic of Reinforcement Learning. </p>
+<p>As such the majority of the semester will be following the textbook to gain an introduction to the topic, and the last part applying it to some problems.</p>
+<h2>Textbook</h2>
+<p>The majority of the content of this independent study will come from the textbook. This is meant to lessen the burden on the both us of as I already experimented with curating my own content.</p>
+<p>The textbook also includes examples throughout the text to immediately apply what's learned.</p>
+<p>Richard S. Sutton and Andrew G. Barto, &quot;Reinforcement Learning: An Introduction&quot; <a href="http://incompleteideas.net/book/bookdraft2017nov5.pdf">http://incompleteideas.net/book/bookdraft2017nov5.pdf</a></p>
+<h2>Discussions and Notes</h2>
+<p>Discussions and notes will be kept track of and published on my tilda space as time and energy permits. This is for easy reference and since it's nice to write down what you learn.</p>
+<h2>Topics to be Discussed</h2>
+<h3>The Reinforcement Learning Problem (3 Sessions)</h3>
+<p>In this section we will get ourselves familiar with the topics that are commonly discussed in Reinforcement learning problems.</p>
+<p>In this section we will learn the different vocab terms such as:</p>
+<ul>
+<li>Evaluative Feedback </li>
+<li>Non-Associative Learning</li>
+<li>Rewards/Returns</li>
+<li>Value Functions</li>
+<li>Optimality</li>
+<li>Exploration/Exploitation</li>
+<li>Model</li>
+<li>Policy</li>
+<li>Value Function</li>
+<li>Multi-armed Bandit Problem</li>
+</ul>
+<h3>Markov Decision Processes (4 Sessions)</h3>
+<p>This is a type of reinforcement learning problem that is commonly studied and well documented. This helps form an environment for which the agent can operate within. Possible subtopics include:</p>
+<ul>
+<li>Finite Markov Decision Processes</li>
+<li>Goals and Rewards</li>
+<li>Returns and Episodes</li>
+<li>Optimality and Approximation</li>
+</ul>
+<h3>Dynamic Programming (3 Sessions)</h3>
+<p>Dynamic Programming refers to a collection of algorithms that can be used to compute optimal policies given an environment. Subtopics that we are going over is:</p>
+<ul>
+<li>Policy Evaluation</li>
+<li>Policy Improvement</li>
+<li>Policy Iteration</li>
+<li>Value Iteration</li>
+<li>Asynchronous DP</li>
+<li>Generalized policy Iteration </li>
+<li>Bellman Expectation Equations</li>
+</ul>
+<h3>Monte Carlo Methods (3 Sessions)</h3>
+<p>Now we move onto not having complete knowledge of the environment. This will go into estimating value functions and discovering optimal policies. Possible subtopics include:</p>
+<ul>
+<li>Monte Carlo Prediction</li>
+<li>Monte Carlo Control</li>
+<li>Importance Sampling</li>
+<li>Incremental Implementation</li>
+<li>Off-Policy Monte Carlo Control</li>
+</ul>
+<h3>Temporal-Difference Learning (4-5 Sessions)</h3>
+<p>Temporal-Difference learning is a combination of Monte Carlo ideas and Dynamic Programming. This can lead to methods learning directly from raw experience without knowledge of an environment. Subtopics will include:</p>
+<ul>
+<li>TD Prediction</li>
+<li>Sarsa: On-Policy TD Control</li>
+<li>Q-Learning: Off-Policy TD Control</li>
+<li>Function Approximation</li>
+<li>Eligibility Traces</li>
+</ul>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

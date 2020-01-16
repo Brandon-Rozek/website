@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Introduction to Density Based Clustering</h1>
+<p>In density-based clustering, clusters are defined as areas of higher density than the remainder of the data sets. Objects in more sparse areas are considered to be outliers or border points. This helps discover clusters of arbitrary shape.</p>
+<h2>DBSCAN</h2>
+<p>Given a set of points in space, it groups together points that are closely packed together while marking points that lie alone in low-density regions as outliers.</p>
+<h3>Preliminary Information</h3>
+<ul>
+<li>A point $p$ is a core point if at least k (often referred to as minPts) are within $\epsilon$ of it. Those points are said to be <em>directly reachable</em> from $p$.</li>
+<li>A point $q$ is directly reachable from $p$ if point $q$ is within distance $\epsilon$ from point $p$ and $p$ must be a core point</li>
+<li>A point $q$ is reachable from $p$ if there is a path $p_1, \dots, p_n$ with $p_1 = p$ and $p<em>n = q$ where each $p</em>{i + 1}$ is directly reachable from $p_i$. (All points on the path must be core points, with the possible exception of $q$)</li>
+<li>All points not reachable from any other points are outliers</li>
+</ul>
+<p>Non core points can be part of a cluster, but they form its &quot;edge&quot;, since they cannot be used to reach more points.</p>
+<p>Reachability is not a symmetric relation since, by definition, no point may be reachable from a non-core point, regardless of distance. </p>
+<p>Two points $p$ and $q$ are density-connected if there is a point $o$ such that both $p$ and $q$ are reachable from $o$. Density-connectedness is symmetric.</p>
+<p>A cluster then satisfies two properties:</p>
+<ol>
+<li>All points within the cluster are mutually density-connected</li>
+<li>If a point is density-reachable from any point of the cluster, it is part of the cluster as well.</li>
+</ol>
+<h3>Algorithm</h3>
+<ol>
+<li>Find the $\epsilon$ neighbors of every point, and identify the core points with more than $k$ neighbors.</li>
+<li>Find the connected components of <em>core</em> points on the neighborhood graph, ignoring all non-core points.</li>
+<li>Assign each non-core point to a nearby cluster if the cluster is an $\epsilon$ (eps) neighbor, otherwise assign it to noise.</li>
+</ol>
+<h3>Advantages</h3>
+<ul>
+<li>Does not require one to specify the number of clusters in the data</li>
+<li>Can find arbitrarily shaped clusters</li>
+<li>Has a notion of noise and is robust to outliers</li>
+</ul>
+<h3>Disadvantages</h3>
+<ul>
+<li>Not entirely deterministic: border points that are reachable from more than one cluster can be part of either cluster.</li>
+<li>The quality to DBSCAN depends on the distance measure used.</li>
+<li>Cannot cluster data sets well with large differences in densities.</li>
+</ul>
+<h3>Rule of Thumbs for parameters</h3>
+<p>$k$: $k$ must be larger than $(D + 1)$ where $D$ is the number of dimensions in the dataset. Normally $k$ is chosen to be twice the number of dimensions.</p>
+<p>$\epsilon$: Ideally the $k^{th}$ nearest neighbors are at roughly the same distance. Plot the sorted distance of every point to it's $k^{th}$ nearest neighbor</p>
+<p>Example of Run Through</p>
+<p><a href="https://www.cse.buffalo.edu/~jing/cse601/fa12/materials/clustering_density.pdf">https://www.cse.buffalo.edu/~jing/cse601/fa12/materials/clustering_density.pdf</a></p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

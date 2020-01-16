@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Cluster Tendency</h1>
+<p>This is the assessment of the suitability of clustering. Cluster Tendency determines whether the data has any inherent grouping structure.</p>
+<p>This is a hard task since there are so many different definitions of clusters (portioning, hierarchical, density, graph, etc.) Even after fixing a cluster type, this is still hard in defining an appropriate null model for a data set.</p>
+<p>One way we can go about measuring cluster tendency is to compare the data against random data. On average, random data should not contain clusters.</p>
+<p>There are some clusterability assessment methods such as Spatial histogram, distance distribution and Hopkins statistic.</p>
+<h2>Hopkins Statistic</h2>
+<p>Let $X$ be the set of $n$ data points in $d$ dimensional space. Consider a random sample (without replacement) of $m &lt;&lt; n$ data points. Also generate a set $Y$ of $m$ uniformly randomly distributed data points.</p>
+<p>Now define two distance measures $u_i$ to be the distance of $y_i \in Y$ from its nearest neighbor in X and $w_i$ to be the distance of $x_i \in X$ from its nearest neighbor in X</p>
+<p>We can then define Hopkins statistic as
+$$
+H = \frac{\sum_{i = 1}^m{u<em>i^d}}{\sum</em>{i = 1}^m{u<em>i^d} + \sum</em>{i =1}^m{w_i^d}}
+$$</p>
+<h3>Properties</h3>
+<p>With this definition, uniform random data should tend to have values near 0.5, and clustered data should tend to have values nearer to 1.</p>
+<h3>Drawbacks</h3>
+<p>However, data containing a single Gaussian will also score close to one. As this statistic measures deviation from a uniform distribution. Making this statistic less useful in application as real data is usually not remotely uniform.</p>
+<h2>Spatial Histogram Approach</h2>
+<p>For this method, I'm not too sure how this works, but here are some key points I found.</p>
+<p>Divide each dimension in equal width bins, and count how many points lie in each of the bins and obtain the empirical joint probability mass function.</p>
+<p>Do the same for the randomly sampled data</p>
+<p>Finally compute how much they differ using the Kullback-Leibler (KL) divergence value. If it differs greatly than we can say that the data is clusterable.</p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

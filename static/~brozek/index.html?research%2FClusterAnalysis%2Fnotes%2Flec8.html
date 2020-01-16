@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Divisive Methods Pt 2.</h1>
+<p>Recall in the previous section that we spoke about Monothetic and Polythetic methods. Monothetic methods only looks at a single variable at a time while Polythetic looks at multiple variables simultaneously. In this section, we will speak more about polythetic divisive methods.</p>
+<h2>Polythetic Divisive Methods</h2>
+<p>Polythetic methods operate via a distance matrix.</p>
+<p>This procedure avoids considering all possible splits by </p>
+<ol>
+<li>Finding the object that is furthest away from the others within a group and using that as a seed for a splinter group.</li>
+<li>Each object is then considered for entry to that separate splinter group: any that are closer to the splinter group than the main group is moved to the splinter one. </li>
+<li>The step is then repeated.</li>
+</ol>
+<p>This process has been developed into a program named <code>DIANA</code> (DIvisive ANAlysis Clustering) which is implemented in <code>R</code>.</p>
+<h3>Similarities to Politics</h3>
+<p>This somewhat resembles a way a political party might split due to inner conflicts.</p>
+<p>Firstly, the most discontented member leaves the party and starts a new one, and then some others follow him until a kind of equilibrium is attained.</p>
+<h2>Methods for Large Data Sets</h2>
+<p>There are two common hierarchical methods used for large data sets <code>BIRCH</code> and <code>CURE</code>. Both of these algorithms employ a pre-clustering phase in where dense regions are summarized, the summaries being then clustered using a hierarchical method based on centroids.</p>
+<h3>CURE</h3>
+<ol>
+<li><code>CURE</code> starts with a random sample of points and represents clusters by a smaller number of points that capture the shape of the cluster</li>
+<li>Which are then shrunk towards the centroid as to dampen the effect of the outliers</li>
+<li>Hierarchical clustering then operates on the representative points</li>
+</ol>
+<p><code>CURE</code> has been shown to be able to cope with arbitrary-shaped clusters and in that respect may be superior to <code>BIRCH</code>, although it does require judgment as to the number of clusters and also a parameter which favors either more or less compact clusters.</p>
+<h2>Revisiting Topics: Cluster Dissimilarity</h2>
+<p>In order to decide where clusters should be combined (for agglomerative), or where a cluster should be split (for divisive), a measure of dissimilarity between sets of observations is required.</p>
+<p>In most methods of hierarchical clustering this is achieved by a use of an appropriate </p>
+<ul>
+<li>Metric (a measure of distance between pairs of observations)</li>
+<li>Linkage Criterion (which specifies the dissimilarities of sets as functions of pairwise distances observations in the sets)</li>
+</ul>
+<h2>Advantages of Hierarchical Clustering</h2>
+<ul>
+<li>Any valid measure of distance measure can be used</li>
+<li>In most cases, the observations themselves are not required, just hte matrix of distances
+<ul>
+<li>This can have the advantage of only having to store a distance matrix in memory as opposed to a n-dimensional matrix.</li>
+</ul></li>
+</ul>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

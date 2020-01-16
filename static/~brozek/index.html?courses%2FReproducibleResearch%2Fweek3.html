@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h2>tl;dr</h2>
+<p>People are busy, especially managers and leaders. Results of data analyses are sometimes presented in oral form, but often the first cut is presented via email.</p>
+<p>It is often useful therefore, to breakdown the results of an analysis into different levels of granularity/detail</p>
+<h2>Hierarchy of Information: Research Paper</h2>
+<ul>
+<li>Title / Author List
+<ul>
+<li>Speaks about what the paper is about</li>
+<li>Hopefully interesting</li>
+<li>No detail</li>
+</ul></li>
+<li>Abstract
+<ul>
+<li>Motivation of the problem</li>
+<li>Bottom Line Results</li>
+</ul></li>
+<li>Body / Results
+<ul>
+<li>Methods</li>
+<li>More detailed results</li>
+<li>Sensitivity Analysis</li>
+<li>Implication of Results</li>
+</ul></li>
+<li>Supplementary Materials / Gory Details
+<ul>
+<li>Details on what was done</li>
+</ul></li>
+<li>Code / Data / Really Gory Details
+<ul>
+<li>For reproducibility</li>
+</ul></li>
+</ul>
+<h2>Hierarchy of Information: Email Presentation</h2>
+<ul>
+<li>Subject Line / Subject Info
+<ul>
+<li>At a minimum: include one</li>
+<li>Can you summarize findings in one sentence?</li>
+</ul></li>
+<li>Email Body
+<ul>
+<li>A brief description of the problem / context: recall what was proposed and executed; summarize findings / results. (Total of 1-2 paragraphs)</li>
+<li>If action is needed to be taken as a result of this presentation, suggest some options and make them as concrete as possible</li>
+<li>If questions need to be addressed, try to make them yes / no</li>
+</ul></li>
+<li>Attachment(s)
+<ul>
+<li>R Markdown file</li>
+<li>knitr report</li>
+<li>Stay Concise: Don't spit out pages of code</li>
+</ul></li>
+<li>Links to Supplementary Materials
+<ul>
+<li>Code / Software / Data</li>
+<li>Github Repository / Project Website</li>
+</ul></li>
+</ul>
+<h2>DO: Start with Good Science</h2>
+<ul>
+<li>Remember: Garbage, in, garbage out</li>
+<li>Find a coherent focused question. This helps solve many problems</li>
+<li>Working with good collaborators reinforces good practices</li>
+<li>Something that's interesting to you will hopefully motivate good habits</li>
+</ul>
+<h2>DON'T: Do Things By Hand</h2>
+<ul>
+<li>Editing spreadsheets of data to &quot;clean it up&quot;
+<ul>
+<li>Removing outliers</li>
+<li>QA / QC</li>
+<li>Validating</li>
+</ul></li>
+<li>Editing tables or figures (e.g rounding, formatting)</li>
+<li>Downloading data from a website</li>
+<li>Moving data around your computer, splitting, or reformatting files.</li>
+</ul>
+<p>Things done by hand need to precisely documented (this is harder than it sounds!)</p>
+<h2>DON'T: Point and Click</h2>
+<ul>
+<li>Many data processing / statistical analysis packages have graphical user interfaces (GUIs)</li>
+<li>GUIs are convenient / intuitive but the actions you take with a GUI can be difficult for others to reproduce</li>
+<li>Some GUIs produce a log file or script which includes equivalent commands; these can be saved for later examination</li>
+<li>In general, be careful with data analysis software that is highly interactive; ease of use can sometimes lead to non-reproducible analyses.</li>
+<li>Other interactive software, such as text editors, are usually fine.</li>
+</ul>
+<h2>DO: Teach a Computer</h2>
+<p>If something needs to be done as part of your analysis / investigation, try to teach your computer to do it (even if you only need to do it once) </p>
+<p>In order to give your computer instructions, you need to write down exactly what you mean to do and how it should be done. Teaching a computer almost guarantees reproducibility</p>
+<p>For example, by, hand you can</p>
+<pre><code>    1. Go to the UCI Machine Learning Repository at http://archive.ics.uci.edu/mil/
+        2. Download the Bike Sharing Dataset</code></pre>
+<p>Or you can teach your computer to do it using R</p>
+<pre><code class="language-R">download.file("http://archive.ics.uci.edu/ml/machine-learning-databases/00275/Bike-Sharing-Dataset.zip", "ProjectData/Bike-Sharing-Dataset.zip")</code></pre>
+<p>Notice here that:</p>
+<ul>
+<li>The full URL to the dataset file is specified</li>
+<li>The name of the file saved to your local computer is specified</li>
+<li>The directory to which the filed was saved is specified (&quot;ProjectData&quot;)</li>
+<li>Code can always be executed in R (as long as link is available)</li>
+</ul>
+<h2>DO: Use Some Version Control</h2>
+<p>It helps you slow things down by adding changes into small chunks. (Don't just do one massive commit). It allows one to track / tag snapshots so that one can revert back to older versions of the project. Software like Github / Bitbucket / SourceForge make it easy to publish results.</p>
+<h2>DO: Keep Track of Your Software Environment</h2>
+<p>If you work on a complex project involving many tools / datasets, the software and computing environment can be critical for reproducing your analysis.</p>
+<p><strong>Computer Architecture</strong>: CPU (Intel, AMD, ARM), CPU Architecture, GPUs</p>
+<p><strong>Operating System</strong>: Windows, Mac OS, Linux / Unix</p>
+<p><strong>Software Toolchain</strong>: Compilers, interpreters, command shell, programming language (C, Perl, Python, etc.), database backends, data analysis software</p>
+<p><strong>Supporting software / infrastructure</strong>: Libraries, R packages, dependencies</p>
+<p><strong>External dependencies</strong>: Websites, data repositories, remote databases, software repositories</p>
+<p><strong>Version Numbers:</strong> Ideally, for everything (if available)</p>
+<p>This function in R helps report a bunch of information relating to the software environment</p>
+<pre><code class="language-R">sessionInfo()</code></pre>
+<h2>DON'T: Save Output</h2>
+<p>Avoid saving data analysis output (tables, figures, summaries, processed data, etc.), except perhaps temporarily for efficiency purposes.</p>
+<p>If a stray output file cannot be easily connected with the means by which it was created, then it is not reproducible</p>
+<p>Save the data + code that generated the output, rather than the output itself.</p>
+<p>Intermediate files  are okay as long as there is clear documentation of how they were created.</p>
+<h2>DO: Set Your Seed</h2>
+<p>Random number generators generate pseudo-random numbers based on an initial seed (usually a number or set of numbers)</p>
+<p>​   In R, you can use the <code>set.seed()</code> function to set the seed and to specify the random number generator to use</p>
+<p>Setting the seed allows for the stream of random numbers to be exactly reproducible</p>
+<p>Whenever you generate random numbers for a non-trivial purpose, <strong>always set the seed</strong>.</p>
+<h2>DO: Think About the Entire Pipeline</h2>
+<ul>
+<li>Data analysis is a lengthy process; it is not just tables / figures/ reports</li>
+<li>Raw data -&gt; processed data -&gt; analysis -&gt; report</li>
+<li>How you got the end is just as important as the end itself</li>
+<li>The more of the data analysis pipeline you can make reproducible, the better for everyone</li>
+</ul>
+<h2>Summary: Checklist</h2>
+<ul>
+<li>Are we doing good science?
+<ul>
+<li>Is this interesting or worth doing?</li>
+</ul></li>
+<li>Was any part of this analysis done by hand?
+<ul>
+<li>If so, are those parts precisely documented?</li>
+<li>Does the documentation match reality?</li>
+</ul></li>
+<li>Have we taught a computer to do as much as possible (i.e. coded)?</li>
+<li>Are we using a version control system?</li>
+<li>Have we documented our software environment?</li>
+<li>Have we saved any output that we cannot reconstruct from original data + code?</li>
+<li>How far back in the analysis pipeline can we go before our results are no longer (automatically reproducible)</li>
+</ul>
+<h2>Replication and Reproducibility</h2>
+<p>Replication</p>
+<ul>
+<li>Focuses on the validity of the scientific claim</li>
+<li>Is this claim true?</li>
+<li>The ultimate standard for strengtening scientiffic evidence</li>
+<li>New investigators, data, analytical methods, laboratories, instruments, etc.</li>
+<li>Particularly important in studies that can impact broad policy or regulatory decisions.</li>
+</ul>
+<p>Reproducibility</p>
+<ul>
+<li>Focuses on the validity of the data analysis</li>
+<li>Can we trust this analysis?</li>
+<li>Arguably a minimum standard for any scientific study</li>
+<li>New investigators, same data, same methods</li>
+<li>Important when replication is impossible</li>
+</ul>
+<h2>Background and Underlying Trends</h2>
+<ul>
+<li>Some studies cannot be replicated: No time, no money, or just plain unique / opportunistic</li>
+<li>Technology is increasing data collection throughput; data are more complex and high-dimensional</li>
+<li>Existing databases can be merged to become bigger databases (but data are used off-label)</li>
+<li>Computing power allows more sophisticated analyses, even on &quot;small&quot; data</li>
+<li>For every field &quot;X&quot;, there is a &quot;Computational X&quot;</li>
+</ul>
+<h2>The Result?</h2>
+<ul>
+<li>Even basic analyses are difficult to describe</li>
+<li>Heavy computational requirements are thrust upon people without adequate training in statistics and computing</li>
+<li>Errors are more easily introduced into long analysis pipelines</li>
+<li>Knowledge transfer is inhibited</li>
+<li>Results are difficult to replicate or reproduce</li>
+<li>Complicated analyses cannot be trusted</li>
+</ul>
+<h2>What Problem Does Reproducibility Solve?</h2>
+<p>What we get:</p>
+<ul>
+<li>Transparency</li>
+<li>Data Availability</li>
+<li>Software / Methods of Availability</li>
+<li>Improved Transfer of Knowledge</li>
+</ul>
+<p>What we do NOT get</p>
+<ul>
+<li>Validity / Correctness of the analysis</li>
+</ul>
+<p>An analysis can be reproducible and still be wrong</p>
+<p>We want to know 'can we trust this analysis</p>
+<p>Does requiring reproducibility deter bad analysis?</p>
+<h2>Problems with Reproducibility</h2>
+<p>The premise of reproducible research is that with data/code available, people can check each other and the whole system is self-correcting</p>
+<ul>
+<li>Addresses the most &quot;downstream&quot; aspect of the research process -- Post-publication</li>
+<li>Assumes everyone plays by the same rules and wants to achieve the same goals (i.e. scientific discovery)</li>
+</ul>
+<h2>Who Reproduces Research?</h2>
+<ul>
+<li>For reproducibility to be effective as a means to check validity, someone needs to do something
+<ul>
+<li>Re-run the analysis; check results match</li>
+<li>Check the code for bugs/errors</li>
+<li>Try alternate approaches; check sensitivity</li>
+</ul></li>
+<li>The need for someone to do something is inherited from traditional notion of replication</li>
+<li>Who is &quot;someone&quot; and what are their goals?</li>
+</ul>
+<h2>The Story So Far</h2>
+<ul>
+<li>Reproducibility brings transparency (wrt code+data) and increased transfer of knowledge</li>
+<li>A lot of discussion about how to get people to share data</li>
+<li>Key question of &quot;can we trust this analysis&quot;? is not addressed by reproducibility</li>
+<li>Reproducibility addresses potential problems long after they've occurred (&quot;downstream&quot;)</li>
+<li>Secondary analyses are inevitably colored by the interests/motivations of others.</li>
+</ul>
+<h2>Evidence-based Data Analysis</h2>
+<ul>
+<li>Most data analyses involve stringing together many different tools and methods</li>
+<li>Some methods may be standard for a given field, but others are often applied ad hoc</li>
+<li>We should apply throughly studied (via statistical research), mutually agreed upon methods to analyze data whenever possible</li>
+<li>There should be evidence to justify the application of a given method</li>
+</ul>
+<h2>Evidence-based Data Analysis</h2>
+<ul>
+<li>Create analytic pipelines from evidence-based components - standardize it</li>
+<li>A deterministic statistical machine</li>
+<li>Once an evidence-based analytic pipeline is established, we shouldn't mess with it</li>
+<li>Analysis with a &quot;transparent box&quot;</li>
+<li>Reduce the &quot;research degrees of freedom&quot;</li>
+<li>Analogous to a pre-specified clinical trial protocol</li>
+</ul>
+<h2>Case Study: Estimating Acute Effects of Ambient Air Pollution Exposure</h2>
+<ul>
+<li>Acute / Short-term effects typically estimated via panel studies or time series studies</li>
+<li>Work originated in late 1970s early 1980s</li>
+<li>Key question &quot;Are short-term changes in pollution associated with short-term changes in a population health outcome?&quot;</li>
+<li>Studies are usually conducted at a community level</li>
+<li>Long history of statistical research investigating proper methods of analysis</li>
+</ul>
+<h2>Case Study: Estimating Acute Effects of Ambient Air Pollution Exposure</h2>
+<ul>
+<li>Can we encode everything that we have found in statistical / epidemiological research into a single package?</li>
+<li>Time series studies do not have a huge range of variation; typically involves similar types of data and similar questions</li>
+<li>We can create a deterministic statistical machine for this area?</li>
+</ul>
+<h2>DSM Modules for Time Series Studies of Air Pollution and Health</h2>
+<ol>
+<li>Check for outliers, high leverage, overdispersion</li>
+<li>Fill in missing data? No!</li>
+<li>Model selection: Estimate degrees of freedom to adjust for unmeasured confounders
+<ul>
+<li>Other aspects of model not as critical</li>
+</ul></li>
+<li>Multiple lag analysis</li>
+<li>Sensitivity analysis wrt
+<ul>
+<li>Unmeasured confounder adjustment</li>
+<li>Influential points</li>
+</ul></li>
+</ol>
+<h2>Where to Go From Here?</h2>
+<ul>
+<li>One DSM is not enough, we need many!</li>
+<li>Different problems warrant different approaches and expertise</li>
+<li>A curated library of machines providing state-of-the-art analysis pipelines</li>
+<li>A CRAN/CPAN/CTAN/... for data analysis</li>
+<li>Or a &quot;Cochrane Collaboration&quot; for data analysis</li>
+</ul>
+<h2>A Curated Library of Data Analysis</h2>
+<ul>
+<li>Provide packages that encode data analysis pipelines for given problems, technologies, questions</li>
+<li>Curated by experts knowledgeable in the field</li>
+<li>Documentation / References given supporting module in the pipeline</li>
+<li>Changes introduced after passing relevant benchmarks/unit tests</li>
+</ul>
+<h2>Summary</h2>
+<ul>
+<li>Reproducible research is important, but does not necessarily solve the critical question of whether a data analysis is trustworthy</li>
+<li>Reproducible research focuses on the most &quot;downstream&quot; aspect of research documentation</li>
+<li>Evidence-based data analysis would provide standardized best practices for given scientific areas and questions</li>
+<li>Gives reviewers an important tool without dramatically increases the burden on them</li>
+<li>More effort should be put into improving the quality of &quot;upstream&quot; aspects of scientific research</li>
+</ul>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for November 13</h1>
+<h2>File IO (Cont.)</h2>
+<p>Last class we talked about reading from files, we can also write to files.</p>
+<h3>Import necessary libraries</h3>
+<p>First you must import all of the necessary libraries</p>
+<pre><code class="language-java">// To read 
+import java.util.Scanner; 
+import java.io.FileOutputStream;
+// To Write
+import java.io.FileReader;
+import java.io.PrintWriter;
+// For Exception Handling
+import java.io.IOException;</code></pre>
+<p>Then in your main, declare a <code>FileOutputStream</code> and <code>PrintWriter</code></p>
+<pre><code class="language-java">FileOutputStream file;
+PrintWriter print;</code></pre>
+<h3>Try-Catch-Finally</h3>
+<p>Create a try block to open a file for writing</p>
+<pre><code class="language-java">try {
+      // If the file doesn't exist, it'll create it
+      file = new FileOutputStream("output.txt"); 
+      print = new PrintWriter(file);
+} catch (IOException except) {
+      // Prints out the error message
+      System.out.println("File error " + except.getMessage()); 
+} </code></pre>
+<p>Adding a finally block allows the program to clean up before it closes</p>
+<pre><code class="language-java">    try {
+      file = new FileOutputStream("output.txt"); 
+      print = new PrintWriter(file);
+    } catch (IOException except) {
+      System.out.println("File error " + except.getMessage()); 
+    } finally { // It starts here!
+      delete file;
+      delete print;
+      file.close();
+      return;
+    }</code></pre>
+<h3>Write to the file :)</h3>
+<p>Then you can write the to file!</p>
+<pre><code class="language-java">// Do you notice the following methods?
+  print.println("Your number is");
+  print.print("My name is..\n");
+  print.printf("%s %d", "Hello ", 5);
+  print.flush(); //Clears the output stream
+  file.close(); //Closes the file
+</code></pre>
+<p>Extra Note: Disk fragmentation is a way of cleaning up memory that isn't being used by any of the code on your computer. </p>
+<h2>Swing Graphics</h2>
+<h3>Importing Necessary Libraries</h3>
+<p>You need to import all the necessary libraries first</p>
+<pre><code class="language-java">import javax.swing.*;
+import java.awt.FlowLayout;
+import java.awt.event.ActionListener;</code></pre>
+<h3>Changing the class header</h3>
+<p>Your class file needs to extend <code>JFrame</code> that way it can use a bunch of the already existent code written for Swing applications</p>
+<pre><code class="language-java">public class firstGUi extends JFrame {
+  //....</code></pre>
+<h3>Swing Components</h3>
+<p>Java Swing makes use of what is called Swing Components. These are basic building blocks of GUI items you can add to the screen. For example, a checkbox, a radio button, text field. These are all swing components.</p>
+<p>I wrote a blog post back in the summer which is an overview of them. You can check it out here: <a href="https://brandonrozek.com/2017/06/java-swing-components/">https://brandonrozek.com/2017/06/java-swing-components/</a></p>
+<p>Inside your <code>firstGUI</code> class, declare some Swing components you would like to use in the program</p>
+<pre><code class="language-java">public class firstGUI extends JFrame {
+  JButton button1;
+  JTextArea area;
+  JTextField text;
+  // ....
+</code></pre>
+<h3>Constructor</h3>
+<p>You need to create a constructor for this class that way you can initiate all of the swing component values.</p>
+<pre><code class="language-java">// ...
+JButton button1;
+JTextArea area;
+JTextField text;
+
+// Begin Constructor
+firstGUI() {
+  // Define the components
+  JLabel name = new JLabel("Enter in your name:");
+  text = new JTextField("Jennifer", 20); // 20 characters long, default value: Jennifer
+  area = new JTextArea(10, 10); //Width and Height is 10 characters big
+  JScrollPane sp = new JScrollPane(area); //Adds a scroll bar for the text area
+  button1 = new JButton("Press Me");
+
+  // Set the Layout
+  // FlowLayout organizes each of the components top to bottom, left to right
+  setLayout(new FlowLayout()); 
+
+  // Add the components to the screen
+  add(name);
+  add(text);
+  add(sp); // never add the textarea when surrounded by a ScrollPane
+  add(button1);
+}</code></pre>
+<h3>New Main Method</h3>
+<p>Finally, you need to create the Main method which will initiate it all</p>
+<pre><code class="language-java">public static void main(String[] args) {
+  firstGUI myFrame = new firstGUI();
+
+  // End the program when the 'x' button (not keyboard) is pressed
+  myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+  myFrame.setTitle("My title"); // Titles the window
+  myFrame.pack(); // Packs it all into the frame
+  myFrame.setVisible(true); // Makes the frame appear on the screen
+}</code></pre>
+<h3>Making it interactive</h3>
+<p>You need to change your class header to the following</p>
+<pre><code class="language-java">public class firstGUI extends JFrame implements ActionListener {
+  // ...</code></pre>
+<p>Then in your class, add the following method</p>
+<pre><code class="language-java">@Override public void actionPerformed(ActionEvent event) {
+  // Do stuff as a result of an event here
+  area.append("You Pressed the Button");
+}</code></pre>
+<p>To make it actually activate as a result of an event. You need to attach it to a swing component.</p>
+<p>For example, I want the code in <code>actionPerformed</code> to activate in result of a button press.</p>
+<p>Add the following line to your code in the constructor.</p>
+<pre><code class="language-java">//...
+button1 = new JButton("Press Me");
+button1.addActionListener(this); // New Code
+//....</code></pre>
+<h3>Identifying Button Pressed</h3>
+<p>How do you know which button was pressed in the <code>actionPerformed</code> method?</p>
+<p>You can use <code>event.getSource()</code> to find out.</p>
+<p>Example:</p>
+<pre><code class="language-java">@Override public void actionPerformed(ActionEvent event) {
+  if (event.getSource() == button1) { // Replace button1 with appropriate variable name
+    // Do things as a result of a specific button being pressed
+  }
+}</code></pre>
+<h3>Summary</h3>
+<p>To use Swing, do the following steps</p>
+<ol>
+<li>Import Libraries</li>
+<li>Declare J___ variables</li>
+<li>New the J___ variables</li>
+<li>Add the J___ variables to the frame</li>
+<li>Add the <code>ActionListener</code> to the components you wish to monitor</li>
+</ol>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

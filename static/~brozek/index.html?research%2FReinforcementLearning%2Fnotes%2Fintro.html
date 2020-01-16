@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Introduction to Reinforcement Learning Day 1</h1>
+<p>Recall that this course is based on the book -- </p>
+<p>Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto</p>
+<p>These notes really serve as talking points for the overall concepts described in the chapter and are not meant to stand for themselves. Check out the book for more complete thoughts :)</p>
+<p><strong>Reinforcement Learning</strong> is learning what to do -- how to map situations to actions -- so as to maximize a numerical reward signal. There are two characteristics, trial-and-error search and delayed reward, that are the two most important distinguishing features of reinforcement learning.</p>
+<p>Markov decision processes are intended to include just these three aspects: sensation, action, and goal(s).</p>
+<p>Reinforcement learning is <strong>different</strong> than the following categories</p>
+<ul>
+<li>Supervised learning: This is learning from a training set of labeled examples provided by a knowledgeable external supervisor. In interactive problems it is often impractical to obtain examples of desired behavior that are both correct and representative of all situations in which the agent has to act.</li>
+<li>Unsupervised learning: Reinforcement learning is trying to maximize a reward signal as opposed to finding some sort of hidden structure within the data.</li>
+</ul>
+<p>One of the challenges that arise in reinforcement learning is the <strong>trade-off</strong> between exploration and exploitation. The dilemma is that neither exploration nor exploitation can be pursued exclusively without failing at the task.</p>
+<p>Another key feature of reinforcement learning is that it explicitly considers the whole problem of a goal-directed agent interacting with an uncertain environment. This is different than supervised learning since they're concerned with finding the best classifier/regression without explicitly specifying how such an ability would finally be useful.</p>
+<p>A complete, interactive, goal-seeking agent can also be a component of a larger behaving system. A simple example is an agent that monitors the charge level of a robot's battery and sends commands to the robot's control architecture. This agent's environment is the rest of the robot together with the robot's environment.</p>
+<h2>Definitions</h2>
+<p>A policy defines the learning agent's way of behaving at a given time</p>
+<p>A reward signal defines the goal in a reinforcement learning problem. The agent's sole objective is to maximize the total reward it receives over the long run</p>
+<p>A value function specifies what is good in the long run. Roughly speaking, the value of a state is the total amount of reward an agent can expect to accumulate over the future, starting from that state. Without rewards there could be no value,s and the only purpose of estimating values is to achieve more reward. We seek actions that bring about states of highest value. </p>
+<p>Unfortunately, it is much harder to determine values than it is to determine rewards. The most important component of almost all reinforcement learning algorithms we consider is a method for efficiently estimating values.</p>
+<p><strong>Look at Tic-Tac-Toe example</strong></p>
+<p>Most of the time in a reinforcement learning algorithm, we move greedily, selecting the move that leads to the state with greatest value. Occasionally, however, we select randomly from amoung the other moves instead. These are called exploratory moves because they cause us to experience states that we might otherwise never see.</p>
+<p>Summary: Reinforcement learning is learning by an agent from direct interaction wit its environment, without relying on exemplary supervision or complete models of the environment.</p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for February 20th</h1>
+<h2>Reading a File</h2>
+<p>You can get input from a file instead of from the terminal</p>
+<pre><code class="language-java">FileInputStream fileIn = new FileInputStream("myFile.txt");
+// Our familiar Scanner
+Scanner scnr = new Scanner(fileIn);
+// We can use our usual Scanner methods
+String line = scnr.nextLine();
+fileIn.close(); // Remember to close the file when you're finished with it!</code></pre>
+<h3>Reviewing Scanner Methods</h3>
+<p>To understand some of the Scanner methods we need to be aware of the &quot;newline&quot; character. This character is equivalent to the <code>Enter</code> button on the keyboard.</p>
+<p><code>scnr.nextLine()</code> This get's all the characters in the buffer up to the newline character.</p>
+<p><code>scnr.next()</code> Grabs the characters in the next &quot;token&quot;. Tokens are usually separated by any whitespace type character (spaces, enters, tabs, etc.)</p>
+<h2>Writing to a File</h2>
+<p>Prints information to a file instead of to the screen</p>
+<pre><code class="language-java">FileOutputStream fileOut = new FileOutputStream("myOutfile.txt");
+PrintWriter out = new PrintWriter(fileOut);
+out.println("Print this as the first line.");
+out.flush(); // Pushes the file changes to the file
+fileOut.close(); // If you forget this then it won't remember your changes</code></pre>
+<h2>Arrays</h2>
+<p>Arrays are containers of fixed size. It contains a fixed number of values of the <strong>same type</strong>. (Ex: 10 integers, 2 strings, 5 booleans)</p>
+<p>Declaration</p>
+<pre><code class="language-java">int[] array; // This declares an integer array</code></pre>
+<p>Initialization</p>
+<pre><code class="language-java">array = new int[7]; // This states that this array can hold up to 7 integers</code></pre>
+<p>Storing a value in an array</p>
+<ul>
+<li>Square bracket notation is used</li>
+</ul>
+<pre><code class="language-java">int[] array = new int[7];
+array[0] = 5; // Stores 5 into the first slot</code></pre>
+<p>Now let us attempt to retrieve the value</p>
+<pre><code class="language-java">int temp = array[0];
+System.out.println(temp); // Prints "5"</code></pre>
+<h3>Traversing an Array</h3>
+<p>Let's say we have the following array</p>
+<pre><code class="language-java">int[] numbers = {3, 5, 2, 7, 9};</code></pre>
+<p>Let's print out each of the values in the array</p>
+<pre><code class="language-java">for (int i = 0; i &lt; numbers.length; i++) {
+    System.out.print("value in " + i " is " + numbers[i]);
+}</code></pre>
+<h3>Finding the maximum value in an Array</h3>
+<pre><code class="language-java">int highest = numbers[0];
+for (int i = 0; i &lt; numbers.length; i++) {
+    if (numbers[i] &gt; highest) {
+        highest = numbers[x];
+    }
+}</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

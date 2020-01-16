@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for October 23</h1>
+<h2>Two-Dimensional Arrays</h2>
+<p>You can think of a two dimensional array as a grid that is organized by rows then columns.</p>
+<p>To declare a two dimensional array do the following</p>
+<pre><code class="language-java">int[][] grid  = new int[5][5];  // Declares a 2D array of 5 rows and 5 columns</code></pre>
+<p>You can have as many dimensions as you want. For graphics a 3-dimensional array would render 3D points.</p>
+<p>It doesn't have to be inherently visual though, you can have the n-dimensional array look at the interaction between n different variables. For example, the relationships to different questions in a survey.</p>
+<p>Strings are essentially a char array with extra methods attached. We can imitate an array of strings with a 2D char array.</p>
+<pre><code class="language-java">char[][] helloWorld = new char[5][5];
+hello[0][0] = 'h';
+hello[0][1] = 'e';
+hello[0][2] = 'l';
+hello[0][3] = 'l';
+hello[0][4] = 'o';
+hello[1][0] = 'w';
+hello[1][1] = 'o';
+hello[1][2] = 'r';
+hello[1][3] = 'l';
+hello[1][4] = 'd';
+</code></pre>
+<h2>Nested-For Loops</h2>
+<p>To access the elements in a 2D array, you need to use a nested for-loop. </p>
+<p>Here is how you print out the hello world example above</p>
+<pre><code class="language-java">for (int row = 0; row &lt; helloWorld.length; row++) {
+  for (int col = 0; col &lt; helloWorld[row].length; col++) {
+      System.out.print(helloWorld[row][col]);
+  }
+  System.out.print(" ")
+}</code></pre>
+<p>The code above prints out &quot;hello world&quot;</p>
+<h2>2D Arrays in methods</h2>
+<p>You can write a get like method in the following way</p>
+<pre><code class="language-java">public static void get(int[][] array, int row, int col) {
+    return array[row][col];
+}</code></pre>
+<p>Arrays in Java are pass by reference not pass by value. Meaning that if you change the array within the method then it will change outside the method.</p>
+<pre><code class="language-java">public static void insert(int[][] array, int row, int col, int numToInsert) {
+    array[row][col] = numToInsert;
+}</code></pre>
+<p>To make it not be able to change the array inside the method, use the keyword <code>const</code> inside the method header. To code below will throw a compiler error.</p>
+<pre><code class="language-java">public static void insert(const int[][] array, int row, int col, int numToInsert) {
+    array[row][col] = numToInsert; // This line will throw an errror
+}</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

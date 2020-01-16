@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Final Review December 6</h1>
+<h2>Classes</h2>
+<p>Here is how you can create a class called &quot;Employee&quot; with a non-default constructor (a constructor that takes parameters) and a getter and setter</p>
+<pre><code class="language-java">public class Employee {
+  // Our private variables
+  private String name;
+  private double salary;
+  // Non-default constructor
+  public Employee(String name, double salary) {
+    this.name = name;
+    this.salarly = salary;
+  }
+  // This is a getter
+  public string getName() {
+    return name;
+  }
+  public double setSalarly(double salary) {
+    this.salary = salary;
+  }
+}</code></pre>
+<h2>For Loops + Arrays</h2>
+<p>For loops are constructed in the following way</p>
+<p><code>for (initialization; condition to stop; increment to get closer to condition to stop)</code></p>
+<pre><code class="language-java">//Assume an array with variable name array is declared before
+for (int i = 0; i &lt; array.length; i++) {
+  // This code will loop through every entry in the array
+}</code></pre>
+<p>Note that you don't always have to start from zero, you can start anywhere from the array.</p>
+<h2>For Loops + Arrays + Methods</h2>
+<p>This is an example of how you can take in an array in a method</p>
+<pre><code class="language-java">public static boolean isEven(int[] array) { // &lt;-- Note the int[] array
+  for (int i = 0; i &lt; array.length; i++) { // Iterate through the entire array
+    // If you find an odd number, return false
+    if (array[i] % 2 == 1) {
+      return false;
+    }
+  }
+  // If you didn't find any odd numbers, return true
+  return true;
+}</code></pre>
+<h2>File I/O</h2>
+<p>Let's say that you have the following file</p>
+<pre><code>4
+chicken
+3
+salad</code></pre>
+<p>And you want to make it so that you take the number, and print the word after it a certain number of times. For this example we would want to see the following</p>
+<pre><code class="language-java">chicken chicken chicken chicken
+salad salad salad</code></pre>
+<p>Here is the code to write it</p>
+<pre><code class="language-java">public static void printStrings() {
+  FileInputStream file = new FileInputStream("stuff.txt"); // File contents are in stuff.txt
+  Scanner scnr = new Scanner(file); // Scanner takes in a file to read
+  while (scnr.hasNext()) { // While there are still stuff in the file to read
+    int number = scnr.nextInt(); // Grab the number
+    String word = scnr.next(); // Grab the word after the number
+    // Print the word number times
+    for (int i = 0; i &lt; number; i++) {
+      System.out.print(word); 
+    }
+    // Put a new line here
+    System.out.println();
+  }
+
+}</code></pre>
+<h2>Recursion</h2>
+<p>Look at handout and carefully trace recursion problems</p>
+<h2>2D Arrays</h2>
+<p>Declare a 2D int array with 4 rows and 7 columns</p>
+<pre><code class="language-java">int[][] dataVals = new int[4][7];</code></pre>
+<p>A 2D array with 4 rows and 7 columns has 7 * 4 = 28 entries.</p>
+<p>If you want to sum up all the numbers in a 2 dimensional array, do the following</p>
+<pre><code class="language-java">// Assume numbers is declared beforehand
+int sum = 0;
+for (int i = 0; i &lt; numbers.length; i++) { // Loop through every row in the 2D array
+  for (int j = 0; j &lt; numbers[i].length; j++) { // Loop through every column in a row
+    // This code now looks at one entry in a 2D array
+    sum += numbers[i][j];
+  }
+}</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Agglomerative Methods</h1>
+<h2>Single Linkage</h2>
+<p>First let us consider the single linkage (nearest neighbor) approach. The clusters can be found through the following algorithm</p>
+<ol>
+<li>Find the smallest non-zero distance</li>
+<li>Group the two objects together as a cluster</li>
+<li>Recompute the distances in the matrix by taking the minimum distances
+<ul>
+<li>Cluster a,b -&gt; c = min(d(a, c), d(b, c))</li>
+</ul></li>
+</ol>
+<p>Single linkage can operate directly on a proximity matrix, the actual data is not required.</p>
+<p>A wonderful visual representation can be found in Everitt Section 4.2</p>
+<h2>Centroid Clustering</h2>
+<p>This is another criterion measure that requires both the data and proximity matrix. These are the following steps of the algorithm. Requires Euclidean distance measure to preserve geometric correctness</p>
+<ol>
+<li>Find the smallest non-zero distance</li>
+<li>Group the two objects together as a cluster</li>
+<li>Recompute the distances by taking the mean of the clustered observations and computing the distances between all of the observations
+<ul>
+<li>Cluster a,b -&gt; c = d(mean(a, b), c)</li>
+</ul></li>
+</ol>
+<h2>Complete Linkage</h2>
+<p>This is like Single Linkage, except now we're taking the farthest distance. The algorithm can be adjusted to the following</p>
+<ol>
+<li>Find the smallest non-zero distance</li>
+<li>Group the two objects together as a cluster</li>
+<li>Recompute the distances in the matrix by taking the maximum distances
+<ul>
+<li>Cluster a,b -&gt; c = max(d(a, c), d(b, c))</li>
+</ul></li>
+</ol>
+<h2>Unweighted Pair-Group Method using the Average Approach (UPGMA)</h2>
+<p>In this criterion, we are no longer summarizing each cluster before taking distances, but instead comparing each observation in the cluster to the outside point and taking the average</p>
+<ol>
+<li>Find the smallest non-zero distance</li>
+<li>Group the two objects together as a cluster</li>
+<li>Recompute the distances in the matrix by taking the mean 
+<ul>
+<li>Cluster A: a,b -&gt; c = $mean_{i = 0}(d(A_i, c))$</li>
+</ul></li>
+</ol>
+<h2>Median Linkage</h2>
+<p>This approach is similar to the UPGMA approach, except now we're taking the median instead of the mean</p>
+<ol>
+<li>Find the smallest non-zero distance</li>
+<li>Group the two objects together as a cluster</li>
+<li>Recompute the distances in the matrix by taking the median
+<ul>
+<li>Cluster A: a,b -&gt; c = $median_{i = 0}{(d(A_i, c))}$</li>
+</ul></li>
+</ol>
+<h2>Ward Linkage</h2>
+<p>This one I didn't look too far into but here's the description: With Ward's linkage method, the distance between two clusters is the sum  of squared deviations from points to centroids. The objective of Ward's  linkage is to minimize the within-cluster sum of squares.</p>
+<h2>When to use different Linkage Types?</h2>
+<p>According to the following two stack overflow posts: <a href="https://stats.stackexchange.com/questions/195446/choosing-the-right-linkage-method-for-hierarchical-clustering">https://stats.stackexchange.com/questions/195446/choosing-the-right-linkage-method-for-hierarchical-clustering</a> and <a href="https://stats.stackexchange.com/questions/195456/how-to-select-a-clustering-method-how-to-validate-a-cluster-solution-to-warran/195481#195481">https://stats.stackexchange.com/questions/195456/how-to-select-a-clustering-method-how-to-validate-a-cluster-solution-to-warran/195481#195481</a></p>
+<p>These are the following ways you can justify a linkage type.</p>
+<p><strong>Cluster metaphor</strong>. <em>&quot;I preferred this method because it constitutes clusters such (or such a way) which meets with my concept of a cluster in my particular project.&quot;</em></p>
+<p><strong>Data/method assumptions</strong>. <em>&quot;I preferred this method because my data nature or format predispose to it.&quot;</em></p>
+<p><strong>Internal validity</strong>. <em>&quot;I preferred this method because it gave me most clear-cut, tight-and-isolated clusters.&quot;</em> </p>
+<p><strong>External validity</strong>. <em>&quot;I preferred this method because it gave me clusters which differ by their background or clusters which match with the true ones I know.&quot;</em></p>
+<p><strong>Cross-validity</strong>. <em>&quot;I preferred this method because it is giving me very similar clusters on equivalent samples of the data or extrapolates well onto such samples.&quot;</em></p>
+<p><strong>Interpretation</strong>. <em>&quot;I preferred this method because it gave me clusters which, explained, are most persuasive that there is meaning in the world.&quot;</em></p>
+<h3>Cluster Metaphors</h3>
+<p>Let us explore the idea of cluster metaphors now.</p>
+<p><strong>Single Linkage</strong> or <strong>Nearest Neighbor</strong> is a <em>spectrum</em> or <em>chain</em>.</p>
+<p>Since single linkage joins clusters by the shortest link between them, the technique cannot discern poorly separated clusters. On the other hand, single linkage is one of the few clustering methods that can delineate nonelipsodial clusters.</p>
+<p><strong>Complete Linkage</strong> or <strong>Farthest Neighbor</strong> is a <em>circle</em>.</p>
+<p><strong>Between-Group Average linkage</strong> (UPGMA) is a united *class</p>
+<p><strong>Centroid method</strong> (UPGMC) is <em>proximity of platforms</em> (commonly used in politics)</p>
+<h2>Dendrograms</h2>
+<p>A <strong>dendrogram</strong> is a tree diagram frequently used to illustrate the arrangement of the clusters produced by hierarchical clustering. It shows how different clusters are formed at different distance groupings.</p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

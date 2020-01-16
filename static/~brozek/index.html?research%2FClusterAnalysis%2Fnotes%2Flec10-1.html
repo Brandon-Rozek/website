@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Silhouette</h1>
+<p>This technique validates the consistency within clusters of data. It provides a succinct graphical representation of how well each object lies in its cluster.</p>
+<p>The silhouette ranges from -1 to 1 where a high value indicates that the object is consistent within its own cluster and poorly matched to neighboring clustesr.</p>
+<p>A low or negative silhouette value can mean that the current clustering configuration has too many or too few clusters.</p>
+<h2>Definition</h2>
+<p>For each datum $i$, let $a(i)$ be the average distance of $i$ with all other data within the same cluster.</p>
+<p>$a(i)$ can be interpreted as how well $i$ is assigned to its cluster. (lower values mean better agreement)</p>
+<p>We can then define the average dissimilarity of point $i$ to a cluster $c$ as the average distance from $i$ to all points in $c$.</p>
+<p>Let $b(i)$ be the lowest average distance of $i$ to all other points in any other cluster in which i is not already a member.</p>
+<p>The cluster with this lowest average dissimilarity is said to be the neighboring cluster of $i$. From here we can define a silhouette:
+$$
+s(i) = \frac{b(i) - a(i)}{max{a(i), b(i)}}
+$$
+The average $s(i)$ over all data of a cluster is a measure of how tightly grouped all the data in the cluster are. A silhouette plot may be used to visualize the agreement between each of the data and its cluster.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Silhouette-plot-orange.png/800px-Silhouette-plot-orange.png" alt="img" /></p>
+<h3>Properties</h3>
+<p>Recall that $a(i)$ is a measure of how dissimilar $i$ is to its own cluster, a smaller value means that it's in agreement to its cluster. For $s(i)$ to be close to 1, we require $a(i) &lt;&lt; b(i)$ .</p>
+<p>If $s(i)$ is close to negative one, then by the same logic we can see that $i$ would be more appropriate if it was clustered in its neighboring cluster.</p>
+<p>$s(i)$ near zero means that the datum is on the border of two natural clusters.</p>
+<h2>Determining the number of Clusters</h2>
+<p>This can also be used in helping to determine the number of clusters in a dataset. The ideal number  of cluster is one that produces the highest silhouette value.</p>
+<p>Also a good indication that one has too many clusters is if there are clusters with the majority of observations being under the mean silhouette value.</p>
+<p><a href="https://kapilddatascience.wordpress.com/2015/11/10/using-silhouette-analysis-for-selecting-the-number-of-cluster-for-k-means-clustering/">https://kapilddatascience.wordpress.com/2015/11/10/using-silhouette-analysis-for-selecting-the-number-of-cluster-for-k-means-clustering/</a></p>
+<p><img src="https://kapilddatascience.files.wordpress.com/2015/11/plot_kmeans_silhouette_analysis_004.png?w=660&amp;h=257" alt="plot_kmeans_silhouette_analysis_004" /></p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

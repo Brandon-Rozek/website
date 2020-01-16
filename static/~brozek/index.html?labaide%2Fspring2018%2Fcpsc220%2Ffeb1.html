@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for February 1st</h1>
+<h2>Control Structures</h2>
+<p>In this class we will talk about three types of control structures</p>
+<ul>
+<li>Sequential</li>
+<li>Selection</li>
+<li>Repetition</li>
+</ul>
+<p>Sequential is what is most familiar to us. Write the lines from top to bottom and it executes it in that order</p>
+<h3>Selection</h3>
+<p>Selection depends on the question of <code>if</code>. </p>
+<p>If it is raining, wear boots</p>
+<pre><code class="language-java">if (raining) {
+  wearingBoots = true;
+}</code></pre>
+<p>If you want something to happen also when it is not true, consider an <code>if-else</code> statement</p>
+<p>If the light is off, turn it on.</p>
+<p>Otherwise, turn it on</p>
+<pre><code class="language-java">if (lightIsOn) {
+  lightIsOn = false;
+} else {
+  lightIsOn = true;
+}</code></pre>
+<p>Sometimes you can have multiple branches depending on a condition. Let us take a stop light as an example</p>
+<pre><code class="language-java">if (light == "red") {
+  car.stop()
+} else if (light == "yellow") {
+  car.slow()
+} else {
+  car.go()
+}</code></pre>
+<h2>String comparison</h2>
+<p>There is a specific method in the <code>String</code> class when it comes to checking for string equality</p>
+<pre><code class="language-java">boolean equals(String s)</code></pre>
+<p>Let us look at an example</p>
+<pre><code class="language-java">String word = "hello";
+boolean ans = word.equals("hello"); // Returns true
+boolean ans2 = word.equals("Hello"); // Returns false</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

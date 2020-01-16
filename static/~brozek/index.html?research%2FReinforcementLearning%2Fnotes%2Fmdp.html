@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Chapter 3: Finite Markov Decision Processes</h1>
+<p>Markov Decision processes are a classical formalization of sequential decision making, where actions influence not just immediate rewards, but also subsequent situations, or states, and through those future rewards. Thus MDPs involve delayed reward and the need to trade-off immediate and delayed reward. Whereas in bandit problems we estimated the value of $q<em>*(a)$ of each action $a$, in MDPs we estimate the value of $q</em>*(s, a)$ of each action $a$ in state $s$. </p>
+<p>MDPs are a mathematically idealized form of the reinforcement learning problem. As we will see in artificial intelligence, there is often a tension between breadth of applicability and mathematical tractability. This chapter will introduce this tension and discuss some of the trade-offs and challenges that it implies. </p>
+<h2>Agent-Environment Interface</h2>
+<p>The learner and decision maker is called the <em>agent</em>. The thing it interacts with is called the <em>environment</em>. These interact continually, the agent selecting actions and the environment responding to these actions and presenting new situations to the agent.</p>
+<p>The environment also give rise to rewards, special numerical values that the agent seeks to maximize over time through its choice of actions.</p>
+<p>![1536511147205](/home/rozek/Documents/Research/Reinforcement Learning/1536511147205.png)</p>
+<p>To make the future paragraphs clearer, a Markov Decision Process is a discrete time stochastic control process. It provides a mathematical framework for modeling decision making in situations where outcomes are partly random and partly under the control of the decision maker.</p>
+<p>In a <em>finite</em> MDP, the set of states, actions, and rewards all have a finite number of elements. In this case, the random variables R_t and S<em>t have a well defined discrete probability distribution dependent only on the preceding state and action.
+$$
+p(s^\prime | s,a) = \sum</em>{r \in \mathcal{R}}{p(s^\prime, r|s, a)}
+$$
+Breaking down the above formula, it's just an instantiation of the law of total probability. If you partition the probabilistic space by the reward, if you sum up each partition you should get the overall space. This formula has a special name: the <em>state-transition probability</em>.</p>
+<p>From this we can compute the expected rewards for each state-action pair by multiplying each reward with the probability of getting said reward and summing it all up.
+$$
+r(s, a) = \sum<em>{r \in \mathcal{R}}{r}\sum</em>{s^\prime \in \mathcal{S}}{p(s^\prime, r|s,a)}
+$$
+The expected reward for a state-action-next-state triple is
+$$
+r(s, a, s^\prime) = \sum_{r \in \mathcal{R}}{r\frac{p(s^\prime, r|s,a)}{p(s^\prime|s,a)}}
+$$
+I wasn't able to piece together this function in my head like the others. Currently I imagine it as if we took the formula before and turned the universe of discourse from the universal set to the state where $s^\prime$ occurred.</p>
+<p>The MDP framework is abstract and flexible and can be applied to many different problems in many different ways. For example, the time steps need not refer to fixed intervals of real time; they can refer to arbitrary successive states of decision making and acting.</p>
+<h3>Agent-Environment Boundary</h3>
+<p>In particular, the boundary between agent and environment is typically not the same as the physical boundary of a robot's or animals' body. Usually, the boundary is drawn closer to the agent than that. For example, the motors and mechanical linkages of a robot and its sensing hardware should usually be considered parts of the environment rather than parts of the agent.</p>
+<p>The general rule we follow is that anything that cannot be changed arbitrarily by the agent is considered to be outside of it and thus part of its environment. We do not assume that everything in the environment is unknown to the agent. For example, the agent often knows quite a bit about how its rewards are computed as a function of its actions and the states in which they are taken. But we always consider the reward computation to be external to the agent because it defines the task facing the agent and thus must be beyond its ability to change arbitrarily. The agent-environment boundary represents the limit of the agent's absolute control, not of its knowledge.</p>
+<p>This framework breaks down whatever the agent is trying to achieve to three signals passing back and forth between an agent and its environment: one signal to represent the choices made by the agent, one signal to represent the basis on which the choices are made (the states), and one signal to define the agent's goal (the rewards).</p>
+<h3>Example 3.4: Recycling Robot MDP</h3>
+<p>Recall that the agent makes a decision at times determined by external events. At each such time the robot decides whether it should</p>
+<p>(1) Actively search for a can</p>
+<p>(2) Remain stationary and wait for someone to bring it a can</p>
+<p>(3) Go back to home base to recharge its battery</p>
+<p>Suppose the environment works as follows: the best way to find cans is to actively search for them, but this runs down the robot's battery, whereas waiting does not. Whenever the robot is searching the possibility exists that its battery will become depleted. In this case, the robot must shut down and wait to be rescued (producing a low reward.)</p>
+<p>The agent makes its decisions solely as a function of the energy level of the battery, It can distinguish two levels, high and low, so that the state set is $\mathcal{S} = {high, low}$.  Let us call the possible decisions -- the agent's actions -- wait, search, and recharge. When the energy level is high, recharging would always be foolish, so we do not include it in the action set for this state. The agent's action sets are
+$$
+\begin{align<em>}
+\mathcal{A}(high) &amp;= {search, wait} \
+\mathcal{A}(low)  &amp;= {search, wait, recharge}
+\end{align</em>}
+$$
+If the energy level is high, then a period of active search can always be completed without a risk of depleting the battery. A period of searching that begins with a high energy level leaves the energy level high with a probability of $\alpha$ and reduces it to low with a probability of $(1 - \alpha)$. On the other hand, a period of searching undertaken when the energy level is low leaves it low with a probability of $\beta$ and depletes the battery with a probability of $(1 - \beta)$. In the latter case, the robot must be rescued, and the batter is then recharged back to high.</p>
+<p>Each can collected by the robot counts as a unit reward, whereas a reward of $-3$ occurs whenever the robot has to be rescued. Let $r<em>{search}$ and $r</em>{wait}$ with $r<em>{search } &gt; r</em>{wait}$, respectively denote the expected number of cans the robot will collect while searching and waiting. Finally, to keep things simple, suppose that no cans can be collected ruing a run home for recharging and that no cans can be collected on a step in which the battery is depleted.</p>
+<table>
+<thead>
+<tr>
+<th>$s$</th>
+<th>$a$</th>
+<th>$s^\prime$</th>
+<th>$p(s^\prime</th>
+<th>s, a)$</th>
+<th>$r(s</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>high</td>
+<td>search</td>
+<td>high</td>
+<td>$\alpha$</td>
+<td>$r_{search}$</td>
+</tr>
+<tr>
+<td>high</td>
+<td>search</td>
+<td>low</td>
+<td>$(1-\alpha)$</td>
+<td>$r_{search}$</td>
+</tr>
+<tr>
+<td>low</td>
+<td>search</td>
+<td>high</td>
+<td>$(1 - \beta)$</td>
+<td>-3</td>
+</tr>
+<tr>
+<td>low</td>
+<td>search</td>
+<td>low</td>
+<td>$\beta$</td>
+<td>$r_{search}$</td>
+</tr>
+<tr>
+<td>high</td>
+<td>wait</td>
+<td>high</td>
+<td>1</td>
+<td>$r_{wait}$</td>
+</tr>
+<tr>
+<td>high</td>
+<td>wait</td>
+<td>low</td>
+<td>0</td>
+<td>$r_{wait}$</td>
+</tr>
+<tr>
+<td>low</td>
+<td>wait</td>
+<td>high</td>
+<td>0</td>
+<td>$r_{wait}$</td>
+</tr>
+<tr>
+<td>low</td>
+<td>wait</td>
+<td>low</td>
+<td>1</td>
+<td>$r_{wait}$</td>
+</tr>
+<tr>
+<td>low</td>
+<td>recharge</td>
+<td>high</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>low</td>
+<td>recharge</td>
+<td>low</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>A <em>transition graph</em> is a useful way to summarize the dynamics of a finite MDP. There are two kinds of nodes: <em>state nodes</em> and <em>action nodes</em>. There is a state node for each possible state and an action node for reach state-action pair. Starting in state $s$ and taking action $a$ moves you along the line from state node $s$ to action node $(s, a)$. The the environment responds with a transition ot the next states node via one of the arrows leaving action node $(s, a)$. </p>
+<p>![1537031348278](/home/rozek/Documents/Research/Reinforcement Learning/1537031348278.png)</p>
+<h2>Goals and Rewards</h2>
+<p>The reward hypothesis is that all of what we mean by goals and purposes can be well thought of as the maximization of the expected value of the cumulative sum of a received scalar signal called the reward.</p>
+<p>Although formulating goals in terms of reward signals might at first appear limiting, in practice it has proved to be flexible and widely applicable. The best way to see this is to consider the examples of how it has been, or could be used. For example:</p>
+<ul>
+<li>To make a robot learn to walk, researchers have provided reward on each time step proportional to the robot's forward motion. </li>
+<li>In making a robot learn how to escape from a maze, the reward is often $-1$ for every time step that passes prior to escape; this encourages the agent to escape as quickly as possible.</li>
+<li>To make a robot learn to find and collect empty soda cans for recycling, one might give it a reward of zero most of the time, and then a reward of $+1$ for each can collected. One might also want to give the robot negative rewards when it bumps into things or when somebody yells at it. </li>
+<li>For an agent to play checkers or chess, the natural rewards are $+1$ for winning, $-1$ for losing, and $0$ for drawing and for all nonterminal positions.</li>
+</ul>
+<p>It is critical that the rewards we set up truly indicate what we want accomplished. In particular, the reward signal is not the place to impart to the agent prior knowledge about <em>how</em> to achieve what we want it to do. For example, a chess playing agent should only be rewarded for actually winning, not for achieving subgoals such as taking its opponent's pieces. If achieving these sort of subgoals were rewarded, then the agent might find a way to achieve them without achieving the real goal. The reward signal is your way of communicating what you want it to achieve, not how you want it achieved.</p>
+<h2>Returns and Episodes</h2>
+<p>In general, we seek to maximize the <em>expected return</em>, where the return is defined as some specific function of the reward sequence. In the simplest case, the return is the sum of the rewards:
+$$
+G<em>t = R</em>{t + 1} + R<em>{t + 2} + R</em>{t + 3} + \dots + R_{T}
+$$
+where $T$ is the final time step. This approach makes sense in applications in which there is a natural notion of a final time step. That is when the agent-environment interaction breaks naturally into subsequences or <em>episodes</em>, such as plays of a game, trips through a maze, or any sort of repeated interaction.</p>
+<h3>Episodic Tasks</h3>
+<p>Each episode ends in a special state called the <em>terminal state</em>, followed by a reset to the standard starting state or to a sample from a standard distribution of starting states. Even if you think of episodes as ending in different ways the next episode begins independently of how the previous one ended. Therefore, the episodes can all be considered to ending the same terminal states with different rewards for different outcomes. </p>
+<p>Tasks with episodes of this kind are called <em>episodic tasks</em>. In episodic tasks we sometimes need to distinguish the set of all nonterminal states, denoted $\mathcal{S}$, from the set of all states plus the terminal state, denoted $\mathcal{S}^+$. The time of termination, $T$, is a random variable that normally varies from episode to episode.</p>
+<h3>Continuing Tasks</h3>
+<p>On the other hand, in many cases the agent-environment interaction goes on continually without limit. We call these <em>continuing tasks</em>. The return formulation above is problematic for continuing tasks because the final time step would be $T = \infty$, and the return which we are trying to maximize, could itself easily be infinite. The additional concept that we need is that of <em>discounting</em>. According to this approach, the agent tries to select actions so that the sum of the discounted rewards it receives over the future is maximized. In particular, it chooses $A_t$ to maximize the expected discounted return.
+$$
+G<em>t= \sum</em>{k = 0}^\infty{\gamma^kR_{t+k+1}}
+$$
+where $\gamma$ that is a parameter between $0$ and $1$ is called the <em>discount rate</em>.</p>
+<h4>Discount Rate</h4>
+<p>The discount rate determines the present value of future rewards: a reward received $k$ time steps in the future is worth only $\gamma^{k - 1}$ time what it would be worth if it were received immediately. If $\gamma &lt; 1$, the infinite sum has a finite value as long as the reward sequence is bounded. </p>
+<p>If $\gamma = 0$, the agent is &quot;myopic&quot; in being concerned only with maximizing immediate rewards. But in general, acting to maximize immediate reward can reduce access to future rewards so that the return is reduced. </p>
+<p>As $\gamma$ approaches 1, the return objective takes future rewards into account more strongly; the agent becomes more farsighted.</p>
+<h3>Example 3.5 Pole-Balancing</h3>
+<p>The objective in this task is to apply forces to a car moving along a track so as to keep a pole hinged to the cart from falling over.</p>
+<p>A failure is said to occur if the pole falls past a given angle from the vertical or if the cart runs off the track.</p>
+<p>![1537500975060](/home/rozek/Documents/Research/Reinforcement Learning/1537500975060.png)</p>
+<h4>Approach 1</h4>
+<p>The reward can be a $+1$ for every time step on which failure did not occur. In this case, successful balancing would mean a return of infinity.</p>
+<h4>Approach 2</h4>
+<p>The reward can be $-1$ on each failure and zero all other times. The return at each time would then be related to $-\gamma^k$ where $k$ is the number of steps before failure.</p>
+<p>Either case the return is maximized by keeping the pole balanced for as long as possible. </p>
+<h2>Policies and Value Functions</h2>
+<p>Almost all reinforcement learning algorithms involve estimating <em>value functions</em> which estimate what future rewards can be expected. Of course the rewards that the agent can expect to receive is dependent on the actions it will take. Accordingly, value functions are defined with respect to particular ways of acting, called policies.</p>
+<p>Formally, a <em>policy</em> is a mapping from states to probabilities of selecting each possible action. The <em>value</em> of a state s under a policy \pi, denoted $v<em>{\pi}(s)$ is the expected return when starting in $s$ and following $\pi$ thereafter. For MDPs we can define $v</em>{\pi}$ as</p>
+<p>$$
+v<em>{\pi}(s) = \mathbb{E}</em>{\pi}[G_t | S<em>t = s] = \mathbb{E}</em>{\pi}[\sum<em>{k = 0}^\infty{\gamma^kR</em>{t+k+1} | S_t = s}]
+$$</p>
+<p>We call this function the <em>state-value function for policy $\pi$</em>. Similarly, we define the value of taking action $a$ in state $s$ under a policy $\pi$, denoted as $q_\pi(s,a)$ as the expected return starting from $s$, taking the action $a$, and thereafter following the policy $\pi$. Succinctly, this is called the <em>action-value function for policy $\pi$</em>.</p>
+<h3>Optimality and Approximation</h3>
+<p>For some kinds of tasks we are interested in,optimal policies can be generated only with extreme computational cost. A critical aspect of the problemfacing the agent is always teh computational power available to it, in particular, the amount of computation it can perform in a single time step.</p>
+<p>The memory available is also an important constraint. A large amount of memory is often required to build up approximations of value functions, policies, and models. In the case of large state sets, functions must be approximated using some sort of more compact parameterized function representation.</p>
+<p>This presents us with unique oppurtunities for achieving useful approximations. For example, in approximating optimal behavior, there may be many states that the agent faces with such a low probability that selecting suboptimal actions for them has little impact on the amount of reward the agent receives.</p>
+<p>The online nature of reinforcement learning which makes it possible to approximate optimal policies in ways that put more effort into learning to make good decisions for frequently encountered states at the expense of infrequent ones is the key property that distinguishes reinforcement learning from other approaches to approximately solve MDPs.</p>
+<h3>Summary</h3>
+<p>Let us summarize the elements of the reinforcement learning problem.</p>
+<p>Reinforcement learning is about learning from interaction how to behave in order to achieve a goal. The reinforcement learning <em>agent</em> and its <em>environment</em> interact over a sequence of discrete time steps.</p>
+<p>The <em>actions</em> are the choices made by the agent; the states are the basis for making the choice; and the <em>rewards</em> are the basis for evaluating the choices.</p>
+<p>Everything inside the agent is completely known and controllable by the agent; everything outside is incompletely controllable but may or may not be completely known.</p>
+<p>A <em>policy</em> is a stochastic rule by which the agent selects actions as a function of states.</p>
+<p>When the reinforcement learning setup described above is formulated with well defined transition probabilities it constitutes a Markov Decision Process (MDP)</p>
+<p>The <em>return</em> is the function of future rewards that the agent seeks to maximize. It has several different definitions depending on the nature of the task and whether one wishes to <em>discount</em> delayed reward. </p>
+<ul>
+<li>The un-discounted formulation is appropriate for <em>episodic tasks</em>, in which the agent-environment interaction breaks naturally into <em>episodes</em></li>
+<li>The discounted formulation is appropriate for <em>continuing tasks</em> in which the interaction does not naturally break into episodes but continue without limit</li>
+</ul>
+<p>A policy's <em>value functions</em> assign to each state, or state-action pair, the expected return from that state, or state-action pair, given that the agent uses the policy. The <em>optimal value functions</em> assign to each state, or state-action pair, the largest expected return achievable by any policy. A policy whose value unctions are optimal is an <em>optimal policy</em>.</p>
+<p>Even if the agent has a complete and accurate environment model, the agent is typically unable to perform enough computation per time step to fully use it. The memory available is also an important constraint. Memory may be required to build up accurate approximations of value functions, policies, and models. In most cases of practical interest there are far more states that could possibly be entries in a table, and approximations must be made.</p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

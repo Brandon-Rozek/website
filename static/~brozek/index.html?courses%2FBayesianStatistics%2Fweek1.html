@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Bayesian Statistics</h1>
+<h2>Rules of Probability</h2>
+<p>Probabilities must be between zero and one, i.e., $0≤P(A)≤1$ for any event A.</p>
+<p>Probabilities add to one, i.e., $\sum{P(X_i)} = 1$</p>
+<p>The complement of an event, $A^c$, denotes that the event did not happen. Since probabilities must add to one, $P(A^c) = 1 - P(A)$</p>
+<p>If A and B are two events, the probability that A or B happens (this is an inclusive or) is the probability of the union of the events:
+$$
+P(A \cup B) = P(A) + P(B) - P(A\cap B)
+$$
+where $\cup$ represents union (&quot;or&quot;) and $\cap$ represents intersection (&quot;and&quot;). If a set of events $A<em>i$ are mutually exclusive (only one event may happen), then
+$$
+P(\cup</em>{i=1}^n{A<em>i}) = \sum</em>{i=1}^n{P(A_i)}
+$$</p>
+<h2>Odds</h2>
+<p>The odds for event A, denoted $\mathcal{O}(A)$ is defined as $\mathcal{O}(A) = P(A)/P(A^c)$ </p>
+<p>This is the probability for divided by probability against the event</p>
+<p>From odds, we can also compute back probabilities
+$$
+\frac{P(A)}{P(A^c)} = \mathcal{O}(A)
+$$</p>
+<p>$$
+\frac{P(A)}{1-P(A)} = \mathcal{O}(A)
+$$</p>
+<p>$$
+\frac{1 -P(A)}{P(A)} = \frac{1}{\mathcal{O}(A)}
+$$</p>
+<p>$$
+\frac{1}{P(A)} - 1 = \frac{1}{\mathcal{O}(A)}
+$$</p>
+<p>$$
+\frac{1}{P(A)} = \frac{1}{\mathcal{O}(A)} + 1
+$$</p>
+<p>$$
+\frac{1}{P(A)} = \frac{1 + \mathcal{O}(A)}{\mathcal{O}(A)}
+$$</p>
+<p>$$
+P(A) = \frac{\mathcal{O}(A)}{1 + \mathcal{O}(A)}
+$$</p>
+<h2>Expectation</h2>
+<p>The expected value of a random variable X is a weighted average of values X can take, with weights given by the probabilities of those values.
+$$
+E(X) = \sum_{i=1}^n{x_i * P(X=x_i)}
+$$</p>
+<h2>Frameworks of probability</h2>
+<p>Classical -- Outcomes that are equally likely have equal probabilities</p>
+<p>Frequentist -- In an infinite sequence of events, what is the relative frequency</p>
+<p>Bayesian -- Personal perspective (your own measure of uncertainty)</p>
+<p>In betting, one must make sure that all the rules of probability are followed. That the events are &quot;coherent&quot;, otherwise one might construct a series of bets where you're guaranteed to lose money. This is referred to as a Dutch book.</p>
+<h2>Conditional probability</h2>
+<p>$$
+P(A|B) = \frac{P(A\cup B)}{P(B)}
+$$</p>
+<p>Where $A|B$ denotes &quot;A given B&quot;</p>
+<p>Example from lecture:</p>
+<p>Suppose there are 30 students, 9 of which are female. From the 30 students, 12 are computer science majors. 4 of those 12 computer science majors are female
+$$
+P(Female) = \frac{9}{30} = \frac{3}{10}
+$$</p>
+<p>$$
+P(CS) = \frac{12}{30} = \frac{2}{5}
+$$</p>
+<p>$$
+P(F\cap CS) = \frac{4}{30} = \frac{2}{15}
+$$</p>
+<p>$$
+P(F|CS) = \frac{P(F \cap CS)}{P(CS)} = \frac{2/15}{2/5} = \frac{1}{3}
+$$</p>
+<p>An intuitive way to think about a conditional probability is that we're looking at a subsegment of the original population, and asking a probability question within that segment
+$$
+P(F|CS^c) = \frac{P(F\cap CS^c)}{PS(CS^c)} = \frac{5/30}{18/30} = \frac{5}{18}
+$$
+The concept of independence is when one event does not depend on another.
+$$
+P(A|B) = P(A)
+$$
+It doesn't matter that B occurred.</p>
+<p>If two events are independent then the following is true
+$$
+P(A\cap B) = P(A)P(B)
+$$
+This can be derived from the conditional probability equation.</p>
+<h2>Conditional Probabilities in terms of other conditional</h2>
+<p>Suppose we don't know what $P(A|B)$ is but we do know what $P(B|A)$ is. We can then rewrite $P(A|B)$ in terms of $P(B|A)$
+$$
+P(A|B) = \frac{P(B|A)P(A)}{P(B|A)P(A) + P(B|A^c)P(A^c)}
+$$
+Let's look at an example of an early test for HIV antibodies known as the ELISA test.
+$$
+P(+ | HIV) = 0.977
+$$</p>
+<p>$$
+P(- | NO_HIV) = 0.926
+$$</p>
+<p>As you can see over 90% of the time, this test was accurate.</p>
+<p>The probability of someone in North America having this disease was $P(HIV) = .0026$</p>
+<p>Now let's consider the following problem: the probability of having the disease given that they tested positive $P(HIV | +)$
+$$
+P(HIV|+) = \frac{P(+|HIV)P(HIV)}{P(+|HIV)P(HIV) + P(+|NO_HIV){P(NO_HIV)}}
+$$</p>
+<p>$$
+P(HIV|+) = \frac{(.977)(.0026)}{(.977)(.0026) + (1-.977)(1-.0026)}
+$$</p>
+<p>$$
+P(HIV|+) = 0.033
+$$</p>
+<p>This example looked at Bayes Theorem for the two event case. We can generalize it to n events through the following formula
+$$
+P(A|B) = \frac{P(B|A_1){(A<em>1)}}{\sum</em>{i=1}^{n}{P(B|A_i)}P(A_i)}
+$$</p>
+<h2>Bernoulli Distribution</h2>
+<p>~ means 'is distributed as'</p>
+<p>We'll be first studying the Bernoulli Distribution. This is when your event has two outcomes, which is commonly referred to as a success outcome and a failure outcome. The probability of success is $p$ which means the probability of failure is $(1-p)$
+$$
+X \sim B(p)
+$$</p>
+<p>$$
+P(X = 1) = p
+$$</p>
+<p>$$
+P(X = 0) = 1-p
+$$</p>
+<p>The probability of a random variable $X$ taking some value $x$ given $p$ is
+$$
+f(X = x | p) = f(x|p) = p^x(1-p)^{1 - x}I
+$$
+Where $I$ is the Heavenside function</p>
+<p>Recall the expected value
+$$
+E(X) = \sum_{x_i}{x_iP(X=x_i)} = (1)p + (0)(1-p) = p
+$$
+We can also define the variance of Bernoulli
+$$
+Var(X) = p(1-p)
+$$</p>
+<h2>Binomial Distribution</h2>
+<p>The binomial distribution is the sum of n <em>independent</em> Bernoulli trials
+$$
+X \sim Bin(n, p)
+$$</p>
+<p>$$
+P(X=x|p) = f(x|p) =  {n \choose x} p^x (1-p)^{n-x}
+$$</p>
+<p>$n\choose x$ is the combinatoric term which is defined as
+$$
+{n \choose x} = \frac{n!}{x! (n - x)!}
+$$</p>
+<p>$$
+E(X) = np
+$$</p>
+<p>$$
+Var(X) = np(1-p)
+$$</p>
+<h2>Uniform distribution</h2>
+<p>Let's say X is uniformally distributed
+$$
+X \sim U[0,1]
+$$</p>
+<p>$$
+f(x) = \left{
+\begin{array}{lr}
+1 &amp; : x \in  [0,1]\
+0 &amp; : otherwise
+\end{array}
+\right.
+$$</p>
+<p>$$
+P(0 &lt; x &lt; \frac{1}{2}) = \int_0^\frac{1}{2}{f(x)dx} = \int_0^\frac{1}{2}{dx} = \frac{1}{2}
+$$</p>
+<p>$$
+P(0 \leq x \leq \frac{1}{2}) = \int_0^\frac{1}{2}{f(x)dx} = \int_0^\frac{1}{2}{dx} = \frac{1}{2}
+$$</p>
+<p>$$
+P(x = \frac{1}{2}) = 0
+$$</p>
+<h2>Rules of probability density functions</h2>
+<p>$$
+\int_{-\infty}^\infty{f(x)dx} = 1
+$$</p>
+<p>$$
+f(x) \ge 0
+$$</p>
+<p>$$
+E(X) = \int_{-\infty}^\infty{xf(x)dx}
+$$</p>
+<p>$$
+E(g(X))  = \int{g(x)f(x)dx}
+$$</p>
+<p>$$
+E(aX) = aE(X)
+$$</p>
+<p>$$
+E(X + Y) = E(X) + E(Y)
+$$</p>
+<p>If X &amp; Y are independent
+$$
+E(XY) = E(X)E(Y)
+$$</p>
+<h2>Exponential Distribution</h2>
+<p>$$
+X \sim Exp(\lambda)
+$$</p>
+<p>Where $\lambda$ is the average unit between observations
+$$
+f(x|\lambda) = \lambda e^{-\lambda x}
+$$</p>
+<p>$$
+E(X) = \frac{1}{\lambda}
+$$</p>
+<p>$$
+Var(X) = \frac{1}{\lambda^2}
+$$</p>
+<h2>Uniform (Continuous) Distribution</h2>
+<p>$$
+X \sim [\theta_1, \theta_2]
+$$</p>
+<p>$$
+f(x|\theta_1,\theta_2) = \frac{1}{\theta_2 - \theta<em>1}I</em>{\theta_1 \le x \le \theta_2}
+$$</p>
+<h2>Normal Distribution</h2>
+<p>$$
+X \sim N(\mu, \sigma^2)
+$$</p>
+<p>$$
+f(x|\mu,\sigma^2) = \frac{1}{\sqrt{2\pi \sigma^2}}e^{-\frac{1}{2\sigma^2}(x-\mu)^2}
+$$</p>
+<p>$$
+E(X) = \mu
+$$</p>
+<p>$$
+Var(X) = \sigma^2
+$$</p>
+<h2>Variance</h2>
+<p>Variance is the squared distance from the mean
+$$
+Var(X) = \int_{-\infty}^\infty {(x - \mu)^2f(x)dx}
+$$</p>
+<h2>Geometric Distribution (Discrete)</h2>
+<p>The geometric distribution is the number of trails needed to get the first success, i.e, the number of Bernoulli events until a success is observed.
+$$
+X \sim Geo(p)
+$$</p>
+<p>$$
+P(X = x|p) = p(1-p)^{x-1}
+$$</p>
+<p>$$
+E(X) = \frac{1}{p}
+$$</p>
+<h2>Multinomial Distribution (Discrete)</h2>
+<p>Multinomial is like a binomial when there are more than two possible outcomes.</p>
+<p>$$
+f(x_1,...,x_k|p_1,...,p_k) = \frac{n!}{x_1! ... x_k!}p_1^{x_1}...p_k^{x_k}
+$$</p>
+<h2>Poisson Distribution (Discrete)</h2>
+<p>The Poisson distribution is used for counts. The parameter $\lambda &gt; 0$ is the rate at which we expect to observe the thing we are counting.
+$$
+X \sim Pois(\lambda)
+$$</p>
+<p>$$
+P(X=x|\lambda) = \frac{\lambda^xe^{-\lambda}}{x!}
+$$</p>
+<p>$$
+E(X) = \lambda
+$$</p>
+<p>$$
+Var(X) = \lambda
+$$</p>
+<h2>Gamma Distribution (Continuous)</h2>
+<p>If $X_1, X_2, ..., X_n$ are independent and identically distributed Exponentials,waiting time between success events, then the total waiting time for all $n$ events to occur will follow a gamma distribution with shape parameter $\alpha = n$ and rate parameter $\beta = \lambda$
+$$
+Y \sim Gamma(\alpha, \beta)
+$$</p>
+<p>$$
+f(y|\alpha,\beta) = \frac{\beta^n}{\Gamma(\alpha)}y^{n-1}e^{-\beta y}I_{y\ge0}(y)
+$$</p>
+<p>$$
+E(Y) = \frac{\alpha}{\beta}
+$$</p>
+<p>$$
+Var(Y) = \frac{\alpha}{\beta^2}
+$$</p>
+<p>Where $\Gamma(x)$ is the gamma function. The exponential distribution is a special case of the gamma distribution with $\alpha = 1$. As $\alpha$ increases, the gamma distribution more closely resembles the normal distribution.</p>
+<h2>Beta Distribution (Continuous)</h2>
+<p>The beta distribution is used for random variables which take on values between 0 and 1. For this reason, the beta distribution is commonly used to model probabilities.
+$$
+X \sim Beta(\alpha, \beta)
+$$</p>
+<p>$$
+f(x|\alpha,\beta) = \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)}x^{n -1}(1 - x)^{\beta - 1}I_{{0 &lt; x &lt; 1}}
+$$</p>
+<p>$$
+E(X) = \frac{\alpha}{\alpha + \beta}
+$$</p>
+<p>$$
+Var(X) = \frac{\alpha\beta}{(\alpha + \beta)^2(\alpha+\beta+1)}
+$$</p>
+<p>The standard uniform distribution is a special case of the beta distribution with $\alpha = \beta = 1$</p>
+<h2>Bayes Theorem for continuous distribution</h2>
+<p>$$
+f(\theta|y) = \frac{f(y|\theta)f(\theta)}{\int{f(y|\theta)f(\theta)d\theta}}
+$$</p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for April 3rd</h1>
+<h2>Inheritance</h2>
+<p>The <em>base class</em>, <em>super class</em>, or <em>parent class</em> is the initial class that we are working with. Let's say that you want to <em>extend</em> the class, or add additional functionality. The class that inherits from the parent class is called the <em>child class</em>, <em>subclass</em> or <em>derived class</em>.</p>
+<h2>Child Class Syntax</h2>
+<pre><code class="language-java">public class Truck extends Car {
+    // Truck Appropriate Fields
+    // Necessary methods for truck
+}</code></pre>
+<p>This code adds all the methods from Car into the Truck class. You can then add methods that is specific to a Truck into the Truck class.</p>
+<p>A child class has all parent fields and access to all parent methods!</p>
+<h2>Visibility Modifiers</h2>
+<p>Recall the words <code>public</code> and <code>private</code></p>
+<p>The <code>public</code> modifier makes the field/method accessible by any class</p>
+<p>The <code>private</code> modifier makes the field/method only accessible within the method itself</p>
+<p>The protected modifier makes the field/method accessible within the same class or any subclasses.</p>
+<h2>Overriding a Method</h2>
+<p>You can override a parent class method by declaring a method in the child class with the same...</p>
+<ul>
+<li>name</li>
+<li>number of paramters</li>
+<li>parameter types</li>
+</ul>
+<p>but this method would have different behavior!</p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

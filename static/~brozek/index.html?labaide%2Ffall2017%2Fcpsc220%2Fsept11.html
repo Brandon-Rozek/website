@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>CPSC 220 Lecture 4</h1>
+<h2>Practice Problem</h2>
+<ol>
+<li>Create a class called Car</li>
+<li>
+<ul>
+<li>Create a private variable of int type called year</li>
+<li>Create a private variable of String type called make</li>
+</ul>
+</li>
+<li>Create accessor methods for all data members.</li>
+<li>Create mutator methods for all data methods.</li>
+</ol>
+<pre><code class="language-java">public class car { // begin car
+  private int year;
+  private String make;
+  public int getYear(void) {
+      return year;
+  }
+  public String getMake() {
+      return make;
+  }
+  public void setYear(int y) {
+    if (y &gt; 1890) {
+        year = y;
+    } else {
+        System.out.println(y + " is not a valid year.");
+    }
+  }
+  public void setMake(String m) {
+      make = m;
+  }
+}</code></pre>
+<p>Local variables are only existent within the curly braces that it is defined in.</p>
+<h2>If Statements and Boolean Expressions</h2>
+<p>Boolean expressions return a boolean</p>
+<pre><code class="language-java">1 &lt; 4; // 1 is less than 4: TRUE
+3 &gt; 5; // 3 is greater than 5: FALSE
+5 == 5; // 5 is equal to 5: TRUE
+5 != 5; // 5 is not equal to 5: FALSE
+1 &gt;= 1; // 1 is greater than or equal to 1: TRUE
+5 &lt;= 1; // 5 is less than or equal to 1: FALSE</code></pre>
+<p>If statements only occur if the boolean expression is true, otherwise the <code>else</code> block is executed.</p>
+<pre><code class="language-java">if (true) {
+  System.out.println("I am always printed");
+} else {
+  System.out.println("I am never printed");
+}</code></pre>
+<p>You can only have one <code>else</code> per <code>if</code>. If you have an <code>if</code> you don't necessarily need an <code>else</code></p>
+<h2>Local vs Class Variables</h2>
+<p>If you have a local variable and the class variable sharing the same name, then the local variable is always used first.</p>
+<pre><code class="language-java">public class car { // begin car
+    private int year;
+  public void setYear(int year) {
+     year = year;
+  }
+}</code></pre>
+<p>This is a redundant statement, it makes the argument that is passed in equal to itself.</p>
+<p>To avoid this situation, use the keyword <code>this</code> to access the class variable</p>
+<pre><code class="language-java">public class car { 
+  private int year;  
+  public void setYear(int year) {     
+    this.year = year;  
+  }
+}</code></pre>
+<p>The code above runs as expected.</p>
+<p>Rewriting our class with <code>this</code></p>
+<pre><code class="language-java">public class car { // begin car
+  private int year;
+  private String make;
+  public int getYear(void) {
+      return year;
+  }
+  public String getMake() {
+      return make;
+  }
+  public void setYear(int year) {
+    if (y &gt; 1890) {
+        this.year = year;
+    } else {
+        System.out.println(y + " is not a valid year.");
+    }
+  }
+  public void setMake(String make) {
+      this.make = make;
+  }
+}</code></pre>
+<h2>Unreachable Code</h2>
+<p>When the code hits a <code>return</code> statement, it stops executing the rest of the code in the method. Also throws an Unreachable Code Error.</p>
+<pre><code class="language-java">public int add(int x, int y) {
+  return x + y;
+  System.out.println("x + y = " + x + y);
+}
+add();
+System.out.println("Hello");</code></pre>
+<p>Here the code above will not compile, though assuming the error doesn't exist then it would only print out &quot;Hello&quot;</p>
+<h2>Constructors</h2>
+<p>You cannot have a private or protected constructors.</p>
+<p>Constructors are used to initialize your objects.</p>
+<p>You want to have the class variables to the left of the assignment statement.</p>
+<pre><code class="language-java">public class car {
+  private int year;
+  private String make;
+  car() {
+    year = 1890;
+    make = "Ford";
+  }
+  car(int year, String make) {
+    this.year = year;
+    this.make = make;
+  }
+}</code></pre>
+<h2>Testers</h2>
+<p>Testers are useful to check that the class is implemented correctly.  Both the tester and the class have to be in the same folder/directory.</p>
+<pre><code class="language-java">public class carTester {
+  public static void main(String[] args) {
+    Car myCar; // Declaration
+    myCar = new Car(); // Initilization
+    Car yourCar = new Car(2009, "Hyundai"); // Declaration + Initialization
+  }
+}</code></pre>
+<h2>More about classes</h2>
+<pre><code class="language-java">public class Car {
+  private String name;
+  private int odometer;
+  public void setOdometer(int od) {
+    odometer = od;
+  }
+  public void setName(String n) {
+      this.name = n;
+  }
+  public void changeOilRequest(String name, int od) {
+    if (name == this.name) {
+      int difference = od - this.odometer;
+      if (difference &gt; = 3000) {
+        // You can call other methods in the class
+        setOdo(od);  // Equivalent to "this.setOdo(od);"
+        this.odometer = od;
+        System.out.println("Ready for oil change.");
+      } else {
+        System.out.println(name + " not ready for oil change.")
+      }
+    } // end if
+  } // end changeOil request
+} // end class</code></pre>
+<p>To call public methods outside the class use the variable name to do so.</p>
+<pre><code class="language-java">public class CarTester {
+  public static void main(String[] args) {
+    Car myCar = new Car();
+    myCar.setName("Honda")
+    myCar.changeOilRequest("Honda", 3400);
+  }
+}</code></pre>
+<h2>Math library</h2>
+<p>The <code>ceil</code> method rounds up while the <code>floor</code> method runs down.</p>
+<pre><code class="language-java">Math.ceil(3.2); // 4
+Math.ceil(4.1); // 4</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

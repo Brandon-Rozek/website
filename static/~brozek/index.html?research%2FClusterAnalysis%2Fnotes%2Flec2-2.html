@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Principal Component Analysis Pt. 1</h1>
+<h2>What is PCA?</h2>
+<p>Principal component analysis is a statistical procedure that performs an orthogonal transformation to convert a set of variables into a set of linearly uncorrelated variables called principle components.</p>
+<p>Number of distinct principle components equals $min(# Variables, # Observations - 1)$</p>
+<p>The transformation is defined in such a way that the first principle component has the largest possible variance explained in the data.</p>
+<p>Each succeeding component has the highest possible variance under the constraint of having to be orthogonal to the preceding components.</p>
+<p>PCA is sensitive to the relative scaling of the original variables.</p>
+<h3>Results of a PCA</h3>
+<p>Results are discussed in terms of <em>component scores</em> which is the transformed variables and <em>loadings</em> which is the weight by which each original variable should be multiplied to get the component score.</p>
+<h2>Assumptions of PCA</h2>
+<ol>
+<li>Linearity</li>
+<li>Large variances are important and small variances denote noise</li>
+<li>Principal components are orthogonal</li>
+</ol>
+<h2>Why perform PCA?</h2>
+<ul>
+<li>Distance measures perform poorly in high-dimensional space (<a href="https://stats.stackexchange.com/questions/256172/why-always-doing-dimensionality-reduction-before-clustering">https://stats.stackexchange.com/questions/256172/why-always-doing-dimensionality-reduction-before-clustering</a>)</li>
+<li>Helps eliminates noise from the dataset (<a href="https://www.quora.com/Does-it-make-sense-to-perform-principal-components-analysis-before-clustering-if-the-original-data-has-too-many-dimensions-Is-it-theoretically-unsound-to-try-to-cluster-data-with-no-correlation">https://www.quora.com/Does-it-make-sense-to-perform-principal-components-analysis-before-clustering-if-the-original-data-has-too-many-dimensions-Is-it-theoretically-unsound-to-try-to-cluster-data-with-no-correlation</a>)</li>
+<li>One initial cost to help reduce further computations</li>
+</ul>
+<h2>Computing PCA</h2>
+<ol>
+<li>Subtract off the mean of each measurement type</li>
+<li>Compute the covariance matrix</li>
+<li>Take the eigenvalues/vectors of the covariance matrix</li>
+</ol>
+<h2>R Code</h2>
+<pre><code class="language-R">pcal = function(data) {
+  centered_data = scale(data)
+  covariance = cov(centered_data)
+  eigen_stuff = eigen(covariance)
+  sorted_indices = sort(eigen_stuff$values, 
+                        index.return = T, 
+                        decreasing = T)$ix
+  loadings = eigen_stuff$values[sorted_indices]
+  components = eigen_stuff$vectors[sorted_indices,]
+  combined_list = list(loadings, components)
+  names(combined_list) = c("Loadings", "Components")
+  return(combined_list)
+}</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

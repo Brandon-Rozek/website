@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>CPSC 220 Lecture 3</h1>
+<h2>Variables</h2>
+<p>Variable -- Storage of information</p>
+<p>The type cannot change in a variable.</p>
+<p>Examples of types include</p>
+<ul>
+<li>int</li>
+<li>float</li>
+<li>double</li>
+<li>String</li>
+<li>char</li>
+<li>boolean</li>
+</ul>
+<p>Declaration: <code>int num;</code></p>
+<p>Initialization: <code>num = 5;</code></p>
+<p>Declaration + Initialization: <code>int num = 5;</code></p>
+<h3>Possible Errors</h3>
+<p><strong>You cannot declare a variable multiple times.</strong></p>
+<p>Undefined variables are when you do not declare a variable before attempting to use it.</p>
+<h3>Casting</h3>
+<p>You need to cast if you are attempting to lose data or store a larger memory type into a smaller one.</p>
+<p>double -&gt; float -&gt; int <strong>(casting required)</strong></p>
+<pre><code class="language-java">double gpa = 3.2;
+int num1 = 10 * (int)gpa // 30</code></pre>
+<h1>Operations</h1>
+<p>The basic number operations are</p>
+<ul>
+<li>+</li>
+<li>-</li>
+<li>*</li>
+<li>/</li>
+<li>% <em>(the remainder)</em></li>
+</ul>
+<p>Examples</p>
+<pre><code class="language-java">0 % 2 // 0
+1 % 2 // 1
+2 % 2 // 0
+
+3 % 2 // 1
+4 % 2 // 0
+5 % 2 // 1
+
+3 % 5 // 3
+7 % 5 // 2</code></pre>
+<p>You can test if something is even using modulus %</p>
+<pre><code class="language-java">// Assuming i was initiliazed to a value earlier
+if (i % 2 == 0) {
+  System.out.println("i is even");
+} else {
+  System.out.println("i is odd");
+}</code></pre>
+<h1>System input</h1>
+<p>Here is sample code using a Scanner as input</p>
+<pre><code class="language-java">import java.util.Scanner;
+public class ScannerExample {
+  public static void main(String[] args) {
+    Scanner in;
+    in = new Scanner(System.in);
+
+    // Grab numerical values
+    int num = in.nextInt();
+    float gpa = in.nextFloat();
+    double weight = in.nextDouble();
+
+    // Grab a single character
+    in.nextLine()
+    char initial = in.next().charAt(0);
+
+    // To get the entire line of a string
+    in.nextLine();
+    String name = in.nextLine();
+  }
+}</code></pre>
+<p>You need to use <code>in.nextLine()</code> to grab the carriage return that is left after grabbing a numeric value.</p>
+<h1>Classes and Objects</h1>
+<p>Classes are a new type that you can have multiple things of.</p>
+<p>These classes are blueprints that are made up of primitives or more basic types.</p>
+<p>First create a Pet.java file (Name of the class must match the name of the file)</p>
+<pre><code class="language-java">public class Pet {
+  private String name;
+  private int years;
+}</code></pre>
+<p>You can then use the Pet class in your main program. The terminology here is that you can create instances or objects of the class.</p>
+<p>In PetTester.java</p>
+<pre><code class="language-java">public class PetTester {
+  public static void main(String[] args) {
+    Pet myPet;
+    myPet = new Pet();
+  }
+}</code></pre>
+<p><strong>Both Pet.java and PetTester.java must be in the same directory/folder</strong></p>
+<h3>Mutators/Accessors</h3>
+<p>Since the variables are private we cannot access them in the main program. To work around this, we can write what is called a mutator method.</p>
+<pre><code class="language-java">public class Pet {
+  private String name;
+  private int years;
+
+  // Mutators
+  public void setName(String n) {
+      name = n;
+  }
+  public void setYears(int y) {
+      if (y &gt;= 0) {
+          years = y;
+      } else {
+          System.out.println("No one is less than 0 years old.")
+      }
+  }
+}</code></pre>
+<p>Now let's use these new methods</p>
+<pre><code class="language-java">public class PetTester {
+  public static void main(String[] args) {
+    Pet mypet;
+    myPet = new Pet();
+    myPet.setName("Fred");
+    myPet.setAge(20);
+  }
+}</code></pre>
+<p>We need a method that will allow us to access the data type. Let's add accessors to our pet class.</p>
+<pre><code class="language-java">public class Pet {
+  private String name;
+  private int years;
+
+  // Mutators
+  public void setName(String n) {
+    name = n;
+  }
+  public void setYears(int y) {
+    if (y &gt;= 0) {
+      years = y;
+    } else {
+      System.out.println("No one is less than 0 years old.")
+    }
+  }
+
+  // Accessors
+  public String getName() {
+    return name;
+  }
+  public int getYears() {
+    return years;
+  }
+}</code></pre>
+<p>Now let's get some information from the pet object, such as the age.</p>
+<pre><code class="language-java">public class PetTester {
+  public static void main(String[] args) {
+    Pet mypet;
+    myPet = new Pet();
+    myPet.setName("Fred");
+    myPet.setYears(20);
+
+    int year = myPet.getYears();
+  }
+}</code></pre>
+<h3>Constructors</h3>
+<p>Constructors lets us initialize variables in the class without having to use mutator methods.</p>
+<pre><code class="language-java">public class Pet {
+  private String name;
+  private int years;
+
+  // Default Constructor
+  public Pet() {
+    name = "";
+    years = 0;
+  }
+  // Non-Default Constructor
+  public Pet(int y, String n) {
+    name = n;
+    years = y;
+  }
+
+  // Mutator Methods
+  public void setName(String n) {
+    name = n;
+  }
+  public void setYears(int y) {
+    if (y &gt;= 0) {
+      years = y;
+    } else {
+      System.out.println("No one is less than 0 years old.")
+    }
+  }
+
+  // Accessor Methods
+  public String getName() {
+    return name;
+  }
+  public int getYears() {
+    return years;
+  }
+}</code></pre>
+<p>Now let us see this in action.</p>
+<pre><code class="language-java">public class PetTester {
+  public static void main(String[] args) {
+    Pet yourPet = new Pet(10, "Fluffy");
+  }
+}</code></pre>
+<p>You can have as many constructors as you want, but they must be different.</p>
+<p>Example:</p>
+<pre><code class="language-java">public class Pet {
+  ...
+  pet() {
+    name = "";
+    years = 0;
+  }
+  pet(int y, String n) {
+    name = n;
+    years = y;
+  }
+  pet(String n) {
+    years = 1;
+    name = n;
+  }
+  ...
+}</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

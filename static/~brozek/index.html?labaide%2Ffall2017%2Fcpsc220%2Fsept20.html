@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h2>Counting Loop</h2>
+<p>Looking at the following example code</p>
+<pre><code class="language-java">int i;
+for (i = 0; i &lt; 3; i++) { //begin for
+  System.out.println("i = " + i); //body
+} //end for
+System.out.println("After loop, i = " + i);</code></pre>
+<p><code>i = 0</code> is the initializing statement</p>
+<p><code>i &lt; 3</code> is the conditional, that is when the loop ends</p>
+<p><code>i++</code> is the increment/decrement</p>
+<p><code>i++</code> is synonymous with <code>i = i + 1</code></p>
+<p>The initialization statement only occurs once at the beginning of the loop. </p>
+<h3>Execution Example</h3>
+<p>Let us go through this for loop example</p>
+<ul>
+<li>Let us set <code>i = 0</code></li>
+<li>Is <code>i &lt; 3</code>? Yes execute the body
+<ul>
+<li>The body executes an output of <code>"i = 0"</code></li>
+</ul></li>
+<li>Now we increment <code>i ++</code>, i is now 1</li>
+<li>Is <code>i &lt; 3</code>? Yes, 1 is less than 3. Execute body
+<ul>
+<li>The computer prints out  <code>"i = 1"</code></li>
+</ul></li>
+<li>Increment <code>i++</code> i is now 2</li>
+<li>Is <code>i &lt; 3</code>? Yes 2 is less than 3. Execute body
+<ul>
+<li>The computer prints out <code>"i = 2"</code></li>
+</ul></li>
+<li>Increment <code>i++</code>, i is now 3</li>
+<li>Is <code>i &lt; 3</code>?  No 3  is not less than 3
+<ul>
+<li>Don't execute body of loop</li>
+</ul></li>
+</ul>
+<p>Exit loop. Print <code>"After loop, i = 3"</code></p>
+<h3>Condensing Syntax</h3>
+<p>You can also do the declaration in the initialization statement</p>
+<pre><code class="language-java">for (int i = 0; i &lt; 3; i++) {
+    System.out.println("i = " + i);
+}</code></pre>
+<p>This now runs like above without the <code>"After loop, i = 3"</code> print. You cannot access the variable <code>i</code> outside the for loop since in this example, it belongs to the for loop's scope.</p>
+<h2>Logic Expressions</h2>
+<h3>And Statements</h3>
+<p>With the AND operator <code>&amp;&amp;</code> both the left and right side needs to be true for the expression to be true.</p>
+<pre><code class="language-java">true &amp;&amp; true // true
+true &amp;&amp; false // false
+false &amp;&amp; true // false
+false &amp;&amp; false // false</code></pre>
+<h3>Or Statements</h3>
+<p>With the OR operator <code>||</code> either the left or right side needs to be true for the expression to be true.</p>
+<pre><code class="language-java">true || true // true
+true || false // true
+false || true // true
+false || false // false</code></pre>
+<h3>Examples</h3>
+<p><strong>Example</strong>: Print out the number <code>n</code> if it is between 10 and 20 (inclusive)</p>
+<pre><code class="language-java">if (n &gt;= 10 &amp;&amp; n &lt;= 20) {
+    System.out.println(n);
+}</code></pre>
+<p><strong>Example</strong>: Print out the <code>age</code> if it is not of young adult age. Young adult range is from 18 to 39 (inclusive)</p>
+<pre><code class="language-java">if (!(age &gt;= 18 &amp;&amp; age &lt;= 39)) {
+    System.out.println(age);
+}</code></pre>
+<p>Or you can use De Morgan's Law (for the curious)</p>
+<pre><code class="language-java">if (age &lt; 18 || age &gt; 39) {
+    System.out.println(age);
+}</code></pre>
+<h2>For Loops (Cont.)</h2>
+<h3>Backwards counting</h3>
+<p>You can use the loop to count backwards</p>
+<pre><code class="language-java">for (int i = 10; i &gt; -1; i--) {
+    System.out.println(i);
+}</code></pre>
+<p>This prints the following</p>
+<pre><code class="language-java">10
+9
+8
+7
+6
+5
+4
+3
+2
+0</code></pre>
+<h3>Rows-Columns</h3>
+<p>You can make rows and columns of asterisks</p>
+<pre><code class="language-java">for (int j = 0; j &lt; someNumber; j++) { // Corresponds to rows
+  for (int i = 0; i &lt; someNumber2; i++) { // Corresponds to columns
+    System.out.print("*"); 
+  }
+  System.out.println(""); // Goes to the next row
+}</code></pre>
+<p>If <code>someNumber</code> equals <code>someNumber2</code>, then we have the same amount of rows as columns.</p>
+<p>Let <code>someNumber</code> equal to 2 and <code>someNumber2</code> equal to 2</p>
+<p>Output:</p>
+<pre><code>**
+**</code></pre>
+<h3>Right Triangles</h3>
+<p>You can make a right triangle of Tilda with the following code</p>
+<pre><code class="language-java">for (int i = 1; i &lt;= num; i++) { // Corresponds to the row
+  for (int j = 0; j &lt; i; j++) { // Corresponds to the column and stops at the current row number
+      System.out.print("~");
+  }
+  System.out.println(""); // Moves to next row
+}</code></pre>
+<h5>What are for-loops used for? <em>Reusing code</em></h5>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

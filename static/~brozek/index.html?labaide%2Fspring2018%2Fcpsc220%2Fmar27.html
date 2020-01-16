@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for March 27</h1>
+<h2>In the Real World...</h2>
+<p>Objects are known for having characteristics. A car has on average 4 wheels, 2-4 doors, a steering wheel.</p>
+<p>Objects can perform actions. A car can drive, hold cargo, and honk.</p>
+<h2>In the Programming World...</h2>
+<p>Object-Oriented Programming</p>
+<ul>
+<li>Focuses on objects</li>
+<li>Are not linear</li>
+<li>Adds organization to a program</li>
+<li>Fits with human cognition (making abstractions)</li>
+</ul>
+<h2>Class Structure</h2>
+<pre><code class="language-java">public class Classname {
+    // Fields
+    // Constructors
+    // Methods
+}</code></pre>
+<h2>Fields</h2>
+<p>Fields are instance variables, they store values, help define state, and exist in memory for the lifetime of the object.</p>
+<pre><code class="language-java">public class Car {
+    private double price;
+    private double gas;
+}</code></pre>
+<h2>Constructor</h2>
+<p>We can build an object through a constructor. It is a special kind of method, this method requires that you not have a return type and that you name it the same as the class itself.</p>
+<p>Constructors help set default field values for the different properties of our class.</p>
+<pre><code class="language-java">public class Car {
+    // Begin Constructor
+    public Car(double cost) {
+        this.price = cost;
+        this.gas = 0;
+    }
+    // End Constructor
+    private double price;
+    private double gas;
+}</code></pre>
+<p><strong>Note:</strong> The <code>this</code> keyword refers to the object's fields. This helps keep it separate from other variables you can create in the method and the input parameters you receive.</p>
+<h2>Accessor Method - &quot;Getter&quot;</h2>
+<p>We like to classify methods into two types, accessors and mutators.</p>
+<p>Getter methods return a copy of an instance field. It does not change the state of the object.</p>
+<pre><code class="language-java">public double getPrice() {
+    return this.price;
+}</code></pre>
+<h2>Mutator Method - &quot;Setter&quot;</h2>
+<p>This type of method modifies an instance field. It does not return anything and changes the state of the object.</p>
+<pre><code class="language-java">public void setPrice(double cost) {
+    this.price = cost;
+}</code></pre>
+<h2>Example of Car Class In All Its Glory</h2>
+<pre><code class="language-java">public class Car {
+    // Instance Variables
+    private int mpg;
+    private double price;
+
+    // Constructors
+    public Car() {
+        this.price = 0;
+        this.mpg = 0;
+    }
+    public Car(double cost, int mpg) {
+        this.price = cost;
+        this.mpg = mpg;
+    }
+
+    // Accessors
+    public double getPrice() {
+        return this.price''
+    }
+    public int getMpg() {
+        return this.mpg;
+    }
+
+    // Mutators
+    public void setPrice(double cost) {
+        this.price = cost;
+    }
+    public void setMpg(int mpg) {
+        this.mpg = mpg;
+    }
+}</code></pre>
+<h2>Using Classes</h2>
+<p>Just like how we used the <code>Scanner</code> class, we can also use our new <code>Car</code> class.</p>
+<pre><code class="language-java">public class TestCar {
+    public static void main(String[] args) {
+        // Declare an object reference
+        Car c;
+
+        // Initialize the object
+        c = new Car();
+
+        // Update the fields of the object
+        c.setPrice(3000);
+        c.setMpg(22);
+
+        // Print object information
+        System.out.println("Price is " + c.getPrice() )
+    }
+}</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

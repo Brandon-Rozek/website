@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+      <meta name="description" content="A list of my research Projects">
+    <title>Research | Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem active">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Research</h1>
+<h2>Computer Science / Data Science Research</h2>
+<h3>Reinforcement Learning</h3>
+<p>Deep Reinforcement Learning: With Dr. Zacharski I focused more on a particular instance of Reinforcement Learning where deep neural networks are used. During this time, I built out a Reinforcement Learning library written in PyTorch. This library helps me have a test bed for trying out different algorithms and attempts to create my own.</p>
+<p><a href="https://github.com/brandon-rozek/rltorch">Github Code</a></p>
+<p><a href="/files/research/QEP.pptx">QEP Algorithm Slides</a></p>
+<p>Reinforcement Learning: Currently studying the fundamentals of reinforcement learning with Dr. Davies. We went over the fundamentals such as value functions, policy functions, how we can describe our environment as a markov decision processes, etc.</p>
+<p><a href="index.html%3Fresearch%252FReinforcementLearning.html">Notes and Other Goodies</a></p>
+<p><a href="https://github.com/brandon-rozek/ReinforcementLearning">Github Code</a></p>
+<h3>Programming Languages</h3>
+<p>Programming Languages: Studying the design of programming languages. So far I made an implementation of the SLOTH programming language, experimenting with what I want my own programming language to be syntatically and paradigm wise.</p>
+<p><a href="https://github.com/brandon-rozek/SLOTH">SLOTH Code</a></p>
+<p>Before this study, I worked though a book called &quot;Build your own Lisp&quot; and my implementation of a lisp like language is below.</p>
+<p><a href="https://github.com/brandon-rozek/lispy">Lispy Code</a></p>
+<h3>Other</h3>
+<p>Competitive Programming: Studying algorithms and data structures necessary for competitive programming. Attending ACM ICPC in November with a team of two other students.</p>
+<h2>Math/Statistics Research</h2>
+<p>Worked on an independent study on the topic of <strong>Cluster Analysis</strong>. This is where you try to group similar observations without knowing what the labels are.
+I am studying under the guidance of Dr. Melody Denhere, the link below gives you more of a description of the project along with my course notes.</p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis.html">Cluster Analysis Spring 2018</a></p>
+<h2>Physics Research</h2>
+<p>For the two projects below, I worked on Quantum Research in a physics lab with a fellow student Hannah Killian and an advisor Dr. Hai Nguyen. I mostly assisted with the software support for the project and assisted in the mathematics in whatever way I can.</p>
+<p><a href="/files/research/modellingpopulationdynamics.pdf">Modeling Population Dynamics of Incoherent and Coherent Excitation</a></p>
+<p><a href="/files/research/coherentcontrolofatomicpopulation.pdf">Coherent Control of Atomic Population Using the Genetic Algorithm</a></p>
+<p>In order to circumvent the frustrations I had with simulation code taking a while, I applied and received funding to build out a Beowulf cluster for the Physics department. Dr. Maia Magrakvilidze was the advisor for this project.</p>
+<p><a href="/files/research/LUNAC.pdf">High Performance Cluster for Research and Education Report (nicknamed LUNA-C)</a></p>
+<p><a href="/files/research/LUNACposter.pdf">LUNA-C Poster</a></p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

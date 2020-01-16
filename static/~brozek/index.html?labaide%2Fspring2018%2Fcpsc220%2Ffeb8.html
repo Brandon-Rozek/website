@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for February 8th</h1>
+<h2>Switch Statements</h2>
+<p>Another way to perform multiway branching. Comparing a variable and constant values (<code>String</code>, <code>int</code>, <code>char</code>)</p>
+<p>Switch statements cannot be used with <code>boolean</code>, <code>double</code>, or <code>float</code>s</p>
+<h3>Syntax</h3>
+<pre><code class="language-java">switch (variable) {
+  case value1:
+    // Do something
+    break;
+  case value2:
+    // Do something else
+    break;
+  //...
+  default:
+    // If all else fails do this
+    break;
+}</code></pre>
+<p><code>case</code> is a reserved word that means &quot;when our variable in consideration is equal to...&quot;</p>
+<p>If you forget the <code>break</code> keyword, then the program will keep doing the work of all the statements until it hits a <code>break</code> keyword.</p>
+<h3>Example Switch Syntax</h3>
+<pre><code class="language-java">switch (birthday) {
+  case 1: 
+    birthstone = "garnet";
+    break;
+  case 2:
+    birthstone = "amethyst";
+    break;
+  // ....
+  default:
+    System.out.println("Not valid");
+    break;
+}</code></pre>
+<h2>Comparing Strings Relationally</h2>
+<p>Comparing strings are based on the ASCII value of characters</p>
+<p>Sorting strings will result in strings being in alphabetical or reverse alphabetical order. The values of the strings are compared character by character from the left with each ASCII value.</p>
+<p>To compare strings use the <code>compareTo()</code> method.  Here is the format of the call</p>
+<pre><code class="language-java">str1.compareTo(str2)</code></pre>
+<p>This returns a <em>negative number</em> when <code>str1</code> is less than <code>str2</code></p>
+<p>This returns <code>0</code> when <code>str1</code> is equal to <code>str1</code></p>
+<p>This returns a <em>positive number</em> when <code>str1</code> is greater than <code>str2</code></p>
+<h3>Example</h3>
+<pre><code class="language-java">String a = "apple";
+String b = "banana";
+
+int x = a.compareTo(b); // x = -1
+
+int y = b.compareTo(a); // y = 1</code></pre>
+<h2>Ternary Operator</h2>
+<p>With a ternary operator, you can shorten statements where a value is determined by an if statement</p>
+<pre><code class="language-java">String output = "";
+if (movieRating &gt; 4) {
+  output = "Fan favorite";
+} else {
+  output = "Alright";
+}</code></pre>
+<p>Is equivalent to</p>
+<pre><code class="language-java">String output = "";
+output = (movieRating &gt; 4)? "Fan favorite": "Alright";</code></pre>
+<h3>Another Example</h3>
+<pre><code class="language-java">double shipping;
+if (isPrimeMember) {
+  shipping = 0;
+} else {
+  shipping = 3.99;
+}</code></pre>
+<p>Is equivalent to</p>
+<pre><code class="language-java">double shipping = (isPrimeMember)? 0: 3.99;</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

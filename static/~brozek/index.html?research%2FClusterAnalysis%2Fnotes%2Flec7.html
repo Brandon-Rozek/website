@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Divisive Methods Pt.1</h1>
+<p>Divisive methods work in the opposite direction of agglomerative methods. They take one large cluster and successively splits it.</p>
+<p>This is computationally demanding if all $2^{k - 1} - 1$ possible divisions into two sub-clusters of a cluster of $k$ objects are considered at each stage.</p>
+<p>While less common than Agglomerative methods, divisive methods have the advantage that most users are interested in the main structure in their data, and this is revealed from the outset of a divisive method.</p>
+<h2>Monothetic Divisive Methods</h2>
+<p>For data consisting of $p$ <strong>binary variables</strong>, there is a computationally efficient method known as <em>monothetic divisive methods</em> available.</p>
+<p>Monothetic divisions divide clusters according to the presence or absence of each of the $p$ variables, so that at each stage, clusters contain members with certain attributes that are either all present or all absent.</p>
+<p>The term 'monothetic' refers to the use of a single variable on which to base the split on. <em>Polythetic</em> methods use all the variables at each stage.</p>
+<h3>Choosing the Variable to Split On</h3>
+<p>The choice of the variable on which a split is made depends on optimizing a criterion reflecting either cluster homogeneity or association with other variables.</p>
+<p>This tends to minimize the number of splits that have to be made.</p>
+<p>An example of an homogeneity criterion is the information content $C$</p>
+<p>This is defined with $p$ variables and $n$ objections where $f<em>k$ is the number of individuals with the $k$ attribute
+$$
+C = pn\log{n}-\sum</em>{k = 1}^p{(f_k\log{f_k} - (n-f_k)\log{(n-f_k)})}
+$$</p>
+<h3>Association with other variables</h3>
+<p>Recall that another way to split is based on the association with other variables. The attribute used at each step can be chosen according to its overall association with all attributes remaining at each step.</p>
+<p>This is sometimes termed <em>association analysis</em>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>V1</th>
+<th>V2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>a</td>
+<td>b</td>
+</tr>
+<tr>
+<td>0</td>
+<td>c</td>
+<td>d</td>
+</tr>
+</tbody>
+</table>
+<h4>Common measures of association</h4>
+<p>$$
+|ad-bc| \tag{4.6}
+$$</p>
+<p>$$
+(ad-bc)^2 \tag{4.7}
+$$</p>
+<p>$$
+\frac{(ad-bc)^2n}{(a+b)(a+c)(b+d)(c+d)} \tag{4.8}
+$$</p>
+<p>$$
+\sqrt{\frac{(ad-bc)^2n}{(a+b)(a+c)(b+d)(c+d)}} \tag{4.9}
+$$</p>
+<p>$$
+\frac{(ad-bc)^2}{(a+b)(a+c)(b+d)(c+d)} \tag{4.10}
+$$</p>
+<p>$(4.6)$ and $(4.7)$ have the advantage that there is no danger of computational problems if any marginal totals are near zero.</p>
+<p>The last three, $(4.8)$, $(4.9)$, $(4.10)$, are all related to the $\chi^2$ statistic, its square root, and the Pearson correlation coefficient respectively.</p>
+<h3>Advantages/Disadvantages of Monothetic Methods</h3>
+<p>Appealing features of monothetic divisive methods are the easy classification of new members and the including of cases with missing values.</p>
+<p>A further advantage of monothetic divisive methods is that it is obvious which variables produce the split at any stage of the process.</p>
+<p>A disadvantage with these methods is that the possession of a particular attribute which is either rare or rarely found in combination with others may take an individual down a different path.</p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

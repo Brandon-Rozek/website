@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture Notes October 11</h1>
+<h2>Global Variables</h2>
+<p>Global variables is where you don't declare a variable inside a method. This is generally not a recommended practice. It is recommended to declare variables inside methods so that it is easier to reuse code.</p>
+<pre><code class="language-java">public class mainDriver {
+  public static int globalVariable = 5; // I am a global variable
+  public static void main(String[] args) {
+      int localVariable = 4; // I am a local variable
+  }
+}</code></pre>
+<h2>String Formatting</h2>
+<p>You can format strings in java by using the <code>printf</code> method in System.out.</p>
+<p>Format strings work by using placeholders starting with <code>%</code> to specify where to place the value of a variable.</p>
+<p>General format of command</p>
+<pre><code class="language-java">//System.out.printf(FormatString, variable1, variable2, ....)
+String s = "The number is";
+int x = 5;
+System.out.printf("%s %d", s, x); // Prints "The number is 5"</code></pre>
+<p>If you want to print out money, you can do it through the following</p>
+<pre><code class="language-java">float tax = 0.45698;
+System.out.printf("The tax is %.2f"); //prints "The tax is 0.46"</code></pre>
+<h2>Floating point precision</h2>
+<p>Due to how computers store non-integers, math can be non-precise after some mathematical operations. It is therefore advantageous to do operations on integers to the level of precision you want.</p>
+<p>For example, instead of working in dollars, work in pennies since it's the smallest division we care about.</p>
+<h3>ArrayList</h3>
+<p>Standard arrays are static, meaning they have no ability to grow. Instead of doing the operations we described last class, in order to add something to an array. We can use something called an <code>ArrayList</code> instead.</p>
+<p>The methods in the <code>ArrayList</code> library are useful abstractions to make the life of a programmer easier.</p>
+<p>ArrayLists can also hold only one type. The type cannot be a primitive like a standard array. Instead it must be a class representing the desired type.</p>
+<p>int -&gt; Integer</p>
+<p>double -&gt; Double</p>
+<p>char -&gt; Character</p>
+<p>float -&gt; String</p>
+<p>To declare and initialize an <code>ArrayList</code></p>
+<pre><code class="language-java">import java.util.ArrayList;
+public class ArrayListTest {
+    public static void main(String[] args) {
+      ArrayList&lt;Integer&gt; numbers = new ArrayList&lt;Integer&gt;();
+      ArrayList&lt;String&gt; names = new ArrayList&lt;String&gt;();
+    }
+}</code></pre>
+<p><code>ArrayList</code>s has a variety of different methods that can be used to access/manipulate it</p>
+<ul>
+<li>get</li>
+<li>set</li>
+<li>add</li>
+<li>clone</li>
+<li>clear</li>
+<li>size</li>
+</ul>
+<p>If you want to add the numbers 1 through 10 into the <code>ArrayList</code> of numbers</p>
+<pre><code class="language-java">for (int i = 1; i &lt; 11; i++) {
+    numbers.add(i);
+}</code></pre>
+<p>To print out the entire contents of the <code>ArrayList</code></p>
+<pre><code class="language-java">for (int i = 0; i &lt; numbers.size(); i++) {
+    System.out.println(numbers.get(i));
+}</code></pre>
+<p>How can you replace a value?</p>
+<pre><code class="language-java">int n = 5; // Make this the number you wish to replace
+int i = 0;
+while (i &lt; numbers.size() &amp;&amp; numbers.get(i) != n) {
+    i++;
+}
+if (i == numbers.size()) {
+    System.out.println(n + " not found.");
+} else {
+  int r = 10; // Make this the value you want to replace n with
+  numbers.set(i, r);
+}</code></pre>
+<p>The <code>remove</code> method removes an item given an index. This shifts all the elements above the removed index down.</p>
+<pre><code class="language-java">numbers.remove(3); // Removes the element in the third index</code></pre>
+<p>The <code>add</code> method can also take an index. It pushes all the elements at the index specified up.</p>
+<pre><code class="language-java">numbers.add(3, 5); // Adds the number 5 to the third index</code></pre>
+<p>You can clone an array using the <code>clone</code> method</p>
+<pre><code class="language-java">ArrayList&lt;Integer&gt; numbers2 = new ArrayList&lt;Integer&gt;();
+numbers2.clone(numbers); // Clones numbers into numbers2</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

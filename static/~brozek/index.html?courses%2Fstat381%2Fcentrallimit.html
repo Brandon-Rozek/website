@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Central Limit Theorem Lab</h1>
+<p><strong>Brandon Rozek</strong></p>
+<h2>Introduction</h2>
+<p>The Central Limit Theorem tells us that if the sample size is large, then the distribution of sample means approach the Normal Distribution. For distributions that are more skewed, a larger sample size is needed, since that lowers the impact of extreme values on the sample mean.</p>
+<h3>Skewness</h3>
+<p>Skewness can be determined by the following formula
+$$
+Sk = E((\frac{X - \mu}{\sigma})^3) = \frac{E((X - \mu)^3)}{\sigma^3}
+$$
+Uniform distributions have a skewness of zero. Poisson distributions however have a skewness of $\lambda^{-\frac{1}{2}}$. </p>
+<p>In this lab, we are interested in the sample size needed to obtain a distribution of sample means that is approximately normal.</p>
+<h3>Shapiro-Wilk Test</h3>
+<p>In this lab, we will test for normality using the Shapiro-Wilk test. The null hypothesis of this test is that the data is normally distributed. The alternative hypothesis is that the data is not normally distributed. This test is known to favor the alternative hypothesis for a large number of sample means.  To circumvent this, we will test normality starting with a small sample size $n$ and steadily increase it until we obtain a distribution of sample means that has a p-value greater than 0.05 in the Shapiro-Wilk test.</p>
+<p>This tells us that with a false positive rate of 5%, there is no evidence to suggest that the distribution of sample means don't follow the normal distribution.</p>
+<p>We will use this test to look at the distribution of sample means of both the Uniform and Poisson distribution in this lab.</p>
+<h3>Properties of the distribution of sample means</h3>
+<p>The Uniform distribution has a mean of $0.5$ and a standard deviation of $\frac{1}{\sqrt{12n}}$ and the Poisson distribution has a mean of $\lambda$ and a standard deviation of $\sqrt{\frac{\lambda}{n}}$.</p>
+<h2>Methods</h2>
+<p>For the first part of the lab, we will sample means from a Uniform distribution and a Poisson distribution of $\lambda = 1$ both with a sample size $n = 5$.</p>
+<p>Doing so shows us how the Uniform distribution is roughly symmetric while the Poisson distribution is highly skewed. This begs the question: what sample size $(n)$ do I need for the Poisson distribution to be approximately normal?</p>
+<h3>Sampling the means</h3>
+<p>The maximum number of mean observations that the Shapiro-Wilk test allows is 5000 observations. Therefore, we will obtain <code>n</code> observations separately from both  the Uniform or Poisson distribution and calculate the mean from it. Repeating that process 5000 times.</p>
+<p>The mean can be calculated from the following way
+$$
+Mean = \frac{\sum x_i}{n}
+$$
+Where $x_i$ is the observation obtained from the Uniform or Poisson distribution</p>
+<h3>Iterating with the Shapiro-Wilk Test</h3>
+<p>Having a sample size of a certain amount doesn't always guarantee that it will fail to reject the Shapiro-Wilk test. Therefore, it is useful to run the test multiple times so that we can create a 95th percentile of sample sizes that fails to reject the Shapiro-Wilk test.</p>
+<p>The issue with this is that lower lambda values result in higher skewness's. Which is described by the skewness formula. If a distribution has a high degree of skewness, then it will take a larger sample size n to make the sample mean distribution approximately normal.</p>
+<p>Finding large values of n result in longer computational time. Therefore, the code takes this into account by starting at a larger value of n and/or incrementing by a larger value of n each iteration. Incrementing by a larger value of n decreases the precision, though that is the compromise I'm willing to take in order to achieve faster results.</p>
+<p>Finding just the first value of $n$ that generates the sample means that fails to reject the Shapiro-Wilk test doesn't tell us much in terms of the sample size needed for the distribution of sample means to be approximately normal. Instead, it is better to run this process many times, finding the values of n that satisfy this condition multiple times. That way we can look at the distribution of sample sizes required and return back the 95th percentile.</p>
+<p>Returning the 95th percentile tells us that 95% of the time, it was the sample size returned or lower that first failed to reject the Shapiro-Wilk test. One must be careful, because it can be wrongly interpreted as the sample size needed to fail to reject the Shapiro-Wilk test 95% of the time. Using that logic requires additional mathematics outside the scope of this paper. Returning the 95th percentile of the first sample size that failed to reject the Shapiro-Wilk test, however, will give us a good enough estimate for a sample size needed.</p>
+<h3>Plots</h3>
+<p>Once a value for <code>n</code> is determined, we sample the means of the particular distribution (Uniform/Poisson) and create histograms and Q-Q plots for each of the parameters we're interested in. We're looking to verify that the histogram looks symmetric and that the points on the Q-Q Plot fit closely to the Q-Q Line with one end of the scattering of points on the opposite side of the line as the other.</p>
+<h2>Results</h2>
+<h3>Part I</h3>
+<p>Sampling the mean of the uniform distribution with $n = 5$ results in a mean of $\bar{x} = 0.498$ and standard deviation of $sd = 0.1288$. The histogram and Q-Q Plot can be seen in Figure I and Figure II respectively. </p>
+<p>$\bar{x}$ isn't far from the theoretical 0.5 and the standard deviation is also close to
+$$
+\frac{1}{\sqrt{12(5)}} \approx 0.129
+$$
+Looking at the histogram and Q-Q plot, it suggests that data is approximately normal. Therefore we can conclude that a sample size of 5 is sufficient for the sample mean distribution coming from the normal distribution to be approximately normal.</p>
+<p>Sampling the mean of the Poisson distribution with $n = 5$ and $\lambda = 1$ results in a mean of $\bar{x} = 0.9918$ and a standard deviation of $sd = 0.443$. The histogram and Q-Q Plot can be seen in Figures III and IV respectively.</p>
+<p>$\bar{x}$ is not too far from the theoretical $\lambda = 1$, the standard deviation is a bit farther from the theoretical
+$$
+\sqrt{\frac{\lambda}{n}} = \sqrt{\frac{1}{5}} = 0.447
+$$
+Looking at the Figures, however, shows us that the data does not appear normal. Therefore, we cannot conclude that 5 is a big enough sample size for the Poisson Distribution of $\lambda = 1$ to be approximately normal.</p>
+<h3>Part II</h3>
+<p>Running the algorithm I described, I produced the following table</p>
+<table>
+<thead>
+<tr>
+<th>$\lambda$</th>
+<th>Skewness</th>
+<th>Sample Size Needed</th>
+<th>Shapiro-Wilk P-Value</th>
+<th>Average of Sample Means</th>
+<th>Standard Deviation of Sample Means</th>
+<th>Theoretical Standard Deviation of Sample Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.1</td>
+<td>3.16228</td>
+<td>2710</td>
+<td>0.05778</td>
+<td>0.099</td>
+<td>0.0060</td>
+<td>0.0061</td>
+</tr>
+<tr>
+<td>0.5</td>
+<td>1.41421</td>
+<td>802</td>
+<td>0.16840</td>
+<td>0.499</td>
+<td>0.0250</td>
+<td>0.0249</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1.00000</td>
+<td>215</td>
+<td>0.06479</td>
+<td>1.000</td>
+<td>0.0675</td>
+<td>0.0682</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0.44721</td>
+<td>53</td>
+<td>0.12550</td>
+<td>4.997</td>
+<td>0.3060</td>
+<td>0.3071</td>
+</tr>
+<tr>
+<td>10</td>
+<td>0.31622</td>
+<td>31</td>
+<td>0.14120</td>
+<td>9.999</td>
+<td>0.5617</td>
+<td>0.5679</td>
+</tr>
+<tr>
+<td>50</td>
+<td>0.14142</td>
+<td>10</td>
+<td>0.48440</td>
+<td>50.03</td>
+<td>2.2461</td>
+<td>2.2361</td>
+</tr>
+<tr>
+<td>100</td>
+<td>0.10000</td>
+<td>6</td>
+<td>0.47230</td>
+<td>100.0027</td>
+<td>4.1245</td>
+<td>4.0824</td>
+</tr>
+</tbody>
+</table>
+<p>The skewness was derived from the formula in the first section while the sample size was obtained by looking at the .95 blue quantile line in Figures XVIII-XIV. The rest of the columns are obtained from the output of the R Code function <code>show_results</code>.</p>
+<p>Looking at the histograms and Q-Q Plots produced by the algorithm, the distribution of sample means distributions are all roughly symmetric. The sample means are also tightly clustered around the Q-Q line, showing that the normal distribution is a good fit. This allows us to be confident that using these values of <code>n</code> as the sample size would result in the distribution of sample means of Uniform or Poisson (with a given lambda) to be approximately normal.</p>
+<p>All the values of the average sampling means are within 0.001 of the theoretical average of sample means. The standard deviation of sample means slightly increase as the value of $\lambda$ increases, but it still is quite low.</p>
+<h2>Conclusion</h2>
+<p>The table in the results section clearly show that as the skewness increases, so does the sample size needed to make the distribution of sample means approximately normal. This shows the central limit theorem in action in that no matter the skewness, if you obtain a large enough sample, the distribution of sample means will be approximately normal.</p>
+<p>These conclusions pave the way for more interesting applications such as hypothesis testing and confidence intervals.</p>
+<h2>Appendix</h2>
+<h3>Figures</h3>
+<h4>Figure I, Histogram of Sample Means coming from a Uniform Distribution with sample size of 5</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/part1histunif.png" alt="part1histunif" /></p>
+<h4>Figure II, Q-Q Plot of Sample Means coming from a Uniform Distribution with sample size of 5</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/part1qunif.png" alt="part1qunif" /></p>
+<h4>Figure III, Histogram of Sample Means coming from a Poisson Distribution with $\lambda = 1$ and sample size of 5</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/part1histpoisson.png" alt="part1histpoisson" /></p>
+<h4>Figure IV, Q-Q Plot of Sample Means coming from Poisson Distribution with $\lambda = 1$ and sample size of 5</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/part1qpoisson.png" alt="part1qpoisson" /></p>
+<h4>Figure V, Histogram of Sample Means coming from Poisson Distribution with $\lambda = 0.1$ and sample size of 2710</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/histpoisson01.png" alt="histpoisson01" /></p>
+<h4>Figure VI, Q-Q Plot of Sample Means coming from Poisson Distribution with $\lambda = 0.1$ and sample size of 2710</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/qpoisson01.png" alt="qpoisson01" /></p>
+<h4>Figure VII, Histogram of Sample Means coming from Poisson Distribution with $\lambda = 0.5$ and sample size of 516</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/histpoisson05.png" alt="histpoisson05" /></p>
+<h4>Figure VII, Q-Q Plot of Sample Means coming from Poisson Distribution with $\lambda = 0.5$ and sample size of 516</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/qpoisson05.png" alt="qpoisson05" /></p>
+<h4>Figure VIII, Histogram of Sample Means coming from Poisson Distribution with $\lambda = 1$ and sample size of 215</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/histpoisson1.png" alt="histpoisson1" /></p>
+<h4>Figure IX, Q-Q Plot of Sample Means coming from Poisson Distribution with $\lambda = 1$ and sample size of 215</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/qpoisson1.png" alt="qpoisson1" /></p>
+<h4>Figure X, Histogram of Sample Means coming from Poisson Distribution of $\lambda = 5$ and sample size of 53</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/histpoisson5.png" alt="histpoisson5" /></p>
+<h4>Figure XI, Q-Q Plot of Sample Means coming from Poisson Distribution of $\lambda = 5$ and sample size of 53</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/qpoisson5.png" alt="qpoisson5" /></p>
+<h4>Figure XII, Histogram of Sample Means coming from Poisson Distribution of $\lambda = 10$ and sample size of 31</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/histpoisson10.png" alt="histpoisson10" /></p>
+<h4>Figure XIII, Q-Q Plot of Sample Means coming from Poisson Distribution of $\lambda = 10$ and sample size of 31</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/qpoisson10.png" alt="qpoisson10" /></p>
+<h4>Figure XIV, Histogram of Sample Means coming from Poisson Distribution of $\lambda = 50$ and sample size of 10</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/histpoisson50.png" alt="histpoisson50" /></p>
+<h4>Figure XV, Q-Q Plot of Sample Means coming from Poisson Distribution of $\lambda = 50$ and sample size of 10</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/qpoisson50.png" alt="qpoisson50" /></p>
+<h4>Figure XVI, Histogram of Sample Means coming from Poisson Distribution of $\lambda = 100$ and sample size of 6</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/histpoisson100.png" alt="histpoisson100" /></p>
+<h4>Figure XVII, Q-Q Plot of Sample Means coming from Poisson Distribution of $\lambda = 100$ and sample size of 6</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/qpoisson100.png" alt="qpoisson100" /></p>
+<h4>Figure XVIII, Histogram of sample size needed to fail to reject the normality test for Poisson Distribution of $\lambda = 0.1$</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/histl01.png" alt="histl01" /></p>
+<h4>Figure XIX, Histogram of sample size needed to fail to reject the normality test for Poisson Distribution of $\lambda = 0.5$</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/histl05.png" alt="histl05" /></p>
+<h4>Figure XX, Histogram of sample size needed to fail to reject the normality test for Poisson Distribution of $\lambda = 1$</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/histl1.0.png" alt="histl1.0" /></p>
+<h4>Figure XXI, Histogram of sample size needed to fail to reject the normality test for Poisson Distribution of $\lambda = 5$</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/histl5.png" alt="histl5" /></p>
+<h4>Figure XXII, Histogram of sample size needed to fail to reject the normality test for Poisson Distribution of $\lambda = 10$</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/histl10.png" alt="histl10" /></p>
+<h4>Figure XXIII, Histogram of sample size needed to fail to reject the normality test for Poisson Distribution of $\lambda = 50$</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/histl50.png" alt="histl50" /></p>
+<h4>Figure XXIV, Histogram of sample size needed to fail to reject the normality test for Poisson Distribution of $\lambda = 100$</h4>
+<p><img src="http://cs.umw.edu/home/rozek/Pictures/stat381lab3/histl100.png" alt="histl100" /></p>
+<h3>R Code</h3>
+<pre><code class="language-R">rm(list=ls())
+library(ggplot2)
+
+sample_mean_uniform = function(n) {
+  xbarsunif = numeric(5000)
+  for (i in 1:5000) {
+    sumunif = 0
+    for (j in 1:n) {
+      sumunif = sumunif + runif(1, 0, 1)
+    }
+    xbarsunif[i] = sumunif / n 
+  }
+  xbarsunif
+}
+
+sample_mean_poisson = function(n, lambda) {
+  xbarspois = numeric(5000)
+  for (i in 1:5000) {
+    sumpois = 0
+    for (j in 1:n) {
+      sumpois = sumpois + rpois(1, lambda) 
+    }
+    xbarspois[i] = sumpois / n
+  }
+  xbarspois
+}
+
+poisson_n_to_approx_normal = function(lambda) {
+  print(paste("Looking at Lambda =", lambda))
+  ns = c()
+
+  # Speed up computation of lower lambda values by starting at a different sample size
+  # and/or lowering the precision by increasing the delta sample size
+  # and/or lowering the number of sample sizes we obtain from the shapiro loop
+  increaseBy = 1;
+  iter = 3;
+  startingValue = 2
+  if (lambda == 0.1) {
+    startingValue = 2000;
+    iter = 3;
+    increaseBy = 50;
+  } else if (lambda == 0.5) {
+    startingValue = 200;
+    iter = 5;
+    increaseBy = 10;
+  } else if (lambda == 1) {
+    startingValue = 150;
+    iter = 25;
+  } else if (lambda == 5) {
+    startingValue = 20;
+    iter = 50;
+    startingValue = 10;
+  } else if (lambda == 10) {
+    iter = 100;
+  } else {
+    iter = 500;
+  }
+
+  progressIter = 1
+  for (i in 1:iter) {
+
+    # Include a progress indicator for personal sanity
+    if (i / iter &gt; .1 * progressIter) {
+      print(paste("Progress", i / iter * 100, "% complete"))
+      progressIter = progressIter + 1
+    }
+
+    n = startingValue
+
+    dist = sample_mean_poisson(n, lambda)
+    p.value = shapiro.test(dist)$p.value
+    while (p.value &lt; 0.05) {
+      n = n + increaseBy
+      dist = sample_mean_poisson(n, lambda)
+      p.value = shapiro.test(dist)$p.value
+
+      # More sanity checks
+      if (n %% 10 == 0) {
+        print(paste("N =", n, " p.value =", p.value))
+      }
+    }
+    ns = c(ns, n)
+  }
+
+  print(ggplot(data.frame(ns), aes(x = ns)) +
+          geom_histogram(fill = 'white', color = 'black', bins = 10) +
+          geom_vline(xintercept = ceiling(quantile(ns, .95)), col = '#0000AA') +
+          ggtitle(paste("Histogram of N needed for Poisson distribution of lambda =", lambda)) +
+          xlab("N") +
+          ylab("Count") +
+          theme_bw())
+
+  ceiling(quantile(ns, .95)) #95% of the time, this value of n will give you a sampling distribution that is approximately normal
+}
+
+uniform_n_to_approx_normal = function() {
+  ns = c()
+  progressIter = 1
+
+  for (i in 1:500) {
+
+    # Include a progress indicator for personal sanity
+    if (i / 500 &gt; .1 * progressIter) {
+      print(paste("Progress", i / 5, "% complete"))
+      progressIter = progressIter + 1
+    }
+
+    n = 2
+    dist = sample_mean_uniform(n)
+    p.value = shapiro.test(dist)$p.value
+    while (p.value &lt; 0.05) {
+      n = n + 1
+      dist = sample_mean_uniform(n)
+      p.value = shapiro.test(dist)$p.value
+
+      if (n %% 10 == 0) {
+        print(paste("N =", n, " p.value =", p.value))
+      }
+
+    }
+
+    ns = c(ns, n)
+  }
+
+  print(ggplot(data.frame(ns), aes(x = ns)) +
+    geom_histogram(fill = 'white', color = 'black', bins = 10) +
+    geom_vline(xintercept = ceiling(quantile(ns, .95)), col = '#0000AA') +
+    ggtitle("Histogram of N needed for Uniform Distribution") +
+    xlab("N") +
+    ylab("Count") +
+    theme_bw())
+
+  ceiling(quantile(ns, .95)) #95% of the time, this value of n will give you a sampling distribution that is approximately normal
+}
+
+show_results = function(dist) {
+  print(paste("The mean of the sample mean distribution is:", mean(dist)))
+  print(paste("The standard deviation of the sample mean distribution is:", sd(dist)))
+  print(shapiro.test(dist))
+  print(ggplot(data.frame(dist), aes(x = dist)) +
+          geom_histogram(fill = 'white', color = 'black', bins = 20) +
+          ggtitle("Histogram of Sample Means") +
+          xlab("Mean") + 
+          ylab("Count") +
+          theme_bw())
+  qqnorm(dist, pch = 1, col = '#001155', main = "QQ Plot", xlab = "Sample Data", ylab = "Theoretical Data")
+  qqline(dist, col="#AA0000", lty=2)
+}
+
+## PART I
+uniform_mean_dist = sample_mean_uniform(n = 5)
+poisson_mean_dist = sample_mean_poisson(n = 5, lambda = 1)
+
+show_results(uniform_mean_dist)
+show_results(poisson_mean_dist)
+
+## PART II
+
+print("Starting Algorithm to Find Sample Size Needed for the Poisson Distribution of Lambda = 0.1");
+n.01 = poisson_n_to_approx_normal(0.1)
+show_results(sample_mean_poisson(n.01, 0.1))
+print("Starting Algorithm to Find Sample Size Needed for the Poisson Distribution of Lambda = 0.5");
+n.05 = poisson_n_to_approx_normal(0.5)
+show_results(sample_mean_poisson(n.05, 0.5))
+print("Starting Algorithm to Find Sample Size Needed for the Poisson Distribution of Lambda = 1");
+n.1  = poisson_n_to_approx_normal(1)
+show_results(sample_mean_poisson(n.1, 1))
+print("Starting Algorithm to Find Sample Size Needed for the Poisson Distribution of Lambda = 5");
+n.5  = poisson_n_to_approx_normal(5)
+show_results(sample_mean_poisson(n.5, 5))
+print("Starting Algorithm to Find Sample Size Needed for the Poisson Distribution of Lambda = 10");
+n.10 = poisson_n_to_approx_normal(10)
+show_results(sample_mean_poisson(n.10, 10))
+print("Starting Algorithm to Find Sample Size Needed for the Poisson Distribution of Lambda = 50");
+n.50 = poisson_n_to_approx_normal(50)
+show_results(sample_mean_poisson(n.50, 50))
+print("Starting Algorithm to Find Sample Size Needed for the Poisson Distribution of Lambda = 100");
+n.100 = poisson_n_to_approx_normal(100)
+show_results(sample_mean_poisson(n.100, 100))
+
+print("Starting Algorithm to Find Sample Size Needed for the Uniform Distribution")
+n.uniform = uniform_n_to_approx_normal()
+show_results(sample_mean_uniform(n.uniform))</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Cluster Validation</h1>
+<p>There are multiple approaches to validating your cluster models</p>
+<ul>
+<li>Internal Evaluation: This is when you summarize the clustering into a single score. For example, minimizing the the deviations from the centroids.</li>
+<li>External Evaluation: Minimizing the deviations from some known &quot;labels&quot;</li>
+<li>Manual Evaluation: A human expert decides whether or not it's good</li>
+<li>Indirect Evaluation: Evaluating the utility of clustering in its intended application.</li>
+</ul>
+<h2>Some Problems With These Evaluations</h2>
+<p>Internal evaluation measures suffer form the problem that they represent functions that are objectives for many clustering algorithms. So of course the result of the clustering algorithm will be such that the objective would be minimized.</p>
+<p>External evaluation suffers from the fact that if we had labels to begin with then we wouldn't need to cluster. Practical applications of clustering occur usually when we don't have labels. On the other hand, possible labeling can reflect one possible partitioning of the data set. There could exist different, perhaps even better clustering.</p>
+<h2>Internal Evaluation</h2>
+<p>We like to see a few qualities in cluster models</p>
+<ul>
+<li><em>Robustness</em>: Refers to the effects of errors in data or missing observations, and changes in the data and methods.</li>
+<li><em>Cohesiveness</em>: Clusters should be compact or high high intra-cluster similarity.</li>
+<li>Clusters should be dissimilar to separate clusters. Should have low inter-cluster similarity</li>
+<li><em>Influence</em>: We should pay attention to and try to control for the influence of certain observations on the overall cluster</li>
+</ul>
+<p>Let us focus on the second and third bullet point for now. Internal evaluation measures are best suited to get some insight into situations where one algorithm performs better than another, this does not imply that one algorithm produces more valid results than another.</p>
+<h3>Davies-Bouldin Index</h3>
+<p>$$
+DB = \frac{1}{n}\sum<em>{i=1}^n{max</em>{j\ne i}{(\frac{\sigma_i + \sigma_j}{d(c_i,c_j)})}}
+$$</p>
+<p>Where $n$ is the number of clusters, $c$ indicates a centroid, and $\sigma$ represents the deviation from the centroid.</p>
+<p>Better clustering algorithms are indicated by smaller DB values.</p>
+<h3>Dunn Index</h3>
+<p>$$
+D= \frac{min<em>{1\le i &lt; j \le n}{d(i,j)}}{max</em>{1\le k \le n}{d^\prime(k)}}
+$$</p>
+<p>The Dunn index aims to identify dense and well-separated clusters. This is defined as the ratio between the minimal inter-cluster distance to maximal intra-cluster distance.</p>
+<p>High Dunn Index values are more desirable.</p>
+<h3>Bootstrapping</h3>
+<p>In terms of robustness we can measure uncertainty in each of the individual clusters. This can be examined using a bootstrapping approach by Suzuki and Shimodaira (2006). The probability or &quot;p-value&quot; is the proportion of bootstrapped samples that contain the cluster. Larger p-values in this case indicate more support for the cluster.</p>
+<p>This is available in R via <code>Pvclust</code></p>
+<h3>Split-Sample Validation</h3>
+<p>One approach to assess the effects of perturbations of the data is by randomly dividing the data into two subsets and performing an analysis on each subset separately. This method was proposed by McIntyre and Blashfield in 1980; their method involves the following steps</p>
+<ul>
+<li>Divide the sample in two and perform a cluster analysis on one of the samples
+<ul>
+<li>Have a fixed rule for the number of clusters</li>
+</ul></li>
+<li>Determine the centroids of the clusters, and compute proximities between the objects in teh second sample and the centroids, classifying the objects into their nearest cluster.</li>
+<li>Cluster the second sample using the same methods as before and compare these two alternate clusterings using something like the <em>adjusted Rand index</em>.</li>
+</ul>
+<p><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b1850490e5209123ab6e5b905495b4d5f9a1f661" alt="Adjusted Index" /></p>
+<h2>Influence of Individual Points</h2>
+<p>Using internal evaluation metrics, you can see the impact of each point by doing a &quot;leave one out&quot; analysis. Here you evaluate the dataset minus one point for each of the points.  If a positive difference is found, the point is regarded as a <em>facilitator</em>, whereas if it is negative then it is considered an <em>inhibitor</em>. once an influential inhibitor is found, the suggestion is to normally omit it from the clustering.</p>
+<h2>R Package</h2>
+<p><code>clValid</code> contains a variety of internal validation measures.</p>
+<p>Paper: <a href="https://cran.r-project.org/web/packages/clValid/vignettes/clValid.pdf">https://cran.r-project.org/web/packages/clValid/vignettes/clValid.pdf</a></p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

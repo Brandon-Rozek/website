@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+      <meta name="description" content="Page listing the courses I've taken">
+    <title>Transcript | Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem active">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Transcript</h1>
+<p>Below is a list of courses I've taken in the past for credit. </p>
+<h2>Spring 2019</h2>
+<p>Deep Reinforcement Learning (CPSC 491)</p>
+<p>Real Analysis I (MATH 471)</p>
+<p>Abstract Algebra I (MATH 431)</p>
+<p>Operating Systems (CPSC 405)</p>
+<p>Digital Storytelling (CPSC 106)</p>
+<h2>Fall 2018</h2>
+<p>Reinforcement Learning (CPSC 491)</p>
+<p>Programming Languages (CPSC 491)</p>
+<p>Competitive Programming (CPSC 491)</p>
+<p>Multivariate Statistics (STAT 461)</p>
+<p>Foundations of Advance Mathematics (MATH 330)</p>
+<p>Applications of Databases (CPSC 350)</p>
+<h2>Spring 2018</h2>
+<p>Foundations for Data Science (Data 219)</p>
+<p>Theory of Computation (CPSC 326)</p>
+<p>Data Structures and Algorithms (CPSC 340)</p>
+<p>Differential Equations (MATH 312)</p>
+<p>Cluster Analysis (STAT 491)</p>
+<h2>Fall 2017</h2>
+<p>Computer Systems and Architecture (CPSC 305)</p>
+<p>Introduction to Data Science (DATA 101)</p>
+<p>Linear Algebra (MATH 300)</p>
+<p>Methods in Mathematical Physics (PHYS 317)</p>
+<p>Probability &amp; Statistical Inference I (STAT 381)</p>
+<p>Undergraduate Research in Physics (URES 197J)</p>
+<h2>Fall 2017</h2>
+<p>Computer Systems and Architecture (CPSC 305)</p>
+<p>Introduction to Data Science (DATA 101)</p>
+<p>Linear Algebra (MATH 300)</p>
+<p>Methods in Mathematical Physics (PHYS 317)</p>
+<p>Probability &amp; Statistical Inference I (STAT 381)</p>
+<p>Undergraduate Research in Physics (URES 197J)</p>
+<h2>Fall 2017</h2>
+<p>Computer Systems and Architecture (CPSC 305)</p>
+<p>Introduction to Data Science (DATA 101)</p>
+<p>Linear Algebra (MATH 300)</p>
+<p>Methods in Mathematical Physics (PHYS 317)</p>
+<p>Probability &amp; Statistical Inference I (STAT 381)</p>
+<p>Undergraduate Research in Physics (URES 197J)</p>
+<h2>Spring 2017</h2>
+<p>Intro to Discrete Mathematics (CPSC 125A)</p>
+<p>Object-Oriented Analysis &amp; Design (CPSC 240)</p>
+<p>Statistical Methods (MATH 280)</p>
+<p>University Physics II, with Lab (PHYS 106)</p>
+<p>Undergraduate Research in Physics (URES 197J)</p>
+<h2>Fall 2016</h2>
+<p>Software Development Tools (CPSC 225)</p>
+<p>Numbers Rule Your World (FSEM 100M1)</p>
+<p>Intro to Statistics (MATH 200)</p>
+<p>American Music (MUHL 156)</p>
+<p>University Physics I, with Lab (PHYS 105)</p>
+<h2>Advance Placement</h2>
+<p>Computer Programming and Problem Solving (CPSC 220)</p>
+<p>Intro to Human Geography (GEOG 102)</p>
+<p>American History to 1865 (HIST 131)</p>
+<p>American History since 1865 (HIST 132)</p>
+<p>Calculus I (MATH 121)</p>
+<p>Calculus II (MATH 122)</p>
+<p>Calculus III (MATH 223)</p>
+<p>General Psychology (PSYCH 100)</p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

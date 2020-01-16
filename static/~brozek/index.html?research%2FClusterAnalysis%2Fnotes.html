@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture Notes for Cluster Analysis</h1>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec1.html">Lecture 1: Measures of Similarity</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec2-1.html">Lecture 2.1: Distance Measures Reasoning</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec2-2.html">Lecture 2.2: Principle Component Analysis Pt. 1</a></p>
+<p>Lecture 3: Discussion of Dataset</p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec4.html">Lecture 4: Principal Component Analysis Pt. 2</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec4-2.html">Lecture 4.2: Revisiting Measures</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec4-3.html">Lecture 4.3: Cluster Tendency</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec5.html">Lecture 5: Introduction to Connectivity Based Models</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec6.html">Lecture 6: Agglomerative Methods</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec7.html">Lecture 7: Divisive Methods Part 1: Monothetic</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec8.html">Lecture 8: Divisive Methods Part 2: Polythetic</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec9-1.html">Lecture 9.1: CURE and TSNE</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec9-2.html">Lecture 9.2: Cluster Validation Part I</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec10-1.html">Lecture 10.1: Silhouette Coefficient</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec10-2.html">Lecture 10.2: Centroid-Based Clustering</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec10-3.html">Lecture 10.3: Voronoi Diagrams</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec11-1.html">Lecture 11.1: K-means++</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec11-2.html">Lecture 11.2: K-medoids</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec11-3.html">Lecture 11.3: K-medians</a></p>
+<p><a href="index.html%3Fresearch%252FClusterAnalysis%252Fnotes%252Flec12.html">Lecture 12: Introduction to Density Based Clustering</a></p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

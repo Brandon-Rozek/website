@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h2>The <code>cacher</code> Package for R</h2>
+<ul>
+<li>Add-on package for R</li>
+<li>Evaluates code written in files and stores immediate results in a key-value database</li>
+<li>R expressions are given SHA-1 hash values so that changes can be tracked and code reevaluated if necessary</li>
+<li>&quot;Chacher packages&quot; can be built for distribution</li>
+<li>Others can &quot;clone&quot; an analysis and evaluate subsets of code or inspect data objects</li>
+</ul>
+<p>The value of this is so other people can get the analysis or clone the analysis and look at subsets of the code. Or maybe more specifically data objects. People who want to run your code may not necessarily have the resources that you have. Because of that, they may not want to run the entire Markov chain Monte Carlo simulation that you did to get the posterior distribution or the histogram that you got at the end. </p>
+<p>But the idea is that you peel the onion a little bit rather than just go straight to the core. </p>
+<h2>Using <code>cacher</code> as an Author</h2>
+<ol>
+<li>Parse the R source file; Create the necessary cache directiories and subdirectories</li>
+<li>Cycle through each expression in the source file
+<ul>
+<li>If an expression has never been evaluated, evaluate it and store any resulting R objects in the cache database</li>
+<li>If any cached results exists, lazy-load the results from the cache database and move to the next expression</li>
+<li>If an expression does not create any R objects (i.e, there is nothing to cache), add the expression to the list of expressions where evaluation needs to be forced</li>
+<li>Write out metadata for this expression to the metadata file</li>
+</ul></li>
+</ol>
+<ul>
+<li>The <code>cachepackage</code> function creates a <code>cacher</code> package storing
+<ul>
+<li>Source File</li>
+<li>Cached data objects</li>
+<li>Metadata</li>
+</ul></li>
+<li>Package file is zipped and can be distributed</li>
+<li>Readers can unzip the file and immediately investigate its contents via <code>cacher</code> package</li>
+</ul>
+<h2>Using <code>cacher</code> as a Reader</h2>
+<p>A journal article says</p>
+<p>​   &quot;... the code and data for this analysis can be found in the cacher package 092dcc7dda4b93e42f23e038a60e1d44dbec7b3f&quot;</p>
+<pre><code class="language-R">library(cacher)
+clonecache(id = "092dcc7dda4b93e42f23e038a60e1d44dbec7b3f")
+clonecache(id = "092d") ## Same as above
+# Created cache directory `.cache`
+showfiles()
+# [1] "top20.R"
+sourcefile("top20.R")</code></pre>
+<h2>Cloning an Analysis</h2>
+<ul>
+<li>Local directories are created</li>
+<li>Source code files and metadata are downloaded</li>
+<li>Data objects are <em>not</em> downloaded by default (may be really large)</li>
+<li>References to data objects are loaded and corresponding data can be lazy-loaded on demand</li>
+</ul>
+<p><code>graphcode()</code> gives a node graph representing the code</p>
+<h2>Running Code</h2>
+<ul>
+<li>The <code>runcode</code> function executes code in the source file</li>
+<li>By default, expressions that results in an object being created are not run and the resulting objects is lazy-loaded into the workspace</li>
+<li>Expressions not resulting in objects are evaluated</li>
+</ul>
+<h2>Checking Code and Objects</h2>
+<ul>
+<li>The <code>checkcode</code> function evaluates all expressions from scratch (no lazy-loading)</li>
+<li>Results of evaluation are checked against stored results to see if the results are the same as what the author calculated
+<ul>
+<li>Setting RNG seeds is critical for this to work</li>
+</ul></li>
+<li>The integrity of data objects can be verified with the <code>checkobjects</code> function to check for possible corruption of data perhaps during transit.</li>
+</ul>
+<p>You can inspect data objects with <code>loadcache</code>. This loads in pointers to each of the data objects into the workspace. Once you access the object, it will transfer it from the cache.</p>
+<h2><code>cacher</code> Summary</h2>
+<ul>
+<li>The <code>cacher</code> package can be used by authors to create cache packages from data analyses for distribution</li>
+<li>Readers can use the <code>cacher</code> package to inspect others' data analyses by examing cached computations</li>
+<li><code>cacher</code> is mindful of readers' resources and efficiently loads only those data objects that are needed.</li>
+</ul>
+<h1>Case Study: Air Pollution</h1>
+<p>Particulate Matter -- PM</p>
+<p>When doing air pollution studies you're looking at particulate matter pollution. The dust is not just one monolithic piece of dirt or soot but it's actually composed of many different chemical constituents. </p>
+<p>Metals inert things like salts and other kinds of components so there's a possibility that a subset of those constituents are really harmful elements.</p>
+<p>PM is composed of many different chemical constituents and it's important to understand that the Environmental Protection Agency (EPA) monitors the chemical  constituents of particulate matter and has been doing so since 1999 or 2000 on a national basis.</p>
+<h2>What causes PM to be Toxic?</h2>
+<ul>
+<li>PM is composed of many different chemical elements</li>
+<li>Some components of PM may be more harmful than others</li>
+<li>Some sources of PM may be more dangerous than others</li>
+<li>Identifying harmful chemical constituents may lead us to strategies for controlling sources of PM</li>
+</ul>
+<h2>NMMAPS</h2>
+<ul>
+<li>
+<p>The National Morbidity, Mortality, and Air Pollution Study (NMMAPS) was a national study of the short-term health effects of ambient air pollution</p>
+</li>
+<li>
+<p>Focused primarily on particulate matter ($PM_{10}$) and Ozone ($O_3$) </p>
+</li>
+<li>
+<p>Health outcomes include mortality from all causes and hospitalizations for cardiovascular and respiratory diseases</p>
+</li>
+<li>
+<p>Key publications</p>
+<ul>
+<li><a href="http://www.ncbi.nlm.nih.gov/pubmed/11098531">http://www.ncbi.nlm.nih.gov/pubmed/11098531</a></li>
+<li><a href="http://www.ncbi.nlm.nih.gov/pubmed/11354823">http://www.ncbi.nlm.nih.gov/pubmed/11354823</a></li>
+</ul>
+</li>
+<li>
+<p>Funded by the Heath Effects Institute</p>
+<ul>
+<li>Roger Peng currently serves on the Health Effects Institute Health Review Committee</li>
+</ul>
+<p>​</p>
+</li>
+</ul>
+<h2>NMMAPS and Reproducibility</h2>
+<ul>
+<li>Data made available at the Internet-based Health and Air Pollution Surveillance System (<a href="http://www.ihapss.jhsph.edu">http://www.ihapss.jhsph.edu</a>)</li>
+<li>Research and software also available at iHAPSS</li>
+<li>Many studies (over 67 published) have been conducted based on the public data <a href="http://www.ncbi.nlm.nih.gov/pubmed/22475833">http://www.ncbi.nlm.nih.gov/pubmed/22475833</a></li>
+<li>Has served as an important test bed for methodological development</li>
+</ul>
+<h2>What Causes Particulate Matter to be Toxic?</h2>
+<p><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1665439">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1665439</a></p>
+<ul>
+<li>Lippmann et al. found strong evidence that NI modified the short-term effect of $PM_{10}$ across 60 US communities</li>
+<li>No other PM chemical constituent seemed to have the same modifying effect</li>
+<li>To simple to be true?</li>
+</ul>
+<h2>A Reanalysis of the Lippmann et al. Study</h2>
+<p><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2137127">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2137127</a></p>
+<ul>
+<li>Rexamine the data from NMMAPS and link with PM chemical constituent data</li>
+<li>Are the findings sensitive for levels of Nickel in New York City?</li>
+</ul>
+<h2>Does Nickel Make PM Toxic?</h2>
+<ul>
+<li>Long-term average nickel concentrations appear correlated with PM risk</li>
+<li>There appear to be some outliers on the right-hand side (New York City)</li>
+</ul>
+<h2>Does Nickel Make PM Toxic?</h2>
+<p>One of the most important things about those three points to the right is those are called high leverage points. So the regression line can be very senstive to high leverage points. Removing those three points from the dataset brings the regression line's slope down a little bit. Which then produces a line that is no longer statistical significant (p-value about 0.31)</p>
+<h2>What Have We Learned?</h2>
+<ul>
+<li>New York does have very high levels of nickel and vanadium, much higher than any other US community</li>
+<li>There is evidence of a positive relationship between NI concentrations and $PM_{10}$ risk</li>
+<li>The strength of this relationship is highly sensitive to the observations from New York City</li>
+<li>Most of the information in the data is derived from just 3 observations</li>
+</ul>
+<h2>Lessons Learned</h2>
+<ul>
+<li>Reproducibility of NMMAPS allowed for a secondary analysis (and linking with PM chemical constituent data) investigating a novel hypothesis (Lippmann et al.)</li>
+<li>Reproducibility also allowed for a critique of that new analysis and some additional new analysis (Dominici et al.)</li>
+<li>Original hypothesis not necessarily invalidated, but evidence not as strong as originally suggested (more work should be done)</li>
+<li>Reproducibility allows for the scientific discussion to occur in a timely and informed manner</li>
+<li>This is how science works.</li>
+</ul>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

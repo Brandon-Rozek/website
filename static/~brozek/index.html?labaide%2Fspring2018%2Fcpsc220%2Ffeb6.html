@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture for February 6th</h1>
+<h2>If Statements -- Cont.</h2>
+<p>Inside the parenthesis of the <code>if</code> statement must be a boolean expression. This is an expression that evaluates to either <code>true</code> or <code>false</code>. We can do more complex boolean expressions through logical operators.</p>
+<h2>Logical Operators</h2>
+<p>NOT <code>!a</code> this is true when <code>a</code> is false</p>
+<p>AND <code>a &amp;&amp; b</code> this is true when both operands are true</p>
+<p>OR <code>a || b</code> this is true when either a is true OR b is true</p>
+<h2>Truth Tables</h2>
+<ul>
+<li>Show all possible outcomes</li>
+<li>It breaks the expression down into parts</li>
+</ul>
+<h3>Not</h3>
+<p>Let's look at the most simplest case. Not.</p>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>!a</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<h3>AND</h3>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>a &amp;&amp; b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p>Notice here that <code>a &amp;&amp; b</code> is only true when both <code>a</code> and <code>b</code> are true.</p>
+<h3>OR</h3>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>a \</th>
+<th>\</th>
+<th>b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p>Notice here that <code>a || b</code> is only false when both <code>a</code> and <code>b</code> are false.</p>
+<h2>Precedence (Order of Operations)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parenthesis</td>
+<td><code>()</code></td>
+</tr>
+<tr>
+<td>Logical Not</td>
+<td><code>!</code></td>
+</tr>
+<tr>
+<td>Arithmetic Operators</td>
+<td><code>*</code> <code>/</code> <code>%</code> <code>+</code> <code>-</code></td>
+</tr>
+<tr>
+<td>Relational Operators</td>
+<td><code>&lt;</code> <code>&lt;=</code> <code>&gt;</code> <code>&gt;=</code></td>
+</tr>
+<tr>
+<td>Equality and Inequality operators</td>
+<td><code>==</code> <code>!=</code></td>
+</tr>
+<tr>
+<td>Logical AND</td>
+<td><code>&amp;&amp;</code></td>
+</tr>
+<tr>
+<td>Logical OR</td>
+<td><code>||</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Playing with Truth Tables Example</h2>
+<h3>a &amp;&amp; !b</h3>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>!b</th>
+<th>a &amp;&amp; !b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<h3>!a || b</h3>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>!a</th>
+<th>!a \</th>
+<th>\</th>
+<th>b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<h3>!(a || b &amp;&amp; c)</h3>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>c</th>
+<th>b &amp;&amp; c</th>
+<th>a \</th>
+<th>\</th>
+<th>(b &amp;&amp; c)</th>
+<th>!(a \</th>
+<th>\</th>
+<th>b &amp;&amp; c)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<h3>!a || b &amp;&amp; c</h3>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>c</th>
+<th>!a</th>
+<th>b &amp;&amp; c</th>
+<th>!a \</th>
+<th>\</th>
+<th>b &amp;&amp; c</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<h2>Distributive Property of Logical Operators</h2>
+<p>The following statements are equivalent</p>
+<p><code>!(a &amp;&amp; b)</code> is equivalent to  <code>!a || !b</code></p>
+<p>Notice how when you distribute the <code>!</code> you have to flip the operand as well. <code>&amp;&amp;</code> becomes <code>||</code></p>
+<p>Same is true for the following example</p>
+<p><code>!(a || b)</code> is equivalent to <code>!a &amp;&amp; !b</code></p>
+<p><code>!(a || b &amp;&amp; c)</code> is equivalent to <code>!a &amp;&amp; (!b || !c)</code></p>
+<h2>Short Circuit Evaluation</h2>
+<p>In an <code>&amp;&amp;</code> (AND) statement, if the left side is <code>false</code>, there is no need to evaluate the right side. Since it's going to be false anyways!!</p>
+<pre><code class="language-java">false &amp;&amp; true; // FALSE no matter what the right side is</code></pre>
+<p>In an <code>||</code> (OR) statement, if the left side is `true, there is no need to evaluate the right side. Since it's going to be true by default!!</p>
+<pre><code class="language-java">true || false; // TRUE no matter what the right side is</code></pre>
+<p>Java takes this shortcut by default for efficiency reasons</p>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

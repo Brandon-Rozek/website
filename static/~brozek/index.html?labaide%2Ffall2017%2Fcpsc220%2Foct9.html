@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture Notes October 9th</h1>
+<h2>Arrays (Cont.)</h2>
+<h3>Another way of Array Initialization</h3>
+<pre><code class="language-java">String[] names = {"Jennifer", "Noodle", "Fluffy", "Rosie", "Cinnamon", "Brianne", "Oliver"}</code></pre>
+<p>Everything between the <code>{}</code> is the initial values in the names array in the order that it is written.</p>
+<p>Recall that arrays are of a fixed size. The <code>names</code> array above has 7 elements.</p>
+<h3>What can I do if I want to add something to the names array?</h3>
+<p>Do the following steps:</p>
+<ol>
+<li>Create an empty array with the same size as the array</li>
+<li>Take all the contents in the array and store it in a temporary array</li>
+<li>Set names equal to another array of a bigger size</li>
+<li>Take all the contents in temp and store it back to the array of choice</li>
+<li>Add an element to the array by index</li>
+</ol>
+<pre><code class="language-java">// (1)
+String[] temp = new String[7];
+// (2)
+temp.clone(names);
+// (3)
+names = new String[20]; // Now it can hold up to 20 names
+// (4)
+names.clone(temp);
+// (5)
+names[7] = "New name!";</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>

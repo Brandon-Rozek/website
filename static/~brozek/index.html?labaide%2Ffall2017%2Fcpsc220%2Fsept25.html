@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fredrik Danielsson, http://lostkeys.se">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+    <title>Brandon Rozek</title>
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="themes/bitsandpieces/styles/highlightjs-github.css" type="text/css" />
+</head>
+<body>
+
+<aside class="main-nav">
+<nav>
+  <ul>
+          <li class="menuitem ">
+        <a href="index.html%3Findex.html" data-shortcut="">
+          Home
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fcourses.html" data-shortcut="">
+          Courses
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Flabaide.html" data-shortcut="">
+          Lab Aide
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fpresentations.html" data-shortcut="">
+          Presentations
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Fresearch.html" data-shortcut="">
+          Research
+                  </a>
+      </li>
+          <li class="menuitem ">
+        <a href="index.html%3Ftranscript.html" data-shortcut="">
+          Transcript
+                  </a>
+      </li>
+      </ul>
+</nav>
+</aside>
+<main class="main-content">
+  <article class="article">
+    <h1>Lecture in CPSC 220 Sept 25 2017</h1>
+<h2>Constants</h2>
+<p>Adding the keyword <code>final</code> in front of a variable declaration makes the variable constant. Meaning you cannot later change it in the code.</p>
+<pre><code class="language-java">final int MAX = 10;</code></pre>
+<p>By industry norm, the style of the variable is to have it in all caps.</p>
+<p>You CANNOT do the following</p>
+<pre><code class="language-java">final int MAX = 10;
+MAX = 15;</code></pre>
+<h2>Using Libraries</h2>
+<ol>
+<li>Import the library</li>
+<li>Find the method that is appropriate</li>
+<li>Use it</li>
+</ol>
+<p>Example:</p>
+<pre><code class="language-java">import java.util.Math;
+public class MathTest {
+    public static void main(String[] args) {
+        double answer = Math.ceil(5.4);
+        System.out.println(Math.ceil(4.5));
+    }
+}</code></pre>
+<h2>Typecasting / Type Conversions</h2>
+<p>You can only cast a variable if you are casting it to a type that is larger than the one it was previously. The expression Polack used is that you cannot fit into super skinny jeans, but you can fit into bigger pants.</p>
+<pre><code class="language-java">double dnum;
+float fnum;
+int inum;
+dnum = (double)fnum * (double)inum;</code></pre>
+<h2>Char vs String</h2>
+<p><code>String</code>s are initialized in Java with double quotes while <code>char</code>s are initialized with single quotes</p>
+<pre><code class="language-java">char initial = 'j';
+String name = "Jennifer";</code></pre>
+<p>Characters can be read in as an integer.</p>
+<h2>Random Numbers</h2>
+<ol>
+<li>Import <code>java.util.Random;</code></li>
+<li>Declare the random number generator</li>
+<li>Initialize with <code>new</code></li>
+<li>Use it</li>
+</ol>
+<pre><code class="language-java">import java.util.Random;
+public class RandTest {
+    public static void main(String[] args) {
+      Random rand;
+      rand = new Random();
+      int number = rand.nextInt(100); // Random generates number between 0-99
+    }
+}</code></pre>
+<p>How do you generate numbers in a different range?  [50, 150]</p>
+<pre><code class="language-java">rand.nextInt(100); // 0-99
+rand.nextInt(101) // 0 - 100
+rand.nextInt(101) + 50 //50-150</code></pre>
+<p>In more general terms</p>
+<pre><code class="language-java">rand.nextInt(end - start + 1) + start</code></pre>
+  </article>
+</main>
+
+<script src="themes/bitsandpieces/scripts/highlight.js"></script>
+<script src="themes/bitsandpieces/scripts/mousetrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  document.querySelectorAll('.menuitem a').forEach(function(el) {
+    if (el.getAttribute('data-shortcut').length > 0) {
+      Mousetrap.bind(el.getAttribute('data-shortcut'), function() {
+        location.assign(el.getAttribute('href'));
+      });       
+    }
+  });
+</script>
+
+</body>
+</html>
