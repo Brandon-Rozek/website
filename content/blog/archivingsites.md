@@ -14,7 +14,6 @@ User [chuckg](https://stackoverflow.com/users/63193/chuckg) initially suggested 
 ```bash
 wget --mirror \
      --convert-links \
-     --backup-converted \
      --adjust-extension \
      --no-clobber \
      --page-requisites \
