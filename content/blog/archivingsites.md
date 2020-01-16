@@ -4,13 +4,15 @@ date: 2019-08-02T22:42:16-04:00
 draft: false
 ---
 
-I have several old Wordpress sites that are now only alive for archival purposes. I've been trying to migrate off of Wordpress since I don't like having yet another system to manage. Luckily for archival type sites, I don't need the whole backend of Wordpress since I don't actually need any CRUD functionality. (Well I need the R part)
+I have several old Wordpress sites lying around that I would like to archive but not maintain anymore. Since I don't intend to create any more content on these sites, we can use tools like `wget` to scrape an existing site and provide a somewhat *read-only* copy of it. I say read-only not because we can't edit it, but because it's not in the original source format of the website.
 
-Solution... wget comes to the [rescue](https://stackoverflow.com/questions/538865/how-do-you-archive-an-entire-website-for-offline-viewing#538878)
+There have been several tackles to the problem:
 
-User [chuckg](https://stackoverflow.com/users/63193/chuckg) initially suggested to run `wget -m -k -K -E https://url/of/web/site` to get a full offline copy of a website.
+- https://stackoverflow.com/questions/538865/how-do-you-archive-an-entire-website-for-offline-viewing#538878
+- https://letswp.io/download-an-entire-website-wget-windows/
 
-[Joel Gillman](https://stackoverflow.com/users/916604/jgillman) and [Firsh](https://letswp.io/download-an-entire-website-wget-windows/) wrote about their commands and now our command has expanded to: 
+And ultimately after consulting these resources I've came to the following command:
+
 ```bash
 wget --mirror \
      --convert-links \
@@ -20,6 +22,6 @@ wget --mirror \
      https://url/of/web/site
 ```
 
-There are other solutions in that stack overflow post, but something about the simplicity of `wget` appealed to me.
+There were other solutions in that stack overflow post, but something about the simplicity of `wget` appealed to me.
 
-[Check out this now Wordpress free site of mine!](https://sentenceworthy.com)
+[Example site I archived with this.](https://sentenceworthy.com)
