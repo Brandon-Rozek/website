@@ -1,0 +1,52 @@
+I hereby claim:
+
+  * I am an admin of https://brandonrozek.com
+  * I am brozek (https://keybase.io/brozek) on keybase.
+  * I have a public key ASC0uPV8wQGhrA_JFkaY6D5SL6CRDzAttViMipmFf1EOKwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120b4b8f57cc101a1ac0fc9164698e83e522fa0910f302db5588c8a99857f510e2b0a",
+      "host": "keybase.io",
+      "kid": "0120b4b8f57cc101a1ac0fc9164698e83e522fa0910f302db5588c8a99857f510e2b0a",
+      "uid": "b0a95fe14c44e3d6e1ef5ea1db76ab19",
+      "username": "brozek"
+    },
+    "merkle_root": {
+      "ctime": 1562016085,
+      "hash": "9d7341ba1f1f7ead60bbe053b2225a0da4e176a1f01ad03028b44e2de63fbf336b13020603665a2fb03925b9bca198fbcd1afbcfdc48890174ed853cc29180f2",
+      "hash_meta": "35592527e7fa28f64e609af892ddb7037dda26e0878fde7962ce0a0ed60323b8",
+      "seqno": 5675461
+    },
+    "service": {
+      "entropy": "QwM0YfSruvMgRiQV2182C6pZ",
+      "hostname": "brandonrozek.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.1.0"
+  },
+  "ctime": 1562016093,
+  "expire_in": 504576000,
+  "prev": "1ea3c48ec49efb4b553666f56bd00cb0e72ae392d7e23ec08b0bc328e969c7e8",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgtLj1fMEBoawPyRZGmOg+Ui+gkQ8wLbVYjIqZhX9RDisKp3BheWxvYWTESpcCCsQgHqPEjsSe+0tVNmb1a9AMsOcq45LX4j7AiwvDKOlpx+jEIFxHhuW7Qvb5oaOYfQoajEH+4c6mibK2jItcswgs3dCHAgHCo3NpZ8RAJ2Zyb+G2p6WYAlp9hZ5kH1/A1hI6CEBpMezqTvrBSolFBanObkYFSemGHh3vCUDgRJRT96HyA/J4fIGqf6MxDKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIC7Cc/7oKz5F/YYU7PGRgxD4HPxOqUnhqT+PYC7zlp5Vo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/brozek
+
+
