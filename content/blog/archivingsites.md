@@ -8,9 +8,18 @@ I have several old Wordpress sites that are now only alive for archival purposes
 
 Solution... wget comes to the [rescue](https://stackoverflow.com/questions/538865/how-do-you-archive-an-entire-website-for-offline-viewing#538878)
 
-Thanks to user [chuckg](https://stackoverflow.com/users/63193/chuckg), I now know you can run `wget -m -k -K -E https://url/of/web/site` to get a full offline copy of a website.
+User [chuckg](https://stackoverflow.com/users/63193/chuckg) initially suggested to run `wget -m -k -K -E https://url/of/web/site` to get a full offline copy of a website.
 
-[Joel Gillman](https://stackoverflow.com/users/916604/jgillman) expanded out the command to `wget --mirror --convert-links --backup-converted --adjust-extension https://url/of/web/site`
+[Joel Gillman](https://stackoverflow.com/users/916604/jgillman) and [Firsh](https://letswp.io/download-an-entire-website-wget-windows/) wrote about their commands and now our command has expanded to: 
+```bash
+wget --mirror \
+     --convert-links \
+     --backup-converted \
+     --adjust-extension \
+     --no-clobber \
+     --page-requisites \
+     https://url/of/web/site
+```
 
 There are other solutions in that stack overflow post, but something about the simplicity of `wget` appealed to me.
 
