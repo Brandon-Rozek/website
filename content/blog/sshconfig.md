@@ -7,7 +7,7 @@ draft: false
 Have you ever gone through the hassle of having multiple public/private keys for accessing your remote servers? Before recently, I used to specify the identity file in all my transactions `ssh -I ~/.ssh/private_key user@host` but no longer! I discovered you can add the following to your `~/.ssh/config` to specify which key you want to use!
 
 ```
-Host someaddress
+Host somename 
     Hostname someaddress
     user usernameonserver
     IdentityFile ~/.ssh/private_key
