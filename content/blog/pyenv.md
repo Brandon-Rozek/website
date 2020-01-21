@@ -34,6 +34,10 @@ This will then create a file called `.python-version` which contains the text `3
 ```bash
 pyenv global 3.8.1
 ```
+Finally, if you only want to specify a python version for the current shell.
+```bash
+pyenv shell 3.8.1
+```
 
 ## Python Virtual Environments
 
