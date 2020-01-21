@@ -101,3 +101,9 @@ sudo systemctl start wg-quick@wg0
 
 And enjoy a fully secure routable network!
 
+## Potential Errors
+Wireguard depends on `resolvconf`. I noticed that on Kubuntu 19.10, that is not installed by default. If you see a error message involving `resolvconf` chances are you need to install that package.
+```bash
+sudo apt install resolvconf
+```
+
