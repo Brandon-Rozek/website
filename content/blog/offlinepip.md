@@ -23,19 +23,39 @@ Then, install whatever packages you would like. Let us use tensorflow as an exam
 pip install tensorflow
 ```
 
-After you install all the packages you want to be available, freeze the requirements to a text file.
+We're going to need the packages `pip-chill` and `pip-tools` for the next couple steps
 
 ```bash
-pip freeze > requirements.txt
+pip install pip-chill pip-tools
 ```
 
-Install the wheel package to make the binary wheels.
+After you install all the packages you want to be available, freeze the requirements that aren't dependencies to a text file
+
+```bash
+pip-chill --no-version > requirements.in
+```
+
+We will then use `pip-compile` in `pip-tools` to resolve our dependencies and make our packages as fresh as possible.
+
+```bash
+pip-compile requirements.in
+```
+
+To sync the current virtual environment with the `requirements.txt` file that gets produced
+
+```bash
+pip-sync
+```
+
+Now we have a fully working and resolved environment.
+
+From here, we need to install the wheel package to make the binary wheels.
 
 ```bash
 pip install wheel
 ```
 
-Create the wheels
+Then to create the wheels,
 
 ```bash
 pip wheel --wheel-dir=wheels -r requirements.txt
