@@ -16,7 +16,7 @@ from abc import ABC, abstractmethod
 Then create an abstract class, making sure to add the decorator `@abstractmethod` to the constructor. This prevents the user from instantiating the class.
 
 ```python
-class Animal:
+class Animal(ABC):
     @abstractmethod
     def __init__(self, name):
         self.name = name
