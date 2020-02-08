@@ -54,7 +54,16 @@ You might be wondering why we have `/24` in the Address field but `/32` in the A
 
 This is because we want our address to be in the `/24` subnet, but we only want that specific IP to be able to connect via that specific public key.
 
-Warning: Make sure you have 51826 open on your firewall.
+**Firewall Rules**
+First you want to make sure that the port you specified is open on your firewall
+```bash
+sudo ufw allow 51826
+```
+
+Next you'll want to allow routing and any traffic to happen within that VPN interface.
+```bash
+sudo ufw route allow in on wg0 out on wg0
+```
 
 Now to have your server route traffic between the different clients connected to it, you need to enable IPv4 forwarding.
 
@@ -89,6 +98,11 @@ PersistentKeepalive = 21
 Replace `x` with a unique value per client. This configuration file has the client establish a connection to the server, send a packet via ping to initiate the connection and then try to persistently keep it alive.
 
 The DNS server is helpful if you have a DNS server running in that private network to access local resources. If you don't have an existing DNS server in the network, do not include that line. Also if you receive any errors in the future, you might need to make sure `resolvconf` is a command on your system.
+
+If you want you can also allow traffic within your trusted VPN network.
+```bash
+sudo ufw allow in on wg0 out on wg0
+```
 
 **On all machines:**
 
