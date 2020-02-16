@@ -2,7 +2,7 @@
 title: "coredns"
 date: 2019-12-13T02:00:29-05:00
 draft: false 
-images: []
+tags: [ "linux", "network", "containers" ]
 ---
 
 Domain names are the easiest way for a reverse proxy to split up services in a homelab. Since I'm going full docker-compose in my homelab, I decided to use `coredns`.

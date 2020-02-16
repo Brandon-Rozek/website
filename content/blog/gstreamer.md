@@ -2,7 +2,7 @@
 title: "GStreamer"
 date: 2020-02-08T20:46:36-05:00
 draft: false
-images: []
+tags: [ "linux" ]
 ---
 
 GStreamer is a pipeline based multimedia framework that goes from capture, processing, to a sink such as a X window or UDP sink.

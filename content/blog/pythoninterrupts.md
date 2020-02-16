@@ -2,7 +2,7 @@
 title: "Quick Python: Interrupts"
 date: 2020-01-25T09:51:34-05:00
 draft: false
-images: []
+tags: [ "python" ]
 ---
 
 This post is part of a new series I'm starting where I quickly outline small Python snippets.

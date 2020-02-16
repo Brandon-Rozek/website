@@ -2,7 +2,7 @@
 title: "Virtual Disks"
 date: 2020-01-06T22:26:58-05:00
 draft: false
-images: []
+tags: [ "linux", "storage" ]
 ---
 
 Have you wanted to [play with ZFS](https://wiki.archlinux.org/index.php/ZFS/Virtual_disks) or any other filesystem without creating a dedicated partition or device? We can do this through virtual disks!

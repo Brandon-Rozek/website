@@ -2,6 +2,7 @@
 title: "Discovering Ham Radio"
 date: 2019-07-01T22:06:23-04:00
 draft: false
+tags: [ "amateur radio" ]
 ---
 
 I feel like Ham Radio has been hiding in the background as I move through life. I knew someone that kept a Ham radio in his car, Noah talks about it frequently on his [podcast](http://www.asknoahshow.com/), and it seemed like the next step after [playing with](https://github.com/brandon-rozek/radiotuner)  [software defined radio](https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Telescopic/dp/B011HVUEME/ref=sr_1_3). 

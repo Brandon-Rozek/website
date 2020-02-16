@@ -2,6 +2,7 @@
 title: "Python Typing"
 date: 2019-10-28T00:12:34-04:00
 draft: false
+tags: [ "python" ]
 ---
 
 There's a typing module built right into Python that you can use on your applications. Sobolevn write a great [blog post](https://sobolevn.me/2019/01/simple-dependent-types-in-python) about it. One thing that threw me off at first is that if you add type annotations and then run python like you normally would, it would act as if the annotations weren't there.

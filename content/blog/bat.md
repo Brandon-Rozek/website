@@ -2,7 +2,7 @@
 title: "Bat: The user friendly cat"
 date: 2020-02-01T06:26:18-05:00
 draft: false
-images: []
+tags: [ "linux" ]
 ---
 
 `bat` is a more human pleasing replacement of `cat` with the following features:

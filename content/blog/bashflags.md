@@ -2,6 +2,7 @@
 title: "Bash Flags"
 date: 2019-08-06T16:55:47-04:00
 draft: false
+tags: [ "linux", "bash" ]
 ---
 
 I was creating a bash script and was looking around for a solution for parsing command line arguments. [This StackOverflow post](https://stackoverflow.com/questions/192249/how-do-i-parse-command-line-arguments-in-bash) has a variety of different solutions available. I want to describe my favorite of these posts.

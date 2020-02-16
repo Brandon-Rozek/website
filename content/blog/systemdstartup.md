@@ -2,7 +2,7 @@
 title: "Analyzing Startup Times with Systemd"
 date: 2019-12-26T22:52:59-05:00
 draft: false
-images: []
+tags: [ "linux" ]
 ---
 
 Startup times feeling slow? Check to see if there are any uneeded services slowing you down!

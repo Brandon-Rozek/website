@@ -2,6 +2,7 @@
 title: "Python Virtual Environments"
 date: 2019-05-21T23:04:54-04:00
 draft: false
+tags: [ "python" ]
 ---
 
 Dependency management is hard.  Luckily with Python there is a program called `virtualenv` that can help isolate different projects and manage dependencies.

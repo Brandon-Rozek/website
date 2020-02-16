@@ -2,7 +2,7 @@
 title: "Advanced Docker Image Construction with Bash"
 date: 2019-12-26T21:01:37-05:00
 draft: false
-images: []
+tags: [ "linux", "containers", "bash" ]
 ---
 
 On current versions of Docker, you can't mount volumes during image construction. This poses an issue for me as I don't want to replicate gigabytes of data already existing on my disk when it won't appear on the final build. Therefore, instead of building an image with a traditional Dockerfile, we're going to use a bash script on a running base image container and export the filesystem to create the image from.

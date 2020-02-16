@@ -2,7 +2,7 @@
 title: "Ensuring Docker Compose Startup with Systemd"
 date: 2019-12-16T20:57:36-05:00
 draft: false 
-images: []
+tags: [ "linux", "containers" ]
 ---
 
 I've been having trouble getting some docker containers such as `nginx` to start automatically on bootup, even with the `restart: always` flag.

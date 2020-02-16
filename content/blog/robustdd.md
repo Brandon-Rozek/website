@@ -2,6 +2,7 @@
 title: "Robustdd"
 date: 2019-09-27T22:45:56-04:00
 draft: false
+tags: [ "linux" ]
 ---
 
 This blog post is going to assume that we're writing to `/dev/sdX`. Please change this to whatever disk you're actually trying to write to. I bear no responsibility if you accidentally write to your OS drives.

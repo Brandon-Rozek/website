@@ -2,6 +2,7 @@
 title: "Oh My Zsh"
 date: 2019-07-21T08:45:03-04:00
 draft: false
+tags: [ "linux" ]
 ---
 
 Zsh is an extension of the sh that contains a lot more features than the default bash shell installed on most systems. 

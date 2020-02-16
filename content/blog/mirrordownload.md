@@ -2,7 +2,7 @@
 title: "Mirror Download with wget"
 date: 2020-01-20T21:18:12-05:00
 draft: false
-images: []
+tags: [ "linux" ]
 ---
 
 This post will describe downloading a `centos` repo using `wget`. Though the ideas in this blog post can apply to any mirror with packages exposed via http.

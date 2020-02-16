@@ -2,7 +2,7 @@
 title: "Temporarily Resolving Hostnames"
 date: 2020-01-04T21:26:16-05:00
 draft: false
-images: []
+tags: [ "linux", "network" ]
 ---
 
 Let's say that we're testing a webserver where the pages served depended on a domain that you don't own. The most common way I know to test this is to modify your `/etc/hosts` file to contain the hostname and ip address you want to map it to.

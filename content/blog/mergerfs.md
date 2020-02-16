@@ -2,7 +2,7 @@
 title: "MergerFS"
 date: 2020-01-14T23:10:17-05:00
 draft: false
-images: []
+tags: [ "linux", "storage" ]
 ---
 
 [MergerFS](https://github.com/trapexit/mergerfs) is a great filesystem for an expandable storage system in a homelab. Mostly since it allows you to add disks one at a time without having to, for example, resilver a ZFS pool. MergerFS won't be as efficient as a filesystem that stripes your data across disks, but in the case of a disk failure the disks unaffected will still have part of the data.

@@ -2,6 +2,7 @@
 title: "Custom Python REPL"
 date: 2019-10-27T23:43:12-04:00
 draft: false
+tags: [ "python" ]
 ---
 
 Are you tired of importing the same libraries and setting up the same variables? Why not just create your own custom REPL? Now of course, we're not going to do it from scratch, but instead utilize what Python already gives us.

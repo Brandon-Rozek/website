@@ -2,7 +2,7 @@
 title: "Temporary Static IP"
 date: 2020-01-20T21:36:37-05:00
 draft: false
-images: []
+tags: [ "linux", "network" ]
 ---
 
 I've learned that the fastest way to transfer files is via Ethernet. Now the easiest way to transfer via Ethernet is for both computers to be on the same local area network. However, if needed, an Ethernet cable can used between two computers. 
