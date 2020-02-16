@@ -1,12 +1,11 @@
 baseURL = "https://brandonrozek.com/"
 languageCode = "en-us"
 title = "Brandon Rozek"
-author = "Brandon Rozek"
-description = "Software Developer, Researcher, and Linux Enthusiast."
 theme = "pulp"
 
 [taxonomies]
   series = "series"
+  tags = "tags"
 
 [params]
     author = "Brandon Rozek"
@@ -15,15 +14,11 @@ theme = "pulp"
     description = """
         Software Developer, Researcher, and Linux Enthusiast.
     """
-    publicationYear = "2019"
-    # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
-    # singlePageDateFormat = "January 2, 2006"
-    # custom_css = ["/css/custom.css"]
-    # custom_js = ["/js/custom.js"]
+    publicationYear = "2020"
 
 [outputs]
     section = ["JSON", "HTML", "RSS"]
-    page = ["AMP", "HTML"]
+    page = ["HTML", "AMP"]
 
 [[menu.main]]
     identifier = "blog"
