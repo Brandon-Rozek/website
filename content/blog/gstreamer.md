@@ -57,7 +57,7 @@ gst-launch-1.0 \
   v4l2src device=/dev/video0 ! \
   videoconvert ! \
   videorate ! \
-  video/x-raw,framerate=15/1 ! \
+  video/x-raw,framerate=30/1 ! \
   x264enc interlaced=true tune=zerolatency speed-preset=ultrafast ! \
   rtph264pay ! \
   udpsink host=192.168.0.2 port=5000
