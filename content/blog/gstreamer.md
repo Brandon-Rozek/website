@@ -32,18 +32,48 @@ sudo apt install gstreamer1.0-plugins-ugly
 To send h264 video over the network,
 
 ```bash
-gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! x264enc ! rtph264pay ! udpsink host=192.168.0.2 port=5000
+gst-launch-1.0 \
+  v4l2src device=/dev/video0 ! \
+  videoconvert ! \
+  x264enc ! \
+  rtph264pay ! \
+  udpsink host=192.168.0.2 port=5000
 ```
 
 To send it as fast as you can,
 
 ```bash
-gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! x264enc interlaced=true tune=zerolatency speed-preset=ultrafast ! rtph264pay ! udpsink host=192.168.0.2 port=5000
+gst-launch-1.0 \
+  v4l2src device=/dev/video0 ! \
+  videoconvert ! \
+  x264enc interlaced=true tune=zerolatency speed-preset=ultrafast ! \
+  rtph264pay ! \
+  udpsink host=192.168.0.2 port=5000
 ```
+
+To send it as fast as possible under a given framerate (ex: 30)
+```bash
+gst-launch-1.0 \
+  v4l2src device=/dev/video0 ! \
+  videoconvert ! \
+  videorate ! \
+  video/x-raw,framerate=15/1 ! \
+  x264enc interlaced=true tune=zerolatency speed-preset=ultrafast ! \
+  rtph264pay ! \
+  udpsink host=192.168.0.2 port=5000
+```
+
+
 
 To receive it and display it on an X-window,
 
 ```bash
-gst-launch-1.0 -v udpsrc port=5000 ! application/x-rtp,payload=96 ! rtph264depay ! decodebin ! videoconvert n-threads=4 ! ximagesink
+gst-launch-1.0 \
+  udpsrc port=5000 ! \
+  application/x-rtp,payload=96 ! \
+  rtph264depay ! \
+  decodebin ! \
+  videoconvert n-threads=4 ! \
+  ximagesink
 ```
 
