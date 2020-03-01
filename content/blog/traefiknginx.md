@@ -2,7 +2,6 @@
 title: "Traefik & Nginx"
 date: 2019-12-16T19:55:47-05:00
 draft: false 
-images: []
 ---
 
 I've been enjoying Traefik for its auto-discovery of containers. The only problem is that for a couple containers such as Plex and HomeAssistant I have host networking enabled. This usually results in Traefik failing to forward the traffic properly.

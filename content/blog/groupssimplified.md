@@ -2,7 +2,7 @@
 title: "Groups Simplified"
 date: 2019-12-10T21:40:00-05:00
 draft: false 
-images: []
+tags: [ "abstract algebra" ]
 ---
 
 This post is inspired by the book "Term Rewriting & All That" by Franz Baader and Tobias Nipkow.

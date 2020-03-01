@@ -2,7 +2,6 @@
 title: "Videos and GIFs"
 date: 2019-12-04T10:13:35-05:00
 draft: false
-images: []
 ---
 
 I like using GIFs in Google Slides because it doesn't require any interaction to start playing right away. Therefore, I looked at a couple resources to add a GIF from a video into my presentation. Of course this is all using one of my favorite terminal tools `ffmpeg`.

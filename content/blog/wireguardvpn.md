@@ -2,6 +2,7 @@
 title: "Wireguard VPN"
 date: 2019-11-20T20:09:59-05:00
 draft: false
+tags: [ "network" ]
 ---
 
 Having some sort of VPN solution has always been a necessity for me. Whether it's back in the day where LAN games where the rage and I wanted to play it with my distant friends, or nowadays when I need to be able to access my Desktop running simulations behind my home LAN.

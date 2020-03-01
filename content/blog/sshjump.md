@@ -2,7 +2,7 @@
 title: "SSH Jump"
 date: 2020-02-02T22:32:13-05:00
 draft: false
-images: []	
+tags: [ "SSH" ]
 ---
 
 With ssh jump, we can ssh into a machine that we don't have direct access to through an intermediary.

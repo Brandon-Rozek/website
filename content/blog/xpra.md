@@ -2,7 +2,7 @@
 title: "xpra"
 date: 2020-01-15T18:29:57-05:00
 draft: false
-tags: [ "linux" ]
+tags: [ "linux", "X11" ]
 ---
 
 [`xpra`](http://xpra.org/) allows one to run persistent X applications on a remote host and display it on a local machine. It's a combination of [SSH X11 Forwarding](https://wiki.archlinux.org/index.php/OpenSSH#X11_forwarding) and [Screen](https://www.gnu.org/software/screen/).

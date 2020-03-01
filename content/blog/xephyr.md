@@ -2,7 +2,7 @@
 title: "Nested X Sessions with Xephyr"
 date: 2019-12-25T00:52:02-05:00
 draft: false
-tags: [ "linux" ]
+tags: [ "linux", "X11" ]
 ---
 
 The X Window System was designed at a time when applications that ran on your computer were assumed to be trusted. Therefore there are minimal restrictions in place to prevent applications from grabbing images of whats on another applications screens. This feature as you might imagine is quite useful for screen clipper applications.

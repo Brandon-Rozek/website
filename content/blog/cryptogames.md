@@ -2,7 +2,6 @@
 title: "Cryptographic Games"
 date: 2020-01-13T21:35:09-05:00
 draft: false
-images: []
 ---
 
 When analyzing cryptographic algorithms, we characterize the strength of the crypto-system by analyzing what happens in various crypto games. Below are a couple examples of crypto games used in literature.
