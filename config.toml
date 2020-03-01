@@ -15,6 +15,7 @@ theme = "pulp"
         Software Developer, Researcher, and Linux Enthusiast.
     """
     publicationYear = "2020"
+    identities = ["https://github.com/brandon-rozek", "mailto:hello@brandonrozek.com"]
 
 [outputs]
     section = ["JSON", "HTML", "RSS"]
