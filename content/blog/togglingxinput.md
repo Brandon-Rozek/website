@@ -28,3 +28,9 @@ xinput enable [id]
 ```
 
 The ids are listed when you list the devices.
+
+To query whether the device is enabled or disabled:
+```bash
+xinput --list-props [id] | grep "Device Enabled" | awk '{ print $NF }'
+```
+This will return $1$ or $0$ depending on if its enabled or not respectively.
