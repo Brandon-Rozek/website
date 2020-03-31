@@ -8,6 +8,8 @@ tags: ["python"]
 There is often a trade-off when it comes to efficiency of CPU vs memory usage. In this post, I will show how the [`lru_cache`](https://docs.python.org/3/library/functools.html#functools.lru_cache) decorator can cache results of a function call for quicker future lookup.
 
 ```python
+from functools import lru_cache
+
 @lru_cache(maxsize=2**7)
 def fib(n):
     if n == 1:
