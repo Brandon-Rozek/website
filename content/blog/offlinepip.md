@@ -79,3 +79,5 @@ Or they can just install the packages they want
 pip install --no-index -f /path/to/wheels/wheels package_name
 ```
 
+If you don't want to add flags to every command, check out my post on using [configuration files with pip](https://brandonrozek.com/blog/pipconf/).
+
