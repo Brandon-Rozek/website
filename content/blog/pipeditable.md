@@ -1,7 +1,7 @@
 ---
 title: "Pip Editable"
-date: 2020-04-11T20:27:35-04:00
-draft: true
+date: 2020-04-11T20:38:33-04:00
+draft: false
 tags: ["python"]
 ---
 
