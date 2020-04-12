@@ -26,7 +26,7 @@ You can also apply a function to a list or iterables
 def double(x):
     return 2 * x
 with ThreadPoolExecutor() as executor:
-    future = executor.submit(function_handle, [1, 2, 3])
+    future = executor.map(function_handle, [1, 2, 3])
     result = future.result()
 ```
 
