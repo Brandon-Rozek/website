@@ -17,7 +17,7 @@ One particular problem I'm fascinated by is how to make Reinforcement Learning a
 
 [Interactive Demonstrations Library](https://github.com/brandon-rozek/gyminteract)
 
-[Honors Thesis](/files/research/honorsthesis.pdf)
+[Honors Thesis](/files/research/honorsthesis.pdf) ([Eagle Scholar Entry](https://scholar.umw.edu/student_research/305/))
 
 [Honors Defense](/files/research/ExpeditedLearningInteractiveDemo.pptx)
 
