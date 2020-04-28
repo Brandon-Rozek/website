@@ -22,3 +22,19 @@ youtube-dl --ignore-errors \
            URL_HERE
 ```
 
+## Audio Only
+
+To extract only audio here's the modified command
+
+```bash
+youtube-dl --ignore-errors \
+           --playlist-reverse \
+           --output "%(uploader)s/%(uploader)s - %(title)s - %(upload_date)s.%(ext)s" \
+           --format "bestvideo[ext=mp4]+bestaudio[ext=m4a]" \
+           --merge-output-format mp4 \
+           --embed-thumbnail \
+           --add-metadata \
+           --extract-audio
+           URL_HERE
+```
+
