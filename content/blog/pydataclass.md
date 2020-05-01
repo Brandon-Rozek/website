@@ -13,7 +13,7 @@ from dataclasses import dataclass
 @dataclass
 class Person:
     name: str
-    age: int
+    age: int = 0
 ```
 
 Usage:
@@ -26,4 +26,6 @@ print(p)
 ```
 Person(name='Bob', age=20)
 ```
+
+To make an attribute have a default value, add it after the type declaration like I have with `age`.
 
