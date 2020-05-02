@@ -31,6 +31,11 @@ services:
 
 The `net_admin` capability according to the documentation "perform various network-related operations".  This would make sense since an additional network interface is configured for a VPN connection. The `label:disable` definition is to disable label confinement.
 
+In this setup, you will need to put the `.ovpn` profile that you wish to connect to under the `/volumes/openvpn-client/vpn/` directory. 
+
+## (Optional) Username/Password Setup
+In the event you need a username and password to connect, create a file called `pass.txt` in the same directory as your ovpn profile. The file `pass.txt` will contain the username in the first line and the password in the second line. Then in your ovpn profile make sure you have a line that says `auth-user-pass pass.txt`.
+
 ## Routing Traffic through VPN
 
 Let's say your ISP throttles torrent connections and you want to route your `qBittorrent` container so that you can download Linux distributions faster. Here's how you can define it in the docker-compose file.
