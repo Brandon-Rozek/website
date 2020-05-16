@@ -36,7 +36,7 @@ sudo parted -a opt /dev/sdX mkpart primary ext4 0% 100%
 Now we can let `ext4` format the drive,
 
 ```bash
-sudo mkfs.ext4 /dev/sdX
+sudo mkfs.ext4 /dev/sdX1
 ```
 
 I like to set up my mount points to be `/mnt/data/N` where N is the number of the drive I'm working with.
@@ -48,13 +48,13 @@ sudo mkdir /mnt/data/N
 To temporarily mount it, just to make sure it works you can run
 
 ```bash
-sudo mount /dev/sdX /mnt/data/N
+sudo mount /dev/sdX1 /mnt/data/N
 ```
 
 You can unmount it with `umount`
 
 ```bash
-sudo umount /dev/sdX
+sudo umount /dev/sdX1
 ```
 
 When you're ready to make it permanent, we'll have to edit the `/etc/fstab` file. We should note the drive by its UUID so that it's not dependent on the slot the hard drive sits in. You can find it by running this command 
