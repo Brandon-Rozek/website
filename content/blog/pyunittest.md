@@ -32,7 +32,7 @@ if __name__ == '__main__':
 To auto-discover and run your tests
 
 ```bash
-python -m unittest discover
+python -m unittest discover -s tests
 ```
 
 
