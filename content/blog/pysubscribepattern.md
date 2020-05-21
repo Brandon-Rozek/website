@@ -16,6 +16,8 @@ class Application:
     def __init__(self):
         self.callbacks = []
     def subscribe(self, func):
+        if not callable(func):
+            raise ValueError("Argument func must be callable.")
         self.callbacks.append(func)
         return func
     def emit(self, message):
@@ -57,6 +59,8 @@ class Application:
         self.callbacks = defaultdict(list)
     def on(self, event, func=None):
         def subscribe(func):
+            if not callable(func):
+                raise ValueError("Argument func must be callable.")
             self.callbacks[event].append(func)
             return func
         if func is None:
