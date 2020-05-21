@@ -5,7 +5,7 @@ draft: false
 tags: []
 ---
 
-It is common for larger applications to have modules that publishes and subscribes to events. This post will outline a couple ways to achieve this using [decorators](https://brandonrozek.com/blog/pydecorators/).
+It is common for larger applications to have modules that publishes and subscribes to events. This post will outline a couple ways to achieve this using [decorators](https://brandonrozek.com/blog/pydecorators/) and standard methods.
 
 ## Single Event
 
@@ -32,9 +32,10 @@ app = Application()
 def test1(message):
     print("Function 1:", message)
 
-@app.subscribe
 def test2(message):
     print("Function 2:", message)
+
+app.subscribe(test2)
 
 app.emit('Hello World')
 ```
@@ -54,11 +55,13 @@ from collections import defaultdict
 class Application:
     def __init__(self):
         self.callbacks = defaultdict(list)
-    def on(self, event):
+    def on(self, event, func=None):
         def subscribe(func):
             self.callbacks[event].append(func)
             return func
-        return subscribe
+	if func is None:
+            return subscribe
+	subscribe(func)
     def emit(self, event, message):
         for callback in self.callbacks[event]:
             callback(message)
@@ -77,9 +80,10 @@ Now let's subscribe a couple functions to `event1`
 def test1(message):
     print("Function 1:", message)
 
-@app.on('event1')
 def test3(message):
     print("Function 3:", message)
+
+app.on('event1', test3)
 ```
 
 Now to subscribe a couple events to `event2`
@@ -90,9 +94,10 @@ Now to subscribe a couple events to `event2`
 def test2(message):
     print("Function 2:", message)
 
-@app.on('event2')
 def test4(message):
     print("Function 4:", message)
+
+app.on('event2', test4)
 ```
 
 We can also subscribe to both events
