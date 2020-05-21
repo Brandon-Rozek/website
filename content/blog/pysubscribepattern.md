@@ -59,9 +59,9 @@ class Application:
         def subscribe(func):
             self.callbacks[event].append(func)
             return func
-	if func is None:
+        if func is None:
             return subscribe
-	subscribe(func)
+        subscribe(func)
     def emit(self, event, message):
         for callback in self.callbacks[event]:
             callback(message)
