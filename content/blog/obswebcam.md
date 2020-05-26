@@ -16,7 +16,11 @@ OBS has two different options, streaming and recording. Since I want the ability
 We will use `ffmpeg` as our RTMP server
 
 ```bash
-ffmpeg -hwaccel vdpau -fflags nobuffer -listen 1 -i rtmp://localhost:12345/live/app/ -f v4l2 /dev/video20
+ffmpeg -hwaccel vdpau \
+       -fflags nobuffer \
+       -listen 1 \
+       -i rtmp://localhost:12345/live/app/ \
+       -f v4l2 /dev/video20
 ```
 
 | Flag               | Description                                                  |
