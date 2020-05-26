@@ -114,6 +114,11 @@ sudo systemctl enable wg-quick@wg0
 sudo systemctl start wg-quick@wg0
 ```
 
+Alternatively you can add the profile to NetworkManager for it to manage.
+```bash
+sudo nmcli connection import type wireguard file /etc/wireguard/wg0.conf
+```
+
 And enjoy a fully secure routable network!
 
 ## Potential Errors
