@@ -20,3 +20,11 @@ ControlPath ~/.ssh/sockets/socket-%r@%h:%p
 | `ControlPersist` | `yes` to keep connection up even when no clients are connected.<br />`2s` (or custom timeout) to keep the connection up for 2 seconds after no clients are connected.<br />`no` to disconnect immediately |
 | `ControlPath`    | Where to store connection information. This should not be writable by other users. |
 
+
+You'll also need to create the `sockets` folder if you don't have it already setup.
+
+```bash
+mkdir ~/.ssh/sockets
+chmod go-w ~/.ssh/sockets
+```
+
