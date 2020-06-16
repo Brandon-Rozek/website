@@ -37,7 +37,7 @@ sudo apt remove package_name
 If the application does not use `make install`, then you can add extra arguments to denote its equivalent
 
 ```bash
-sudo checkinstall -D --isntall=no --nodoc ./customInstallScript
+sudo checkinstall -D --install=no --nodoc ./customInstallScript
 ```
 
 Arguments to `checkinstall`
