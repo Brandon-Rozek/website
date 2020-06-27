@@ -22,3 +22,6 @@ wormhole receive 6-speculate-allow
 ```
 
 Done.
+
+You can also rest in the fact that your data is secured by a [Password-Authenticated Key Agreement (PAKE)](https://en.wikipedia.org/wiki/Password-authenticated_key_agreement).
+
