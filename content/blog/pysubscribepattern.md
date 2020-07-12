@@ -12,10 +12,11 @@ It is common for larger applications to have modules that publishes and subscrib
 First let us concern ourselves with a single event since that's the easiest. Here we will create an application class that stores callbacks of functions through the subscribe decorator. Calling `emit` will send a message to all the functions stored in `self.callbacks`.
 
 ```python
+from typing import Callable, List
 class Application:
     def __init__(self):
-        self.callbacks = []
-    def subscribe(self, func):
+        self.callbacks: List[Callable] = []
+    def subscribe(self, func: Callable):
         if not callable(func):
             raise ValueError("Argument func must be callable.")
         self.callbacks.append(func)
@@ -53,12 +54,12 @@ Let's say you want the application to handle different types of events. Now `sel
 
 ```python
 from collections import defaultdict
-
+from typing import Callable, Optional
 class Application:
     def __init__(self):
-        self.callbacks = defaultdict(list)
-    def on(self, event, func=None):
-        def subscribe(func):
+        self.callbacks: Dict[str, List[Callable]] = defaultdict(list)
+    def on(self, event: str, func: Optional[Callable] = None):
+        def subscribe(func: Callable):
             if not callable(func):
                 raise ValueError("Argument func must be callable.")
             self.callbacks[event].append(func)
