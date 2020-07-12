@@ -11,13 +11,14 @@ class Application:
     # ...
     def emit(self, message):
         for callback in self.callbacks:
-            if asyncio.iscoroutine(callback):  
-                loop = asyncio.get_running_loop()  
-                loop.call_soon(  
-                    functools.partial(  
+            if asyncio.iscoroutine(callback):
+                loop = asyncio.get_running_loop()
+                loop.call_soon(
+                    functools.partial(
                         asyncio.ensure_future,
-                        callback(event, index)  
-                    )  
-            else:  
+                        callback(event, index)
+                    )
+                )
+            else:
                 callback(event, index)
 ```
