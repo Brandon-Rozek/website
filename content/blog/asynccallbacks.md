@@ -16,9 +16,9 @@ class Application:
                 loop.call_soon(
                     functools.partial(
                         asyncio.ensure_future,
-                        callback(event, index)
+                        callback(message)
                     )
                 )
             else:
-                callback(event, index)
+                callback(message)
 ```
