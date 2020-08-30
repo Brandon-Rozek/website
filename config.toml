@@ -50,13 +50,6 @@ theme = "pulp"
     weight = 40
 
 [[menu.main]]
-    identifier = "projects"
-    name = "Projects (old)"
-    pre = "<i class='fa fa-tasks fa-lg'></i>"
-    url = "/projects/"
-    weight = 70
-
-[[menu.main]]
     identifier = "notes"
     name = "Notes"
     pre = "<i class='fa fa-book-open fa-lg'></i>"

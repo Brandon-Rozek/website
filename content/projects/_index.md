@@ -1,7 +1,8 @@
 ---
 title: Projects
 ---
-his page lists projects that I've done over 5 years ago. These descriptions were brought over from my older website.
+
+This hidden page lists projects that I have done over 5 years ago. This was mostly ported over from the older version of my website.
 
 [MathIO](mathio)
 
