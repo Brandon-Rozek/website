@@ -13,7 +13,7 @@ On December 4, 2019, I gave a defense on my honors research in the incorporation
 
 In June 2019, Stefano Coronado and I were volunteered to give a talk at the Fredericksburg Linux Users group on our experiences building a Beowulf cluster for our University. 
 
-[Slides PDF](/files/slides/buildinglinuxcluster.pdf)
+[Slides PDF](/files/slides/buildingalinuxcluster.pdf)
 
 ## Embezzlement of Parking Meter Funds: A Computational Approach to Hypothesis Testing
 
