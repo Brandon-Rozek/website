@@ -11,7 +11,7 @@ Below is a list of courses I've taken in the past for credit.
 
 Software Engineering (CPSC 430)
 
-Deep Reinforcement Learning (CPSC 491H)
+Independent Study Honors (CPSC 491H)
 
 Multivariable Calculus (MATH 224A)
 
