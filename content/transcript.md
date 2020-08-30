@@ -71,34 +71,6 @@ Probability & Statistical Inference I (STAT 381)
 
 Undergraduate Research in Physics (URES 197J)
 
-## Fall 2017
-
-Computer Systems and Architecture (CPSC 305)
-
-Introduction to Data Science (DATA 101)
-
-Linear Algebra (MATH 300)
-
-Methods in Mathematical Physics (PHYS 317)
-
-Probability & Statistical Inference I (STAT 381)
-
-Undergraduate Research in Physics (URES 197J)
-
-## Fall 2017
-
-Computer Systems and Architecture (CPSC 305)
-
-Introduction to Data Science (DATA 101)
-
-Linear Algebra (MATH 300)
-
-Methods in Mathematical Physics (PHYS 317)
-
-Probability & Statistical Inference I (STAT 381)
-
-Undergraduate Research in Physics (URES 197J)
-
 ## Spring 2017
 
 Intro to Discrete Mathematics (CPSC 125A)
