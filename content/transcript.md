@@ -7,6 +7,18 @@ Description: Page listing the courses I've taken
 
 Below is a list of courses I've taken in the past for credit. 
 
+## Fall 2019
+
+Software Engineering (CPSC 430)
+
+Deep Reinforcement Learning (CPSC 491H)
+
+Multivariable Calculus (MATH 224A)
+
+Number Theory (MATH 321)
+
+Abstract Algebra II (MATH 432)
+
 ## Spring 2019
 
 Deep Reinforcement Learning (CPSC 491)
