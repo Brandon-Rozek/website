@@ -72,6 +72,13 @@ theme = "pulp"
     weight = 80
 
 [[menu.main]]
+    identifier = "scholar"
+    name = "Google Scholar"
+    pre = "<i class='fas fa-graduation-cap'></i>"
+    url = "https://scholar.google.com/citations?user=JrgtnwgAAAAJ&hl=en&oi=ao"
+    weight = 85
+
+[[menu.main]]
     identifier = "email"
     name = "Email"
     pre = "<i class='fa fa-envelope fa-lg'></i>"
