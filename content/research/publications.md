@@ -4,13 +4,16 @@ Descriptions: Papers, Presentations, and Grants obtained
 ShowDatesOnPosts: false
 ---
 
-# Publications
+## Workshops
 
 [Andrew M Marshall, Catherine A Meadows, Paliath Narendran, Veena Ravishankar, Brandon Rozek. "Algorithmic Problems in Synthesized Cryptosystems", UNIF Workshop, 2020.](https://www3.risc.jku.at/publications/download/risc_6129/proceedings-UNIF2020.pdf#page=58)
 
+
+## Thesis
+
 [Brandon Rozek. "Expediting Learning with Interactive Demonstrations", University of Mary Washington, 2019.](https://scholar.umw.edu/student_research/305/)
 
-# Presentations
+## Presentations
 
 [Brandon Rozek. "QEP: The Quality Policy Evaluation Algorithm", Research and Creativity Day at University of Mary Washington, 2019.](/files/research/QEP.pptx)
 
@@ -23,6 +26,6 @@ ShowDatesOnPosts: false
 Hannah Killian, Brandon Rozek. “Modeling Population Dynamics of Incoherent and Coherent Excitation", Research and Creativity Day at University of Mary Washington, 2017.
 
 
-# Grants
+## Grants
 
 [Clare Arrington, Maia Magrakvilidze, Ethan Ramirez, Brandon Rozek "High Performance Cluster System for Research and Education", University of Mary Washington, 2017-2018 School Year ($3500)](https://cas.umw.edu/wp-content/blogs.dir/51/files/2018/10/Fall-2017-Awards.pdf)
