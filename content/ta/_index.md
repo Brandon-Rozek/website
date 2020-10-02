@@ -25,4 +25,4 @@ My role involves helping students debug during the lab time. I also create lectu
 
 I was the lab aide for Zacharski's DATA 101 class. My role in his class mostly involved helping students debug during lab time and grading student's demonstrations of what they've done in a lab.
 
-He also asked me to TA for the NVIDIA Computer Vision workshop that he was running at the University.
+He also asked me to TA for the NVIDIA Computer Vision workshop that he was running at the University. (October 6th 2018)
