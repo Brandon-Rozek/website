@@ -30,30 +30,37 @@ First install [Octave](https://www.gnu.org/software/octave/) and the [symbolic p
 
 Then in octave type in the following code
 
-    
-    pkg load symbolic
+```MATLAB
+pkg load symbolic
+```
     
 
 ## Usage
 
 For every variable not defined earlier in your expression, make sure to declare it as a symbolic data type
 
-<pre class='language-MATLAB'><code class='language-MATLAB'>syms x y</code></pre>
+```MATLAB
+syms x y
+```
 
 Then make an expression
 
-<pre class='language-MATLAB'><code class='language-MATLAB'>
+```MATLAB
 expr = y + sin(x)^2 + cos(x)^2
-</code></pre>
+```
 
 You can then ask Octave to simplify the expression for you
 
-<pre class='language-MATLAB'><code class='language-MATLAB'>
+```MATLAB
 simp_expr = simplify(expr)
-</code></pre>
+```
 
 Displaying it shows it as
 
-<pre class='language-MATLAB'><code class='language-MATLAB'>(sym) y + 1</code></pre>
+```MATLAB
+(sym) y + 1
+```
 
 Which is indeed a simplification using a trig identity 🙂
+
+Update: Octave's symbolic is based on [SymPy](https://www.sympy.org/en/index.html). If you're confortable with Python, I recommend checking it out.
