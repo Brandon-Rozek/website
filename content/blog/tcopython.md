@@ -30,7 +30,7 @@ RecursionError: maximum recursion depth exceeded in comparison
 
 ## Implementation
 
-To get around this in Python, we need some sort of [trampoline](https://en.wikipedia.org/wiki/Tail_call#Through_trampolining), or way to exit part the stack and call the recursive function again. This technique is called Tail Call Optimizatoin, and we can do this in Python using exceptions. This code is heavily inspired by Crutcher Dunnavant's [code snippet](https://code.activestate.com/recipes/474088-tail-call-optimization-decorator/) from 2006.
+To get around this in Python, we need some sort of [trampoline](https://en.wikipedia.org/wiki/Tail_call#Through_trampolining), or way to exit part the stack and call the recursive function again. This technique is often used in Tail Call Optimization, and we can do this in Python using exceptions. This code is heavily inspired by Crutcher Dunnavant's [code snippet](https://code.activestate.com/recipes/474088-tail-call-optimization-decorator/) from 2006.
 
 ```python
 """
