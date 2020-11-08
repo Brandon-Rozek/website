@@ -5,6 +5,11 @@ date: 2015-11-30T00:34:15+00:00
 author: Brandon Rozek
 layout: post
 guid: https://brandonrozek.com/?p=449
+aliases:
+    - /2015/11/limiting-cache-service-workers-revisited/
+    - /2015/11/limiting-cache-service-workers-revisited1/
+    - /2015/11/limiting-cache-service-workers-revisited2/
+    - /2015/11/limiting-cache-service-workers-revisited3/
 permalink: /2015/11/limiting-cache-service-workers-revisited3/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'
@@ -27,7 +32,7 @@ Summary: I rewrote how cache limiting works to address a few problems listed lat
 
 I wrote a function in my [previous service worker post](https://brandonrozek.com/2015/11/service-workers/) to help limit the cache. Here&#8217;s a reminder of what it looked like.
 
-<pre><code class="language-javascript">
+```javascript
 var limitCache = function(cache, maxItems) {
 	cache.keys().then(function(items) {
 		if (items.length &gt; maxItems) {
@@ -35,7 +40,7 @@ var limitCache = function(cache, maxItems) {
 		}
 	})
 }
-</code></pre>
+```
 
 ### The Problem
 
@@ -45,7 +50,7 @@ Jeremy Keith updated the service worker on his site and noticed that the images 
 
 Jeremy wrote a function to help trim the cache and asked when it would be appropriate to apply it.
 
-<pre><code class="language-javascript">
+```javascript
 var trimCache = function (cacheName, maxItems) {
     caches.open(cacheName)
         .then(function (cache) {
@@ -58,11 +63,11 @@ var trimCache = function (cacheName, maxItems) {
                 });
         });
 };
-</code></pre>
+```
 
 And that got me thinking. In what situations is this problem more likely to occur? This particular problem happens when a lot of files are being called asynchronously. This problem doesn&#8217;t occur when only one file is being loaded. So when do we load a bunch of files? During page load. During page load, the browser might request css, javascript, images, etc. Which for most [websites](http://royal.pingdom.com/2011/11/21/web-pages-getting-bloated-here-is-why/), is a lot of files. Let&#8217;s now move our focus back to the humble script.js. Before, the only role it played with service workers was registering the script. However, if we can get the script to notify the service worker when the page is done loading, then the service worker will know when to trim the cache.
 
-<pre><code class="language-javascript">
+```javascript
 if ('serviceWorker' in navigator) {
 	navigator.serviceWorker.register('https://yourwebsite.com/serviceworker.js', {scope: '/'});
 }
@@ -71,21 +76,21 @@ window.addEventListener("load", function() {
 		navigator.serviceWorker.controller.postMessage({"command":"trimCache"});
 	}
 });
-</code></pre>
+```
 
-Why <code class="language-javascript">if (navigator.serviceWorker.controller != null)</code>? Service Workers don&#8217;t take control of the page immediately but on subsequent page loads, Jake Archibald [explains](https://jakearchibald.com/2014/using-serviceworker-today/). When the service worker does have control of the page however, we can use the [postMessage api](https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage) to send a message to the service worker. Inside, I provided a json with a &#8220;command&#8221; to &#8220;trimCache&#8221;. Since we send the json to the service worker, we need to make sure that it can receive it.
+Why `if (navigator.serviceWorker.controller != null)` Service Workers don&#8217;t take control of the page immediately but on subsequent page loads, Jake Archibald [explains](https://jakearchibald.com/2014/using-serviceworker-today/). When the service worker does have control of the page however, we can use the [postMessage api](https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage) to send a message to the service worker. Inside, I provided a json with a &#8220;command&#8221; to &#8220;trimCache&#8221;. Since we send the json to the service worker, we need to make sure that it can receive it.
 
-<pre><code class="language-javascript">
+```javascript
 self.addEventListener("message", function(event) {
 	var data = event.data;
-	
+
 	if (data.command == "trimCache") {
 		trimCache(version + "pages", 25);
 		trimCache(version + "images", 10);
 		trimCache(version + "assets", 30);
 	}
 });
-</code></pre>
+```
 
 Once it receives the command, it goes on to trim all of the caches.
 
@@ -93,7 +98,7 @@ Once it receives the command, it goes on to trim all of the caches.
 
 So whenever you download a bunch of files, make sure to run <code class="language-javascript">navigator.serviceWorker.controller.postMessage({"command":"trimCache"});</code> on the main javascript file to trim the cache. A downside to this method is that since Service Workers don&#8217;t take control during the first page load, the cache isn&#8217;t trimmed until the second page load. If you can find a way to make it so that this event happens in the first page load [tell me](mailto:hello@brandonrozek.com) about it/write a blog post. 🙂 **Update:** To get the service worker to take control of the page immediately call [self.skipWaiting()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting) after the install event and [self.clients.claim()](https://developer.mozilla.org/en-US/docs/Web/API/Clients/claim) after the activate event. Current code for our humble service worker:
 
-<pre><code class="language-javascript">
+```javascript
 var version = 'v2.0.24:';
 
 var offlineFundamentals = [
@@ -191,10 +196,10 @@ self.addEventListener("fetch", function(event) {
 				cache.put(event.request, cacheCopy);
 			});
 		}
-
+	
 		return response;
 	}
-
+	
 	//Fetch from network failed
 	var fallback = function() {
 		if (event.request.headers.get('Accept').indexOf('text/html') != -1) {
@@ -213,10 +218,10 @@ self.addEventListener("fetch", function(event) {
 	
 	//For HTML requests, look for file in network, then cache if network fails.
 	if (event.request.headers.get('Accept').indexOf('text/html') != -1) {
-        	event.respondWith(fetch(event.request).then(fetchFromNetwork, fallback));
+	    	event.respondWith(fetch(event.request).then(fetchFromNetwork, fallback));
 		return;
-    	}
-
+		}
+	
 	//For non-HTML requests, look for file in cache, then network if no cache exists.
 	event.respondWith(
 		caches.match(event.request).then(function(cached) {
@@ -233,9 +238,9 @@ self.addEventListener("activate", function(event) {
 				})
 			);
 });
-</code></pre>
+```
 
-<pre><code class="language-javascript">
+```javascript
 if ('serviceWorker' in navigator) {
 	navigator.serviceWorker.register('https://brandonrozek.com/serviceworker.js', {scope: '/'});
 }
@@ -244,4 +249,4 @@ window.addEventListener("load", function() {
 		navigator.serviceWorker.controller.postMessage({"command":"trimCache"});
 	}
 });
-</code></pre>
+```

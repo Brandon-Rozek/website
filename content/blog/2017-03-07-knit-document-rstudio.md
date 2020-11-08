@@ -5,6 +5,8 @@ date: 2017-03-07T04:29:50+00:00
 author: Brandon Rozek
 layout: post
 guid: https://brandonrozek.com/?p=2090
+aliases:
+    - /2017/03/knit-document-rstudio/
 permalink: /2017/03/knit-document-rstudio/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'

@@ -5,6 +5,8 @@ date: 2015-10-18T18:30:21+00:00
 author: Brandon Rozek
 layout: post
 guid: https://brandonrozek.com/?p=344
+aliases:
+    - /2015/10/javascript-conditional-statements/
 permalink: /2015/10/javascript-conditional-statements/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'
@@ -32,25 +34,28 @@ This post is part of my lecture series for Math I/O. There is no pre-reading for
 
 To run a block of code when a condition is true, use an <code class="language-javascript">if</code> statement.
 
-<pre><code class="language-javascript">    if (condition) {
+```javascript
+if (condition) {
         doSomething();
-    }
-</code></pre>
+}
+```
 
 You can also run a block of code when a condition is false using the <code class="language-javascript">else</code> statement.
 
-<pre><code class="language-javascript">    if (condition) {
-        doSomething();
-    } else {
-        doSomethingElse();
-    }
-</code></pre>
+```javascript
+if (condition) {
+    doSomething();
+} else {
+    doSomethingElse();
+}
+```
 
 ### <a href="#switch-statement" name="switch-statement"></a>Switch statement {#switch-statement}
 
 If you want to check a variable for **equality** against multiple different cases, use a <code class="language-javascript">switch</code> statement.
 
-<pre><code class="language-javascript">    switch (variable) {
+```javascript
+switch (variable) {
         case condition1:
             doSomething();
             break;
@@ -60,8 +65,8 @@ If you want to check a variable for **equality** against multiple different case
         default:
             doSomethingCompletelyDifferent();
             break;
-    }
-</code></pre>
+}
+```
 
 The default statement runs when the variable doesn’t equal any of the cases.
 
@@ -69,10 +74,11 @@ The default statement runs when the variable doesn’t equal any of the cases.
 
 To run a block of code over and over again until a condition is false, use a <code class="language-javascript">while</code> loop.
 
-<pre><code class="language-javascript">    while (condition) {
-        doSomething();
-    }
-</code></pre>
+```javascript
+while (condition) {
+    doSomething();
+}
+```
 
 Don’t forget to include something in the loop that will eventually make the condition <code class="language-javascript">false</code>, otherwise you run into an infinite loop. (Which is a loop that never stops repeating itself; most likely crashing your browser)
 
@@ -80,10 +86,11 @@ Don’t forget to include something in the loop that will eventually make the co
 
 If you want to run something a certain amount of times, use a &#8220;<code class="language-javascript">for"</code> loop. For loops can be broken down into three components: an initiating statement, a condition, and a statement that runs after every loop.
 
-<pre><code class="language-javascript">    for (var i = 0; i &lt; 5; i++) {
+```javascript
+for (var i = 0; i &lt; 5; i++) {
         doSomething();
-    }
-</code></pre>
+}
+```
 
 Here you have the initiating statement of <code class="language-javascript">var i = 0</code>. From there you check, is <code class="language-javascript">i</code> less than 5? Yes, so then we <code class="language-javascript">doSomething();</code>. After we <code class="language-javascript">doSomething();</code>, we add 1 to <code class="language-javascript">i</code>. Now <code class="language-javascript">i</code> equals 2. Is <code class="language-javascript">i</code> still less than 5? Yes, so we <code class="language-javascript">doSomething();</code>. Then we add 1 to <code class="language-javascript">i</code> again. This loop will keep happening until <code class="language-javascript">i</code> is not less than 5.
 
@@ -91,11 +98,12 @@ Here you have the initiating statement of <code class="language-javascript">var 
 
 Having different control/conditional statements helps keep the state of any application you’re making. Did the user say not to notify them? Then don’t, otherwise (else) notify them. That’s all I have to say for this week. Hope this post helps you get a little more used to this big world called programming.
 
-<pre><code class="language-javascript">    if (youLikeThisPost) {
+```javascript
+if (youLikeThisPost) {
         console.log("Come back next week! :)");
     } else {
         console.log("Aww that's okay, you should give me another chance next week :)");
     }
-</code></pre>
+```
 
 I recommend that you look at different perspectives of the same concepts. WebCheatSheet.com has a similar post to mine, check out what they had to say [here](http://webcheatsheet.com/javascript/if_else_switch.php).

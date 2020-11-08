@@ -5,6 +5,8 @@ date: 2017-03-07T21:50:52+00:00
 author: Brandon Rozek
 layout: post
 guid: https://brandonrozek.com/?p=2095
+aliases:
+    - /2017/03/uniformity-math-random/
 permalink: /2017/03/uniformity-math-random/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'
@@ -38,9 +40,9 @@ The website works by producing a random number using <code class='language-javas
 
 This website produces a file with all the numbers separated by a comma. We want these commas to be replaced by newlines. To do so, we can run a simple command in the terminal
 
-<pre class='language-bash'><code class='language-bash'>
+```bash
 grep -oE '[0-9]+' Random.csv &gt; Random_corrected.csv
-</code></pre>
+```
 
 Do this with all three files and make sure to keep track of which is which.
 
@@ -62,22 +64,28 @@ Since all of the conditions are met, we can use the Chi-square test of Goodness 
 
 For the rest of the article, we will use R for analysis. Looking at the histograms for the three browsers below. The random numbers all appear to occur uniformly
 
-<pre class="language-R"><code class='language-R'>rm(list=ls())
+```R
+rm(list=ls())
 chrome = read.csv("~/Chrome_corrected.csv", header = F)
 firefox = read.csv("~/Firefox_corrected.csv", header = F)
 ie11 = read.csv("~/IE11_corrected.csv", header = F)
-</code></pre>
+```
 
-<pre class="language-R"><code class='language-R'>
-hist(ie11$V1, main = "Distribution of Random Values for IE11", xlab = "Random Value")</code></pre>
+```R
+hist(ie11$V1, main = "Distribution of Random Values for IE11", xlab = "Random Value")
+```
 
 ![](https://brandonrozek.com/wp-content/uploads/2017/03/ie11hist.png) 
 
-<pre class="language-R"><code class='language-R'>hist(firefox$V1, main = "Distribution of Random Values for Firefox", xlab = "Random Value")</code></pre>
+```R
+hist(firefox$V1, main = "Distribution of Random Values for Firefox", xlab = "Random Value")
+```
 
 ![](https://brandonrozek.com/wp-content/uploads/2017/03/firefoxhist.png) 
 
-<pre class="language-R"><code class='language-R'>hist(chrome$V1, main = "Distribution of Random Values for Chrome", xlab = "Random Value")</code></pre>
+```R
+hist(chrome$V1, main = "Distribution of Random Values for Chrome", xlab = "Random Value")
+```
 
 ![](https://brandonrozek.com/wp-content/uploads/2017/03/chromehist.png) 
 
@@ -85,23 +93,25 @@ hist(ie11$V1, main = "Distribution of Random Values for IE11", xlab = "Random Va
 
 Before we run our test, we need to convert the quantatative data to count data by using the plyr package
 
-<pre class="language-R"><code class='language-R'>#Transform to count data
+```R
+#Transform to count data
 library(plyr)
 chrome_count = count(chrome)
 firefox_count = count(firefox)
 ie11_count = count(ie11)
-</code></pre>
+```
 
 Run the tests
 
-<pre class='language-R'><code class='language-R'>
+```R
 # Chi-Square Test for Goodness-of-Fit
 chrome_test = chisq.test(chrome_count$freq)
 firefox_test = chisq.test(firefox_count$freq)
 ie11_test = chisq.test(ie11_count$freq)
 
 # Test results
-chrome_test</code></pre>
+chrome_test
+```
 
 As you can see in the test results below, we fail to reject the null hypothesis at a 5% significance level because all of the p-values are above 0.05.
 
@@ -111,7 +121,7 @@ As you can see in the test results below, we fail to reject the null hypothesis 
     ## data:  chrome_count$freq
     ## X-squared = 101.67, df = 99, p-value = 0.4069
 
-<pre class="r"><code>firefox_test</code></pre>
+`firefox_test`
 
     ## 
     ##  Chi-squared test for given probabilities
@@ -119,7 +129,7 @@ As you can see in the test results below, we fail to reject the null hypothesis 
     ## data:  firefox_count$freq
     ## X-squared = 105.15, df = 99, p-value = 0.3172
 
-<pre class="r"><code>ie11_test</code></pre>
+`ie11_test`
 
     ## 
     ##  Chi-squared test for given probabilities
@@ -129,4 +139,4 @@ As you can see in the test results below, we fail to reject the null hypothesis 
 
 ## Conclusion
 
-At a 5% significance level, we fail to obtain enough evidence to suggest that the distribution of random number is not uniform. This is a good thing since it shows us that our random number generators give all numbers an equal chance of being represented. We can use <code class='language-javascript'>Math.random()</code> with ease of mind.
+At a 5% significance level, we fail to obtain enough evidence to suggest that the distribution of random number is not uniform. This is a good thing since it shows us that our random number generators give all numbers an equal chance of being represented. We can use `Math.random()` with ease of mind.

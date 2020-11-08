@@ -5,6 +5,8 @@ date: 2015-12-22T15:13:44+00:00
 author: Brandon Rozek
 layout: post
 guid: https://brandonrozek.com/?p=572
+aliases:
+    - /2015/12/playing-with-qr-codes/
 permalink: /2015/12/playing-with-qr-codes/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'
@@ -35,7 +37,7 @@ QR Codes aren&#8217;t prevalent in the United States of America. In fact, they&#
 
 <div id="attachment_573" style="width: 235px" class="wp-caption aligncenter">
   <img aria-describedby="caption-attachment-573" class="size-medium wp-image-573" src="https://brandonrozek.com/wp-content/uploads/2016/10/heinz-2-768x1024.jpg" alt="Picture of Heinz ketchup bottle with QR Code." width="225" height="300" />
-  
+
   <p id="caption-attachment-573" class="wp-caption-text">
     Picture by <a href="http://azadzahoory.com/2014/07/03/when-the-product-becomes-an-ad/">Azad Zahoory</a>
   </p>

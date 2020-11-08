@@ -5,6 +5,8 @@ date: 2017-03-14T05:31:21+00:00
 author: Brandon Rozek
 layout: post
 guid: https://brandonrozek.com/?p=2089
+aliases:
+    - /2017/03/monte-carlo-pi/
 permalink: /2017/03/monte-carlo-pi/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'
@@ -60,7 +62,7 @@ This will allow us to perform a pooled empiricle probability on the simulations 
 
 Meaning the area of the circle will be the number of times that the inequality was satisfied $$A_{circle} = \# Successes$$
 
-And the area of the square will be the number of times the simulation was run, since the random numbers generated will always be between 0 and 1 $$A_{square} = \# Trials$$
+And the area of the square will be the number of times the simulation was run, since the random numbers generated will always be between 0 and 1 $A_{square} = \# Trials$
 
 Recall that taking the ratio of the area of the circle and the area of the square is a fourth of pi. $$\frac{\frac{1}{4} \pi}{1} = \frac{1}{4} \pi$$
 
@@ -68,13 +70,14 @@ Multiply this number by 4 and you get the value for pi.
 
 This tells us that four times the probability that the randomly generated point is in the circle is equal to pi.
 
-$$\pi = 4 \* (Probability\ of\ being\ inside\ circle) = 4 \* \frac{\# Success}{\# Trials} = 4 * \frac{A\_{circle}}{A\_{square}}$$
+$$\pi = 4 * (Probability\ of\ being\ inside\ circle) = 4 * \frac{\# Success}{\# Trials} = 4 * \frac{A\_{circle}}{A\_{square}}$$
 
 ## Implementation
 
 For the Monte Carlo simulation I used Java. The BigDecimal implementation was used so that there wouldn&#8217;t be any issue with integer size limits
 
-<pre class='language-java'><code class='language-java'>/** Calculates Pi
+```java
+/** Calculates Pi
   * @author Brandon Rozek
 */
 // Big Integers are used so we don't run into the integer size limit
@@ -104,17 +107,18 @@ for (; trials.compareTo(numTrials) &lt; 0; trials = trials.add(BigInteger.ONE)) 
         successes = successes.add(BigInteger.ONE);
     }
 }
-</code></pre>
+```
 
 And then we finalize it with a quick calculation of pi
 
-<pre class='language=java'><code class='language-java'>// (Number of successes) / (Number of trials) * 4 gives the approximation for pi
+```java
+// (Number of successes) / (Number of trials) * 4 gives the approximation for pi
 BigDecimal pi = new BigDecimal(successes)
                        .divide(new BigDecimal(trials))
                        .multiply(new BigDecimal("4"));
 System.out.println("The calculated value of pi is: " + pi);
 }}
-</code></pre>
+```
 
 ## Conclusion
 

@@ -5,6 +5,8 @@ date: 2015-11-15T12:46:14+00:00
 author: Brandon Rozek
 layout: post
 guid: https://brandonrozek.com/?p=398
+aliases:
+    - /2015/11/fractions-js/
 permalink: /2015/11/fractions-js/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'
@@ -36,12 +38,12 @@ I broke up each fraction into two things, a numerator and a denominator. With th
 For addition, if two fractions have the same denominator, then you just need to add the numerators.
 
     1/3 + 1/3 = 2/3
-    
+
 
 If not, then you need to change it to have a common denominator. We can do this by multiply each fractions numerator and denominator by the other fractions denominator.
 
     1/2 + 1/3 = (1 * 3)/ (2 * 3) + (1 * 2)/ (2 * 3) = 3/6 + 2/6 = 5/6
-    
+
 
 ### <a href="#subtraction" name="subtraction"></a>Subtraction {#subtraction}
 
@@ -52,27 +54,27 @@ Works the same as addition, except the second fraction is subtracted (taken away
 To multiply two fractions, just multiply the numerators by each other, and the denominators by each other.
 
     2/3 * 1/2 = 2/6
-    
+
 
 ### <a href="#division" name="division"></a>Division {#division}
 
 Treated similar to multiplication since dividing a number is the same thing as multiplying by it’s [reciprocal](https://www.mathsisfun.com/reciprocal.html).
 
     1 / (1 / 2) = 1 * 2 = 2
-    
+
 
 ### <a href="#simplification" name="simplification"></a>Simplification {#simplification}
 
 Sometimes with the operations above, it’ll produce fractions in an unsimplified form. To avoid any confusion, I created a simplify function. It was challanging trying to figure out a way to code this. While I was browsing around for an implementation, I knocked into Euclider’s algorithm for finding the greatest common factor. Straight from the [Wikipedia article](https://en.wikipedia.org/wiki/Euclidean_algorithm) (where a is greater than b):
 
-    
+
     function gcd(a, b)
         while b ≠ 0
            t := b;
            b := a mod b;
            a := t;
         return a;
-    
+
 
 I can then simplify the fraction by dividing the numerator and denominator by the greatest common factor.
 

@@ -5,6 +5,8 @@ date: 2015-05-23T19:59:25+00:00
 author: Brandon Rozek
 layout: post
 guid: http://brandonrozek.com/?p=85
+aliases:
+    - /2015/05/animatable-border/
 permalink: /2015/05/animatable-border/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'
@@ -34,21 +36,16 @@ This post follows well along with my Codepen [demo](http://codepen.io/brandonroz
 
 Border-color animates by splitting the colors to their red, green and blue components and raises/lowers them to it&#8217;s new value. ([Demo](http://codepen.io/brandonrozek/pen/PqzPMe){.broken_link}) ([Spec](http://www.w3.org/TR/css3-transitions/#animtype-color)) Example of animation corresponds to #1 in the pen, but I will rewrite the relevant code here.
 
-<pre><code class="language-css">
+```css
 @keyframes color {
-
-to { border-color: purple red green blue; }
-
+    to { border-color: purple red green blue; }
 }
 
 .border-color {
-
-border-color: white;
-
-animation: color .4s ease-in .1s infinite alternate;
-
+    border-color: white;
+    animation: color .4s ease-in .1s infinite alternate;
 }
-</code></pre>
+```
 
  
 
@@ -58,44 +55,31 @@ animation: color .4s ease-in .1s infinite alternate;
   * Each value corresponds to a corner starting from the top left and going clockwise
   * Initial Value: 0
 
-<pre><code class="language-css">
+```css
 .border-radius {
-
-border-radius: 40% 30% 60% 50% / 20% 40% 60% 80%;
-
-/** is the same as **/
-
-border-top-left-radius: 40% 20%;
-
-border-top-right-radius: 30% 40%;
-
-border-bottom-right-radius: 60% 60%;
-
-border-bottom-left-radius: 50% 80%;
-
-/** where the first value is the horizontal radius and the second value the vertical radius**/
-
+    border-radius: 40% 30% 60% 50% / 20% 40% 60% 80%;
+    /** is the same as **/
+    border-top-left-radius: 40% 20%;
+    border-top-right-radius: 30% 40%;
+    border-bottom-right-radius: 60% 60%;
+    border-bottom-left-radius: 50% 80%;
+    /** where the first value is the horizontal
+    radius and the second value the vertical radius **/
 }
-</code></pre>
+```
 
 For animation, this corresponds to #2 in the pen I made at the top. I&#8217;ll repeat the relevant code here.
 
-<pre><code class="language-css">
-
+```css
 @keyframes radius {
-
-to { border-radius: 20%; }
-
+    to { border-radius: 20%; }
 }
 
 .border-radius {
-
-border-radius: 0;
-
-animation: radius .5s ease-in .1s infinite alternate;
-
+    border-radius: 0;
+    animation: radius .5s ease-in .1s infinite alternate;
 }
-</code></pre>
+```
 
  
 
@@ -107,24 +91,27 @@ animation: radius .5s ease-in .1s infinite alternate;
 
 For animation, this corresponds to #3 in the pen I made at the top. I&#8217;ll repeat the relevant code here.
 
-<pre><code class="language-css">
+```css
 @keyframes width {
-
-to { border-width: .15rem .25rem .15rem .25rem; }
-
+    to { border-width: .15rem .25rem .15rem .25rem; }
 }
 
 .border-width {
-
-border-width: .7rem;
-
-animation: width .5s ease-in .1s infinite alternate;
-
+    border-width: .7rem;
+    animation: width .5s ease-in .1s infinite alternate;
 }
-</code></pre>
+```
 
  
 
 ### Conclusion
 
-Animations are quite enjoyable. The last box in my Codepen demo tries combining all three of those animations. (Super Wacky!)  You don&#8217;t need to use keyframe animations to achieve this, you can also use the transition property. I used keyframes so you can better visualize what&#8217;s going on. There are plenty of other animatable properties to go through, so I&#8217;ll get started on those. In the meantime, if you want to look at some of the sites I used for research I&#8217;ll include the links below. <https://developer.mozilla.org/en-US/docs/Web/CSS/animation> <http://www.w3.org/TR/css3-transitions/#animatable-css> <https://developer.mozilla.org/en-US/docs/Web/CSS/border-color> <https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius> <https://developer.mozilla.org/en-US/docs/Web/CSS/border-width> <https://docs.webplatform.org/wiki/css/properties/border-color>{.broken_link} <https://docs.webplatform.org/wiki/css/properties/border-radius>{.broken_link} <https://docs.webplatform.org/wiki/css/properties/border-width>{.broken_link}
+Animations are quite enjoyable. The last box in my Codepen demo tries combining all three of those animations. (Super Wacky!)  You don&#8217;t need to use keyframe animations to achieve this, you can also use the transition property. I used keyframes so you can better visualize what&#8217;s going on. There are plenty of other animatable properties to go through, so I&#8217;ll get started on those. In the meantime, if you want to look at some of the sites I used for research I&#8217;ll include the links below. 
+- <https://developer.mozilla.org/en-US/docs/Web/CSS/animation> 
+- <http://www.w3.org/TR/css3-transitions/#animatable-css> 
+- <https://developer.mozilla.org/en-US/docs/Web/CSS/border-color> 
+- <https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius> 
+- <https://developer.mozilla.org/en-US/docs/Web/CSS/border-width> 
+- <https://docs.webplatform.org/wiki/css/properties/border-color>{.broken_link} 
+- <https://docs.webplatform.org/wiki/css/properties/border-radius>{.broken_link} 
+- <https://docs.webplatform.org/wiki/css/properties/border-width>{.broken_link}

@@ -5,6 +5,8 @@ date: 2015-12-27T15:17:12+00:00
 author: Brandon Rozek
 layout: post
 guid: https://brandonrozek.com/?p=599
+aliases:
+    - /2015/12/creating-vcards-from-h-cards/
 permalink: /2015/12/creating-vcards-from-h-cards/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'
@@ -143,7 +145,7 @@ var makeVCard = function(hCard) {
 			vCard += "FN: " + name[i] + "n";
 		}
 	}
-
+	
 	//Add photo
 	var photo = hCard.items[0].properties.photo;
 	if (typeof(photo) == "object") {
@@ -152,7 +154,7 @@ var makeVCard = function(hCard) {
 			vCard += "PHOTO: " + photo[i] + "n";
 		}
 	}
-
+	
 	//Add phone number
 	var tel = hCard.items[0].properties.tel;
 	if (typeof(tel) == "object") {
@@ -169,7 +171,7 @@ var makeVCard = function(hCard) {
 			}
 		}
 	}
-
+	
 	//Add URLs
 	var url = hCard.items[0].properties.url;
 	if (typeof(url) == "object") {
@@ -178,7 +180,7 @@ var makeVCard = function(hCard) {
 			vCard += "URL: " + url[i] + "n";
 		}
 	}
-
+	
 	var impp = hCard.items[0].properties.impp;
 	//Add IMPP (Instant Messaging and Presence Protocol)
 	if (typeof(impp) == "object") {
@@ -187,7 +189,7 @@ var makeVCard = function(hCard) {
 			vCard += "IMPP;PREF=" + (i + 1) + ": " + impp[i] + "n";
 		}
 	}
-
+	
 	//Add emails
 	var email = hCard.items[0].properties.email;
 	if (typeof(email) == "object") {
@@ -200,7 +202,7 @@ var makeVCard = function(hCard) {
 			}		
 		}
 	}
-
+	
 	//Add roles
 	var role = hCard.items[0].properties.role;
 	if (typeof(role) == "object") {
@@ -209,7 +211,7 @@ var makeVCard = function(hCard) {
 			vCard += "ROLE: " + role[i] + "n";
 		}
 	}
-
+	
 	//Add Organizations
 	var org = hCard.items[0].properties.org;
 	if (typeof(org) == "object") {
@@ -218,13 +220,13 @@ var makeVCard = function(hCard) {
 			vCard += "ORG: " + org[i] + "n";
 		}
 	}
-
+	
 	//Add Categories
 	var category = hCard.items[0].properties.category; 
 	if (typeof(category) == "object") {
 		vCard += "CATEGORIES: " + category.removeEmptyStrings().join(",") + "n";
 	}
-
+	
 	//Add notes
 	var note = hCard.items[0].properties.note;
 	if (typeof(note) == "object") {
@@ -233,9 +235,9 @@ var makeVCard = function(hCard) {
 			vCard += "NOTE: " + note[i] + "n";
 		}
 	}
-
-	return vCard + "END:VCARD";
 	
+	return vCard + "END:VCARD";
+
 }
 
 Array.prototype.removeEmptyStrings = function() {
@@ -302,7 +304,7 @@ var render = function() {
 				border: medium none; 
 			} 
 		     ";
-
+	
 	node.innerHTML = link + style;
 	document.body.appendChild(node);	
 }

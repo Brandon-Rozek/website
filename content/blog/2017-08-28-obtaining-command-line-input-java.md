@@ -5,6 +5,8 @@ date: 2017-08-28T17:37:59+00:00
 author: Brandon Rozek
 layout: post
 guid: https://brandonrozek.com/?p=2241
+aliases:
+    - /2017/08/obtaining-command-line-input-java/
 permalink: /2017/08/obtaining-command-line-input-java/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'
@@ -43,12 +45,12 @@ The new varible <code class="language-java">input</code> now has the ability to 
     <th class="tg-yw4l">
       Method
     </th>
-    
+
     <th class="tg-yw4l">
       What it Returns
     </th>
   </tr>
-  
+
   <tr>
     <td class="tg-yw4l">
       next()
@@ -58,7 +60,7 @@ The new varible <code class="language-java">input</code> now has the ability to 
       The next space seperated string from the console
     </td>
   </tr>
-  
+
   <tr>
     <td class="tg-yw4l">
       nextInt()
@@ -68,7 +70,7 @@ The new varible <code class="language-java">input</code> now has the ability to 
       An integer if it exists from the console
     </td>
   </tr>
-  
+
   <tr>
     <td class="tg-yw4l">
       nextDouble()             
@@ -78,7 +80,7 @@ The new varible <code class="language-java">input</code> now has the ability to 
       A double if it exists from the console
     </td>
   </tr>
-  
+
   <tr>
     <td class="tg-yw4l">
       nextFloat()
@@ -88,7 +90,7 @@ The new varible <code class="language-java">input</code> now has the ability to 
       A float if it exists from the console
     </td>
   </tr>
-  
+
   <tr>
     <td class="tg-yw4l">
       nextLine()
@@ -98,7 +100,7 @@ The new varible <code class="language-java">input</code> now has the ability to 
       A string up to the next newline character from the console
     </td>
   </tr>
-  
+
   <tr>
     <td class="tg-yw4l">
       hasNext()
@@ -108,7 +110,7 @@ The new varible <code class="language-java">input</code> now has the ability to 
       Returns true if there is another token
     </td>
   </tr>
-  
+
   <tr>
     <td class="tg-yw4l">
       close()

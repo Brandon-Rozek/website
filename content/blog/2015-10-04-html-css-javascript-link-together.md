@@ -5,6 +5,8 @@ date: 2015-10-04T17:50:50+00:00
 author: Brandon Rozek
 layout: post
 guid: https://brandonrozek.com/?p=210
+aliases:
+    - /2015/10/html-css-javascript-link-together/
 permalink: /2015/10/html-css-javascript-link-together/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'

@@ -5,6 +5,8 @@ date: 2017-08-28T17:12:00+00:00
 author: Brandon Rozek
 layout: post
 guid: https://brandonrozek.com/?p=2236
+aliases:
+    - /2017/08/escape-sequences-java/
 permalink: /2017/08/escape-sequences-java/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'
@@ -28,12 +30,12 @@ Sometimes you want to format your outputs. This is a quick cheatsheet containing
     <th class="tg-yw4l">
       Character
     </th>
-    
+
     <th class="tg-yw4l">
       Escape Sequence
     </th>
   </tr>
-  
+
   <tr>
     <td class="tg-yw4l">
       Newline
@@ -43,7 +45,7 @@ Sometimes you want to format your outputs. This is a quick cheatsheet containing
       \n
     </td>
   </tr>
-  
+
   <tr>
     <td class="tg-yw4l">
       Tab
@@ -53,7 +55,7 @@ Sometimes you want to format your outputs. This is a quick cheatsheet containing
       \t
     </td>
   </tr>
-  
+
   <tr>
     <td class="tg-yw4l">
       Backspace
@@ -63,7 +65,7 @@ Sometimes you want to format your outputs. This is a quick cheatsheet containing
       \b
     </td>
   </tr>
-  
+
   <tr>
     <td class="tg-yw4l">
       Double Quote           
@@ -73,7 +75,7 @@ Sometimes you want to format your outputs. This is a quick cheatsheet containing
       \&#8221;
     </td>
   </tr>
-  
+
   <tr>
     <td class="tg-yw4l">
       Single Quote
@@ -83,7 +85,7 @@ Sometimes you want to format your outputs. This is a quick cheatsheet containing
       \&#8217;
     </td>
   </tr>
-  
+
   <tr>
     <td class="tg-yw4l">
       Backslash

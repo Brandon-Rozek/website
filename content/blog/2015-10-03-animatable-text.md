@@ -5,6 +5,8 @@ date: 2015-10-03T08:44:51+00:00
 author: Brandon Rozek
 layout: post
 guid: https://brandonrozek.com/?p=148
+aliases:
+    - /2015/10/animatable-text/
 permalink: /2015/10/animatable-text/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'
@@ -38,7 +40,7 @@ Line-height is the space between each line in a text block. It is commonly recom
   to {
 
     opacity: 1;
-
+    
     line-height: 1.2;
 
   }
@@ -120,9 +122,9 @@ Text-shadow applies a shadow to both the text and it&#8217;s text-decoration. Mu
 .text-shadow {
 
     font-size: 1.5rem;
-
+    
     text-shadow: -10px 5px 3.5px rgba(0, 0, 0, .3);
-
+    
     animation: text-shadow 1s ease 0s infinite;
 
 }

@@ -5,6 +5,8 @@ date: 2015-10-03T09:34:08+00:00
 author: Brandon Rozek
 layout: post
 guid: https://brandonrozek.com/?p=190
+aliases:
+    - /2015/10/animatable-location/
 permalink: /2015/10/animatable-location/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'
@@ -44,7 +46,7 @@ Background-position sets where the background is relative to it&#8217;s backgrou
 
 <pre><code class="language-css"> 
 @keyframes background-position {
- 
+
  to { background-position: 100% 0%; }
 
 }
@@ -78,7 +80,7 @@ The left, right, top, and bottom properties require the position to be set to so
   25% {
 
     top: 0;
-
+    
     left: 3rem;
 
   }
@@ -86,7 +88,7 @@ The left, right, top, and bottom properties require the position to be set to so
   50% {
 
     top: 3rem;
-
+    
     left: 3rem;
 
   }
@@ -94,7 +96,7 @@ The left, right, top, and bottom properties require the position to be set to so
   75% {
 
     top: 3rem;
-
+    
     left: 0;
 
   }

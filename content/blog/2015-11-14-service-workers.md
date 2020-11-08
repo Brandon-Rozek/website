@@ -5,6 +5,8 @@ date: 2015-11-14T15:47:06+00:00
 author: Brandon Rozek
 layout: post
 guid: https://brandonrozek.com/?p=400
+aliases:
+    - /2015/11/service-workers/
 permalink: /2015/11/service-workers/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'
@@ -33,34 +35,37 @@ You need HTTPS to be able to use service workers on your site. This is mainly fo
 
 Place `service-worker.js` on the root of your site. This is so the service worker can access all the files in the site. Then in your main javascript file, register the service worker.
 
-<pre><code class="language-javascript">
+```javascript
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register('/serviceworker.js', {
     scope: '/'
   });
 }
-</code></pre>
+```
+
 
 ## <a href="#install-the-service-worker" name="install-the-service-worker"></a>Install the service worker {#install-the-service-worker}
 
 The first time the service worker runs, it emits the `install` event. At this time, we can load the visitor’s cache with some resources for when they’re offline. Every so often, I like to change up the theme of the site. So I have version numbers attached to my files. I would also like to invalidate my cache with this version number. So at the top of the file I added
 
-<pre><code class="language-javascript">
+```javascript
 var version = 'v2.0.24:';
-</code></pre>
+```
+
 
 Now, to specify which files I want the service worker to cache for offline use. I thought my home page and my offline page would be good enough.
 
-<pre><code class="language-javascript">
+```javascript
 var offlineFundamentals = [
     '/',
     '/offline/'
 ];
-</code></pre>
+```
+
 
 Since <code class="language-javascript">cache.addAll()</code> hasn’t been implemented yet in any of the browsers, and the polyfill implementation didn’t work for my needs. I pieced together my own.
 
-<pre><code class="language-javascript">
+```javascript
 var updateStaticCache = function() {
     return caches.open(version + 'fundamentals').then(function(cache) {
         return Promise.all(offlineFundamentals.map(function(value) {
@@ -76,7 +81,8 @@ var updateStaticCache = function() {
         }))
     })
 };
-</code></pre>
+```
+
 
 Let’s go through this chunk of code.
 
@@ -88,11 +94,12 @@ Let’s go through this chunk of code.
 
 Now we call it when the `install` event is fired.
 
-<pre><code class="language-javascript">
+```javascript
 self.addEventListener("install", function(event) {
     event.waitUntil(updateStaticCache())
 })
-</code></pre>
+```
+
 
 With this we now cached all the files in the offlineFundamentals array during the install step.
 
@@ -100,7 +107,7 @@ With this we now cached all the files in the offlineFundamentals array during th
 
 Since we’re caching everything. If you change one of the files, your visitor wouldn’t get the changed file. Wouldn’t it be nice to remove old files from the visitor’s cache? Every time the service worker finishes the install step, it releases an `activate` event. We can use this to look and see if there are any old cache containers on the visitor’s computer. From [Nicolas’ code](https://ponyfoo.com/articles/serviceworker-revolution). Thanks for sharing 🙂
 
-<pre><code class="language-javascript">
+```javascript
 var clearOldCaches = function() {
     return caches.keys().then(function(keys) {
             return Promise.all(
@@ -114,7 +121,8 @@ var clearOldCaches = function() {
                 );
         })
 }
-</code></pre>
+```
+
 
   1. Check the names of each of the cache containers
   2. If they don’t start with the correct version number 
@@ -122,11 +130,12 @@ var clearOldCaches = function() {
 
 Call the function when the `activate` event fires.
 
-<pre><code class="language-javascript">
+```javascript
 self.addEventListener("activate", function(event) {
     event.waitUntil(clearOldCaches())
 });
-</code></pre>
+```
+
 
 ## <a href="#intercepting-fetch-requests" name="intercepting-fetch-requests"></a>Intercepting fetch requests {#intercepting-fetch-requests}
 
@@ -136,7 +145,7 @@ The cool thing about service worker’s is that it can handle file requests. We 
 
 If the visitor started browsing all of the pages on my site, his or her cache would start to get bloated with files. To not burden my visitors, I decided to only keep the latest 25 pages and latest 10 images in the cache.
 
-<pre><code class="language-javascript">
+```javascript
 var limitCache = function(cache, maxItems) {
     cache.keys().then(function(items) {
         if (items.length &gt; maxItems) {
@@ -144,7 +153,8 @@ var limitCache = function(cache, maxItems) {
         }
     })
 }
-</code></pre>
+```
+
 
 We’ll call it later in the code.
 
@@ -152,7 +162,7 @@ We’ll call it later in the code.
 
 Every time I fetch a file from the network I throw it into a specific cache container. <code class="language-javascript">'pages'</code> for HTML files, <code class="language-javascript">'images'</code> for CSS files, and <code class="language-javascript">'assets'</code> for any other file. This is so I can handle the cache limiting above easier. Defined within the `fetch` event.
 
-<pre><code class="language-javascript">
+```javascript
 var fetchFromNetwork = function(response) {
         var cacheCopy = response.clone();
         if (event.request.headers.get('Accept').indexOf('text/html') != -1) {
@@ -172,16 +182,15 @@ var fetchFromNetwork = function(response) {
                 cache.put(event.request, cacheCopy);
             });
         }
-
         return response;
     }
-</code></pre>
+```
 
 ### <a href="#when-the-network-fails" name="when-the-network-fails"></a>When the network fails {#when-the-network-fails}
 
 There are going to be times where the visitor cannot access the website. Maybe they went in a tunnel while they were riding a train? Or maybe your site went down. I thought it would be nice for my reader’s to be able to look over my blog posts again regardless of an internet connection. So I provide a fall-back. Defined within the `fetch` event.
 
-<pre><code class="language-javascript">
+```javascript
 var fallback = function() {
         if (event.request.headers.get('Accept').indexOf('text/html') != -1) {
             return caches.match(event.request).then(function (response) { 
@@ -191,7 +200,8 @@ var fallback = function() {
             return new Response('&lt;svg width="400" height="300" role="img" aria-labelledby="offline-title" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"&gt;&lt;title id="offline-title"&gt;Offline&lt;/title&gt;&lt;g fill="none" fill-rule="evenodd"&gt;&lt;path fill="#D8D8D8" d="M0 0h400v300H0z"/&gt;&lt;text fill="#9B9B9B" font-family="Helvetica Neue,Arial,Helvetica,sans-serif" font-size="72" font-weight="bold"&gt;&lt;tspan x="93" y="172"&gt;offline&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/svg&gt;', { headers: { 'Content-Type': 'image/svg+xml' }});
         } 
     }
-</code></pre>
+```
+
 
   1. Is the request for a HTML file? 
       * Show the [offline](https://brandonrozek.com/offline/) page.
@@ -202,20 +212,22 @@ var fallback = function() {
 
 First off, I’m only handling GET requests.
 
-<pre><code class="language-javascript">
+```javascript
 if (event.request.method != 'GET') {
         return;
 }
-</code></pre>
+```
+
 
 For HTML files, grab the file from the network. If that fails, then look for it in the cache. _Network then cache strategy_ 
 
-<pre><code class="language-javascript">
+```javascript
 if (event.request.headers.get('Accept').indexOf('text/html') != -1) {
             event.respondWith(fetch(event.request).then(fetchFromNetwork, fallback));
         return;
         }
-</code></pre>
+```
+
 
 For non-HTML files, follow this series of steps
 
@@ -226,13 +238,14 @@ For non-HTML files, follow this series of steps
 
 _Cache then network strategy_ 
 
-<pre><code class="language-javascript">
+```javascript
 event.respondWith(
         caches.match(event.request).then(function(cached) {
             return cached || fetch(event.request).then(fetchFromNetwork, fallback);
         })
     )
-</code></pre>
+```
+
 
 For different stategy’s, take a look at Jake Archibald’s [offline cookbook](https://jakearchibald.com/2014/offline-cookbook/).
 
@@ -240,7 +253,7 @@ For different stategy’s, take a look at Jake Archibald’s [offline cookbook](
 
 With all of that, we now have a fully functioning offline-capable website! I wouldn’t be able to implement this myself if it wasn’t for some of the awesome people I mentioned earlier sharing their experience. So share, share, share! With that sentiment, I’ll now share the full code for `service-worker.js` **Update:** There is a new version of this code over at this [blog post](https://brandonrozek.com/2015/11/limiting-cache-service-workers-revisited/).
 
-<pre><code class="language-javascript">
+```javascript
 var version = 'v2.0.24:';
 
 var offlineFundamentals = [
@@ -321,10 +334,10 @@ self.addEventListener("fetch", function(event) {
                 cache.put(event.request, cacheCopy);
             });
         }
-
+    
         return response;
     }
-
+    
     //Fetch from network failed
     var fallback = function() {
         if (event.request.headers.get('Accept').indexOf('text/html') != -1) {
@@ -335,18 +348,18 @@ self.addEventListener("fetch", function(event) {
             return new Response('&lt;svg width="400" height="300" role="img" aria-labelledby="offline-title" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"&gt;&lt;title id="offline-title"&gt;Offline&lt;/title&gt;&lt;g fill="none" fill-rule="evenodd"&gt;&lt;path fill="#D8D8D8" d="M0 0h400v300H0z"/&gt;&lt;text fill="#9B9B9B" font-family="Helvetica Neue,Arial,Helvetica,sans-serif" font-size="72" font-weight="bold"&gt;&lt;tspan x="93" y="172"&gt;offline&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/svg&gt;', { headers: { 'Content-Type': 'image/svg+xml' }});
         }
     }
-
+    
     //This service worker won't touch non-get requests
     if (event.request.method != 'GET') {
         return;
     }
-
+    
     //For HTML requests, look for file in network, then cache if network fails.
     if (event.request.headers.get('Accept').indexOf('text/html') != -1) {
             event.respondWith(fetch(event.request).then(fetchFromNetwork, fallback));
         return;
         }
-
+    
     //For non-HTML requests, look for file in cache, then network if no cache exists.
     event.respondWith(
         caches.match(event.request).then(function(cached) {
@@ -359,4 +372,4 @@ self.addEventListener("fetch", function(event) {
 self.addEventListener("activate", function(event) {
     event.waitUntil(clearOldCaches())
 });
-</code></pre>
+```
