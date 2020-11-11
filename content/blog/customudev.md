@@ -28,4 +28,10 @@ Now we can create a UDEV rule in `/etc/udev/rules.d/` that says "when we see thi
 SUBSYSTEM=="usb", ATTR{idVendor}=="0bda", ATTR{idProduct}=="2838", SYMLINK+="rtlsdr"
 ```
 
-Once you have your device plugged in, you should be able to see it under `/dev/rtlsdr` or whatever you specified your symlink as.
+Tell udev to reload its rules
+
+```bash
+sudo udevadm control --reload
+```
+
+Now once you have your device plugged in, you should be able to see it under `/dev/rtlsdr` or whatever you specified your symlink as.
