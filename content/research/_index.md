@@ -35,7 +35,7 @@ One particular problem I'm fascinated by is how to make Reinforcement Learning a
 ### Symbolic Methods
 Worked with Dr. Andrew Marshall under an ONR grant in collaboration with University at Albany, Clarkson University, and the Naval Research lab in order to automatically generated and verify cryptographic algorithms.
 
-During that time period I built a free algebra library, rewrite library, parts of the crypto tool, and dabbled in Unification algorithms. We're hoping to open source the code base by 2021. (Ping me if its past due)
+During that time period I built a free algebra library, rewrite library, parts of the crypto tool, and dabbled in Unification algorithms. You can check them out on [Github](https://github.com/symcollab/CryptoSolve).
 
 Currently, I am an external collaborator who mainly helps maintain the codebase I started as well as contribute to the research where I can. We presented our work at [UNIF 2020](https://www3.risc.jku.at/publications/download/risc_6129/proceedings-UNIF2020.pdf#page=58) and have a couple other papers in the works.
 
