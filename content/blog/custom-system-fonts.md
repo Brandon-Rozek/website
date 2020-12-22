@@ -1,7 +1,9 @@
 ---
-title: "Adding Fonts"
+title: "Custom System Fonts"
 date: 2019-05-27T12:15:25-04:00
 draft: false
+aliases:
+    - /blog/adding-fonts
 ---
 
 **Warning: This blog post partially applies to Ubuntu-based operating systems**
