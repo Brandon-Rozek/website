@@ -3,6 +3,7 @@ title: "Theorem Proving Definitions"
 date: 2019-12-29T11:21:07-05:00
 draft: false
 images: []
+math: true
 ---
 
 When I look into a new field, sometimes I get confused by the whole new set of vocab terms I need to encounter. This post will serve to keep me straight with the terms involved in theorem proving. 
