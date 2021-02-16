@@ -21,7 +21,7 @@ ShowDatesOnPosts: false
 
 [Brandon Rozek. "Coherent Control of Atomic Population Using the Genetic Algorithm", Summer Science Institute Research Symposium, 2017.](/files/research/coherentcontrolofatomicpopulation.pdf)
 
-[Hannah Killian, Brandon Rozek. "Modelling Population Dynamics of Incoherent and Coherent Excitation", Virginia Academy of Science, 2017.](modellingpopulationdynamics.pdf)
+[Hannah Killian, Brandon Rozek. "Modelling Population Dynamics of Incoherent and Coherent Excitation", Virginia Academy of Science, 2017.](/files/research/modellingpopulationdynamics.pdf)
 
 Hannah Killian, Brandon Rozek. “Modeling Population Dynamics of Incoherent and Coherent Excitation", Research and Creativity Day at University of Mary Washington, 2017.
 
