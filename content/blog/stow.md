@@ -109,7 +109,7 @@ And like that you've switched versions from 1 to 2!
 This is also a great way to store dot files for your user directory. Here is an example of what I do:
 
 ```
-/home/brandon
+/home/brandon/stow
 ├── bash
 │   └── .bashrc
 ├── git
