@@ -61,7 +61,7 @@ INDEX(A:B, MATCH("Bob", B:B, 0), 1)
 
 **Refer to a value in a nearby cell**
 
-With the `OFFSET` function you can refer to a cell relative to another. Its three parameters are:
+With the `OFFSET` function you can refer to a cell relative to another. Its parameters are:
 
 1. Reference Cell
 2. Row Offset
