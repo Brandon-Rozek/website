@@ -14,4 +14,5 @@ Host somename
     IdentityFile ~/.ssh/private_key
 ```
 
-Of course you can add multiple of these entries in that file so that you can `ssh` without having to worry about explicitly using keys.
+Of course you can add multiple of these entries in that file so that you can `ssh` without having to worry about explicitly using keys. Just keep in mind that the order of your entries matter.
+
