@@ -33,9 +33,24 @@ gqrx.AppDir/
 
 The `AppRun` executable comes from the [AppImage Releases Page](https://github.com/AppImage/AppImageKit/releases). While you're there, you should also download `appimagetool` as we'll be using that soon.
 
-The `.desktop` file needs to be a valid [Linux Desktop Icon](https://brandonrozek.com/blog/linuxdesktopicons/). Make sure to define the [`Categories`](https://specifications.freedesktop.org/menu-spec/latest/apa.html) field, the `appimagetool` complained when I didn't. 
+The `.desktop` file needs to be a valid [Linux Desktop Icon](https://brandonrozek.com/blog/linuxdesktopicons/). Some things to take note about the desktop file:
 
-Copy over `gqrx` over to the AppDir:
+- The icon is assumed to be a `.png`
+- The executable is assumed to be located in `/usr/bin/`
+- Make sure to define the [`Categories`](https://specifications.freedesktop.org/menu-spec/latest/apa.html) field, the `appimagetool` complained when I didn't.
+
+Here is an example desktop file.
+
+```
+[Desktop Entry]
+Type=Application
+Name=Gqrx
+Icon=icon
+Exec=gqrx
+Categories=Development;
+```
+
+Copy over `gqrx` executable over to the AppDir:
 
 ```bash
 export gqrx_loc=$(which gqrx)
@@ -66,6 +81,8 @@ export filtered_libraries=$(echo $all_libraries | grep -vwf excludelist)
 echo $filtered_libraries
 ```
 
+If this filter doesn't work, then you might need to make sure each library is listed on its own line.
+
 Finally, let's save the locations of these libraries to `library_locations.txt`
 
 ```bash
@@ -80,6 +97,8 @@ xargs -a library_locations.txt -L 1 -I @ cp @ gqrx.AppDir/usr/lib/
 ```
 
 If there are any libraries that you need get dynamically injected during runtime, you will have to copy those over as well.
+
+For those using Qt plugins, those live within the `/usr/bin` directory. For example `libqxcb.so` lives in `/usr/bin/platforms/libqxcb.so`.
 
 ### Creating the AppImage
 
