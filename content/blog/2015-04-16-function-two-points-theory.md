@@ -19,7 +19,7 @@ kind:
 <!--more-->
 
   
-[<img src="https://brandonrozek.com/wp-content/uploads/2015/04/Part1.jpeg" alt="Part1" width="1700" height="2338" class="alignnone size-full wp-image-66" />](https://brandonrozek.com/wp-content/uploads/2015/04/Part1.jpeg){.broken_link}  
-[<img src="https://brandonrozek.com/wp-content/uploads/2015/04/Part2.jpeg" alt="Part2" width="1700" height="2338" class="alignnone size-full wp-image-67" />](https://brandonrozek.com/wp-content/uploads/2015/04/Part2.jpeg){.broken_link}  
-[<img src="https://brandonrozek.com/wp-content/uploads/2015/04/Part3.jpeg" alt="Part3" width="1700" height="2338" class="alignnone size-full wp-image-68" />](https://brandonrozek.com/wp-content/uploads/2015/04/Part3.jpeg){.broken_link}  
-[<img src="https://brandonrozek.com/wp-content/uploads/2015/04/Part4.jpeg" alt="Part4" width="1700" height="2338" class="alignnone size-full wp-image-69" />](https://brandonrozek.com/wp-content/uploads/2015/04/Part4.jpeg){.broken_link}
+![<img src="/files/images/04162015_1.jpeg" alt="Part1" width="1700" height="2338" class="alignnone size-full wp-image-66" />](/files/images/04162015_1.jpeg)
+![<img src="/files/images/04162015_2.jpeg" alt="Part2" width="1700" height="2338" class="alignnone size-full wp-image-67" />](/files/images/04162015_2.jpeg)
+![<img src="/files/images/04162015_3.jpeg" alt="Part3" width="1700" height="2338" class="alignnone size-full wp-image-68" />](/files/images/04162015_3.jpeg)
+![<img src="/files/images/04162015_4.jpeg" alt="Part4" width="1700" height="2338" class="alignnone size-full wp-image-69" />](/files/images/04162015_4.jpeg)
