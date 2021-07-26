@@ -1,4 +1,8 @@
-# Progress for Week of March 26
+---
+title: Progress for Week of March 26
+showthedate: false
+math: true
+---
 
 ## Parallelized Evolutionary Strategies
 

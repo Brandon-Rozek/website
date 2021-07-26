@@ -1,4 +1,8 @@
-# Random Walk
+---
+title: Random Walk
+showthedate: false
+math: true
+---
 
 ## Introduction
 

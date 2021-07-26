@@ -1,6 +1,7 @@
-# Confidence Interval Lab
-
-**Written by Brandon Rozek**
+---
+title: Confidence Interval
+showthedate: false
+---
 
 ## Introduction
 

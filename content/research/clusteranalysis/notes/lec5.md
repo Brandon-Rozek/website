@@ -1,4 +1,7 @@
-# Introduction to Connectivity Based Models
+---
+title: Introduction to Connectivity Based Models
+showthedate: false
+---
 
 Hierarchical algorithms combine observations to form clusters based on their distance.
 

@@ -1,4 +1,7 @@
-# Greedy Algorithms
+---
+title: Greedy Algorithms
+showthedate: false
+---
 
 Greedy Algorithms are about making the best local choice and then blindly plowing ahead.
 

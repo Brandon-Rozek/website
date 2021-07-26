@@ -1,3 +1,9 @@
+---
+title: Week 2
+showthedate: false
+math: true
+---
+
 Under the frequentest paradigm, you view the data as a random sample from some larger, potentially hypothetical population. We can then make probability statements i.e, long-run frequency statements based on this larger population.
 
 ## Coin Flip Example (Central Limit Theorem)

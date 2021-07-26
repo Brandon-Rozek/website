@@ -1,3 +1,8 @@
+---
+title: Week 2
+showthedate: false
+---
+
 ## Coding Standards for R
 
 1. Always use text files/text editor

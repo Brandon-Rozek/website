@@ -1,4 +1,8 @@
-# Chapter 5: Monte Carlo Methods
+---
+title: Chapter 5 - Monte Carlo Methods
+showthedate: false
+math: true
+---
 
 Monte Carlo methods do not assume complete knowledge of the environment. They require only *experience* which is a sample sequence of states, actions, and rewards from actual or simulated interaction with an environment. 
 

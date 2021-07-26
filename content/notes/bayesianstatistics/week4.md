@@ -1,3 +1,9 @@
+---
+title: Week 4
+showthedate: false
+math: true
+---
+
 ## Exponential Data
 
 Suppose you're waiting for a bus that you think comes on average once every 10 minutes, but you're not sure exactly how often it comes.

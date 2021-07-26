@@ -1,4 +1,7 @@
-# Cluster Analysis Spring 2018
+---
+title: Cluster Analysis
+showthedate: false
+---
 
 ###  Distance, Dimensionality Reduction, and Tendency
 

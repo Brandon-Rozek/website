@@ -1,4 +1,10 @@
-# Abstract Algebra 2 Definitions 
+---
+title: Abstract Algebra Notes
+showthedate: false
+math: true
+---
+
+Chapter markings are based off the book "A Book of Abstract Algebra" by Charles C. Pinter.
 
 ## Chapter 17
 

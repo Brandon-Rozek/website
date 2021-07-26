@@ -1,4 +1,8 @@
-# Backtracking
+---
+title: Backtracking
+showthedate: false
+---
+
 This algorithm tries to construct a solution to a problem one piece at a time. Whenever the algorithm needs to decide between multiple alternatives to the part of the solution it *recursively* evaluates every option and chooses the best one.
 
 

@@ -1,4 +1,8 @@
-# Chapter 3: Finite Markov Decision Processes
+---
+title: Chapter 3 - Finite Markov Decision Processes
+showthedate: false
+math: true
+---
 
 Markov Decision processes are a classical formalization of sequential decision making, where actions influence not just immediate rewards, but also subsequent situations, or states, and through those future rewards. Thus MDPs involve delayed reward and the need to trade-off immediate and delayed reward. Whereas in bandit problems we estimated the value of $q_*(a)$ of each action $a$, in MDPs we estimate the value of $q_*(s, a)$ of each action $a$ in state $s$. 
 

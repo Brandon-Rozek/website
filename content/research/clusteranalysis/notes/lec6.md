@@ -1,4 +1,8 @@
-# Agglomerative Methods
+---
+title: Agglomerative Methods
+showthedate: false
+math: true
+---
 
 ## Single Linkage
 

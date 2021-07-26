@@ -1,4 +1,7 @@
-# Why use different distance measures?
+---
+title: Why use different distance measures?
+showthedate: false
+---
 
 I made an attempt to find out in what situations people use different distance measures. Looking around in the Internet usually produces the results "It depends on the problem" or "I typically just always use Euclidean"
 

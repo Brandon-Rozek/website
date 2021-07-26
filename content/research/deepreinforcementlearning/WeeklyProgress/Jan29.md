@@ -1,4 +1,8 @@
-# Weekly Progress Jan 29
+---
+title: Weekly Progress Jan 29
+showthedate: false
+math: true
+---
 
 ## 1. Training From Demonstrations
 
@@ -6,13 +10,13 @@ Training from demonstrations is the act of using previous data to help speed up 
 
 I read two papers on the topic:
 
-[1] Gabriel V. de la Cruz Jr., Yunshu Du, Matthew E. Taylor. **Pre-training Neural Networks with Human Demonstrations for Deep Reinforcement Learning**.
+(1) Gabriel V. de la Cruz Jr., Yunshu Du, Matthew E. Taylor. **Pre-training Neural Networks with Human Demonstrations for Deep Reinforcement Learning**.
 
 https://arxiv.org/abs/1709.04083
 
 The authors showed how you can speed up the training of a DQN network, especially under problems involving computer vision, if you first train the convolution layers by using a supervised loss between the actions the network would choose and the actions from the demonstration data given a state.
 
-[2] Todd Hester, Matej Vecerik, Olivier Pietquin, Marc Lanctot, Tom Schaul, Bilal Piot, Dan Horgan, John Quan, Andrew Sendonaris, Gabriel Dulac-Arnold, Ian Osband, John Agapiou, Joel Z. Leibo, Audrunas Gruslys. **Deep Q-learning from Demonstrations.**
+(2) Todd Hester, Matej Vecerik, Olivier Pietquin, Marc Lanctot, Tom Schaul, Bilal Piot, Dan Horgan, John Quan, Andrew Sendonaris, Gabriel Dulac-Arnold, Ian Osband, John Agapiou, Joel Z. Leibo, Audrunas Gruslys. **Deep Q-learning from Demonstrations.**
 
 https://arxiv.org/abs/1704.03732
 
@@ -32,9 +36,9 @@ The intuition behind this is that for the loss to be zero, the network would've 
 
 The main environment I chose to test these algorithms is Acrobot. It is a control theory problem and it has several physics related numbers as input. (Not image based)
 
-I noticed when implementing [1] at least for the non-convolution case, there's no point in trying to train earlier layers. Perhaps I'll try again when I move onto the atari gameplays...
+I noticed when implementing (1) at least for the non-convolution case, there's no point in trying to train earlier layers. Perhaps I'll try again when I move onto the atari gameplays...
 
-I decided against following [2] exactly. It's not that I disagree with the approach, but I don't like the need for "expert" data. If you decide to proceed anyways with non-expert data, you need to remember that it is incorporated into the loss function. Which means that you fall risk into learning sub-optimal policies. 
+I decided against following (2) exactly. It's not that I disagree with the approach, but I don't like the need for "expert" data. If you decide to proceed anyways with non-expert data, you need to remember that it is incorporated into the loss function. Which means that you fall risk into learning sub-optimal policies. 
 
 In the end, what I decided to do was the following
 

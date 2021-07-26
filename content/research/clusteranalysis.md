@@ -3,7 +3,6 @@ Title: Cluster Analysis
 Description: A study of grouping observations
 ---
 
-# Cluster Analysis
 Cluster Analysis is the art of finding inherent structures in data to form groups of similar observations. This has a myriad of applications from recommendation engines to social network analysis.
 
 This is an independent study, meaning that I will be studying this topic under the direction of a professor, in this case being Dr. Denhere.

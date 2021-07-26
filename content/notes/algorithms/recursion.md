@@ -1,4 +1,8 @@
-# Recursion
+---
+title: Recursion
+showthedate: false
+math: true
+---
 
 ## Reductions
 

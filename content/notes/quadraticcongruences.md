@@ -1,4 +1,8 @@
-# Handy Quadratic Congruences Facts
+---
+title: Handy Facts about Quadratic Congruences
+showthedate: false
+math: true
+---
 
 ## Number of Solutions
 

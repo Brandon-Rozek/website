@@ -1,4 +1,8 @@
-# Weekly Progress for February 25th
+---
+title: Weekly Progress for February 25th
+showthedate: false
+math: true
+---
 
 ## Evolutionary Algorithms
 

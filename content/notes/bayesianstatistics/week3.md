@@ -1,3 +1,9 @@
+---
+title: Week 3
+showthedate: false
+math: true
+---
+
 How do we choose a prior?
 
 Our prior needs to represent our personal perspective, beliefs, and our uncertainties.

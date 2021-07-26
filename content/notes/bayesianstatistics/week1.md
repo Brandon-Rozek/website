@@ -1,4 +1,8 @@
-# Bayesian Statistics
+---
+title: Week 1
+showthedate: false
+math: true
+---
 
 ## Rules of Probability
 

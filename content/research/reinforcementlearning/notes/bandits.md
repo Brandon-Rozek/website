@@ -1,4 +1,8 @@
-# Chapter 2: Multi-armed Bandits
+---
+title: Chapter 2 - Multi-armed Bandits
+showthedate: false
+math: true
+---
 
 Reinforcement learning *evaluates* the actions taken rather than accepting $instructions$ of the correct actions. This creates the need for active exploration. 
 

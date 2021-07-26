@@ -1,4 +1,8 @@
-# CURE and TSNE
+---
+title: CURE and TSNE
+showthedate: false
+math: true
+---
 
 ##Clustering Using Representatives (CURE)
 

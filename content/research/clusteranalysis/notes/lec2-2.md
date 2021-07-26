@@ -1,4 +1,8 @@
-# Principal Component Analysis Pt. 1
+---
+title: Principal Component Analysis Pt. 1
+showthedate: false
+math: true
+---
 
 ## What is PCA?
 

@@ -1,4 +1,8 @@
-# Cluster Validation
+---
+title: Cluster Validation
+showthedate: false
+math: true
+---
 
 There are multiple approaches to validating your cluster models
 

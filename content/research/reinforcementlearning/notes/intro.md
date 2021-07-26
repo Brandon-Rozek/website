@@ -1,4 +1,7 @@
-# Introduction to Reinforcement Learning Day 1
+---
+title: Introduction to Reinforcement Learning Day 1
+showthedate: false
+---
 
 Recall that this course is based on the book -- 
 

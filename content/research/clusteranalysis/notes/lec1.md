@@ -1,4 +1,8 @@
-# Measures of similarity 
+---
+title: Measures of similarity
+showthedate: false
+math: true
+---
 
 To identify clusters of observations we need to know how **close individuals are to each other** or **how far apart they are**.
 

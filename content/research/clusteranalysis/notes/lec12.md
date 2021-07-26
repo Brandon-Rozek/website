@@ -1,4 +1,8 @@
-# Introduction to Density Based Clustering
+---
+title: Introduction to Density Based Clustering
+showthedate: false
+math: true
+---
 
 In density-based clustering, clusters are defined as areas of higher density than the remainder of the data sets. Objects in more sparse areas are considered to be outliers or border points. This helps discover clusters of arbitrary shape.
 
@@ -31,7 +35,7 @@ A cluster then satisfies two properties:
 2. Find the connected components of *core* points on the neighborhood graph, ignoring all non-core points.
 3. Assign each non-core point to a nearby cluster if the cluster is an $\epsilon$ (eps) neighbor, otherwise assign it to noise.
 
-###Advantages
+### Advantages
 
 - Does not require one to specify the number of clusters in the data
 - Can find arbitrarily shaped clusters

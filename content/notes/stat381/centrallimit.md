@@ -1,6 +1,8 @@
-# Central Limit Theorem Lab
-
-**Brandon Rozek**
+---
+title: Central Limit Theorem
+showthedate: false
+math: true
+---
 
 ## Introduction
 

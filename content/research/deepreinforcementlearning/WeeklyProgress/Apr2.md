@@ -1,4 +1,7 @@
-# Progress Report for Week of April 2nd
+---
+title: Progress Report for Week of April 2nd
+showthedate: false
+---
 
 ## Added Video Recording Capability to MinAtar environment
 
@@ -20,6 +23,3 @@ Playing around with the ideas of autoencoders, I wanted a way to discretized my 
 
 I'll probably look towards implementing what the paper did for my library and move on to a different piece.
 
-
-
-Guru Indian: 3140 Cowan Blvd, Fredericksburg, VA 22401

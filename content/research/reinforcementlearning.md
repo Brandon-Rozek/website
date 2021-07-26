@@ -3,7 +3,6 @@ Title: Reinforcement Learning
 Description: The study of optimally mapping situations to actions
 ---
 
-# Reinforcement Learning
 Reinforcement learning is the art of analyzing situations and mapping them to actions in order to maximize a numerical reward signal.
 
 In this independent study, I as well as Dr. Stephen Davies, will explore the Reinforcement Learning problem and its subproblems. We will go over the bandit problem, markov decision processes, and discover how best to translate a problem in order to **make decisions**.
@@ -38,8 +37,6 @@ Code will occasionally be written to solidify the learning material and to act a
 
 [Github Link](https://github.com/brandon-rozek/ReinforcementLearning)
 
-Specifically, if you want to see agents I've created to solve some OpenAI environments, take a look at this specific folder in the Github Repository
-
-[Github Link](https://github.com/Brandon-Rozek/ReinforcementLearning/tree/master/agents)
+Specifically, if you want to see agents I've created to solve some OpenAI environments, take a look at this specific folder in the Github Repository. [Github Link](https://github.com/Brandon-Rozek/ReinforcementLearning/tree/master/agents)
 
 

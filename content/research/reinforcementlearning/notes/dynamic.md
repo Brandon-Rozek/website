@@ -1,4 +1,8 @@
-# Chapter 4: Dynamic Programming
+---
+title: Chapter 4 - Dynamic Programming
+showthedate: false
+math: true
+---
 
 Dynamic programming refers to a collection of algorithms that can be used to compute optimal policies given a perfect model of the environment as a Markov decision process (MDP).
 

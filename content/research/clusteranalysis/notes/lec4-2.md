@@ -1,4 +1,8 @@
-# Revisiting Similarity Measures
+---
+title: Revisiting Similarity Measures
+showthedate: false
+math: true
+---
 
 ## Manhatten Distance
 

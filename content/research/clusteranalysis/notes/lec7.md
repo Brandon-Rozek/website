@@ -1,4 +1,8 @@
-# Divisive Methods Pt.1
+---
+title: Divisive Methods Pt.1
+showthedate: false
+math: true
+---
 
 Divisive methods work in the opposite direction of agglomerative methods. They take one large cluster and successively splits it.
 
@@ -39,7 +43,7 @@ This is sometimes termed *association analysis*.
 | 1    | a    | b    |
 | 0    | c    | d    |
 
-####Common measures of association
+#### Common measures of association
 
 $$
 |ad-bc| \tag{4.6}

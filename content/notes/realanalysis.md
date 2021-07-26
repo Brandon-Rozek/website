@@ -1,4 +1,8 @@
-# Real Analysis Sheet
+---
+title: Real Analysis Quick Sheet
+showthedate: false
+math: true
+---
 
 **Fact:** $\forall a,b, \in \mathbb{R}$, $\sqrt{ab} \le \frac{1}{2}(a + b)$.
 

@@ -1,4 +1,6 @@
-# Dynamic Programming
+---
+title: Dynamic Programming
+---
 
 The book first goes into talking about the complexity of the Fibonacci algorithm
 

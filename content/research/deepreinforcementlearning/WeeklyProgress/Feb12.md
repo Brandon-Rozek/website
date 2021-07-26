@@ -1,4 +1,8 @@
-# Weekly Progress Feb 12
+---
+title: Weekly Progress Feb 12
+showthedate: false
+math: true
+---
 
 ## Finished writing scripts for data collection
 

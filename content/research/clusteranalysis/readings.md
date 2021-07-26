@@ -1,4 +1,7 @@
-# Readings for Lectures of Cluster Analysis
+---
+title: Readings for Independent Study of Cluster Analysis
+showthedate: false
+---
 
 ## Lecture 1
 Garson Textbook Chapter 3

@@ -1,3 +1,8 @@
+---
+title: Week 3
+showthedate: false
+---
+
 ## tl;dr
 
 People are busy, especially managers and leaders. Results of data analyses are sometimes presented in oral form, but often the first cut is presented via email.

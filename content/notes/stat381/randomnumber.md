@@ -1,4 +1,8 @@
-# Random Number Generation
+---
+title: Random Number Generation
+showthedate: false
+math: true
+---
 
 ## Introduction
 

@@ -1,4 +1,7 @@
-# Lecture Notes for Reinforcement Learning
+---
+title: Lecture Notes for Reinforcement Learning
+showthedate: false
+---
 
 [Chapter 1: An Introduction](intro)
 

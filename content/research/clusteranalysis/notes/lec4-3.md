@@ -1,4 +1,8 @@
-# Cluster Tendency
+---
+title: Cluster Tendency
+showthedate: false
+math: true
+---
 
 This is the assessment of the suitability of clustering. Cluster Tendency determines whether the data has any inherent grouping structure.
 

@@ -1,11 +1,7 @@
 ---
-title: Bayesian Statistics
+title: Bayesian Statistics - From Concept to Data Analysis
 showthedate: false
 ---
-
-
-
-# Bayesian Statistics: From Concept to Data Analysis
 
 In the Winter of 2017, I took a course on Bayesian Statistics on Coursera offered by Dr. Herbert Lee.
 

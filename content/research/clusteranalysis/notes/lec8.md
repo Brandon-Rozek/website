@@ -1,4 +1,7 @@
-# Divisive Methods Pt 2.
+---
+title: Divisive Methods Pt 2.
+showthedate: false
+---
 
 Recall in the previous section that we spoke about Monothetic and Polythetic methods. Monothetic methods only looks at a single variable at a time while Polythetic looks at multiple variables simultaneously. In this section, we will speak more about polythetic divisive methods.
 

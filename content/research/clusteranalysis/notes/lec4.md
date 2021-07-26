@@ -1,4 +1,8 @@
-# Principal Component Analysis Part 2: Formal Theory
+---
+title: Principal Component Analysis Part 2 - Formal Theory
+showthedate: false
+math: true
+---
 
 ##Properties of PCA
 

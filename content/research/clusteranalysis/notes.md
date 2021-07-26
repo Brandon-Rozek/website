@@ -1,4 +1,7 @@
-# Lecture Notes for Cluster Analysis
+---
+title: Lecture Notes for Cluster Analysis
+showthedate: false
+---
 
 [Lecture 1: Measures of Similarity](lec1)
 
