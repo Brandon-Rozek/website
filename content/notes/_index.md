@@ -3,7 +3,12 @@ title: Notes
 description: Documents pertaining to courses I've taken
 ---
 
-# Courses
+## Small Group Study
+Chris Richters, Ethan Martin, and I embarked on the book ["Algorithms" by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/algorithms/). I took some notes during our discussions but you should really just read the book instead. [Notes Page](algorithms)
+
+Carlos Ramirez, Ethan Martin, and I started on the book "Elements of Radio" by Abraham and William Marcus. It provides a great introduction to radio not assuming an engineering background.
+
+## Courses
 
 Below are the courses that I have documents up online for.
 
@@ -22,5 +27,3 @@ Occassionally during breaks, I like to take some coursera courses. I will post m
 
 [Reproducible Research](reproducibleresearch)
 
-## Self/Small Group Study
-Chris Richters, Ethan Martin, and I embarked on the book ["Algorithms" by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/algorithms/). I took some notes during our discussions but you should really just read the book instead. [Notes Page](algorithms)
