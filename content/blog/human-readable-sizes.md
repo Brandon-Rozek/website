@@ -3,6 +3,7 @@ title: "Human Readable Sizes"
 date: 2021-03-15T19:11:35-04:00
 draft: false
 tags: []
+math: true
 ---
 
 When playing with large and small values, it is useful to convert them to a different unit in scientific notation. Let's look at bytes.

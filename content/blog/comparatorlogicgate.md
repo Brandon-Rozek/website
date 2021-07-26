@@ -3,6 +3,7 @@ title: "Comparator Logic Gate"
 date: 2021-06-18T01:09:45-04:00
 draft: false
 tags: []
+math: true
 ---
 
 This post is heavily derived from the Wikipedia post on [Digital Comparators](https://en.wikipedia.org/wiki/Digital_comparator) and therefore can be distributed under the Creative Commons Attribution-ShareAlike 3.0 license.

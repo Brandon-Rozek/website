@@ -36,6 +36,7 @@ This element maps $0 \rightarrow 1$, $1 \rightarrow 2$, and $2 \rightarrow 0$.
 A good way to check if something similar to the above is an element of a symmetric group is pay attention to the second row. Make sure that it only contains the elements of the set you care about (ex: $\mathbb{Z}_3$) and that there are no repeats.
 
 Let's look at an example of composing two elements from this symmetric group.
+
 $$
 \begin{pmatrix}
 0 & 1 & 2 \\
@@ -46,12 +47,13 @@ $$
 0 & 1 & 2 \\
 0 & 2 & 1 \\
 \end{pmatrix}
-=
+\=
 \begin{pmatrix}
 0 & 1 & 2 \\
 1 & 0 & 2 \\
 \end{pmatrix}
 $$
+
 The main thing to remember here is that you must compose from right to left.
 
 $0 \rightarrow 0$ and then $0 \rightarrow 1$, so ultimately $0 \rightarrow 1$.

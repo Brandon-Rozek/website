@@ -3,6 +3,7 @@ title: "Introduction to RF Power Amplifiers"
 date: 2021-04-10T13:01:00-04:00
 draft: false
 tags: ["amateur-radio"]
+math: true
 ---
 
 For field day I've been toying with the idea of buying a power amplifier for my HackRF. What I've come to realize is that there are a lot more to power amplifiers than just how much it amplifies by. This post outlines my current understanding (I'm by no means an expert) on the subject of RF power amplifiers.
