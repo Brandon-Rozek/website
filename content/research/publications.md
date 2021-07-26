@@ -1,8 +1,13 @@
 ---
 Title: Publications
 Descriptions: Papers, Presentations, and Grants obtained
-ShowDatesOnPosts: false
+showthedate: false
 ---
+
+## Papers
+
+(Accepted Paper TBA) Hai Lin, Christopher Lynch, Andrew M. Marshall, Catherine A. Meadows, Paliath Narendran, Veena Ravishankar, Brandon Rozek. "Algorithmic Problems in the Symbolic Approach to the Verification of Automatically Synthesized Cryptosystems", FROCOS, 2021.
+
 
 ## Workshops
 
