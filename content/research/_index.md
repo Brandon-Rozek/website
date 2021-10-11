@@ -5,10 +5,10 @@ Description: A list of my research Projects
 
 **[Quick List of Publications](publications)**
 
-**Research Interests:** Automated Reasoning, Artificial Intelligence, Formal Methods
+**Broad Research Interests:** Automated Reasoning, Artificial Intelligence, Formal Methods
 
 ## Symbolic Methods for Cryptography
-Worked with Dr. Andrew Marshall under an ONR grant in collaboration with University at Albany, Clarkson University, University of Texas at Dallas, and the Naval Research lab in order to automatically generated and verify cryptographic algorithms using symbolic (as opposed to computational) methods.
+Worked with [Dr. Andrew Marshall](https://www.marshallandrew.net/) under an ONR grant in collaboration with University at Albany, Clarkson University, University of Texas at Dallas, and the Naval Research lab in order to automatically generated and verify cryptographic algorithms using symbolic (as opposed to computational) methods.
 
 During that time period I built a free algebra library, rewrite library, parts of the crypto tool, and dabbled in Unification algorithms. You can check them out on [Github](https://github.com/symcollab/CryptoSolve).
 
@@ -17,7 +17,7 @@ Currently, I am an external collaborator who mainly helps maintain the codebase 
 Through my collaborators, I've learned about term reasoning and algebras. [[Notes]](termreasoning)
 ## Reinforcement Learning
 
-**Deep Reinforcement Learning:** With Dr. Ron Zacharski I focused more on a particular instance of Reinforcement Learning where deep neural networks are used. During this time, I built out a Reinforcement Learning library written in PyTorch. This library helps me have a test bed for trying out different algorithms and attempts to create my own.
+**Deep Reinforcement Learning:** With [Dr. Ron Zacharski](http://zacharski.org/) I focused more on a particular instance of Reinforcement Learning where deep neural networks are used. During this time, I built out a Reinforcement Learning library written in PyTorch. This library helps me have a test bed for trying out different algorithms and attempts to create my own.
 
 One particular problem I'm fascinated by is how to make Reinforcement Learning algoirthms more sample efficient. This means, how can we make it so that it learns more from every observation or make it so that we can achieve our goal quicker?
 
@@ -30,7 +30,7 @@ One particular problem I'm fascinated by is how to make Reinforcement Learning a
 
 
 
-**Reinforcement Learning:** Studied the fundamentals of reinforcement learning with Dr. Stephen Davies. We went over the fundamentals such as value functions, policy functions, how we can describe our environment as a markov decision processes, etc.
+**Reinforcement Learning:** Studied the fundamentals of reinforcement learning with [Dr. Stephen Davies](http://stephendavies.org/). We went over the fundamentals such as value functions, policy functions, how we can describe our environment as a markov decision processes, etc.
 
 [Notes and Other Goodies](reinforcementlearning)
 
