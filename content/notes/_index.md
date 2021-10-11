@@ -3,7 +3,7 @@ title: Notes
 description: Documents pertaining to courses I've taken
 ---
 
-## Small Group Study
+## Small Study Groups
 Chris Richters, Ethan Martin, and I embarked on the book ["Algorithms" by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/algorithms/). I took some notes during our discussions but you should really just read the book instead. [Notes Page](algorithms)
 
 Carlos Ramirez, Ethan Martin, and I started on the book "Elements of Radio" by Abraham and William Marcus. It provides a great introduction to radio not assuming an engineering background.
