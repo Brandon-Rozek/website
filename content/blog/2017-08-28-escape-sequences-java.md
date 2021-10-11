@@ -23,76 +23,15 @@ kind:
 ---
 Sometimes you want to format your outputs. This is a quick cheatsheet containing the differerent escape sequences
 
+
+
+| Character    | Escape Sequence |
+| ------------ | --------------- |
+| Newline      | \n              |
+| Tab          | \t              |
+| Backspace    | \b              |
+| Double Quote | \&#8221;        |
+| Single Quote | \&#8217;        |
+| Backslash    | \\              |
+
  
-
-<table class="tg">
-  <tr>
-    <th class="tg-yw4l">
-      Character
-    </th>
-
-    <th class="tg-yw4l">
-      Escape Sequence
-    </th>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">
-      Newline
-    </td>
-    
-    <td class="tg-yw4l">
-      \n
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">
-      Tab
-    </td>
-    
-    <td class="tg-yw4l">
-      \t
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">
-      Backspace
-    </td>
-    
-    <td class="tg-yw4l">
-      \b
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">
-      Double Quote           
-    </td>
-    
-    <td class="tg-yw4l">
-      \&#8221;
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">
-      Single Quote
-    </td>
-    
-    <td class="tg-yw4l">
-      \&#8217;
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">
-      Backslash
-    </td>
-    
-    <td class="tg-yw4l">
-      \\
-    </td>
-  </tr>
-</table>

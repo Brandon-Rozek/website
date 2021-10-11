@@ -21,110 +21,40 @@ mf2_mp-syndicate-to:
 kind:
   - note
 ---
-To obtain console input for your program you can use the <code class="language-java">Scanner</code> class
+To obtain console input for your program you can use the `Scanner` class
 
 First import the relevant library
 
-<pre class="language-java"><code class="language-java">
+```java
 import java.util.Scanner;
-</code></pre>
+```
 
-Then create a variable to hold the <code class="language-java">Scanner</code> object
+Then create a variable to hold the `Scanner` object
 
-<pre class="language-java"><code class="language-java">
+```java
 Scanner input;
 input = new Scanner(System.in);
-</code></pre>
+```
 
-Inside the parenthesis, the <code class="language-java">Scanner</code> binds to the System input which is by default the console
+Inside the parenthesis, the `Scanner` binds to the System input which is by default the console
 
-The new varible <code class="language-java">input</code> now has the ability to obtain input from the console. To do so, use any of the following methods
+The new varible `input` now has the ability to obtain input from the console. To do so, use any of the following methods:
 
-<table class="tg">
-  <tr>
-    <th class="tg-yw4l">
-      Method
-    </th>
+| Method         | What it Returns                                            |
+| -------------- | ---------------------------------------------------------- |
+| `next()`       | The next space separated string from the console           |
+| `nextInt()`    | An integer if it exists from the console                   |
+| `nextDouble()` | A double if it exists from the console                     |
+| `nextFloat()`  | A float if it exists from the console                      |
+| `nextLine()`   | A string up to the next newline character from the console |
+| `hasNext()`    | Returns true if there is another token                     |
+| `close()`      | Unbinds the Scanner from the console                       |
 
-    <th class="tg-yw4l">
-      What it Returns
-    </th>
-  </tr>
 
-  <tr>
-    <td class="tg-yw4l">
-      next()
-    </td>
-    
-    <td class="tg-yw4l">
-      The next space seperated string from the console
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">
-      nextInt()
-    </td>
-    
-    <td class="tg-yw4l">
-      An integer if it exists from the console
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">
-      nextDouble()             
-    </td>
-    
-    <td class="tg-yw4l">
-      A double if it exists from the console
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">
-      nextFloat()
-    </td>
-    
-    <td class="tg-yw4l">
-      A float if it exists from the console
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">
-      nextLine()
-    </td>
-    
-    <td class="tg-yw4l">
-      A string up to the next newline character from the console
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">
-      hasNext()
-    </td>
-    
-    <td class="tg-yw4l">
-      Returns true if there is another token
-    </td>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">
-      close()
-    </td>
-    
-    <td class="tg-yw4l">
-      Unbinds the Scanner from the console
-    </td>
-  </tr>
-</table>
 
 Here is an example program where we get the user&#8217;s first name
 
-<pre class="language-java"><code class="language-java">
+```java
 import java.util.Scanner;
 
 public class GetName {
@@ -135,4 +65,4 @@ public class GetName {
     System.out.println("Your first name is " + firstName); 
   }
 }
-</code></pre>
+```
