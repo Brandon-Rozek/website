@@ -1,4 +1,7 @@
-#  Number Theory
+---
+title: Number Theory for ACM ICPC
+math: true
+---
 
 ## Prime Numbers
 

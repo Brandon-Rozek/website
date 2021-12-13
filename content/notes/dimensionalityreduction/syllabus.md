@@ -1,4 +1,6 @@
-# Dimensionality Reduction Study
+---
+title: Dimensionality Reduction Independent Study Syllabus
+---
 
 Dimensionality reduction is the process of reducing the number of random variables under consideration. This study will last for 10 weeks, meeting twice a week for about an hour.
 

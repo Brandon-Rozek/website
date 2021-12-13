@@ -1,4 +1,6 @@
-# Introduction to Dimensionality Reduction
+---
+title: Introduction to Dimensionality Reduction
+---
 
 ## Motivations
 

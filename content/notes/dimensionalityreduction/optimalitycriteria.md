@@ -1,4 +1,6 @@
-# Optimality Criteria
+---
+title: Optimality Criteria
+---
 
 Falling under wrapper methods, optimality criterion are often used to aid in model selection. These criteria provide a measure of fit for the data to a given hypothesis. 
 

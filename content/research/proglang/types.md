@@ -1,8 +1,8 @@
-# Types of Programming Languages
+---
+title: Types of Programming Languages
+---
 
-Mostly content from Wikipedia
-
-https://en.wikipedia.org/wiki/List_of_programming_languages_by_type#Hardware_description_languages
+Mostly content from [Wikipedia](https://en.wikipedia.org/wiki/List_of_programming_languages_by_type#Hardware_description_languages)
 
 ## Array Languages
 

@@ -1,4 +1,6 @@
-# Readings for Lectures of Cluster Analysis
+---
+title: RL Reading Schedule
+---
 
 ## Lecture 1
 Chapter 1: What is Reinforcement Learning?

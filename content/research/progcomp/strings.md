@@ -1,4 +1,6 @@
-# Strings
+---
+title: Strings for ACM ICPC
+---
 
 ## Character Codes
 

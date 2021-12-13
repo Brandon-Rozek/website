@@ -1,4 +1,6 @@
-# Feature Selection
+---
+title: Feature Selection
+---
 
 Feature selection is the process of selecting a subset of relevant features for use in model construction. The core idea is that data can contain many features that are redundant or irrelevant. Therefore, removing it will not result in much loss of information. We also wish to remove features that do not help in our goal.
 

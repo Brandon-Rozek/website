@@ -8,6 +8,8 @@ Chris Richters, Ethan Martin, and I embarked on the book ["Algorithms" by Jeff E
 
 Carlos Ramirez, Ethan Martin, and I started on the book "Elements of Radio" by Abraham and William Marcus. It provides a great introduction to radio not assuming an engineering background.
 
+[Notes on Dimensionality Reduction](dimensionalityreduction)
+
 ## Courses
 
 Below are the courses that I have documents up online for.

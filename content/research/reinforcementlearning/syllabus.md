@@ -1,4 +1,6 @@
-# Reinforcement Learning
+---
+title: Reinfrocement Learning Syllabus
+---
 
 The goal of this independent study is to gain an introduction to the topic of Reinforcement Learning. 
 

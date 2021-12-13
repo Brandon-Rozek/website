@@ -7,6 +7,11 @@ Description: A list of my research Projects
 
 **Broad Research Interests:** Automated Reasoning, Artificial Intelligence, Formal Methods
 
+## Logic-Based AI
+Working with [Dr. Selmer Bringsjord](https://homepages.rpi.edu/~brings/) and others in the [RAIR Lab](https://rair.cogsci.rpi.edu/) to design
+and implement artificial intelligent agents whose behavior is verifiable
+via chains of inference. More details coming soon...
+
 ## Symbolic Methods for Cryptography
 Worked with [Dr. Andrew Marshall](https://www.marshallandrew.net/) under an ONR grant in collaboration with University at Albany, Clarkson University, University of Texas at Dallas, and the Naval Research lab in order to automatically generated and verify cryptographic algorithms using symbolic (as opposed to computational) methods.
 
@@ -41,23 +46,22 @@ One particular problem I'm fascinated by is how to make Reinforcement Learning a
 
 ## Other
 
-**Programming Languages:** Studying the design of programming languages. So far I made an implementation of the SLOTH programming language, experimenting with what I want my own programming language to be syntatically and paradigm wise. [SLOTH Code](https://github.com/brandon-rozek/SLOTH)
+[**Programming Languages:**](proglang) Back in the Fall of 2018, under the guidance of Ian Finlayson, I worked towards creating a programming language similar to SLOTH (Simple Language of Tiny Heft). [SLOTH Code](https://github.com/brandon-rozek/SLOTH)
 
-Before this study, I worked though a book called ["Build your own Lisp"](https://www.buildyourownlisp.com/) and my implementation of a lisp like language: [Lispy Code](https://github.com/brandon-rozek/lispy)
+Before this study, I worked through a great book called ["Build your own Lisp"](https://www.buildyourownlisp.com/).
 
-**Competitive Programming:** Studying algorithms and data structures necessary for competitive programming. Attended ACM ICPC in November 2018/2019 with a team of two other students.
+
+[**Competitive Programming:**](progcomp) Studying algorithms and data structures necessary for competitive programming. Attended ACM ICPC in November 2018/2019 with a team of two other students.
 
 **Cluster Analysis:** The study of grouping similar observations without any prior knowledge. I studied this topic by deep diving Wikipedia articles under the guidance of Dr. Melody Denhere during Spring 2018. **[Extensive notes](clusteranalysis)**
 
-**Excitation of Rb87**: Worked in a Quantum Research lab alongside fellow student Hannah Killian under the guidance of Dr. Hai Nguyen. I provided software tools and assisted in understanding the mathematics behind the phenomena. 
+[**Excitation of Rb87**](rb87): Worked in a Quantum Research lab alongside fellow student Hannah Killian under the guidance of Dr. Hai Nguyen. I provided software tools and assisted in understanding the mathematics behind the phenomena. 
 
 [Modeling Population Dynamics of Incoherent and Coherent Excitation](/files/research/modellingpopulationdynamics.pdf)
 
 [Coherent Control of Atomic Population Using the Genetic Algorithm](/files/research/coherentcontrolofatomicpopulation.pdf)
 
-**Beowulf Cluster:** In order to circumvent the frustrations I had with simulation code taking a while, I applied and received funding to build out a Beowulf cluster for the Physics department. Dr. Maia Magrakvilidze was the advisor for this project.
 
-[High Performance Cluster for Research and Education Report (nicknamed LUNA-C)](/files/research/LUNAC.pdf)
 
-[LUNA-C Poster](/files/research/LUNACposter.pdf)
+[**Beowulf Cluster:**](lunac) In order to circumvent the frustrations I had with simulation code taking a while, I applied and received funding to build out a Beowulf cluster for the Physics department. Dr. Maia Magrakvilidze was the advisor for this project. [LUNA-C Poster](/files/research/LUNACposter.pdf)
 
