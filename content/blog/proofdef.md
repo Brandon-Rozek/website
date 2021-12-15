@@ -13,6 +13,7 @@ When I look into a new field, sometimes I get confused by the whole new set of v
 | Modus Ponens      | If $P$ implies $Q$ and $P$ is asserted to be true, then $Q$ must be true. |
 | Complete          | If every formula having the property can be derived using the system.  (i.e The system does not miss a result) |
 | Negation-Complete | Either $\phi$ or $\neg \phi$ can be proved in the system.    |
+| Consistent        | For any provable formula $\phi$, the negation ($\neg \phi$) cannot be provable. (Cannot derive a contradiction) |
 | Decidable         | An effective method exists for deriving the correct answer in a finite time. |
 | Sound             | Every formula that can be proved in the system is logically valid with respect to the semantics of the system. (i.e The system does not produce a wrong result) |
 
