@@ -2,6 +2,7 @@ baseURL = "https://brandonrozek.com/"
 languageCode = "en-us"
 title = "Brandon Rozek"
 theme = "pulp"
+enableGitInfo = true
 
 [taxonomies]
   series = "series"
@@ -11,9 +12,7 @@ theme = "pulp"
     author = "Brandon Rozek"
     avatar = "avatar.jpg"
     favicon = "favicon.ico"
-    description = """
-        Software Developer, Researcher, and Linux Enthusiast.
-    """
+    description = "Software Developer, Researcher, and Linux Enthusiast."
     publicationYear = "2021"
     identities = ["https://github.com/brandon-rozek", "mailto:hello@brandonrozek.com"]
 
