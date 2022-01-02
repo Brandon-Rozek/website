@@ -2,7 +2,7 @@
 title: "Custom Executables"
 date: 2020-02-03T20:10:34-05:00
 draft: false
-tags: [ "linux" ]
+tags: [ "Linux" ]
 ---
 
 As time goes on more and more scripts start to accumulate in my scripts folder. It turns out though, that there is a standard way of having local user scripts that get automatically added to your path. I started noticing this in Ubuntu when more and more projects started utilizing the `~/.local/bin` directory. 

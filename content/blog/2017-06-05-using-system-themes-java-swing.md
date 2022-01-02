@@ -20,6 +20,7 @@ mf2_syndication:
   - 'a:1:{i:0;s:60:"https://twitter.com/B_RozekJournal/status/871828083459936257";}'
 kind:
   - article
+tags: ["Java"]
 ---
 The default theme for Java Swing components is a cross-platform theme called &#8220;Metal&#8221;. I use the Adapta theme for GTK on Linux and this theme does not match at all what my other GUI applications look like. So here, I will describe a simple way to utlize already existent system themes in Java Swing applications.
 

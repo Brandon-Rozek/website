@@ -2,7 +2,7 @@
 title: "Bandwidth Limiting Applications"
 date: 2020-10-22T21:51:27-04:00
 draft: false
-tags: []
+tags: ["Linux"]
 ---
 
 Whether it's web scraping or testing low latency connections, we want to be able to bandwidth limit certain applications. I've written about [rate limiting network interfaces](/blog/limitbandwidth/) before. This post focuses on the application level instead.

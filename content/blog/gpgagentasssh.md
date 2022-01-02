@@ -2,7 +2,7 @@
 title: "GPG Agent as SSH Agent"
 date: 2020-06-14T22:33:01-04:00
 draft: false
-tags: []
+tags: ["SSH", "GPG"]
 ---
 
 GPG Agent has the ability to act as a SSH Agent. This allows the use of Authentication keys on Smartcards to be used with SSH as well.

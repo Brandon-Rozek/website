@@ -2,7 +2,7 @@
 title: "Tail Call Optimization in Python"
 date: 2020-10-11T20:46:54-04:00
 draft: false
-tags: []
+tags: ["Python"]
 ---
 
 In a standard recursive function, a new stack frame is created every time a recursive call is made. This can lead to bad memory performance and as a protective measure, some programming languages have a maximum stack frame limit. 

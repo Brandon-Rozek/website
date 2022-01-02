@@ -20,6 +20,7 @@ tumblr_post_id:
   - "135657540174"
 kind:
   - article
+tags: ["Web", "CSS"]
 ---
 This is the last post of the animatable series. The grand finale. Here, we will talk about the transform property. It’s only one property but it comes with a lot of goodies in the form of transform-functions.
 

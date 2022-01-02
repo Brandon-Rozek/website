@@ -6,6 +6,7 @@ author: rozek_admin
 layout: revision
 guid: https://brandonrozek.com/2017/03/2052-revision-v1/
 permalink: /2017/03/2052-revision-v1/
+tags: ["Statistics"]
 ---
 ![](https://brandonrozek.com/wp-content/uploads/2017/03/LifeExpectancyBoxplot.png)
 

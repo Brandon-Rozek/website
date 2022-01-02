@@ -19,6 +19,7 @@ tumblr_post_id:
 format: aside
 kind:
   - note
+tags: ["Statistics"]
 ---
 There are many cases where websites use random number generators to influence some sort of page behavior. One test to ensure the quality of a random number generator is to see if after many cases, the numbers produced follow a uniform distribution.
 

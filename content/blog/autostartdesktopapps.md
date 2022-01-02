@@ -2,7 +2,7 @@
 title: "Autostart Desktop Applications"
 date: 2020-11-29T13:45:28-05:00
 draft: false
-tags: []
+tags: ["Linux"]
 ---
 
 The [freedesktop specification](https://specifications.freedesktop.org/autostart-spec/0.5/ar01s02.html) describes how to identify file types, launch applications, and other useful desktop functions. A useful spec I've found recently is for launching desktop applications when you log into your machine.

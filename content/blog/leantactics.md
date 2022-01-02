@@ -2,7 +2,7 @@
 title: "Lean Theorem Prover Tactics"
 date: 2021-10-10T23:52:41-04:00
 draft: false
-tags: []
+tags: ["Formal Methods"]
 math: false
 ---
 

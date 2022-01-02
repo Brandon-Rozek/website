@@ -2,7 +2,7 @@
 title: "Symmetric Groups in Python"
 date: 2019-05-22T20:02:21-04:00
 draft: false
-tags: [ "abstract algebra" ]
+tags: [ "Math", "Python" ]
 math: true
 ---
 

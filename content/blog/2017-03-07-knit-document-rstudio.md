@@ -19,6 +19,7 @@ tumblr_post_id:
 format: aside
 kind:
   - note
+tags: ["R"]
 ---
 In case you were wondering how I got all the R code and output for the [&#8220;Do females live longer than males?&#8221;](https://brandonrozek.com/portfolio/male-vs-female-life-expectancy/) page. There is actually a function in RStudio that allows one to compile a report based on code and it&#8217;s output.
 

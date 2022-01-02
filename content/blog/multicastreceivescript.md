@@ -2,7 +2,7 @@
 title: "Multicast Receive Script"
 date: 2020-11-18T10:09:15-05:00
 draft: false
-tags: []
+tags: ["Linux", "Networking"]
 ---
 
 I use `socat` to debug mutlicast traffic, though the syntax for it is complicated to learn. Here is the command that I normally use to debug multicast traffic.

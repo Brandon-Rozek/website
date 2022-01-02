@@ -18,6 +18,7 @@ tumblr_post_id:
   - "161484582559"
 kind:
   - article
+tags: ["Java"]
 ---
 This post, over time, will serve as a reference to myself and others of the different UI components available in the Swing library. This post assumes a general familiarity with setting up a basic Swing application and focuses only on the individual components.
 

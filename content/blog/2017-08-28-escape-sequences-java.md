@@ -20,6 +20,7 @@ tumblr_crosspostr_crosspost:
   - 'N'
 kind:
   - note
+tags: ["Java"]
 ---
 Sometimes you want to format your outputs. This is a quick cheatsheet containing the differerent escape sequences
 

@@ -2,7 +2,7 @@
 title: "Ping Discovery"
 date: 2020-02-02T22:21:30-05:00
 draft: false
-tags: [ "linux", "network" ]
+tags: [ "Linux", "Networking" ]
 ---
 
 Plugging in a device into a network with DHCP will often result in you not knowing what the ip is. If you don't have easy access to the DHCP server, then one way to see what ip addresses are on the network is to do a ping scan. 

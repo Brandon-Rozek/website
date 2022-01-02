@@ -2,7 +2,7 @@
 title: "Chirp"
 date: 2019-09-27T22:46:52-04:00
 draft: false
-tags: [ "linux", "amateur radio" ]
+tags: [ "Linux", "Amateur Radio" ]
 ---
 
 In the land of Ham Radio, you can program your radio with a very popular open source software called `chirp`. For Ubuntu users to install it, it is recommended you use the PPA to keep up to date with radio software...

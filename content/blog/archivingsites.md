@@ -2,7 +2,7 @@
 title: "Archiving Sites"
 date: 2019-08-02T22:42:16-04:00
 draft: false
-tags: [ "archive" ]
+tags: [ "Archive" ]
 ---
 
 I have several old Wordpress sites lying around that I would like to archive but not maintain anymore. Since I don't intend to create any more content on these sites, we can use tools like `wget` to scrape an existing site and provide a somewhat *read-only* copy of it. I say read-only not because we can't edit it, but because it's not in the original source format of the website.

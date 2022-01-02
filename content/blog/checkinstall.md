@@ -2,7 +2,7 @@
 title: "Checkinstall"
 date: 2020-04-26T12:11:30-04:00
 draft: false
-tags: ["packaging", "linux"]
+tags: ["Packaging", "Linux"]
 ---
 
 To create a quick and dirty Debian or RPM package, check out `checkinstall`! Be forewarned though that this isn't the recommended way of creating packages. This post on [AskUbuntu](https://askubuntu.com/questions/1138384/why-is-checkinstall-no-longer-being-maintained) gives good reasons for why. Though if it is between running a `make install` or running this utility, I would consider running `checkinstall` instead.

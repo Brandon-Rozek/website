@@ -2,7 +2,7 @@
 title: "TCP/UDP with Bash"
 date: 2020-05-25T23:10:15-04:00
 draft: false
-tags: ["bash"]
+tags: ["Bash", "Networking"]
 ---
 
 The bash shell contains pseudo-devices to send packets with TCP/UDP. The pseudo files are formatted like the following:

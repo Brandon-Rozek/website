@@ -20,6 +20,7 @@ tumblr_post_id:
   - "135657690564"
 kind:
   - article
+tags: ["Web", "JS"]
 ---
 I’m excited to say that I’ve written my first service worker for brandonrozek.com. What is a service worker? A service worker provides an extra layer between the client and the server. The exciting part about this is that you can use service workers to deliver an offline experience. (Cached versions of your site, offline pages, etc.)
 

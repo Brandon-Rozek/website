@@ -2,7 +2,7 @@
 title: "QTcpSocket"
 date: 2020-03-20T16:21:07-04:00
 draft: false
-tags: ["C++", "Qt"]
+tags: ["C++"]
 ---
 
 There are two ways that I can think of for checking if a TCP socket times out in Qt. You can either use `waitForConnected` or a `QTimer`.  The Qt 5.14 documentation noted that the `waitForConnected` call may randomly fail in Windows.

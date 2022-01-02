@@ -2,7 +2,7 @@
 title: "Introduction to RF Power Amplifiers"
 date: 2021-04-10T13:01:00-04:00
 draft: false
-tags: ["amateur-radio"]
+tags: ["Amateur Radio"]
 math: true
 ---
 

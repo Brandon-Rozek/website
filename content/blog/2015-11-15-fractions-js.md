@@ -20,6 +20,7 @@ tumblr_post_id:
   - "135657739439"
 kind:
   - article
+tags: ["JS"]
 ---
 Last week I published my first library over on Github called [Fractions.js](https://github.com/brandonrozek/Fractions.js). Fractions.js is a library to help avoid the [mathmatetical errors](http://floating-point-gui.de/) in floating point arithmetic. What do you mean by floating point artihmetic errors? Here is an example: <code class="language-javascript">.1 * .2</code> outputs <code class="language-javascript">0.020000000000000004</code> even though the correct answer is <code class="language-javascript">.02</code>
 

@@ -2,7 +2,7 @@
 title: "Extract All the Things"
 date: 2020-06-14T22:23:37-04:00
 draft: false
-tags: []
+tags: ["Linux"]
 ---
 
 [Sandra Henry-Stocker](https://www.networkworld.com/author/Sandra-Henry_Stocker/) from Network World wrote a [great post](https://www.networkworld.com/article/3244007/extracting-from-compressed-files-on-linux.html) on how to standardize extracting files on Linux. It's a shell script that works so well, that I placed it in my [`~/.local/bin` directory](https://brandonrozek.com/blog/customexec/) in order to call upon it at any time. Here's part of it, check out the post for more.

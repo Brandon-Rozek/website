@@ -2,7 +2,7 @@
 title: "Offline Pip Packages"
 date: 2020-01-20T23:11:05-05:00
 draft: false
-tags: [ "python", "archive" ]
+tags: [ "Python", "Archive" ]
 ---
 
 There are a few reasons I can think of to have offline pip packages:

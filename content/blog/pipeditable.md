@@ -2,7 +2,7 @@
 title: "Pip Editable"
 date: 2020-04-11T20:38:33-04:00
 draft: false
-tags: ["python"]
+tags: ["Python"]
 ---
 
 I've found it to be incredibly helpful to emulate having a library installed on my system rather than depending on my local directory path to pick up my file edits. To do this in a python project, we need to add the `--editable` flag to a pip install.

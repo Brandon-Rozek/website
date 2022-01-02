@@ -2,7 +2,7 @@
 title: "Getting started with Digital Modes in Linux"
 date: 2019-09-04T09:52:21-04:00
 draft: false
-tags: [ "amateur radio" ]
+tags: [ "Amateur Radio" ]
 ---
 
 This blog post is going to describe what steps I took to be able to decode signals using digital modes. Hardware wise, you will either need a RTL-SDR receiver or a transceiver radio with a cable plugging into the computer's soundcard.

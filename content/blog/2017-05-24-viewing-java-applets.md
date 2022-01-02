@@ -20,6 +20,7 @@ mf2_syndication:
   - 'a:1:{i:0;s:60:"https://twitter.com/B_RozekJournal/status/867409810932760576";}'
 kind:
   - article
+tags: ["Java"]
 ---
 When you use an IDE there are many things you can take for granted. A section of an intro level computer science course at my university uses [JGrasp](http://www.jgrasp.org/) to build Java Applets.
 

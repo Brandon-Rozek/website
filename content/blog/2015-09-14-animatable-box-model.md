@@ -23,6 +23,7 @@ tumblr_post_id:
   - "135657238924"
 kind:
   - article
+tags: ["Web", "CSS"]
 ---
 This post is part 2 of an animation series I am doing; you can read part 1 [here](https://brandonrozek.com/2015/05/animatable-border/). In this post, we&#8217;ll look at the different parts of the box model (margin, padding, height, and width) and see how they can be animated.
 

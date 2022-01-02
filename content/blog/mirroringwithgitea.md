@@ -2,7 +2,7 @@
 title: "Mirroring with Gitea"
 date: 2020-12-07T23:46:21-05:00
 draft: false
-tags: []
+tags: ["Archive"]
 ---
 
 Sites like Github, Gitlab, and BitBucket have nice UIs that make looking at commit diffs and issue tracking easier. However, this requires an internet connection. What if we can mirror the content from these sites locally? Gitea comes to the rescue!

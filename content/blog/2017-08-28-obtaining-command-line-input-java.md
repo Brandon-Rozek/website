@@ -20,6 +20,7 @@ mf2_mp-syndicate-to:
   - 'a:1:{i:0;s:4:"none";}'
 kind:
   - note
+tags: ["Java"]
 ---
 To obtain console input for your program you can use the `Scanner` class
 

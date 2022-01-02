@@ -23,6 +23,7 @@ tumblr_post_id:
   - "135657634939"
 kind:
   - article
+tags: ["Web", "JS"]
 ---
 Javascript, like most other programming languages, include ways to run blocks of code when something meets a condition. Here, I will describe the most common ways to do so.
 

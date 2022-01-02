@@ -2,7 +2,7 @@
 title: "Quick CA for internal LAN"
 date: 2020-04-18T16:26:53-04:00
 draft: false
-tags: ["network"]
+tags: ["Networking"]
 ---
 
 Setting up trusted HTTPs inside a network without exposure to the Internet requires creating a Certificate Authority. The audience for this post is oriented for people setting up services in a small low threat model environment. Additional cautions should be applied when setting this up for a business, for example working off an intermediate CA. 

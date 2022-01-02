@@ -2,7 +2,7 @@
 title: "Zsh and Snaps"
 date: 2020-01-25T09:46:23-05:00
 draft: false
-tags: [ "linux", "snaps", "storage" ]
+tags: [ "Linux" ]
 ---
 
 In case I forget again, by default when snaps are installed it doesn't populate in the `zsh` shell. To enable this add the following to `/etc/zsh/zprofile`

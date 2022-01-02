@@ -2,7 +2,7 @@
 title: "Tox"
 date: 2020-02-21T22:34:19-05:00
 draft: false
-tags: [ "python", "testing" ]
+tags: [ "Python", "Testing" ]
 ---
 
 [Tox](https://tox.readthedocs.io/en/latest/) is a great project where you can automate your testing using virtual environments.

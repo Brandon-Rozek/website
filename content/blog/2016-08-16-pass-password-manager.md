@@ -22,6 +22,7 @@ mf2_syndicate-to:
   - 'a:1:{i:0;s:4:"none";}'
 kind:
   - note
+tags: ["Security"]
 ---
 Looking over the list of programs installed on my computer, one of my all time favorites is a program called [Pass](https://www.passwordstore.org/). It&#8217;s a program available under most Linux distributions, Mac OS X (through [Brew](http://brew.sh/)), [Windows](https://github.com/mbos/Pass4Win), [Android](https://play.google.com/store/apps/details?id=com.zeapo.pwdstore), and [iOS](https://github.com/davidjb/pass-ios#readme). It stores all of the passwords using gpg encryption and stores them as actual files on the hard disk. Meaning if you wanted, you can sync them to all your devices!
 

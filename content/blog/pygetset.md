@@ -2,7 +2,7 @@
 title: "Quick Python: Getters and Setters"
 date: 2020-04-08T18:15:21-04:00
 draft: false
-tags: ["python"]
+tags: ["Python"]
 ---
 
 One of the hidden gems in Python classes are seamless getters and setters. I discovered this through the book [Effective Python by Brett Slatkin](https://effectivepython.com/). Though the example I'll use is different and shorter than the one he uses in his book.

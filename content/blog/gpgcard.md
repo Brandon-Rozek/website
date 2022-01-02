@@ -2,7 +2,7 @@
 title: "GPG Card"
 date: 2020-06-05T17:39:51-04:00
 draft: false
-tags: []
+tags: ["GPG"]
 ---
 
 I have a Yubikey hardware token and one of my favorite use cases is the GPG support. This gives you the use cases of signing, encrypting, and authenticating all in one module. This post will describe quickly setting it up.

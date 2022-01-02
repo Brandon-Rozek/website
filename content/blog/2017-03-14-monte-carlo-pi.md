@@ -21,6 +21,7 @@ mf2_syndication:
 format: aside
 kind:
   - note
+tags: ["Math", "Java"]
 math: true
 ---
 Using Monte Carlo methods, we can create a simulation that approximates pi. In this post, we will go over the math behind the approximation and the code.

@@ -2,7 +2,7 @@
 title: "Quick Python: Concurrent Futures"
 date: 2020-04-11T20:40:28-04:00
 draft: false
-tags: ["python", "concurrency"]
+tags: ["Python"]
 ---
 
 Another way to perform concurrency in python is to use the `concurrent.futures` module.

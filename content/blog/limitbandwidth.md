@@ -2,7 +2,7 @@
 title: "Limit Bandwidth through Terminal"
 date: 2020-01-15T19:51:45-05:00
 draft: false
-tags: [ "linux", "network" ]
+tags: [ "Linux", "Networking" ]
 ---
 
 Have you ever wondered how an application or a system would operate under low bandwidth environments? Luckily `wondershaper` is a tool to help with just that!

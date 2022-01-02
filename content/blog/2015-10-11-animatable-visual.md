@@ -20,6 +20,7 @@ mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
 kind:
   - article
+tags: ["Web", "CSS"]
 ---
 Hello everyone! This is part 5 of my series on animation. Today’s post will be short, since we’re only going to talk about color and opacity.
 

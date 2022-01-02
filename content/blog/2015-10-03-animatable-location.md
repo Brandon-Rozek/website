@@ -23,6 +23,7 @@ tumblr_post_id:
   - "135657326384"
 kind:
   - article
+tags: ["Web", "CSS"]
 ---
 Animating the location of objects is one of the most common types of animation. It&#8217;s interesting to animate this way because you need to keep in mind how each of the element&#8217;s interact with each other to constitute a page.
 

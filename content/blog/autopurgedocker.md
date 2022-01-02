@@ -2,7 +2,7 @@
 title: "Auto Purge Old Docker Images"
 date: 2020-09-28T23:30:22-04:00
 draft: false
-tags: []
+tags: ["Containers"]
 ---
 
 I use [Watchtower](https://github.com/containrrr/watchtower) to automatically update the docker images I use. After leaving it for several months, I've realized that I have been storing over 100GB of old docker images. I needed a way to automatically purge  old images and [Systemd Timers](https://opensource.com/article/20/7/systemd-timers) is the solution.

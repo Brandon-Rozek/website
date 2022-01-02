@@ -2,7 +2,7 @@
 title: "Copy to RAM Please"
 date: 2019-08-02T22:37:12-04:00
 draft: false
-tags: [ "linux" ]
+tags: [ "Linux" ]
 ---
 
 I bought a 1U server recently, and I forgot to purchase a SSD to actually hold data. Since I couldn't hold my excitement to play with the server, I decided to load an operating system entirely into RAM and never turn it off for the meantime.

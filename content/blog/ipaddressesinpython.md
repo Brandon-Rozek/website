@@ -2,7 +2,7 @@
 title: "How to get list of IP Addresses in Python"
 date: 2020-09-07T20:03:24-04:00
 draft: false
-tags: ["python", "networking"]
+tags: ["Python", "Networking"]
 ---
 
 [Elemag](https://stackoverflow.com/users/2436840/elemag) on gave a quick solution on StackOverflow on [how to determine IP addresses with multiple NICS](https://stackoverflow.com/questions/270745/how-do-i-determine-all-of-my-ip-addresses-when-i-have-multiple-nics).  

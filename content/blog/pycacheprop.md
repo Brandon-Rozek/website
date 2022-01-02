@@ -2,7 +2,7 @@
 title: "Quick Python: Cached Property"
 date: 2020-04-18T18:29:21-04:00
 draft: false
-tags: ["python"]
+tags: ["Python"]
 ---
 
 If you have a property in an object that only needs to be computed once, consider using `cached_property` to store the result and serve for future function calls.

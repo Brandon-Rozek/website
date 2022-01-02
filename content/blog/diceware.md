@@ -2,7 +2,7 @@
 title: "Diceware"
 date: 2020-05-01T00:22:31-04:00
 draft: false
-tags: []
+tags: ["Security"]
 ---
 
 Diceware is a passphrase generator proposed by [Arnold G. Reinhold](http://diceware.com/). Passphrases contain multiple words which are chosen according to a sequence of dice rolls. Let's look at a simplified example where we have binary dice (0 or 1) and we have a wordlist of two dice rolls.

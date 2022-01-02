@@ -2,7 +2,7 @@
 title: "Why ZeroMQ"
 date: 2019-06-16T19:26:50-04:00
 draft: false
-tags: [ "network" ]
+tags: [ "Networking" ]
 ---
 
 I've been playing around with ZeroMQ recently and it's been really exciting. This blog post is going to outline why I think you should be using ZeroMQ today.

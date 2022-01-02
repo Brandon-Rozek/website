@@ -2,7 +2,7 @@
 title: "Quick Python: Package Namespacing"
 date: 2020-02-03T20:13:38-05:00
 draft: false
-tags: [ "python" ]
+tags: [ "Python" ]
 ---
 
 Package namespacing can help organize modules within a larger project. It can also help show that a package belongs to an organization.

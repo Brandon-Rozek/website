@@ -23,6 +23,7 @@ tumblr_post_id:
   - "135657462089"
 kind:
   - article
+tags: ["Web", "JS"]
 ---
 Javascript has multiple ways you can store your data. Each of these different ways is called a data type, and they each carry different “methods” which are helpful commands. Today, I’ll show you the different data types and methods that I use and how they’re useful.
 

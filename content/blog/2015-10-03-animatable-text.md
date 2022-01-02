@@ -20,6 +20,7 @@ tumblr_post_id:
   - "135657083469"
 kind:
   - article
+tags: ["Web", "CSS"]
 ---
 This post is part 3 of my series on animation. In this post, I&#8217;ll show you different animations you can add onto text. If you haven&#8217;t already, you should check out [part 1](https://brandonrozek.com/2015/09/animatable-box-model/) and [part 2](https://brandonrozek.com/2015/05/animatable-border/) of this series. Animations on text can be used to bring attention, to add importance, or to convey a point. As with all animations, however, keep your user in mind and your text readable.
 

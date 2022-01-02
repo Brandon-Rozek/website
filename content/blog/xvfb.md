@@ -2,7 +2,7 @@
 title: "Xvfb"
 date: 2020-09-07T20:49:54-04:00
 draft: false
-tags: []
+tags: ["X11"]
 ---
 
 X Virtual Framebuffer (Xvfb) is a great quick application to run applications that expect a `X11` server, but you don't care to see the visual output.

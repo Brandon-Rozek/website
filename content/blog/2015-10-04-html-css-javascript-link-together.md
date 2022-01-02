@@ -23,6 +23,7 @@ tumblr_post_id:
   - "135657370214"
 kind:
   - article
+tags: ["Web"]
 ---
 I&#8217;ve been teaching a small class on web development recently, and after my first lecture, I&#8217;ve gained a newfound respect for teachers. Teaching didn&#8217;t come as naturally to me as I would have imagined. I tried going in prepared: with a few outlines and a few code demos. Instead of letting my preparation go to waste, I decided to share them here with you on my site. It&#8217;s a nice break from the Animatable posts, so I hope you enjoy!
 

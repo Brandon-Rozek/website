@@ -2,7 +2,7 @@
 title: "Useful Abstract Definitions"
 date: 2019-10-27T23:49:57-04:00
 draft: false
-tags: [ "abstract algebra" ]
+tags: [ "Math" ]
 math: true
 ---
 

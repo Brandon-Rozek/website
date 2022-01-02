@@ -2,7 +2,7 @@
 title: "Groups Simplified"
 date: 2019-12-10T21:40:00-05:00
 draft: false 
-tags: [ "abstract algebra" ]
+tags: [ "Math" ]
 math: true
 ---
 

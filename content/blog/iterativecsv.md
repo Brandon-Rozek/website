@@ -2,7 +2,7 @@
 title: "Iteratively Read CSV"
 date: 2020-04-11T21:34:33-04:00
 draft: false
-tags: ["python"]
+tags: ["Python"]
 ---
 
 If you want to analyze a CSV dataset that is larger than the space available in RAM, then you can iteratively process each observation and store/calculate only what you need. There is a way to do this in standard Python as well as the popular library Pandas.

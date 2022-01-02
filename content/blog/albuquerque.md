@@ -6,6 +6,7 @@ author: Brandon Rozek
 layout: revision
 guid: https://brandonrozek.com/2017/07/2227-revision-v1/
 permalink: /2017/07/2227-revision-v1/
+tags: ["Statistics"]
 ---
 ### Introduction
 

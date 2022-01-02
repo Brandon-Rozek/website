@@ -2,7 +2,7 @@
 title: "Custom Device Paths with UDEV rules"
 date: 2020-11-10T20:58:37-05:00
 draft: false
-tags: []
+tags: ["Linux"]
 ---
 
 I wanted to create a rule so that when I plug in my rtlsdr, a symlink to the device will appear in `/dev/rtlsdr`.

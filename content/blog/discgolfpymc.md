@@ -2,7 +2,7 @@
 title: "Disc Golf and PyMC3"
 date: 2020-03-28T22:08:19-04:00
 draft: false
-tags: ["python", "stats"]
+tags: ["Python", "Statistics"]
 math: true
 ---
 

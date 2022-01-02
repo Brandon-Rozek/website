@@ -2,7 +2,7 @@
 title: "Python setup.py develop"
 date: 2020-02-21T22:42:55-05:00
 draft: false
-tags: [ "python" ]
+tags: [ "Python" ]
 ---
 **Deprecated in favor of [pip install editable](https://brandonrozek.com/blog/pipeditable)**
 

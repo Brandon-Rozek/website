@@ -3,6 +3,7 @@ title: "Real Analysis Sequences in Haskell"
 date: 2019-05-21T22:18:21-04:00
 draft: false
 math: true
+tags: ["Math", "Haskell"]
 ---
 
 In Real Analysis it is useful to look at terms of a sequence. One of the best ways I've found to do this is in believe it or not Haskell. This is mainly for these two reasons

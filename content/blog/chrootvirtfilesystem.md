@@ -2,7 +2,7 @@
 title: "Chroot and Virtual Filesystems"
 date: 2020-11-29T10:52:07-05:00
 draft: false
-tags: []
+tags: ["Linux"]
 ---
 
 When running applications under a [`chroot`](https://en.wikipedia.org/wiki/Chroot) environment, it can be annoying when certain [virtual filesystems](https://opensource.com/article/19/3/virtual-filesystems-linux) are unavailable. Here are the commands to mount the most common ones:

@@ -2,7 +2,7 @@
 title: "Pip Config"
 date: 2020-04-10T11:56:19-04:00
 draft: false
-tags: ["python"]
+tags: ["Python"]
 ---
 
 If you find yourself added flags to every pip command, consider adding those flag's to a pip configuration file.

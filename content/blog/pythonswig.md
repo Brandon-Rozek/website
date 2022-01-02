@@ -2,7 +2,7 @@
 title: "C++ within Python with SWIG"
 date: 2020-10-27T23:49:54-04:00
 draft: false
-tags: []
+tags: ["Python", "C++"]
 ---
 
 For performance reasons, it can be useful to write functions in C/C++ which can then be called within Python. This will be an introductory post, in where we will call a simple C++ function (with a dependency) within Python using [SWIG](http://swig.org/).

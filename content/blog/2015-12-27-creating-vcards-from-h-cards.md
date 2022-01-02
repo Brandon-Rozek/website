@@ -17,6 +17,7 @@ tumblr_post_id:
   - "136059699334"
 kind:
   - article
+tags: ["Web"]
 ---
 Microformats is semantic HTML used to convey metadata. Using an userscript, I can generate a vCard from the representative h-card of the page. The code for this is on this gist [here.](https://gist.github.com/brandonrozek/e0153b2733e947fa9c87)
 

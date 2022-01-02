@@ -25,6 +25,7 @@ tumblr_crosspostr_crosspost:
   - 'N'
 kind:
   - article
+tags: ["Web", "JS"]
 ---
 Summary: I rewrote how cache limiting works to address a few problems listed later in this post. Check out the [gist](https://gist.github.com/brandonrozek/0cf038df40a913fda655) for the updated code.
 

@@ -23,6 +23,7 @@ tumblr_post_id:
   - "135656876494"
 kind:
   - article
+tags: ["Web", "CSS"]
 ---
 I saw [Mike Riethmuller&#8217;s](http://madebymike.com.au/) precision typography [pen](http://codepen.io/MadeByMike/pen/YPJJYv){.broken_link}, and was highly impressed. I think the equation used has other purposes as well
 

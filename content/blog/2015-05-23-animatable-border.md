@@ -21,6 +21,7 @@ mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
 kind:
   - article
+tags: ["Web", "CSS"]
 ---
 This is part 1 of an animation series I&#8217;m doing. It is inspired by Lea Verou&#8217;s talk called &#8220;[The Humble Border-Radius.](https://www.youtube.com/watch?v=JSaMl2OKjfQ)&#8221; I looked at her site and she has a good demo of a bunch of different animations [here](http://lea.verou.me/2011/10/animatable-a-css-transitions-gallery/). My goal here is to create a more comprehensive guide to these different animatable properties&#8211;mainly for future reference. Animations play a big part in adding interactivity to the web, so why not explore some possible options?
 
