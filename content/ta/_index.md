@@ -3,6 +3,13 @@ title: Teaching Assistant
 description: My work as a teaching assistent
 ---
 
+## Spring 2022
+I am a TA for Dr. Konstantin Kuzmin's CSCI 2600 Principles of Software
+
+I run a weekly recitation session, two office hours, and grade assignments.
+
+Office Hours: Tuesday 1600-1800 / Friday 1200-1400
+
 ## Fall 2021
 I am a TA for Dr. Wes Turner and Dr. Uzma Mushtaque's Computer Science 1.
 
