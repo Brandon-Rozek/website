@@ -6,7 +6,7 @@ showthedate: false
 
 ## Papers
 
-(Under Consideration) D Chichester, W Du, R Kauffman, H Lin, C Lynch, A Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, **B Rozek**. "CryptoSolve: A Tool for the Analysis of Cryptographic Modes of Operation",  International Conference on Tools and Algorithms for the Construction and Analysis of Systems, 2022.
+(Under Consideration) D Chichester, W Du, R Kauffman, H Lin, C Lynch, A Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, **B Rozek**. "CryptoSolve: A Tool for the Analysis of Cryptographic Modes of Operation",  International Workshop on Rewriting Logic and its Applications, 2022.
 
 [Hai Lin, Christopher Lynch, Andrew M. Marshall, Catherine A. Meadows, Paliath Narendran, Veena Ravishankar, **Brandon Rozek**. "Algorithmic Problems in the Symbolic Approach to the Verification of Automatically Synthesized Cryptosystems", International Symposium on Frontiers of Combining Systems, 2021.](https://link.springer.com/chapter/10.1007/978-3-030-86205-3_14)
 
