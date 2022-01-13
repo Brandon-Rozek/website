@@ -18,7 +18,7 @@ mf2_syndication:
   - 'a:1:{i:0;s:60:"https://twitter.com/B_RozekJournal/status/955308388384235521";}'
 kind:
   - article
-tags: ["Java"]
+tags: []
 ---
 This article is based on one written by [Markus Konrad](https://datascience.blog.wzb.eu/author/markus_konrad/) at this link <a href='https://datascience.blog.wzb.eu/2016/07/13/autocorrecting-misspelled-words-in-python-using-hunspell/' target='_blank' >https://datascience.blog.wzb.eu/2016/07/13/autocorrecting-misspelled-words-in-python-using-hunspell/</a>
 

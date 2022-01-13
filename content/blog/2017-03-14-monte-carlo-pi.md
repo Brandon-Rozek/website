@@ -62,9 +62,9 @@ To add up these small areas we need to make an assumption. The assumption is tha
 
 This will allow us to perform a pooled empiricle probability on the simulations to sum up the areas.
 
-Meaning the area of the circle will be the number of times that the inequality was satisfied $$A_{circle} = \# Successes$$
+Meaning the area of the circle will be the number of times that the inequality was satisfied $$A_{circle} = \\# Successes$$
 
-And the area of the square will be the number of times the simulation was run, since the random numbers generated will always be between 0 and 1 $A_{square} = \# Trials$
+And the area of the square will be the number of times the simulation was run, since the random numbers generated will always be between 0 and 1 $A_{square} = \\# Trials$
 
 Recall that taking the ratio of the area of the circle and the area of the square is a fourth of pi. $$\frac{\frac{1}{4} \pi}{1} = \frac{1}{4} \pi$$
 
@@ -72,7 +72,7 @@ Multiply this number by 4 and you get the value for pi.
 
 This tells us that four times the probability that the randomly generated point is in the circle is equal to pi.
 
-$$\pi = 4 * (Probability\ of\ being\ inside\ circle) = 4 * \frac{\# Success}{\# Trials} = 4 * \frac{A\_{circle}}{A\_{square}}$$
+$$\pi = 4 * (Probability\ of\ being\ inside\ circle) = 4 * \frac{\\# Success}{\\# Trials} = 4 * \frac{A\_{circle}}{A\_{square}}$$
 
 ## Implementation
 
@@ -90,11 +90,12 @@ class MonteCarloPi {
 
                 BigInteger successes = BigInteger.ZERO;
                 BigInteger trials = BigInteger.ZERO;
-</code></pre>
+```
 
 For this simulation, we will run 1,000,000,000 trials
 
-<pre class='language-java'><code class='language-java'> BigInteger numTrials = new BigInteger("1000000000");
+```java
+BigInteger numTrials = new BigInteger("1000000000");
 /*
     Monte Carlo Simulation
         Generate a random point 0 &lt;= x &lt; 1 and 0 &lt;= y &lt; 1
