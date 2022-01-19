@@ -1,4 +1,9 @@
-# CPSC 220 Computer Programming and Problem Solving Fall 2017
+---
+title: CPSC 220 Computer Programming and Problem Solving
+---
+
+## Lecture Notes
+Below are notes I've taken from the lectures:
 
 [Lecture 3 -- September 6](sept6)
 

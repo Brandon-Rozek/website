@@ -1,4 +1,6 @@
-# CPSC 110 Introduction to Computer Science Summer 2017
+---
+title: CPSC 110 Introduction to Computer Science
+---
 
 For the summer session, I didn't write in depth lecture notes. Instead I wrote short complementary blog posts help out with the labs.
 

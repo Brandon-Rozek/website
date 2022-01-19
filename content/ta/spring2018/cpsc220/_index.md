@@ -1,5 +1,9 @@
+---
+title: CPSC 220 Computer Programming and Problem Solving
+--- 
 
-# CPSC 220 Computer Programming and Problem Solving Spring 2018
+## Lecture Notes
+Below are notes I've taken for the lectures.
 
 [Lecture 1 -- January 16](jan16)
 
