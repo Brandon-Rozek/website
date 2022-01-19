@@ -6,7 +6,7 @@ description: My work as a teaching assistent
 ## Spring 2022
 I am a TA for Dr. Konstantin Kuzmin's CSCI 2600 Principles of Software
 
-Recitation: Wednesday 1200-1300
+Recitation: Wednesday 1200-1250
 
 Office Hours: Tuesday 1600-1800 / Friday 1200-1400
 
@@ -15,8 +15,9 @@ Office Hours: Tuesday 1600-1800 / Friday 1200-1400
 ## Fall 2021
 I was a TA for Dr. Wes Turner and Dr. Uzma Mushtaque's Computer Science 1.
 
-I held weekly office hours, run two lab sessions, and grade assignments along
-with the other TAs for the class.
+Lab Section 17: Wednesdays 1600-1750
+
+Lab Section 18: Wednesdays 1800-1950
 
 Office Hours: Tuesday 1800-2000 at ALAC
 
