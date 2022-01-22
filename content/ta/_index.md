@@ -8,7 +8,7 @@ I am a TA for Dr. Konstantin Kuzmin's CSCI 2600 Principles of Software
 
 Recitation: Wednesday 1200-1250
 
-Office Hours: Tuesday 1600-1800 / Friday 1200-1400
+Office Hours: Tuesday/Thursday 1600-1800
 
 [Recitations Page](spring2022/csci2600)
 
