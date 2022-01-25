@@ -6,9 +6,9 @@ description: My work as a teaching assistent
 ## Spring 2022
 I am a TA for Dr. Konstantin Kuzmin's CSCI 2600 Principles of Software
 
-Recitation: Wednesday 1200-1250
+Recitation: Wednesday 1200-1250 / 1300-1350
 
-Office Hours: Tuesday/Thursday 1600-1800
+Office Hours: Tuesday/Thursday 1630-1800
 
 [Recitations Page](spring2022/csci2600)
 
