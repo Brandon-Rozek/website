@@ -6,7 +6,7 @@ tags: []
 math: false
 ---
 
-With [`termtosvg`](https://github.com/nbedos/termtosvg) made by Nicolas Bedo we can make SVG animations from terminal output in the style of  [asciinema](https://asciinema.org/). To install use [pipx](http://localhost:1313/blog/managepythonapps/).
+With [`termtosvg`](https://github.com/nbedos/termtosvg) made by Nicolas Bedo we can make SVG animations from terminal output in the style of  [asciinema](https://asciinema.org/). To install use [pipx](/blog/managepythonapps/).
 
 ```bash
 pipx install termtosvg
