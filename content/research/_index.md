@@ -25,11 +25,11 @@ as unification and term rewriting to the following areas:
 - Authentication
 - Commitment Schemes
 
-Together we built [Symcollab](https://github.com/symcollab/CryptoSolve), a symbolic cryptographic analysis tool, and made it publically available on GitHub. I wrote the term algebra and rewrite libraries, and contributed to the mode of operation library and some unification algorithms.
+Together we built [CryptoSolve](https://github.com/symcollab/CryptoSolve), a symbolic cryptographic analysis tool, and made it publically available on GitHub. I wrote the term algebra and rewrite libraries, and contributed to the mode of operation library and some unification algorithms.
 I still help maintain the codebase, as well as contribute to our current work on Garbled Circuits. We previously presented our work
 at  [UNIF 2020](https://www3.risc.jku.at/publications/download/risc_6129/proceedings-UNIF2020.pdf#page=58) ([slides](/files/research/UNIF2020-Slides.pdf)), FROCOS 2021, and soon at WRLA 2022.
 
-I've written a few [Notes](termreasoning) about term reasoning.
+I've written a few [notes](termreasoning) about term reasoning.
 
 Collaborators:
 - NRL: Catherine Meadows
