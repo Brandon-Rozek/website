@@ -88,12 +88,11 @@ method copy(in_arr: array<int>) returns (out_arr: array<int>)
 
 ## Question 4: Backwards Reasoning
 
-Fill in the blanks using forward reasoning. Don't forget to:
+Fill in the blanks using backward reasoning. Don't forget to:
 
-- Carry your variables forward
 - Show your work
 - Simplify expressions
-- State the strongest precondition
+- State the weakest precondition
 
 ```java
 {                 }
