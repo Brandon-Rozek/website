@@ -17,4 +17,4 @@ Below are links to the recitations I have given:
 
 [Recitation 6](recitation06.pdf)
 
-[Recitation 7: Exam Review](recitation06)
+[Recitation 7: Exam Review](recitation07)
