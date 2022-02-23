@@ -8,38 +8,58 @@ Description: A list of my research Projects
 **Broad Research Interests:** Automated Reasoning, Artificial Intelligence, Formal Methods
 
 ## Logic-Based AI
-Working with [Dr. Selmer Bringsjord](https://homepages.rpi.edu/~brings/) and others in the [RAIR Lab](https://rair.cogsci.rpi.edu/) to design
-and implement artificial intelligent agents whose behavior is verifiable
-via chains of inference. More details coming soon...
+Working with [Dr. Selmer Bringsjord](https://homepages.rpi.edu/~brings/) and others in the [RAIR Lab](https://rair.cogsci.rpi.edu/) to
+design and implement artificial intelligent agents using computational logic. I'm particularly interested in:
+- Explainability through verifiable chains of inference
+- Defeasible reasoning under uncertainty
+- Reasoning about agents and their cognitive states
+- Automated planning under ethical constraints
+
 
 ## Symbolic Methods for Cryptography
-Worked with [Dr. Andrew Marshall](https://www.marshallandrew.net/) under an ONR grant in collaboration with University at Albany, Clarkson University, University of Texas at Dallas, and the Naval Research lab in order to automatically generated and verify cryptographic algorithms using symbolic (as opposed to computational) methods.
+Working with [Dr. Andrew Marshall](https://www.marshallandrew.net/) and others in applying term reasoning within computational logic
+towards cryptography. This collaboration was previously funded under an ONR grant. We are interested in applying techniques such
+as unification and term rewriting to the following areas:
+- Block Ciphers
+- Secure Multi-party Computation
+- Authentication
+- Commitment Schemes
 
-During that time period I built a free algebra library, rewrite library, parts of the crypto tool, and dabbled in Unification algorithms. You can check them out on [Github](https://github.com/symcollab/CryptoSolve).
+Together we built [CryptoSolve](https://github.com/symcollab/CryptoSolve), a symbolic cryptographic analysis tool, and made it publically available on GitHub. I wrote the term algebra and rewrite libraries, and contributed to the mode of operation library and some unification algorithms.
+I still help maintain the codebase, as well as contribute to our current work on Garbled Circuits. We previously presented our work
+at  [UNIF 2020](https://www3.risc.jku.at/publications/download/risc_6129/proceedings-UNIF2020.pdf#page=58) ([slides](/files/research/UNIF2020-Slides.pdf)), FROCOS 2021, and soon at WRLA 2022.
 
-Currently, I am an external collaborator who mainly helps maintain the codebase I started as well as contribute to our current work with Garbled Circuits. We presented our work at [UNIF 2020](https://www3.risc.jku.at/publications/download/risc_6129/proceedings-UNIF2020.pdf#page=58) ([slides](/files/research/UNIF2020-Slides.pdf)), FROCOS 2021, and have a couple other papers in the works.
+I've written a few [notes](termreasoning) about term reasoning.
 
-Through my collaborators, I've learned about term reasoning and algebras. [[Notes]](termreasoning)
+Collaborators:
+- NRL: Catherine Meadows
+- UMW: [Andrew Marshall]((https://www.marshallandrew.net/)), Veena Ravishankar
+- UT Dallas: Serdar Erbatur
+- SUNY Albany: [Paliath Narendran](https://www.cs.albany.edu/~dran/), Wei Du 
+- Clarkson University: [Christopher Lynch](https://people.clarkson.edu/~clynch/), Hai Lin
+
+
+
 ## Reinforcement Learning
 
-**Deep Reinforcement Learning:** With [Dr. Ron Zacharski](http://zacharski.org/) I focused more on a particular instance of Reinforcement Learning where deep neural networks are used. During this time, I built out a Reinforcement Learning library written in PyTorch. This library helps me have a test bed for trying out different algorithms and attempts to create my own.
+**Deep Reinforcement Learning:** With [Dr. Ron Zacharski](http://zacharski.org/) I focused on how to make deep reinforcement learning
+algorithms more sample efficient. That is, how can we make it so that the RL agent learns more from every observation to make it so that
+we achieve our goal faster. With that goal in mind, I built out a Reinforcement Learning library written in PyTorch to help benchmark
+my ideas. 
 
-One particular problem I'm fascinated by is how to make Reinforcement Learning algoirthms more sample efficient. This means, how can we make it so that it learns more from every observation or make it so that we can achieve our goal quicker?
 
 *Links:*
 
 |                                                              |                                                              |                                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [RL Library on Github](https://github.com/brandon-rozek/rltorch) | [Interactive Demonstrations Library](https://github.com/brandon-rozek/gyminteract) | [Honors Thesis](/files/research/honorsthesis.pdf) ([Eagle Scholar Entry](https://scholar.umw.edu/student_research/305/)) |
-| [Honors Defense](/files/research/ExpeditedLearningInteractiveDemo.pptx) | [QEP Algorithm Slides](/files/research/QEP.pptx)             | [More...](deepreinforcementlearning)                         |
+| [RL Library on Github](https://github.com/brandon-rozek/rltorch) | [Interactive Demonstrations Library](https://github.com/brandon-rozek/gyminteract) | [Undergraduate Honors Thesis](/files/research/honorsthesis.pdf) ([Eagle Scholar Entry](https://scholar.umw.edu/student_research/305/)) |
+| [Undergraduate Honors Defense](/files/research/ExpeditedLearningInteractiveDemo.pptx) | [QEP Algorithm Slides](/files/research/QEP.pptx)             | [More...](deepreinforcementlearning)                         |
 
 
 
 **Reinforcement Learning:** Studied the fundamentals of reinforcement learning with [Dr. Stephen Davies](http://stephendavies.org/). We went over the fundamentals such as value functions, policy functions, how we can describe our environment as a markov decision processes, etc.
 
-[Notes and Other Goodies](reinforcementlearning)
-
-[Github Code](https://github.com/brandon-rozek/ReinforcementLearning)
+[Notes and Other Goodies](reinforcementlearning) / [Github Code](https://github.com/brandon-rozek/ReinforcementLearning)
 
 
 

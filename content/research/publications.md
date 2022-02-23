@@ -6,12 +6,14 @@ showthedate: false
 
 ## Papers
 
-(Under Consideration) D Chichester, W Du, R Kauffman, H Lin, C Lynch, A Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, **B Rozek**. "CryptoSolve: A Tool for the Analysis of Cryptographic Modes of Operation",  International Workshop on Rewriting Logic and its Applications, 2022.
+(Under Consideration) **Brandon Rozek**, Michael Giancola, Selmer Bringsjord, Naveen Sundar Govindarajulu. "A Representation-and-Reasoning Framework for Testimony-Infused Automated Adjudicative Dynamic Multi-agent Reasoning & Decision-making", International Conference on Principles of Knowledge Representation and Reasoning, 2022.
 
 [Hai Lin, Christopher Lynch, Andrew M. Marshall, Catherine A. Meadows, Paliath Narendran, Veena Ravishankar, **Brandon Rozek**. "Algorithmic Problems in the Symbolic Approach to the Verification of Automatically Synthesized Cryptosystems", International Symposium on Frontiers of Combining Systems, 2021.](https://link.springer.com/chapter/10.1007/978-3-030-86205-3_14)
 
 
 ## Workshops
+
+D Chichester, W Du, R Kauffman, H Lin, C Lynch, A Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, **B Rozek**. "CryptoSolve: Towards a Tool for the Symbolic Analysis of Cryptographic Algorithms",  International Workshop on Rewriting Logic and its Applications, 2022.
 
 [Andrew M Marshall, Catherine A Meadows, Paliath Narendran, Veena Ravishankar, **Brandon Rozek**. "Algorithmic Problems in Synthesized Cryptosystems", International Workshop on Unification, 2020.](https://www3.risc.jku.at/publications/download/risc_6129/proceedings-UNIF2020.pdf#page=58)
 

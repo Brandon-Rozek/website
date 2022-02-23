@@ -14,9 +14,8 @@ enableGitInfo = true
     favicon = "favicon.ico"
     description = "Software Developer, Researcher, and Linux Enthusiast."
     publicationYear = "2021"
-    identities = [
-        "mailto:hello@brandonrozek.com"
-    ]
+    email = "hello@brandonrozek.com"
+    identities = ["https://github.com/brandon-rozek", "mailto:hello@brandonrozek.com"]
 
 [outputs]
     section = ["JSON", "HTML", "RSS"]

@@ -15,4 +15,6 @@ Below are links to the recitations I have given:
 
 [Recitation 5](recitation05.pdf)
 
-[Recitation 6: Exam Review](recitation06)
+[Recitation 6](recitation06.pdf)
+
+[Recitation 7: Exam Review](recitation06)
