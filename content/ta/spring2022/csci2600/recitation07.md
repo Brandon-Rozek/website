@@ -1,5 +1,5 @@
 ---
-title: "PSoft Recitation 6: Exam Review"
+title: "PSoft Recitation 7: Exam Review"
 date: 2022-02-22T21:28:34-04:00
 draft: false
 ---
