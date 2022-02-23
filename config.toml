@@ -64,21 +64,22 @@ enableGitInfo = true
     weight = 50
 
 
-[[menu.main]]
+[[menu.profile]]
     identifier = "github"
     name = "GitHub"
     pre = "<i class='fab fa-github fa-lg'></i>"
     url = "https://github.com/brandon-rozek"
     weight = 80
+    me = true
 
-[[menu.main]]
+[[menu.profile]]
     identifier = "scholar"
     name = "Google Scholar"
     pre = "<i class='fas fa-graduation-cap'></i>"
     url = "https://scholar.google.com/citations?user=JrgtnwgAAAAJ&hl=en&oi=ao"
     weight = 85
 
-[[menu.main]]
+[[menu.profile]]
     identifier = "email"
     name = "Email"
     pre = "<i class='fa fa-envelope fa-lg'></i>"
