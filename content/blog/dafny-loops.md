@@ -33,10 +33,15 @@ In order to solve this, we need to concept of a loop invariant. A loop invariant
 $$
 \neg Loop\_Condition \wedge Loop\_Invariants \implies Post\_Condition
 $$
-If this is not the case, then Dafny will likely complain to you as it has no clue what's going on. Here are the invariants you need to add in order for it to verify:
+If this is not the case, then Dafny will likely complain to you as it has no clue what's going on. I generally always first add bounds to the iterator and other variables.
 
 ```csharp
 invariant 0 <= i <= n
+```
+
+Here are the other invariants you'll need in order for the postcondition in the example to verify:
+
+```csharp
 invariant forall k :: 0 <= k < i ==> a[k] >= 0
 invariant forall k :: 0 <= k < i ==> a[k] == k
 invariant forall j, k :: 0 <= j <= k < i ==> a[j] <= a[k]
