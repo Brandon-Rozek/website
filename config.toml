@@ -13,7 +13,6 @@ enableGitInfo = true
     avatar = "avatar.jpg"
     favicon = "favicon.ico"
     description = "Software Developer, Researcher, and Linux Enthusiast."
-    publicationYear = "2021"
     email = "hello@brandonrozek.com"
     identities = ["https://github.com/brandon-rozek", "mailto:hello@brandonrozek.com"]
 
