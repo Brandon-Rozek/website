@@ -18,3 +18,5 @@ Below are links to the recitations I have given:
 [Recitation 6](recitation06.pdf)
 
 [Recitation 7: Exam Review](recitation07)
+
+[Recitation 8](recitation08.pdf)
