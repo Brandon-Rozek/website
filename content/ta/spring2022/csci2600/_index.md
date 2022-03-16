@@ -20,3 +20,5 @@ Below are links to the recitations I have given:
 [Recitation 7: Exam Review](recitation07)
 
 [Recitation 8](recitation08.pdf)
+
+[Recitation 9](recitation09.pdf)
