@@ -30,3 +30,6 @@ The following are recitations I have prepared for a weekly one hour session:
 
 [Recitation 9](recitation09.pdf)
 - Topics: Overloading/Overriding, Dispatching, Polymorphism, SOLID, Subclassing, True Subtypes, Liskov Substitution Principle
+
+[Recitation 10](recitation10.pdf)
+- Topics: Design Patterns, Creational Patterns, Structural Patterns, Behavioral Patterns, Builder, Factory, Singleton, Adapter, Decorator, Flyweight, Mediator, Observer, Visitor
