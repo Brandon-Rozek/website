@@ -33,3 +33,6 @@ The following are recitations I have prepared for a weekly one hour session:
 
 [Recitation 10](recitation10.pdf)
 - Topics: Design Patterns, Creational Patterns, Structural Patterns, Behavioral Patterns, Builder, Factory, Singleton, Adapter, Decorator, Flyweight, Mediator, Observer, Visitor
+
+[Recitation 11: Exam Review](recitation11)
+
