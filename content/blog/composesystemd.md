@@ -14,8 +14,8 @@ To compensate, I wrote a small systemd script and enabled it on startup.
 ```ini
 [Unit]
 Description=Docker Compose Application Service
-Requires=docker.service
-After=docker.service
+Requires=network.target docker.service
+After=network.target docker.service
 
 [Service]
 Type=oneshot
@@ -23,7 +23,7 @@ User=brandonrozek
 Group=brandonrozek
 RemainAfterExit=yes
 WorkingDirectory=/home/brandonrozek/docker/
-ExecStart=/usr/bin/docker-compose up -d
+ExecStart=/usr/bin/docker-compose up -d --force-recreate
 ExecStop=/usr/bin/docker-compose down
 TimeoutStartSec=0
 
