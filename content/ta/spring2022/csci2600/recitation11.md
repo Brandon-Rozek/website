@@ -89,7 +89,7 @@ class Cow extends Mammal {}
 class Horse extends Mammal {}
 class ToyHorse extends Horse {}
 
-
+Mammal m = new Mammal();
 Object o = new Object();
 Horse h = new Horse();
 ToyHorse t = new ToyHorse();
