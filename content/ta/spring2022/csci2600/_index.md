@@ -37,3 +37,8 @@ The following are recitations I have prepared for a weekly one hour session:
 [Recitation 11: Exam Review](recitation11)
 
 Recitation 12: Exam Review
+
+[Recitation 13](recitation13.pdf)
+- Topics: Technical Debt, Antipatterns, Code Smells, Refactoring,
+Extract Method, Move Method, Replace Temp with Query, State Design Pattern,
+Usability, Fitt's Law, Prototyping, User Testing
