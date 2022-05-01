@@ -14,7 +14,11 @@ enableGitInfo = true
     favicon = "favicon.ico"
     description = "Software Developer, Researcher, and Linux Enthusiast."
     email = "hello@brandonrozek.com"
-    identities = ["https://github.com/brandon-rozek", "mailto:hello@brandonrozek.com"]
+    identities = [
+        "https://github.com/brandon-rozek",
+        "mailto:hello@brandonrozek.com",
+        "https://fosstodon.org/@brozek"
+    ]
 
 [outputs]
     section = ["JSON", "HTML", "RSS"]
@@ -79,8 +83,15 @@ enableGitInfo = true
     weight = 85
 
 [[menu.profile]]
+    identifier = "mastodon"
+    name = "Mastodon"
+    pre = "<i class='fab fa-mastodon'></i>"
+    url = "https://fosstodon.org/@brozek"
+    weight = 90
+
+[[menu.profile]]
     identifier = "email"
     name = "Email"
     pre = "<i class='fa fa-envelope fa-lg'></i>"
     url = "mailto:hello@brandonrozek.com"
-    weight = 90
+    weight = 95
