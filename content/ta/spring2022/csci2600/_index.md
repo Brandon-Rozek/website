@@ -42,3 +42,6 @@ Recitation 12: Exam Review
 - Topics: Technical Debt, Antipatterns, Code Smells, Refactoring,
 Extract Method, Move Method, Replace Temp with Query, State Design Pattern,
 Usability, Fitt's Law, Prototyping, User Testing
+
+[Recitation 14: Final Thoughts and Final Exam Review](recitation14.pdf)
+
