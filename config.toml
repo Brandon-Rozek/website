@@ -27,16 +27,9 @@ enableGitInfo = true
 [[menu.main]]
     identifier = "blog"
     name = "Blog" #If display text link, cancel comment out
-    pre = "<i class='fa fa-book-open fa-lg'></i>" #Choose your favorite font from Font Awesome
+    pre = "<i class='fas fa-pen-alt'></i>" #Choose your favorite font from Font Awesome
     url = "/blog/"
     weight = 10
-
-[[menu.main]]
-    identifier = "community"
-    name = "Community"
-    pre = "<i class='fa fa-user-friends fa-lg'></i>"
-    url = "/community/"
-    weight = 30
 
 [[menu.main]]
     identifier = "research"
@@ -46,25 +39,34 @@ enableGitInfo = true
     weight = 20
 
 [[menu.main]]
+    identifier = "ta"
+    name = "TA"
+    pre = "<i class='fa fa-chalkboard-teacher fa-lg'></i>"
+    url = "/ta/"
+    weight = 30
+
+[[menu.main]]
+    identifier = "community"
+    name = "Community"
+    pre = "<i class='fa fa-user-friends fa-lg'></i>"
+    url = "/community/"
+    weight = 40
+
+[[menu.main]]
     identifier = "Presentations"
     name = "Presentations"
-    pre = "<i class='fa fa-comment fa-lg'></i>"
+    pre = "<i class='fas fa-bullhorn'></i>"
     url = "/presentations/"
-    weight = 40
+    weight = 50
 
 [[menu.main]]
     identifier = "notes"
     name = "Notes"
-    pre = "<i class='fa fa-book-open fa-lg'></i>"
+    pre = "<i class='fas fa-sticky-note'></i>"
     url = "/notes/"
     weight = 60
 
-[[menu.main]]
-    identifier = "ta"
-    name = "TA"
-    pre = "<i class='fa fa-chalkboard-teacher fa-lg'></i>"    
-    url = "/ta/"
-    weight = 50
+
 
 
 [[menu.profile]]
