@@ -1,3 +1,4 @@
 public/
 resources/
 static/data/*.json
+__pycache__/
