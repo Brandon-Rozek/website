@@ -68,28 +68,27 @@ enableGitInfo = true
 
 
 
+[[menu.profile]]
+    identifier = "mastodon"
+    name = "Mastodon"
+    pre = "<i class='fab fa-mastodon'></i>"
+    url = "https://fosstodon.org/@brozek"
+    weight = 80
 
 [[menu.profile]]
     identifier = "github"
     name = "GitHub"
     pre = "<i class='fab fa-github fa-lg'></i>"
     url = "https://github.com/brandon-rozek"
-    weight = 80
-    me = true
+    weight = 85
 
 [[menu.profile]]
     identifier = "scholar"
     name = "Google Scholar"
     pre = "<i class='fas fa-graduation-cap'></i>"
     url = "https://scholar.google.com/citations?user=JrgtnwgAAAAJ&hl=en&oi=ao"
-    weight = 85
-
-[[menu.profile]]
-    identifier = "mastodon"
-    name = "Mastodon"
-    pre = "<i class='fab fa-mastodon'></i>"
-    url = "https://fosstodon.org/@brozek"
     weight = 90
+
 
 [[menu.profile]]
     identifier = "email"
