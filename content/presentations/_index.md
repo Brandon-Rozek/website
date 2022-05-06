@@ -1,5 +1,5 @@
 ---
 title: Presentations
 type: "feed"
-description: This is a page of presentations I was a part of.
+description: Brandon Rozek is a Computer Scientist who occasionally presents his work.
 ---
