@@ -10,6 +10,7 @@ from http.client import HTTPResponse
 from pathlib import Path
 from typing import Any, Dict, Optional
 import json
+import math
 import sys
 
 TOOT_CONTENT_LOCATION = "content/toots"
@@ -17,43 +18,58 @@ SERVER="https://fosstodon.org"
 # Quick way to find user id: https://prouser123.me/mastodon-userid-lookup/
 MUID=108219415927856966
 # Server default (when < 0) is 20
-# max allowed is 40
-RETRIEVE_NUM_TOOTS=40
+RETRIEVE_NUM_TOOTS=1000
+MAX_TOOTS_PER_QUERY=40 # Cannot change (server default)
+MAX_TOOT_ID=-1
 
 
 def retrieve_toots_from_server():
     """
     Grabs toots from Mastodon server
     """
-    # Grab toots from Mastodon
-    limit_param = "?limit=" + str(RETRIEVE_NUM_TOOTS) \
-        if RETRIEVE_NUM_TOOTS > 0 else ""
-    url = SERVER + "/api/v1/accounts/" + str(MUID) + "/statuses" + limit_param
-    response: Optional[HTTPResponse] = None
+    global MAX_TOOT_ID
+    server_data = []
 
-    try:
-        response = request.urlopen(url)
-    except Exception:
-        print("Unable to grab toots from Mastodon.")
+    for _ in range(math.ceil(RETRIEVE_NUM_TOOTS // 40)):
+        # Grab toots from Mastodon
+        limit_param = "?limit=" + str(RETRIEVE_NUM_TOOTS) \
+            if RETRIEVE_NUM_TOOTS > 0 else "?"
+        max_id = "&max_id=" + str(MAX_TOOT_ID) \
+            if MAX_TOOT_ID > 0 else ""
+        url = SERVER + "/api/v1/accounts/" + str(MUID) + "/statuses" + limit_param + max_id
+        response: Optional[HTTPResponse] = None
 
-    if response is None:
-        sys.exit(-1)
+        try:
+            response = request.urlopen(url)
+        except Exception:
+            print("Unable to grab toots from Mastodon.")
 
-    # Parse server response
-    server_data: Optional[list] = None
-    try:
-        server_data = json.loads(response.read())
-    except Exception:
-        print("Malformed JSON response from server.")
+        if response is None:
+            sys.exit(-1)
 
-    if server_data is None:
-        sys.exit(-1)
+        # Parse server response
+        server_data_part: Optional[list] = None
+        try:
+            server_data_part = json.loads(response.read())
+        except Exception:
+            print("Malformed JSON response from server.")
 
-    if not isinstance(server_data, list):
-        print("Unexpected JSON response, should be of form list.")
-        sys.exit(-1)
+        if server_data is None:
+            sys.exit(-1)
 
-    print(f"Successfully grabbed {len(server_data)} toots from server")
+        if not isinstance(server_data_part, list):
+            print("Unexpected JSON response, should be of form list.")
+            sys.exit(-1)
+
+        # No more to retrieve
+        if len(server_data_part) == 0:
+            break
+
+        print(f"Retrieved {len(server_data_part)} toots from server")
+        server_data.extend(server_data_part)
+        MAX_TOOT_ID = int(min(server_data_part, key=lambda p: int(p['id']))['id'])
+
+    print(f"Successfully grabbed a total of {len(server_data)} toots from server")
     return server_data
 
 
@@ -172,12 +188,12 @@ for stoot in server_toots:
         saved_tootdata = read_toot(stoot_id)
         if saved_tootdata is None:
             print("Unable to read saved toot id", stoot_id)
-        
+
         # Only update if toot has changed
         elif saved_tootdata != stoot:
             print("Updating toot id", stoot_id)
             write_toot(stoot)
-    
+
     # New toot found
     else:
         print("Creating toot id", stoot_id)
