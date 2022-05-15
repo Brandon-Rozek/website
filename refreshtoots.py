@@ -6,7 +6,6 @@ copy of Mastodon toots
 
 from urllib import request
 from http.client import HTTPResponse
-from pathlib import Path
 from typing import Optional
 import json
 import os
@@ -25,7 +24,7 @@ toots_data = []
 # Read in former toot data
 has_save = False
 try:
-    with open(TOOT_SAVE_FILE) as f:
+    with open(TOOT_SAVE_FILE, "r", encoding="UTF-8") as f:
         toots_data = json.load(f)
         has_save = True
         print("Successfully read saved toot data")
@@ -101,7 +100,7 @@ except:
 
 # Write toots_data to the disk
 try:
-    with open(TOOT_SAVE_FILE, "w") as f:
+    with open(TOOT_SAVE_FILE, "w", encoding="UTF-8") as f:
         json.dump(toots_data, f)
 except:
     print("Unable to write to save location.")
