@@ -120,6 +120,18 @@ def reformat_toot(toot_json):
     toot_date = toot_json['created_at']
     del toot_json['created_at']
     toot_json['date'] = toot_date
+    # Strip out highly dynamic account information
+    del toot_json['account']['locked']
+    del toot_json['account']['bot']
+    del toot_json['account']['discoverable']
+    del toot_json['account']['group']
+    del toot_json['account']['created_at']
+    del toot_json['account']['note']
+    del toot_json['account']['followers_count']
+    del toot_json['account']['following_count']
+    del toot_json['account']['statuses_count']
+    del toot_json['account']['last_status_at']
+
 
 def create_toot(toot_json):
     """
