@@ -2,6 +2,8 @@
 Title: Publications
 Descriptions: Papers, Presentations, and Grants obtained
 showthedate: false
+aliases:
+ - /research/publications
 ---
 
 ## Papers
