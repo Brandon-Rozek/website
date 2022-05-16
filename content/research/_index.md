@@ -3,7 +3,7 @@ Title: Research
 Description: A list of my research Projects
 ---
 
-**[Quick List of Publications](publications)**
+**[Quick List of Publications](/publications)**
 
 **Broad Research Interests:** Automated Reasoning, Artificial Intelligence, Formal Methods
 
@@ -15,6 +15,7 @@ design and implement artificial intelligent agents using computational logic. I'
 - Reasoning about agents and their cognitive states
 - Automated planning under ethical constraints
 
+[Notes on Automated Theorem Proving](atp)
 
 ## Symbolic Methods for Cryptography
 Working with [Dr. Andrew Marshall](https://www.marshallandrew.net/) and others in applying term reasoning within computational logic
