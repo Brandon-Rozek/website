@@ -1,6 +1,7 @@
 ---
 Title: Transcript
 Description: Page listing the courses I've taken
+hidden: true
 ---
 
 # Transcript
