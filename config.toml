@@ -59,13 +59,6 @@ enableGitInfo = true
     url = "/presentations/"
     weight = 50
 
-[[menu.main]]
-    identifier = "notes"
-    name = "Notes"
-    pre = "<i class='fas fa-sticky-note'></i>"
-    url = "/notes/"
-    weight = 60
-
 
 
 [[menu.profile]]
