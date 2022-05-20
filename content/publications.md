@@ -8,7 +8,7 @@ aliases:
 
 ## Papers
 
-(Under Consideration) **Brandon Rozek**, Michael Giancola, Selmer Bringsjord, Naveen Sundar Govindarajulu. "A Representation-and-Reasoning Framework for Testimony-Infused Automated Adjudicative Dynamic Multi-agent Reasoning & Decision-making", International Conference on Principles of Knowledge Representation and Reasoning, 2022.
+**Brandon Rozek**, Michael Giancola, Selmer Bringsjord, Naveen Sundar Govindarajulu. "A Representation-and-Reasoning Framework for Testimony-Infused Automated Adjudicative Dynamic Multi-agent Reasoning & Decision-making", International Conference on Robot Ethics and Standards, 2022.
 
 [Hai Lin, Christopher Lynch, Andrew M. Marshall, Catherine A. Meadows, Paliath Narendran, Veena Ravishankar, **Brandon Rozek**. "Algorithmic Problems in the Symbolic Approach to the Verification of Automatically Synthesized Cryptosystems", International Symposium on Frontiers of Combining Systems, 2021.](https://link.springer.com/chapter/10.1007/978-3-030-86205-3_14)
 
