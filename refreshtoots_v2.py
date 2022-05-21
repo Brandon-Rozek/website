@@ -30,7 +30,7 @@ def retrieve_toots_from_server():
     global MAX_TOOT_ID
     server_data = []
 
-    for _ in range(math.ceil(RETRIEVE_NUM_TOOTS // 40)):
+    for _ in range(math.ceil(RETRIEVE_NUM_TOOTS // MAX_TOOTS_PER_QUERY)):
         # Grab toots from Mastodon
         limit_param = "?limit=" + str(RETRIEVE_NUM_TOOTS) \
             if RETRIEVE_NUM_TOOTS > 0 else "?"
