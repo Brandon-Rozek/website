@@ -2,7 +2,7 @@
 title: "Hiding Section From Listing in Hugo"
 date: 2022-05-19T22:43:04-04:00
 draft: false
-tags: []
+tags: ["Hugo"]
 math: false
 ---
 

@@ -2,7 +2,7 @@
 title: "Why I PESOS From Mastodon"
 date: 2022-05-15T18:36:16-04:00
 draft: false
-tags: []
+tags: ["Mastodon"]
 math: false
 ---
 

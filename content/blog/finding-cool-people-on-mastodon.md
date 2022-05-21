@@ -2,7 +2,7 @@
 title: "Finding Cool People on Mastodon"
 date: 2022-05-15T20:39:35-04:00
 draft: false
-tags: []
+tags: ["Mastodon"]
 math: false
 ---
 
