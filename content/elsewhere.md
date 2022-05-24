@@ -9,6 +9,7 @@ description: Other places you can find Brandon at
 - [IndieWeb](https://indieweb.org/User:Brandonrozek.com)
 - [Keybase](https://keybase.io/brozek)
 - [NPM](https://www.npmjs.com/~brandonrozek)
+- [OpenStreetMap](https://www.openstreetmap.org/user/Brandon%20Rozek)
 - [ORCiD](https://orcid.org/0000-0002-4537-559X)
 - [PyPi](https://pypi.org/user/brandonrozek/)
 - [RAIR Lab](https://rair.cogsci.rpi.edu/members/graduate-students/brandon-rozek/)
