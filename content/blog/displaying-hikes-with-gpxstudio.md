@@ -32,11 +32,11 @@ Popular applications such as AllTrails and Strava allow you to export your activ
 ## Grabbing an embed
 
 To create the embed we will use a project called [gpx.studio](https://gpx.studio). It's a great [open source](https://github.com/gpxstudio/gpxstudio.github.io) project created by vcoppe on GitHub and built on top of [Mapbox](https://www.mapbox.com/) and [OpenStreetMap](https://www.openstreetmap.org/). If you end up using this application, consider providing a [donation](https://ko-fi.com/gpxstudio) to their developer to cover for some of the hosting and API costs.
-Our next step is to upload the GPX file we recorded from our exercise onto our website and configure our webserver so that gpx.studio can access the file. I store my hikes in `data/hikes` and created the following Nginx rule:
+Our next step is to upload the GPX file we recorded from our exercise onto our website and configure our webserver so that gpx.studio can access the file. I store my hikes in `data/tracks` and created the following Nginx rule:
 
 ```nginx
 # Allow any application access
-location /data/hikes {
+location /data/tracks {
   add_header Access-Control-Allow-Origin "*";
 }
 ```
@@ -45,12 +45,12 @@ Next, go to the [gpx.studio about page](https://gpx.studio/about.html#embed) to 
 
 ```html
 <iframe 
-  src="https://gpx.studio/?state=%7B%22urls%22:%5B%22https%3A%2F%2Fbrandonrozek.com%2Fdata%2Fhikes%2F2022-05-18-Burden-Pond-Preserve.gpx%22%5D%7D&embed&distance"
+  src="https://gpx.studio/?state=%7B%22urls%22:%5B%22https%3A%2F%2Fbrandonrozek.com%2Fdata%2Ftracks%2F2022-05-18-Burden-Pond-Preserve.gpx%22%5D%7D&embed&distance"
   width="100%"
   height="500"
   frameborder="0"
   allowfullscreen>
-   	<p><a href="https://gpx.studio/?state=%7B%22urls%22:%5B%22https%3A%2F%2Fbrandonrozek.com%2Fdata%2Fhikes%2F2022-05-18-Burden-Pond-Preserve.gpx%22%5D%7D"></a></p>
+   	<p><a href="https://gpx.studio/?state=%7B%22urls%22:%5B%22https%3A%2F%2Fbrandonrozek.com%2Fdata%2Ftracks%2F2022-05-18-Burden-Pond-Preserve.gpx%22%5D%7D"></a></p>
 </iframe>
 ```
 
@@ -64,15 +64,15 @@ So what's the structure of the URLs? If we perform an URL decode on the IFrame U
 
 ```
 https://gpx.studio/?
-	state={"urls":["https://brandonrozek.com/data/hikes/2022-05-18-Burden-Pond-Preserve.gpx"]}
+	state={"urls":["https://brandonrozek.com/data/tracks/2022-05-18-Burden-Pond-Preserve.gpx"]}
 	&embed&distance
 ```
 
-We can then replace the URL in the array with the one that you'll use for your website. Since I'm sticking all my GPX files under https://brandonrozek.com/data/hikes, I only have to pass the filename into the shortcode which is stored under `layouts/shortcodes/displayGPX.html`.
+We can then replace the URL in the array with the one that you'll use for your website. Since I'm sticking all my GPX files under https://brandonrozek.com/data/tracks, I only have to pass the filename into the shortcode which is stored under `layouts/shortcodes/displayGPX.html`.
 
 ```html
 <!-- Grab the filename and append it to the base url -->
-{{ $url := printf "%sdata/hikes/%s" .Site.BaseURL (.Get 0) }}
+{{ $url := printf "%sdata/tracks/%s" .Site.BaseURL (.Get 0) }}
 <!-- Make the state={...} URL friendly -->
 {{ $url_state := querify "state" (printf "{\"urls\":[\"%s\"]}" $url) }}
 <!-- Create the Iframe and A tag URLs -->
