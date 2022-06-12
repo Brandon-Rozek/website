@@ -15,6 +15,7 @@ purposes.
 ## Courses
 - [Probability and Statistical Inference I](stat381)
 - [Real Analysis Quick Facts](realanalysis)
+- [Groups in Abstract Algebra](groups-abstract-algebra)
 - [Some Abstract 2 Definitions](abstract2def)
 - [Handy Facts about Quadratic Congruences](quadraticcongruences)
 - [Bayesian Statistics](bayesianstatistics)
