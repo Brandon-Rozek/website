@@ -35,13 +35,13 @@ If you've already created an account, but want to move to a different homeserver
 
 When you first create an account on Mastodon you will have an interface similar to this following.
 
-![](/files/images/202205151932.png)
+![](/files/images/blog/202205151932.png)
 
 One thing you'll notice immediately is that it's very limited. You can only view one feed at a time, and you can't set an option to see your feed and multiple tags in one place. This is where the advanced interface comes in. Go to Preferences -> Appearence -> Check "Enable Advanced Web Interface"
 
 This will then enable something similar to below:
 
-![](/files/images/202205151934.png)
+![](/files/images/blog/202205151934.png)
 
 Note the ordering of the feeds I have pinned:
 

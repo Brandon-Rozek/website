@@ -38,4 +38,4 @@ INSERT INTO Users (firstName, lastName) VALUES ("Sue", "Bennett");
 
 Now let's open it up using `litecli` and show the syntax highlighting.
 
-![image-20200229185045757](/files/images/20200229185045757.png)
+![image-20200229185045757](/files/images/blog/20200229185045757.png)

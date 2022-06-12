@@ -17,7 +17,7 @@ To install Ventoy onto a flash drive, follow the [Get Started](https://www.vento
 - Tails
 - UBCD
 
-![](/files/images/ventoy.png)
+![](/files/images/blog/ventoy.png)
 
 Example screenshot from their website.
 

@@ -21,4 +21,4 @@ A quick tip that I recently learned is that the symbols in a LaTex list item is 
 \end{enumerate}
 ```
 
-![](/files/images/202201162357.svg)
+![](/files/images/blog/202201162357.svg)

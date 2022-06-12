@@ -50,7 +50,4 @@ plt.show()
 
 Given the JSON from the top of the post it'll produce:
 
-![image-20220103000837137](/files/images/20220103000837137.png)
-
-
-
+![image-20220103000837137](/files/images/blog/20220103000837137.png)

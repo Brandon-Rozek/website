@@ -109,7 +109,7 @@ plt.xlabel(r"$\lambda$")
 plt.show()
 ```
 
-![](/files/images/2020032901.png)
+![](/files/images/blog/2020032901.png)
 
 Now let's look at the distribution of the number of tosses for each player
 
@@ -127,7 +127,7 @@ plt.xlabel("Number of Tosses")
 plt.title("Poisson Distributions")
 ```
 
-![](/files/images/2020032902.png)
+![](/files/images/blog/2020032902.png)
 
 ## Conclusion
 

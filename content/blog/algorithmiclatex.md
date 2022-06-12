@@ -23,4 +23,4 @@ There's a great package in LaTex called [`algorithm`](https://ctan.org/pkg/algor
 \end{algorithm}
 ```
 
-![image-20200514225618784](/files/images/20200514225618784.png)
+![image-20200514225618784](/files/images/blog/20200514225618784.png)

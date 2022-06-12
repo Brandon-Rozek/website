@@ -54,5 +54,5 @@ Here's what the command means: "Run `pandoc` on standalone mode converting `git.
 
 To see the results run `man ./git.1`
 
-![1573183066061](/files/images/1573183066061.png)
+![1573183066061](/files/images/blog/1573183066061.png)
 

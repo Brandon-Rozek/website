@@ -43,4 +43,4 @@ virsh start Lubuntu
 virt-viewer Lubuntu
 ```
 
-![1578887790276](/files/images/1578887790276.png)
+![1578887790276](/files/images/blog/1578887790276.png)

@@ -11,7 +11,7 @@ Netboot.xyz is commonly used for PXE booting, but in this post I'll describe usi
 
 Download the [Netboot ISO](https://boot.netboot.xyz/ipxe/netboot.xyz.iso) and [load it onto a flash drive](/blog/ddforiso/). Then boot a computer from the flash drive and you should see something similar to this animation from their website:
 
-![](/files/images/netboot.xyz.gif)
+![](/files/images/blog/netboot.xyz.gif)
 
 Another benefit of this approach over Ventoy is that we don't have to manually update the flash drive. It always comes fresh with the ISOs available on their website.
 

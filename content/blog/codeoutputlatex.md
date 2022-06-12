@@ -78,7 +78,7 @@ print(factorial(5))
 \end{minipage}
 ```
 
- ![](/files/images/202201292013.svg)
+ ![](/files/images/blog/202201292013.svg)
 
 Below is all these steps combined into a compile-able LaTex file.
 

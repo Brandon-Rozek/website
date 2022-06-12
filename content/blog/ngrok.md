@@ -12,7 +12,7 @@ The easiest way I've known for the past few years to allow another person to acc
 
 You'll need to sign up for an account first. I was then going to write about some of the following steps, but `ngrok` has a really nice quad chart when you login
 
-![steps](/files/images/0932485094325.png)
+![steps](/files/images/blog/0932485094325.png)
 
 Just note that in step (3) you will actually have a random sequence of characters after `authtoken`. 
 

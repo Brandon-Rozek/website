@@ -24,4 +24,4 @@ print(c[1])
 
 And here's a screenshot of my terminal session when I called `bat`
 
-![image-20200201063050726](/files/images/20200201063050726.png)
+![image-20200201063050726](/files/images/blog/20200201063050726.png)

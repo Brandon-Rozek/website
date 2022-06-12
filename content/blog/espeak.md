@@ -15,7 +15,7 @@ sudo apt install espeak
 
 It's as simple as running it and typing out what you want to say
 
-![](/files/images/20200301113507984.png)
+![](/files/images/blog/20200301113507984.png)
 
 {{< addaudio "/files/audio/20200301113507984.mp3" >}}
 
@@ -23,7 +23,7 @@ It's as simple as running it and typing out what you want to say
 
 Playing around with different voices and I can get something like this:
 
-![](/files/images/20200301115220550.png)
+![](/files/images/blog/20200301115220550.png)
 
 {{< addaudio "/files/audio/20200301115220550.mp3" >}}
 

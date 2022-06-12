@@ -61,4 +61,4 @@ print(greeting())
 \end{lstlisting}
 ```
 
-![image-20200501001231572](/files/images/20200501001231572.png)
+![image-20200501001231572](/files/images/blog/20200501001231572.png)

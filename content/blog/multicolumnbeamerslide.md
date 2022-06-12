@@ -39,4 +39,4 @@ When creating slides in LaTex Beamer, it can be frustrating to not have the easy
 \end{document}
 ```
 
-![](/files/images/202201262338.svg)
+![](/files/images/blog/202201262338.svg)

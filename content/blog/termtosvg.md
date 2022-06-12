@@ -52,4 +52,4 @@ termtosvg -s
 
 Here is an example of an animation I made with this tool:
 
-![](/files/images/202201171031.svg)
+![](/files/images/blog/202201171031.svg)

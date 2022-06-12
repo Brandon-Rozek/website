@@ -11,4 +11,4 @@ With the tool `qrencode`, it is surprisingly simple to create a QR code.
 echo "https://brandonrozek.com" | qrencode -t ansiutf8
 ```
 
-![](/files/images/20200926221423.png)
+![](/files/images/blog/20200926221423.png)

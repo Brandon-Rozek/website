@@ -7,7 +7,7 @@ tags: ["Packaging"]
 
 One way to distribute to different Linux distributions is to compile the source under each of them and distribute it separately.  This can be a pain to manage if you target multiple distributions and multiple versions of those distributions. Instead, let's take a look at AppImage. This allows us to package up our binaries and shared libraries under one file which we can distribute.
 
-![AppImage Architecture Diagram](/files/images/appimage-architecture-overview.svg)
+![AppImage Architecture Diagram](/files/images/blog/appimage-architecture-overview.svg)
 
 Source: https://docs.appimage.org/reference/architecture.html
 
