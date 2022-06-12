@@ -25,6 +25,13 @@ like any other systemd service.
 systemd --user status application
 ```
 
+Note that the current directory information is not known
+to `systemd-run`. Therefore, if you'll need to specify
+absolute as opposed to relative paths. For example:
+```bash
+systemd-run --user okular "$PWD/document.pdf"
+```
+
 Check out Tem Tem's [blog post](https://www.ralismark.xyz/posts/systemd-run) for more on `systemd-run`!
 
 
