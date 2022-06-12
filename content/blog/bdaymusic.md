@@ -9,6 +9,6 @@ I was scrolling around in the [Free Music Archive](https://freemusicarchive.org/
 
 {{< addaudio "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/WFMU/Kevin_Lax/The_New_Birthday_Song_Contest/Kevin_Lax_-_Happy_Birthday.mp3" >}}
 
-Even though the competition is long over (and I don't have much skill) I still decided to record a small entry which I'll title [Happy Birthday](/music/happybday.ogg) licensed under [Creative Commons Attribution v4](https://creativecommons.org/licenses/by/4.0/).
+Even though the competition is long over (and I don't have much skill) I still decided to record a small entry which I'll title [Happy Birthday](/files/music/happybday.ogg) licensed under [Creative Commons Attribution v4](https://creativecommons.org/licenses/by/4.0/).
 
-{{< addaudio "/music/happybday.ogg" >}}
+{{< addaudio "/files/music/happybday.ogg" >}}
