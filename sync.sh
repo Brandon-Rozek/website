@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
 hugo
-rsync -Paz --delete public/ brandonrozek.com:brandonrozek
+rsync -Pazc --exclude=*.bak --delete public/ brandonrozek.com:brandonrozek/
+
