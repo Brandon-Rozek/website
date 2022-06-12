@@ -1,3 +1,6 @@
 [submodule "themes/pulp"]
 	path = themes/pulp
 	url = git@github.com/Brandon-Rozek/pulp.git
+[submodule "static/files/images/tracks"]
+	path = static/files/images/tracks
+	url = git@github.com:Brandon-Rozek/tracks-photos-v1
