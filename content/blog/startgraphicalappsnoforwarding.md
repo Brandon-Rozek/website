@@ -18,3 +18,10 @@ ssh desktop "DISPLAY=:0 nohup steam"
 ```
 
 The `nohup` allows the application to not terminate when you press `CTRL-C` from your client computer.
+
+Update: In light of [discovering `systemd-run`](/blog/launchappsthroughterminal/), I recommand you
+do the following instead:
+
+```bash
+ssh desktop "DISPLAY=:0 systemd-run --user steam"
+```
