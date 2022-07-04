@@ -5,6 +5,8 @@ draft: false
 gpx: "2022-05-28-Kensico-Dam-Staircase-Loop.gpx"
 ---
 
+{{< details "Show photos:" >}}
+
 ![](/files/images/tracks/2022-05-28/PXL_20220528_200615659.jpg)
 ![](/files/images/tracks/2022-05-28/PXL_20220528_201008987.jpg)
 ![](/files/images/tracks/2022-05-28/PXL_20220528_201341799.jpg)
@@ -16,3 +18,5 @@ gpx: "2022-05-28-Kensico-Dam-Staircase-Loop.gpx"
 ![](/files/images/tracks/2022-05-28/PXL_20220528_203405335.jpg)
 ![](/files/images/tracks/2022-05-28/PXL_20220528_203408972.jpg)
 ![](/files/images/tracks/2022-05-28/PXL_20220528_203452432.jpg)
+
+{{< /details >}}

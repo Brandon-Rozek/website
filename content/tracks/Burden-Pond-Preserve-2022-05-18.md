@@ -5,6 +5,8 @@ draft: false
 gpx: "2022-05-18-Burden-Pond-Preserve.gpx"
 ---
 
+{{< details "Show photos:" >}}
+
 ![](/files/images/tracks/2022-05-18/PXL_20220518_185651794.jpg)
 ![](/files/images/tracks/2022-05-18/PXL_20220518_190156956.jpg)
 ![](/files/images/tracks/2022-05-18/PXL_20220518_190758001.jpg)
@@ -23,3 +25,5 @@ gpx: "2022-05-18-Burden-Pond-Preserve.gpx"
 ![](/files/images/tracks/2022-05-18/PXL_20220518_193138578.MP.jpg)
 ![](/files/images/tracks/2022-05-18/PXL_20220518_193947956.jpg)
 ![](/files/images/tracks/2022-05-18/PXL_20220518_200012681.jpg)
+
+{{< /details >}}

@@ -5,6 +5,8 @@ draft: false
 gpx: "2022-06-19-Central-Park-NY.gpx"
 ---
 
+{{< details "Show photos:" >}}
+
 ![](/files/images/tracks/2022-06-19/PXL_20220619_135000070.jpg)
 ![](/files/images/tracks/2022-06-19/PXL_20220619_135937862.jpg)
 ![](/files/images/tracks/2022-06-19/PXL_20220619_140703665.jpg)
@@ -40,3 +42,5 @@ gpx: "2022-06-19-Central-Park-NY.gpx"
 ![](/files/images/tracks/2022-06-19/PXL_20220619_152132731.jpg)
 ![](/files/images/tracks/2022-06-19/PXL_20220619_153022213.jpg)
 ![](/files/images/tracks/2022-06-19/PXL_20220619_153151477.jpg)
+
+{{< /details >}}

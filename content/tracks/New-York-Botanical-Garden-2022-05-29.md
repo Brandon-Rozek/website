@@ -5,6 +5,8 @@ draft: false
 gpx: "2022-05-29-New-York-Botanical-Garden.gpx"
 ---
 
+{{< details "Show photos:" >}}
+
 ![](/files/images/tracks/2022-05-29/PXL_20220529_143720955.PORTRAIT.jpg)
 ![](/files/images/tracks/2022-05-29/PXL_20220529_143833620.MP.jpg)
 ![](/files/images/tracks/2022-05-29/PXL_20220529_143853936.jpg)
@@ -21,3 +23,5 @@ gpx: "2022-05-29-New-York-Botanical-Garden.gpx"
 ![](/files/images/tracks/2022-05-29/PXL_20220529_153155282.jpg)
 ![](/files/images/tracks/2022-05-29/PXL_20220529_153200382.jpg)
 ![](/files/images/tracks/2022-05-29/PXL_20220529_153321957.PORTRAIT.jpg)
+
+{{< /details >}}

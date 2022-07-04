@@ -7,6 +7,8 @@ gpx: "2022-06-05-New-York-Botanical-Garden.gpx"
 
 This is my second visit to the New York Botanical Garden. I went on a different path the [first time around](/tracks/New-York-Botanical-Garden-2022-05-29).
 
+{{< details "Show photos:" >}}
+
 ![](/files/images/tracks/2022-06-05/PXL_20220605_141649331.jpg)
 ![](/files/images/tracks/2022-06-05/PXL_20220605_142555170.jpg)
 ![](/files/images/tracks/2022-06-05/PXL_20220605_142637549.jpg)
@@ -22,3 +24,5 @@ This is my second visit to the New York Botanical Garden. I went on a different 
 ![](/files/images/tracks/2022-06-05/PXL_20220605_151610481.jpg)
 ![](/files/images/tracks/2022-06-05/PXL_20220605_151724547.MP.jpg)
 ![](/files/images/tracks/2022-06-05/PXL_20220605_151916080.jpg)
+
+{{< /details >}}

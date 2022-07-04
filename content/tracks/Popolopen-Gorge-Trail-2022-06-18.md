@@ -5,6 +5,8 @@ draft: false
 gpx: "2022-06-18-Popolopen-Gorge-Trail.gpx"
 ---
 
+{{< details "Show photos:" >}}
+
 ![](/files/images/tracks/2022-06-18/PXL_20220618_161731004.jpg)
 ![](/files/images/tracks/2022-06-18/PXL_20220618_162136415.jpg)
 ![](/files/images/tracks/2022-06-18/PXL_20220618_162449910.jpg)
@@ -22,3 +24,5 @@ gpx: "2022-06-18-Popolopen-Gorge-Trail.gpx"
 ![](/files/images/tracks/2022-06-18/PXL_20220618_171634378.jpg)
 ![](/files/images/tracks/2022-06-18/PXL_20220618_171804950.jpg)
 ![](/files/images/tracks/2022-06-18/PXL_20220618_174707317.jpg)
+
+{{< /details >}}
