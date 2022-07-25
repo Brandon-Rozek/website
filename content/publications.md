@@ -8,14 +8,16 @@ aliases:
 
 ## Publications
 
-**Brandon Rozek**, Michael Giancola, Selmer Bringsjord, Naveen Sundar Govindarajulu. "A Representation-and-Reasoning Framework for Testimony-Infused Automated Adjudicative Dynamic Multi-agent Reasoning & Decision-making", International Conference on Robot Ethics and Standards, 2022.
+D Chichester, W Du, R Kauffman, H Lin, C Lynch, A M. Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, **B Rozek**. "CryptoSolve: A Tool for the Analysis of Cryptographic Modes of Operation",  International Symposium on Games, Automata, Logic, and Formal Verification, 2022.
+
+[**Brandon Rozek**, Michael Giancola, Selmer Bringsjord, Naveen Sundar Govindarajulu. "A Representation-and-Reasoning Framework for Testimony-Infused Automated Adjudicative Dynamic Multi-agent Reasoning & Decision-making", International Conference on Robot Ethics and Standards, 2022.](https://www.clawar.org/icres2022/wp-content/uploads/2022/07/ICRES2022-Proceedings-manuscript.pdf#page=61)
 
 [Hai Lin, Christopher Lynch, Andrew M. Marshall, Catherine A. Meadows, Paliath Narendran, Veena Ravishankar, **Brandon Rozek**. "Algorithmic Problems in the Symbolic Approach to the Verification of Automatically Synthesized Cryptosystems", International Symposium on Frontiers of Combining Systems, 2021.](https://link.springer.com/chapter/10.1007/978-3-030-86205-3_14)
 
 
 ## Papers
 
-[D Chichester, W Du, R Kauffman, H Lin, C Lynch, A Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, **B Rozek**. "CryptoSolve: Towards a Tool for the Symbolic Analysis of Cryptographic Algorithms",  International Workshop on Rewriting Logic and its Applications, 2022.](http://sv.postech.ac.kr/wrla2022/assets/files/pre-proceedings-WRLA2022.pdf#page=12)
+[D Chichester, W Du, R Kauffman, H Lin, C Lynch, A M. Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, **B Rozek**. "CryptoSolve: Towards a Tool for the Symbolic Analysis of Cryptographic Algorithms",  International Workshop on Rewriting Logic and its Applications, 2022.](http://sv.postech.ac.kr/wrla2022/assets/files/pre-proceedings-WRLA2022.pdf#page=12)
 
 [Andrew M Marshall, Catherine A Meadows, Paliath Narendran, Veena Ravishankar, **Brandon Rozek**. "Algorithmic Problems in Synthesized Cryptosystems", International Workshop on Unification, 2020.](https://www3.risc.jku.at/publications/download/risc_6129/proceedings-UNIF2020.pdf#page=58)
 
@@ -40,5 +42,7 @@ Hannah Killian, **Brandon Rozek**. “Modeling Population Dynamics of Incoherent
 
 
 ## Awards
+
+[National Defense Science and Engineering Graduate (NDSEG) Fellowship, 2022-2025 (Tuition Support/$3400 per month stipend/$5000 Travel Fund/$1500 Personal Development Fund)](https://ndseg.org/2022-class-fellows)
 
 [Clare Arrington, Maia Magrakvilidze, Ethan Ramirez, **Brandon Rozek** "High Performance Cluster System for Research and Education", University of Mary Washington, 2017-2018 School Year ($3500)](https://cas.umw.edu/wp-content/blogs.dir/51/files/2018/10/Fall-2017-Awards.pdf)
