@@ -8,19 +8,34 @@ aliases:
 
 ## Publications
 
-D Chichester, W Du, R Kauffman, H Lin, C Lynch, A M. Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, **B Rozek**. "CryptoSolve: A Tool for the Analysis of Cryptographic Modes of Operation",  International Symposium on Games, Automata, Logic, and Formal Verification, 2022.
+CryptoSolve: A Tool for the Analysis of Cryptographic Modes of Operation
+- Authors: D Chichester, W Du, R Kauffman, H Lin, C Lynch, A M. Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, *B Rozek*.
+- Venue: International Symposium on Games, Automata, Logic, and Formal Verification, 2022.
 
-[**Brandon Rozek**, Michael Giancola, Selmer Bringsjord, Naveen Sundar Govindarajulu. "A Representation-and-Reasoning Framework for Testimony-Infused Automated Adjudicative Dynamic Multi-agent Reasoning & Decision-making", International Conference on Robot Ethics and Standards, 2022.](https://www.clawar.org/icres2022/wp-content/uploads/2022/07/ICRES2022-Proceedings-manuscript.pdf#page=61)
+[A Framework for Testimony-Infused Automated Adjudicative Dynamic
+Multi-Agent Reasoning in Ethically Charged Scenarios](/paper/2207.01)
+- Authors: *Brandon Rozek*, Michael Giancola, Selmer Bringsjord, Naveen Sundar Govindarajulu
+- Venue: International Conference on Robot Ethics and Standards, 2022.
+- [Paper](https://www.clawar.org/icres2022/wp-content/uploads/2022/07/ICRES2022-Proceedings-manuscript.pdf#page=61)
 
-[Hai Lin, Christopher Lynch, Andrew M. Marshall, Catherine A. Meadows, Paliath Narendran, Veena Ravishankar, **Brandon Rozek**. "Algorithmic Problems in the Symbolic Approach to the Verification of Automatically Synthesized Cryptosystems", International Symposium on Frontiers of Combining Systems, 2021.](https://link.springer.com/chapter/10.1007/978-3-030-86205-3_14)
+[Algorithmic Problems in the Symbolic Approach to the
+Verification of Automatically Synthesized Cryptosystems ](/paper/2109.01)
+- Authors: Hai Lin, Christopher Lynch, Andrew M. Marshall, Catherine A. Meadows, Paliath Narendran, Veena Ravishankar, *Brandon Rozek*
+- Venue: International Symposium on Frontiers of Combining Systems, 2021.
+- [Paper](https://link.springer.com/chapter/10.1007/978-3-030-86205-3_14)
 
 
 ## Papers
 
-[D Chichester, W Du, R Kauffman, H Lin, C Lynch, A M. Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, **B Rozek**. "CryptoSolve: Towards a Tool for the Symbolic Analysis of Cryptographic Algorithms",  International Workshop on Rewriting Logic and its Applications, 2022.](http://sv.postech.ac.kr/wrla2022/assets/files/pre-proceedings-WRLA2022.pdf#page=12)
+[CryptoSolve: Towards a Tool for the Symbolic Analysis of Cryptographic Algorithms](/paper/2203.01)
+- Authors: D Chichester, W Du, R Kauffman, H Lin, C Lynch, A M. Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, *B Rozek*
+- Venue: International Workshop on Rewriting Logic and its Applications, 2022.
+- [Paper](http://sv.postech.ac.kr/wrla2022/assets/files/pre-proceedings-WRLA2022.pdf#page=12) | [Slides](/files/slides/wrla2022-slides.pdf)
 
-[Andrew M Marshall, Catherine A Meadows, Paliath Narendran, Veena Ravishankar, **Brandon Rozek**. "Algorithmic Problems in Synthesized Cryptosystems", International Workshop on Unification, 2020.](https://www3.risc.jku.at/publications/download/risc_6129/proceedings-UNIF2020.pdf#page=58)
-
+[Algorithmic Problems in Synthesized Cryptosystems](/paper/2006.01)
+- Authors: Andrew M Marshall, Catherine A Meadows, Paliath Narendran, Veena Ravishankar, *Brandon Rozek*
+- Venue: International Workshop on Unification, 2020.
+- [Paper](https://www3.risc.jku.at/publications/download/risc_6129/proceedings-UNIF2020.pdf#page=58)
 
 ## Thesis
 
@@ -28,18 +43,31 @@ D Chichester, W Du, R Kauffman, H Lin, C Lynch, A M. Marshall, C Meadows, P Nare
 
 ## Presentations
 
-[D Chichester, W Du, R Kauffman, H Lin, C Lynch, A Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, **B Rozek**. "CryptoSolve: Towards a Tool for the Symbolic Analysis of Cryptographic Algorithms",  International Workshop on Rewriting Logic and its Applications, 2022.](/files/slides/wrla2022-slides.pdf)
+QEP: The Quality Policy Evaluation Algorithm
+- Venue: Research and Creativity Day at University of Mary Washington, 2019.
+- [Program](/files/research/UMW-RC-2019.pdf#page=3) | [Slides](/files/research/QEP.pptx)
 
-[Brandon Rozek. "QEP: The Quality Policy Evaluation Algorithm", Research and Creativity Day at University of Mary Washington, 2019.](/files/research/QEP.pptx) ([Program](/files/research/UMW-RC-2019.pdf#page=3))
 
-[**Brandon Rozek**, Stefano Coronado. "Beowulf Cluster for Research and Education", Research and Creativity Day at University of Mary Washington, 2018.](/files/research/LUNACposter.pdf) ([Program](/files/research/UMW-RC-2018.pdf#page=7))
+Beowulf Cluster for Research and Education
+- Authors: *Brandon Rozek* and Stefano Coronado
+- Venue: Research and Creativity Day at University of Mary Washington, 2018.
+- [Program](/files/research/UMW-RC-2018.pdf#page=7) | [Poster](/files/research/LUNACposter.pdf)
 
-[Brandon Rozek. "Coherent Control of Atomic Population Using the Genetic Algorithm", Summer Science Institute Research Symposium, 2017.](/files/research/coherentcontrolofatomicpopulation.pdf)
+Coherent Control of Atomic Population Using the Genetic Algorithm
+- Venue: Summer Science Institute Research Symposium, 2017.
+- [Presentation](/files/research/coherentcontrolofatomicpopulation.pdf)
 
-[Hannah Killian, **Brandon Rozek**. "Modelling Population Dynamics of Incoherent and Coherent Excitation", Virginia Academy of Science, 2017.](/files/research/modellingpopulationdynamics.pdf) ([Program](/files/research/VAS-Proceedings-95-2017.pdf#page=6))
 
-Hannah Killian, **Brandon Rozek**. “Modeling Population Dynamics of Incoherent and Coherent Excitation", Research and Creativity Day at University of Mary Washington, 2017. ([Program](/files/research/UMW-RC-2017.pdf#page=14))
+Modelling Population Dynamics of Incoherent and Coherent Excitation
+- Authors: Hannah Killian and *Brandon Rozek*
+- Venue: Virginia Academy of Science, 2017.
+- [Poster](/files/research/modellingpopulationdynamics.pdf) | [Program](/files/research/VAS-Proceedings-95-2017.pdf#page=6)
 
+
+Modeling Population Dynamics of Incoherent and Coherent Excitation
+- Authors: Hannah Killian and *Brandon Rozek*
+- Venue: Research and Creativity Day at University of Mary Washington, 2017.
+- [Program](/files/research/UMW-RC-2017.pdf#page=14)
 
 ## Awards
 
