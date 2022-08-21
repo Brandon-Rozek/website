@@ -12,7 +12,7 @@ enableGitInfo = true
     author = "Brandon Rozek"
     avatar = "avatar.jpg"
     favicon = "favicon.ico"
-    description = "Software Developer, Researcher, and Linux Enthusiast."
+    description = "PhD Student @ RPI studying Automated Reasoning in AI and Linux Enthusiast."
     email = "hello@brandonrozek.com"
     identities = [
         "https://github.com/brandon-rozek",
@@ -51,13 +51,6 @@ enableGitInfo = true
     pre = "<i class='fa fa-user-friends fa-lg'></i>"
     url = "/community/"
     weight = 40
-
-[[menu.main]]
-    identifier = "Presentations"
-    name = "Presentations"
-    pre = "<i class='fas fa-bullhorn'></i>"
-    url = "/presentations/"
-    weight = 50
 
 
 
