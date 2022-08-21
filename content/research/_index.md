@@ -13,9 +13,24 @@ design and implement artificial intelligent agents using computational logic. I'
 - Explainability through verifiable chains of inference
 - Defeasible reasoning under uncertainty
 - Reasoning about agents and their cognitive states
-- Automated planning under ethical constraints
 
 [Notes on Automated Theorem Proving](atp)
+
+## Integrated Planning and Reinforcement Learning
+Working with [Junkyu Lee](https://researcher.ibm.com/researcher/view.php?person=ibm-Junkyu.Lee),
+[Michael Katz](https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Michael.Katz1),
+and [Shirin Sohrabi](https://researcher.watson.ibm.com/researcher/view.php?person=us-ssohrab)
+on extending and relaxing assumptions within their existing
+[Planning Annotated Reinforcement Learning Framework](https://prl-theworkshop.github.io/prl2021/papers/PRL2021_paper_36.pdf) developed at IBM Research.
+
+
+In this framework, automated planning is used on a higher-level version of the overall
+problem with a surjective function mapping RL states to AP states. The agent is
+based on the options framework in Hiearchical Reinforcement Learning where options
+are defined as the grounded actions in the planning model.
+
+
+More to come...
 
 ## Symbolic Methods for Cryptography
 Working with [Dr. Andrew Marshall](https://www.marshallandrew.net/) and others in applying term reasoning within computational logic
@@ -36,7 +51,7 @@ Collaborators:
 - NRL: Catherine Meadows
 - UMW: [Andrew Marshall]((https://www.marshallandrew.net/)), Veena Ravishankar
 - UT Dallas: Serdar Erbatur
-- SUNY Albany: [Paliath Narendran](https://www.cs.albany.edu/~dran/), Wei Du 
+- SUNY Albany: [Paliath Narendran](https://www.cs.albany.edu/~dran/), Wei Du
 - Clarkson University: [Christopher Lynch](https://people.clarkson.edu/~clynch/), Hai Lin
 
 
@@ -46,7 +61,7 @@ Collaborators:
 **Deep Reinforcement Learning:** With [Dr. Ron Zacharski](http://zacharski.org/) I focused on how to make deep reinforcement learning
 algorithms more sample efficient. That is, how can we make it so that the RL agent learns more from every observation to make it so that
 we achieve our goal faster. With that goal in mind, I built out a Reinforcement Learning library written in PyTorch to help benchmark
-my ideas. 
+my ideas.
 
 
 *Links:*
@@ -76,7 +91,7 @@ Before this study, I worked through a great book called ["Build your own Lisp"](
 
 **Cluster Analysis:** The study of grouping similar observations without any prior knowledge. I studied this topic by deep diving Wikipedia articles under the guidance of Dr. Melody Denhere during Spring 2018. **[Extensive notes](clusteranalysis)**
 
-[**Excitation of Rb87**](rb87): Worked in a Quantum Research lab alongside fellow student Hannah Killian under the guidance of Dr. Hai Nguyen. I provided software tools and assisted in understanding the mathematics behind the phenomena. 
+[**Excitation of Rb87**](rb87): Worked in a Quantum Research lab alongside fellow student Hannah Killian under the guidance of Dr. Hai Nguyen. I provided software tools and assisted in understanding the mathematics behind the phenomena.
 
 [Modeling Population Dynamics of Incoherent and Coherent Excitation](/files/research/modellingpopulationdynamics.pdf)
 
