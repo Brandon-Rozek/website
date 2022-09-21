@@ -8,9 +8,10 @@ aliases:
 
 ## Publications
 
-CryptoSolve: A Tool for the Analysis of Cryptographic Modes of Operation
+[CryptoSolve: A Tool for the Analysis of Cryptographic Modes of Operation](/paper/2209.01)
 - Authors: D Chichester, W Du, R Kauffman, H Lin, C Lynch, A M. Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, *B Rozek*.
 - Venue: International Symposium on Games, Automata, Logic, and Formal Verification, 2022.
+- [Paper](https://cgi.cse.unsw.edu.au/~eptcs/Published/GandALF2022/Proceedings.pdf#page=157)
 
 [A Framework for Testimony-Infused Automated Adjudicative Dynamic
 Multi-Agent Reasoning in Ethically Charged Scenarios](/paper/2207.01)
