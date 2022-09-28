@@ -1,6 +1,9 @@
 [submodule "themes/pulp"]
 	path = themes/pulp
 	url = git@github.com:Brandon-Rozek/website-theme.git
+[submodule "content/toots"]
+	path = content/toots
+	url = git@github.com:Brandon-Rozek/website-toots.git
 [submodule "static/files/images/tracks"]
 	path = static/files/images/tracks
 	url = git@github.com:Brandon-Rozek/website-tracks-photos-v0
