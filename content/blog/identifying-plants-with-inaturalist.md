@@ -10,7 +10,7 @@ Seek by iNaturalist ([android](https://play.google.com/store/apps/details?id=org
 
 What makes the experience so interesting, is the identification process is somewhat interactive. For example, look at the following screenshots of when I was trying to identify a plant near my workplace. 
 
-First we start off with the dicot class. This is equivalent to it saying that it has identified a flower. 
+First we start off with the dicot class. This is roughly equivalent to it saying that it has identified a flower. 
 
 ![Screenshot showing Dicot Class for the Flower](/files/images/blog/20220929194646.jpg)
 
