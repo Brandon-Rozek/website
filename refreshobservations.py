@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Any, Dict, Optional
 import json
 import sys
+import time
 
 CONTENT_LOCATION = "content/observations"
 USER_ID = "brandonrozek"
@@ -20,6 +21,7 @@ MIN_OBS_ID = -1
 def retrieve_data_from_server():
     server_data = []
     server_ids = retrieve_obs_ids_from_server()
+    time.sleep(1) # 60 requests / second cap
     for id_num in server_ids:
         # Grab observation from iNaturalist
         url = f"https://api.inaturalist.org/v1/observations/{id_num}"
@@ -44,6 +46,7 @@ def retrieve_data_from_server():
         
         server_data_part = reformat_obs(id_num, server_data_part)
         server_data.append(server_data_part)
+        time.sleep(1) # 60 requests / second cap
 
     print(f"Successfully obtained {len(server_data)} observations from the server.")
     return server_data
@@ -123,12 +126,12 @@ def reformat_obs(obsid, obs_json):
     desired_fields = [
         'quality_grade', 'identifications_most_agree',
         'species_guess', 'identifications_most_disagree',
-        'license_code', 'captive', 'project_ids',
+        'captive', 'project_ids',
         'community_taxon_id', 'geojson',
         'owners_identification_from_vision',
         'identifications_count', 'obscured',
         'num_identification_disagreements',
-        'place_guess'
+        'place_guess', "photos"
     ]
     for key in desired_fields:
         obs_data['metadata'][key] = obs_json[key]
@@ -235,7 +238,7 @@ for data in server_data:
         # Only update if observation has changed
         elif saved_fm != data['metadata']:
             print("Updating id", id_num)
-            write_markdown(data['metadata'], data['contents'])
+            write_markdown(id_num, data['metadata'], data['content'])
 
     # New observation found
     else:
