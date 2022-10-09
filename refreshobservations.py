@@ -122,6 +122,12 @@ def reformat_obs(obsid, obs_json):
     # Turn Created At -> Date
     obs_data['metadata']['date'] = obs_json['time_observed_at']
 
+    # Grab some taxonomy information about the organism
+    obs_data['metadata']['taxon'] = dict(
+        name=obs_json['taxon']['name'],
+        common_name=obs_json['taxon']['preferred_common_name']
+    )
+
     # Grab only a few fields
     desired_fields = [
         'quality_grade', 'identifications_most_agree',
@@ -130,6 +136,7 @@ def reformat_obs(obsid, obs_json):
         'community_taxon_id', 'geojson',
         'owners_identification_from_vision',
         'identifications_count', 'obscured',
+        'num_identification_agreements',
         'num_identification_disagreements',
         'place_guess', "photos"
     ]
