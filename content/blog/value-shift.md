@@ -1,7 +1,7 @@
 ---
 title: "Explaining the Shift in Values"
-date: 2022-10-11T18:55:01-04:00
-draft: true
+date: 2022-10-11T20:19:01-04:00
+draft: false 
 tags: []
 math: true
 ---
