@@ -3,6 +3,13 @@ title: Community
 description: Various groups and activities that I participate in
 ---
 
+## Logic Reading Group
+I co-founded the NY Captital Region Logic Reading Group.
+The idea here is to present papers within automated reasoning,
+logic-based artificial intelligence, and normative ethics.
+
+[See more](logic-reading-group)
+
 ## ./UMWLUG
 I was the co-founder and vice president of UMW's Linux Users Group. I mainly brought interesting people to come and talk about Linux and open source.
 
