@@ -18,5 +18,5 @@ description: Other places you can find Brandon at
 - [Tilde.Club (HTTPS)](https://tilde.club/~brozek)
 - [Tilde.Club (Gemini)](gemini://tilde.club/~brozek)
 - [Tumblr](https://brandonrozek.tumblr.com/)
-- [Twitter](https://medium.com/@brandonrozek)
+- [Medium](https://medium.com/@brandonrozek)
 - [Wikipedia](https://en.wikipedia.org/wiki/User:BrandonRozek)
