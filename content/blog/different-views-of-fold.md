@@ -68,7 +68,7 @@ When building out complex functions we may want to loop multiple times:
 
 ### $n_1 + n_2$ Complexity
 
-The following is an example of this class of algorithms.
+The following is an example[^1] of this class of algorithms.
 
 Given a list of words, title case each word and combine them into a single sentence.
 
@@ -146,3 +146,7 @@ l1.foldLeft(id_outer)((c1, n1) =>
     )
 )
 ```
+
+
+
+[^1]: Thanks Clare for thinking of this example!
