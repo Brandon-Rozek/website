@@ -2,7 +2,7 @@
 title: "Reasoning through Loops in Dafny"
 date: 2022-02-05T00:22:58-05:00
 draft: false
-tags: []
+tags: ["Formal Methods"]
 math: true
 ---
 

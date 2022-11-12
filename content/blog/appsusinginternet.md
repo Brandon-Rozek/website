@@ -2,7 +2,7 @@
 title: "Show Applications using the Internet"
 date: 2020-05-09T11:30:36-04:00
 draft: false
-tags: ["Linux"]
+tags: ["Linux", "Networking"]
 ---
 
 There's a great thread on [ask ubuntu](https://askubuntu.com/questions/104739/which-applications-are-using-internet) on seeing which applications are using the Internet. I'm going to add my own spin on the answers for future reference.

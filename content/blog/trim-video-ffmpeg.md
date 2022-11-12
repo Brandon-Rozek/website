@@ -2,7 +2,7 @@
 title: "How to trim a video using FFMPEG"
 date: 2022-09-28T18:46:32-04:00
 draft: false
-tags: []
+tags: ["Audio-Video"]
 math: false
 ---
 

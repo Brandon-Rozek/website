@@ -2,6 +2,7 @@
 title: "Borg Backup"
 date: 2019-05-21T22:35:31-04:00
 draft: false
+tags: ["Backup"]
 ---
 
 I started using [Borg Backup](https://www.borgbackup.org/) in order to efficiently and securely do my backups. I did some research before choosing this solution as I required three things:

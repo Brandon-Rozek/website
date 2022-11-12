@@ -2,7 +2,7 @@
 title: "Most Common Mistake in Induction Proofs"
 date: 2022-05-15T22:49:34-04:00
 draft: false
-tags: []
+tags: ["Math"]
 math: true
 ---
 

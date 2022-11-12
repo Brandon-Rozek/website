@@ -2,7 +2,7 @@
 title: "Retreiving GPS data in decimal format from EXIF data in photos"
 date: 2022-06-19T19:01:35-04:00
 draft: false
-tags: []
+tags: ["GPS"]
 math: false
 ---
 

@@ -2,7 +2,7 @@
 title: "Deep Recursion"
 date: 2022-11-11T14:45:17-05:00
 draft: false
-tags: ["Scala"]
+tags: ["Scala", "Functional Programming"]
 math: false
 ---
 

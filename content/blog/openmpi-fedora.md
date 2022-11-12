@@ -2,7 +2,7 @@
 title: "OpenMPI on Fedora"
 date: 2022-05-03T00:52:38-04:00
 draft: false
-tags: []
+tags: ["Fedora"]
 math: false
 ---
 

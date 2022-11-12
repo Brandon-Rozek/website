@@ -2,7 +2,7 @@
 title: "Deploying Binaries to other Linux Distros using Appimage"
 date: 2020-10-19T21:53:52-04:00
 draft: false
-tags: ["Packaging"]
+tags: ["Packaging", "Linux"]
 ---
 
 One way to distribute to different Linux distributions is to compile the source under each of them and distribute it separately.  This can be a pain to manage if you target multiple distributions and multiple versions of those distributions. Instead, let's take a look at AppImage. This allows us to package up our binaries and shared libraries under one file which we can distribute.

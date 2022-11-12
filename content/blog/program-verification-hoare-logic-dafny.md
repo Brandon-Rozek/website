@@ -2,7 +2,7 @@
 title: "Program Verification with Hoare Logic and Dafny"
 date: 2022-02-05T00:06:42-05:00
 draft: false
-tags: []
+tags: ["Formal Methods"]
 math: false
 ---
 

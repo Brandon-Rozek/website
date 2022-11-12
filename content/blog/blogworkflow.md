@@ -2,6 +2,7 @@
 title: "Blog Workflow"
 date: 2019-10-28T00:16:44-04:00
 draft: false
+tags: ["Hugo"]
 ---
 
 You may be curious on how I create content for this blog. There's pros and cons to my approach. One pro is that it's relatively easy for me to crank something out and upload it to my site. The downside is that it's not as easily customizable.

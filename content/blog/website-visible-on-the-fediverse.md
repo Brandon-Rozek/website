@@ -2,7 +2,7 @@
 title: "Having your Website Visible on the Fediverse"
 date: 2022-06-12T18:35:30-04:00
 draft: false
-tags: []
+tags: ["Mastodon"]
 math: false
 ---
 

@@ -2,7 +2,7 @@
 title: "Different Views of Fold and Their Combinations"
 date: 2022-11-09T17:45:26-05:00
 draft: false
-tags: []
+tags: ["Scala", "Functional Programming"]
 math: true
 ---
 

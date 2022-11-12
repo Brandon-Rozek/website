@@ -2,7 +2,7 @@
 title: "Archiving Toots"
 date: 2022-05-20T22:47:48-04:00
 draft: false
-tags: ["Hugo", "Mastodon"]
+tags: ["Hugo", "Mastodon", "Archive"]
 math: false
 ---
 In the spirit of [syndicating Mastodon toots](https://brandonrozek.com/blog/why-i-pesos-from-mastodon/)
@@ -11,7 +11,7 @@ files.
 
 In this post we'll go over:
 - [Mastodon API](#mastodon-api)
-- [Reformatting toot](#reformatting-toot)
+- [Reformatting Toot](#reformatting-toot)
 - [Creating the Markdown files](#creating-the-markdown-files)
 - [Conclusion](#conclusion)
 

@@ -2,7 +2,7 @@
 title: "Starting Graphical Applications Remotely without X-Forwarding"
 date: 2020-09-07T20:24:49-04:00
 draft: false
-tags: []
+tags: ["Linux", "SSH"]
 ---
 
 One of my favorite casual gaming setups is to use a slim laptop on my couch while streaming from my desktop using Steam Remote Play.  The downside though is that unless I want to get up, Steam needs to be already running on my desktop. This post describes how I start steam remotely from my couch so that I can stream my games without having to get up and set it up on my desktop first.

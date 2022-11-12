@@ -2,7 +2,7 @@
 title: "Aliases for Snaps and Flatpaks"
 date: 2022-02-04T20:29:04-05:00
 draft: false
-tags: []
+tags: ["Linux"]
 math: false
 ---
 

@@ -2,7 +2,7 @@
 title: "Rebuild Kernel Modules with Akmods"
 date: 2022-02-04T19:37:04-05:00
 draft: false
-tags: []
+tags: ["Linux", "Fedora"]
 math: false
 ---
 

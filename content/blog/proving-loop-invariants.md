@@ -2,7 +2,7 @@
 title: "Loop Invariants"
 date: 2022-02-26T19:17:21-05:00
 draft: false
-tags: []
+tags: ["Formal Methods"]
 math: true
 ---
 

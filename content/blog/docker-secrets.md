@@ -2,7 +2,7 @@
 title: "Docker Secrets"
 date: 2022-02-04T23:59:13-05:00
 draft: false
-tags: []
+tags: ["Containers"]
 math: false
 ---
 

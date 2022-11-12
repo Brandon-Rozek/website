@@ -2,7 +2,7 @@
 title: "Document Formats and Plaintext"
 date: 2022-05-19T21:24:52-04:00
 draft: false
-tags: []
+tags: ["Documentation"]
 math: false
 ---
 

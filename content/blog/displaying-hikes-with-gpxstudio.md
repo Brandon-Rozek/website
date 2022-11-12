@@ -2,7 +2,7 @@
 title: "Displaying Hikes with gpx.studio"
 date: 2022-05-23T16:35:01-04:00
 draft: false
-tags: []
+tags: ["Hugo", "GPS"]
 math: false
 ---
 
@@ -14,8 +14,8 @@ At the end of this post, we will achieve in creating an embed like the following
 
 To get there, we will talk about:
 
-- [Recording the walk](#recording-the-walk)
-- [Grabing an embed](#grabbing-an-embed)
+- [Recording the Walk](#recording-the-walk)
+- [Grabbing an embed](#grabbing-an-embed)
 - [Shortcodes for website](#shortcodes-for-website)
 - [Conclusion](#conclusion)
 

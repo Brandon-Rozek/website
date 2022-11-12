@@ -2,7 +2,7 @@
 title: "Automatic Deployments with Terraform"
 date: 2020-05-08T22:45:18-04:00
 draft: false
-tags: []
+tags: ["Deployment"]
 ---
 
 I have recently written about [Packer](https://brandonrozek.com/blog/snapshotswithpacker/) to create system images or snapshots. This post will go over another [HashiCorp](https://www.hashicorp.com/) project named [Terraform](https://www.terraform.io/) that we can use to deploy that image to a VPS. Like before, I am going to go over how to setup this up in DigitalOcean. Check out [this list](https://www.terraform.io/docs/providers/index.html) for documentation on your favorite cloud provider.

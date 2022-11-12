@@ -2,7 +2,7 @@
 title: "Mount Object Storage Locally using S3 Fuse"
 date: 2022-02-04T23:39:25-05:00
 draft: false
-tags: []
+tags: ["Storage"]
 math: false
 ---
 

@@ -2,7 +2,7 @@
 title: "Which commit broke the build? Using Git Bisect"
 date: 2022-05-03T01:15:55-04:00
 draft: false
-tags: []
+tags: ["Git"]
 math: false
 ---
 

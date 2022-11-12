@@ -2,6 +2,7 @@
 title: "Ngrok"
 date: 2019-11-20T20:56:19-05:00
 draft: false
+tags: ["Networking"]
 ---
 
 Let's say you want to spin up a quick demo for a client and you don't want to use a VPS, and they can't access your laptop through the network. 

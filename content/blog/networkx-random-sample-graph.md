@@ -2,7 +2,7 @@
 title: "Networkx Random Sample Graph"
 date: 2022-04-07T19:48:12-04:00
 draft: false
-tags: []
+tags: ["Python"]
 math: false
 ---
 

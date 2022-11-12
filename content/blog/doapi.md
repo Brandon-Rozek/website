@@ -2,7 +2,7 @@
 title: "Digital Ocean API"
 date: 2020-05-06T22:45:30-04:00
 draft: false
-tags: []
+tags: ["Deployment"]
 ---
 
 This post is meant for the times that you want to quickly query the Digital Ocean API v2, but do not want to download their great client [`doctl`](https://github.com/digitalocean/doctl). The prerequisite for this post is that you have a [personal access token](https://www.digitalocean.com/docs/apis-clis/api/create-personal-access-token/) configured inside the `$DO_TOKEN` environmental variable.

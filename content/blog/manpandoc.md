@@ -2,6 +2,7 @@
 title: "Man Pages with Pandoc"
 date: 2019-11-07T21:42:08-05:00
 draft: false
+tags: ["Documentation"]
 ---
 
 [Ethan Martin](https://emar10.dev) recently showed off the Pandoc tool to me. In case you don't know, Pandoc is a swiss-army knife of markup languages. It allows you to easily convert from one markup language to another. 

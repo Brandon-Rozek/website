@@ -2,7 +2,7 @@
 title: "Getting Podman and Nginx TCPv6 and HTTP/2 Ready"
 date: 2022-09-28T22:43:28-04:00
 draft: false
-tags: []
+tags: ["Networking", "Containers"]
 math: false
 ---
 

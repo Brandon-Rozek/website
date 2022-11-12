@@ -2,7 +2,7 @@
 title: "Automatically Updating Podman Containers"
 date: 2022-05-15T22:20:47-04:00
 draft: false
-tags: []
+tags: ["Linux", "Containers"]
 math: false
 ---
 

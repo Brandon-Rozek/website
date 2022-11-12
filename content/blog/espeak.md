@@ -2,7 +2,7 @@
 title: "Espeak"
 date: 2020-03-01T10:33:33-05:00
 draft: false
-tags: [ "Linux" ]
+tags: []
 ---
 
 `espeak` is a command line tool that lets you type in messages and have it said back to you.

@@ -2,7 +2,7 @@
 title: "Forwarding Phone's GPS"
 date: 2020-11-08T00:58:11-05:00
 draft: false
-tags: []
+tags: ["GPS"]
 ---
 
 Sometimes I wish to open up [Marble](https://marble.kde.org/) which an a mapping application and see my current location on the globe. My laptop, however, doesn't have a GPS module in it. Though I realized that I carry around a device that does... My phone.

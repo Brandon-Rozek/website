@@ -2,7 +2,7 @@
 title: "Rclone: The Swiss Army Knife of Cloud Storage"
 date: 2022-04-10T22:05:46-04:00
 draft: false
-tags: []
+tags: ["Backup"]
 math: false
 ---
 

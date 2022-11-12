@@ -2,7 +2,7 @@
 title: "Fold Not Only Reduces"
 date: 2022-11-09T15:15:10-05:00
 draft: false
-tags: []
+tags: ["Functional Programming", "Scala", "Haskell"]
 math: false
 ---
 
