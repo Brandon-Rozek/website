@@ -36,7 +36,7 @@ I wrote a function in my [previous service worker post](https://brandonrozek.com
 ```javascript
 var limitCache = function(cache, maxItems) {
 	cache.keys().then(function(items) {
-		if (items.length &gt; maxItems) {
+		if (items.length > maxItems) {
 			cache.delete(items[0]);
 		}
 	})
@@ -97,7 +97,7 @@ Once it receives the command, it goes on to trim all of the caches.
 
 ### Conclusion
 
-So whenever you download a bunch of files, make sure to run <code class="language-javascript">navigator.serviceWorker.controller.postMessage({"command":"trimCache"});</code> on the main javascript file to trim the cache. A downside to this method is that since Service Workers don&#8217;t take control during the first page load, the cache isn&#8217;t trimmed until the second page load. If you can find a way to make it so that this event happens in the first page load [tell me](mailto:hello@brandonrozek.com) about it/write a blog post. 🙂 **Update:** To get the service worker to take control of the page immediately call [self.skipWaiting()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting) after the install event and [self.clients.claim()](https://developer.mozilla.org/en-US/docs/Web/API/Clients/claim) after the activate event. Current code for our humble service worker:
+So whenever you download a bunch of files, make sure to run `navigator.serviceWorker.controller.postMessage({"command":"trimCache"});` on the main javascript file to trim the cache. A downside to this method is that since Service Workers don&#8217;t take control during the first page load, the cache isn&#8217;t trimmed until the second page load. If you can find a way to make it so that this event happens in the first page load [tell me](mailto:hello@brandonrozek.com) about it/write a blog post. 🙂 **Update:** To get the service worker to take control of the page immediately call [self.skipWaiting()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting) after the install event and [self.clients.claim()](https://developer.mozilla.org/en-US/docs/Web/API/Clients/claim) after the activate event. Current code for our humble service worker:
 
 ```javascript
 var version = 'v2.0.24:';
@@ -149,7 +149,7 @@ var trimCache = function (cacheName, maxItems) {
         .then(function (cache) {
             cache.keys()
                 .then(function (keys) {
-                    if (keys.length &gt; maxItems) {
+                    if (keys.length > maxItems) {
                         cache.delete(keys[0])
                             .then(trimCache(cacheName, maxItems));
                     }

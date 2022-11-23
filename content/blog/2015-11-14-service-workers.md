@@ -28,11 +28,16 @@ I’m excited to say that I’ve written my first service worker for brandonroze
 
 Service workers are currently supported in Chrome, Opera, and Firefox nightly. You don’t have to worry too much about browser support because the Service Worker spec was written in a [progressively enchanced](http://alistapart.com/article/understandingprogressiveenhancement) way meaning it won’t break your existing site 🙂
 
-## <a href="#caveats" name="caveats"></a>Caveats {#caveats}
+# Caveats
 
-You need HTTPS to be able to use service workers on your site. This is mainly for security reasons. Imagine if a third party can control all of the networking requests on your site? If you don’t want to go out and buy a SSL Certificate, there are a couple free ways to go about this. 1) [Cloudflare](https://www.cloudflare.com/) 2) [Let’s Encrypt](https://letsencrypt.org/) Service workers are promise heavy. Promises contain a then clause which runs code asynchronously. If you’re not accustomed to this idea please check out this [post](https://ponyfoo.com/articles/es6-promises-in-depth) by Nicolas Bevacqua. Now onto making the service worker! If you want to skip to the final code scroll down to the bottom. Unless you don’t like my syntax highlighting, then you can check out this [gist](https://gist.github.com/brandonrozek/0cf038df40a913fda655).
+You need HTTPS to be able to use service workers on your site. This is mainly for security reasons. Imagine if a third party can control all of the networking requests on your site? If you don’t want to go out and buy a SSL Certificate, there are a couple free ways to go about this.
+1. [Cloudflare](https://www.cloudflare.com/)
+2. [Let’s Encrypt](https://letsencrypt.org/) 
 
-## <a href="#register-the-service-worker" name="register-the-service-worker"></a>Register the service worker {#register-the-service-worker}
+
+Service workers are promise heavy. Promises contain a then clause which runs code asynchronously. If you’re not accustomed to this idea please check out this [post](https://ponyfoo.com/articles/es6-promises-in-depth) by Nicolas Bevacqua. Now onto making the service worker! If you want to skip to the final code scroll down to the bottom. If you don’t like my syntax highlighting, then you can check out this [gist](https://gist.github.com/brandonrozek/0cf038df40a913fda655).
+
+# Register the service worker
 
 Place `service-worker.js` on the root of your site. This is so the service worker can access all the files in the site. Then in your main javascript file, register the service worker.
 
@@ -45,7 +50,7 @@ if (navigator.serviceWorker) {
 ```
 
 
-## <a href="#install-the-service-worker" name="install-the-service-worker"></a>Install the service worker {#install-the-service-worker}
+# Install the service worker
 
 The first time the service worker runs, it emits the `install` event. At this time, we can load the visitor’s cache with some resources for when they’re offline. Every so often, I like to change up the theme of the site. So I have version numbers attached to my files. I would also like to invalidate my cache with this version number. So at the top of the file I added
 
@@ -104,7 +109,7 @@ self.addEventListener("install", function(event) {
 
 With this we now cached all the files in the offlineFundamentals array during the install step.
 
-## <a href="#clear-out-the-old-cache" name="clear-out-the-old-cache"></a>Clear out the old cache {#clear-out-the-old-cache}
+# Clear out the old cache
 
 Since we’re caching everything. If you change one of the files, your visitor wouldn’t get the changed file. Wouldn’t it be nice to remove old files from the visitor’s cache? Every time the service worker finishes the install step, it releases an `activate` event. We can use this to look and see if there are any old cache containers on the visitor’s computer. From [Nicolas’ code](https://ponyfoo.com/articles/serviceworker-revolution). Thanks for sharing 🙂
 
@@ -138,18 +143,18 @@ self.addEventListener("activate", function(event) {
 ```
 
 
-## <a href="#intercepting-fetch-requests" name="intercepting-fetch-requests"></a>Intercepting fetch requests {#intercepting-fetch-requests}
+# Intercepting fetch requests 
 
 The cool thing about service worker’s is that it can handle file requests. We could cache all files requested for offline use, and if a fetch for a resource failed, then the service worker can look for it in the cache or provide an alternative. This is a large section, so I’m going to attempt to break it down as much as I can.
 
-### <a href="#limit-the-cache" name="limit-the-cache"></a>Limit the cache {#limit-the-cache}
+## Limit the cache {#limit-the-cache}
 
 If the visitor started browsing all of the pages on my site, his or her cache would start to get bloated with files. To not burden my visitors, I decided to only keep the latest 25 pages and latest 10 images in the cache.
 
 ```javascript
 var limitCache = function(cache, maxItems) {
     cache.keys().then(function(items) {
-        if (items.length &gt; maxItems) {
+        if (items.length > maxItems) {
             cache.delete(items[0]);
         }
     })
@@ -159,7 +164,7 @@ var limitCache = function(cache, maxItems) {
 
 We’ll call it later in the code.
 
-### <a href="#fetch-from-network-and-cache" name="fetch-from-network-and-cache"></a>Fetch from network and cache {#fetch-from-network-and-cache}
+## Fetch from network and cache
 
 Every time I fetch a file from the network I throw it into a specific cache container. <code class="language-javascript">'pages'</code> for HTML files, <code class="language-javascript">'images'</code> for CSS files, and <code class="language-javascript">'assets'</code> for any other file. This is so I can handle the cache limiting above easier. Defined within the `fetch` event.
 
@@ -187,7 +192,7 @@ var fetchFromNetwork = function(response) {
     }
 ```
 
-### <a href="#when-the-network-fails" name="when-the-network-fails"></a>When the network fails {#when-the-network-fails}
+## When the network fails
 
 There are going to be times where the visitor cannot access the website. Maybe they went in a tunnel while they were riding a train? Or maybe your site went down. I thought it would be nice for my reader’s to be able to look over my blog posts again regardless of an internet connection. So I provide a fall-back. Defined within the `fetch` event.
 
@@ -209,7 +214,7 @@ var fallback = function() {
   2. Is the request for an image? 
       * Show a place-holder image (Courtesy of [Jeremy Keith](https://adactio.com/journal/9775))
 
-### <a href="#handle-the-request" name="handle-the-request"></a>Handle the request {#handle-the-request}
+## Handle the request
 
 First off, I’m only handling GET requests.
 
@@ -250,7 +255,7 @@ event.respondWith(
 
 For different stategy’s, take a look at Jake Archibald’s [offline cookbook](https://jakearchibald.com/2014/offline-cookbook/).
 
-## <a href="#conclusion" name="conclusion"></a>Conclusion {#conclusion}
+# Conclusion
 
 With all of that, we now have a fully functioning offline-capable website! I wouldn’t be able to implement this myself if it wasn’t for some of the awesome people I mentioned earlier sharing their experience. So share, share, share! With that sentiment, I’ll now share the full code for `service-worker.js` **Update:** There is a new version of this code over at this [blog post](https://brandonrozek.com/2015/11/limiting-cache-service-workers-revisited/).
 
@@ -300,7 +305,7 @@ var clearOldCaches = function() {
 */
 var limitCache = function(cache, maxItems) {
     cache.keys().then(function(items) {
-        if (items.length &gt; maxItems) {
+        if (items.length > maxItems) {
             cache.delete(items[0]);
         }
     })
