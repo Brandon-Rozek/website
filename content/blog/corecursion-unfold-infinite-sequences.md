@@ -145,6 +145,13 @@ Notice how the function within `unfold` needs to return an `Option`. If the retu
 val countdown = (n: Int) => Iterator.unfold(n)(x => if x == -1 then None else Some((x, x - 1)))
 ```
 
+**(4) Repeat an element forever**
+
+For this example, we don't need to carry any state throughout hte computation.
+```scala
+val repeat: (Int => Iterator[Int]) = (n) => Iterator.unfold(None)(_ => Some(n, None))
+```
+
 ## Recursive Sequences
 
 In the past, [I've written](/blog/haskellrealsequences/) about analyzing sequences from real analysis within Haskell. Within it, I was looking at the following sequence:
