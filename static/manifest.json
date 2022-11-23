@@ -1,0 +1,18 @@
+{
+    "lang": "en",
+    "short_name": "Brandon Rozek",
+    "name": "Brandon Rozek",
+    "description": "Brandon Rozek's Website",
+    "icons": [
+        {
+            "src": "/img/avatar.png",
+            "sizes": "300x300",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "start_url": "/",
+    "display": "minimal-ui",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff"
+}
