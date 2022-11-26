@@ -8,6 +8,9 @@ enableGitInfo = true
   series = "series"
   tags = "tags"
 
+[author]
+    name = "Brandon Rozek"
+
 [params]
     author = "Brandon Rozek"
     avatar = "avatar.jpg"
@@ -20,8 +23,51 @@ enableGitInfo = true
         "https://fosstodon.org/@brozek"
     ]
 
+[services.rss]
+  limit = 50
+
+[mediaTypes."application/atom+xml"]
+  suffixes = ["atom"]
+
+[mediaTypes."application/activity+json"]
+  suffixes = ["ajson"]
+
+[mediaTypes."application/feed+json"]
+  suffixes = ["json"]
+
+[outputFormats.Atom]
+  name = "Atom"
+  mediaType = "application/atom+xml"
+  baseName = "index"
+  isPlainText = false
+  rel = "alternate"
+  isHTML = false
+  noUgly = true
+  permalinkable = false
+
+[outputFormats.AS2]
+  name = "AS2"
+  mediaType = "application/activity+json"
+  baseName = "index"
+  isPlainText = false
+  rel = "alternate"
+  isHTML = false
+  noUgly = true
+  permalinkable = false
+
+[outputFormats.feedjson]
+  name = "feedjson"
+  mediaType = "application/feed+json"
+  baseName = "feed"
+  isPlainText = false
+  rel = "alternate"
+  isHTML = false
+  noUgly = true
+  permalinkable = false
+
+
 [outputs]
-    section = ["JSON", "HTML", "RSS"]
+    section = ["JSON", "HTML", "RSS", "Atom", "AS2", "feedjson"]
     page = ["HTML", "AMP"]
 
 [[menu.main]]
