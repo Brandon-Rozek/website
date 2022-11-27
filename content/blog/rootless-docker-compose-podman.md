@@ -56,8 +56,18 @@ services:
     restart: always
 ```
 
+If you want to add to add more volumes to the container, make sure it has the appropriate SELinux label if
+you're using a distribution with it enabled.[^1]
+
+```bash
+chcon -t container_file_t -R X
+```
+where `X` is the volume you wish to mount.
+
 Now we can run `docker-compose`!
 
 ```bash
 docker-compose ps
 ```
+
+[^1]: https://bugzilla.redhat.com/show_bug.cgi?id=2125878
