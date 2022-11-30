@@ -1,7 +1,7 @@
 [submodule "themes/pulp"]
 	path = themes/pulp
 	url = git@github.com:Brandon-Rozek/website-theme.git
-	branch = main
+	branch = master
 [submodule "content/toots"]
 	path = content/toots
 	url = git@github.com:Brandon-Rozek/website-toots.git
