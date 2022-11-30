@@ -39,4 +39,4 @@ jobs:
               IdentityFile ~/.ssh/id_rsa" > ~/.ssh/config
       
       - name: Deploy
-        run: ./sync.sh
+        run: ./deploy.sh
