@@ -15,6 +15,11 @@ jobs:
         with:
           submodules: true
 
+      - name: Git Sumbodule Update
+        run: |
+          git pull --recurse-submodules
+          git submodule update --remote --recursive
+
       - name: Setup Hugo
         env:
           HUGO_VERSION: 0.105.0
