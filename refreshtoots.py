@@ -131,6 +131,8 @@ def reformat_toot(toot_json):
     del toot_json['account']['following_count']
     del toot_json['account']['statuses_count']
     del toot_json['account']['last_status_at']
+    del toot_json['account']['emojis']
+    del toot_json['account']['fields']
 
 
 def create_toot(toot_json):
