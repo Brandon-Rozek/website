@@ -1,7 +1,7 @@
 ---
 title: "Quick Python: Check Submodule Load"
 date: 2022-12-01T21:12:03-05:00
-draft: true
+draft: false
 tags: ["Python"]
 math: false
 ---
