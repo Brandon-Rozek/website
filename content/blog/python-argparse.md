@@ -3,6 +3,8 @@ title: "Python Argument Parser"
 date: 2022-05-16T17:07:06-04:00
 draft: false
 tags: ["Python"]
+aliases:
+    - /blog/python-argpase/
 math: false
 ---
 
@@ -16,6 +18,8 @@ parser = argparse.ArgumentParser(description="Description to show in help")
 parser.add_argument("pos_arg1", type=str, help="Required positional argument")
 parser.add_argument("--flag1", type=str, help="Optional flag argument")
 parser.add_argument("--flag2", type=int, required=True, help="Required flag argument")
+parser.add_argument("--flag3", type=int, default=0, help="Optional flag argument \
+    with default value of 0")
 args = vars(parser.parse_args())
 ```
 
