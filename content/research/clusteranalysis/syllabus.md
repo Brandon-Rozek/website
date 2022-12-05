@@ -93,7 +93,7 @@ Cluster Analysis: 2014 Edition (Statistical Associates Blue Book Series 24)
 - Author: David Garson
 - ISBN: 978-1-62638-030-1
 - Cost: Free with Site Registration
-- Website: http://www.statisticalassociates.com/clusteranalysis.htm
+- Website: [http://www.statisticalassociates.com/clusteranalysis.htm](https://web.archive.org/web/20190217101921/http://www.statisticalassociates.com/clusteranalysis.htm)
 
 
 

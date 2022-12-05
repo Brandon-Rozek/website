@@ -66,7 +66,7 @@ var trimCache = function (cacheName, maxItems) {
 };
 ```
 
-And that got me thinking. In what situations is this problem more likely to occur? This particular problem happens when a lot of files are being called asynchronously. This problem doesn&#8217;t occur when only one file is being loaded. So when do we load a bunch of files? During page load. During page load, the browser might request css, javascript, images, etc. Which for most [websites](http://royal.pingdom.com/2011/11/21/web-pages-getting-bloated-here-is-why/), is a lot of files. Let&#8217;s now move our focus back to the humble script.js. Before, the only role it played with service workers was registering the script. However, if we can get the script to notify the service worker when the page is done loading, then the service worker will know when to trim the cache.
+And that got me thinking. In what situations is this problem more likely to occur? This particular problem happens when a lot of files are being called asynchronously. This problem doesn&#8217;t occur when only one file is being loaded. So when do we load a bunch of files? During page load. During page load, the browser might request css, javascript, images, etc. Which for most [websites](https://web.archive.org/web/20151103105513/http://royal.pingdom.com/2011/11/21/web-pages-getting-bloated-here-is-why/), is a lot of files. Let&#8217;s now move our focus back to the humble script.js. Before, the only role it played with service workers was registering the script. However, if we can get the script to notify the service worker when the page is done loading, then the service worker will know when to trim the cache.
 
 ```javascript
 if ('serviceWorker' in navigator) {

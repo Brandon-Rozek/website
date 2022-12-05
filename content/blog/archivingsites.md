@@ -10,7 +10,7 @@ I have several old Wordpress sites lying around that I would like to archive but
 There have been several tackles to the problem:
 
 - https://stackoverflow.com/questions/538865/how-do-you-archive-an-entire-website-for-offline-viewing#538878
-- https://letswp.io/download-an-entire-website-wget-windows/
+- [https://letswp.io/download-an-entire-website-wget-windows/](https://web.archive.org/web/20190915143432/https://letswp.io/download-an-entire-website-wget-windows/)
 
 And ultimately after consulting these resources I've came to the following command:
 

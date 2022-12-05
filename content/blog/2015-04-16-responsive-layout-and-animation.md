@@ -77,4 +77,4 @@ This is where the majority of my research went towards. It&#8217;s not as practi
 
 #### Conclusion
 
-Having a function that goes between two points is incredibly handy. Now when it comes to positioning, I don&#8217;t have to guess which values match the design. If i cant something to be between here and there fluidly, I can do it. What about animation? Chaining them together should have an interesting affect&#8230; P.S For those of you crazy people who like to see the theory behind the math, (like myself) I have my scanned work [here](https://brandonrozek.com/2015/04/function-two-points-theory/).
+Having a function that goes between two points is incredibly handy. Now when it comes to positioning, I don&#8217;t have to guess which values match the design. If i cant something to be between here and there fluidly, I can do it. What about animation? Chaining them together should have an interesting affect&#8230; P.S For those of you crazy people who like to see the theory behind the math, (like myself) I have my scanned work [here](/blog/2015-04-16-function-two-points-theory/).
