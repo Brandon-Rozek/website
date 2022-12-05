@@ -1,7 +1,7 @@
 ---
 title: "Pretty RSS Feeds"
 date: 2022-12-04T21:42:36-05:00
-draft: true
+draft: false 
 tags: []
 math: false
 ---
