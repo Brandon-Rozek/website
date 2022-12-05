@@ -19,4 +19,4 @@ To run:
 xvfb-run application
 ```
 
-For more customization, I hear that it's better to use [xpra with Xdummy](https://xpra.org/trac/wiki/Xdummy). I haven't tried this myself yet, but if you experience issues with the application expecting `randr` or `glx` extensions, give it a shot.
+For more customization, I hear that it's better to use [xpra with Xdummy](https://web.archive.org/web/20200926082251/https://xpra.org/trac/wiki/Xdummy). I haven't tried this myself yet, but if you experience issues with the application expecting `randr` or `glx` extensions, give it a shot.

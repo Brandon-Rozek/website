@@ -23,7 +23,7 @@ Though that begs the question, what is sufficiently complicated? Here are some t
   - I believe `bc` is the easiest command to use to process arithmetical expressions. Though this also then involves constructing strings to pass into bc. For example: `result=$(echo "1 + 5" | bc)`
 - Anything requiring abstract data types
   - (Associative) arrays in bash are scary to me
-  - Slawomir's functional programming in [bash library](https://github.com/ssledz/bash-fun) makes it more bearable. ([My fork](https://github.com/Brandon-Rozek/bashfun))
+  - Slawomir's functional programming in [bash library](https://github.com/ssledz/bash-fun) makes it more bearable. ([My fork](https://github.com/Brandon-Rozek/bash-fun))
 - Argument Parsing
   - Attempted to [parse arguments in bash](/blog/bashpartialargparse/), but [parsing arguments in Python](/blog/python-argpase/) is much cleaner to me.
 

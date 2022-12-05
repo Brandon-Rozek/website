@@ -2,6 +2,8 @@
 title: "Getting started with Digital Modes in Linux"
 date: 2019-09-04T09:52:21-04:00
 draft: false
+aliases:
+  - /blog/digialmodes
 tags: [ "Amateur Radio" ]
 ---
 

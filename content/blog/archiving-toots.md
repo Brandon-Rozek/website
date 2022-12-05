@@ -99,7 +99,7 @@ I save each toot in an individual markdown file under `content/toots`.
 
 ## Conclusion
 
-My full [script](https://github.com/Brandon-Rozek/website/blob/master/refreshtoots_v2.py)
+My full [script](https://github.com/Brandon-Rozek/website-toots/blob/main/.scripts/refreshtoots.py)
 is on GitHub.
 The script will let you know of any toot IDs that are created
 and/or updated. I then add these toots to Git for version control
