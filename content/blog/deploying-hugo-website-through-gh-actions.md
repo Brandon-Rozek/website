@@ -1,7 +1,7 @@
 ---
 title: "Deploying my Hugo Website through GitHub Actions"
 date: 2022-12-04T22:02:08-05:00
-draft: true
+draft: false 
 tags: ["Hugo"]
 math: false
 ---
