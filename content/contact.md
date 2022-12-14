@@ -5,7 +5,7 @@ description: Ways to contact Brandon Rozek
 
 ## Email (Preferred)
 
-The best way to get a hold of me is through email. I advocate the use of [plaintext](https://useplaintext.email/). My email address is [brozek@brandonrozek.com](mailto://brozek@brandonrozek.com).
+The best way to get a hold of me is through email. I advocate the use of [plaintext](https://useplaintext.email/). My email address is [brozek@brandonrozek.com](mailto:brozek@brandonrozek.com).
 
 I support PGP encryption! My current fingerprint is:
 ```
