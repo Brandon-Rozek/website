@@ -16,10 +16,10 @@ enableGitInfo = true
     avatar = "avatar.jpg"
     favicon = "favicon.ico"
     description = "PhD Student @ RPI studying Automated Reasoning in AI and Linux Enthusiast."
-    email = "hello@brandonrozek.com"
+    email = "brozek@brandonrozek.com"
     identities = [
         "https://github.com/brandon-rozek",
-        "mailto:hello@brandonrozek.com",
+        "mailto:brozek@brandonrozek.com",
         "https://fosstodon.org/@brozek"
     ]
 
@@ -126,5 +126,5 @@ enableGitInfo = true
     identifier = "email"
     name = "Email"
     pre = "<i class='fa fa-envelope fa-lg'></i>"
-    url = "mailto:hello@brandonrozek.com"
+    url = "mailto:brozek@brandonrozek.com"
     weight = 95

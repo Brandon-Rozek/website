@@ -322,6 +322,6 @@ Fire up your favorite userscript handling tool and add the [script](https://gist
 
 I ran into a small problem loading a contact onto my Android 5.0.2 phone. Apparently, they don&#8217;t support vCard 4.0 yet so I had to go into the file and change the line that says &#8220;VERSION 4.0&#8221; to &#8220;VERSION 3.0&#8221; which then allowed me to import the file into my contacts.
 
-As with all the code I write, feel free to comment/criticize. I love hearing feedback so if you spot anything, [contact me](mailto:hello@brandonrozek.com) 🙂
+As with all the code I write, feel free to comment/criticize. I love hearing feedback so if you spot anything, [contact me](mailto:brozek@brandonrozek.com) 🙂
 
 Also posted on [IndieNews](http://news.indiewebcamp.com/en){.u-syndication}
