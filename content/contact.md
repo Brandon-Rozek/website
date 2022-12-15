@@ -19,6 +19,14 @@ Keyoxide profiles:
 [WKD Profile](https://keyoxide.org/wkd/brozek%40brandonrozek.com)
 [HKP Profile](https://keyoxide.org/hkp/brozek%40brandonrozek.com)
 
+
+For convinience, here's a form that you can use to send an encrypted email.
+*Warning*: Some browsers have character limits in `mailto` links which can affect
+the "Generate Email" button.
+
+{{< pgpform "https://keys.openpgp.org/pks/lookup?op=get&options=mr&search=brozek@brandonrozek.com" >}}
+
+This above encryption is performed locally on your machine with [OpenPGP.js](https://openpgpjs.org/).
 ## ActivityPub
 
 You're also welcome to message me on Mastodon. My handle is [brozek@fosstodon.org](https://fosstodon.org/@brozek).
