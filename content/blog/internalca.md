@@ -95,5 +95,37 @@ To have more full grained control over the certificate usages and expiry time, I
 
 ## Trusting the CA
 
-To trust the CA on Linux, you need to copy the `ca.pem` file over to `/usr/local/share/ca-certificates/` and then execute `sudo update-ca-certificates`. Firefox has its own certificate store that you can add `ca.pem` to by accessing Preferences->Privacy & Security->Security->Certificates->View Certificates->Authorities->Import. The exact trail might have changed by the time you read this.
+On Linux, I know of two different ways to trust the CA depending on your distrubtion.
+
+### Ubuntu Derivative
+
+First you need to copy  the `ca.pem` file over to `/usr/local/share/ca-certificates/`.
+
+```bash
+sudo mv ca.pem /usr/local/share/ca-certificates
+```
+
+Then you need to execute
+
+```bash
+sudo update-ca-certificates
+```
+
+### Fedora Derivative
+
+Copy `ca.pem` over to `/etc/pki/ca-trust/source/anchors`.
+
+```bash
+sudo mv ca.pem /usr/pki/ca-trust/source/anchors
+```
+
+Then execute
+
+```bash
+sudo update-ca-trust
+```
+
+### Special Instructions for Firefox
+
+Firefox has its own certificate store that you can add `ca.pem` to by accessing Preferences->Privacy & Security->Security->Certificates->View Certificates->Authorities->Import. The exact trail might have changed by the time you read this.
 
