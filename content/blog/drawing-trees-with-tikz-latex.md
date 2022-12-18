@@ -6,7 +6,7 @@ tags: ["LaTex"]
 math: false
 ---
 
-For the longest time I've been avoiding TIkz because I imagined it being too difficult to learn. Usually I create a graphic using a program like [Draw.IO](https://draw.io) and import it as an image. Though this time around, I decided that I'm going to learn how to make trees in Tikz. It turns out, it's not as bad as I anticated.
+For the longest time I've been avoiding Tikz because I imagined it being too difficult to learn. Usually I create a graphic using a program like [Draw.IO](https://draw.io) and import it as an image. Though this time around, I decided that I'm going to learn how to make trees in Tikz. It turns out, it's not as bad as I anticipated.
 
 I'm only going to provide a few simple examples in this post. To learn more check out the [Tikz documentation on trees](https://tikz.dev/tikz-trees).
 
@@ -55,7 +55,7 @@ To create another child for a node, place it in the same level as the existing c
 
 ![Screenshot of tree with the root node having two child nodes](/files/images/blog/20221206111922.png)
 
-The rendered tree may have text overlap as shown in the last screenshot. This is where `tikz` options come in. We can define the seperation distance between siblings. I don't have many tips for choosing the value other than to play around and see how it looks.
+The rendered tree may have text overlap as shown in the last screenshot. This is where `tikz` options come in. We can define the separation distance between siblings. I don't have many tips for choosing the value other than to play around and see how it looks.
 
 ```latex
 \begin{tikzpicture}
@@ -88,4 +88,4 @@ To show how the child nesting works, I'll finish by giving the right child two c
 \end{tikzpicture}
 ```
 
-![Screenshot of a tree similar to the previous tree, but with the right child having two cchild nodes one with the label A and the other with the label B.](/files/images/blog/20221206112444.png)
+![Screenshot of a tree similar to the previous tree, but with the right child having two child nodes one with the label A and the other with the label B.](/files/images/blog/20221206112444.png)
