@@ -6,7 +6,7 @@ tags: ["Audio-Video"]
 math: false
 ---
 
-Recently I came across a video that I wanted to split up into multiple files. Given my love for `ffmpeg` the video/audio swiss armyknife, I knew there had to be a solution for cutting a video on the terminal. Luckily on [AskUbuntu](https://askubuntu.com/a/56044), Luis Alvarado provides a command snippet. This post will go into slightly more detail on the flags used in the command
+Recently I came across a video that I wanted to split up into multiple files. Given my love for `ffmpeg` the video/audio swiss army knife, I knew there had to be a solution for cutting a video on the terminal. Luckily on [AskUbuntu](https://askubuntu.com/a/56044), Luis Alvarado provides a command snippet. This post will go into slightly more detail on the flags used in the command
 
 ```bash
 ffmpeg -ss 00:00:00 \

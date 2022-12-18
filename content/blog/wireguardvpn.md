@@ -107,7 +107,7 @@ sudo ufw allow in on wg0 out on wg0
 
 **On all machines:**
 
-Have the wireguard service start at boot
+Have the Wireguard service start at boot
 
 ```bash
 sudo systemctl enable wg-quick@wg0

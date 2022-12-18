@@ -20,7 +20,7 @@ u_\mathfrak{a}(s) \rightarrow \mathbb{R}
 $$
 
 If the utility is positive, then we say that there are more benefits than downsides. If negative, then vice versa. As differing agents have different preferences,
-the utility function is dependent upon the agent $\mathfrak{a}$. The input of the function is some *state* $s$ which represents the environment that the agent is in. The output is a continous real number. 
+the utility function is dependent upon the agent $\mathfrak{a}$. The input of the function is some *state* $s$ which represents the environment that the agent is in. The output is a continuous real number. 
 
 A rational action in this context is the one that provides the highest utility in the next state.
 $$
@@ -51,7 +51,7 @@ Russ Roberts didn't mention MDPs in his book, but I think he had something simil
 
 Russ then remarks on one of his key points.
 
-> One of the weidest parts of the decision, as Paul pints out, is that once you become a vampire, what you like and what you dislike change.
+> One of the weirdest parts of the decision, as Paul pints out, is that once you become a vampire, what you like and what you dislike change.
 
 Let's look at it in terms of value iteration. The value of becoming a vampire is equal to the reward during the initial transformation plus the discounted value of living life after the transformation.
 $$
@@ -71,7 +71,7 @@ Given the formalism, what are some possible reasons why we don't know this?
 
 ## Not Knowing the Action
 
-When an agent performs the action $a_{transform}$ does it know that it performed that specific action? One way of looking at this is to see if the agent is able to tell apart any two arbitrary actions, say $a_{tranform}$ and $a_{morph}$. I don't believe this problem is well studied in literature. Do let me know if you know of any literature covering an agent confusing actions.
+When an agent performs the action $a_{transform}$ does it know that it performed that specific action? One way of looking at this is to see if the agent is able to tell apart any two arbitrary actions, say $a_{transform}$ and $a_{morph}$. I don't believe this problem is well studied in literature. Do let me know if you know of any literature covering an agent confusing actions.
 
 In the case of the vampire problem, it's likely safe to assume that the human knows the transformation action.
 
@@ -106,7 +106,7 @@ of the other party may not line up exactly with yours.
 
 ## Partial Observability
 
-Are we able to perceive the entirity of
+Are we able to perceive the entirety of
 a state? If not, within the field of
 sequential decision making, we call the
 problem *partially observable*.
@@ -117,7 +117,7 @@ limiting visibility of other traffic.
 - Group Decision Making: Agents often don't have insight to other's thought processes or perceptions.
 
 
-One popular way of modelling this is through
+One popular way of modeling this is through
 the introduction of belief states. A belief
 state encapsulates the set of possible states.
 For example, let's say that I prefer heads on a
@@ -133,7 +133,7 @@ The hope is that by keeping track of the
 list of possible states, when we are interacting
 with the environment, we can filter out impossible
 transitions until we get to a single possibility.
-However, there's no guarentee that this will occur.
+However, there's no guarantee that this will occur.
 Also the initial belief state may be infinitely long.
 
 Another way that we can hope to tackle this issue

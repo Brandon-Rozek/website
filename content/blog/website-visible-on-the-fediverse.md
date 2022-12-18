@@ -13,7 +13,7 @@ Implementing this protocol will allow one to interact with users on
 [Pixelfed](https://pixelfed.org/),
 [Friendica](https://friendi.ca/),
 and [others](http://fediverse.party/).
-Unfortuately for a static website, this protocol uses a
+Unfortunately for a static website, this protocol uses a
 publish-subscribe pattern. A service would need to be written
 in order to handle subscribers, pushing messages of published items,
 as well as receiving mentions.
@@ -32,7 +32,7 @@ lookup. For example if I am looking up the user `brozek@brandonrozek.com`,
 then the service will perform a GET request at
 `https://brandonrozek.com/.well-known/webfinger?resource=acct:brozek@brandonrozek.com`.
 
-A webfinger request should return the handle of the user (the `subject`) as well as
+A Webfinger request should return the handle of the user (the `subject`) as well as
 a link to its `actor`.
 
 ```json
@@ -49,9 +49,9 @@ a link to its `actor`.
 }
 ```
 
-Now for a static site with one user, you can hardcode the webfinger directly
+Now for a static site with one user, you can hardcode the Webfinger directly
 at `.well-known/webfinger`. The only issue is that many webservers determine the
-mimetype of a file by its extension. In this case, we'll have to let the webserver
+mime-type of a file by its extension. In this case, we'll have to let the webserver
 (mine is nginx) know how to serve it.
 
 ```nginx

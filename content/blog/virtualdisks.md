@@ -46,7 +46,7 @@ Extend by 1G: `truncate -s +1G $HOME/scratch.img`
 
 Shrink by 1G: `truncate -s -1G $HOME/scratch.img`
 
-Check the filesystem to make sure that no inconsistencies occured. With `ext(2/3/4)` we can do this with the `e2fsck` command.
+Check the filesystem to make sure that no inconsistencies occurred. With `ext(2/3/4)` we can do this with the `e2fsck` command.
 
 ```bash
 e2fsck $HOME/scratch.img
@@ -81,4 +81,4 @@ rm $HOME/scratch.img
 
 ## Conclusion
 
-With virtual disks we can experiment with different types of filesystems and perhaps try out snapshotting in supported filesystems. If we create virtual disks on [`tmpfs` ](/blog/lxdtmpfs/), then we can have a super fast file system as well!
+With virtual disks we can experiment with different types of filesystems and perhaps try out snapshoting in supported filesystems. If we create virtual disks on [`tmpfs` ](/blog/lxdtmpfs/), then we can have a super fast file system as well!

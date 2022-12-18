@@ -32,7 +32,7 @@ Xephyr :$DNum \
         -resizeable &
 ```
 
-If we're going to be using this nested X server for one application, then I recommend using the `ratpoison` window manager as it will make the application full screen and supports the reizability of the Xephyr window.
+If we're going to be using this nested X server for one application, then I recommend using the `ratpoison` window manager as it will make the application full screen and supports the resizing of the Xephyr window.
 
 ```bash
 ratpoison -d :$DNum &

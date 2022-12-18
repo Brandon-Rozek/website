@@ -21,7 +21,7 @@ The main advantage of PESOS is that my primary interaction with Mastodon is thro
 - Boosts
 - Character Limits
 - Alt Description in Images
-- Post Permisssions
+- Post Permissions
 
 ## Disadvantages to PESOS
 

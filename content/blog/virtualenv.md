@@ -21,7 +21,7 @@ Of course you can replace the python version with whichever version you like. No
 source environment_name/bin/activate
 ```
 
-This now sets up your python interpretor and other utilities to use the installation in the `environment_name` folder. You can now install python packages using `pip` and have it only reside in this environment.
+This now sets up your python interpreter and other utilities to use the installation in the `environment_name` folder. You can now install python packages using `pip` and have it only reside in this environment.
 
 To save all currently installed packages into `requirements.txt`:
 
