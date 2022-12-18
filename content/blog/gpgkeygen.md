@@ -5,7 +5,7 @@ draft: false
 tags: ["GPG"]
 ---
 
-GPG keys have a variety of different uses from sending encrypted emails to verifying git commits. Here I'll show how easy it is to create a public/private key-pair. Assuming you have the `gpg` client installed.
+GPG keys have a variety of different uses from sending encrypted emails to verifying git commits. Here I'll show how to create a public/private key-pair. This post assumes you have the `gpg` client installed.
 
 Type the following command
 
@@ -28,7 +28,7 @@ Please select what kind of key you want:
 Your selection? 1
 ```
 
-I selected the default option.
+I generally recommend selecting the default option. As cryptography standards change, I would expect the options presented to you to differ from my selection screen.
 
 ```
 RSA keys may be between 1024 and 4096 bits long.
@@ -36,7 +36,9 @@ What keysize do you want? (3072) 4096
 Requested keysize is 4096 bits
 ```
 
-I went for the highest available option.
+For keysizes, the bigger the more secure. The tradeoff is in the time it takes to perform the cryptographic operations.
+Since I rarely encrypted very large inputs, I went for the highest available option as the encryption time to me
+is negligable.
 
 ```
 Please specify how long the key should be valid.
@@ -48,14 +50,17 @@ Please specify how long the key should be valid.
 Key is valid for? (0) 1y
 ```
 
-It's highly recommended that you set an expiration date. I usually set it for around 1-3 years.
+I highly recommend that you set an expiration date. Not only does this allow for the key to become invalid if you happen to
+lose your private key, it also announces to the wider world that you actually use your GPG key.
+
+I try to set my key expiration dates to be a year out. 
 
 ```
 Key expires at Mon 11 Apr 2021 06:42:01 PM EDT
 Is this correct? (y/N) y
 ```
 
-Quick sanity check.
+As a quick sanity check, it'll provide the date that the key will expire.
 
 ```
 GnuPG needs to construct a user ID to identify your key.
@@ -74,7 +79,8 @@ You selected this USER-ID:
 Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? O
 ```
 
-More sanity checks.
+Another sanity check, to ensure that you set your user information correctly.
+Keep in mind that this information is included in plaintext as part of your public key.
 
 ```
 We need to generate a lot of random bytes. It is a good idea to perform
