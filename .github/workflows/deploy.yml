@@ -5,7 +5,7 @@ on:
   push:
     branches: main
   schedule:
-    - cron: "21 11 * * *"
+    - cron: "21 14 * * *"
 
 jobs:
   build_and_publish:
