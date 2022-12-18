@@ -11,7 +11,7 @@ Now there already exists a [OBS plugin](https://github.com/CatxFish/obs-v4l2sink
 
 To see discussion around this topic, check out this [Github thread](https://github.com/CatxFish/obs-virtual-cam/issues/17).
 
-OBS has two different options, streaming and recording. Since I want the ability to record a high fidelity version of my feed, we will use streaming to push video to a local RTMP server. This local RTMP server will then re-encode the video to a [v4l2 video device](https://brandonrozek.com/blog/fakewebcam/).
+OBS has two different options, streaming and recording. Since I want the ability to record a high fidelity version of my feed, we will use streaming to push video to a local RTMP server. This local RTMP server will then re-encode the video to a [v4l2 video device](/blog/fakewebcam/).
 
 We will use `ffmpeg` as our RTMP server
 

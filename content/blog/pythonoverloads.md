@@ -5,7 +5,7 @@ draft: false
 tags: ["Python"]
 ---
 
-I wrote a [blog post about operator overloads](https://brandonrozek.com/blog/cppoverloads/) in C++. Luckily for Python it is heavily document in what is called the [Python Data Model](https://docs.python.org/3/reference/datamodel.html). Though for the sake of having content, I'll share some of the ones that I heavily use in my classes.
+I wrote a [blog post about operator overloads](/blog/cppoverloads/) in C++. Luckily for Python it is heavily document in what is called the [Python Data Model](https://docs.python.org/3/reference/datamodel.html). Though for the sake of having content, I'll share some of the ones that I heavily use in my classes.
 
 | Operator | Method                 |
 | -------- | ---------------------- |

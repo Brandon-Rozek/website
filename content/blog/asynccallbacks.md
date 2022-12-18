@@ -5,7 +5,7 @@ draft: false
 tags: ["Python"]
 ---
 
-I've written a post on using [callbacks in Python](https://brandonrozek.com/blog/pysubscribepattern/). Though to add callbacks to `asyncio` functions, you'll have to interact with the loop object directly. Replace the emit function in the previous post with the following:
+I've written a post on using [callbacks in Python](/blog/pysubscribepattern/). Though to add callbacks to `asyncio` functions, you'll have to interact with the loop object directly. Replace the emit function in the previous post with the following:
 ```python
 class Application:
     # ...

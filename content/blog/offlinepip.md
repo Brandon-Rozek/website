@@ -15,7 +15,7 @@ Regardless, to my surprise, setting up a repository of python wheels doesn't tak
 
 ## Setup
 
-First I would recommend that you setup a virtual environment. Either through [pyenv](https://brandonrozek.com/blog/pyenv/) or [python-virtualenv](https://brandonrozek.com/blog/virtualenv/).
+First I would recommend that you setup a virtual environment. Either through [pyenv](/blog/pyenv/) or [python-virtualenv](/blog/virtualenv/).
 
 Then, install whatever packages you would like. Let us use tensorflow as an example:
 
@@ -79,5 +79,5 @@ Or they can just install the packages they want
 pip install --no-index -f /path/to/wheels/wheels package_name
 ```
 
-If you don't want to add flags to every command, check out my post on using [configuration files with pip](https://brandonrozek.com/blog/pipconf/).
+If you don't want to add flags to every command, check out my post on using [configuration files with pip](/blog/pipconf/).
 

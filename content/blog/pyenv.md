@@ -5,7 +5,7 @@ draft: false
 tags: [ "Python" ]
 ---
 
-I wrote previously about [managing python virtual environments](https://brandonrozek.com/blog/virtualenv/). Since then, I've discovered a software called [Pyenv](https://github.com/pyenv/pyenv) which allows you to not only manage virtual environments but python versions. As someone who likes to develop python programs in his free time, I found this incredibly useful in keeping all my virtual environments in one place and easily upgrading to a more recent version of python.
+I wrote previously about [managing python virtual environments](/blog/virtualenv/). Since then, I've discovered a software called [Pyenv](https://github.com/pyenv/pyenv) which allows you to not only manage virtual environments but python versions. As someone who likes to develop python programs in his free time, I found this incredibly useful in keeping all my virtual environments in one place and easily upgrading to a more recent version of python.
 
 To install, follow the steps outlined in the [pyenv-istaller](https://github.com/pyenv/pyenv-installer) repository. As of now, it's a bash script.
 

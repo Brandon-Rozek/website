@@ -5,7 +5,7 @@ draft: false
 tags: ["Deployment"]
 ---
 
-You might have noticed from my last two posts on [Packer](https://brandonrozek.com/blog/snapshotswithpacker/) and [Terraform](https://brandonrozek.com/blog/autodeployterraform/) that the configuration files are highly similar. In fact, we can trick them into sharing a configuration file!
+You might have noticed from my last two posts on [Packer](/blog/snapshotswithpacker/) and [Terraform](/blog/autodeployterraform/) that the configuration files are highly similar. In fact, we can trick them into sharing a configuration file!
 
 ## Shared Configuration
 

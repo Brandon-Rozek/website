@@ -5,7 +5,7 @@ draft: false
 tags: ["Networking"]
 ---
 
-I've written about relaying TCP traffic using [SSH port forwarding](https://brandonrozek.com/blog/sshlocalportforwarding/). Though sometimes you don't require the authenticity and encryption of SSH or want to use another protocol such as UDP. That's where `socat` comes in.
+I've written about relaying TCP traffic using [SSH port forwarding](/blog/sshlocalportforwarding/). Though sometimes you don't require the authenticity and encryption of SSH or want to use another protocol such as UDP. That's where `socat` comes in.
 
 The following will listen to TCP traffic on port 8001 and redirect it to TCP localhost:8000
 

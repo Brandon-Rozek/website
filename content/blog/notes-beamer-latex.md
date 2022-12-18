@@ -6,7 +6,7 @@ tags: ["LaTex"]
 math: false
 ---
 
-I often struggle with deciding how much content to put on my slides. Personally, I feel that my slides should be self-contained so that others can review them afterwards. This was especially true when I held [recitations](https://brandonrozek.com/ta/spring2022/csci2600/) as a TA.
+I often struggle with deciding how much content to put on my slides. Personally, I feel that my slides should be self-contained so that others can review them afterwards. This was especially true when I held [recitations](/ta/spring2022/csci2600/) as a TA.
 
 What if instead of putting all the content into one slide, we can have a corresponding notes document? Crazy enough, Beamer comes to the rescue! 
 

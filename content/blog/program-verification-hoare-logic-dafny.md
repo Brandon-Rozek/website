@@ -6,7 +6,7 @@ tags: ["Formal Methods"]
 math: false
 ---
 
-In the recitations that I'm giving for [Principles of Software](https://brandonrozek.com/ta/spring2022/csci2600/), we are going over reasoning through code using Hoare Logic and the program verifier Dafny. Microsoft Research designed Dafny to be similar to writing imperative code. The main difference is that you need to supply (pre/post)-conditions and the code to verify. Here's an example of how to reason about a simple statement by hand:
+In the recitations that I'm giving for [Principles of Software](/ta/spring2022/csci2600/), we are going over reasoning through code using Hoare Logic and the program verifier Dafny. Microsoft Research designed Dafny to be similar to writing imperative code. The main difference is that you need to supply (pre/post)-conditions and the code to verify. Here's an example of how to reason about a simple statement by hand:
 
 ```csharp
 // Precondition: x > 0

@@ -5,7 +5,7 @@ draft: false
 tags: ["Python"]
 ---
 
-It is common for larger applications to have modules that publishes and subscribes to events. This post will outline a couple ways to achieve this using [decorators](https://brandonrozek.com/blog/pydecorators/) and standard methods.
+It is common for larger applications to have modules that publishes and subscribes to events. This post will outline a couple ways to achieve this using [decorators](/blog/pydecorators/) and standard methods.
 
 ## Single Event
 

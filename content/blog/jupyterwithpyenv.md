@@ -5,7 +5,7 @@ draft: false
 tags: ["Python"]
 ---
 
-I enjoy both managing my Python versions with [pyenv](https://brandonrozek.com/blog/pyenv/) and the literate programming environment [Jupyter lab](https://jupyter.org/). Luckily we can easily manage Python virtual environments via iPython kernels.
+I enjoy both managing my Python versions with [pyenv](/blog/pyenv/) and the literate programming environment [Jupyter lab](https://jupyter.org/). Luckily we can easily manage Python virtual environments via iPython kernels.
 
 We're going to start off with our base Python interpretor
 ```bash

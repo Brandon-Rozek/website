@@ -5,7 +5,7 @@ draft: false
 tags: ["Hugo", "Mastodon", "Archive"]
 math: false
 ---
-In the spirit of [syndicating Mastodon toots](https://brandonrozek.com/blog/why-i-pesos-from-mastodon/)
+In the spirit of [syndicating Mastodon toots](/blog/why-i-pesos-from-mastodon/)
 to my own site, I wrote a Python script that turns toots into Hugo markdown
 files.
 
@@ -32,7 +32,7 @@ https://fosstodon.org/api/v1/accounts/108219415927856966
 
 By default, this will return 20 statuses in an array.
 To see how to parse each individual status, check out my
-post on [displaying a single toot](https://brandonrozek.com/blog/displaying-a-toot-hugo/).
+post on [displaying a single toot](/blog/displaying-a-toot-hugo/).
 
 You can use the limit parameter to set how many statuses you wish to see.
 The maximum number you can set it to is 40.

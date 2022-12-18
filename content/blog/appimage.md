@@ -33,7 +33,7 @@ gqrx.AppDir/
 
 The `AppRun` executable comes from the [AppImage Releases Page](https://github.com/AppImage/AppImageKit/releases). While you're there, you should also download `appimagetool` as we'll be using that soon.
 
-The `.desktop` file needs to be a valid [Linux Desktop Icon](https://brandonrozek.com/blog/linuxdesktopicons/). Some things to take note about the desktop file:
+The `.desktop` file needs to be a valid [Linux Desktop Icon](/blog/linuxdesktopicons/). Some things to take note about the desktop file:
 
 - The icon is assumed to be a `.png`
 - The executable is assumed to be located in `/usr/bin/`

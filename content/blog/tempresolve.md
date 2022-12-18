@@ -21,4 +21,4 @@ There are also browser extensions that you can use such as [LiveHosts](https://g
 
 If this is going to be a publicly facing service, then you should just set the records of your domain name to point to the server.
 
-If it's a non-public routable service, then perhaps try looking into setting up your own private [dns server](https://brandonrozek.com/blog/coredns/).
+If it's a non-public routable service, then perhaps try looking into setting up your own private [dns server](/blog/coredns/).

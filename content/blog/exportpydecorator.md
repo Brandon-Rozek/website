@@ -5,7 +5,7 @@ draft: false
 tags: ["Python"]
 ---
 
-A great [StackOverflow post](https://stackoverflow.com/a/35710527) by [Aaron Hall](https://stackoverflow.com/users/541136/aaron-hall) that shows how you can create an `export` decorator in order to not have to specify all the names you want to expose via [`__all__`](https://brandonrozek.com/blog/pythonall/).
+A great [StackOverflow post](https://stackoverflow.com/a/35710527) by [Aaron Hall](https://stackoverflow.com/users/541136/aaron-hall) that shows how you can create an `export` decorator in order to not have to specify all the names you want to expose via [`__all__`](/blog/pythonall/).
 
 The Decorator:
 

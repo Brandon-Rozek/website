@@ -5,7 +5,7 @@ draft: false
 tags: ["Python"]
 ---
 
-In my last post I spoke about [concurrency with asyncio](https://brandonrozek.com/blog/pyasyncio/). Now what if you don't want to concern yourself with async/await practices and just want to write synchronous code that executes I/O asynchronously?  That's where the library [gevent](http://www.gevent.org/) comes in. It does this by modifying Python's standard library during runtime to call it's own asynchronous versions.
+In my last post I spoke about [concurrency with asyncio](/blog/pyasyncio/). Now what if you don't want to concern yourself with async/await practices and just want to write synchronous code that executes I/O asynchronously?  That's where the library [gevent](http://www.gevent.org/) comes in. It does this by modifying Python's standard library during runtime to call it's own asynchronous versions.
 
 Last post code's example written in `gevent`.
 
