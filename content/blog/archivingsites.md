@@ -1,5 +1,5 @@
 ---
-title: "Archiving Sites"
+title: "Mirroring or Archiving an Entire Website"
 date: 2019-08-02T22:42:16-04:00
 draft: false
 tags: [ "Archive" ]
@@ -18,8 +18,8 @@ And ultimately after consulting these resources I've came to the following comma
 wget --mirror \
      --convert-links \
      --adjust-extension \
-     --no-clobber \
      --page-requisites \
+     --no-verbose \
      https://url/of/web/site
 ```
 
