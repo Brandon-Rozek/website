@@ -2,6 +2,7 @@
 title: "Z3 Constraint solving"
 date: 2021-06-18T00:53:20-04:00
 draft: false
+math: true
 tags: []
 ---
 
