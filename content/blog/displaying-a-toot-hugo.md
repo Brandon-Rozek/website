@@ -131,7 +131,7 @@ The following is the high level overview of our toots, complete with microformat
   </p>
   <div class="e-content p-name">
     {{ .content | safeHTML }}
-    <div class="toot-photos">
+    <div class="toot-photos space-evenly">
       <!-- TODO -->
     </div>
   </div>
@@ -146,7 +146,7 @@ We wrap the entire toot in an `h-entry` class. Then we begin by creating a div t
 To display the images we range over the media_attachments array and grab any image URLs and their descriptions:
 
 ```html
-<div class="toot-photos">
+<div class="toot-photos space-evenly">
 {{ range .media_attachments}}
 {{ if eq .type "image" }}
   <img src="{{ .preview_url }}" alt="{{ .description }}"/>
@@ -212,7 +212,7 @@ We'll have to add the following contents to `theme/layouts/shortcodes/displayOnl
     <div class="e-content p-name">
       {{ .content | safeHTML }}
       {{ if gt (len .media_attachments) 0 }}
-      <div class="toot-photos">
+      <div class="toot-photos space-evenly">
       {{ range .media_attachments}}
         {{ if eq .type "image" }}
         <img src="{{ .preview_url }}" alt="{{ .description }}"/>
