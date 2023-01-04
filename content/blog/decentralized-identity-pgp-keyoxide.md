@@ -2,7 +2,7 @@
 title: "Decentralized Identities with PGP Annotations and Keyoxide"
 date: 2023-01-04T09:00:14-05:00
 draft: false
-tags: ["PGP"]
+tags: ["GPG/PGP"]
 math: false
 ---
 
