@@ -2,7 +2,7 @@
 title: "Signing Commits"
 date: 2020-04-11T19:59:41-04:00
 draft: false
-tags: ["Git", "GPG"]
+tags: ["Git", "GPG/PGP"]
 ---
 
 Git and their various hosting platforms support commit signing as an additional step of verification. There seems to be an active debate on whether it should be used regularly, though I'll describe it on here in case you want to set it up.
