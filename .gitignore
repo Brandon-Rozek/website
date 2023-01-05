@@ -2,3 +2,4 @@ public/
 resources/
 static/data/*.json
 __pycache__/
+secrets/
