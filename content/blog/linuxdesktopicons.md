@@ -3,6 +3,7 @@ title: "Linux Desktop Icons"
 date: 2019-06-03T21:05:37-04:00
 draft: false
 tags: [ "Linux" ]
+medium_enabled: true
 ---
 
 I get asked a decent number of times how to add desktop icons on Linux. Luckily it's incredibly easy. [It's a `freedesktop` standard](http://standards.freedesktop.org/desktop-entry-spec/latest/).

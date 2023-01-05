@@ -102,4 +102,4 @@ if __name__ == "__main__":
             medium_result = syndicate_post(post)
             update_front_matter(post, medium_result)
             print(medium_result['data']['url'])
-            time.sleep(1)
+            time.sleep(60)

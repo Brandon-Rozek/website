@@ -4,6 +4,7 @@ date: 2022-11-12T10:45:04-05:00
 draft: false
 tags: ["Scala", "Functional Programming"]
 math: true
+medium_enabled: true
 ---
 
 Recursion takes a large problem and breaks it down until it reaches some base cases. One popular example, is the factorial function.

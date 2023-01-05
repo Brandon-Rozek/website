@@ -1,9 +1,12 @@
 ---
-title: "Deploying my Hugo Website through GitHub Actions"
-date: 2022-12-04T22:02:08-05:00
-draft: false 
-tags: ["Hugo"]
+date: 2022-12-04 22:02:08-05:00
+draft: false
 math: false
+medium_enabled: true
+medium_post_id: b08e82293bd2
+tags:
+- Hugo
+title: Deploying my Hugo Website through GitHub Actions
 ---
 
 For the longest time I've held out on deploying my website through GitHub actions. My rationale at the time was:
@@ -186,4 +189,3 @@ jobs:
       - name: Deploy
         run: ./deploy.sh
 ```
-

@@ -1,9 +1,12 @@
 ---
-title: "Drawing Trees in LaTex with Tikz"
-date: 2022-12-06T11:01:24-05:00
-draft: false 
-tags: ["LaTex"]
+date: 2022-12-06 11:01:24-05:00
+draft: false
 math: false
+medium_enabled: true
+medium_post_id: f80065fbf92f
+tags:
+- LaTex
+title: Drawing Trees in LaTex with Tikz
 ---
 
 For the longest time I've been avoiding Tikz because I imagined it being too difficult to learn. Usually I create a graphic using a program like [Draw.IO](https://draw.io) and import it as an image. Though this time around, I decided that I'm going to learn how to make trees in Tikz. It turns out, it's not as bad as I anticipated.

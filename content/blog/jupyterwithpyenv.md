@@ -3,6 +3,7 @@ title: "Jupyter with Pyenv"
 date: 2020-07-21T02:44:06-04:00
 draft: false
 tags: ["Python"]
+medium_enabled: true
 ---
 
 I enjoy both managing my Python versions with [pyenv](/blog/pyenv/) and the literate programming environment [Jupyter lab](https://jupyter.org/). Luckily we can easily manage Python virtual environments via iPython kernels.

@@ -4,6 +4,7 @@ date: 2022-10-04T11:38:03-04:00
 draft: false 
 tags: []
 math: false
+medium_enabled: true
 ---
 
 I [previously wrote](/blog/identifying-plants-with-inaturalist/) about using Seek to identify organisms and then uploading them separately to iNaturalist. Though after some thought I believe that by only uploading photos that Seek has blessed as knowing,  I may be reinforcing peculiar features of the dataset and hence the model.

@@ -3,6 +3,7 @@ title: "How to Drop Commits in Git"
 date: 2020-05-26T00:48:37-04:00
 draft: false
 tags: ["Git"]
+medium_enabled: true
 ---
 
 Even though it is not recommended to rewrite history in Git, it can be useful to drop certain commits from a pull request. The easiest way I've found to achieve this is with `git rebase`. To look back at the last 5 commits

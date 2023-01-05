@@ -1,9 +1,12 @@
 ---
-title: "Decentralized PGP Keys with WKD"
-date: 2023-01-04T09:06:38-05:00
-draft: false 
-tags: ["GPG/PGP"]
+date: 2023-01-04 09:06:38-05:00
+draft: false
 math: false
+medium_enabled: true
+medium_post_id: 7b6197f860fc
+tags:
+- GPG/PGP
+title: Decentralized PGP Keys with WKD
 ---
 
 After creating a PGP key, it is common to distribute it to various keyservers. However, anyone can upload to these keyservers impersonating someone else. One solution is to use a decentralized identities approach, however, if your email is on your own domain that you tell every soul about, why not have your own website host the key? This is where the Web Key Directory (WKD) protocol comes in.

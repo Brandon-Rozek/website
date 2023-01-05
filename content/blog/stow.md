@@ -3,6 +3,7 @@ title: "Stow Version Manager"
 date: 2021-02-25T10:31:34-05:00
 draft: false
 tags: []
+medium_enabled: true
 ---
 
 Suppose you need a newer or specific version of a package that isn't included in your standard linux repo. The standard procedure is to do something like the following...

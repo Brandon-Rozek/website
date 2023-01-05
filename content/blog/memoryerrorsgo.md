@@ -2,6 +2,7 @@
 title: "Memory Errors in Go"
 date: 2019-08-02T22:35:53-04:00
 draft: false
+medium_enabled: true
 ---
 
 I enjoy playing with Valgrind. Sometimes I view it as a game to get rid of memory errors. When I wrote a go script, I noticed that I received a lot of memory errors. I decided to double check by writing a simple hello world program in Go.

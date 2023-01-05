@@ -3,6 +3,7 @@ title: "PDF To Kindle"
 date: 2020-06-14T21:54:21-04:00
 draft: false
 tags: []
+medium_enabled: true
 ---
 
 This post will outline a process I take in order to get content from a website onto my Kindle.

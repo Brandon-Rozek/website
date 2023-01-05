@@ -4,6 +4,7 @@ date: 2022-11-09T17:45:26-05:00
 draft: false
 tags: ["Scala", "Functional Programming"]
 math: true
+medium_enabled: true
 ---
 
 Fold is a functional programming pattern that operates over some sequence with a binary operation and a starting value. There are two variants:

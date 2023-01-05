@@ -4,6 +4,7 @@ date: 2021-07-25T10:38:43-04:00
 draft: false
 tags: []
 math: false
+medium_enabled: true
 ---
 Segmented file transfer allows you to split up a file into multiple chunks and download them in parallel. There is a program written for Linux called LFTP which can accomplish this task and supports FTP, HTTP, SFTP, BitTorrent, among others. The syntax is a little funky, so I wrote a wrapper I call `pget` which allows for segmented file transfers using SCP.
 

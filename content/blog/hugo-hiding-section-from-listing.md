@@ -4,6 +4,7 @@ date: 2022-05-19T22:43:04-04:00
 draft: false
 tags: ["Hugo"]
 math: false
+medium_enabled: true
 ---
 
 In Hugo you can list all the sections using the following code

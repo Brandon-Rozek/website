@@ -4,6 +4,7 @@ date: 2022-06-12T18:35:30-04:00
 draft: false
 tags: ["Mastodon"]
 math: false
+medium_enabled: true
 ---
 
 [ActivityPub](https://www.w3.org/TR/activitypub/) is the backbone

@@ -3,6 +3,7 @@ title: "YubiKey"
 date: 2019-07-07T14:31:47-04:00
 draft: false
 tags: ["Security"]
+medium_enabled: true
 ---
 
 The YubiKey is a hardware authentication device manufactured by Yubico. It is a write only device that is meant to hold various authentication keys. The fact that it is write only means that people can't duplicate these keys. [Noah Chelliah](https://twitter.com/kernellinux) from Altispeed says that he uses YubiKeys at his company so that when employees moves on from his company he only needs to take their YubiKey.

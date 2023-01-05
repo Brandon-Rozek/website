@@ -4,6 +4,7 @@ date: 2022-02-04T20:29:04-05:00
 draft: false
 tags: ["Linux"]
 math: false
+medium_enabled: true
 ---
 
 Sometimes snap packages and flatpaks come with unmemorable names to run their commands. Luckily for snap packages, you can easily alias them. For example, to rename the .NET executable to `dotnet` run.

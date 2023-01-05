@@ -3,6 +3,7 @@ title: "DHCP for Raspberry Pi"
 date: 2021-02-15T22:46:21-05:00
 draft: false
 tags: ["Networking"]
+medium_enabled: true
 ---
 
 Recently I ran across the use case where I needed a Raspberry Pi to be connected to the Internet via a WiFI connection, while also providing DHCP leases through an Ethernet connection. I couldn't find a great way to achieve this with `dhcpcd` so instead I grabbed a tool that I'm more familiar with `dnsmasq`. 

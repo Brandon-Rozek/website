@@ -5,6 +5,7 @@ draft: false
 aliases:
     - /blog/adding-fonts
 tags: ['Ubuntu', 'Linux']
+medium_enabled: true
 ---
 
 **Warning: This blog post partially applies to Ubuntu-based operating systems**

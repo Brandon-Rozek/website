@@ -4,6 +4,7 @@ date: 2022-04-10T22:05:46-04:00
 draft: false
 tags: ["Backup"]
 math: false
+medium_enabled: true
 ---
 
 [Rclone](https://rclone.org/) is a terminal application that manages remote storage. It supports the standard remote filesystem protocols such as S3, (S)FTP, WebDAV as well as easy to use integration with cloud providers such as Amazon S2, Backblaze B2, Google Drive, and others. We can even perform regular backups using [Restic](https://restic.net/) with Rclone underneath. With all these features, it's easy to configure all remote storage within Rclone and then synchronize the configuration file across machines.

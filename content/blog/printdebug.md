@@ -3,6 +3,7 @@ title: "Print Statements with Frame Information"
 date: 2021-06-03T13:54:39-04:00
 draft: false
 tags: ["Testing"]
+medium_enabled: true
 ---
 
 I find it extremely useful to include frame information such as filename, line number, and current function in my print statements. Here's a couple ways that I've done that in the past.

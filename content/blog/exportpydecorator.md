@@ -3,6 +3,7 @@ title: "Quick Python: Export Decorator"
 date: 2020-06-14T22:15:38-04:00
 draft: false
 tags: ["Python"]
+medium_enabled: true
 ---
 
 A great [StackOverflow post](https://stackoverflow.com/a/35710527) by [Aaron Hall](https://stackoverflow.com/users/541136/aaron-hall) that shows how you can create an `export` decorator in order to not have to specify all the names you want to expose via [`__all__`](/blog/pythonall/).

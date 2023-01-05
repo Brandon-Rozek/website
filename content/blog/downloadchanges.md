@@ -3,6 +3,7 @@ title: "Download Changes"
 date: 2020-04-12T15:28:31-04:00
 draft: false
 tags: []
+medium_enabled: true
 ---
 
 When testing daily ISO images, it is useful to only download the parts of the ISO that has changed since the previous days. That way we can preserve time and bandwidth. 

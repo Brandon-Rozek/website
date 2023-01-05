@@ -4,6 +4,7 @@ date: 2019-05-22T20:02:21-04:00
 draft: false
 tags: [ "Math", "Python" ]
 math: true
+medium_enabled: true
 ---
 
 **Warning:** This post is meant for someone whose familiar with concepts of Abstract Algebra.

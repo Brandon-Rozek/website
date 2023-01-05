@@ -1,9 +1,11 @@
 ---
-title: "The Promise of Decentralized Currency and the Issues with Custodians"
-date: 2022-12-04T19:54:58-05:00
-draft: false 
-tags: []
+date: 2022-12-04 19:54:58-05:00
+draft: false
 math: false
+medium_enabled: true
+medium_post_id: 88190b25cbc4
+tags: []
+title: The Promise of Decentralized Currency and the Issues with Custodians
 ---
 
 *Disclaimer: I'm not an active participant in the Bitcoin community and the comments of this post are from an outside perspective.*

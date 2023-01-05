@@ -3,6 +3,7 @@ title: "Systemd with Python environments"
 date: 2019-08-25T20:04:20-04:00
 draft: false
 tags: [ "Linux", "Python" ]
+medium_enabled: true
 ---
 
 It took me some time to realize why I couldn't start a project during startup. I then realized that it was because I was using a python virtual environment and didn't tell systemd about it. 

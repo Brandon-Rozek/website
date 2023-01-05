@@ -1,9 +1,12 @@
 ---
-title: "Decentralized Identities with PGP Annotations and Keyoxide"
-date: 2023-01-04T09:00:14-05:00
+date: 2023-01-04 09:00:14-05:00
 draft: false
-tags: ["GPG/PGP"]
 math: false
+medium_enabled: true
+medium_post_id: 5703b335e3a8
+tags:
+- GPG/PGP
+title: Decentralized Identities with PGP Annotations and Keyoxide
 ---
 
 Under asymmetric encryption, for you to send me a message that only I can read you would need to encrypt the message with my public key. I then would have a corresponding private key that can decrypt the message. Public keys are then usually stored onto keyservers for others to query. When querying for a key, how do you know that the public key actually belongs to me? It turns out, you can't since anyone can upload a key pretending to be me.

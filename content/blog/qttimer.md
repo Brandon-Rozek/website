@@ -3,6 +3,7 @@ title: "Qt Timers"
 date: 2020-03-19T17:30:04-04:00
 draft: false
 tags: ["C++"]
+medium_enabled: true
 ---
 
 Qt has two great timers, one that repeats an action after a certain interval, and one that is meant for one-off operations. They call these `QTimer` and `QTimer::singleShot` respectively. This post is going to assume that we're working with a class named `Test` that inherits `QObject`.

@@ -3,6 +3,7 @@ title: "Quick Python: Unit Testing"
 date: 2020-03-31T07:27:47-04:00
 draft: false
 tags: ["Python", "Testing"]
+medium_enabled: true
 ---
 
 Python has a great built-in [unit test](https://docs.python.org/3.7/library/unittest.html) framework. This post will give a skeleton for how to format the files in your `tests` directory.

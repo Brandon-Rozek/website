@@ -1,9 +1,11 @@
 ---
-title: "Pretty RSS Feeds"
-date: 2022-12-04T21:42:36-05:00
-draft: false 
-tags: []
+date: 2022-12-04 21:42:36-05:00
+draft: false
 math: false
+medium_enabled: true
+medium_post_id: 5eb712e808ae
+tags: []
+title: Pretty RSS Feeds
 ---
 
 Hi, I have a RSS feed. This allows you to subscribe to my words without me even knowing. How does it work? Well you need an RSS link, here's mine:

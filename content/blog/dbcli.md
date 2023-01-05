@@ -3,6 +3,7 @@ title: "Dbcli"
 date: 2020-02-29T18:45:51-05:00
 draft: false
 tags: ["Python", "DB"]
+medium_enabled: true
 ---
 
 The [DBLCI](https://www.dbcli.com/) project creates command line database clients with auto-completion and syntax highlighting. These clients are often nicer to work with than the one a database comes with. In this post we're going to demo the [LiteCLI](https://litecli.com/) client.

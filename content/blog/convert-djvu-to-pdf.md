@@ -4,6 +4,7 @@ date: 2021-08-27T22:00:00-04:00
 draft: false
 tags: []
 math: false
+medium_enabled: true
 ---
 
 I've recently come across the DJVU file format before and needed to convert it to a PDF. The most reliable way I've found to do it is via the following command.

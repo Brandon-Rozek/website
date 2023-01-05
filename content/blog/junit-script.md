@@ -4,6 +4,7 @@ date: 2022-02-26T20:02:53-05:00
 draft: false
 tags: ["Java"]
 math: false
+medium_enabled: true
 ---
 
 Running a JUnit test on the terminal is a little annoying. Here is a quick script to make it easier, make it executable and drop it in [`~/.local/bin`](/blog/customexec/) for easy use.

@@ -4,6 +4,7 @@ date: 2022-01-26T23:29:31-05:00
 draft: false
 tags: ["LaTex"]
 math: false
+medium_enabled: true
 ---
 
 When creating slides in LaTex Beamer, it can be frustrating to not have the easy ability to drag text boxes around. Luckily, creating a multi-column layout in Beamer is not difficult! Below is an example of a two column slide layout, where the left side is a bulleted list, and the right side is an image:

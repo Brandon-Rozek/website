@@ -4,6 +4,7 @@ date: 2022-02-07T17:07:08-05:00
 draft: false
 tags: ["Git"]
 math: false
+medium_enabled: true
 ---
 
 I recently was introduced to [Sparse Directories in SVN](https://svnbook.red-bean.com/en/1.8/svn.advanced.sparsedirs.html). In SVN, you can initially clone a repository and have it be empty until you checkout the specific files needed. I wondered if I can do the same with `git`. For the *tl;dr* skip to the conclusion section.

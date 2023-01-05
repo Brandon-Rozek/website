@@ -4,6 +4,7 @@ date: 2022-06-02T21:19:29-04:00
 draft: false
 tags: ["Git"]
 math: false
+medium_enabled: true
 ---
 
 Git's greatest strength is its first-class support for decentralization.

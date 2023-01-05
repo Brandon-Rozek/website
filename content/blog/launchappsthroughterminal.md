@@ -3,6 +3,7 @@ title: "Launch Apps through the Terminal"
 date: 2020-09-26T21:48:09-04:00
 draft: false
 tags: ["Linux"]
+medium_enabled: true
 ---
 
 Normally when you launch an application through the terminal, the standard output appears, and closing the terminal closes the application.

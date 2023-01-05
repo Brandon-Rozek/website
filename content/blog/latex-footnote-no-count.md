@@ -4,6 +4,7 @@ date: 2022-09-23T15:34:28-04:00
 draft: false
 tags: ["LaTex"]
 math: false
+medium_enabled: true
 ---
 
 Let's say there's a scenario where you want to have a footnote, but you don't want a counter associated with it. In order to stay consistent with the document style, the solution should use `\footnote` within its implementation.

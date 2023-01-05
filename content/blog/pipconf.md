@@ -3,6 +3,7 @@ title: "Pip Config"
 date: 2020-04-10T11:56:19-04:00
 draft: false
 tags: ["Python"]
+medium_enabled: true
 ---
 
 If you find yourself added flags to every pip command, consider adding those flag's to a pip configuration file.

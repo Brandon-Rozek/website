@@ -3,6 +3,7 @@ title: "Managing Python Versions with Pyenv"
 date: 2020-01-20T09:55:04-05:00
 draft: false
 tags: [ "Python" ]
+medium_enabled: true
 ---
 
 I wrote previously about [managing python virtual environments](/blog/virtualenv/). Since then, I've discovered a software called [Pyenv](https://github.com/pyenv/pyenv) which allows you to not only manage virtual environments but python versions. As someone who likes to develop python programs in his free time, I found this incredibly useful in keeping all my virtual environments in one place and easily upgrading to a more recent version of python.

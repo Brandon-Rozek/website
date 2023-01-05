@@ -3,6 +3,7 @@ title: "cloc"
 date: 2020-01-25T10:24:16-05:00
 draft: false
 images: []
+medium_enabled: true
 ---
 
 **C**ount **L**ines **o**f **C**ode is an application included in the standard Ubuntu repositories that counts the lines of code separated by programming language.

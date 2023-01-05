@@ -3,6 +3,7 @@ title: "Auto-Deploy Docker Applications"
 date: 2020-05-09T10:20:34-04:00
 draft: false
 tags: ["Containers"]
+medium_enabled: true
 ---
 
 This post will combine that last three posts on [Packer](/blog/snapshotswithpacker/), [Terraform](/blog/autodeployterraform/), and their [configuration](/blog/sharedpackerterraformconfig/) to show an entire example of how to deploy a docker-compose application. We will specifically look at deploying a game called [`minetest`](https://www.minetest.net/) on DigitalOcean, but these principles can be adjusted to deploy your application as well. The entire setup is [documented on Github](https://github.com/Brandon-Rozek/minetest-deploy).

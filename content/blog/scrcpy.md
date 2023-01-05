@@ -3,6 +3,7 @@ title: "Scrcpy"
 date: 2020-01-09T21:36:30-05:00
 draft: false
 tags: [ ]
+medium_enabled: true
 ---
 
 With [Scrcpy](https://github.com/Genymobile/scrcpy) you can control an Android device remotely!

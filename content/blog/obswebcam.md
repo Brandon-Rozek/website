@@ -3,6 +3,7 @@ title: "OBS Webcam"
 date: 2020-05-25T23:53:56-04:00
 draft: false
 tags: ["Audio-Video"]
+medium_enabled: true
 ---
 
 [Open Broadcaster Software](https://obsproject.com/) is a great piece of software for recording and live streaming different video content. It would be nice to use the same level of professional software in video calling software as well.

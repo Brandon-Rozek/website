@@ -4,6 +4,7 @@ date: 2021-06-18T00:53:20-04:00
 draft: false
 math: true
 tags: []
+medium_enabled: true
 ---
 
 I've been looking for an easy to use constraint solver for a while and recently I've landed on using the python bindings for the SMT solver Z3.

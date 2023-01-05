@@ -3,6 +3,7 @@ title: "Python: Set Interval"
 date: 2020-02-25T21:34:03-05:00
 draft: false
 tags: [ "Python" ]
+medium_enabled: true
 ---
 
 Javascript has a function called `setInterval` which given a length of time $T$ and a callback function, it will perform that function every $T$ milliseconds. For example, to print "Hello, World!" every 5 seconds:

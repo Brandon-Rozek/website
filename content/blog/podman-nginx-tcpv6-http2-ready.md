@@ -4,6 +4,7 @@ date: 2022-09-28T22:43:28-04:00
 draft: false
 tags: ["Networking", "Containers"]
 math: false
+medium_enabled: true
 ---
 
 When checking the status of my website, I discovered that my website wasn't accessible over IPV6 and didn't have HTTP/2 enabled! This post will go over how I remedied that with my current setup of Nginx running within a podman container. Do note, TCPv6 will only work if you are provided a IPv6 address from your server provider.

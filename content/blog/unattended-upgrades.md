@@ -3,6 +3,7 @@ title: "Unattended Upgrades"
 date: 2019-05-26T12:52:03-04:00
 draft: false
 tags: [ "Linux", "Ubuntu" ]
+medium_enabled: true
 ---
 
 I'm a big believer of reducing maintenance. One of the things that I didn't bother setting up before but should've is *unattended upgrades*. The benefits of this is that you don't have to repeatedly log into your sever to upgrade your system.

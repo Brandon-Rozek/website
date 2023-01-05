@@ -2,6 +2,7 @@
 title: "Notes on '13 Ways Designers Screw Up Client Presentations'"
 date: 2019-05-21T22:20:14-04:00
 draft: false
+medium_enabled: true
 ---
 
 I watched a great talk by [Mike Monteiro](http://mikemonteiro.com/) recently called [13 Ways Designers Screw Up Client Presentations](https://www.youtube.com/watch?v=IXXKqwrEql4). You should really watch the talk but this post is just a quick summary of the points he got across in the presentation.

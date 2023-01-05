@@ -3,6 +3,7 @@ title: "OpenVPN Container"
 date: 2020-04-30T23:20:49-04:00
 draft: false
 tags: ["Containers"]
+medium_enabled: true
 ---
 
 Instead of configuring multiple containers to use a VPN, we can setup a VPN container and route the other containers traffic through this container. This post will outline how to do that with [dperson's OpenVPN Container](https://github.com/dperson/openvpn-client).

@@ -3,6 +3,7 @@ title: "Git Line Endings"
 date: 2020-05-09T11:01:21-04:00
 draft: false
 tags: ["Git"]
+medium_enabled: true
 ---
 
 if you have worked with a team that has a mix of Windows and Linux developers, you might have noticed pull requests where Git reports changes in a file that is not visible. One explanation is that the line endings might have changed. 

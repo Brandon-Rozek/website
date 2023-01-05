@@ -4,6 +4,7 @@ date: 2022-10-12T01:10:42-04:00
 draft: false
 tags: []
 math: true
+medium_enabled: true
 ---
 
 One technique for making decisions in uncertain situations is to look for *optionality*. This is one of the tips given in Russ Robert's book [Wild problems: a guide to the decisions that define us](https://www.worldcat.org/title/1321820629). Let's start off with the two definitions listed on [Wiktionary](https://en.wiktionary.org/wiki/optionality) at my time of writing.

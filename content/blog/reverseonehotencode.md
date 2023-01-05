@@ -3,6 +3,7 @@ title: "Reverse One-Hot Encode"
 date: 2020-10-11T21:58:47-04:00
 draft: false
 tags: ["Python"]
+medium_enabled: true
 ---
 
 Let's say that you have a dataset that is one hot encoded like the following observation:

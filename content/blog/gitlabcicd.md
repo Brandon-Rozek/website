@@ -2,6 +2,7 @@
 title: "Gitlab CI/CD"
 date: 2019-07-01T21:36:56-04:00
 draft: false
+medium_enabled: true
 ---
 
 One of the greatest benefits I believe of integrating Gitlab's CI/CD into your workload is code linting and building. This immediately eliminates the easy mistakes that developers make and wastes less people's time.

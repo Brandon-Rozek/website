@@ -4,6 +4,7 @@ date: 2022-11-11T14:45:17-05:00
 draft: false
 tags: ["Scala", "Functional Programming"]
 math: false
+medium_enabled: true
 ---
 
 In functional programming, we often look at a list in terms of its head (first-element) and tail (rest-of-list). This allows us to define operations on a list recursively. For example, how do we sum a list of integers such as `[1, 2, 3, 4]`?

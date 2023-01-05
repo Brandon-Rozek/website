@@ -3,6 +3,7 @@ title: "Handling Background Processes in Bash"
 date: 2019-06-17T19:50:30-04:00
 draft: false
 tags: [ "Bash" ]
+medium_enabled: true
 ---
 
 For multi-process applications, I want to be able to start it up using the `bash` command processor and be able to stop all the processes just by hitting `CTRL-C`.

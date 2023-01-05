@@ -4,6 +4,7 @@ date: 2022-05-15T22:49:34-04:00
 draft: false
 tags: ["Math"]
 math: true
+medium_enabled: true
 ---
 
 One of the most common mistakes I see in induction proofs is assuming the recursive case and working backwards towards the induction hypothesis. This may be fine for formulas that are symmetric like those involving equality, but this way of proving induction fails if not. This post will show such example.

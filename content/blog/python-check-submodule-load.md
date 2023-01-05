@@ -1,9 +1,12 @@
 ---
-title: "Quick Python: Check Submodule Load"
-date: 2022-12-01T21:12:03-05:00
+date: 2022-12-01 21:12:03-05:00
 draft: false
-tags: ["Python"]
 math: false
+medium_enabled: true
+medium_post_id: 80a6f9baadf4
+tags:
+- Python
+title: 'Quick Python: Check Submodule Load'
 ---
 
 Reading other people's code is a great way to learn. Recently, I was looking at the `numpy` repository and they had a hidden gem within their `setup.py`. In large scale repositories like `numpy`, we can have different dependencies that we rely upon via *git submodules*. The following function will check to see that these dependencies are loaded and in a "clean" state.

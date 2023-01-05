@@ -1,8 +1,11 @@
 ---
-title: "Personal Web Archive and How I Archive Single Web pages"
-date: 2022-12-24T10:01:16-04:00
+date: 2022-12-24 10:01:16-04:00
 draft: false
-tags: [ "Archive" ]
+medium_enabled: true
+medium_post_id: 9b2818a6e154
+tags:
+- Archive
+title: Personal Web Archive and How I Archive Single Web pages
 ---
 
 The [Internet Archive](https://web.archive.org/) is great for providing a centralized database of snapshots of websites throughout time. What happens though when you want to have

@@ -2,6 +2,7 @@
 title: "Rsync with a Different Key"
 date: 2019-07-06T09:20:05-04:00
 draft: false
+medium_enabled: true
 ---
 
 To use Rsync with a different key, follow the command structure below.

@@ -3,6 +3,7 @@ title: "Pyenv Build Flags"
 date: 2020-03-24T16:58:42-04:00
 draft: false
 tags: ["Python"]
+medium_enabled: true
 ---
 
 I ran into an issue with PyMC3 where it was expecting a certain symbol that Python wasn't compiled with.

@@ -3,6 +3,7 @@ title: "Terminal Output in Vim"
 date: 2021-06-18T16:22:30-04:00
 draft: false
 tags: []
+medium_enabled: true
 ---
 
 In Vim you can output the result of a command below your cursor by using `:r!`. 

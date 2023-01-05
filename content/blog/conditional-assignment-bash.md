@@ -4,6 +4,7 @@ date: 2022-06-19T18:49:47-04:00
 draft: false
 tags: ["Bash"]
 math: false
+medium_enabled: true
 ---
 
 Many programming languages include an quick way to perform a

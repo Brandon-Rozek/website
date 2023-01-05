@@ -2,6 +2,7 @@
 title: "Simulators"
 date: 2019-07-01T22:22:29-04:00
 draft: false 
+medium_enabled: true
 ---
 
 Part of my job involves integrating multiple different sensors together to make a cohesive product. One thing that I appreciate about my current team, is the rich set of tooling built around the project. I am definitely learning a lot from this project. One thing I wanted to share was the use of *simulators*. 

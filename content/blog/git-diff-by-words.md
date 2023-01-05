@@ -4,6 +4,7 @@ date: 2022-02-04T21:23:30-05:00
 draft: false
 tags: ["Git"]
 math: false
+medium_enabled: true
 ---
 
 When working in LaTex it is often more useful to see the changes by words as opposed to lines. Luckily, it's pretty easy to view this in the terminal.

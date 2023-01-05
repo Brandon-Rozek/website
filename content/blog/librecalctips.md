@@ -3,6 +3,7 @@ title: "LibreOffice Calc Tips"
 date: 2021-02-20T12:37:48-05:00
 draft: false
 tags: []
+medium_enabled: true
 ---
 
 I've been working with LibreOffice Calc (or Excel) spreadsheets recently and wanted to share some of the things I've learned.

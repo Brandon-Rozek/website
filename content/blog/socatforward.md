@@ -3,6 +3,7 @@ title: "Forward Packets with Socat"
 date: 2021-06-18T19:38:43-04:00
 draft: false
 tags: ["Networking"]
+medium_enabled: true
 ---
 
 I've written about relaying TCP traffic using [SSH port forwarding](/blog/sshlocalportforwarding/). Though sometimes you don't require the authenticity and encryption of SSH or want to use another protocol such as UDP. That's where `socat` comes in.

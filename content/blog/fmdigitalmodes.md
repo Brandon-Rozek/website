@@ -3,6 +3,7 @@ title: "Getting Started with FM Digital Modes"
 date: 2020-11-07T21:31:52-05:00
 draft: false
 tags: ["Amateur Radio"]
+medium_enabled: true
 ---
 
 In this post, I will describe a low cost way to get started with digital modes using FM. We will extend off my [previous post](/blog/digitalmodes). Even though some of these instructions are hardware specific, I hope that the general principles will apply to whatever hardware you're working with.

@@ -1,9 +1,13 @@
 ---
-title: "Immutable Traversals with Unfold"
-date: 2022-11-12T21:27:42-05:00
+date: 2022-11-12 21:27:42-05:00
 draft: false
-tags: ["Functional Programming", "Scala"]
 math: false
+medium_enabled: true
+medium_post_id: ddffc5b14ef9
+tags:
+- Functional Programming
+- Scala
+title: Immutable Traversals with Unfold
 ---
 
 Let's consider the following binary tree:
@@ -108,6 +112,3 @@ def DFS3(node: BinNode): Iterator[BinNode] =
             Some(crnt_node, next_s)
     )
 ```
-
-
-

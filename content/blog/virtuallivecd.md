@@ -4,6 +4,7 @@ date: 2020-01-12T22:45:06-05:00
 draft: false
 images: []
 tags: [ "Virtualization" ]
+medium_enabled: true
 ---
 
 I was curious on how Lubuntu 19.10 looked but I didn't feel like rebooting my computer and loading into a new ISO. Luckily there is a nice easy way to play around with live CDs.

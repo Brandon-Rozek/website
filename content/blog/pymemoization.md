@@ -3,6 +3,7 @@ title: "Quick Python: Memoization"
 date: 2020-03-30T17:31:55-04:00
 draft: false
 tags: ["Python"]
+medium_enabled: true
 ---
 
 There is often a trade-off when it comes to efficiency of CPU vs memory usage. In this post, I will show how the [`lru_cache`](https://docs.python.org/3/library/functools.html#functools.lru_cache) decorator can cache results of a function call for quicker future lookup.

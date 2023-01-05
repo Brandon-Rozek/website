@@ -4,6 +4,7 @@ date: 2022-04-07T20:09:40-04:00
 draft: false
 tags: []
 math: false
+medium_enabled: true
 ---
 
 Perhaps you've tried something like the following:

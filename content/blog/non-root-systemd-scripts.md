@@ -4,6 +4,7 @@ date: 2022-03-15T23:55:19-04:00
 draft: false
 tags: ["Linux"]
 math: false
+medium_enabled: true
 ---
 
 I know of two ways to run systemd services not as root. They both have their pros and cons associated with them.

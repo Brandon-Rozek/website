@@ -1,9 +1,11 @@
 ---
-title: "Visualizing Nginx logs with GoAccess"
-date: 2022-12-01T23:41:15-05:00
+date: 2022-12-01 23:41:15-05:00
 draft: false
-tags: []
 math: false
+medium_enabled: true
+medium_post_id: be642b59857
+tags: []
+title: Visualizing Nginx logs with GoAccess
 ---
 
 I currently use [Ackee](https://ackee.electerious.com/) to collect minimal analytics on this website. That comes as an additional Javascript library which has its own set of possible issues:
@@ -152,6 +154,3 @@ Here's a JSON report for the GoAccess website itself:
 ```
 
 We can do many things with a JSON export of website traffic, but one of my favorite ideas is to have a "Most Popular Posts" section of my website.
-
-
-

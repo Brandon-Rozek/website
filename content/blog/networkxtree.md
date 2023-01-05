@@ -4,6 +4,7 @@ date: 2022-01-02T20:36:41-05:00
 draft: false
 tags: ["Python"]
 math: false
+medium_enabled: true
 ---
 
 A graph in D3 and NetworkX can be represented as a JSON file.

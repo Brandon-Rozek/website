@@ -3,6 +3,7 @@ title: "Code in LaTex"
 date: 2020-04-30T23:46:05-04:00
 draft: false
 tags: ["LaTex"]
+medium_enabled: true
 ---
 
 I am currently working on a paper in LaTex and wanted to include some source code in it. I didn't want to use the default `verbatim` environment since I wanted to include syntax highlighting as well. Luckily, the `listings` package is an easy and extensible way to include source code inside LaTex documents. To speak first of its extensibility, here is a subset of the arguments that it can possibly take:

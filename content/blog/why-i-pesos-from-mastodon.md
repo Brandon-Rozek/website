@@ -4,6 +4,7 @@ date: 2022-05-15T18:36:16-04:00
 draft: false
 tags: ["Mastodon"]
 math: false
+medium_enabled: true
 ---
 
 The [IndieWeb movement](https://indieweb.org) is focused on people controlling their own experience on the web. They accomplish this by encouraging everyone to have their own personal website. Followers can then either subscribe to the [RSS feed](https://aboutfeeds.com/) and provide [Webmentions](https://indieweb.org/Webmention) back to the post, or they can interact with the material directly on another website like [Mastodon](https://joinmastodon.org/). 

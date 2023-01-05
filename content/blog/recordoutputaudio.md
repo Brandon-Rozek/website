@@ -3,6 +3,7 @@ title: "Record Output Audio via Terminal"
 date: 2020-03-01T10:38:06-05:00
 draft: false
 tags: [ "Linux", "Audio-Video" ]
+medium_enabled: true
 ---
 
 This post is specific to `PulseAudio` on Linux. 

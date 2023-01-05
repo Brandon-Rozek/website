@@ -3,6 +3,7 @@ title: "Debugging and Performance"
 date: 2019-06-15T10:59:30-04:00
 draft: false 
 tags: [ "Testing" ]
+medium_enabled: true
 ---
 
 I've come to like the GNU Debugger (GDB) and the `perf` tool recently. This post will be a short summary of the various interesting commands you can use.

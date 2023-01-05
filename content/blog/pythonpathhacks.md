@@ -3,6 +3,7 @@ title: "Python Path Hacks"
 date: 2020-01-13T22:26:16-05:00
 draft: false
 tags: [ "Python" ]
+medium_enabled: true
 ---
 
 There are two quick ways to hack together custom imports in Python. One is by using the `PYTHONPATH` environmental variable, and the other way is by using the `sys` module in Python.

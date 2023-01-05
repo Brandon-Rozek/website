@@ -5,6 +5,7 @@ draft: false
 aliases:
   - /blog/digialmodes
 tags: [ "Amateur Radio" ]
+medium_enabled: true
 ---
 
 This blog post is going to describe what steps I took to be able to decode signals using digital modes. Hardware wise, you will either need a RTL-SDR receiver or a transceiver radio with a cable plugging into the computer's soundcard.

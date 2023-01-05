@@ -4,6 +4,7 @@ date: 2022-11-09T15:15:10-05:00
 draft: false
 tags: ["Functional Programming", "Scala", "Haskell"]
 math: false
+medium_enabled: true
 ---
 
 One misconception when first learning about fold is that it takes a list of elements of a certain type (`List[T]`) and "reduces" it to a single item of type `T`.

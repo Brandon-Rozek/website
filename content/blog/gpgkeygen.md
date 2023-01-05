@@ -3,6 +3,7 @@ title: "GPG Keygen"
 date: 2020-04-11T19:35:05-04:00
 draft: false
 tags: ["GPG/PGP"]
+medium_enabled: true
 ---
 
 GPG keys have a variety of different uses from sending encrypted emails to verifying git commits. Here I'll show how to create a public/private key-pair. This post assumes you have the `gpg` client installed.

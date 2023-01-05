@@ -4,6 +4,7 @@ date: 2022-01-03T10:41:09-05:00
 draft: false
 tags: ["Networking", "SSH"]
 math: false
+medium_enabled: true
 ---
 
 A SOCKS5 proxy allows you to have network traffic as if it was coming from the proxy server as opposed to your local client. You can easily set it up using SSH from your local machine.

@@ -3,6 +3,7 @@ title: "Snapshot Creation with Packer"
 date: 2020-05-08T22:31:40-04:00
 draft: false
 tags: []
+medium_enabled: true
 ---
 
 [Packer](https://www.packer.io/) is a tool to create automated machine images in both local virtual machine / container environments, as well as a variety of cloud platforms. My current cloud platform of choice is [Digital Ocean](https://www.digitalocean.com/), so this post will explain how to set up Packer with it. Though you can likely find your platform of choice on their [docs](https://www.packer.io/docs/builders/) page

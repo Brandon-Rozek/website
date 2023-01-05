@@ -3,6 +3,7 @@ title: "Preserving Classic URLs on my Website"
 date: 2020-10-28T21:06:57-04:00
 draft: false
 tags: []
+medium_enabled: true
 ---
 
 At some point in 2018 I switched my website from using Wordpress on the backend to Hugo. I used a simple script to migrate everything over and in that migration a few things broke.

@@ -3,6 +3,7 @@ title: "Quick Python: Abstract Classes"
 date: 2020-01-26T18:40:03-05:00
 draft: false
 tags: [ "Python" ]
+medium_enabled: true
 ---
 
 You can create an abstract class in Python by inheriting Abstract Base Class (`ABC`) and declaring relevant methods abstract.

@@ -3,6 +3,7 @@ title: "Network Throughput Testing"
 date: 2019-08-30T20:11:26-04:00
 draft: false
 tags: [ "Linux", "Networking" ]
+medium_enabled: true
 ---
 
 I ended up upgrading the wiring in my place to CAT7 recently and I wanted to see if there was a noticeable performance difference to my previous cabling. This blog post won't be a product comparison, but instead I'll show how you can do network throughput testing at your own location.

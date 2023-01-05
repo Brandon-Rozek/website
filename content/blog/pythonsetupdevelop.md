@@ -3,6 +3,7 @@ title: "Python setup.py develop"
 date: 2020-02-21T22:42:55-05:00
 draft: false
 tags: [ "Python" ]
+medium_enabled: true
 ---
 **Deprecated in favor of [pip install editable](/blog/pipeditable)**
 

@@ -3,6 +3,7 @@ title: "Quick Python: __all__"
 date: 2020-05-01T00:53:46-04:00
 draft: false
 tags: ["Python"]
+medium_enabled: true
 ---
 
 Anything that is defined inside a package that is imported is also brought into that workspace. So for example, if package `A` uses `numpy` and you import `A`, then `A.numpy` will be shown in your workspace. In order to limit the variables exported, you can define the ones you want to be shown in a variable called `__all__`.

@@ -1,9 +1,11 @@
 ---
-title: "Obtaining Multiple Solutions Z3"
-date: 2022-12-31T09:52:00-05:00
+date: 2022-12-31 09:52:00-05:00
 draft: false
-tags: []
 math: true
+medium_enabled: true
+medium_post_id: d4f11c04d852
+tags: []
+title: Obtaining Multiple Solutions Z3
 ---
 
 Playing around with Diophantine solvers, I wanted to obtain the solutions of the following equation:

@@ -4,6 +4,7 @@ date: 2021-08-27T21:50:02-04:00
 draft: false
 tags: []
 math: false
+medium_enabled: true
 ---
 
 Some languages like C, C++, and Java have a concept of a Do-While loop which normally look like the following:

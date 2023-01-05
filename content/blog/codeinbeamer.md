@@ -4,6 +4,7 @@ date: 2022-01-26T23:11:37-05:00
 draft: false
 tags: ["LaTex"]
 math: false
+medium_enabled: true
 ---
 
 I commonly use the [`listings` package](/blog/latexcode/) to showcase code in my LaTex documents. I tried doing the same in my Beamer slidedecks and I ran into an issue where the LaTex source code failed to compile. After digging around, I figured out its because every slide or frame that includes code (or any verbatim environment) needs to be marked as `fragile`. A minimal example is presented below:

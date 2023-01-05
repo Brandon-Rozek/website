@@ -3,6 +3,7 @@ title: "Splitting Files to Circumvent Size Limits"
 date: 2020-09-07T20:41:25-04:00
 draft: false
 tags: []
+medium_enabled: true
 ---
 
 Let's say you want to transfer file(s) over to someone and there is a limit the size you can transfer over. Maybe because of the physical medium or the online service you're using. You can make use of the terminal tool `split` in order to get the chunks over there and then use `cat ` to combine it back to one file.

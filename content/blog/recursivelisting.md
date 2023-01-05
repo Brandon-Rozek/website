@@ -3,6 +3,7 @@ title: "Quick Python: List Files Recursively"
 date: 2020-02-09T17:31:44-05:00
 draft: false
 tags: [ "Python" ]
+medium_enabled: true
 ---
 
 In order to add website files into a Flask application using setuptools, I needed to recurse down several directories and grab HTML and CSS files.

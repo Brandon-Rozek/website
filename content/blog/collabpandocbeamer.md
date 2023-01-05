@@ -2,6 +2,7 @@
 title: "Collaborating on Beamer Pandoc Slides"
 date: 2019-11-22T14:49:19-05:00
 draft: false
+medium_enabled: true
 ---
 
 Recently I've been making slides using Pandoc with Beamer. However, I came across the issue where I needed to collaborate with someone using already existing slides written in Markdown.

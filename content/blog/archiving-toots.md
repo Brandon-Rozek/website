@@ -4,6 +4,7 @@ date: 2022-05-20T22:47:48-04:00
 draft: false
 tags: ["Hugo", "Mastodon", "Archive"]
 math: false
+medium_enabled: true
 ---
 In the spirit of [syndicating Mastodon toots](/blog/why-i-pesos-from-mastodon/)
 to my own site, I wrote a Python script that turns toots into Hugo markdown

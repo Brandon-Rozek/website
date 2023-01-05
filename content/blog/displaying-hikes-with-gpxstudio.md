@@ -4,6 +4,7 @@ date: 2022-05-23T16:35:01-04:00
 draft: false
 tags: ["Hugo", "GPS"]
 math: false
+medium_enabled: true
 ---
 
 As the weather gets warmer, I am starting to go on more hikes. Several people on their websites share a Strava embed which highlights a path taken during their workout. I believe as a community this has great potential for sharing our favorite hiking paths. I don't, however, want to rely on Strava to host my GPS data. Instead, we will showcase how to accomplish the same effect but with open technologies.

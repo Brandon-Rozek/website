@@ -3,6 +3,7 @@ title: "Virtualizing Environments with Clonezilla"
 date: 2019-08-25T20:09:28-04:00
 draft: false
 tags: ["Virtualization"]
+medium_enabled: true
 ---
 
 [Clonezilla](https://clonezilla.org/) advertises itself as a disk cloning and backup utility. I've been starting to think of it as a little more than that. Let's say that you go to a client site and they have a machine in production. Instead of messing around with their machine, you make a Clonezilla copy of it.  You can then take it back and place it on a computer you're not using to play around with it.

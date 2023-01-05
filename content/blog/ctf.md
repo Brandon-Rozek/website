@@ -3,6 +3,7 @@ title: "Capture The Flag"
 date: 2019-05-22T21:25:22-04:00
 draft: false
 tags: ["Security"]
+medium_enabled: true
 ---
 
 There is an event in Computer Security called "Capture The Flag". The purpose is to test the skills of security engineers and students through a variety of tasks in order to get a pass phrase which is called a flag. I noticed that Dr. Andrew Marshall wanted to set up this event at the University of Mary Washington for a while, so I and a few others decided to help make this a reality for him.

@@ -2,6 +2,7 @@
 title: "Local Repo From Live Installer"
 date: 2019-08-30T20:26:53-04:00
 draft: false
+medium_enabled: true
 ---
 
 I'm going to share my experience setting up a local repo from a CentOS live CD. These instructions should work similarly in REHL.

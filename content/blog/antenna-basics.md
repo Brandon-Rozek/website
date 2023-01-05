@@ -4,6 +4,7 @@ date: 2021-07-25T10:43:11-04:00
 draft: false
 tags: ["Amateur Radio"]
 math: false
+medium_enabled: true
 ---
 When a radio wave hits an antenna, the electrical component of the wave induces a difference of potential in the conductor which gives rise to an electric current. This is called electromotive force. The current induced is normally small, therefore, we usually design antennas to be as efficient as possible.
 

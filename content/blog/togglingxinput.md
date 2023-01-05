@@ -3,6 +3,7 @@ title: "Toggling X Input"
 date: 2020-01-07T20:46:32-05:00
 draft: false
 tags: [ "Linux", "X11" ]
+medium_enabled: true
 ---
 
 On X, we can easily enable or disable input devices using the `xinput` command. This is a great use case when you're tired of accidentally hitting the red Thinkpad nub or having your palm be recognized when drawing with a pen.

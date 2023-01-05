@@ -3,6 +3,7 @@ title: "Python Operator Overloads"
 date: 2020-03-13T20:49:28-04:00
 draft: false
 tags: ["Python"]
+medium_enabled: true
 ---
 
 I wrote a [blog post about operator overloads](/blog/cppoverloads/) in C++. Luckily for Python it is heavily document in what is called the [Python Data Model](https://docs.python.org/3/reference/datamodel.html). Though for the sake of having content, I'll share some of the ones that I heavily use in my classes.

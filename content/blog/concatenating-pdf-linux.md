@@ -1,9 +1,11 @@
 ---
-title: "Concatenating PDF files in Linux"
-date: 2022-12-18T18:38:44-05:00
+date: 2022-12-18 18:38:44-05:00
 draft: false
-tags: []
 math: false
+medium_enabled: true
+medium_post_id: 21f4d18fcb56
+tags: []
+title: Concatenating PDF files in Linux
 ---
 
 Every so often I need to combine several images into a single PDF. First, to convert an image to a PDF we can use `imagemagick`.

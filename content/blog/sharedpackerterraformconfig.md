@@ -3,6 +3,7 @@ title: "Shared Packer & Terraform Config"
 date: 2020-05-08T22:59:30-04:00
 draft: false
 tags: ["Deployment"]
+medium_enabled: true
 ---
 
 You might have noticed from my last two posts on [Packer](/blog/snapshotswithpacker/) and [Terraform](/blog/autodeployterraform/) that the configuration files are highly similar. In fact, we can trick them into sharing a configuration file!

@@ -1,9 +1,11 @@
 ---
-title: "Capturing Quoted Strings in Sed"
-date: 2022-12-18T12:55:32-05:00
+date: 2022-12-18 12:55:32-05:00
 draft: false
-tags: []
 math: false
+medium_enabled: true
+medium_post_id: 9801b2556737
+tags: []
+title: Capturing Quoted Strings in Sed
 ---
 
 *Disclaimer: This posts assumes some knowledge about regular expressions.*
@@ -62,4 +64,3 @@ INPUT="\<a href=\"https://brandonrozek.com\" rel=\"me\"\>\</a\>"
 
 echo "$INPUT" | sed "$REPLACE_EXPR"
 ```
-

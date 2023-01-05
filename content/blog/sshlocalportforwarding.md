@@ -3,6 +3,7 @@ title: "SSH Local Port Forwarding"
 date: 2019-08-06T16:50:00-04:00
 draft: false
 tags: [ "SSH" ]
+medium_enabled: true
 ---
 
 There are some services that I don't want to run all the time which makes me not want to open a port for it. One good example of this is [Jupyter Notebooks](https://jupyter.org/). Therefore, what I sometimes do is run it locally and forward the port so that another machine can access it.

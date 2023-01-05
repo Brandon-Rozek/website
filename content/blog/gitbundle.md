@@ -3,6 +3,7 @@ title: "Git Bundle"
 date: 2020-03-20T16:22:01-04:00
 draft: false
 tags: ["Git"]
+medium_enabled: true
 ---
 
 If you have a large software repository, sometimes you only want to share part of it with a group. You can accomplish this by using `git bundle`

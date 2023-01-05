@@ -3,6 +3,7 @@ title: "Git Credential Store"
 date: 2020-05-25T22:30:49-04:00
 draft: false
 tags: ["Git"]
+medium_enabled: true
 ---
 
 Normally it is recommended to setup a SSH key with your Git hosting tool with choice. Though if that is not practical, another way you can avoid having to put in your git username and password every time you push your code is to make use of Git's credential store.

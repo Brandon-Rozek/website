@@ -2,6 +2,7 @@
 title: "VNC Setup"
 date: 2019-05-24T23:21:43-04:00
 draft: false
+medium_enabled: true
 ---
 
 I mostly following this [Digital Ocean Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-18-04) on getting a working VNC setup on my desktop computer. There is one main difference on my end since I use KDE. I edited the `/home/$USER/.vnc/xstartup` file to appear as

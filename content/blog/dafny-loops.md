@@ -4,6 +4,7 @@ date: 2022-02-05T00:22:58-05:00
 draft: false
 tags: ["Formal Methods"]
 math: true
+medium_enabled: true
 ---
 
 Dafny treats loops like a black box. It could be annoying the first time you experience this and have no clue why the code is not verifying properly. There are two properties that Dafny needs you to prove: partial correctness and termination. Together these form *total correctness*.

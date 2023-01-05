@@ -3,6 +3,7 @@ title: "Neovim Plugins"
 date: 2020-03-23T22:52:19-04:00
 draft: false
 tags: []
+medium_enabled: true
 ---
 
 I decided to switch to [`neovim`](https://neovim.io/) recently and that resulted in having to redo my setup. This post will describe how to setup plugins with `vim-plug`.

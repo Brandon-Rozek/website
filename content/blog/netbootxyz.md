@@ -3,6 +3,7 @@ title: "Netboot.xyz Bootloader"
 date: 2021-06-18T15:43:29-04:00
 draft: false
 tags: []
+medium_enabled: true
 ---
 
 Instead of manually loading ISOs onto a USB stick for [Ventoy](/blog/ventoy) to display, we can use Netboot.xyz to present us a list of options and download them during boot. This requires an internet connection in order to work.

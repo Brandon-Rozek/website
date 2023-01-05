@@ -3,6 +3,7 @@ title: "Wormhole"
 date: 2019-11-20T21:21:23-05:00
 draft: false
 tags: [ "Linux" ]
+medium_enabled: true
 ---
 
 A dead simple way to send files between two Linux machines not on the same network is to use a utility called [Magic Wormhole](https://github.com/warner/magic-wormhole). It is typically included in the standard repositories and is so simple the this blog post is going to end soon.

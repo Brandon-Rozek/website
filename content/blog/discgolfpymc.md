@@ -4,6 +4,7 @@ date: 2020-03-28T22:08:19-04:00
 draft: false
 tags: ["Python", "Statistics"]
 math: true
+medium_enabled: true
 ---
 
 I've been following along with [Bayesian Methods for Hackers](https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/tree/master/) and I wanted to try using PyMC3 with my own small dataset.

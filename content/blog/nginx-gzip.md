@@ -4,6 +4,7 @@ date: 2022-02-04T20:06:50-05:00
 draft: false
 tags: []
 math: false
+medium_enabled: true
 ---
 
 Browsers that support gzip compression send the header `Accept-Encoding: gzip` in its request and if the webserver supports gzip, then it can send the website data back compressed. Though recently I learned that this isn't setup by default in `nginx`! This post will go over the configuration you'll need to add to `/etc/nginx/nginx.conf` in order to support `gzip` compression. From my experience, enabling `gzip` compression reduced network traffic by 1/4.

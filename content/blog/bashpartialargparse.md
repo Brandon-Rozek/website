@@ -3,6 +3,7 @@ title: "Partial Argument Parse and Passing in Bash"
 date: 2020-09-07T21:33:26-04:00
 draft: false
 tags: ["Bash"]
+medium_enabled: true
 ---
 
 Let's say we want to augment an existing terminal command (like for example `wget`). We then want to be able to add or edit command line options. The rest of this post provides an example that hopefully you can use in your bash script.

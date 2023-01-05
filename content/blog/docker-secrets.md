@@ -4,6 +4,7 @@ date: 2022-02-04T23:59:13-05:00
 draft: false
 tags: ["Containers"]
 math: false
+medium_enabled: true
 ---
 
 I try to keep secrets such as passwords and keys out in their own separate files so that I can `.gitignore` them and commit the rest of my configuration. With `docker-compose` we can do that with the `env_file` field. Here is an example with a postgres configuration:

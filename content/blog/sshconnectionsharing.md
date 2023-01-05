@@ -3,6 +3,7 @@ title: "SSH Connection Sharing"
 date: 2020-06-05T16:39:24-04:00
 draft: false
 tags: ["SSH"]
+medium_enabled: true
 ---
 If you're like me, you open a lot of different terminal sessions throughout your day. When it comes to SSH, I want these different sessions to share a connection rather than creating a new one each time.
 

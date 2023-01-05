@@ -3,6 +3,7 @@ title: "Firefox Privacy Configuration"
 date: 2020-06-26T22:35:05-04:00
 draft: false
 tags: []
+medium_enabled: true
 ---
 
 Firefox has a great number of configurable options when it comes to privacy. I first discovered this as I was browsing [privacytools.io](https://www.privacytools.io/browsers/) recommendations. Mozilla also has a [privacy task force](https://wiki.mozilla.org/Privacy/Privacy_Task_Force/firefox_about_config_privacy_tweeks) documenting some these options. I later learned that there is a website called [Firefox Profilemaker](https://ffprofile.com/) that takes the user step by step creating a privacy preserving profile.

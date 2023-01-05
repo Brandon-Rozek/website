@@ -3,6 +3,7 @@ title: "Manage Python Applications"
 date: 2020-10-11T19:21:10-04:00
 draft: false
 tags: ["Python"]
+medium_enabled: true
 ---
 
 I've recently discovered an application called [`pipx`](https://pipxproject.github.io/pipx/) which allows one to install and run Python applications in isolated environments. I think of it as a package similar to `apt`, but keeps the packages nice and isolated from one another.

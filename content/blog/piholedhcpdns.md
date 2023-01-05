@@ -3,6 +3,7 @@ title: "Configuring DHCP DNS in Pihole"
 date: 2020-05-25T23:36:51-04:00
 draft: false
 tags: ["Networking"]
+medium_enabled: true
 ---
 
 There are two scenarios I can imagine in where you want to configure the DNS set by PiHole

@@ -3,6 +3,7 @@ title: "Quick Python: Decorators"
 date: 2020-03-30T18:07:14-04:00
 draft: false
 tags: ["Python"]
+medium_enabled: true
 ---
 
 [Geir Arne Hjelle](https://realpython.com/team/gahjelle/) at Real Python wrote a great post called [Primer on Python Decorators](https://realpython.com/primer-on-python-decorators/). I recommend reading that as this post serves mostly as a reminder to myself on how to write a decorator.

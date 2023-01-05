@@ -3,6 +3,7 @@ title: "Replace Audio in Video"
 date: 2020-04-20T20:32:26-04:00
 draft: false
 tags: ["Audio-Video"]
+medium_enabled: true
 ---
 
 I recorded a video and wanted to touch up my audio in audacity. Here's how I used `ffmpeg` to extract the audio, and then replace it with a modified version.

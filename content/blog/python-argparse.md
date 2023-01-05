@@ -6,6 +6,7 @@ tags: ["Python"]
 aliases:
     - /blog/python-argpase/
 math: false
+medium_enabled: true
 ---
 
 *For a much better description of argument parsing in Python, please visit https://docs.python.org/3/library/argparse.html.*

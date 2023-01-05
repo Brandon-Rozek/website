@@ -3,6 +3,7 @@ title: "Python Packaging: Optional Dependencies"
 date: 2020-05-01T00:43:07-04:00
 draft: false
 tags: ["Python"]
+medium_enabled: true
 ---
 
 It is possible to make different package group of optional dependencies for a Python package. This is useful if you want to include an extra set of dependencies for developers/maintainers of the package. We can also define a plugin-based package similarly to how [OpenAI Gym uses it](https://github.com/openai/gym/blob/67212547ac29296839434324a0d5996e48fae840/setup.py) to denote different categories of environments you can setup.

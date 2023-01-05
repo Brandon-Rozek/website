@@ -4,6 +4,7 @@ date: 2022-09-28T16:05:23-04:00
 draft: false 
 tags: []
 math: false
+medium_enabled: true
 ---
 
 How do I know when my website goes up or down? Recently, I started using a service from [updown.io](https://updown.io) which gives me a status page and notifies me when it goes down.

@@ -3,6 +3,7 @@ title: "Quick Python: Copy Decorator"
 date: 2020-04-08T18:49:54-04:00
 draft: false
 tags: ["Python"]
+medium_enabled: true
 ---
 
 If you want to guarantee that your function doesn't modify any of the references and don't mind paying a price in memory consumption, here is a decorator you can easily add to your functions.

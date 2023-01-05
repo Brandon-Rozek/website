@@ -3,6 +3,7 @@ title: "Wildcard Domains in PiHole"
 date: 2020-05-25T23:26:00-04:00
 draft: false
 tags: ["Networking"]
+medium_enabled: true
 ---
 
 As of this time of writing, the current version of PiHole (5.0) supports adding custom DNS records, but not wildcard records. This makes it annoying if you run a bunch of different services within your LAN following a certain pattern. 

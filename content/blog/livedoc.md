@@ -3,6 +3,7 @@ title: "Live Documentation"
 date: 2019-09-27T23:07:19-04:00
 draft: false
 tags: ["Documentation"]
+medium_enabled: true
 ---
 
 This blog post is mostly for one of my teams in which I use Jupyter Notebooks for documentation. Perhaps after reading this post, you the reader can understand why it might be beneficial to use Jupyter Notebooks as a form of documentation.

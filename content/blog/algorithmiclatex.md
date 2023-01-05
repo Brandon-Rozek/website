@@ -3,6 +3,7 @@ title: "Algorithms in LaTex"
 date: 2020-05-14T21:31:28-04:00
 draft: false
 tags: ["LaTex"]
+medium_enabled: true
 ---
 
 There's a great package in LaTex called [`algorithm`](https://ctan.org/pkg/algorithms?lang=en) to help format psuedo-code algorithms for scientific papers. Here's a simple example of its usage:

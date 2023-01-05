@@ -1,9 +1,12 @@
 ---
-title: "Mastodon/Webfinger Alias using HTTP Redirects"
-date: 2022-12-31T09:50:00-05:00
+date: 2022-12-31 09:50:00-05:00
 draft: false
-tags: ["Mastodon"]
 math: false
+medium_enabled: true
+medium_post_id: dd0c680d595e
+tags:
+- Mastodon
+title: Mastodon/Webfinger Alias using HTTP Redirects
 ---
 
 Mastodon uses the Webfinger protocol to find users. For example, if you search for `@brozek@brandonrozek.com` it will access the url:

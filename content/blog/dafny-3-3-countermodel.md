@@ -4,6 +4,7 @@ date: 2022-02-04T19:43:12-05:00
 draft: false
 tags: ["Formal Methods"]
 math: false
+medium_enabled: true
 ---
 
 *Warning: `extractcounterexample` is a new flag in Dafny and the command to extract it will likely change*

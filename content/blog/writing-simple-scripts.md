@@ -4,6 +4,7 @@ date: 2022-05-19T20:40:19-04:00
 draft: false
 tags: []
 math: false
+medium_enabled: true
 ---
 
 I generally prefer a simpler solution to a problem if possible. This comes especially true with scripting. If I write a small script for something like say my website I generally have three requirements of the system:

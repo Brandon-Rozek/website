@@ -3,6 +3,7 @@ title: "External Media Formats"
 date: 2019-05-22T22:03:38-04:00
 draft: false
 tags: [ "Storage" ]
+medium_enabled: true
 ---
 
 I received an external SSD recently and I decided that it would be a great place to offload some of my backups. Before I got started, I became curious as to what filesystem to put on the SSD. After some research, it seems that if I want to be able to access it using Windows I am actually quite limited. In fact only three make sense:

@@ -3,6 +3,7 @@ title: "LXD on tmpfs"
 date: 2019-12-31T22:35:21-05:00
 draft: false
 tags: [ "Linux", "Storage", "Containers" ]
+medium_enabled: true
 ---
 
 Container images are designed to be as small as possible. Wouldn't it be cool if we can hold entire containers in RAM? This post outlines how to accomplish this using LXD. It turns out that it is a lot easier to setup custom storage pools on LXD than with Docker.

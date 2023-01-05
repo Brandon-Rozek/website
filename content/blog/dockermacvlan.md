@@ -3,6 +3,7 @@ title: "Docker Macvlan Networks"
 date: 2020-05-26T01:01:43-04:00
 draft: false
 tags: ["Containers"]
+medium_enabled: true
 ---
 
 It is useful to have some docker containers live in the same network as your host machine. We can accomplish this by creating a new MAC address for the container and using the `macvlan` driver. Here is example Docker Compose configuration

@@ -4,6 +4,7 @@ date: 2022-05-03T01:15:55-04:00
 draft: false
 tags: ["Git"]
 math: false
+medium_enabled: true
 ---
 
 Lets imagine a scenario where in the latest merge a test

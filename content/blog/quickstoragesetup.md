@@ -3,6 +3,7 @@ title: "Quickly Setting up a Storage Device"
 date: 2020-01-12T21:43:26-05:00
 draft: false
 tags: [ "Linux", "Storage" ]
+medium_enabled: true
 ---
 
 This post exists mostly to aid myself for when I buy new drives for my home server. It's a quick and easy way to create an ext4 filesystem over the entire drive.

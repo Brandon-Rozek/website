@@ -3,6 +3,7 @@ title: "Clearing Systemd Logs"
 date: 2021-02-21T16:08:51-05:00
 draft: false
 tags: ["Linux"]
+medium_enabled: true
 ---
 
 Short post today. I wanted to clear out some disk space usage on one of my servers and noticed that the systemd logs were taking up a decent bit. Here are two options to clear out old logs.

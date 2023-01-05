@@ -4,6 +4,7 @@ date: 2022-05-15T20:39:35-04:00
 draft: false
 tags: ["Mastodon"]
 math: false
+medium_enabled: true
 ---
 
 Mastodon is a cool federated micro-blogging platform that can serve as an alternative to Twitter. One of its primary features is that it shows what they call toots from only people you follow in reverse-chronological order. Nowadays, large tech companies employ recommendation engines to surface content from users (you don't even need to follow) in a non-chronological order driven by the number of interactions users similar to you had with the content. The lack of recommendation engine in Mastodon can be a blessing as low-quality emotional content tends to drive more interactions. However, this can also be a curse as cool new people don't naturally surface in your feed. The following are the techniques I employ to consistently seek out cool new people:

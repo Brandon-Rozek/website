@@ -1,9 +1,11 @@
 ---
-title: "Blogroll From Subscriptions"
-date: 2022-12-18T13:05:49-05:00
+date: 2022-12-18 13:05:49-05:00
 draft: false
-tags: []
 math: false
+medium_enabled: true
+medium_post_id: 913b5fa85507
+tags: []
+title: Blogroll From Subscriptions
 ---
 
 While I was browsing around personal websites, I found a fun little piece of code from Jake Bauer's [links page](https://www.paritybit.ca/links). 
@@ -55,4 +57,3 @@ REPLACE_EXPR="s/$XML_EXPR/$HTML_EXPR/g"
 
 grep "xmlUrl" "$1" | sed "$REPLACE_EXPR"
 ```
-

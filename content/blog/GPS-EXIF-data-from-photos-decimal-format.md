@@ -4,6 +4,7 @@ date: 2022-06-19T19:01:35-04:00
 draft: false
 tags: ["GPS"]
 math: false
+medium_enabled: true
 ---
 
 For a new feature that I'm cooking up for my website, I need to grab the GPS information from the EXIF data stored in my images. Luckily, `imagemagick`

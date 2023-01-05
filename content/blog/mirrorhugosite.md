@@ -3,6 +3,7 @@ title: "Mirror a Hugo Site"
 date: 2020-12-07T22:41:17-05:00
 draft: false
 tags: ["Archive", "Hugo"]
+medium_enabled: true
 ---
 
 I'm a big proponent of having offline copies of content. Especially when I'm on travel and don't have easy Internet access. Using the built in hugo webserver and a reverse proxy, I will show how we can host a local mirror of a Hugo site.
