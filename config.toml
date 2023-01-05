@@ -35,8 +35,8 @@ enableGitInfo = true
 [mediaTypes."application/feed+json"]
   suffixes = ["json"]
 
-[outputFormats.Atom]
-  name = "Atom"
+[outputFormats.atom]
+  name = "atom"
   mediaType = "application/atom+xml"
   baseName = "index"
   isPlainText = false
@@ -45,8 +45,8 @@ enableGitInfo = true
   noUgly = true
   permalinkable = false
 
-[outputFormats.AS2]
-  name = "AS2"
+[outputFormats.as2]
+  name = "as2"
   mediaType = "application/activity+json"
   baseName = "index"
   isPlainText = false
@@ -55,10 +55,10 @@ enableGitInfo = true
   noUgly = true
   permalinkable = false
 
-[outputFormats.feedjson]
-  name = "feedjson"
+[outputFormats.json]
+  name = "json"
   mediaType = "application/feed+json"
-  baseName = "feed"
+  baseName = "index"
   isPlainText = false
   rel = "alternate"
   isHTML = false
@@ -67,8 +67,8 @@ enableGitInfo = true
 
 
 [outputs]
-    section = ["JSON", "HTML", "RSS", "Atom", "AS2", "feedjson"]
-    page = ["HTML", "AMP"]
+    section = ["json", "html", "rss", "atom", "as2"]
+    page = ["html", "amp", "json"]
 
 [[menu.main]]
     identifier = "blog"
