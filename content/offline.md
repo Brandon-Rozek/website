@@ -6,3 +6,5 @@ layout: offline
 
 Your device is offline. You may have some pages cached for offline viewing,
 otherwise please wait for the internet to reconnect to continue browsing.
+
+[Homepage](/)
