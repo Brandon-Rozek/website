@@ -1,5 +1,5 @@
 ---
-title: "NotImplemented"
+title: "NotImplemented in Python"
 date: 2019-10-27T23:35:17-04:00
 draft: false
 tags: [ "Python" ]

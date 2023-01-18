@@ -1,5 +1,5 @@
 ---
-title: "xpra"
+title: "Persistent remote X sessions with xpra"
 date: 2020-01-15T18:29:57-05:00
 draft: false
 tags: [ "X11" ]

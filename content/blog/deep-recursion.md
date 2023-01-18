@@ -1,5 +1,5 @@
 ---
-title: "Deep Recursion"
+title: "Deep Recursion in Functional Programming"
 date: 2022-11-11T14:45:17-05:00
 draft: false
 tags: ["Scala", "Functional Programming"]

@@ -1,5 +1,5 @@
 ---
-title: "Traefik & Nginx"
+title: "How to use Nginx under Traefik"
 date: 2019-12-16T19:55:47-05:00
 draft: false
 medium_enabled: true

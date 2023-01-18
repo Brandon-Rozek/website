@@ -1,5 +1,5 @@
 ---
-title: "Term To SVG"
+title: "Terminal Output To SVG Animations"
 date: 2022-01-17T10:14:22-05:00
 draft: false
 tags: []

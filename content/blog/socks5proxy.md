@@ -1,5 +1,5 @@
 ---
-title: "SOCKS5 Proxy"
+title: "Configuring a SOCKS5 Proxy"
 date: 2022-01-03T10:41:09-05:00
 draft: false
 tags: ["Networking", "SSH"]

@@ -1,5 +1,5 @@
 ---
-title: "Groups Simplified"
+title: "Simplifying the Definition of Algebraic Groups"
 date: 2019-12-10T21:40:00-05:00
 draft: false 
 tags: [ "Math" ]
@@ -15,7 +15,12 @@ Let us have a set $G$ together with a binary operation $*$. We will use multipli
 2. $ex = x$ 
 3. $x^{-1} x = e$
 
-for some fixed $e \in G$, then we say that $\langle G, * \rangle$ is a group. In class, we needed to show that $xe = x$ and $xx^{-1} = e$. However, these can be derived by the prior properties.
+for some fixed $e \in G$, then we say that $\langle G, * \rangle$ is a group. 
+
+
+When I was taking Abstract Algebra, we needed to also show that $xe = x$ and $xx^{-1} = e$ for an algebraic structure to be a group.
+
+However, these can be derived by the prior properties.
 
 ### Prove $xx^{-1} = e$  
 \begin{align*}

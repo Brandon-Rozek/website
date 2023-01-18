@@ -1,5 +1,5 @@
 ---
-title: "Videos and GIFs"
+title: "Transforming Videos into GIFs for Slides"
 date: 2019-12-04T10:13:35-05:00
 draft: false
 tags: ["Audio-Video"]

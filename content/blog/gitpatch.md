@@ -1,5 +1,5 @@
 ---
-title: "Git Patch"
+title: "Sharing Patches in Git"
 date: 2020-03-20T16:22:57-04:00
 draft: false
 tags: ["Git"]

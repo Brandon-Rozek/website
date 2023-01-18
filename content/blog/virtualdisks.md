@@ -1,5 +1,5 @@
 ---
-title: "Virtual Disks"
+title: "Playing with Filesystems using Virtual Disks"
 date: 2020-01-06T22:26:58-05:00
 draft: false
 tags: [ "Linux", "Storage" ]

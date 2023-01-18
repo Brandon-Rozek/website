@@ -1,6 +1,6 @@
 ---
 id: 2089
-title: Monte Carlo Pi
+title: Approximate Pi using a Monte Carlo Simulation
 date: 2017-03-14T05:31:21+00:00
 author: Brandon Rozek
 layout: post

@@ -1,5 +1,5 @@
 ---
-title: "Bat: The user friendly cat"
+title: "Bat is cat with syntax highlighting"
 date: 2020-02-01T06:26:18-05:00
 draft: false
 tags: [ "Linux" ]

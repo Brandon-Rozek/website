@@ -1,5 +1,5 @@
 ---
-title: "Checkinstall"
+title: "Quick and Dirty DEB/RPM with Checkinstall"
 date: 2020-04-26T12:11:30-04:00
 draft: false
 tags: ["Packaging", "Linux"]

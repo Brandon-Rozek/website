@@ -1,5 +1,5 @@
 ---
-title: "aspell"
+title: "Spell check on the Terminal with aspell"
 date: 2019-12-10T22:20:48-05:00
 draft: false
 tags: [ "Linux" ]

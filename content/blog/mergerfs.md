@@ -1,12 +1,12 @@
 ---
-title: "MergerFS"
+title: "Balance files across multiple disks using MergerFS"
 date: 2020-01-14T23:10:17-05:00
 draft: false
 tags: [ "Linux", "Storage" ]
 medium_enabled: true
 ---
 
-[MergerFS](https://github.com/trapexit/mergerfs) is a great filesystem for an expandable storage system in a homelab. Mostly since it allows you to add disks one at a time without having to, for example, resilver a ZFS pool. MergerFS won't be as efficient as a filesystem that stripes your data across disks, but in the case of a disk failure the disks unaffected will still have part of the data.
+[MergerFS](https://github.com/trapexit/mergerfs) is a great filesystem for an expandable storage system in a homelab. Mostly since it allows you to add disks one at a time without having to, for example, resilver a ZFS pool. MergerFS won't be as efficient as a filesystem that stripes your data across disks, but in the case of a disk failure the disks unaffected will still have the files assigned to them.
 
 [Plenty](https://blog.linuxserver.io/2017/06/24/the-perfect-media-server-2017/) of other [people](https://web.archive.org/web/20200130103849/https://www.teknophiles.com/2018/02/19/disk-pooling-in-linux-with-mergerfs/) described MergerFS, so I'll keep this post simple.
 

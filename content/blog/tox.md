@@ -1,5 +1,5 @@
 ---
-title: "Tox"
+title: "Automate Python Test Suites with Tox"
 date: 2020-02-21T22:34:19-05:00
 draft: false
 tags: [ "Python", "Testing" ]

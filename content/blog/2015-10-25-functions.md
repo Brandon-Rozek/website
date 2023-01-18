@@ -1,6 +1,6 @@
 ---
 id: 350
-title: Functions
+title: Functions in Javascript
 date: 2015-10-25T13:48:41+00:00
 author: Brandon Rozek
 layout: post

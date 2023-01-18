@@ -1,5 +1,5 @@
 ---
-title: "Diceware"
+title: "Generate Secure Passphrases Locally with Diceware"
 date: 2020-05-01T00:22:31-04:00
 draft: false
 tags: ["Security"]

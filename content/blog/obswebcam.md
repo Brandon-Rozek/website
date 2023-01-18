@@ -1,5 +1,5 @@
 ---
-title: "OBS Webcam"
+title: "Using OBS as a Webcam Source"
 date: 2020-05-25T23:53:56-04:00
 draft: false
 tags: ["Audio-Video"]

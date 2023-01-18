@@ -1,5 +1,5 @@
 ---
-title: "cloc"
+title: "Count Lines of Code (cloc)"
 date: 2020-01-25T10:24:16-05:00
 draft: false
 images: []

@@ -1,5 +1,5 @@
 ---
-title: "coredns"
+title: "Setting up coredns and Zone Files"
 date: 2019-12-13T02:00:29-05:00
 draft: false 
 tags: [ "Linux", "Networking", "Containers" ]

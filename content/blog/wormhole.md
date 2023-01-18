@@ -1,5 +1,5 @@
 ---
-title: "Wormhole"
+title: "Wormhole: Easiest way to transfer files between two linux machines"
 date: 2019-11-20T21:21:23-05:00
 draft: false
 tags: [ "Linux" ]

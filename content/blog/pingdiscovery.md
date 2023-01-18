@@ -1,5 +1,5 @@
 ---
-title: "Ping Discovery"
+title: "Find Devices on your Network with a Ping Scan"
 date: 2020-02-02T22:21:30-05:00
 draft: false
 tags: [ "Linux", "Networking" ]

@@ -1,5 +1,5 @@
 ---
-title: "Pyenv and Tox"
+title: "Testing your Python Application on Multiple Versions with Pyenv and Tox"
 date: 2020-02-21T19:06:40-05:00
 draft: false 
 tags: [ "Python", "Testing" ]

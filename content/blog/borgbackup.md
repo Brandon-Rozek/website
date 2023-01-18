@@ -6,6 +6,8 @@ tags: ["Backup"]
 medium_enabled: true
 ---
 
+**Note:** I switched to using [Restic](https://restic.net/)
+
 I started using [Borg Backup](https://www.borgbackup.org/) in order to efficiently and securely do my backups. I did some research before choosing this solution as I required three things:
 
 - Compression

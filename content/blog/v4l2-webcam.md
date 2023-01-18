@@ -1,9 +1,11 @@
 ---
-title: "V4l2 Webcam"
+title: "Loopback Webcam Device with V4l2"
 date: 2020-05-25T23:49:08-04:00
 draft: false
 tags: ["Audio-Video"]
 medium_enabled: true
+aliases:
+  - /blog/fakewebcam
 ---
 
 In Linux you can create a fake webcam by making use of the `v4l2loopback` kernel module.

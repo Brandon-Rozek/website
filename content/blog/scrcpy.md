@@ -1,5 +1,5 @@
 ---
-title: "Scrcpy"
+title: "Control an Android Device Remotely using Scrcpy"
 date: 2020-01-09T21:36:30-05:00
 draft: false
 tags: [ ]

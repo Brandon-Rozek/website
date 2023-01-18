@@ -1,5 +1,5 @@
 ---
-title: "Bash Flags"
+title: "Parsing CLI Flags in Bash"
 date: 2019-08-06T16:55:47-04:00
 draft: false
 tags: [ "Bash" ]

@@ -1,6 +1,6 @@
 ---
 
-title: "Git Lens"
+title: "Git Lens: Superpower Git within VSCode"
 date: 2019-10-27T23:38:45-04:00
 draft: false
 tags: ["Git"]

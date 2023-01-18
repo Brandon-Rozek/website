@@ -1,5 +1,5 @@
 ---
-title: "Xvfb"
+title: "Ignore graphical applications with Xvfb"
 date: 2020-09-07T20:49:54-04:00
 draft: false
 tags: ["X11"]
