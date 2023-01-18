@@ -13,7 +13,7 @@ as set up the envionrment paths correctly.
 
 To install:
 ```bash
-sudo dnf install openmpi
+sudo dnf install openmpi openmpi-devel
 ```
 
 Then to set up the environmental variables correctly
