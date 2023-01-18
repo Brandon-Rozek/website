@@ -1,10 +1,12 @@
 ---
-title: "Robustdd"
+title: "Robustly copying ISOs using dd"
 date: 2019-09-27T22:45:56-04:00
 draft: false
 tags: [ "Linux" ]
 medium_enabled: true
 ---
+
+**Note:** [Currently I favor using `bmaptool`](/blog/bmaptool-iso)
 
 This blog post is going to assume that we're writing to `/dev/sdX`. Please change this to whatever disk you're actually trying to write to. I bear no responsibility if you accidentally write to your OS drives.
 
