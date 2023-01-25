@@ -3,8 +3,6 @@ id: 2241
 title: Obtaining Command Line Input in Java
 date: 2017-08-28T17:37:59+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=2241
 aliases:
     - /2017/08/obtaining-command-line-input-java/
 permalink: /2017/08/obtaining-command-line-input-java/
@@ -14,12 +12,8 @@ mf2_syndicate-to:
   - 'a:1:{i:0;s:4:"none";}'
 mf2_cite:
   - 'a:4:{s:9:"published";s:25:"0000-01-01T00:00:00+00:00";s:7:"updated";s:25:"0000-01-01T00:00:00+00:00";s:8:"category";a:1:{i:0;s:0:"";}s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "164717769554"
 mf2_mp-syndicate-to:
   - 'a:1:{i:0;s:4:"none";}'
-kind:
-  - note
 tags: ["Java"]
 ---
 To obtain console input for your program you can use the `Scanner` class

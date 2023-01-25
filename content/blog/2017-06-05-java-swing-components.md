@@ -3,8 +3,6 @@ id: 2198
 title: Java Swing Components
 date: 2017-06-05T23:30:18+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=2198
 aliases:
     - /2017/06/java-swing-components/
 permalink: /2017/06/java-swing-components/
@@ -14,10 +12,6 @@ mf2_syndicate-to:
   - 'a:1:{i:0;s:4:"none";}'
 mf2_cite:
   - 'a:4:{s:9:"published";s:25:"0000-01-01T00:00:00+00:00";s:7:"updated";s:25:"0000-01-01T00:00:00+00:00";s:8:"category";a:1:{i:0;s:0:"";}s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "161484582559"
-kind:
-  - article
 tags: ["Java"]
 ---
 This post, over time, will serve as a reference to myself and others of the different UI components available in the Swing library. This post assumes a general familiarity with setting up a basic Swing application and focuses only on the individual components.

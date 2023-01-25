@@ -3,8 +3,6 @@ id: 449
 title: Limiting the Cache in Service Workers Revisited
 date: 2015-11-30T00:34:15+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=449
 aliases:
     - /2015/11/limiting-cache-service-workers-revisited/
     - /2015/11/limiting-cache-service-workers-revisited1/
@@ -18,11 +16,6 @@ medium_post:
 mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
   - 'a:1:{s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "135657767639"
-  - "135657767639"
-tumblr_crosspostr_crosspost:
-  - 'N'
 kind:
   - article
 tags: ["Web", "JS"]

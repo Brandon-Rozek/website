@@ -3,8 +3,6 @@ id: 599
 title: Creating vCards from h-cards
 date: 2015-12-27T15:17:12+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=599
 aliases:
     - /2015/12/creating-vcards-from-h-cards/
 permalink: /2015/12/creating-vcards-from-h-cards/
@@ -13,10 +11,6 @@ medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";s:74:"https://cdn-images-1.medium.com/fit/c/200/200/1*dmbNkD5D-u45r44go_cf0g.png";s:10:"author_url";s:32:"https://medium.com/@brandonrozek";s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";s:2:"no";s:2:"id";s:12:"9eab6bd8e0e4";s:21:"follower_notification";s:3:"yes";s:7:"license";s:19:"all-rights-reserved";s:14:"publication_id";s:2:"-1";s:6:"status";s:6:"public";s:3:"url";s:74:"https://medium.com/@brandonrozek/creating-vcards-from-h-cards-9eab6bd8e0e4";}'
 mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "136059699334"
-kind:
-  - article
 tags: ["Web"]
 ---
 Microformats is semantic HTML used to convey metadata. Using an userscript, I can generate a vCard from the representative h-card of the page. The code for this is on this gist [here.](https://gist.github.com/brandonrozek/e0153b2733e947fa9c87)

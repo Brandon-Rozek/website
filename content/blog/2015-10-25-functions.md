@@ -3,8 +3,6 @@ id: 350
 title: Functions in Javascript
 date: 2015-10-25T13:48:41+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=350
 aliases:
     - /2015/10/functions/
 permalink: /2015/10/functions/
@@ -15,11 +13,6 @@ medium_post:
 mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
   - 'a:1:{s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "135657661534"
-  - "135657661534"
-kind:
-  - article
 tags: ["Web", "JS"]
 ---
 Ever had a snippet of code that appears multiple times in different places in your program? Whenever you had to change that snippet, you end up playing this game of search and replace. Functions can help. They exist to abstract your code, making it not only easier to change that little snippet, but to read and debug your code as well.

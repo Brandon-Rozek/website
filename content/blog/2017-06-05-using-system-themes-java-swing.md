@@ -3,8 +3,6 @@ id: 2192
 title: Using System Themes In Java Swing
 date: 2017-06-05T20:36:22+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=2192
 aliases:
     - /2017/06/using-system-themes-java-swing/
 permalink: /2017/06/using-system-themes-java-swing/
@@ -14,12 +12,8 @@ mf2_syndicate-to:
   - 'a:1:{i:0;s:4:"none";}'
 mf2_cite:
   - 'a:4:{s:9:"published";s:25:"0000-01-01T00:00:00+00:00";s:7:"updated";s:25:"0000-01-01T00:00:00+00:00";s:8:"category";a:1:{i:0;s:0:"";}s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "161478693279"
 mf2_syndication:
   - 'a:1:{i:0;s:60:"https://twitter.com/B_RozekJournal/status/871828083459936257";}'
-kind:
-  - article
 tags: ["Java"]
 ---
 The default theme for Java Swing components is a cross-platform theme called &#8220;Metal&#8221;. I use the Adapta theme for GTK on Linux and this theme does not match at all what my other GUI applications look like. So here, I will describe a simple way to utlize already existent system themes in Java Swing applications.

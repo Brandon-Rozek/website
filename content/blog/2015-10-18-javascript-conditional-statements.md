@@ -3,8 +3,6 @@ id: 344
 title: Javascript Conditional Statements
 date: 2015-10-18T18:30:21+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=344
 aliases:
     - /2015/10/javascript-conditional-statements/
 permalink: /2015/10/javascript-conditional-statements/
@@ -18,11 +16,6 @@ dsq_thread_id:
 mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
   - 'a:1:{s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "135657634939"
-  - "135657634939"
-kind:
-  - article
 tags: ["Web", "JS"]
 ---
 Javascript, like most other programming languages, include ways to run blocks of code when something meets a condition. Here, I will describe the most common ways to do so.

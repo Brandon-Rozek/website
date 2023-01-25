@@ -3,8 +3,6 @@ id: 148
 title: 'Animatable: Text'
 date: 2015-10-03T08:44:51+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=148
 aliases:
     - /2015/10/animatable-text/
 permalink: /2015/10/animatable-text/
@@ -15,9 +13,6 @@ medium_post:
 mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
   - 'a:1:{s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "135657083469"
-  - "135657083469"
 kind:
   - article
 tags: ["Web", "CSS"]

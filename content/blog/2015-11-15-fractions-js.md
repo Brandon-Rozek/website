@@ -3,8 +3,6 @@ id: 398
 title: Math with Fractions.js
 date: 2015-11-15T12:46:14+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=398
 aliases:
     - /2015/11/fractions-js/
 permalink: /2015/11/fractions-js/
@@ -15,11 +13,6 @@ medium_post:
 mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
   - 'a:1:{s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "135657739439"
-  - "135657739439"
-kind:
-  - article
 tags: ["JS"]
 ---
 Last week I published my first library over on Github called [Fractions.js](https://github.com/brandonrozek/Fractions.js). Fractions.js is a library to help avoid the [mathmatetical errors](http://floating-point-gui.de/) in floating point arithmetic. What do you mean by floating point artihmetic errors? Here is an example: <code class="language-javascript">.1 * .2</code> outputs <code class="language-javascript">0.020000000000000004</code> even though the correct answer is <code class="language-javascript">.02</code>

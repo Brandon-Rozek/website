@@ -3,8 +3,6 @@ id: 572
 title: Playing with QR Codes
 date: 2015-12-22T15:13:44+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=572
 aliases:
     - /2015/12/playing-with-qr-codes/
 permalink: /2015/12/playing-with-qr-codes/
@@ -15,15 +13,10 @@ medium_post:
 mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
   - 'a:1:{s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "135727537264"
-  - "135727537264"
 bridgy_syndication:
   - |
     
     https://twitter.com/B_RozekJournal/status/790337750280970241
-kind:
-  - article
 ---
 Looking at Aaron Parecki&#8217;s [&#8220;Fun with QR Codes&#8221;](https://aaronparecki.com/articles/2015/10/05/1/fun-with-qr-codes) inspired me to play with QR Codes myself. Using the tool [QArt Coder](http://research.swtch.com/qr/draw) made by [Russ Cox](https://plus.google.com/116810148281701144465), I made a QR Code with my face in it!
 

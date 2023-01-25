@@ -3,8 +3,6 @@ id: 2236
 title: Escape Sequences in Java
 date: 2017-08-28T17:12:00+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=2236
 aliases:
     - /2017/08/escape-sequences-java/
 permalink: /2017/08/escape-sequences-java/
@@ -14,12 +12,6 @@ mf2_syndicate-to:
   - 'a:1:{i:0;s:4:"none";}'
 mf2_cite:
   - 'a:4:{s:9:"published";s:25:"0000-01-01T00:00:00+00:00";s:7:"updated";s:25:"0000-01-01T00:00:00+00:00";s:8:"category";a:1:{i:0;s:0:"";}s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "164716848139"
-tumblr_crosspostr_crosspost:
-  - 'N'
-kind:
-  - note
 tags: ["Java"]
 ---
 Sometimes you want to format your outputs. This is a quick cheatsheet containing the differerent escape sequences

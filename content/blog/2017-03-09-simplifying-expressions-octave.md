@@ -3,8 +3,6 @@ id: 2115
 title: Simplifying Expressions with Octave
 date: 2017-03-09T02:09:58+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=2115
 aliases:
     - /2017/03/simplifying-expressions-octave/
 permalink: /2017/03/simplifying-expressions-octave/
@@ -14,13 +12,9 @@ mf2_syndicate-to:
   - 'a:1:{i:0;s:22:"bridgy-publish_twitter";}'
 mf2_cite:
   - 'a:4:{s:9:"published";s:25:"0000-01-01T00:00:00+00:00";s:7:"updated";s:25:"0000-01-01T00:00:00+00:00";s:8:"category";a:1:{i:0;s:0:"";}s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "158172999969"
 mf2_syndication:
   - 'a:1:{i:0;s:60:"https://twitter.com/B_RozekJournal/status/839659534146801665";}'
 format: aside
-kind:
-  - note
 ---
 Octave is a high level programming language intended for numerical computations. One of the cool features of this is that with symbolic expressions, you can then simplify mathematical expressions.
 

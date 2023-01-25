@@ -3,8 +3,6 @@ id: 400
 title: An Offline Experience with Service Workers
 date: 2015-11-14T15:47:06+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=400
 aliases:
     - /2015/11/service-workers/
 permalink: /2015/11/service-workers/
@@ -15,11 +13,6 @@ medium_post:
 mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
   - 'a:1:{s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "135657690564"
-  - "135657690564"
-kind:
-  - article
 tags: ["Web", "JS"]
 ---
 I’m excited to say that I’ve written my first service worker for brandonrozek.com. What is a service worker? A service worker provides an extra layer between the client and the server. The exciting part about this is that you can use service workers to deliver an offline experience. (Cached versions of your site, offline pages, etc.)

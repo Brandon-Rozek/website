@@ -3,8 +3,6 @@ id: 337
 title: 'Animatable: Transform'
 date: 2015-10-18T16:32:37+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=337
 aliases:
     - /2015/10/animatable-transform/
 permalink: /2015/10/animatable-transform/
@@ -15,11 +13,6 @@ medium_post:
 mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
   - 'a:1:{s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "135657540174"
-  - "135657540174"
-kind:
-  - article
 tags: ["Web", "CSS"]
 ---
 This is the last post of the animatable series. The grand finale. Here, we will talk about the transform property. It’s only one property but it comes with a lot of goodies in the form of transform-functions.

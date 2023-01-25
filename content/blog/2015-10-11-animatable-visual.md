@@ -3,8 +3,6 @@ id: 297
 title: 'Animatable: Visual'
 date: 2015-10-11T16:52:36+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=297
 aliases:
     - /2015/10/animatable-visual/
 permalink: /2015/10/animatable-visual/
@@ -12,14 +10,9 @@ medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";s:74:"https://cdn-images-1.medium.com/fit/c/200/200/1*dmbNkD5D-u45r44go_cf0g.png";s:10:"author_url";s:32:"https://medium.com/@brandonrozek";s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";s:2:"no";s:2:"id";s:12:"c1119f67e27a";s:21:"follower_notification";s:2:"no";s:7:"license";s:19:"all-rights-reserved";s:14:"publication_id";s:2:"-1";s:6:"status";s:6:"public";s:3:"url";s:63:"https://medium.com/@brandonrozek/animatable-visual-c1119f67e27a";}'
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";s:74:"https://cdn-images-1.medium.com/fit/c/200/200/1*dmbNkD5D-u45r44go_cf0g.png";s:10:"author_url";s:32:"https://medium.com/@brandonrozek";s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";s:2:"no";s:2:"id";s:12:"c1119f67e27a";s:21:"follower_notification";s:2:"no";s:7:"license";s:19:"all-rights-reserved";s:14:"publication_id";s:2:"-1";s:6:"status";s:6:"public";s:3:"url";s:63:"https://medium.com/@brandonrozek/animatable-visual-c1119f67e27a";}'
-tumblr_post_id:
-  - "135657496179"
-  - "135657496179"
 mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
   - 'a:1:{s:6:"author";a:0:{}}'
-kind:
-  - article
 tags: ["Web", "CSS"]
 ---
 Hello everyone! This is part 5 of my series on animation. Today’s post will be short, since we’re only going to talk about color and opacity.

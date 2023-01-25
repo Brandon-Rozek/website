@@ -3,8 +3,6 @@ id: 57
 title: Responsive Layout and Animation
 date: 2015-04-16T22:19:36+00:00
 author: Brandon Rozek
-layout: post
-guid: http://brandonrozek.com/?p=57
 aliases:
     - /2015/04/responsive-layout-and-animation/
 permalink: /2015/04/responsive-layout-and-animation/
@@ -18,11 +16,6 @@ dsq_thread_id:
 mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
   - 'a:1:{s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "135656876494"
-  - "135656876494"
-kind:
-  - article
 tags: ["Web", "CSS"]
 ---
 I saw [Mike Riethmuller&#8217;s](http://madebymike.com.au/) precision typography [pen](http://codepen.io/MadeByMike/pen/YPJJYv){.broken_link}, and was highly impressed. I think the equation used has other purposes as well

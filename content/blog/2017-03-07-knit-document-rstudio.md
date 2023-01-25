@@ -3,8 +3,6 @@ id: 2090
 title: Knit a Document in RStudio
 date: 2017-03-07T04:29:50+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=2090
 aliases:
     - /2017/03/knit-document-rstudio/
 permalink: /2017/03/knit-document-rstudio/
@@ -14,11 +12,7 @@ mf2_syndicate-to:
   - 'a:1:{i:0;s:4:"none";}'
 mf2_cite:
   - 'a:4:{s:9:"published";s:25:"0000-01-01T00:00:00+00:00";s:7:"updated";s:25:"0000-01-01T00:00:00+00:00";s:8:"category";a:1:{i:0;s:0:"";}s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "158095811719"
 format: aside
-kind:
-  - note
 tags: ["R"]
 ---
 In case you were wondering how I got all the R code and output for the [&#8220;Do females live longer than males?&#8221;](https://brandonrozek.com/portfolio/male-vs-female-life-expectancy/) page. There is actually a function in RStudio that allows one to compile a report based on code and it&#8217;s output.

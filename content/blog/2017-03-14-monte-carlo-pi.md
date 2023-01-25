@@ -3,15 +3,11 @@ id: 2089
 title: Approximate Pi using a Monte Carlo Simulation
 date: 2017-03-14T05:31:21+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=2089
 aliases:
     - /2017/03/monte-carlo-pi/
 permalink: /2017/03/monte-carlo-pi/
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";N;s:2:"id";N;s:21:"follower_notification";N;s:7:"license";N;s:14:"publication_id";N;s:6:"status";N;s:3:"url";N;}'
-tumblr_post_id:
-  - "158383170019"
 mf2_syndicate-to:
   - 'a:1:{i:0;s:22:"bridgy-publish_twitter";}'
 mf2_cite:
@@ -19,8 +15,6 @@ mf2_cite:
 mf2_syndication:
   - 'a:1:{i:0;s:60:"https://twitter.com/B_RozekJournal/status/841522141346570244";}'
 format: aside
-kind:
-  - note
 tags: ["Math", "Java"]
 math: true
 ---

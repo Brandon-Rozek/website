@@ -3,8 +3,6 @@ id: 2174
 title: Viewing Java Applets
 date: 2017-05-24T15:59:45+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=2174
 aliases:
     - /2017/05/viewing-java-applets/
 permalink: /2017/05/viewing-java-applets/
@@ -14,12 +12,8 @@ mf2_syndicate-to:
   - 'a:1:{i:0;s:22:"bridgy-publish_twitter";}'
 mf2_cite:
   - 'a:4:{s:9:"published";s:25:"0000-01-01T00:00:00+00:00";s:7:"updated";s:25:"0000-01-01T00:00:00+00:00";s:8:"category";a:1:{i:0;s:0:"";}s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "161024360884"
 mf2_syndication:
   - 'a:1:{i:0;s:60:"https://twitter.com/B_RozekJournal/status/867409810932760576";}'
-kind:
-  - article
 tags: ["Java"]
 ---
 When you use an IDE there are many things you can take for granted. A section of an intro level computer science course at my university uses [JGrasp](http://www.jgrasp.org/) to build Java Applets.

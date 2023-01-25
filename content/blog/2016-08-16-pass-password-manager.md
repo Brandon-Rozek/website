@@ -3,8 +3,6 @@ id: 919
 title: Pass the password manager
 date: 2016-08-16T23:37:09+00:00
 author: Brandon Rozek
-layout: post
-guid: http://brandonrozek.com/?p=919
 aliases:
     - /2016/08/pass-password-manager/
 permalink: /2016/08/pass-password-manager/
@@ -12,16 +10,10 @@ medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";s:2:"no";s:2:"id";N;s:21:"follower_notification";s:3:"yes";s:7:"license";s:19:"all-rights-reserved";s:14:"publication_id";s:2:"-1";s:6:"status";s:4:"none";s:3:"url";N;}'
 mf2_cite:
   - 'a:4:{s:9:"published";s:25:"0000-01-01T00:00:00+00:00";s:7:"updated";s:25:"0000-01-01T00:00:00+00:00";s:8:"category";a:1:{i:0;s:0:"";}s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "149056904199"
 bridgy_syndication:
   - https://twitter.com/B_RozekJournal/status/790336614866100224
-tumblr_crosspostr_crosspost:
-  - 'N'
 mf2_syndicate-to:
   - 'a:1:{i:0;s:4:"none";}'
-kind:
-  - note
 tags: ["Security"]
 ---
 Looking over the list of programs installed on my computer, one of my all time favorites is a program called [Pass](https://www.passwordstore.org/). It&#8217;s a program available under most Linux distributions, Mac OS X (through [Brew](http://brew.sh/)), [Windows](https://github.com/mbos/Pass4Win), [Android](https://play.google.com/store/apps/details?id=com.zeapo.pwdstore), and [iOS](https://github.com/davidjb/pass-ios#readme). It stores all of the passwords using gpg encryption and stores them as actual files on the hard disk. Meaning if you wanted, you can sync them to all your devices!

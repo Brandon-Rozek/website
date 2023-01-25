@@ -3,8 +3,6 @@ id: 155
 title: 'Animatable: Box Model'
 date: 2015-09-14T12:07:52+00:00
 author: Brandon Rozek
-layout: post
-guid: https://brandonrozek.com/?p=155
 aliases:
     - /2015/09/animatable-box-model/
 permalink: /2015/09/animatable-box-model/
@@ -18,11 +16,6 @@ dsq_thread_id:
 mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
   - 'a:1:{s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "135657238924"
-  - "135657238924"
-kind:
-  - article
 tags: ["Web", "CSS"]
 ---
 This post is part 2 of an animation series I am doing; you can read part 1 [here](https://brandonrozek.com/2015/05/animatable-border/). In this post, we&#8217;ll look at the different parts of the box model (margin, padding, height, and width) and see how they can be animated.

@@ -4,7 +4,6 @@ title: 'Animatable: Location'
 date: 2015-10-03T09:34:08+00:00
 author: Brandon Rozek
 layout: post
-guid: https://brandonrozek.com/?p=190
 aliases:
     - /2015/10/animatable-location/
 permalink: /2015/10/animatable-location/
@@ -18,11 +17,6 @@ dsq_thread_id:
 mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
   - 'a:1:{s:6:"author";a:0:{}}'
-tumblr_post_id:
-  - "135657326384"
-  - "135657326384"
-kind:
-  - article
 tags: ["Web", "CSS"]
 ---
 Animating the location of objects is one of the most common types of animation. It&#8217;s interesting to animate this way because you need to keep in mind how each of the element&#8217;s interact with each other to constitute a page.
