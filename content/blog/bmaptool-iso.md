@@ -1,9 +1,11 @@
 ---
-title: "Bmaptool: A simpler way to copy ISOs"
-date: 2023-01-18T11:08:20-05:00
+date: 2023-01-18 11:08:20-05:00
 draft: false
-tags: []
 math: false
+medium_enabled: true
+medium_post_id: b4f33babc3ac
+tags: []
+title: 'Bmaptool: A simpler way to copy ISOs'
 ---
 
 Bmaptool is a project created by Intel for creating and copying data using block maps. It's meant to be a simpler, faster, and more reliable tool than `dd`.

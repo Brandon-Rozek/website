@@ -1,10 +1,10 @@
 ---
-title: "Explaining the Shift in Values"
-date: 2022-10-11T20:19:01-04:00
-draft: false 
-tags: []
+date: 2022-10-11 20:19:01-04:00
+draft: false
 math: true
-medium_enabled: true
+medium_enabled: false
+tags: []
+title: Explaining the Shift in Values
 ---
 
 In the book [Wild problems : a guide to the decisions that define us](https://www.worldcat.org/title/1321820629), Russ Roberts analyzes decision making on difficult life problems. These types of problems don't have straightforward or measurable goals, and there's no set procedure for success. Examples of these problems are choosing whether to marry, have kids, or switch jobs.

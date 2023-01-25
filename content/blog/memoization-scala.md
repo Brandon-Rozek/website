@@ -1,10 +1,12 @@
 ---
-title: "Memoization in Scala"
-date: 2022-11-12T11:49:51-05:00
+date: 2022-11-12 11:49:51-05:00
 draft: false
-tags: ["Scala"]
 math: false
 medium_enabled: true
+medium_post_id: 2558d6abd9b8
+tags:
+- Scala
+title: Memoization in Scala
 ---
 
 In a [recent post](/blog/corecursion-unfold-infinite-sequences/), I talked about how corecursion is a great solution for removing redundant calculations. However if we're sticking to a recursive approach, one way we can reduce redundancies is to use memoization. The idea here is that we save prior computations in some data structure and refer to them if requested.
@@ -35,6 +37,3 @@ Calling `fib(5)` returns `5`. However, we can also see the saved computations by
 ```
 HashMap(0 -> 0, 1 -> 1, 2 -> 1, 3 -> 2, 4 -> 3, 5 -> 5)
 ```
-
-
-

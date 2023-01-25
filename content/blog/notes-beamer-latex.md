@@ -1,10 +1,12 @@
 ---
-title: "Speaker Notes in LaTex Beamer"
-date: 2022-10-25T21:43:38-04:00
+date: 2022-10-25 21:43:38-04:00
 draft: false
-tags: ["LaTex"]
 math: false
 medium_enabled: true
+medium_post_id: 9643b7743f0c
+tags:
+- LaTex
+title: Speaker Notes in LaTex Beamer
 ---
 
 I often struggle with deciding how much content to put on my slides. Personally, I feel that my slides should be self-contained so that others can review them afterwards. This was especially true when I held [recitations](/ta/spring2022/csci2600/) as a TA.

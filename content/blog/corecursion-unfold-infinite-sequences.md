@@ -1,10 +1,13 @@
 ---
-title: "Corecursion, Unfold and Infinite Sequences"
-date: 2022-11-12T10:45:04-05:00
+date: 2022-11-12 10:45:04-05:00
 draft: false
-tags: ["Scala", "Functional Programming"]
 math: true
 medium_enabled: true
+medium_post_id: edd1ef8ee314
+tags:
+- Scala
+- Functional Programming
+title: Corecursion, Unfold and Infinite Sequences
 ---
 
 Recursion takes a large problem and breaks it down until it reaches some base cases. One popular example, is the factorial function.

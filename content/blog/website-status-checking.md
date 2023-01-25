@@ -1,10 +1,11 @@
 ---
-title: "Website Status Checking"
-date: 2022-09-28T16:05:23-04:00
-draft: false 
-tags: []
+date: 2022-09-28 16:05:23-04:00
+draft: false
 math: false
 medium_enabled: true
+medium_post_id: 4655285d688f
+tags: []
+title: Website Status Checking
 ---
 
 How do I know when my website goes up or down? Recently, I started using a service from [updown.io](https://updown.io) which gives me a status page and notifies me when it goes down.

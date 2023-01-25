@@ -1,10 +1,11 @@
 ---
-title: "Identifying Plants With iNaturalist"
-date: 2022-09-29T20:08:30-04:00
-draft: false 
-tags: []
+date: 2022-09-29 20:08:30-04:00
+draft: false
 math: false
 medium_enabled: true
+medium_post_id: bc9fd04fff31
+tags: []
+title: Identifying Plants With iNaturalist
 ---
 
 Seek by iNaturalist ([android](https://play.google.com/store/apps/details?id=org.inaturalist.seek)) ([apple](https://apps.apple.com/us/app/seek-by-inaturalist/id1353224144)) is a great app for identifying plants and animals. It uses a computer vision model to provide the hierarchical classifications. In fact they run yearly challenges with their dataset on [Kaggle](https://www.kaggle.com/c/inaturalist-2021/overview) as well as publicly host their dataset on AWS ([instructions](https://github.com/inaturalist/inaturalist-open-data)).

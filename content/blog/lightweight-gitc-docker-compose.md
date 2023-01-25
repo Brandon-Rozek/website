@@ -1,9 +1,12 @@
 ---
-title: "Deploying a Lightweight Git Server with CGit using Docker-Compose"
-date: 2023-01-20T21:14:03-05:00
+date: 2023-01-20 21:14:03-05:00
 draft: false
-tags: ["Git"]
 math: false
+medium_enabled: true
+medium_post_id: b86160f97df9
+tags:
+- Git
+title: Deploying a Lightweight Git Server with CGit using Docker-Compose
 ---
 
 In this post, I'll talk about how we can setup CGit within a docker-compose setup. We'll be using the [ClearLinux CGit](https://hub.docker.com/r/clearlinux/cgit) container.

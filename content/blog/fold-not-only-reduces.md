@@ -1,10 +1,14 @@
 ---
-title: "Fold Not Only Reduces"
-date: 2022-11-09T15:15:10-05:00
+date: 2022-11-09 15:15:10-05:00
 draft: false
-tags: ["Functional Programming", "Scala", "Haskell"]
 math: false
 medium_enabled: true
+medium_post_id: b419f7d25313
+tags:
+- Functional Programming
+- Scala
+- Haskell
+title: Fold Not Only Reduces
 ---
 
 One misconception when first learning about fold is that it takes a list of elements of a certain type (`List[T]`) and "reduces" it to a single item of type `T`.
@@ -61,4 +65,3 @@ l5 c n if n > 5 then c ++ [n] else c
 foldl l5 [] [5, 7, 1, 8, 9, 3]
 -- Returns [7,8,9]
 ```
-

@@ -1,10 +1,10 @@
 ---
-title: "Optionality and Risk in Decision Making"
-date: 2022-10-12T01:10:42-04:00
+date: 2022-10-12 01:10:42-04:00
 draft: false
-tags: []
 math: true
-medium_enabled: true
+medium_enabled: false
+tags: []
+title: Optionality and Risk in Decision Making
 ---
 
 One technique for making decisions in uncertain situations is to look for *optionality*. This is one of the tips given in Russ Robert's book [Wild problems: a guide to the decisions that define us](https://www.worldcat.org/title/1321820629). Let's start off with the two definitions listed on [Wiktionary](https://en.wiktionary.org/wiki/optionality) at my time of writing.
@@ -73,7 +73,4 @@ Acknowledgements: Thanks to Clare for helping me understand the definitions from
 
 [^1]: There are other ways we can define obligation. In particular, we can take into account each individual effect as opposed to it collectively. Though we'll leave that for another time.
 
-[^2]: I do not discuss minimizing negative consequences in this post as it has little connection to the concept of optionality. 
-
-
-
+[^2]: I do not discuss minimizing negative consequences in this post as it has little connection to the concept of optionality.

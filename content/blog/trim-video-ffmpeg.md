@@ -1,10 +1,12 @@
 ---
-title: "How to trim a video using FFMPEG"
-date: 2022-09-28T18:46:32-04:00
+date: 2022-09-28 18:46:32-04:00
 draft: false
-tags: ["Audio-Video"]
 math: false
 medium_enabled: true
+medium_post_id: dd83a32af440
+tags:
+- Audio-Video
+title: How to trim a video using FFMPEG
 ---
 
 Recently I came across a video that I wanted to split up into multiple files. Given my love for `ffmpeg` the video/audio swiss army knife, I knew there had to be a solution for cutting a video on the terminal. Luckily on [AskUbuntu](https://askubuntu.com/a/56044), Luis Alvarado provides a command snippet. This post will go into slightly more detail on the flags used in the command
