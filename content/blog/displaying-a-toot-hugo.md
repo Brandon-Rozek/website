@@ -2,7 +2,7 @@
 title: "Displaying a Toot in Hugo"
 date: 2022-05-20T16:57:11-04:00
 draft: false
-tags: ["Hugo"]
+tags: ["Hugo", "Mastodon"]
 math: false
 medium_enabled: true
 ---
