@@ -3,6 +3,7 @@ title: Elsewhere
 description: Other places you can find Brandon at
 ---
 
+- [DEV.to](https://dev.to/brandonrozek)
 - [Fosstodon](https://fosstodon.org/@brozek)
 - [Github](https://github.com/brandon-rozek)
 - [Google Scholar](https://scholar.google.com/citations?user=JrgtnwgAAAAJ&hl=en)
@@ -17,6 +18,5 @@ description: Other places you can find Brandon at
 - [StackOverflow](https://stackoverflow.com/users/8419931/brandon-rozek)
 - [Tilde.Club (HTTPS)](https://tilde.club/~brozek)
 - [Tilde.Club (Gemini)](gemini://tilde.club/~brozek)
-- [Tumblr](https://brandonrozek.tumblr.com/)
 - [Medium](https://medium.com/@brandonrozek)
 - [Wikipedia](https://en.wikipedia.org/wiki/User:BrandonRozek)
