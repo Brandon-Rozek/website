@@ -1,15 +1,21 @@
 ---
-title: Logic Reading Group
+title: RPI Logic Group
 description: Presentations I gave at the RAIR Lab logic reading group.
+aliases:
+    - /community/logic-reading-group
 ---
 
-We hold the NY Capital Region Logic Reading Group every Wednesday at the
+We hold the NY Capital Region Logic Reading Group Wednesdays at the
 Rensselaer AI & Reasoning lab.
 I aim to give one presentation a month.
+We have a website listing the upcoming talk and past talks
+given: [https://rairlab.github.io/logic-group/](https://rairlab.github.io/logic-group/)
 
 ## Talks Given
 
-I presented the following papers:
+I presented the following:
+
+02/01/2023: Original Tutorial on Interactive Theorem Proving with Lean Part 1
 
 05/11/2022:
 [The Power of Waiting in Social Laws](https://icaps21.icaps-conference.org/workshops/KEPS/Papers/KEPS_2021_paper_14.pdf) by Alexander Tuisov, Alexander Shleyfman, and Erez Karpas.
