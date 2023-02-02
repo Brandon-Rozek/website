@@ -1,10 +1,12 @@
 ---
-title: "Induction in Lean 3: Three Techniques"
-date: 2023-01-30T21:07:43-05:00
-draft: false 
-tags: ["Formal Methods"]
+date: 2023-01-30 21:07:43-05:00
+draft: false
 math: true
 medium_enabled: true
+medium_post_id: 5b4a36988c6d
+tags:
+- Formal Methods
+title: 'Induction in Lean 3: Three Techniques'
 ---
 
 When proving properties of an inductive data type, chances are that we need to perform the induction tactic on the data structure. There are multiple ways to approach this though and each comes with its own pros and cons.

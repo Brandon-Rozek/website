@@ -1,10 +1,12 @@
 ---
-title: "Readable Lean 3 Proofs"
-date: 2023-01-27T22:01:54-05:00
+date: 2023-01-27 22:01:54-05:00
 draft: false
-tags: ["Formal Methods"]
 math: true
 medium_enabled: true
+medium_post_id: 5fb876d4d819
+tags:
+- Formal Methods
+title: Readable Lean 3 Proofs
 ---
 
 *Important Note: This blog post uses the Lean 3 syntax*

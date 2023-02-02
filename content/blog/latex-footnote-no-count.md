@@ -1,10 +1,12 @@
 ---
-title: "Quick LaTex: Footnotes with no Counter"
-date: 2022-09-23T15:34:28-04:00
+date: 2022-09-23 15:34:28-04:00
 draft: false
-tags: ["LaTex"]
 math: false
 medium_enabled: true
+medium_post_id: d0a88900c580
+tags:
+- LaTex
+title: 'Quick LaTex: Footnotes with no Counter'
 ---
 
 Let's say there's a scenario where you want to have a footnote, but you don't want a counter associated with it. In order to stay consistent with the document style, the solution should use `\footnote` within its implementation.
@@ -53,4 +55,3 @@ Complete Minimal Example:
 \end{document}
 
 ```
-
