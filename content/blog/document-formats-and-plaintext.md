@@ -1,10 +1,12 @@
 ---
-title: "Document Formats and Plaintext"
-date: 2022-05-19T21:24:52-04:00
+date: 2022-05-19 21:24:52-04:00
 draft: false
-tags: ["Documentation"]
 math: false
 medium_enabled: true
+medium_post_id: b339b9d9793b
+tags:
+- Documentation
+title: Document Formats and Plaintext
 ---
 
 Microsoft Word, Apple Pages, Google Docs, Libreoffice Writer all provide a method of writing and formatting text. This is then normally stored in a "binary" file. I put binary in quotes as they are often stored in a zip archive of XML files. However, because it's in a zip archive, I cannot use standard plaintext tools to search within the document. 

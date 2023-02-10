@@ -1,10 +1,11 @@
 ---
-title: "On Writing Simple Scripts"
-date: 2022-05-19T20:40:19-04:00
+date: 2022-05-19 20:40:19-04:00
 draft: false
-tags: []
 math: false
 medium_enabled: true
+medium_post_id: 63c82315e4f5
+tags: []
+title: On Writing Simple Scripts
 ---
 
 I generally prefer a simpler solution to a problem if possible. This comes especially true with scripting. If I write a small script for something like say my website I generally have three requirements of the system:
@@ -34,4 +35,3 @@ So why Python?
 - Currently has developer mindshare so others are apt to understand the scripts
 
 Both those reasons are likely to make it so that my choice will change over time. Perl used to be the very popular choice for scripting...
-

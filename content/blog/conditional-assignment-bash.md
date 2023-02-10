@@ -1,10 +1,12 @@
 ---
-title: "Conditional Assignment in Bash"
-date: 2022-06-19T18:49:47-04:00
+date: 2022-06-19 18:49:47-04:00
 draft: false
-tags: ["Bash"]
 math: false
 medium_enabled: true
+medium_post_id: 8217bfd3af16
+tags:
+- Bash
+title: Conditional Assignment in Bash
 ---
 
 Many programming languages include an quick way to perform a

@@ -1,10 +1,13 @@
 ---
-title: "Displaying a Toot in Hugo"
-date: 2022-05-20T16:57:11-04:00
+date: 2022-05-20 16:57:11-04:00
 draft: false
-tags: ["Hugo", "Mastodon"]
 math: false
 medium_enabled: true
+medium_post_id: a10174e115a2
+tags:
+- Hugo
+- Mastodon
+title: Displaying a Toot in Hugo
 ---
 
 Mastodon for me is a nice friendly place and I enjoy participating in that community. With that, I want to be able to share the great toots out there in my own website as well as keep an archive of all the toots I made. This post will go over the code I wrote in Hugo to display a single toot into a blog post.

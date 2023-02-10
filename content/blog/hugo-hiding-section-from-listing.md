@@ -1,10 +1,12 @@
 ---
-title: "Hiding Section From Listing in Hugo"
-date: 2022-05-19T22:43:04-04:00
+date: 2022-05-19 22:43:04-04:00
 draft: false
-tags: ["Hugo"]
 math: false
 medium_enabled: true
+medium_post_id: d71625f9235b
+tags:
+- Hugo
+title: Hiding Section From Listing in Hugo
 ---
 
 In Hugo you can list all the sections using the following code
@@ -49,4 +51,3 @@ Then replace the listing code with the following:
   {{ end }}
 {{ end }}
 ```
-

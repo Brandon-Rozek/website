@@ -1,10 +1,12 @@
 ---
-title: "Retreiving GPS data in decimal format from EXIF data in photos"
-date: 2022-06-19T19:01:35-04:00
+date: 2022-06-19 19:01:35-04:00
 draft: false
-tags: ["GPS"]
 math: false
 medium_enabled: true
+medium_post_id: 45193055c22d
+tags:
+- GPS
+title: Retreiving GPS data in decimal format from EXIF data in photos
 ---
 
 For a new feature that I'm cooking up for my website, I need to grab the GPS information from the EXIF data stored in my images. Luckily, `imagemagick`

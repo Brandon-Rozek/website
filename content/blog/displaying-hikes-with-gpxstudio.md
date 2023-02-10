@@ -1,10 +1,13 @@
 ---
-title: "Displaying Hikes with gpx.studio"
-date: 2022-05-23T16:35:01-04:00
+date: 2022-05-23 16:35:01-04:00
 draft: false
-tags: ["Hugo", "GPS"]
 math: false
 medium_enabled: true
+medium_post_id: ac442c9cf7fc
+tags:
+- Hugo
+- GPS
+title: Displaying Hikes with gpx.studio
 ---
 
 As the weather gets warmer, I am starting to go on more hikes. Several people on their websites share a Strava embed which highlights a path taken during their workout. I believe as a community this has great potential for sharing our favorite hiking paths. I don't, however, want to rely on Strava to host my GPS data. Instead, we will showcase how to accomplish the same effect but with open technologies.
@@ -91,4 +94,4 @@ We can then replace the URL in the array with the one that you'll use for your w
 
 ## Conclusion
 
-With this we created a cool visual representation of GPX data on our own website built on top of open technologies. Since our routes are stored in GPX files, if gpx.studio was to go down, then we can likely find an alternative to plot the file for us. Gpx.studio is also built on top of OpenStreetMap, a great  long-standing community driven mapping project. 
+With this we created a cool visual representation of GPX data on our own website built on top of open technologies. Since our routes are stored in GPX files, if gpx.studio was to go down, then we can likely find an alternative to plot the file for us. Gpx.studio is also built on top of OpenStreetMap, a great  long-standing community driven mapping project.

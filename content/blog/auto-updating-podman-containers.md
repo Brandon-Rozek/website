@@ -1,10 +1,13 @@
 ---
-title: "Automatically Updating Podman Containers"
-date: 2022-05-15T22:20:47-04:00
+date: 2022-05-15 22:20:47-04:00
 draft: false
-tags: ["Linux", "Containers"]
 math: false
 medium_enabled: true
+medium_post_id: 9fe3d313dea8
+tags:
+- Linux
+- Containers
+title: Automatically Updating Podman Containers
 ---
 
 Recently, I have been  [transitioning to Podman](/blog/rootless-docker-compose-podman)  for running my container infrastructure. In the process, I brought over Watchtower which I have previously used for auto-updating docker containers. Before doing so, I didn't check its [compatibility](https://github.com/containrrr/watchtower/issues/1060) (whoops) and found a few of my containers would every other week or so not come back up.
@@ -29,4 +32,3 @@ TimeoutStartSec=0
 [Install]
 WantedBy=multi-user.target
 ```
-

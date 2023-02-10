@@ -1,10 +1,12 @@
 ---
-title: "Having your Website Visible on the Fediverse"
-date: 2022-06-12T18:35:30-04:00
+date: 2022-06-12 18:35:30-04:00
 draft: false
-tags: ["Mastodon"]
 math: false
 medium_enabled: true
+medium_post_id: 3c4fe896f3fb
+tags:
+- Mastodon
+title: Having your Website Visible on the Fediverse
 ---
 
 [ActivityPub](https://www.w3.org/TR/activitypub/) is the backbone

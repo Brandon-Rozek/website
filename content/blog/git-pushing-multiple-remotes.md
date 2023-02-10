@@ -1,10 +1,12 @@
 ---
-title: "Git Pushing to Multiple Remotes"
-date: 2022-06-02T21:19:29-04:00
+date: 2022-06-02 21:19:29-04:00
 draft: false
-tags: ["Git"]
 math: false
 medium_enabled: true
+medium_post_id: 41533d2710fd
+tags:
+- Git
+title: Git Pushing to Multiple Remotes
 ---
 
 Git's greatest strength is its first-class support for decentralization.

@@ -1,12 +1,14 @@
 ---
-title: "Python Argument Parser"
-date: 2022-05-16T17:07:06-04:00
-draft: false
-tags: ["Python"]
 aliases:
-    - /blog/python-argpase/
+- /blog/python-argpase/
+date: 2022-05-16 17:07:06-04:00
+draft: false
 math: false
 medium_enabled: true
+medium_post_id: 7d4c148bd2d0
+tags:
+- Python
+title: Python Argument Parser
 ---
 
 *For a much better description of argument parsing in Python, please visit https://docs.python.org/3/library/argparse.html.*
@@ -54,6 +56,3 @@ pos_arg1 = args['pos_arg1']
 flag1 = args['flag1']
 flag2 = args['flag2']
 ```
-
-
-
