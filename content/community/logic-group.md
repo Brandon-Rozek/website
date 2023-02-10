@@ -27,7 +27,7 @@ I presented the following:
 
 08/03/2022: [Coming Up with Good Excuses: What To Do When No Plan Can be Found](https://www.aaai.org/ocs/index.php/ICAPS/ICAPS10/paper/viewFile/1453/1532) by Moritz Gobelbecker, Thomas Keller, Patrick Eyerich, Michael Brenner, and Bernhard Nebel.
 
-09/14/2022: [Planning Modulo Theories: Extending the Planning Paradigm](https://www.aaai.org/ocs/index.php/ICAPS/ICAPS12/paper/viewFile/4693/4715) by Peter Gregory, Derek Long, Maria Fox, and J. Christopher Beck.
+09/14/2022: [Planning Modulo Theories: Extending the Planning Paradigm](https://ai.dmi.unibas.ch/papers/goebelbecker-et-al-icaps2010.pdf) by Peter Gregory, Derek Long, Maria Fox, and J. Christopher Beck.
 
 
 10/19/2022: [Evaluation of the Moral Permissibility of Action Plans](https://gki.informatik.uni-freiburg.de/papers/lindner-etal-aij2020.pdf)
