@@ -1,10 +1,11 @@
 ---
-title: "Intensional Logic Extends First Order"
-date: 2022-02-26T20:33:38-05:00
+date: 2022-02-26 20:33:38-05:00
 draft: false
-tags: []
 math: true
 medium_enabled: true
+medium_post_id: 8e07b68aa8f5
+tags: []
+title: Intensional Logic Extends First Order
 ---
 
 The second brightest object in the sky is known as the morgensteorra (morning star) and æfensteorra (evening star). Later on this object became known as Venus. [(Wikipedia)](https://en.wikipedia.org/wiki/Venus_in_culture)

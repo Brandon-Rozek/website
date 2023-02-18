@@ -1,10 +1,12 @@
 ---
-title: "Program Verification with Hoare Logic and Dafny"
-date: 2022-02-05T00:06:42-05:00
+date: 2022-02-05 00:06:42-05:00
 draft: false
-tags: ["Formal Methods"]
 math: false
 medium_enabled: true
+medium_post_id: 4cf20da7d8a4
+tags:
+- Formal Methods
+title: Program Verification with Hoare Logic and Dafny
 ---
 
 In the recitations that I'm giving for [Principles of Software](/ta/spring2022/csci2600/), we are going over reasoning through code using Hoare Logic and the program verifier Dafny. Microsoft Research designed Dafny to be similar to writing imperative code. The main difference is that you need to supply (pre/post)-conditions and the code to verify. Here's an example of how to reason about a simple statement by hand:
@@ -56,8 +58,3 @@ method abs(x: int) returns (y: int)
     }
 }
 ```
-
-
-
-
-

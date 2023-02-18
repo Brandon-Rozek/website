@@ -1,10 +1,12 @@
 ---
-title: "Loop Invariants"
-date: 2022-02-26T19:17:21-05:00
+date: 2022-02-26 19:17:21-05:00
 draft: false
-tags: ["Formal Methods"]
 math: true
 medium_enabled: true
+medium_post_id: 395dbef73491
+tags:
+- Formal Methods
+title: Loop Invariants
 ---
 
 Loop invariants are one of the more complicated concepts in Hoare Logic. One might say that we can simply unroll the loop, but there are many loops where we don't know the number of iterations in advanced. Therefore, we often consider what is called the loop invariant. These are statements that are true before, during, and after the loop. A useful loop invariant in combination of the negation of the loop condition can also prove some postcondition. Lets look at a multiplication example

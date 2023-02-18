@@ -1,10 +1,12 @@
 ---
-title: "Mount Object Storage Locally using S3 Fuse"
-date: 2022-02-04T23:39:25-05:00
+date: 2022-02-04 23:39:25-05:00
 draft: false
-tags: ["Storage"]
 math: false
 medium_enabled: true
+medium_post_id: a6add7081378
+tags:
+- Storage
+title: Mount Object Storage Locally using S3 Fuse
 ---
 
 On most cloud providers, object storage is cheaper than paying for the equivalent size in block storage. Using FUSE, we can mount S3 compatible object storage with the command `s3fs`. Do note, that there are a few downsides with mounting object storage as documented on their [README](https://github.com/s3fs-fuse/s3fs-fuse/blob/master/README.md):
@@ -62,4 +64,3 @@ bucketname /mnt/mountpoint     fuse.s3fs _netdev,allow_other,url=https://us-east
 ```
 
 After editing `/etc/fstab` you can run `sudo mount -a` in order for it to load and mount any new entries.
-

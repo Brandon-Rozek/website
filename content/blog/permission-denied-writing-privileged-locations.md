@@ -1,10 +1,11 @@
 ---
-title: "Permission Denied: Writing to Privileged Locations"
-date: 2022-04-07T20:09:40-04:00
+date: 2022-04-07 20:09:40-04:00
 draft: false
-tags: []
 math: false
 medium_enabled: true
+medium_post_id: 7d133254be3f
+tags: []
+title: 'Permission Denied: Writing to Privileged Locations'
 ---
 
 Perhaps you've tried something like the following:

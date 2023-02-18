@@ -1,10 +1,12 @@
 ---
-title: "Rootless Docker-Compose with Podman"
-date: 2022-01-29T20:21:11-05:00
+date: 2022-01-29 20:21:11-05:00
 draft: false
-tags: ["Containers"]
 math: false
 medium_enabled: true
+medium_post_id: d31b7e2a688c
+tags:
+- Containers
+title: Rootless Docker-Compose with Podman
 ---
 
 One of the benefits of Podman over Docker is that it can run daemon-less and without root. However, `docker-compose` is by far my favorite way to create and maintain containers. Luckily, the Podman folks emulated the Docker CLI so that `docker-compose` works well with Podman!

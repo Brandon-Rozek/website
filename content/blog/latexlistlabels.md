@@ -1,10 +1,12 @@
 ---
-title: "LaTex List Labels"
-date: 2022-01-16T23:17:51-05:00
+date: 2022-01-16 23:17:51-05:00
 draft: false
-tags: ["LaTex"]
 math: false
 medium_enabled: true
+medium_post_id: b978cbe10da3
+tags:
+- LaTex
+title: LaTex List Labels
 ---
 
 A quick tip that I recently learned is that the symbols in a LaTex list item is changeable. In fact, the following technique works for both the `enumerate` and `itemize` environments.

@@ -1,10 +1,11 @@
 ---
-title: "Finding Cuda Errors"
-date: 2022-03-08T10:53:43-05:00
+date: 2022-03-08 10:53:43-05:00
 draft: false
-tags: []
 math: false
 medium_enabled: true
+medium_post_id: a07f460ce553
+tags: []
+title: Finding Cuda Errors
 ---
 
 When cuda fails, it fails silently. To combat this, I have gotten into a habit of checking for a failed status for every cuda memory allocation, kernel execution etc. The following is a C++ macro I wrote that checks if a previous cuda call has failed and then prints the current line and file of the macro.

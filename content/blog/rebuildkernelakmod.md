@@ -1,10 +1,13 @@
 ---
-title: "Rebuild Kernel Modules with Akmods"
-date: 2022-02-04T19:37:04-05:00
+date: 2022-02-04 19:37:04-05:00
 draft: false
-tags: ["Linux", "Fedora"]
 math: false
 medium_enabled: true
+medium_post_id: ab0e2a2ce3b3
+tags:
+- Linux
+- Fedora
+title: Rebuild Kernel Modules with Akmods
 ---
 
 Akmods is the Fedora/Red Hat way of managing kernel modules. In Ubuntu, this is `dkms`. If you're like me and force reboot shortly after performing an update, then you might have not given akmods enough time to compile any extra kernel modules (for example: Nvidia). This meant that I had to boot into an older kernel to try to fix the problem....

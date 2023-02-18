@@ -1,10 +1,11 @@
 ---
-title: "Terminal Output To SVG Animations"
-date: 2022-01-17T10:14:22-05:00
+date: 2022-01-17 10:14:22-05:00
 draft: false
-tags: []
 math: false
 medium_enabled: true
+medium_post_id: ad8c533610b5
+tags: []
+title: Terminal Output To SVG Animations
 ---
 
 With [`termtosvg`](https://github.com/nbedos/termtosvg) made by Nicolas Bedo we can make SVG animations from terminal output in the style of  [asciinema](https://asciinema.org/). To install use [pipx](/blog/managepythonapps/).

@@ -1,10 +1,12 @@
 ---
-title: "Tree-based Plots in NetworkX"
-date: 2022-01-02T20:36:41-05:00
+date: 2022-01-02 20:36:41-05:00
 draft: false
-tags: ["Python"]
 math: false
 medium_enabled: true
+medium_post_id: c8cffb5c4078
+tags:
+- Python
+title: Tree-based Plots in NetworkX
 ---
 
 A graph in D3 and NetworkX can be represented as a JSON file.

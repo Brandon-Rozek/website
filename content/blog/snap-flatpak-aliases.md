@@ -1,10 +1,12 @@
 ---
-title: "Aliases for Snaps and Flatpaks"
-date: 2022-02-04T20:29:04-05:00
+date: 2022-02-04 20:29:04-05:00
 draft: false
-tags: ["Linux"]
 math: false
 medium_enabled: true
+medium_post_id: 5f51916cafd3
+tags:
+- Linux
+title: Aliases for Snaps and Flatpaks
 ---
 
 Sometimes snap packages and flatpaks come with unmemorable names to run their commands. Luckily for snap packages, you can easily alias them. For example, to rename the .NET executable to `dotnet` run.
@@ -35,4 +37,3 @@ done
 # main
 launch_app "${1}"
 ```
-

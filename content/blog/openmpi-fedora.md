@@ -1,10 +1,12 @@
 ---
-title: "OpenMPI on Fedora"
-date: 2022-05-03T00:52:38-04:00
+date: 2022-05-03 00:52:38-04:00
 draft: false
-tags: ["Fedora"]
 math: false
 medium_enabled: true
+medium_post_id: 1c0c98b99e8a
+tags:
+- Fedora
+title: OpenMPI on Fedora
 ---
 
 To use use the OpenMPI compilers (mpicc, mpic++, etc.) and mpirun

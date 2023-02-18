@@ -1,10 +1,13 @@
 ---
-title: "Configuring a SOCKS5 Proxy"
-date: 2022-01-03T10:41:09-05:00
+date: 2022-01-03 10:41:09-05:00
 draft: false
-tags: ["Networking", "SSH"]
 math: false
 medium_enabled: true
+medium_post_id: ed506a09a2b2
+tags:
+- Networking
+- SSH
+title: Configuring a SOCKS5 Proxy
 ---
 
 A SOCKS5 proxy allows you to have network traffic as if it was coming from the proxy server as opposed to your local client. You can easily set it up using SSH from your local machine.
@@ -32,4 +35,3 @@ To do this you will need proxychains installed. On Ubuntu, the package is called
 ```
 socks5  127.0.0.1  1337
 ```
-

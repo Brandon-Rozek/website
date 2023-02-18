@@ -1,10 +1,12 @@
 ---
-title: "Which commit broke the build? Using Git Bisect"
-date: 2022-05-03T01:15:55-04:00
+date: 2022-05-03 01:15:55-04:00
 draft: false
-tags: ["Git"]
 math: false
 medium_enabled: true
+medium_post_id: 1ef72415ab75
+tags:
+- Git
+title: Which commit broke the build? Using Git Bisect
 ---
 
 Lets imagine a scenario where in the latest merge a test

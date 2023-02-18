@@ -1,10 +1,12 @@
 ---
-title: "Code alongside Output in LaTex"
-date: 2022-01-27T09:15:10-05:00
+date: 2022-01-27 09:15:10-05:00
 draft: false
-tags: ["LaTex"]
 math: false
 medium_enabled: true
+medium_post_id: c4d061953056
+tags:
+- LaTex
+title: Code alongside Output in LaTex
 ---
 
 Working on a tool paper, I had the desire to share code alongside its output. With a combination of the `listings`, `caption`, and `color` packages, we can get a result that's nice looking.

@@ -1,10 +1,12 @@
 ---
-title: "Dafny v3.3 Show Countermodel"
-date: 2022-02-04T19:43:12-05:00
+date: 2022-02-04 19:43:12-05:00
 draft: false
-tags: ["Formal Methods"]
 math: false
 medium_enabled: true
+medium_post_id: b1976dcfde09
+tags:
+- Formal Methods
+title: Dafny v3.3 Show Countermodel
 ---
 
 *Warning: `extractcounterexample` is a new flag in Dafny and the command to extract it will likely change*
@@ -103,4 +105,3 @@ Dafny program verifier finished with 2 verified, 0 errors
 Compiled assembly into example3.dll
 Program compiled successfully
 ```
-
