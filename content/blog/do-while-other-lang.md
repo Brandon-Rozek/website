@@ -1,10 +1,11 @@
 ---
-title: "Do-While Loop in Other Languages"
-date: 2021-08-27T21:50:02-04:00
+date: 2021-08-28 01:50:02
 draft: false
-tags: []
 math: false
 medium_enabled: true
+medium_post_id: 5a9c792673f2
+tags: []
+title: Do-While Loop in Other Languages
 ---
 
 Some languages like C, C++, and Java have a concept of a Do-While loop which normally look like the following:
@@ -23,5 +24,3 @@ while condition or first_run:
     first_run = False
     statements
 ```
-
-

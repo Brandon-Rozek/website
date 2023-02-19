@@ -1,10 +1,12 @@
 ---
-title: "Introduction to RF Power Amplifiers"
-date: 2021-04-10T13:01:00-04:00
+date: 2021-04-10 17:01:00
 draft: false
-tags: ["Amateur Radio"]
 math: true
 medium_enabled: true
+medium_post_id: a8510ebe7754
+tags:
+- Amateur Radio
+title: Introduction to RF Power Amplifiers
 ---
 
 For field day I've been toying with the idea of buying a power amplifier for my HackRF. What I've come to realize is that there are a lot more to power amplifiers than just how much it amplifies by. This post outlines my current understanding (I'm by no means an expert) on the subject of RF power amplifiers.
@@ -60,6 +62,4 @@ Considerations:
 
 - Need a gain of 30dB
 - Lower noise figure is always better but a link budget analysis would get you a specific number.
-- Want VSWR as close to 1 as possible. 
-
-
+- Want VSWR as close to 1 as possible.

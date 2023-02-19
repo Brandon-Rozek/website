@@ -1,9 +1,11 @@
 ---
-title: "Print Statements with Frame Information"
-date: 2021-06-03T13:54:39-04:00
+date: 2021-06-03 17:54:39
 draft: false
-tags: ["Testing"]
 medium_enabled: true
+medium_post_id: a811c52bda55
+tags:
+- Testing
+title: Print Statements with Frame Information
 ---
 
 I find it extremely useful to include frame information such as filename, line number, and current function in my print statements. Here's a couple ways that I've done that in the past.
@@ -37,4 +39,3 @@ def debuglog(m):
     function_name = last_frame_info.function if last_frame_info is not None else "<module>"
     print(f"[{filename}:{lineno} {function_name}] {m}")
 ```
-

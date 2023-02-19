@@ -1,9 +1,11 @@
 ---
-title: "Ventoy for managing ISOs on one USB"
-date: 2021-06-18T15:32:38-04:00
+date: 2021-06-18 19:32:38
 draft: false
-tags: ["Virtualization"]
 medium_enabled: true
+medium_post_id: b096fed9be3c
+tags:
+- Virtualization
+title: Ventoy for managing ISOs on one USB
 ---
 
 Traditionally I would hold one Linux distribution per USB drive. Though with 32 GB USB Flash drives only costing $12, why hold only one per drive? That's where Ventoy comes in. With Ventoy, we can store multiple ISOs which it then presents as a boot screen. 
@@ -21,4 +23,3 @@ To install Ventoy onto a flash drive, follow the [Get Started](https://www.vento
 ![](/files/images/blog/ventoy.png)
 
 Example screenshot from their website.
-

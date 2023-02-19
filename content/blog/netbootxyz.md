@@ -1,9 +1,10 @@
 ---
-title: "Netboot.xyz Bootloader"
-date: 2021-06-18T15:43:29-04:00
+date: 2021-06-18 19:43:29
 draft: false
-tags: []
 medium_enabled: true
+medium_post_id: d99cafd95a34
+tags: []
+title: Netboot.xyz Bootloader
 ---
 
 Instead of manually loading ISOs onto a USB stick for [Ventoy](/blog/ventoy) to display, we can use Netboot.xyz to present us a list of options and download them during boot. This requires an internet connection in order to work.
@@ -15,4 +16,3 @@ Download the [Netboot ISO](https://boot.netboot.xyz/ipxe/netboot.xyz.iso) and [l
 ![](/files/images/blog/netboot.xyz.gif)
 
 Another benefit of this approach over Ventoy is that we don't have to manually update the flash drive. It always comes fresh with the ISOs available on their website.
-

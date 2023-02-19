@@ -1,10 +1,12 @@
 ---
-title: "Common Network Debugging Commands"
-date: 2022-01-02T15:17:02-05:00
+date: 2022-01-02 20:17:02
 draft: false
-tags: ["Networking"]
 math: false
 medium_enabled: true
+medium_post_id: 7a55c1f5f40e
+tags:
+- Networking
+title: Common Network Debugging Commands
 ---
 
 Below are list of commands that I use to debug common issues in a network. There is a wonderful tool called Wireshark which you can use to sniff packets in a network and filter by a wide range of options, but we'll mainly focus on simple tools that you can use in the terminal.
@@ -158,4 +160,3 @@ Address                  HWtype  HWaddress           Flags Mask            Iface
 192.168.0.11             ether   72:25:22:2c:72:72   C                     wlan0
 192.168.0.111            ether   03:33:34:3b:23:39   C                     wlan0
 ```
-

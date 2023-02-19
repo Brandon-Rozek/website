@@ -1,10 +1,11 @@
 ---
-title: "Z3 Constraint solving"
-date: 2021-06-18T00:53:20-04:00
+date: 2021-06-18 04:53:20
 draft: false
 math: true
-tags: []
 medium_enabled: true
+medium_post_id: 9e4ced42d47
+tags: []
+title: Z3 Constraint solving
 ---
 
 I've been looking for an easy to use constraint solver for a while and recently I've landed on using the python bindings for the SMT solver Z3.
@@ -44,4 +45,3 @@ m = s.model()
 x_val = m.eval(x)
 y_val = m.eval(y)
 ```
-

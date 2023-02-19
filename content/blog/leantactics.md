@@ -1,10 +1,12 @@
 ---
-title: "Lean Theorem Prover Tactics"
-date: 2021-10-10T23:52:41-04:00
+date: 2021-10-11 03:52:41
 draft: false
-tags: ["Formal Methods"]
 math: false
 medium_enabled: true
+medium_post_id: adea1a69ddc8
+tags:
+- Formal Methods
+title: Lean Theorem Prover Tactics
 ---
 
 I've recently been playing with the Lean Theorem Prover.  I am impressed with how some of the mathematics community decided to extend this project via [mathlib](https://leanprover-community.github.io/) and really make proving theorems in this framework easy and enjoyable.
