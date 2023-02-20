@@ -7,8 +7,8 @@ on:
   schedule:
     - cron: "21 14 * * *"
 
-concurrency:
-  cancel-in-progress: true
+#concurrency:
+#  cancel-in-progress: true
 
 defaults:
   run:
