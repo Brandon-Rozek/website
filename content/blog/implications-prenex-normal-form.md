@@ -1,5 +1,5 @@
 ---
-title: "Prefix Normal Form - Implication Exercise"
+title: "Prenex Normal Form - Implication Exercise"
 date: 2023-02-17T11:05:35-05:00
 draft: false
 tags: []
@@ -7,7 +7,7 @@ math: true
 medium_enabled: false
 ---
 
-I recently read through the Wikipedia article on [Prefix Normal Form](https://en.wikipedia.org/wiki/Prenex_normal_form). It first describes the two equivalences for conjunction/disjunction.
+I recently read through the Wikipedia article on [Prenex Normal Form](https://en.wikipedia.org/wiki/Prenex_normal_form). It first describes the two equivalences for conjunction/disjunction.
 $$
 (\forall x \phi) \vee \psi \iff \forall x(\phi \vee \psi) \tag{1.1}
 $$
