@@ -1,7 +1,9 @@
 ---
 title: Menu
-description: Meals that can be cooked at my house
+description: Meals available to be made at Brandon's home.
 ---
+
+The following menu contains meals that are in rotation at my home. These are made from scratch by either myself or Clare unless otherwise specified. If you ever come to visit, you can likely ask for any of these meals and often I would have the ingridients at the ready to make them. Otherwise, it would be a quick trip to the grocery store.
 
 {{< vegetarian >}} = Vegetarian Option Available
 
@@ -11,8 +13,7 @@ description: Meals that can be cooked at my house
 
 {{< /details >}}
 
-## Appetizer
-
+## Appetizers
 
 - {{< vegetarian >}}[Deviled Eggs](deviled-eggs)
 - {{< vegetarian >}}Bread
@@ -21,7 +22,6 @@ description: Meals that can be cooked at my house
     * (Pick your spices)
 - Pizza Rolls (WIP)
 - Skillet Queso
-
 ## Soups
 
 - Pork Pozole

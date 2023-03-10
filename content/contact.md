@@ -29,4 +29,4 @@ the "Generate Email" button.
 This above encryption is performed locally on your machine with [OpenPGP.js](https://openpgpjs.org/).
 ## ActivityPub
 
-You're also welcome to message me on Mastodon. My handle is [brozek@fosstodon.org](https://fosstodon.org/@brozek).
+You're also welcome to message me on Mastodon. My handle is [@brozek@fosstodon.org](https://fosstodon.org/@brozek).
