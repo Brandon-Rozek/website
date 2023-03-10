@@ -159,7 +159,8 @@ To display the images we range over the media_attachments array and grab any ima
 </div>
 ```
 
-For the interaction URLs notice the following pattern:
+At time time of post interaction URLs followed the upcoming pattern.
+This has been removed since, and I have not yet found an alternative.
 
 - Reply URL -> `https://SERVER/interact/TOOTID?type=reply`
 - Favorite URL -> `https://SERVER/interact/TOOTID?type=favourite`
