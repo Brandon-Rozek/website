@@ -1,5 +1,5 @@
 ---
-title: "Chicken Black Bean Quesadilla"
+title: "Black Bean Quesadilla"
 draft: true
 ---
 

@@ -43,7 +43,7 @@ description: Meals that can be cooked at my house
 ### Lunch
 
 - Turkey Club
-- Chicken Black Bean Quesadilla
+- {{< vegetarian >}}Black Bean Quesadilla
 - Chicken-Chickpea Salad
 - Tuna Sandwich
 
