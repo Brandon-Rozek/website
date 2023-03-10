@@ -3,9 +3,16 @@ title: Menu
 description: Meals that can be cooked at my house
 ---
 
+{{< details "Basics" >}}
+- [Hard Boiled Eggs](hard-boiled-eggs)
+- [Shredded Chicken](shredded-chicken)
+
+{{< /details >}}
+
 ## Appetizer
 
-- Deviled Eggs
+
+- [Deviled Eggs](deviled-eggs)
 - Bread
     * Challah
     * Rosemary
@@ -47,14 +54,14 @@ description: Meals that can be cooked at my house
     * Korma
 - Pre-made Japanese Vermont curry
 - Pork/Chicken Katsu
-- Fettuccine Alfredo
+- [Fettuccine Alfredo](fettuccine-alfredo)
 - Chicken Asparagus Risotto
 - Pad Thai
-- Beef Stew
+- [Beef Stew](beef-stew)
 - Pulled Pork Sandwiches
 - Turkey Tacos
 - Meatball Sub
-- White Pepper Spaetzle
+- [White Pepper Spaetzle](white-pepper-spaetzle)
 
 ## Sides
 
@@ -64,7 +71,7 @@ description: Meals that can be cooked at my house
 
 ## Dessert
 
-- Crepes
+- [Crepes](crepes)
 - Tiramisu
 - Cookies
   * Molasses
