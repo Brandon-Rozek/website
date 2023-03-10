@@ -1,10 +1,11 @@
 ---
-title: "Human Readable Sizes"
-date: 2021-03-15T19:11:35-04:00
+date: 2021-03-15 23:11:35
 draft: false
-tags: []
 math: true
 medium_enabled: true
+medium_post_id: 2a32b08bd2c1
+tags: []
+title: Human Readable Sizes
 ---
 
 When playing with large and small values, it is useful to convert them to a different unit in scientific notation. Let's look at bytes.
@@ -46,4 +47,3 @@ def humanReadableBytes(num_bytes: int) -> str:
     return "{:.2f} ".format(num_bytes / (base ** category_num)) + \
 			size_categories[category_num]
 ```
-

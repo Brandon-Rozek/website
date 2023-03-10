@@ -1,9 +1,12 @@
 ---
-title: "Quick Bash: Validate IP Address"
-date: 2020-12-19T20:15:24-05:00
+date: 2020-12-20 01:15:24
 draft: false
-tags: ["Bash", "Networking"]
 medium_enabled: true
+medium_post_id: c7a65890d9d9
+tags:
+- Bash
+- Networking
+title: 'Quick Bash: Validate IP Address'
 ---
 
 `ipcalc` is a terminal tool that lets you validate an IP address. This proves useful to me as I have scripts that automate certain remote tasks given an IP address. Instead of trusting that an argument passed is a valid IP, why not check it?
@@ -25,4 +28,3 @@ if ! ipcalc -cs "$IP" ; then
     exit 1
 fi
 ```
-

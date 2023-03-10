@@ -1,9 +1,10 @@
 ---
-title: "LibreOffice Calc Tips"
-date: 2021-02-20T12:37:48-05:00
+date: 2021-02-20 17:37:48
 draft: false
-tags: []
 medium_enabled: true
+medium_post_id: c55df201e882
+tags: []
+title: LibreOffice Calc Tips
 ---
 
 I've been working with LibreOffice Calc (or Excel) spreadsheets recently and wanted to share some of the things I've learned.
@@ -82,4 +83,3 @@ Strings separated by `&` are concatenated together.
 ```excel
 "Hello " & "World."
 ```
-

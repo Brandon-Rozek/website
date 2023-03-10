@@ -1,9 +1,11 @@
 ---
-title: "Detect Python Version"
-date: 2021-03-15T18:09:38-04:00
+date: 2021-03-15 22:09:38
 draft: false
-tags: ["Python"]
 medium_enabled: true
+medium_post_id: f742be560b7f
+tags:
+- Python
+title: Detect Python Version
 ---
 
 I was working on a distribution recently where `python` was mapped to `python2`. It mixed me up for a bit since I was writing a script for `python3` but it ran partially under `python2`. To lower confusion in the future, I think it's a great idea to check the python version and exit if it isn't the version you expect.
@@ -21,4 +23,3 @@ if version_info.major != 3:
     print("Exiting...")
     exit(1)
 ```
-

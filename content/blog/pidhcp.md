@@ -1,9 +1,11 @@
 ---
-title: "DHCP for Raspberry Pi"
-date: 2021-02-15T22:46:21-05:00
+date: 2021-02-16 03:46:21
 draft: false
-tags: ["Networking"]
 medium_enabled: true
+medium_post_id: 8c13511f5b45
+tags:
+- Networking
+title: DHCP for Raspberry Pi
 ---
 
 Recently I ran across the use case where I needed a Raspberry Pi to be connected to the Internet via a WiFI connection, while also providing DHCP leases through an Ethernet connection. I couldn't find a great way to achieve this with `dhcpcd` so instead I grabbed a tool that I'm more familiar with `dnsmasq`. 
@@ -56,4 +58,3 @@ dhcp-range=192.168.0.50,192.168.0.150,12h
 # and defaults to 64 if missing/
 #dhcp-range=1234::2, 1234::500, 64, 12h
 ```
-

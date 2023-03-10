@@ -1,9 +1,12 @@
 ---
-title: "Multicast Receive Script"
-date: 2020-11-18T10:09:15-05:00
+date: 2020-11-18 15:09:15
 draft: false
-tags: ["Linux", "Networking"]
 medium_enabled: true
+medium_post_id: 6f6efe549a47
+tags:
+- Linux
+- Networking
+title: Multicast Receive Script
 ---
 
 I use `socat` to debug mutlicast traffic, though the syntax for it is complicated to learn. Here is the command that I normally use to debug multicast traffic.
@@ -47,4 +50,3 @@ port="$2"
 
 socat UDP4-RECVFROM:"$port",ip-add-membership="$multicast_address":0.0.0.0,fork -
 ```
-

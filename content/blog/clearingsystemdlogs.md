@@ -1,9 +1,11 @@
 ---
-title: "Clearing Systemd Logs"
-date: 2021-02-21T16:08:51-05:00
+date: 2021-02-21 21:08:51
 draft: false
-tags: ["Linux"]
 medium_enabled: true
+medium_post_id: acf4ee0e7f0c
+tags:
+- Linux
+title: Clearing Systemd Logs
 ---
 
 Short post today. I wanted to clear out some disk space usage on one of my servers and noticed that the systemd logs were taking up a decent bit. Here are two options to clear out old logs.
@@ -19,4 +21,3 @@ An example to clear it by total disk usage, let's say 10Gb:
 ```bash
 journalctl --vacuum-size=10G
 ```
-
