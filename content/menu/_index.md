@@ -3,8 +3,10 @@ title: Menu
 description: Meals that can be cooked at my house
 ---
 
+{{< vegetarian >}} = Vegetarian Option Available
+
 {{< details "Basics" >}}
-- [Hard Boiled Eggs](hard-boiled-eggs)
+- {{< vegetarian >}}[Hard Boiled Eggs](hard-boiled-eggs)
 - [Shredded Chicken](shredded-chicken)
 
 {{< /details >}}
@@ -12,8 +14,8 @@ description: Meals that can be cooked at my house
 ## Appetizer
 
 
-- [Deviled Eggs](deviled-eggs)
-- Bread
+- {{< vegetarian >}}[Deviled Eggs](deviled-eggs)
+- {{< vegetarian >}}Bread
     * Challah
     * Rosemary
     * (Pick your spices)
@@ -24,19 +26,19 @@ description: Meals that can be cooked at my house
 
 - Pork Pozole
 - Chicken & Gnocchi
-- Broccoli Cheddar
-- Loaded Baked Potato
-- Egg Drop Soup
+- {{< vegetarian >}}Broccoli Cheddar
+- {{< vegetarian >}}Loaded Baked Potato
+- {{< vegetarian >}}Egg Drop Soup
 
 ## Entrees
 
 ### Breakfast
 
-- Breakfast Burrito
-- Egg Sandwich
-- Scrambled Eggs
-- Muffins
-- Omelette
+- {{< vegetarian >}}Breakfast Burrito
+- {{< vegetarian >}}Egg Sandwich
+- {{< vegetarian >}}Scrambled Eggs
+- {{< vegetarian >}}Muffins
+- {{< vegetarian >}}Omelette
 
 ### Lunch
 
@@ -47,7 +49,7 @@ description: Meals that can be cooked at my house
 
 ### Dinner
 
-- Fried Rice
+- {{< vegetarian >}}Fried Rice
 - Pre-made Indian Curries
     * Butter Chicken
     * Tikka Marsala
@@ -56,20 +58,20 @@ description: Meals that can be cooked at my house
 - Pork/Chicken Katsu
 - [Fettuccine Alfredo](fettuccine-alfredo)
 - Chicken Asparagus Risotto
-- Pad Thai
+- {{< vegetarian >}}Pad Thai
 - [Beef Stew](beef-stew)
 - Pulled Pork Sandwiches
 - Turkey Tacos
 - Meatball Sub
-- [White Pepper Spaetzle](white-pepper-spaetzle)
+- {{< vegetarian >}}[White Pepper Spaetzle](white-pepper-spaetzle)
 
-## Sides
+## {{< vegetarian >}} Sides
 
 - Sweet Potato Casserole
 - Green Bean Casserole
 - Scalloped Potatoes
 
-## Dessert
+## {{< vegetarian >}} Dessert
 
 - [Crepes](crepes)
 - Tiramisu
