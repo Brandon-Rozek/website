@@ -50,13 +50,13 @@ description: Meals that can be cooked at my house
 ### Dinner
 
 - {{< vegetarian >}}Fried Rice
-- Pre-made Indian Curries
+- {{< vegetarian >}}Pre-made Indian Curries
     * Butter Chicken
     * Tikka Marsala
     * Korma
-- Pre-made Japanese Vermont curry
+- {{< vegetarian >}}Pre-made Japanese Vermont curry
 - Pork/Chicken Katsu
-- [Fettuccine Alfredo](fettuccine-alfredo)
+- {{< vegetarian >}}[Fettuccine Alfredo](fettuccine-alfredo)
 - Chicken Asparagus Risotto
 - {{< vegetarian >}}Pad Thai
 - [Beef Stew](beef-stew)
