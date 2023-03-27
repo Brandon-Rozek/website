@@ -35,6 +35,7 @@ The following menu contains meals that are in rotation at my home. These are mad
 ### Breakfast
 
 - {{< vegetarian >}}Breakfast Burrito
+- {{< vegetarian >}}Potatos and Eggs (Goya / Unami / Spicy)
 - {{< vegetarian >}}Egg Sandwich
 - {{< vegetarian >}}Scrambled Eggs
 - {{< vegetarian >}}Muffins
@@ -42,14 +43,14 @@ The following menu contains meals that are in rotation at my home. These are mad
 
 ### Lunch
 
-- Turkey Club
-- {{< vegetarian >}}Black Bean Quesadilla
-- Chicken-Chickpea Salad
+- [Turkey Club](turkey-club-sandwich)
+- {{< vegetarian >}}[Black Bean Quesadilla](black-bean-quesadilla)
+- [Chicken-Chickpea Salad](chicken-chickpea-salad)
 - Tuna Sandwich
 
 ### Dinner
 
-- {{< vegetarian >}}Fried Rice
+- {{< vegetarian >}}[Fried Rice](fried-rice)
 - {{< vegetarian >}}Pre-made Indian Curries
     * Butter Chicken
     * Tikka Marsala
