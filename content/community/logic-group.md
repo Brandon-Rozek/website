@@ -17,9 +17,9 @@ I presented the following:
 
 03/22/2023: Original Tutorial on ["Automated Theorem Proving with TPTP"](https://github.com/Brandon-Rozek/TPTP-Examples)
 
-02/08/2023: Original Tutorial on "Interactive Theorem Proving with Lean Part 2"
+02/08/2023: Original Tutorial on ["Interactive Theorem Proving with Lean Part 2"](/blog/lean3-tutorial)
 
-02/01/2023: Original Tutorial on "Interactive Theorem Proving with Lean Part 1"
+02/01/2023: Original Tutorial on ["Interactive Theorem Proving with Lean Part 1"](/blog/lean3-tutorial)
 
 05/11/2022:
 [The Power of Waiting in Social Laws](https://icaps21.icaps-conference.org/workshops/KEPS/Papers/KEPS_2021_paper_14.pdf) by Alexander Tuisov, Alexander Shleyfman, and Erez Karpas.
