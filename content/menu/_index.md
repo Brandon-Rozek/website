@@ -84,3 +84,4 @@ The following menu contains meals that are in rotation at my home. These are mad
 - Apple Pie
 - Banana Bread
 - Popcorn
+- Strawberry Shortcake
