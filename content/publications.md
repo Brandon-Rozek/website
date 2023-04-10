@@ -44,6 +44,12 @@ Verification of Automatically Synthesized Cryptosystems ](/paper/2109.01)
 
 ## Presentations
 
+Efficient Parallel Verification of Natural Deduction Proof Graphs
+- Authors: James Oswald and *Brandon Rozek*
+- Venue: Rensselaer Computer Science Graduate Poster Session, April 2019.
+- [Poster](/files/research/PV-Poster.pdf) 
+
+
 QEP: The Quality Policy Evaluation Algorithm
 - Venue: Research and Creativity Day at University of Mary Washington, 2019.
 - [Program](/files/research/UMW-RC-2019.pdf#page=3) | [Slides](/files/research/QEP.pptx)
