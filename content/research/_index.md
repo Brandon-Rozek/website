@@ -47,13 +47,15 @@ at  [UNIF 2020](https://www3.risc.jku.at/publications/download/risc_6129/proceed
 
 I've written a few [notes](termreasoning) about term reasoning.
 
-Collaborators:
+Current Collaborators:
 - NRL: Catherine Meadows
-- UMW: [Andrew Marshall]((https://www.marshallandrew.net/)), Veena Ravishankar
+- UMW: [Andrew Marshall]((https://www.marshallandrew.net/))
 - UT Dallas: Serdar Erbatur
-- SUNY Albany: [Paliath Narendran](https://www.cs.albany.edu/~dran/), Wei Du
-- Clarkson University: [Christopher Lynch](https://people.clarkson.edu/~clynch/), Hai Lin
+- SUNY Albany: [Paliath Narendran](https://www.cs.albany.edu/~dran/), Kim Cornell
+- Clarkson University: [Christopher Lynch](https://people.clarkson.edu/~clynch/)
 
+
+Group Website: [https://cryptosolvers.github.io](https://cryptosolvers.github.io)
 
 
 ## Reinforcement Learning
