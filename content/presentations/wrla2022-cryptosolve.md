@@ -5,7 +5,7 @@ draft: false
 ---
 
 On April 3rd 2022, I presented a paper at the 14th International Workshop on Rewriting Logic and its Applications (WRLA 2022). This presentation features
-[CryptoSolve](https://symcollab.github.io/CryptoSolve/) a tool that generates and verifies Cryptographic Modes of Operations.
+[CryptoSolve](https://cryptosolvers.github.io/CryptoSolve/) a tool that generates and verifies Cryptographic Modes of Operations.
 
 [Slides PDF](/files/slides/wrla2022-slides.pdf)
 
