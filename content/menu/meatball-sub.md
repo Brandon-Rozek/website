@@ -15,8 +15,8 @@ Work in progress
 - 1 teaspoon dried oregano
 - 3 teaspoon salt
 - 1 teaspoon ground black pepper
-- 6 tablespoons olive oil
-- 1 diced onion
+- 3 tablespoons olive oil
+- 1/2 diced onion
 - 2 table spoons white vinegar
 
 ### Recipe
