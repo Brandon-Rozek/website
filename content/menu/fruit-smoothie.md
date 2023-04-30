@@ -1,12 +1,14 @@
 ---
-title: "Banana Smoothie"
+title: "Fruit Smoothie"
 draft: false
 ---
 
-Creates 4 cups of banana smoothie
+Creates 4 cups of fruit smoothie.
+
+I tried this with bannanas and mangos.
 
 ## Ingredients
-- 2 bananas or 300g
+- 300g of whichever fruit you want
 - 6 spoons of yogurt
 - 1.5 cups milk
 

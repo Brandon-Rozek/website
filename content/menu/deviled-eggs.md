@@ -9,9 +9,9 @@ Total Time: 20 Minutes
 
 ## Ingredients
 
-- [Hard Boiled Eggs](/menu/hard-boiled-eggs)
-- 2 Tablespoons Mayonnaise
-- 1 Tablespoon Mustard
+- 6 [Hard Boiled Eggs](/menu/hard-boiled-eggs)
+- 4 Tablespoons Mayonnaise
+- 2 Tablespoon Mustard
 - Pinch of Paprika
 
 ## Recipe
