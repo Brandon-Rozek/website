@@ -13,20 +13,18 @@ Thanks to whoever tied the ropes between the trees beforehand!
 
 {{< details "Show photos:" >}}
 
-![](/files/images/tracks/2022-06-05/PXL_20220605_141649331.jpg)
-![](/files/images/tracks/2022-06-05/PXL_20220605_142555170.jpg)
-![](/files/images/tracks/2022-06-05/PXL_20220605_142637549.jpg)
-![](/files/images/tracks/2022-06-05/PXL_20220605_142814350.jpg)
-![](/files/images/tracks/2022-06-05/PXL_20220605_143205105.jpg)
-![](/files/images/tracks/2022-06-05/PXL_20220605_143218068.jpg)
-![](/files/images/tracks/2022-06-05/PXL_20220605_143903189.jpg)
-![](/files/images/tracks/2022-06-05/PXL_20220605_144416173.MP.jpg)
-![](/files/images/tracks/2022-06-05/PXL_20220605_144700467.jpg)
-![](/files/images/tracks/2022-06-05/PXL_20220605_150316229.jpg)
-![](/files/images/tracks/2022-06-05/PXL_20220605_151222080.jpg)
-![](/files/images/tracks/2022-06-05/PXL_20220605_151222080.jpg)
-![](/files/images/tracks/2022-06-05/PXL_20220605_151610481.jpg)
-![](/files/images/tracks/2022-06-05/PXL_20220605_151724547.MP.jpg)
-![](/files/images/tracks/2022-06-05/PXL_20220605_151916080.jpg)
+![](/files/images/tracks/2023-04-22/PXL_20230422_192855283.jpg)
+![](/files/images/tracks/2023-04-22/PXL_20230422_192900233.jpg)
+![](/files/images/tracks/2023-04-22/PXL_20230422_193037865.jpg)
+![](/files/images/tracks/2023-04-22/PXL_20230422_193040244.jpg)
+![](/files/images/tracks/2023-04-22/PXL_20230422_193857117.jpg)
+![](/files/images/tracks/2023-04-22/PXL_20230422_194510979.jpg)
+![](/files/images/tracks/2023-04-22/PXL_20230422_194556936.jpg)
+![](/files/images/tracks/2023-04-22/PXL_20230422_200254253.MP.jpg)
+![](/files/images/tracks/2023-04-22/PXL_20230422_200342514.jpg)
+![](/files/images/tracks/2023-04-22/PXL_20230422_200431012.jpg)
+![](/files/images/tracks/2023-04-22/PXL_20230422_200440404.jpg)
+![](/files/images/tracks/2023-04-22/PXL_20230422_201336997.jpg)
+![](/files/images/tracks/2023-04-22/PXL_20230422_204415462.jpg)
 
 {{< /details >}}
