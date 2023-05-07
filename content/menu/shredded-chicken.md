@@ -18,10 +18,13 @@ Total Time: ~17 Minutes
 
 ## Recipe
 
-1. Fill the pot with water.
-2. Flavor to taste.
-    - I generally use chicken broth, salt, and goya seasoning
-3. Bring water to a simmer of around 175 degrees Fahrenheit.
-4. Add chicken to pot.
-5. Cook chicken until internal temperature reaches 165 degrees Fahrenheit
-6. Place chicken on cutting board and use forks to seperate/shred the chicken.
+1. Prepare the Chicken (Optional)
+    - Flatten the chicken so it cooks evenly
+    - Add salt to brine the chicken, leave for several hours
+2. Prepare the pot
+    - Fill with water
+    - Flavor to taste: I generally use chicken broth, salt, and goya seasoning
+    - Bring water to a simmer of around 175 degrees Fahrenheit.
+3. Add chicken to pot.
+4. Cook chicken until internal temperature reaches 165 degrees Fahrenheit
+5. Place chicken on cutting board and use forks to seperate/shred the chicken.

@@ -3,7 +3,6 @@ title: "Chicken Chickpea Salad"
 draft: false
 ---
 
-IN PROGRESS
 
 ## Ingredients
 - Spinach or Mixed Greens
@@ -14,3 +13,5 @@ IN PROGRESS
 - Shredded Chicken
 
 ## Recipe
+
+Mix everything together into a bowl and enjoy.

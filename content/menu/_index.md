@@ -56,14 +56,14 @@ The following menu contains meals that are in rotation at my home. These are mad
     * Tikka Marsala
     * Korma
 - {{< vegetarian >}}Pre-made Japanese Vermont curry
-- Pork/Chicken Katsu
+- [Pork/Chicken Katsu](pork-chicken-katsu)
 - {{< vegetarian >}}[Fettuccine Alfredo](fettuccine-alfredo)
 - Chicken Asparagus Risotto
 - {{< vegetarian >}}Pad Thai
 - [Beef Stew](beef-stew)
 - Pulled Pork Sandwiches
 - Turkey Tacos
-- Meatball Sub
+- [Meatball Sub](meatball-sub)
 - {{< vegetarian >}}[White Pepper Spaetzle](white-pepper-spaetzle)
 
 ## {{< vegetarian >}} Sides
