@@ -57,6 +57,7 @@ The following menu contains meals that are in rotation at my home. These are mad
     * Korma
 - {{< vegetarian >}}Pre-made Japanese Vermont curry
 - [Pork/Chicken Katsu](pork-chicken-katsu)
+- Grilled Chicken Sandwich
 - {{< vegetarian >}}[Fettuccine Alfredo](fettuccine-alfredo)
 - Chicken Asparagus Risotto
 - {{< vegetarian >}}Pad Thai
