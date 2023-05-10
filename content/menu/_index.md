@@ -50,22 +50,34 @@ The following menu contains meals that are in rotation at my home. These are mad
 
 ### Dinner
 
-- {{< vegetarian >}}[Fried Rice](fried-rice)
-- {{< vegetarian >}}Pre-made Indian Curries
+{{< vegetarian >}} Vegetarian
+- [Fried Rice](fried-rice)
+- Pre-made Indian Curries
     * Butter Chicken
     * Tikka Marsala
     * Korma
-- {{< vegetarian >}}Pre-made Japanese Vermont curry
+- Pre-made Japanese Vermont curry
+- [Fettuccine Alfredo](fettuccine-alfredo)
+- Pad Thai
+- [White Pepper Spaetzle](white-pepper-spaetzle)
+
+
+Pork
 - [Pork/Chicken Katsu](pork-chicken-katsu)
-- Grilled Chicken Sandwich
-- {{< vegetarian >}}[Fettuccine Alfredo](fettuccine-alfredo)
-- Chicken Asparagus Risotto
-- {{< vegetarian >}}Pad Thai
-- [Beef Stew](beef-stew)
 - Pulled Pork Sandwiches
-- Turkey Tacos
+
+
+Beef
+- [Beef Stew](beef-stew)
 - [Meatball Sub](meatball-sub)
-- {{< vegetarian >}}[White Pepper Spaetzle](white-pepper-spaetzle)
+- Beef Goulash w/spaetzle
+- Chili
+
+
+Poultry
+- Grilled Chicken Sandwich
+- Chicken Asparagus Risotto
+- Turkey Tacos
 
 ## {{< vegetarian >}} Sides
 
