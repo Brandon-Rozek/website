@@ -22,8 +22,8 @@ Cook Time: 30 minutes
 - 2 tablespoon lemon juice
 - 1 cup of heavy whipping cream
 - 1/4 cup of chicken stock
-- Chicken
-- Chickpeas
+- Cooked Chicken
+- Cooked Chickpeas
 
 ## Recipe
 
