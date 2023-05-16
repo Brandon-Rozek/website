@@ -53,13 +53,12 @@ The following menu contains meals that are in rotation at my home. These are mad
 {{< vegetarian >}} Vegetarian
 - [Fried Rice](fried-rice)
 - Pre-made Indian Curries
-    * Butter Chicken
     * Tikka Marsala
-    * Korma
 - Pre-made Japanese Vermont curry
 - [Fettuccine Alfredo](fettuccine-alfredo)
 - Pad Thai
 - [White Pepper Spaetzle](white-pepper-spaetzle)
+- [Korma](korma)
 
 
 Pork
@@ -75,7 +74,7 @@ Beef
 
 
 Poultry
-- [Homemade Butter Chicken](butter-chicken)
+- [Homemade Butter Chicken](butter-chicken) (Can replace chicken)
 - Grilled Chicken Sandwich
 - Chicken Asparagus Risotto
 - Turkey Tacos
