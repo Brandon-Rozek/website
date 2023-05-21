@@ -10,6 +10,7 @@ The following menu contains meals that are in rotation at my home. These are mad
 {{< details "Basics" >}}
 - {{< vegetarian >}}[Hard Boiled Eggs](hard-boiled-eggs)
 - [Shredded Chicken](shredded-chicken)
+- [Gravy](gravy)
 
 {{< /details >}}
 
