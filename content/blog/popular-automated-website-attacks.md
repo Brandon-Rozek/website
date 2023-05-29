@@ -31,7 +31,9 @@ Given #3, I feel like this is ActivityPub related. Though looking at how the [ac
 
 6. `/status.php`
 
-I'm don't know what this is. Doesn't seem to be Wordpress related. Maybe the attacker is hoping to get the output of `phpinfo()` in those "getting started with PHP" tutorials?
+I'm not sure what this is. Doesn't seem to be Wordpress related. Maybe the attacker is hoping to get the output of `phpinfo()` in those "getting started with PHP" tutorials?
+
+James Oswald suggests that perhaps it's the [firewall status page in pfsense](https://github.com/pfsense/pfsense/blob/master/src/usr/local/www/status.php).
 
 7. `/.git/config`
 
