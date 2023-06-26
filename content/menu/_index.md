@@ -86,7 +86,7 @@ Poultry
 
 ## {{< vegetarian >}} Sides
 
-- Sweet Potato Casserole
+- [Sweet Potato Casserole](sweet-potato-casserole)
 - Green Bean Casserole
 - Scalloped Potatoes
 
