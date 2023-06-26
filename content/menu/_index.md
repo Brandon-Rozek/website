@@ -17,15 +17,20 @@ The following menu contains meals that are in rotation at my home. These are mad
 ## Appetizers
 
 - {{< vegetarian >}}[Deviled Eggs](deviled-eggs)
-- {{< vegetarian >}}Bread
-    * Challah
+- {{< vegetarian >}}[Bread](bread)
+    * [Challah](challah)
     * Rosemary
     * (Pick your spices)
 - Pizza Rolls (WIP)
 - Skillet Queso
+
+## Salads
+- [Southwest Chicken Salad](southwest-chicken-salad)
+- [Chicken-Chickpea Salad](chicken-chickpea-salad)
+
 ## Soups
 
-- Pork Pozole
+- [Pork Pozole](pork-pozole)
 - Chicken & Gnocchi
 - {{< vegetarian >}}Broccoli Cheddar
 - {{< vegetarian >}}Loaded Baked Potato
@@ -46,7 +51,6 @@ The following menu contains meals that are in rotation at my home. These are mad
 
 - [Turkey Club](turkey-club-sandwich)
 - {{< vegetarian >}}[Black Bean Quesadilla](black-bean-quesadilla)
-- [Chicken-Chickpea Salad](chicken-chickpea-salad)
 - Tuna Sandwich
 
 ### Dinner
@@ -77,7 +81,7 @@ Beef
 Poultry
 - [Homemade Butter Chicken](butter-chicken) (Can replace chicken)
 - Grilled Chicken Sandwich
-- Chicken Asparagus Risotto
+- [Chicken Asparagus Risotto](chicken-asparagus-risotto)
 - Turkey Tacos
 
 ## {{< vegetarian >}} Sides
@@ -89,14 +93,14 @@ Poultry
 ## {{< vegetarian >}} Dessert
 
 - [Crepes](crepes)
-- Tiramisu
+- [Tiramisu](tiramisu)
 - Cookies
   * Molasses
   * Ginger Bread
   * Peanut Butter Blossoms
   * Chocolate Chip
 - Apple Pie
-- Banana Bread
+- [Banana Bread](banana-bread)
 - Popcorn
 - Strawberry Shortcake
 - [Fruit Smoothie](fruit-smoothie)
