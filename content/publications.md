@@ -8,6 +8,16 @@ aliases:
 
 ## Publications
 
+Parallel Verification of Natural Deduction Proof Graphs
+- Authors: James Oswald and *Brandon Rozek*
+- Venue: Logical Frameworks and Meta-Languages: Theory and Practice, 2023.
+- Paper to appear in EPTCS late 2023 | Slides to appear in August 2023
+
+[The M Cognitive Meta-architecture as Touchstone for Standard Modeling of AGI-Level Minds](/paper/2305.01)
+- Authors: S Bringsjord, JT Oswald, M Giancola, *B Rozek*, NS Govindarajulu
+- Venue: International Conference on Artificial General Intelligence, 2022.
+- [Paper](http://kryten.mm.rpi.edu/M_launch.pdf)
+
 [CryptoSolve: A Tool for the Analysis of Cryptographic Modes of Operation](/paper/2209.01)
 - Authors: D Chichester, W Du, R Kauffman, H Lin, C Lynch, A M. Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, *B Rozek*.
 - Venue: International Symposium on Games, Automata, Logic, and Formal Verification, 2022.
