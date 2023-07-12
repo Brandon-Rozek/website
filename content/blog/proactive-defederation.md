@@ -11,7 +11,7 @@ Meta recently launched Threads in an effort to siphon dissatisfied Twitter users
 
 The rumor has been circulating for a few months now, even when Threads was referred to its codename *Project 92*. As such, many people have already voiced their opinion of this move. A group of moderators even banded together to make a [website declaring their opposition of Meta joining the Fediverse](https://fedipact.online/).
 
-The general argument is that Facebook is *bad* and [have been shown to be complicit with many issues](https://seirdy.one/posts/2023/06/20/defederating-p92/#incompatible-values-and-complicity). Thus, many people from the Mastodon community want to disassociate from Meta. The tool for disassociation on the Fediverse is called *de-federation*.
+The general argument is that Facebook is *bad* and [has a bad track record](https://seirdy.one/posts/2023/06/20/defederating-p92/#incompatible-values-and-complicity). Thus, many people from the Mastodon community want to disassociate from Meta. The tool for disassociation on the Fediverse is called *de-federation*.
 
 The idea behind the Fediverse is that servers can *federate* with each other. This means that servers can share data (whether its statuses or posts) with other servers as they talk a common language. Admins of each of these servers can select which platforms they want to *block*. Refusing to display content from blocked servers is called de-federation.
 
