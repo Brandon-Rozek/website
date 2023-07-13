@@ -41,9 +41,9 @@ In this world, enough large instances de-federate from Threads, that most curren
 
 The ideal in this case is that some sort of status quo is maintained and users of these differing communities do not need to interact with each other. 
 
-Though I'm not sure if that's the case. There might be some internal resistance from Mastodon users that want to use the Fediverse to keep in touch with their friends and family. Sadly the majority of non-techie friends and family will likely be using Threads or another platform from a major player. This added pressure can either cause the de-federated servers to federate again. Alternatively, it can cause these users to leave in favor of more free-speech servers.
+Though I'm not sure if that's the case. There might be some internal resistance from Mastodon users that want to use the Fediverse to keep in touch with their friends and family. Sadly the majority of non-techie friends and family will likely be using Threads or another platform from a major player. This added pressure can either cause the de-federated servers to federate again. Alternatively, it can cause some of these users to migrate over to free speech-instances or create another account on these or on Threads itself.
 
-Unfortunately for many free-speech instances, they often harbor offensive speech. The question then is does Threads federate with these servers and then have to take many active measures to make sure the most extreme content doesn't surface to its users.
+Unfortunately for many free-speech instances, they often harbor offensive speech. The question then is: does Threads federate with these servers and then have to take many active measures to make sure the most extreme content doesn't surface to its users?
 
 Or does it just block the free-speech instances entirely? If Threads de-federates from the free speech instances, then there wouldn't be enough other instances to federate with making this a failed ActivityPub  attempt.
 
