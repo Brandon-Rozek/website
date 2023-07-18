@@ -11,17 +11,17 @@ Cook Time: 30 minutes
 - Rice
 - 2 Tablespoons butter
 - 1/2 onion
-- 1 1/2 tablespoons garlic
-- 1 tablespoon ginger
-- 1 1/2 teaspoon ground cumin
-- 2 teaspoon garam masala
-- 1 teaspoon coriander
 - 14oz crushed tomatos
-- 1 teaspoon chili powder
-- 1 teaspoon salt
-- 2 tablespoon lemon juice
 - 1 cup of heavy whipping cream
 - 1/4 cup of chicken stock
+- 2 tablespoon lemon juice
+- 1 1/2 tablespoons garlic
+- 1 1/2 teaspoon ground cumin
+- 1 tablespoon ginger
+- 2 teaspoon garam masala
+- 1 teaspoon coriander
+- 1 teaspoon chili powder
+- 1 teaspoon salt
 - Cooked Chicken
 - Cooked Chickpeas
 
