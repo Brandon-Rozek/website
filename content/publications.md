@@ -15,7 +15,7 @@ Parallel Verification of Natural Deduction Proof Graphs
 
 [The M Cognitive Meta-architecture as Touchstone for Standard Modeling of AGI-Level Minds](/paper/2305.01)
 - Authors: S Bringsjord, JT Oswald, M Giancola, *B Rozek*, NS Govindarajulu
-- Venue: International Conference on Artificial General Intelligence, 2022.
+- Venue: International Conference on Artificial General Intelligence, 2023.
 - [Paper](http://kryten.mm.rpi.edu/M_launch.pdf)
 
 [CryptoSolve: A Tool for the Analysis of Cryptographic Modes of Operation](/paper/2209.01)
