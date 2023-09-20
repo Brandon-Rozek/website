@@ -1,7 +1,7 @@
 ---
 title: "A day in Brooklyn"
 date: 2023-09-19T21:56:19-04:00
-draft: true
+draft: false 
 tags: []
 math: false
 medium_enabled: false
