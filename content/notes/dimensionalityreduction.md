@@ -7,10 +7,10 @@ showthedate: false
 In the Summer of 2018, another student and I started a study on Dimensionality Reduction. Sadly we became too busy a few weeks into the study. I decided to upload what we got through anyways.
 
 
-[Syllabus](syllabus)
+[Syllabus](syllabus/)
 
-[Intro](intro)
+[Intro](intro/)
 
-[Feature Selection](featureselection)
+[Feature Selection](featureselection/)
 
-[Optimality Criteria](optimalitycriteria)
+[Optimality Criteria](optimalitycriteria/)

@@ -8,7 +8,7 @@ medium_enabled: true
 
 There are many times that I need to slightly mess with a color. The easiest way I found to do it is to use one of the many color functions in the program `Sass`. [Sass](https://sass-lang.com/) is a CSS preprocessor, meaning that it has it's own syntax and it compiles down to CSS. I remember using this before CSS variables became a thing and that was one of the main driving points of Sass.
 
-Since I don't work in Web Development anymore, I don't actually have Sass installed on my computer but instead go to [SassMeister.com](https://www.sassmeister.com/) to do my color manipulations. ThoughtBot already wrote a really nice [post](https://thoughtbot.com/blog/controlling-color-with-sass-color-functions) describing all the different color functions, but I'll quickly describe what I do to mess with colors.
+Since I don't work in Web Development anymore, I don't actually have Sass installed on my computer but instead go to [SassMeister.com](https://www.sassmeister.com/) to do my color manipulations. ThoughtBot already wrote a really nice [post](https://thoughtbot.com/blog/controlling-color-with-sass-color-functions/) describing all the different color functions, but I'll quickly describe what I do to mess with colors.
 
 ## Quick Color Manipulation
 

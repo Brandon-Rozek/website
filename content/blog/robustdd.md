@@ -6,7 +6,7 @@ tags: [ "Linux" ]
 medium_enabled: true
 ---
 
-**Note:** [Currently I favor using `bmaptool`](/blog/bmaptool-iso)
+**Note:** [Currently I favor using `bmaptool`](/blog/bmaptool-iso/)
 
 This blog post is going to assume that we're writing to `/dev/sdX`. Please change this to whatever disk you're actually trying to write to. I bear no responsibility if you accidentally write to your OS drives.
 

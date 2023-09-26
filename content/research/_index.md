@@ -3,7 +3,7 @@ Title: Research
 Description: A list of my research Projects
 ---
 
-**[Quick List of Publications](/publications)**
+**[Quick List of Publications](/publications/)**
 
 **Broad Research Interests:** Automated Reasoning, Artificial Intelligence, Formal Methods
 
@@ -45,7 +45,7 @@ Together we built [CryptoSolve](https://github.com/cryptosolvers/CryptoSolve), a
 I still help maintain the codebase, as well as contribute to our current work on Garbled Circuits. We previously presented our work
 at  [UNIF 2020](https://www3.risc.jku.at/publications/download/risc_6129/proceedings-UNIF2020.pdf#page=58) ([slides](/files/research/UNIF2020-Slides.pdf)), [FROCOS 2021](https://link.springer.com/chapter/10.1007/978-3-030-86205-3_14) ([slides](/files/slides/FROCOS2021.pdf)), and [WRLA 2022](http://sv.postech.ac.kr/wrla2022/assets/files/pre-proceedings-WRLA2022.pdf#page=12) ([slides](/files/slides/wrla2022-slides.pdf)).
 
-I've written a few [notes](termreasoning) about term reasoning.
+I've written a few [notes](termreasoning/) about term reasoning.
 
 Current Collaborators:
 - NRL: Catherine Meadows
@@ -77,23 +77,23 @@ my ideas.
 
 **Reinforcement Learning:** Studied the fundamentals of reinforcement learning with [Dr. Stephen Davies](http://stephendavies.org/). We went over the fundamentals such as value functions, policy functions, how we can describe our environment as a markov decision processes, etc.
 
-[Notes and Other Goodies](reinforcementlearning) / [Github Code](https://github.com/brandon-rozek/ReinforcementLearning)
+[Notes and Other Goodies](reinforcementlearning/) / [Github Code](https://github.com/brandon-rozek/ReinforcementLearning)
 
 
 
 
 ## Other
 
-[**Programming Languages:**](proglang) Back in the Fall of 2018, under the guidance of Ian Finlayson, I worked towards creating a programming language similar to SLOTH (Simple Language of Tiny Heft). [SLOTH Code](https://github.com/brandon-rozek/SLOTH)
+[**Programming Languages:**](proglang/) Back in the Fall of 2018, under the guidance of Ian Finlayson, I worked towards creating a programming language similar to SLOTH (Simple Language of Tiny Heft). [SLOTH Code](https://github.com/brandon-rozek/SLOTH)
 
 Before this study, I worked through a great book called ["Build your own Lisp"](https://www.buildyourownlisp.com/).
 
 
-[**Competitive Programming:**](progcomp) Studying algorithms and data structures necessary for competitive programming. Attended ACM ICPC in November 2018/2019 with a team of two other students.
+[**Competitive Programming:**](progcomp/) Studying algorithms and data structures necessary for competitive programming. Attended ACM ICPC in November 2018/2019 with a team of two other students.
 
-**Cluster Analysis:** The study of grouping similar observations without any prior knowledge. I studied this topic by deep diving Wikipedia articles under the guidance of Dr. Melody Denhere during Spring 2018. **[Extensive notes](clusteranalysis)**
+**Cluster Analysis:** The study of grouping similar observations without any prior knowledge. I studied this topic by deep diving Wikipedia articles under the guidance of Dr. Melody Denhere during Spring 2018. **[Extensive notes](clusteranalysis/)**
 
-[**Excitation of Rb87**](rb87): Worked in a Quantum Research lab alongside fellow student Hannah Killian under the guidance of Dr. Hai Nguyen. I provided software tools and assisted in understanding the mathematics behind the phenomena.
+[**Excitation of Rb87**](rb87/): Worked in a Quantum Research lab alongside fellow student Hannah Killian under the guidance of Dr. Hai Nguyen. I provided software tools and assisted in understanding the mathematics behind the phenomena.
 
 [Modeling Population Dynamics of Incoherent and Coherent Excitation](/files/research/modellingpopulationdynamics.pdf)
 

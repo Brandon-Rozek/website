@@ -8,4 +8,4 @@ description: "
     "
 ---
 
-View my [publications](/publications)
+View my [publications](/publications/)

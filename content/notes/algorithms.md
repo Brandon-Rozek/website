@@ -7,10 +7,10 @@ A couple of my friends and I decided to start a book club following "Algorithms"
 Of course you should totally check his book out rather than reading my notes. There are tons of witty and fun things in his textbook, not a dry reading I promise. These notes are here mostly for archival purposes.
 
 ## Notes
-[Chapter 1](recursion)
+[Chapter 1](recursion/)
 
-[Chapter 2](backtracking)
+[Chapter 2](backtracking/)
 
-[Chapter 3](dynamic)
+[Chapter 3](dynamic/)
 
-[Chapter 4](greedy)
+[Chapter 4](greedy/)

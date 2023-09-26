@@ -7,7 +7,7 @@ tags: []
 title: Netboot.xyz Bootloader
 ---
 
-Instead of manually loading ISOs onto a USB stick for [Ventoy](/blog/ventoy) to display, we can use Netboot.xyz to present us a list of options and download them during boot. This requires an internet connection in order to work.
+Instead of manually loading ISOs onto a USB stick for [Ventoy](/blog/ventoy/) to display, we can use Netboot.xyz to present us a list of options and download them during boot. This requires an internet connection in order to work.
 
 Netboot.xyz is commonly used for PXE booting, but in this post I'll describe using it as an ISO.
 

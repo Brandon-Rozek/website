@@ -13,7 +13,7 @@ The [IndieWeb movement](https://indieweb.org) is focused on people controlling t
 
 The recommended syndicate or copy content is through a technique called [Publish Own Site Syndicate Elsewhere (POSSE)](https://indieweb.org/POSSE). First the author posts on their own website, and then a function takes that post and publishes it on another website. 
 
-However, this is not what I am currently doing to [show my Mastodon toots](/toots). Instead I have implemented [Publish Elsewhere Syndicate Own Site (PESOS)](https://indieweb.org/PESOS). In this model, I first publish directly on Mastodon and then have a function query the Mastodon server to update my personal website. 
+However, this is not what I am currently doing to [show my Mastodon toots](/toots/). Instead I have implemented [Publish Elsewhere Syndicate Own Site (PESOS)](https://indieweb.org/PESOS). In this model, I first publish directly on Mastodon and then have a function query the Mastodon server to update my personal website. 
 
 ## Advantages to PESOS
 

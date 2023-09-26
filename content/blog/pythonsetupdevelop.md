@@ -5,7 +5,7 @@ draft: false
 tags: [ "Python" ]
 medium_enabled: true
 ---
-**Deprecated in favor of [pip install editable](/blog/pipeditable)**
+**Deprecated in favor of [pip install editable](/blog/pipeditable/)**
 
 I've found it to be incredibly helpful to emulate having a library installed on my system rather than depending on my local directory path to pick up my file edits. To do this in a python project where you've defined a `setup.py`, you can specify the command `develop`.
 

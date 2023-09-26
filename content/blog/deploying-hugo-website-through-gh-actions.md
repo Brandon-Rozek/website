@@ -13,7 +13,7 @@ For the longest time I've held out on deploying my website through GitHub action
 
 >  If I have to execute `git push`, I might as well run a `./sync` script afterwards.
 
-What convinced me otherwise is automated commits. I currently have GitHub actions that sync my [Mastodon toots](/toots) and [iNaturalist observations](/observations). As part of the sync process, a git commit is made. This commit should then trigger a site rebuild.
+What convinced me otherwise is automated commits. I currently have GitHub actions that sync my [Mastodon toots](/toots/) and [iNaturalist observations](/observations/). As part of the sync process, a git commit is made. This commit should then trigger a site rebuild.
 
 How do we create a GitHub action that builds a Hugo website and deploys it via `rsync`? The rest of this post will go over the components of the GitHub action that triggers when I update my website.
 

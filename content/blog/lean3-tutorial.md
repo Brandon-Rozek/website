@@ -552,4 +552,4 @@ Notice that a couple times in the proof, make use of a tactic called `linarith`.
 
 That concludes the examples I gave for my talk. For each proof, you can see that I included at least two different ways of going about proving it. I generally prefer the inference style method where we explicitely call on `Or.elim` and the like. Though when it comes to double induction, I have not figured out how to apply `rec_on` multiple times in a clean way. 
 
-In the process of making this tutorial, I released other lean posts. One that I recommend checking out is ["Readable Lean 3 Proofs"](/blog/readable-lean3-proofs). In it, I give my opinions on how to make the written out proofs more human friendly.
+In the process of making this tutorial, I released other lean posts. One that I recommend checking out is ["Readable Lean 3 Proofs"](/blog/readable-lean3-proofs/). In it, I give my opinions on how to make the written out proofs more human friendly.

@@ -6,7 +6,7 @@ tags: ["Git"]
 medium_enabled: true
 ---
 
-The Linux kernel community make use of patches in git to share code changes with one another. Patches are only nicely formatted differences between your current codebase and what you compare it to. If you want to share a subsetted git tree, then [git bundle](/blog/gitbundle) would be the way to go. 
+The Linux kernel community make use of patches in git to share code changes with one another. Patches are only nicely formatted differences between your current codebase and what you compare it to. If you want to share a subsetted git tree, then [git bundle](/blog/gitbundle/) would be the way to go. 
 
 ## Creating the patch
 

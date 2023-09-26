@@ -6,7 +6,7 @@ tags: ["Amateur Radio"]
 medium_enabled: true
 ---
 
-In this post, I will describe a low cost way to get started with digital modes using FM. We will extend off my [previous post](/blog/digitalmodes). Even though some of these instructions are hardware specific, I hope that the general principles will apply to whatever hardware you're working with.
+In this post, I will describe a low cost way to get started with digital modes using FM. We will extend off my [previous post](/blog/digitalmodes/). Even though some of these instructions are hardware specific, I hope that the general principles will apply to whatever hardware you're working with.
 
 In order to transmit, you will need an amateur radio license. We are going to be transmitting within 145.50-145.80 Mhz which according to the [ARRL Band Plan](http://www.arrl.org/band-plan) is marked as the miscellaneous and experimental section. In terms of our encoding scheme, let's play around with [8PSK](https://www.sigidwiki.com/wiki/8PSK). 
 

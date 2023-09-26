@@ -8,29 +8,29 @@ The following menu contains meals that are in rotation at my home. These are mad
 {{< vegetarian >}} = Vegetarian Option Available
 
 {{< details "Basics" >}}
-- {{< vegetarian >}}[Hard Boiled Eggs](hard-boiled-eggs)
-- [Shredded Chicken](shredded-chicken)
-- [Gravy](gravy)
+- {{< vegetarian >}}[Hard Boiled Eggs](hard-boiled-eggs/)
+- [Shredded Chicken](shredded-chicken/)
+- [Gravy](gravy/)
 
 {{< /details >}}
 
 ## Appetizers
 
-- {{< vegetarian >}}[Deviled Eggs](deviled-eggs)
-- {{< vegetarian >}}[Bread](bread)
-    * [Challah](challah)
+- {{< vegetarian >}}[Deviled Eggs](deviled-eggs/)
+- {{< vegetarian >}}[Bread](bread/)
+    * [Challah](challah/)
     * Rosemary
     * (Pick your spices)
 - Pizza Rolls (WIP)
 - Skillet Queso
 
 ## Salads
-- [Southwest Chicken Salad](southwest-chicken-salad)
-- [Chicken-Chickpea Salad](chicken-chickpea-salad)
+- [Southwest Chicken Salad](southwest-chicken-salad/)
+- [Chicken-Chickpea Salad](chicken-chickpea-salad/)
 
 ## Soups
 
-- [Pork Pozole](pork-pozole)
+- [Pork Pozole](pork-pozole/)
 - Chicken & Gnocchi
 - {{< vegetarian >}}Broccoli Cheddar
 - {{< vegetarian >}}Loaded Baked Potato
@@ -49,58 +49,58 @@ The following menu contains meals that are in rotation at my home. These are mad
 
 ### Lunch
 
-- [Turkey Club](turkey-club-sandwich)
+- [Turkey Club](turkey-club-sandwich/)
 - {{< vegetarian >}}[Black Bean Quesadilla](black-bean-quesadilla)
 - Tuna Sandwich
 
 ### Dinner
 
 {{< vegetarian >}} Vegetarian
-- [Fried Rice](fried-rice)
+- [Fried Rice](fried-rice/)
 - Pre-made Indian Curries
     * Tikka Marsala
 - Pre-made Japanese Vermont curry
-- [Fettuccine Alfredo](fettuccine-alfredo)
+- [Fettuccine Alfredo](fettuccine-alfredo/)
 - Pad Thai
-- [White Pepper Spaetzle](white-pepper-spaetzle)
-- [Korma](korma)
+- [White Pepper Spaetzle](white-pepper-spaetzle/)
+- [Korma](korma/)
 
 
 Pork
-- [Pork/Chicken Katsu](pork-chicken-katsu)
+- [Pork/Chicken Katsu](pork-chicken-katsu/)
 - Pulled Pork Sandwiches
 
 
 Beef
-- [Beef Stew](beef-stew)
-- [Meatball Sub](meatball-sub)
+- [Beef Stew](beef-stew/)
+- [Meatball Sub](meatball-sub/)
 - Beef Goulash w/spaetzle
 - Chili
 
 
 Poultry
-- [Homemade Butter Chicken](butter-chicken) (Can replace chicken)
+- [Homemade Butter Chicken](butter-chicken/) (Can replace chicken)
 - Grilled Chicken Sandwich
-- [Chicken Asparagus Risotto](chicken-asparagus-risotto)
+- [Chicken Asparagus Risotto](chicken-asparagus-risotto/)
 - Turkey Tacos
 
 ## {{< vegetarian >}} Sides
 
-- [Sweet Potato Casserole](sweet-potato-casserole)
+- [Sweet Potato Casserole](sweet-potato-casserole/)
 - Green Bean Casserole
 - Scalloped Potatoes
 
 ## {{< vegetarian >}} Dessert
 
-- [Crepes](crepes)
-- [Tiramisu](tiramisu)
+- [Crepes](crepes/)
+- [Tiramisu](tiramisu/)
 - Cookies
   * Molasses
   * Ginger Bread
   * Peanut Butter Blossoms
   * Chocolate Chip
 - Apple Pie
-- [Banana Bread](banana-bread)
+- [Banana Bread](banana-bread/)
 - Popcorn
 - Strawberry Shortcake
-- [Fruit Smoothie](fruit-smoothie)
+- [Fruit Smoothie](fruit-smoothie/)

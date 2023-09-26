@@ -8,7 +8,7 @@ medium_enabled: true
 
 Git and their various hosting platforms support commit signing as an additional step of verification. There seems to be an active debate on whether it should be used regularly, though I'll describe it on here in case you want to set it up.
 
-You'll need to have a [GPG key already created](/blog/gpgkeygen). 
+You'll need to have a [GPG key already created](/blog/gpgkeygen/). 
 
 First locate the key you want to sign with
 
