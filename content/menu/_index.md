@@ -76,6 +76,12 @@ Beef
 - [Meatball Sub](meatball-sub/)
 - Beef Goulash w/spaetzle
 - Chili
+- [Beef Stroganoff](beef-stroganoff/)
+- [Beef Nachos](beef-nachos/)
+
+
+Lamb
+- [Lamb Gyro Bowl](lamb-gyro-bowl/)
 
 
 Poultry
