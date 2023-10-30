@@ -52,6 +52,7 @@ The following menu contains meals that are in rotation at my home. These are mad
 - [Turkey Club](turkey-club-sandwich/)
 - {{< vegetarian >}}[Black Bean Quesadilla](black-bean-quesadilla)
 - Tuna Sandwich
+- [Beef Bean Burrito](beef-bean-burrito/)
 
 ### Dinner
 
