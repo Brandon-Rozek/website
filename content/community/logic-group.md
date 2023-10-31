@@ -15,6 +15,12 @@ given: [https://rairlab.github.io/logic-group/](https://rairlab.github.io/logic-
 
 I presented the following:
 
+10/25/2023: An original talk titled "Introduction to Goal Recognition as Planning"
+
+10/18/2023: Workshop along with James Oswald titled "RAIR Lab Software Overview"
+
+10/4/2023: An original talk on "Syntactic AC Unification"
+
 03/22/2023: Original Tutorial on ["Automated Theorem Proving with TPTP"](https://github.com/Brandon-Rozek/TPTP-Examples)
 
 02/08/2023: Original Tutorial on ["Interactive Theorem Proving with Lean Part 2"](/blog/lean3-tutorial/)
