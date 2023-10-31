@@ -8,10 +8,15 @@ aliases:
 
 ## Publications
 
+Partially Observable Hierarchical Reinforcement Learning with AI Planning (Student Abstract)
+- Authors: *Brandon Rozek*, Junkyu Lee, Harsha Kokel, Michael Katz and Shirin Sohrabi
+- Venue: AAAI Conference on Artificial Intelligence, 2024.
+- Paper to appear in early 2024 | Poster to appear in early 2024
+
 Parallel Verification of Natural Deduction Proof Graphs
 - Authors: James Oswald and *Brandon Rozek*
 - Venue: Logical Frameworks and Meta-Languages: Theory and Practice, 2023.
-- Paper to appear in EPTCS late 2023 | Slides to appear in August 2023
+- Paper to appear in EPTCS late 2023 | Slides to appear in late 2023
 
 [The M Cognitive Meta-architecture as Touchstone for Standard Modeling of AGI-Level Minds](/paper/2305.01/)
 - Authors: S Bringsjord, JT Oswald, M Giancola, *B Rozek*, NS Govindarajulu
