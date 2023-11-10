@@ -2,7 +2,7 @@
 title: "Figuring out which git repositories are ahead or behind"
 date: 2023-11-09T21:05:34-05:00
 draft: false
-tags: []
+tags: ["Git"]
 math: false
 medium_enabled: false
 ---

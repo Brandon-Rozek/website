@@ -2,7 +2,7 @@
 title: "Obtaining a IPv6 Address via Hurricane Electric's Tunnel Broker Service"
 date: 2023-10-09T22:31:10-04:00
 draft: false 
-tags: []
+tags: ["Networking"]
 math: false
 medium_enabled: false
 ---
