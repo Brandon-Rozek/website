@@ -50,3 +50,4 @@ WantedBy=timers.target
 
 Alternatively, you can use a self-hosted git server instance such as [Forgejo](https://forgejo.org/) to set up pull mirrors through the migration tool. As of the time of writing, this is what I currently do with repositories at https://git.brandonrozek.com/github
 
+I do recommend only mirroring/pulling infrequently such as weekly. We don't want to induce unnecessary load on these centralized services.
