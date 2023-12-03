@@ -152,6 +152,13 @@ Enable it on bootup
 systemctl --user enable lxc@test
 ```
 
+Since this is a user service, we need to make sure linger is on for it to respect
+the enable on boot setting.
+
+```bash
+sudo loginctl enable-linger rozek
+```
+
 ## Other Resources
 
 https://linuxcontainers.org/lxc/getting-started/
