@@ -1,5 +1,7 @@
 ---
 title: "Butter Chicken"
+date: 2023-05-15
+hideDate: true
 draft: false
 ---
 

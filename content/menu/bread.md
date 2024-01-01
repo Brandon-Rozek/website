@@ -1,9 +1,11 @@
 ---
 title: "Bread"
+date: 2023-06-25
+hideDate: true
 draft: false
 ---
 
-I make a lot of my bread in a 2 pound breadmaker. For some basics, I let it do the entire process of mixing, rising and baking, but more complicated breads I use it for mixing and doing the initial rise.
+Clare makes a lot of my bread in a 2 pound breadmaker. For some basics, she lets it do the entire process of mixing, rising and baking, but more complicated breads she uses it for mixing and doing the initial rise.
 
 Below are the steps for a standard 1.5 lb. loaf of white bread using the machine.
 

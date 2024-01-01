@@ -1,5 +1,7 @@
 ---
 title: "Grilled Chicken Sandwich"
+date: 2023-05-07
+hideDate: true
 draft: true
 ---
 

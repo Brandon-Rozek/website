@@ -1,5 +1,7 @@
 ---
 title: "Korma"
+date: 2023-05-16
+hideDate: true
 draft: false
 ---
 

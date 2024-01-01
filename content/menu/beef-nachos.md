@@ -1,5 +1,7 @@
 ---
 title: "Beef Nachos (WIP)"
+date: 2023-10-29
+hideDate: true
 draft: false
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: "Chicken Chickpea Salad"
+date: 2023-03-26
+hideDate: true
 draft: false
 ---
 

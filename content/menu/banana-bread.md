@@ -1,5 +1,7 @@
 ---
 title: "Banana Bread"
+date: 2023-03-09
+hideDate: true
 draft: false
 ---
 

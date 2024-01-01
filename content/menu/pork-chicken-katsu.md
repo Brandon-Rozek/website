@@ -1,5 +1,7 @@
 ---
 title: "Pork/Chicken Katsu"
+date: 2023-05-07
+hideDate: true
 draft: false
 ---
 

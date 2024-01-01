@@ -1,5 +1,7 @@
 ---
 title: "Beef Bean Burrito (WIP)"
+date: 2023-10-30
+hideDate: true
 draft: false
 ---
 

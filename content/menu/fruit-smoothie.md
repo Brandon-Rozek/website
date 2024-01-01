@@ -1,5 +1,7 @@
 ---
 title: "Fruit Smoothie"
+date: 2023-04-14
+hideDate: true
 draft: false
 ---
 

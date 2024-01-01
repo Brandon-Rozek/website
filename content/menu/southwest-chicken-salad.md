@@ -1,5 +1,7 @@
 ---
 title: "Southwest Chicken Salad"
+date: 2023-06-25
+hideDate: true
 draft: false
 ---
 This is similar to a salad that Panera had at one point, but for some reason they love getting rid of their salads. Recipe from [Downshiftology](https://downshiftology.com/recipes/southwest-chicken-salad/)

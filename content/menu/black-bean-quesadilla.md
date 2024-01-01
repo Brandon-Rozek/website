@@ -1,5 +1,7 @@
 ---
 title: "Black Bean Quesadilla"
+date: 2023-03-10
+hideDate: true
 draft: false
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: "Lamb Gyro Bowl"
+date: 2023-10-29
+hideDate: true
 draft: false
 ---
 

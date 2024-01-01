@@ -1,5 +1,7 @@
 ---
 title: "Sweet Potato Casserole"
+date: 2023-06-25
+hideDate: true
 draft: false
 ---
 
