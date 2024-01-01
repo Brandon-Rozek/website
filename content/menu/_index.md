@@ -90,6 +90,7 @@ Poultry
 - Grilled Chicken Sandwich
 - [Chicken Asparagus Risotto](chicken-asparagus-risotto/)
 - Turkey Tacos
+- Chicken Tinga
 
 ## {{< vegetarian >}} Sides
 
@@ -111,3 +112,4 @@ Poultry
 - Popcorn
 - Strawberry Shortcake
 - [Fruit Smoothie](fruit-smoothie/)
+- Tres Leche Cacke
