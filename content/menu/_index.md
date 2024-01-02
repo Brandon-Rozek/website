@@ -46,6 +46,7 @@ The following menu contains meals that are in rotation at my home. These are mad
 - {{< vegetarian >}}Scrambled Eggs
 - {{< vegetarian >}}Muffins
 - {{< vegetarian >}}Omelette
+- [Sausage Tomato Rice](sausage-tomato-rice/)
 
 ### Lunch
 
