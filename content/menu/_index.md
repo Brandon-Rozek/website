@@ -97,6 +97,7 @@ Poultry
 - [Sweet Potato Casserole](sweet-potato-casserole/)
 - Green Bean Casserole
 - Scalloped Potatoes
+- [Mashed Potatoes](mashed-potatoes/)
 
 ## {{< vegetarian >}} Dessert
 
