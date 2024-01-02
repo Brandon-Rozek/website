@@ -1,9 +1,11 @@
 ---
-title: "Beef Bean Burrito (WIP)"
+title: "Beef Bean Burrito"
 date: 2023-10-30
 hideDate: true
 draft: false
 ---
+
+WORK IN PROGRESS
 
 Prep Time: 5 Minutes
 
