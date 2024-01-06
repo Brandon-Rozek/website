@@ -18,26 +18,33 @@ npm install -g typescript
 Typecheck a file:
 
 ```bash
-tsc --checkJs --allowJs example.js --outfile /dev/null
+tsc --checkJs --allowJs example.js --noEmit
 ```
 
 | Flag        | Description                                             |
 | ----------- | ------------------------------------------------------- |
 | `--checkJs` | Allow JavaScript files to be a part of your program.    |
 | `--allowJs` | Enable error reporting in type-checked JavaScript files |
+| `--noEmit`  | Disable emitting files from a compilation.              |
 
-Since `tsc` is primarily a compiler, it will produce code output. We're only concerned with seeing if there's any type errors, so we throw away the compiled code by writing to `/dev/null`.
+Since `tsc` is primarily a compile, it by default produces code output.
+We're only concerned with seeing any type errors, so we throw away
+the compiled code with the flag `--noEmit`.[^1]
+
+[^1]: In an earlier version of this post, I had `--outfile /dev/null` instead of `--noEmit`.
+[Veyndan](https://veyndan.com/) kindly reached out and showed how the `--noEmit` flag is
+more flexible in allowing for exported classes. 
 
 Now it's likely that we're using features of the standard library or the DOM in our Javascript code. We need to include a couple flags for Typescript to understand them.
 
 | Flag       | Description                                                  |
 | ---------- | ------------------------------------------------------------ |
 | `--target` | Set the JavaScript language version for emitted JavaScript and include compatible library declarations. |
-| `--lib`    | Specify a set of bundled library declaration files that describe the target runtime environment |
+| `--lib`    | Specify a set of bundled library declaration files that describe the target runtime environment. |
 
 You can see `tsc --help`for the long list of options. Here's an example for targetting `ES2022` with the DOM library.
 
 ```bash
-tsc --checkJs --allowJs --target es2022 --lib es2022,dom example.js --outfile /dev/null
+tsc --checkJs --allowJs --target es2022 --lib es2022,dom example.js --noEmit
 ```
 
