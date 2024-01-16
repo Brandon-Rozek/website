@@ -2,7 +2,8 @@
 title: "Functional Completeness"
 date: 2023-05-30T07:30:08-04:00
 draft: false
-tags: []
+tags:
+    - Logic
 math: true
 medium_enabled: false
 ---

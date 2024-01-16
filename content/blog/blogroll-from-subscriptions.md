@@ -4,7 +4,7 @@ draft: false
 math: false
 medium_enabled: true
 medium_post_id: 913b5fa85507
-tags: []
+tags: ["Blogging"]
 title: Blogroll From Subscriptions
 ---
 

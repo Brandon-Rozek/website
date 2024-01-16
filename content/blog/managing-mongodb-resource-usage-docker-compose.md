@@ -2,7 +2,8 @@
 title: "Limiting MongoDB Resource Usage within Docker Compose"
 date: 2023-09-19T16:08:41-04:00
 draft: false
-tags: []
+tags:
+  - Containers
 math: false
 medium_enabled: false
 ---

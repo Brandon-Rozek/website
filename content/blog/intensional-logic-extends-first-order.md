@@ -4,7 +4,8 @@ draft: false
 math: true
 medium_enabled: true
 medium_post_id: 8e07b68aa8f5
-tags: []
+tags:
+    - Logic
 title: Intensional Logic Extends First Order
 ---
 

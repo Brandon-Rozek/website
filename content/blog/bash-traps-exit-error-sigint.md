@@ -2,7 +2,8 @@
 title: "Bash Traps: Exit, Error, Sigint"
 date: 2024-01-02T11:26:06-05:00
 draft: false
-tags: []
+tags:
+  - Bash
 math: false
 medium_enabled: false
 ---

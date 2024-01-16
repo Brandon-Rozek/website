@@ -2,7 +2,8 @@
 title: "Type Checking Javascript Files Using Typescript"
 date: 2023-09-19T15:30:02-04:00
 draft: false
-tags: []
+tags:
+    - JS
 math: false
 medium_enabled: false
 ---

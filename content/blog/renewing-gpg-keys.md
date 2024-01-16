@@ -2,7 +2,8 @@
 title: "Renewing my GPG Keys"
 date: 2023-12-28T11:46:33-05:00
 draft: false
-tags: []
+tags:
+      - GPG/PGP
 math: false
 medium_enabled: false
 ---

@@ -2,7 +2,8 @@
 title: "Switching to Raid 10"
 date: 2023-12-29T15:44:44-05:00
 draft: false
-tags: []
+tags:
+    - Storage
 math: false
 medium_enabled: false
 ---

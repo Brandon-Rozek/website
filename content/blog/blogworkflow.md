@@ -2,7 +2,7 @@
 title: "Blog Workflow"
 date: 2019-10-28T00:16:44-04:00
 draft: false
-tags: ["Hugo"]
+tags: ["Hugo", "Blogging"]
 medium_enabled: true
 ---
 

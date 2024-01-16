@@ -1,6 +1,8 @@
 ---
 title: "How to use Nginx under Traefik"
 date: 2019-12-16T19:55:47-05:00
+tags:
+  - Nginx
 draft: false
 medium_enabled: true
 ---

@@ -4,7 +4,8 @@ draft: false
 math: false
 medium_enabled: true
 medium_post_id: ebd510dbf691
-tags: []
+tags:
+    - Nginx
 title: Reducing Network Bandwidth in Nginx with Gzip
 ---
 

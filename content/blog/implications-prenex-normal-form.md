@@ -2,7 +2,8 @@
 title: "Prenex Normal Form - Implication Exercise"
 date: 2023-02-17T11:05:35-05:00
 draft: false
-tags: []
+tags:
+    - Logic
 math: true
 medium_enabled: false
 ---

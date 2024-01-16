@@ -2,7 +2,8 @@
 title: "Rebalancing Portfolios: The buy low sell high of investing"
 date: 2023-06-17T12:22:37-04:00
 draft: false
-tags: []
+tags:
+    - Finance
 math: false
 medium_enabled: false
 ---

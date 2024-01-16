@@ -2,7 +2,8 @@
 title: "Representing Uncertainty under the Closed World Assumption"
 date: 2023-09-18T19:01:56-04:00
 draft: false
-tags: []
+tags:
+    - Logic
 math: true
 medium_enabled: false
 ---

@@ -7,6 +7,7 @@ medium_post_id: ac419c65c080
 tags:
 - Networking
 - Containers
+- Nginx
 title: Getting Podman and Nginx TCPv6 and HTTP/2 Ready
 ---
 

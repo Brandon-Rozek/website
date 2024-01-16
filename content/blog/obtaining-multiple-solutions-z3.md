@@ -4,7 +4,8 @@ draft: false
 math: true
 medium_enabled: true
 medium_post_id: d4f11c04d852
-tags: []
+tags:
+    - Formal Methods
 title: Obtaining Multiple Solutions Z3
 ---
 

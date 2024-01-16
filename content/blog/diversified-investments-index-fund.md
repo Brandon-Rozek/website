@@ -2,7 +2,8 @@
 title: "Diversified Investing using Index Funds"
 date: 2023-06-16T18:50:50-04:00
 draft: false
-tags: []
+tags:
+    - Finance
 math: false
 medium_enabled: false
 ---

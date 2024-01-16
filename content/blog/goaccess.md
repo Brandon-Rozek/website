@@ -4,7 +4,8 @@ draft: false
 math: false
 medium_enabled: true
 medium_post_id: be642b59857
-tags: []
+tags:
+  - Nginx
 title: Visualizing Nginx logs with GoAccess
 ---
 

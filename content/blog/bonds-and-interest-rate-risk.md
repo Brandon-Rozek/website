@@ -2,7 +2,8 @@
 title: "Bonds and Interest Rate Risk"
 date: 2023-05-08T10:51:52-04:00
 draft: false
-tags: []
+tags:
+    - Finance
 math: false
 medium_enabled: false
 ---

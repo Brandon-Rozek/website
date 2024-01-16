@@ -4,7 +4,8 @@ draft: false
 math: false
 medium_enabled: true
 medium_post_id: 5eb712e808ae
-tags: []
+tags:
+      - Blogging
 title: Pretty RSS Feeds
 ---
 
