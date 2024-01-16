@@ -2,6 +2,8 @@
 title: "Theorem Proving Definitions"
 date: 2019-12-29T11:21:07-05:00
 draft: false
+tags:
+    - Formal Methods 
 images: []
 math: true
 medium_enabled: true
