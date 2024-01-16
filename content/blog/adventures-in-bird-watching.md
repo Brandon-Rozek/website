@@ -2,7 +2,8 @@
 title: "Adventures in Bird Watching"
 date: 2023-07-08T11:24:07-04:00
 draft: false
-tags: []
+tags:
+    - Life
 math: false
 medium_enabled: false
 ---
