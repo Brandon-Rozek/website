@@ -35,6 +35,7 @@ The following menu contains meals that are in rotation at my home. These are mad
 - {{< vegetarian >}}Broccoli Cheddar
 - {{< vegetarian >}}Loaded Baked Potato
 - {{< vegetarian >}}Egg Drop Soup
+- {{< vegetarian >}}[Black Bean Soup](black-bean-soup/)
 
 ## Entrees
 
