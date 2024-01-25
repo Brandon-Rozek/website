@@ -19,7 +19,7 @@ Cook Time: 40 minutes
 - 1 tablespoon brown sugar
 - 2 tablespoons of chilli powder
 - 1 tablespoon ginger
-- 1 tablespoon curry powder (don't have any)
+- 1 tablespoon curry powder 
 - 2 teaspoon ground turmeric
 - 1 teaspoon garlic powder
 - 1 teaspoon garam masala
