@@ -81,6 +81,7 @@ Beef
 - Chili
 - [Beef Stroganoff](beef-stroganoff/)
 - [Beef Nachos](beef-nachos/)
+- [Homemade Beef Bean Burger](beef-bean-burger/)
 
 
 Lamb
@@ -116,3 +117,4 @@ Poultry
 - Strawberry Shortcake
 - [Fruit Smoothie](fruit-smoothie/)
 - Tres Leche Cacke
+- Nutella Hot Chocolate
