@@ -36,7 +36,7 @@ Cook Time: 40 minutes
 ## Recipe
 
 1. Start rice in rice cooker. Same volumetric ratio of rice to water.
-2. Butter the pan and start sauteeing the onions
+2. Butter the pan and start sauteeing the onions and carrots
 3. Meanwhile, start making the sauce. First by grinding all the almonds into a powder.
 4. Then take the almond powder, along with all the liquids and spices and blend them together.
 5. Once the onions are down sauteeing, add the sauce blend to the skillet to cook for 30 minutes.
