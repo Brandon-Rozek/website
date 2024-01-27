@@ -85,13 +85,6 @@ enableGitInfo = true
     weight = 20
 
 [[menu.main]]
-    identifier = "ta"
-    name = "TA"
-    pre = "<i class='fa fa-chalkboard-teacher fa-lg'></i>"
-    url = "/ta/"
-    weight = 30
-
-[[menu.main]]
     identifier = "community"
     name = "Community"
     pre = "<i class='fa fa-user-friends fa-lg'></i>"
