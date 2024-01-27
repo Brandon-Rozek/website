@@ -18,8 +18,12 @@ are easy to encode. Additionally, I wrote a QA algorithm for ShadowProver to int
 for planning under epistemic uncertatinty.
 - With [Junkyu Lee](https://researcher.ibm.com/researcher/view.php?person=ibm-Junkyu.Lee),
 [Michael Katz](https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Michael.Katz1),
-[Harsha Kokel](https://research.ibm.com/people/harsha-kokel), and [Shirin Sohrabi](https://researcher.watson.ibm.com/researcher/view.php?person=us-ssohrab) at IBM I looked at guiding hiearchical reinforcement
-learning agents under partial observability using discovery effects within a fully-observable non-determinsitic planner.
+[Harsha Kokel](https://research.ibm.com/people/harsha-kokel), and [Shirin Sohrabi](https://researcher.watson.ibm.com/researcher/view.php?person=us-ssohrab) at IBM I developed an algorithm
+for guiding hiearchical reinforcement agents under partial observability when domain knowledge
+can be encoded for characterizing discovery of unknown predicates. This techinque
+uses a fully-observable non-deterministic planner to generate a high-level policy
+where each high-level action is an option that a reinforcement learning agent 
+needs to learn.
 - More to come...
 
 
@@ -32,8 +36,8 @@ unification algorithms, to building
 tools for interactive theorem provers.
 
 - With Andrew Marshall and Kimberly Cornell, we're currently developing a new syntactic AC algorithm.
-- With Thomas Ferguson and James Oswald we looked at formalizing a model theory for a fragment of the Deontic Cognitive Event Calculus.
-- With James Oswald we've worked on building interactive theorem provers and showing validity of proofs in parallel.
+- With Thomas Ferguson and James Oswald we formaliezd a model theory for a fragment of the Deontic Cognitive Event Calculus.
+- With James Oswald we've built interactive theorem provers and showed validity of large proofs in parallel using a high performance cluster.
 
 
 Related Notes:
@@ -52,7 +56,7 @@ as unification and term rewriting to the following areas:
 - Commitment Schemes
 
 Together we built [CryptoSolve](https://github.com/cryptosolvers/CryptoSolve), a symbolic cryptographic analysis tool, and made it publically available on GitHub. I wrote the term algebra and rewrite libraries, and contributed to the mode of operation library and some unification algorithms.
-I still help maintain the codebase, as well as contribute to our current work on Garbled Circuits. We previously presented our work
+I still help maintain the codebase. We previously presented our work
 at  [UNIF 2020](https://www3.risc.jku.at/publications/download/risc_6129/proceedings-UNIF2020.pdf#page=58) ([slides](/files/research/UNIF2020-Slides.pdf)), [FROCOS 2021](https://link.springer.com/chapter/10.1007/978-3-030-86205-3_14) ([slides](/files/slides/FROCOS2021.pdf)), [WRLA 2022](http://sv.postech.ac.kr/wrla2022/assets/files/pre-proceedings-WRLA2022.pdf#page=12) ([slides](/files/slides/wrla2022-slides.pdf)),
 and [GandALF 2022](/paper/2209.01/).
 
@@ -103,15 +107,13 @@ In my experimentation, I built out a Reinforcement Learning library in PyTorch.
 
 [**Beowulf Cluster:**](lunac) In order to circumvent the frustrations I had with simulation code taking a while, I applied and received funding to build out a Beowulf cluster for the Physics department. Dr. Maia Magrakvilidze was the advisor for this project. [LUNA-C Poster](/files/research/LUNACposter.pdf)
 
+**Cluster Analysis:** The study of grouping similar observations without any prior knowledge. I studied this topic by deep diving Wikipedia articles under the guidance of Dr. Melody Denhere during Spring 2018. **[Extensive notes](clusteranalysis/)**
 
 [**Programming Languages:**](proglang/) Back in the Fall of 2018, under the guidance of Ian Finlayson, I worked towards creating a programming language similar to SLOTH (Simple Language of Tiny Heft). [SLOTH Code](https://github.com/brandon-rozek/SLOTH)
 
 Before this study, I worked through a great book called ["Build your own Lisp"](https://www.buildyourownlisp.com/).
 
-
 [**Competitive Programming:**](progcomp/) Studying algorithms and data structures necessary for competitive programming. Attended ACM ICPC in November 2018/2019 with a team of two other students.
-
-**Cluster Analysis:** The study of grouping similar observations without any prior knowledge. I studied this topic by deep diving Wikipedia articles under the guidance of Dr. Melody Denhere during Spring 2018. **[Extensive notes](clusteranalysis/)**
 
 
 
