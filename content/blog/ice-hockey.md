@@ -8,17 +8,6 @@ medium_enabled: false
 ---
 
 
-{{< unsafe >}}
-<style> 
-main img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-</style>
-{{< /unsafe >}}
-
-
 ![Action shot of ice hockey players](/files/images/blog/20231126210415162.jpg)
 
 ---

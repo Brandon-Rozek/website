@@ -5,7 +5,7 @@ hideDate: true
 draft: false
 ---
 
-Ingredients:
+## Ingredients:
 - Ground Beef
 - 1/2 Onion Finely Chopped
 - 1 Egg
@@ -17,7 +17,7 @@ Ingredients:
 - 1 green pepper
 - 1 can refried beans
 
-Recipe:
+## Recipe:
 1. Set out a large mixing bowl.
 2. Finely chop or use a food processor on the green pepper and the onion
 3. Add all the ingredient into the bowl and use your hands to mix the ingredients well until it's all evenly spread out
