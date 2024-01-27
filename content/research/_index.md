@@ -5,35 +5,45 @@ Description: A list of my research Projects
 
 **[Quick List of Publications](/publications/)**
 
-**Broad Research Interests:** Automated Reasoning, Artificial Intelligence, Formal Methods
+**Broad Research Interests:** Automated Reasoning, Automated Planning, Artificial Intelligence, Formal Methods
 
-## Logic-Based AI
-Working with [Dr. Selmer Bringsjord](https://homepages.rpi.edu/~brings/) and others in the [RAIR Lab](https://rair.cogsci.rpi.edu/) to
-design and implement artificial intelligent agents using computational logic. I'm particularly interested in:
-- Explainability through verifiable chains of inference
-- Defeasible reasoning under uncertainty
-- Reasoning about agents and their cognitive states
+## Planning under Uncertainty
 
-[Notes on Automated Theorem Proving](atp)
-
-## Integrated Planning and Reinforcement Learning
-Working with [Junkyu Lee](https://researcher.ibm.com/researcher/view.php?person=ibm-Junkyu.Lee),
+During my PhD I have been primarily focused on investigating planning and sequential decision
+making under uncertainty through integrative methods:
+- With [Selmer Bringsjord](https://homepages.rpi.edu/~brings/) in the [RAIR Lab](https://rair.cogsci.rpi.edu/) I have looked at planning through automated reasoning.
+I further developed [Spectra](https://github.com/rairlab/spectra) and the underlying
+planning with formulas framework to show classes of uncertainty problems that
+are easy to encode. Additionally, I wrote a QA algorithm for ShadowProver to integrate to Spectra
+for planning under epistemic uncertatinty.
+- With [Junkyu Lee](https://researcher.ibm.com/researcher/view.php?person=ibm-Junkyu.Lee),
 [Michael Katz](https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Michael.Katz1),
-and [Shirin Sohrabi](https://researcher.watson.ibm.com/researcher/view.php?person=us-ssohrab)
-on extending and relaxing assumptions within their existing
-[Planning Annotated Reinforcement Learning Framework](https://prl-theworkshop.github.io/prl2021/papers/PRL2021_paper_36.pdf) developed at IBM Research.
+[Harsha Kokel](https://research.ibm.com/people/harsha-kokel), and [Shirin Sohrabi](https://researcher.watson.ibm.com/researcher/view.php?person=us-ssohrab) at IBM I looked at guiding hiearchical reinforcement
+learning agents under partial observability using discovery effects within a fully-observable non-determinsitic planner.
+- More to come...
 
 
-In this framework, automated planning is used on a higher-level version of the overall
-problem with a surjective function mapping RL states to AP states. The agent is
-based on the options framework in Hiearchical Reinforcement Learning where options
-are defined as the grounded actions in the planning model.
+## Logic
+
+Underlying my work in artificial intelligence and cryptography 
+is computational logic. In that regard, I have been able
+work on problems from the underlying logic formalisms,
+unification algorithms, to building
+tools for interactive theorem provers.
+
+- With Andrew Marshall and Kimberly Cornell, we're currently developing a new syntactic AC algorithm.
+- With Thomas Ferguson and James Oswald we looked at formalizing a model theory for a fragment of the Deontic Cognitive Event Calculus.
+- With James Oswald we've worked on building interactive theorem provers and showing validity of proofs in parallel.
 
 
-More to come...
+Related Notes:
+
+- [Automated Theorem Proving](atp/)
+- [Term Reasoning](termreasoning/)
+
 
 ## Symbolic Methods for Cryptography
-Working with [Dr. Andrew Marshall](https://www.marshallandrew.net/) and others in applying term reasoning within computational logic
+Worked with [Andrew Marshall](https://www.marshallandrew.net/) and others in applying term reasoning within computational logic
 towards cryptography. This collaboration was previously funded under an ONR grant. We are interested in applying techniques such
 as unification and term rewriting to the following areas:
 - Block Ciphers
@@ -43,16 +53,16 @@ as unification and term rewriting to the following areas:
 
 Together we built [CryptoSolve](https://github.com/cryptosolvers/CryptoSolve), a symbolic cryptographic analysis tool, and made it publically available on GitHub. I wrote the term algebra and rewrite libraries, and contributed to the mode of operation library and some unification algorithms.
 I still help maintain the codebase, as well as contribute to our current work on Garbled Circuits. We previously presented our work
-at  [UNIF 2020](https://www3.risc.jku.at/publications/download/risc_6129/proceedings-UNIF2020.pdf#page=58) ([slides](/files/research/UNIF2020-Slides.pdf)), [FROCOS 2021](https://link.springer.com/chapter/10.1007/978-3-030-86205-3_14) ([slides](/files/slides/FROCOS2021.pdf)), and [WRLA 2022](http://sv.postech.ac.kr/wrla2022/assets/files/pre-proceedings-WRLA2022.pdf#page=12) ([slides](/files/slides/wrla2022-slides.pdf)).
+at  [UNIF 2020](https://www3.risc.jku.at/publications/download/risc_6129/proceedings-UNIF2020.pdf#page=58) ([slides](/files/research/UNIF2020-Slides.pdf)), [FROCOS 2021](https://link.springer.com/chapter/10.1007/978-3-030-86205-3_14) ([slides](/files/slides/FROCOS2021.pdf)), [WRLA 2022](http://sv.postech.ac.kr/wrla2022/assets/files/pre-proceedings-WRLA2022.pdf#page=12) ([slides](/files/slides/wrla2022-slides.pdf)),
+and [GandALF 2022](/paper/2209.01/).
 
-I've written a few [notes](termreasoning/) about term reasoning.
 
-Current Collaborators:
+Collaborators:
 - NRL: Catherine Meadows
-- UMW: [Andrew Marshall]((https://www.marshallandrew.net/))
+- UMW: [Andrew Marshall](https://www.marshallandrew.net/)
 - UT Dallas: Serdar Erbatur
-- SUNY Albany: [Paliath Narendran](https://www.cs.albany.edu/~dran/), Kim Cornell
-- Clarkson University: [Christopher Lynch](https://people.clarkson.edu/~clynch/)
+- SUNY Albany: [Paliath Narendran](https://www.cs.albany.edu/~dran/) and Kimberly Cornell
+- Clarkson University: [Christopher Lynch](https://people.clarkson.edu/~clynch/) and Hai Lin
 
 
 Group Website: [https://cryptosolvers.github.io](https://cryptosolvers.github.io)
@@ -60,10 +70,9 @@ Group Website: [https://cryptosolvers.github.io](https://cryptosolvers.github.io
 
 ## Reinforcement Learning
 
-**Deep Reinforcement Learning:** With [Dr. Ron Zacharski](http://zacharski.org/) I focused on how to make deep reinforcement learning
-algorithms more sample efficient. That is, how can we make it so that the RL agent learns more from every observation to make it so that
-we achieve our goal faster. With that goal in mind, I built out a Reinforcement Learning library written in PyTorch to help benchmark
-my ideas.
+With [Dr. Ron Zacharski](http://zacharski.org/) I worked on making deep reinforcement learning algorithms more sample efficient with human feedback.
+
+In my experimentation, I built out a Reinforcement Learning library in PyTorch.
 
 
 *Links:*
@@ -75,7 +84,7 @@ my ideas.
 
 
 
-**Reinforcement Learning:** Studied the fundamentals of reinforcement learning with [Dr. Stephen Davies](http://stephendavies.org/). We went over the fundamentals such as value functions, policy functions, how we can describe our environment as a markov decision processes, etc.
+[Dr. Stephen Davies](http://stephendavies.org/) guided my study of the fundamentals of reinforcement learning. We went over value functions, policy functions, how we can describe our environment as a markov decision processes, and other concepts.
 
 [Notes and Other Goodies](reinforcementlearning/) / [Github Code](https://github.com/brandon-rozek/ReinforcementLearning)
 
