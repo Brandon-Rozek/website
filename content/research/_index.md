@@ -70,7 +70,8 @@ Group Website: [https://cryptosolvers.github.io](https://cryptosolvers.github.io
 
 ## Reinforcement Learning
 
-With [Dr. Ron Zacharski](http://zacharski.org/) I worked on making deep reinforcement learning algorithms more sample efficient with human feedback.
+During my undergraduate degree, I worked with [Dr. Ron Zacharski](http://zacharski.org/)
+on making deep reinforcement learning algorithms more sample efficient with human feedback.
 
 In my experimentation, I built out a Reinforcement Learning library in PyTorch.
 
@@ -91,7 +92,17 @@ In my experimentation, I built out a Reinforcement Learning library in PyTorch.
 
 
 
-## Other
+## Other Research and Academic Activities
+
+[**Excitation of Rb87**](rb87/): Worked in a Quantum Research lab alongside fellow student Hannah Killian under the guidance of Dr. Hai Nguyen. I provided software tools and assisted in understanding the mathematics behind the phenomena.
+
+[Modeling Population Dynamics of Incoherent and Coherent Excitation](/files/research/modellingpopulationdynamics.pdf)
+
+[Coherent Control of Atomic Population Using the Genetic Algorithm](/files/research/coherentcontrolofatomicpopulation.pdf)
+
+
+[**Beowulf Cluster:**](lunac) In order to circumvent the frustrations I had with simulation code taking a while, I applied and received funding to build out a Beowulf cluster for the Physics department. Dr. Maia Magrakvilidze was the advisor for this project. [LUNA-C Poster](/files/research/LUNACposter.pdf)
+
 
 [**Programming Languages:**](proglang/) Back in the Fall of 2018, under the guidance of Ian Finlayson, I worked towards creating a programming language similar to SLOTH (Simple Language of Tiny Heft). [SLOTH Code](https://github.com/brandon-rozek/SLOTH)
 
@@ -102,13 +113,6 @@ Before this study, I worked through a great book called ["Build your own Lisp"](
 
 **Cluster Analysis:** The study of grouping similar observations without any prior knowledge. I studied this topic by deep diving Wikipedia articles under the guidance of Dr. Melody Denhere during Spring 2018. **[Extensive notes](clusteranalysis/)**
 
-[**Excitation of Rb87**](rb87/): Worked in a Quantum Research lab alongside fellow student Hannah Killian under the guidance of Dr. Hai Nguyen. I provided software tools and assisted in understanding the mathematics behind the phenomena.
-
-[Modeling Population Dynamics of Incoherent and Coherent Excitation](/files/research/modellingpopulationdynamics.pdf)
-
-[Coherent Control of Atomic Population Using the Genetic Algorithm](/files/research/coherentcontrolofatomicpopulation.pdf)
 
 
-
-[**Beowulf Cluster:**](lunac) In order to circumvent the frustrations I had with simulation code taking a while, I applied and received funding to build out a Beowulf cluster for the Physics department. Dr. Maia Magrakvilidze was the advisor for this project. [LUNA-C Poster](/files/research/LUNACposter.pdf)
 
