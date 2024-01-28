@@ -12,7 +12,7 @@ draft: false
 - 1 red bell pepper
 - 2 tablespoons garlic powder
 - 60 ounces of black beans
-- 32 ounces of broth
+- 4 cups of broth
 - 1 tablespoon cumin
 - sprinkle of dried oregano
 - 1 bay leaf
