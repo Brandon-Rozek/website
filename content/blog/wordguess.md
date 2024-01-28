@@ -1,6 +1,6 @@
 ---
 title: "Wordguess: A game for the Tildeverse"
-date: 2024-01-26T18:40:00-05:00
+date: 2024-01-28T18:40:00-05:00
 draft: false
 tags: []
 math: false
