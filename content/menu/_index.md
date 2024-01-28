@@ -67,6 +67,7 @@ The following menu contains meals that are in rotation at my home. These are mad
 - Pad Thai
 - [White Pepper Spaetzle](white-pepper-spaetzle/)
 - [Korma](korma/)
+- [Homemade Baked Mac & Cheese](baked-mac-and-cheese/)
 
 
 Pork
