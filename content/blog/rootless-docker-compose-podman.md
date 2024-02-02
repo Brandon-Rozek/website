@@ -40,7 +40,7 @@ export DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock
 
 To have this environmental variable persistent across reboots, add the above line to the user's `.bash_profile`.
 
-You'll need a configuration file `docker-compose.yml` defined. Here is a sample one that spins up an image updating service.
+You'll need a configuration file `docker-compose.yml` defined. Here is a sample one that spins up an image updating service. Replace `$UID` with your user id which you can get from running `id -u` in the terminal.[^1]
 
 ```yaml
 version: "3.3"
@@ -55,12 +55,12 @@ services:
       PGID: 1000
       TZ: US/Eastern
     volumes:
-      - /var/run/podman/podman.sock:/var/run/docker.sock:ro
+      - /var/run/user/$UID/podman/podman.sock:/var/run/docker.sock:ro
     restart: always
 ```
 
 If you want to add to add more volumes to the container, make sure it has the appropriate SELinux label if
-you're using a distribution with it enabled.[^1]
+you're using a distribution with it enabled.[^2]
 
 ```bash
 chcon -t container_file_t -R X
@@ -73,4 +73,5 @@ Now we can run `docker-compose`!
 docker-compose ps
 ```
 
-[^1]: https://bugzilla.redhat.com/show_bug.cgi?id=2125878
+[^1]: I thank the kind reader for the correction to the volumes declaration.
+[^2]: https://bugzilla.redhat.com/show_bug.cgi?id=2125878
