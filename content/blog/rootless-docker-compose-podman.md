@@ -73,5 +73,5 @@ Now we can run `docker-compose`!
 docker-compose ps
 ```
 
-[^1]: I thank the kind reader for the correction to the volumes declaration.
+[^1]: Thanks to Ian Evans for sending in a correction to the volumes declaration.
 [^2]: https://bugzilla.redhat.com/show_bug.cgi?id=2125878
