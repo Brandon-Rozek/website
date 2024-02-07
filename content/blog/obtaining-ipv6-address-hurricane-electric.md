@@ -13,7 +13,7 @@ Luckily, Hurricane Electric provides a free IPv6 tunnel broker service. The [Arc
 
 Hurricane Electric is a Tier 2 Internet service provider. This means that they [peer](https://en.wikipedia.org/wiki/Peering) with other Internet service providers to route network traffic with. Since at [least 2010](https://forums.he.net/index.php?topic=783.0), Hurricane Electric has offered a [free IPv6 tunnel](https://www.tunnelbroker.net/).   This gives me confidence that they should at least continue to offer this service in the near future. In order to route IPv6 traffic to your IPv4 server, they make use of the the [6in4 tunneling protocol](https://en.wikipedia.org/wiki/6in4). This encapsulates the IPv6 packet with a IPv4 header. 
 
-To get setup, create on account on https://tunnelbroker.net. After verifying your email, login and click on "Create Regular Tunnel". From there it will ask you for the IPv4 address of your server. Insert that and then click the tunnel server that is the closest geographically to where the server is located.
+To get setup, create on account on https://tunnelbroker.net. After verifying your email[^1], login and click on "Create Regular Tunnel". From there it will ask you for the IPv4 address of your server. Insert that and then click the tunnel server that is the closest geographically to where the server is located.
 
 Once the tunnel is created, you'll need to take note of four addresses within the "IPv6 Tunnel Endpoints" section:
 
@@ -65,3 +65,5 @@ sudo ufw route allow in on he-ipv6 out on podman1
 sudo ufw route allow in on podman1 out on he-ipv6
 ```
 
+[^1]: A reader reached out to let me know that Hurricane Electric does not
+support @outlook.com or @gmail.com addresses for the email.
