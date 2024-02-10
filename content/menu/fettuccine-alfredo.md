@@ -9,13 +9,12 @@ Total Time: 15 minutes
 
 ## Ingredients
 
-- 1/2 Cup Butter
+- 1/4 Cup Butter
 - 1 Tablespoon Garlic Powder
-- 1 1/2 Cup Heavy Whipping Cream
+- 1 1/2 Cup Heavy Whipping Cream[^1]
 - 2 Cups Shredded Parmesan Cheese
 - Salt & Pepper to Taste
 - Egg Noodles
-- Cubed ham (Optional)
 
 ## Alfredo Sauce Recipe
 
@@ -31,5 +30,7 @@ Total Time: 15 minutes
 - Add egg noodles
 - While noodles are cooking, make the alfredo sauce.
 - Once noodles are the right texture, drain water.
-- Add alfredo sauce and cubed ham to pot.
+- Add alfredo sauce and to pot.
 - Mix and serve
+
+[^1]: Alternatively, you can substitute with equal parts of evaporated milk for a lower calorie alternative.
