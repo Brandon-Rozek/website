@@ -22,6 +22,7 @@ enableGitInfo = true
         "mailto:brozek@brandonrozek.com",
         "https://fosstodon.org/@brozek"
     ]
+    warnPostOlderThanXYears = 2
 
 [services.rss]
   limit = 50
