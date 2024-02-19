@@ -116,6 +116,7 @@ Poultry
 - [Banana Bread](banana-bread/)
 - Popcorn
 - Strawberry Shortcake
-- [Fruit Smoothie](fruit-smoothie/)
 - Tres Leche Cacke
 - Nutella Hot Chocolate
+- [Kindness in a cup Smoothie](kindness-in-a-cup/)
+- [Angel Food Smoothie](angel-food-smoothie/)
