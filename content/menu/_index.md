@@ -73,6 +73,7 @@ The following menu contains meals that are in rotation at my home. These are mad
 Pork
 - [Pork/Chicken Katsu](pork-chicken-katsu/)
 - Pulled Pork Sandwiches
+- [Jambalaya](jambalaya/)
 
 
 Beef
