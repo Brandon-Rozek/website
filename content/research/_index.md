@@ -36,7 +36,7 @@ unification algorithms, to building
 tools for interactive theorem provers.
 
 - With Andrew Marshall and Kimberly Cornell, we're currently developing a new syntactic AC algorithm.
-- With Thomas Ferguson and James Oswald we formaliezd a model theory for a fragment of the Deontic Cognitive Event Calculus.
+- With Thomas Ferguson and James Oswald we formalized a model theory for a fragment of the Deontic Cognitive Event Calculus.
 - With James Oswald we've built interactive theorem provers and showed validity of large proofs in parallel using a high performance cluster.
 
 

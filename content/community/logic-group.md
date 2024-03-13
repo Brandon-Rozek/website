@@ -15,6 +15,8 @@ given: [https://rairlab.github.io/logic-group/](https://rairlab.github.io/logic-
 
 I presented the following:
 
+01/31/2024: An original talk titled "Planning under Qualitative Uncertainty - Initial Thoughts"
+
 01/24/2024: An original talk titled "Spectra: STRIPS-Inspired AI Planner based on Automated Reasoning"
 
 10/25/2023: An original talk titled "Introduction to Goal Recognition as Planning"
