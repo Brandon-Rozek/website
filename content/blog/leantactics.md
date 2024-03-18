@@ -6,10 +6,13 @@ medium_enabled: true
 medium_post_id: adea1a69ddc8
 tags:
 - Formal Methods
-title: Lean Theorem Prover Tactics
+title: Lean 3 Theorem Prover Tactics
 ---
 
-I've recently been playing with the Lean Theorem Prover.  I am impressed with how some of the mathematics community decided to extend this project via [mathlib](https://leanprover-community.github.io/) and really make proving theorems in this framework easy and enjoyable.
+Warning: This post covers Lean 3 which has been deprecated
+in favor of Lean 4.
+
+I've recently been playing with the Lean 3 Theorem Prover.  I am impressed with how some of the mathematics community decided to extend this project via [mathlib](https://leanprover-community.github.io/) and really make proving theorems in this framework easy and enjoyable.
 
 Normally one of the most frustrating parts of theorem proving is having to justify what may seem to be a simple goal. Luckily, mathlib helps us out by [introducing tactics](https://leanprover-community.github.io/mathlib_docs/tactics.html) that can take some of these simple goals to the finish line.
 

@@ -7,6 +7,9 @@ math: true
 medium_enabled: false
 ---
 
+Warning: This post covers Lean 3 which has been deprecated
+in favor of Lean 4. Check out my [updated tutorial](/blog/lean4-tutorial/).
+
 Lean is an interactive theorem prover created by Microsoft.
 As part of the RPI logic group, I gave a tutorial introducing Lean and showcasing how to prove some statements within it.
 This post aims to cover the concepts I went over at the time and can be used as an initial reference.
@@ -66,7 +69,7 @@ Given a conjunctive hypothesis, the `cases` tactic will create two new hypothesi
 
 ### Disjunctive Introduction
 
-Given any statement $P$, we can introduce an arbitrary formula as a disjunct. More intuitively, if Jarold is above the age of 10, then he is above the age of 10 or he likes lolipops. It does not change the truth value of the statement.
+Given any statement $P$, we can introduce an arbitrary formula as a disjunct. More intuitively, if Jarold is above the age of 10, then he is above the age of 10 or he likes lollipops. It does not change the truth value of the statement.
 
 The inference based way of representing this is as follows:
 
@@ -98,7 +101,7 @@ The form of disjunctive elimination included in Lean is more commonly known as *
 >
 > Therefore, I have my wallet on me.
 
-To acheive this in Lean using the inference based approach.
+To achieve this in Lean using the inference based approach.
 
 ```lean
 example {p q r : Prop} (H_pr : p → r) (H_qr : q → r) (H_pq : p ∨ q) : r := begin
@@ -320,7 +323,7 @@ end
 
 Lets say we have the following forall statement: $\forall a \in \alpha: p a \implies b$.
 
-Now lets say we have the follwing existential: $\exists x, p x$.
+Now lets say we have the following existential: $\exists x, p x$.
 
 Using these, we can derive $b$.
 
@@ -345,7 +348,7 @@ end
 
 One of the biggest use cases of an interactive
 theorem prover is in program verification.
-To help represent recursive data strcutres, we
+To help represent recursive data structures, we
 have the notion of an *inductive type*.
 
 Let's create a custom representation of a list.
@@ -360,7 +363,7 @@ inductive CustomList (T : Type)
 Some examples of a list here include `cnil`,
 `ccons(0, cnil)`, and `ccons(1, ccons(0, cnil))`.
 
-For convinience, we'll open the `CustomList` namespace
+For convenience, we'll open the `CustomList` namespace
 so that we don't have to refer each constructor
 (`cnil`/`ccons`) by it.
 
@@ -368,7 +371,7 @@ so that we don't have to refer each constructor
 open CustomList
 ```
 
-### Functions over Inductive Typess
+### Functions over Inductive Types
 
 To define a function over an inductive type,
 we need to cover each of the constructors.
@@ -447,7 +450,7 @@ The `rewrite` command allows us to replace instances of functions with their def
 The `calc` environment allows us to perform multiple rewrites in order to get closer to that end.
 
 
-Instead of explicitely making use of `rec_on`, we can use the `induction` tactic.
+Instead of explicitly making use of `rec_on`, we can use the `induction` tactic.
 
 ```lean
 theorem append_nil2 {α : Type} (as : CustomList α) : cappend as cnil = as := begin
@@ -467,7 +470,7 @@ theorem append_nil2 {α : Type} (as : CustomList α) : cappend as cnil = as := b
 end
 ```
 
-Lean also supports writing the theorems in a similar inducive syntax as the definitions. Though to me it looks slightly confusing.
+Lean also supports writing the theorems in a similar inductive syntax as the definitions. Though to me it looks slightly confusing.
 
 ```lean
 theorem append_nil3 {α : Type} : ∀ as : CustomList α, cappend as cnil = as
@@ -550,6 +553,6 @@ Notice that a couple times in the proof, make use of a tactic called `linarith`.
 
 ## Conclusion
 
-That concludes the examples I gave for my talk. For each proof, you can see that I included at least two different ways of going about proving it. I generally prefer the inference style method where we explicitely call on `Or.elim` and the like. Though when it comes to double induction, I have not figured out how to apply `rec_on` multiple times in a clean way. 
+That concludes the examples I gave for my talk. For each proof, you can see that I included at least two different ways of going about proving it. I generally prefer the inference style method where we explicitly call on `Or.elim` and the like. Though when it comes to double induction, I have not figured out how to apply `rec_on` multiple times in a clean way. 
 
 In the process of making this tutorial, I released other lean posts. One that I recommend checking out is ["Readable Lean 3 Proofs"](/blog/readable-lean3-proofs/). In it, I give my opinions on how to make the written out proofs more human friendly.
