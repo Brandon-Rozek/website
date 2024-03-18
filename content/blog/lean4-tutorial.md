@@ -128,9 +128,14 @@ This allows them to export proofs as programs in OCaml.
 Lean places less of an emphasis on this approach and instead supports the proof by contradiction style
 you see in classical theorem proving.
 
-During the tutorial, I decided to make this distinction explicit by making use of the law of excluded middle. By default, Lean uses the axiom of choice which can then be used to derive the law of excluded middle, but I cut that part out for brevity.
+For this tutorial, I decided to make this distinction
+explicit by declaring a new axiom for the law of
+excluded middle.
+By default, Lean has the axiom of choice which
+they use to prove the law of excluded middle
+through the proof `Classical.em`.
 
-In other words, if you want to perform a proof by contradiction, don't use the techniques shown in this section and instead use the `by_contra` tactic.
+In other words, if you want to perform a proof by contradiction, don't use the techniques shown in this section and instead use the `by_contra` tactic or directly use `Classical.em`.
 
 Declare the axiom of law of excluded middle:
 
