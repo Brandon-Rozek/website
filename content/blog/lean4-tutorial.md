@@ -215,7 +215,7 @@ example {p q : Prop} (H_pq : p → q) (H_pnq : p → ¬q) : ¬p := by
   exact show False from H_nq H_q
 ```
 
-### Negation Elimination
+### Double Negation Elimination
 
 One common representation of negation elimination is to remove any double negations.
 That is $\neg \neg P$ becomes $P$.
@@ -260,6 +260,8 @@ example {p: Prop} (H_nnp : ¬¬p) : p := by
     have H_false : False := H_nnp H_np
     exact show p from False.elim H_false
 ```
+
+Lean has this theorem built-in with `Classical.not_not`.
 
 ## First Order
 
@@ -498,3 +500,6 @@ inductions as writing out the cases explicitly can be daunting.
 
 If you catch any mistakes in me converting this post, let me know.
 Otherwise feel free to email me if you have any questions.
+
+Lastly, I want to give my thanks to James Oswald for helping proofread
+this post and making it better.
