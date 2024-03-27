@@ -8,10 +8,10 @@ aliases:
 
 ## Publications
 
-Partially Observable Hierarchical Reinforcement Learning with AI Planning (Student Abstract)
+[Partially Observable Hierarchical Reinforcement Learning with AI Planning (Student Abstract)](/paper/2403.01)
 - Authors: *Brandon Rozek*, Junkyu Lee, Harsha Kokel, Michael Katz and Shirin Sohrabi
 - Venue: AAAI Conference on Artificial Intelligence, 2024.
-- Paper to appear in early 2024 | Poster to appear in early 2024
+- [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/30504/32640) | [Poster](/files/research/AAAI_Remote_Poster_Rozek24.pdf)
 
 [Parallel Verification of Natural Deduction Proof Graphs](/paper/2311.01/)
 - Authors: James Oswald and *Brandon Rozek*
@@ -61,7 +61,7 @@ Verification of Automatically Synthesized Cryptosystems ](/paper/2109.01/)
 
 Efficient Parallel Verification of Natural Deduction Proof Graphs
 - Authors: James Oswald and *Brandon Rozek*
-- Venue: Rensselaer Computer Science Graduate Poster Session, April 2019.
+- Venue: Rensselaer Computer Science Graduate Poster Session, April 2023.
 - [Poster](/files/research/PV-Poster.pdf) 
 
 
