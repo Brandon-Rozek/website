@@ -30,6 +30,7 @@ The following menu contains meals that are in rotation at my home. These are mad
 
 ## Soups
 
+- [Beef Taco](beef-taco-soup/)
 - [Pork Pozole](pork-pozole/)
 - Chicken & Gnocchi
 - {{< vegetarian >}}Broccoli Cheddar
