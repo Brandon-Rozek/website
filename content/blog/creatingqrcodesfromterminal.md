@@ -13,3 +13,10 @@ echo "https://brandonrozek.com" | qrencode -t ansiutf8
 ```
 
 ![](/files/images/blog/20200926221423.png)
+
+After viewing it on your terminal, you can save it to a PNG file
+
+```bash
+echo "https://brandonrozek.com" | qrencode -t png -o qrcode.png
+```
+
