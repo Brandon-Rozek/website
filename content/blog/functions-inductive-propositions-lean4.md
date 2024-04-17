@@ -152,7 +152,7 @@ Since we don't know how to show whether collatz terminates, we can't at this tim
 ```lean 
 theorem collatz_sound (n r : Nat) : (∃ t, collatz_fun n t = some r) → collatz n r := by
   intro (H: ∃ t, collatz_fun n t = some r)
-  cases' H with t H
+  obtain ⟨t, H⟩ := H
   revert H n r
   show ∀ (n r : Nat), collatz_fun n t = some r → collatz n r
 
