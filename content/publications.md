@@ -8,6 +8,16 @@ aliases:
 
 ## Publications
 
+(Forthcoming) Modeling C0 Family Logics for Artificial Intelligence: Doxastic-Temporal Logics for Reasoning About Goals
+- Authors: James T. Oswald, *Brandon Rozek*, and Thomas M. Ferguson
+- Venue: Künstliche Intelligenz, 2024
+- Paper to appear late 2024
+
+(Forthcoming) Spectra: An Expressive STRIPS-Inspired AI Planner Based on Automated Reasoning
+- Authors: *Brandon Rozek* and Selmer Bringsjord
+- Venue: Künstliche Intelligenz, 2024
+- Paper to appear late 2024
+
 [Partially Observable Hierarchical Reinforcement Learning with AI Planning (Student Abstract)](/paper/2403.01)
 - Authors: *Brandon Rozek*, Junkyu Lee, Harsha Kokel, Michael Katz and Shirin Sohrabi
 - Venue: AAAI Conference on Artificial Intelligence, 2024.
