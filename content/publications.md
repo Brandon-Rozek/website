@@ -53,6 +53,11 @@ Verification of Automatically Synthesized Cryptosystems ](/paper/2109.01/)
 
 ## Papers
 
+Guiding Hiearchical Reinforcement Learning in Partially Observable Environments with AI Planning
+- Authors: *Brandon Rozek*, Junkyu Lee, Harsha Kokel, Michael Katz, Shirin Sohrabi
+- Venue: PRL Workshop Series, 2024
+- Paper to appear mid 2024
+ 
 [CryptoSolve: Towards a Tool for the Symbolic Analysis of Cryptographic Algorithms](/paper/2203.01/)
 - Authors: D Chichester, W Du, R Kauffman, H Lin, C Lynch, A M. Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, *B Rozek*
 - Venue: International Workshop on Rewriting Logic and its Applications, 2022.
