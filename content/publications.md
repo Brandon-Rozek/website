@@ -53,9 +53,14 @@ Verification of Automatically Synthesized Cryptosystems ](/paper/2109.01/)
 
 ## Papers
 
+Initial Steps in Planning under Qualitative Uncertainty
+- Authors: *Brandon Rozek* and Selmer Bringsjord
+- Venue: International Workshop on Human-Aware and Explainable Planning (HAXP), 2024
+- Paper to appear mid 2024
+
 Guiding Hiearchical Reinforcement Learning in Partially Observable Environments with AI Planning
 - Authors: *Brandon Rozek*, Junkyu Lee, Harsha Kokel, Michael Katz, Shirin Sohrabi
-- Venue: PRL Workshop Series, 2024
+- Venue: International Workshop on Bridging the Gap Between AI Planning and Reinforcement Learning (PRL), 2024
 - Paper to appear mid 2024
  
 [CryptoSolve: Towards a Tool for the Symbolic Analysis of Cryptographic Algorithms](/paper/2203.01/)
