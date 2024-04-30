@@ -10,12 +10,12 @@ aliases:
 
 (Forthcoming) Modeling C0 Family Logics for Artificial Intelligence: Doxastic-Temporal Logics for Reasoning About Goals
 - Authors: James T. Oswald, *Brandon Rozek*, and Thomas M. Ferguson
-- Venue: Künstliche Intelligenz, 2024
+- Venue: Künstliche Intelligenz (KI), 2024
 - Paper to appear late 2024
 
 (Forthcoming) Spectra: An Expressive STRIPS-Inspired AI Planner Based on Automated Reasoning
 - Authors: *Brandon Rozek* and Selmer Bringsjord
-- Venue: Künstliche Intelligenz, 2024
+- Venue: Künstliche Intelligenz (KI), 2024
 - Paper to appear late 2024
 
 [Partially Observable Hierarchical Reinforcement Learning with AI Planning (Student Abstract)](/paper/2403.01)
@@ -25,29 +25,29 @@ aliases:
 
 [Parallel Verification of Natural Deduction Proof Graphs](/paper/2311.01/)
 - Authors: James Oswald and *Brandon Rozek*
-- Venue: Logical Frameworks and Meta-Languages: Theory and Practice, 2023.
+- Venue: International Workshop on Logical Frameworks and Meta-Languages: Theory and Practice (LFMTP), 2023.
 - [Paper](https://cgi.cse.unsw.edu.au/~eptcs/paper.cgi?LFMTP23.4.pdf) | [Slides](/files/slides/lfmtp23.pdf)
 
 [The M Cognitive Meta-architecture as Touchstone for Standard Modeling of AGI-Level Minds](/paper/2305.01/)
 - Authors: S Bringsjord, JT Oswald, M Giancola, *B Rozek*, NS Govindarajulu
-- Venue: International Conference on Artificial General Intelligence, 2023.
+- Venue: International Conference on Artificial General Intelligence (AGI), 2023.
 - [Paper](http://kryten.mm.rpi.edu/M_launch.pdf)
 
 [CryptoSolve: A Tool for the Analysis of Cryptographic Modes of Operation](/paper/2209.01/)
 - Authors: D Chichester, W Du, R Kauffman, H Lin, C Lynch, A M. Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, *B Rozek*.
-- Venue: International Symposium on Games, Automata, Logic, and Formal Verification, 2022.
+- Venue: International Symposium on Games, Automata, Logic, and Formal Verification (GandALF), 2022.
 - [Paper](https://cgi.cse.unsw.edu.au/~eptcs/Published/GandALF2022/Proceedings.pdf#page=157)
 
 [A Framework for Testimony-Infused Automated Adjudicative Dynamic
 Multi-Agent Reasoning in Ethically Charged Scenarios](/paper/2207.01/)
 - Authors: *Brandon Rozek*, Michael Giancola, Selmer Bringsjord, Naveen Sundar Govindarajulu
-- Venue: International Conference on Robot Ethics and Standards, 2022.
+- Venue: International Conference on Robot Ethics and Standards (ICRES), 2022.
 - [Paper](https://www.clawar.org/icres2022/wp-content/uploads/2022/07/ICRES2022-Proceedings-manuscript.pdf#page=61)
 
 [Algorithmic Problems in the Symbolic Approach to the
 Verification of Automatically Synthesized Cryptosystems ](/paper/2109.01/)
 - Authors: Hai Lin, Christopher Lynch, Andrew M. Marshall, Catherine A. Meadows, Paliath Narendran, Veena Ravishankar, *Brandon Rozek*
-- Venue: International Symposium on Frontiers of Combining Systems, 2021.
+- Venue: International Symposium on Frontiers of Combining Systems (FROCOS), 2021.
 - [Paper](https://link.springer.com/chapter/10.1007/978-3-030-86205-3_14)
 
 
@@ -65,12 +65,12 @@ Guiding Hiearchical Reinforcement Learning in Partially Observable Environments 
  
 [CryptoSolve: Towards a Tool for the Symbolic Analysis of Cryptographic Algorithms](/paper/2203.01/)
 - Authors: D Chichester, W Du, R Kauffman, H Lin, C Lynch, A M. Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, *B Rozek*
-- Venue: International Workshop on Rewriting Logic and its Applications, 2022.
+- Venue: International Workshop on Rewriting Logic and its Applications (WRLA), 2022.
 - [Paper](http://sv.postech.ac.kr/wrla2022/assets/files/pre-proceedings-WRLA2022.pdf#page=12) | [Slides](/files/slides/wrla2022-slides.pdf)
 
 [Algorithmic Problems in Synthesized Cryptosystems](/paper/2006.01/)
 - Authors: Andrew M Marshall, Catherine A Meadows, Paliath Narendran, Veena Ravishankar, *Brandon Rozek*
-- Venue: International Workshop on Unification, 2020.
+- Venue: International Workshop on Unification (UNIF), 2020.
 - [Paper](https://www3.risc.jku.at/publications/download/risc_6129/proceedings-UNIF2020.pdf#page=58)
 
 ## Thesis
