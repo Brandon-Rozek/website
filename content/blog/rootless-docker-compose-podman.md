@@ -9,6 +9,8 @@ tags:
 title: Rootless Docker-Compose with Podman
 ---
 
+*Note: Nowadays, I prefer to use [Quadlets](/blog/migrating-docker-compose-podman-quadlets/)*
+
 One of the benefits of Podman over Docker is that it can run daemon-less and without root. However, `docker-compose` is by far my favorite way to create and maintain containers. Luckily, the Podman folks emulated the Docker CLI so that `docker-compose` works well with Podman!
 
 To install:
