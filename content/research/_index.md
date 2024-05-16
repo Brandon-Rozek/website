@@ -10,33 +10,35 @@ Description: A list of my research Projects
 ## Planning under Uncertainty
 
 During my PhD I have been primarily focused on investigating planning and sequential decision
-making under uncertainty through integrative methods:
-- With [Selmer Bringsjord](https://homepages.rpi.edu/~brings/) in the [RAIR Lab](https://rair.cogsci.rpi.edu/) I have looked at planning through automated reasoning.
+making under uncertainty:
+- I created a new framework which allows agents to make plans under *qualitative uncertainty*.
+This helps in settings where the user doesn't have exact probabilities that various
+facts holds, but can instead bucket them into different likelihood values.
+This work is supervised under [Selmer Bringsjord](https://homepages.rpi.edu/~brings/).
+- Additionally with Selmer Bringsjord in the [RAIR Lab](https://rair.cogsci.rpi.edu/), I have looked at planning through automated reasoning.
 I further developed [Spectra](https://github.com/rairlab/spectra) and the underlying
 planning with formulas framework to show classes of uncertainty problems that
 are easy to encode. Additionally, I wrote a QA algorithm for ShadowProver to integrate to Spectra
 for planning under epistemic uncertatinty.
 - With [Junkyu Lee](https://researcher.ibm.com/researcher/view.php?person=ibm-Junkyu.Lee),
 [Michael Katz](https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Michael.Katz1),
-[Harsha Kokel](https://research.ibm.com/people/harsha-kokel), and [Shirin Sohrabi](https://researcher.watson.ibm.com/researcher/view.php?person=us-ssohrab) at IBM I developed an algorithm
+[Harsha Kokel](https://harshakokel.com/), and [Shirin Sohrabi](https://researcher.watson.ibm.com/researcher/view.php?person=us-ssohrab) at IBM I developed an algorithm
 for guiding hiearchical reinforcement agents under partial observability when domain knowledge
-can be encoded for characterizing discovery of unknown predicates. This techinque
-uses a fully-observable non-deterministic planner to generate a high-level policy
-where each high-level action is an option that a reinforcement learning agent 
-needs to learn.
-- More to come...
+can be encoded for characterizing discovery of unknown predicates.
 
 
 ## Logic
 
-Underlying my work in artificial intelligence and cryptography 
+Underlying my work in artificial intelligence and cryptography
 is computational logic. In that regard, I have been able
 work on problems from the underlying logic formalisms,
 unification algorithms, to building
 tools for interactive theorem provers.
 
-- With Andrew Marshall and Kimberly Cornell, we're currently developing a new syntactic AC algorithm.
-- With Thomas Ferguson and James Oswald we formalized a model theory for a fragment of the Deontic Cognitive Event Calculus.
+- With [Andrew Tedder](https://sites.google.com/view/andrewjtedder/research), I'm currently working
+on building a tool that checks if matrix models of given logic satisfies relevance properties.
+- With [Andrew Marshall](https://www.marshallandrew.net/) and [Kimberly Cornell](https://www.albany.edu/cehc/faculty/kimberly-cornell), we're currently developing a new syntactic AC algorithm.
+- With [Thomas Ferguson](https://faculty.rpi.edu/thomas-ferguson) and [James Oswald](https://jamesoswald.dev) we formalized a model theory for a fragment of the Deontic Cognitive Event Calculus.
 - With James Oswald we've built interactive theorem provers and showed validity of large proofs in parallel using a high performance cluster.
 
 
@@ -65,7 +67,7 @@ Collaborators:
 - NRL: Catherine Meadows
 - UMW: [Andrew Marshall](https://www.marshallandrew.net/)
 - UT Dallas: Serdar Erbatur
-- SUNY Albany: [Paliath Narendran](https://www.cs.albany.edu/~dran/) and Kimberly Cornell
+- SUNY Albany: [Paliath Narendran](https://www.cs.albany.edu/~dran/) and [Kimberly Cornell](https://www.albany.edu/cehc/faculty/kimberly-cornell)
 - Clarkson University: [Christopher Lynch](https://people.clarkson.edu/~clynch/) and Hai Lin
 
 
