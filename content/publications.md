@@ -13,10 +13,10 @@ aliases:
 - Venue: Künstliche Intelligenz (KI), 2024
 - Paper to appear late 2024
 
-(Forthcoming) Spectra: An Expressive STRIPS-Inspired AI Planner Based on Automated Reasoning
+[Spectra: An Expressive STRIPS-Inspired AI Planner Based on Automated Reasoning](/paper/2405.01)
 - Authors: *Brandon Rozek* and Selmer Bringsjord
 - Venue: Künstliche Intelligenz (KI), 2024
-- Paper to appear late 2024
+- [Paper](https://link.springer.com/article/10.1007/s13218-024-00847-8) | [Paper](https://rdcu.be/dIJ7F)
 
 [Partially Observable Hierarchical Reinforcement Learning with AI Planning (Student Abstract)](/paper/2403.01)
 - Authors: *Brandon Rozek*, Junkyu Lee, Harsha Kokel, Michael Katz and Shirin Sohrabi
