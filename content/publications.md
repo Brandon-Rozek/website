@@ -11,7 +11,7 @@ aliases:
 [Modeling C0 Family Logics for Artificial Intelligence: Doxastic-Temporal Logics for Reasoning About Goals](/paper/2405.02)
 - Authors: James T. Oswald, *Brandon Rozek*, and Thomas M. Ferguson
 - Venue: Künstliche Intelligenz (KI), 2024
-- [Paper](https://link.springer.com/article/10.1007/s13218-024-00848-7)
+- [Paper](https://link.springer.com/article/10.1007/s13218-024-00848-7) | [Paper](https://rdcu.be/dIW21)
 
 [Spectra: An Expressive STRIPS-Inspired AI Planner Based on Automated Reasoning](/paper/2405.01)
 - Authors: *Brandon Rozek* and Selmer Bringsjord
