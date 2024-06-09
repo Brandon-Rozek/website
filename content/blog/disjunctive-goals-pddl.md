@@ -2,7 +2,7 @@
 title: "Disjunctive Goals in PDDL"
 date: 2024-04-16T11:26:28-04:00
 draft: false
-tags: []
+tags: ["Automated Planning"]
 math: true
 medium_enabled: false
 ---
