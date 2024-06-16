@@ -1,7 +1,7 @@
 ---
 title: "Quick Beamer: Generating a slide at the beginning of each section"
 date: 2024-06-15T19:26:27-07:00
-draft: true
+draft: false
 tags: ["LaTex"]
 math: false
 medium_enabled: false
