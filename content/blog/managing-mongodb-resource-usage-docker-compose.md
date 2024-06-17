@@ -8,6 +8,8 @@ math: false
 medium_enabled: false
 ---
 
+*Warning: This technique does not work for the older Docker Compose v3*
+
 One of my web services utilizes MongoDB as the database backend. It lives on one of the smaller sized virtual private servers with only 1GB of RAM and 1 CPU. Every so often I encounter a scenario where MongoDB is taking all of the sytem resources, so I started looking into how to limit it.
 
 First, we can set some limits to container in general within docker-compose.
