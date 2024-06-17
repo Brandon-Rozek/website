@@ -38,8 +38,9 @@ Under standard HTTPS, a SSL handshake occurs. Though this seems pointless if all
 
 ```nginx
 server {
-    listen 443 ssl http2;
-    listen [::]:443 ssl http2;
+    listen 443 ssl;
+    listen [::]:443 ssl;
+    http2 on;
     ssl_reject_handshake on;
 
     server_name _;
@@ -59,8 +60,9 @@ server {
 }
 
 server {
-    listen 443 ssl http2;
-    listen [::]:443 ssl http2;
+    listen 443 ssl;
+    listen [::]:443 ssl;
+    http2 on;
     ssl_reject_handshake on;
 
     server_name _;
