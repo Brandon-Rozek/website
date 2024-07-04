@@ -96,7 +96,7 @@ To have more full grained control over the certificate usages and expiry time, I
 
 ## Trusting the CA
 
-On Linux, I know of two different ways to trust the CA depending on your distrubtion.
+On Linux, I know of two different ways to trust the CA depending on your distribution.
 
 ### Ubuntu Derivative
 
