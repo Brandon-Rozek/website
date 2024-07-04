@@ -117,7 +117,7 @@ sudo update-ca-certificates
 Copy `ca.pem` over to `/etc/pki/ca-trust/source/anchors`.
 
 ```bash
-sudo mv ca.pem /usr/pki/ca-trust/source/anchors
+sudo mv ca.pem /etc/pki/ca-trust/source/anchors
 ```
 
 Then execute
