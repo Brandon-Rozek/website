@@ -136,3 +136,12 @@ Function 4: Goodbye, World!
 Function 5: Goodbye, World!
 ```
 
+## Alternative: Observer Pattern
+
+The above approaches assume that the callbacks would be needed for the lifetime of the program. An altnerative is to use the [Observer design pattern](https://en.wikipedia.org/wiki/Observer_pattern). 
+
+This assumes that we have two classes, `Observable` and `Observer`. The latter class implements the `notify` method and when it is constructed, it adds itself to the collection contained in the `Observable` class.
+
+[Martin](https://martinheinz.dev/blog/112) wrote a great blog post on how you can use Python weak references so that when your `Observer` class goes out of scope, a copy isn't stored in the `Observable` class and instead gets safely removed from the collection.
+
+
