@@ -14,7 +14,6 @@ gpx: "2024-07-27-Santa-Teresa.gpx"
 ![](/files/images/tracks/2024-07-27/PXL_20240727_231528504.jpg)
 ![](/files/images/tracks/2024-07-27/PXL_20240727_224018725.jpg)
 ![](/files/images/tracks/2024-07-27/PXL_20240727_221337864.jpg)
-![](/files/images/tracks/2024-07-27/PXL_20240727_230608297_exported_466_1722194011058.jpg)
 ![](/files/images/tracks/2024-07-27/PXL_20240727_223846882.jpg)
 ![](/files/images/tracks/2024-07-27/PXL_20240727_221029525.jpg)
 ![](/files/images/tracks/2024-07-27/PXL_20240727_224401629.jpg)
