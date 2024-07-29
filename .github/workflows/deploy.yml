@@ -38,6 +38,22 @@ jobs:
           tar -xvzf hugo.tar.gz
           sudo mv hugo /usr/local/bin
 
+
+      - name: Install Rust
+        run: |
+          sudo apt update
+          sudo apt install -y rustc cargo
+
+      - name: Build
+        run: |
+          cd content/toots/.scripts
+          cargo build --release
+
+      - name: Generate Hugo Markdown for Toots
+        run: |
+          cd content/toots/.scripts
+          ./target/release/generate_md
+
       - name: Build Hugo Website
         id: build
         run: |
