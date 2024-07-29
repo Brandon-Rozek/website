@@ -44,15 +44,14 @@ jobs:
           sudo apt update
           sudo apt install -y rustc cargo
 
-      - name: Build
+      - name: Build Website-Toots
         run: |
           cd content/toots/.scripts
           cargo build --release
 
-      - name: Generate Hugo Markdown for Toots
+      - name: Pre-build script
         run: |
-          cd content/toots/.scripts
-          ./target/release/generate_md
+          ./build.sh
 
       - name: Build Hugo Website
         id: build
