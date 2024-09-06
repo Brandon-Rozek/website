@@ -6,10 +6,6 @@
 	path = content/toots
 	url = git@github.com:Brandon-Rozek/website-toots.git
 	branch = main
-[submodule "static/files/images/tracks"]
-	path = static/files/images/tracks
-	url = git@github.com:Brandon-Rozek/website-tracks-photos-v0
-	branch = main
 [submodule "content/observations"]
 	path = content/observations
 	url = git@github.com:Brandon-Rozek/website-observations.git
