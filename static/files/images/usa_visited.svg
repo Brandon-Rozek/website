@@ -15,10 +15,10 @@ In this example, Kansas, Montana and Pennsylvania are colored blue, and Californ
 Place this code in the empty space below. */
 
 /* Lived at */
-.fl, .va, .ny { fill: #5C8700; }
+.ca, .fl, .va, .ny { fill: #5C8700; }
 
 /* Visited */
-.hi, .me, .pa, .md, .wv, .in, .il, .ma, .tx, .co, .ca { fill: #5697AA; }
+.ct .hi, .me, .pa, .md, .wv, .in, .il, .la .ma, .tx, .co { fill: #5697AA; }
 
 /* Drove through */
 .nh, .vt, .nj, .de, .oh, .nc, .ga, .sc { fill: #83917D; }

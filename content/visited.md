@@ -16,14 +16,21 @@ Legend:
 <details> 
     <summary>Cities I've visited (Subset)</summary>
     <ul>
+        <li> Mountain View, California</li>
+        <li> Monteray Bay, California</li>
+        <li> Palo Alto, California</li>
         <li> San Diego, California </li>
+        <li> San Francisco, California</li>
+        <li> San Jose, California</li>
         <li> Boulder, Colorado </li>
         <li> Colorado Springs, Colorado </li>
         <li> Denver, Colorado </li>
         <li> Silverthorne, Colorado </li>
+        <li> Storrs-Mansfield, Connecticut </li>
         <li> Honolulu, Hawaii </li>
         <li> Chicago, Illinois </li>
         <li> Bloomington, Indiana </li>
+        <li> New Orleans, Lousiana</li>
         <li> Portland, Maine </li>
         <li> Anapolis, Maryland </li>
         <li> Baltimore, Maryland </li>
