@@ -11,7 +11,7 @@ git clone --recurse-submodules https://github.com/Brandon-Rozek/website
 ```
 If you don't include `--recurse-submodules` then the theme won't load rendering the site unusable.
 
-This repository uses Git-LFS to store some of the static assets. The git clone process should handle this portion for you, but in case it does not here are the commands to pull the static files manually.
+This repository uses Git-LFS to store some of the static assets. 
 ```bash
 git lfs fetch
 git lfs checkout
