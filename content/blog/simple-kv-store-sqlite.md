@@ -16,11 +16,11 @@ For our key-value store, we're going to use a table with two columns:
 - A key, which we'll call `name`. This will be a unique `TEXT` type that has to be set.
 - The value, which we'll call `value` (Creative, I know.) For our purposes, this will also be a `TEXT` type.
 
-The SQL to create this table is
+The SQL to create this table is[^2]
 
 ```sql
 CREATE TABLE config(
-    name TEXT NOT NULL UNIQUE,
+    name TEXT PRIMARY KEY,
     value TEXT
 );
 ```
@@ -123,4 +123,5 @@ $ ./sqlite3_getkv.sh test.db a
 ```
 
 [^1]: Somehow my idea of easier, simpler, and more maintainable is writing bash scripts.
+[^2]: Thanks Justin for helping me simplify it from `NOT NULL UNIQUE` to `PRIMARY KEY`.
 
