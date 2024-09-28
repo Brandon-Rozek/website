@@ -1,5 +1,5 @@
 ---
-title: "Fettuccine Alfredo"
+title: "Alfredo"
 date: 2023-03-09
 hideDate: true
 draft: false
@@ -12,7 +12,7 @@ Total Time: 15 minutes
 - 1/4 Cup Butter
 - 1 Tablespoon Garlic Powder
 - 1 1/2 Cup Heavy Whipping Cream[^1]
-- 2 Cups Shredded Parmesan Cheese
+- 2 Cups Shredded Parmesan Cheese[^2]
 - Salt & Pepper to Taste
 - Egg Noodles
 
@@ -34,3 +34,4 @@ Total Time: 15 minutes
 - Mix and serve
 
 [^1]: Alternatively, you can substitute with equal parts of evaporated milk for a lower calorie alternative.
+[^2]: Shredded cheeses typically contain extra starch to help preserve it. This recipe relies on the starch to thicken the sauce.
