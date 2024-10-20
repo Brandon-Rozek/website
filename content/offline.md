@@ -81,6 +81,10 @@ async function listPages() {
 
   return result;
 }
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  listPages()
+});
 </script>
 
 {{< /unsafe >}}
