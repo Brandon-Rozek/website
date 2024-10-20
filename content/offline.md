@@ -46,7 +46,7 @@ async function listPages() {
     if (url.includes('/blog')) {
       console.log(url)
       const post = await cache.match(request);
-      if (post.headers.get('content-type') === 'text/html') {
+      if (post.headers.get('content-type').includes('text/html')) {
         const body = await post.text();
         console.log(body)
         const title = body.match(/<title>(.*)<\/title>/)[1];
