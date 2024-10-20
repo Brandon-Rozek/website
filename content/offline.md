@@ -83,7 +83,9 @@ async function listPages() {
 }
 
 document.addEventListener("DOMContentLoaded", (event) => {
-  listPages()
+  if (navigator && navigator.serviceWorker) {
+    listPages()
+  }
 });
 </script>
 
