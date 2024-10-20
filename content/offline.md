@@ -8,17 +8,19 @@ hidden: true
 Your device is offline. You may have some pages cached for offline viewing,
 otherwise please wait for the internet to reconnect to continue browsing.
 
-[Homepage](/)
-
 {{< unsafe >}}
 
-<ul id='offline-posts'></ul>
+<ul id='offline-posts'>
+  <li><a href='/'>Homepage</a></li>
+</ul>
 
 <script>
 
 function daysAgo(date) {
   date.setHours(0, 0, 0, 0);
   const time = date.getTime();
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
   const now = today.getTime();
   const delta = ((now - time) / 1000 / 60 / 60 / 24) | 0;
 
@@ -35,19 +37,18 @@ function daysAgo(date) {
 
 async function listPages() {
   // Get a list of all of the caches for this origin
-  const cacheNames = await caches.keys();
   const result = [];
+  const cache = await caches.open('v1::website');
 
-  for (const name of cacheNames) {
-    // Open the cache
-    if (name.includes('/blog')) {
-      const cache = await caches.open(name);
-
-      // Get a list of entries. Each item is a Request object
-      for (const request of await cache.keys()) {
-        const url = request.url;
-        const post = await cache.match(request);
+  // Get a list of entries. Each item is a Request object
+  for (const request of await cache.keys()) {
+    const url = request.url;
+    if (url.includes('/blog')) {
+      console.log(url)
+      const post = await cache.match(request);
+      if (post.headers.get('content-type') === 'text/html') {
         const body = await post.text();
+        console.log(body)
         const title = body.match(/<title>(.*)<\/title>/)[1];
         result.push({
           url,
@@ -55,18 +56,14 @@ async function listPages() {
           title,
           visited: new Date(post.headers.get('date')),
         });
-        }
       }
+    }
   }
   
-
   const el = document.querySelector('#offline-posts');
 
   if (result.length) {
     el.innerHTML = result
-      .sort((a, b) => {
-        return a.published.toJSON() < b.published.toJSON() ? 1 : -1;
-      })
       .map((res) => {
         let html = `<li>
         <a href="${res.url}">${res.title}</a>
