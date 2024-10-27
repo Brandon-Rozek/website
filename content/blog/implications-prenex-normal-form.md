@@ -38,7 +38,7 @@ $$
 (\forall x \phi) \implies \psi &\iff \neg (\forall x \phi) \vee \psi \tag{0.1} \\\\
 &\iff (\exists x \neg \phi) \vee \psi \tag{2.2}\\\\
 &\iff \exists x (\neg \phi \vee \psi) \tag{2.1}\\\\
-&\iff \exists x (\neg \phi \implies \psi) \tag{0.1}
+&\iff \exists x (\phi \implies \psi) \tag{0.1}
 \end{align*}
 $$
 **2.** Show that $\phi \implies (\exists x \psi)$ is equivalent to $\exists x (\phi \implies \psi)$
