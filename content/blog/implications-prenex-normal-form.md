@@ -37,11 +37,20 @@ $$
 \begin{align*}
 (\forall x \phi) \implies \psi &\iff \neg (\forall x \phi) \vee \psi \tag{0.1} \\\\
 &\iff (\exists x \neg \phi) \vee \psi \tag{2.2}\\\\
-&\iff \exists x (\neg \phi \vee \psi) \tag{2.1}\\\\
+&\iff \exists x (\neg \phi \vee \psi) \tag{1.2}\\\\
 &\iff \exists x (\phi \implies \psi) \tag{0.1}
 \end{align*}
 $$
-**2.** Show that $\phi \implies (\exists x \psi)$ is equivalent to $\exists x (\phi \implies \psi)$
+**2.** Show that $(\exists x \phi) \implies \psi$ is equivalent to $\forall x (\phi \implies \psi)$
+$$
+\begin{align*}
+(\exists x \phi) \implies \psi &\iff \neg(\exists x \phi) \vee \psi \tag{0.1}\\\\
+&\iff \forall x (\neg \phi) \vee \psi \tag{2.1}\\\\
+&\iff \forall x (\neg \phi \vee \psi) \tag{1.1}\\\\
+&\iff \forall x (\phi \implies \psi) \tag{0.1}
+\end{align*}
+$$
+**3.** Show that $\phi \implies (\exists x \psi)$ is equivalent to $\exists x (\phi \implies \psi)$
 $$
 \begin{align*}
 \phi \implies (\exists x \psi) &\iff \neg \phi \vee (\exists x \psi) \tag{0.1}\\\\
@@ -49,5 +58,15 @@ $$
 &\iff \exists x (\psi \vee \neg \phi) \tag{1.2}\\\\
 &\iff \exists x (\neg \phi \vee \psi) \tag{symmetry}\\\\
 &\iff \exists x (\phi \implies \psi) \tag{0.1}
+\end{align*}
+$$
+**4.** Show that $\phi \implies (\forall x \psi)$ is equivalent to $\forall x (\phi \implies \psi)$
+$$
+\begin{align*}
+\phi \implies (\forall x \psi) &\iff \neg \phi \vee (\forall x \psi) \tag{0.1}\\\\
+&\iff \forall x(\psi) \vee \neg \phi \tag{symmetry} \\\\
+&\iff \forall x (\psi \vee \neg \phi) \tag{1.1}\\\\ 
+&\iff \forall x (\neg \phi \vee \psi) \tag{symmetry} \\\\
+&\iff \forall x (\phi \implies \psi) \tag{0.1}
 \end{align*}
 $$
