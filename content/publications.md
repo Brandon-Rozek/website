@@ -79,6 +79,11 @@ Guiding Hiearchical Reinforcement Learning in Partially Observable Environments 
 
 ## Presentations
 
+VSPursuer: A VSP Verification Tool for MaGIC
+- Authors: *Brandon Rozek* and Andrew Tedder
+- Venue: International Workshop on Variable Sharing Properties and Their Discontents, November 2024.
+- [Program](https://rairlab.github.io/vsp/#brandon) | [Codebase](https://github.com/Brandon-Rozek/vspursuer)
+
 Efficient Parallel Verification of Natural Deduction Proof Graphs
 - Authors: James Oswald and *Brandon Rozek*
 - Venue: Rensselaer Computer Science Graduate Poster Session, April 2023.
