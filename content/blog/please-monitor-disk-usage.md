@@ -11,18 +11,18 @@ You know one of the worst errors to deal with on Linux?
 
 > No space left on device
 
-Why? Because recovery becomes really annoying. Depending on your luck, Linux may try to cache to disk even when it's not possible causing several commands to fail.
+Why? Because recovery becomes really annoying. Depending on your luck, Linux may try to cache to disk even when it's impossible causing quite a few commands to fail.
 
 If you're already in this situation, the best thing you can do is try to locate files to remove.  You can run `du -sh *` in any given directory to see the sizes of files and subfolders.
 
-Common places that hold temporary files which can likely be removed are:
+Common places that hold temporary files which may be removable are:
 
 - `/tmp`
 - `~/.cache`
 
 An even better solution is to not get into this situation in the first place. For that, I introduce a bash script which sends a notification when the disk is getting full!
 
-In order to see the amount of available and total space for a given `$MOUNTPOINT` (for example, `/`), we run the following:
+To see the amount of available and total space for a given `$MOUNTPOINT` (for example, `/`), we run the following:
 
 ```bash
 available_space=$(df "$MOUNTPOINT" | awk 'NR==2 {print $4}')
@@ -66,7 +66,7 @@ fi
 echo "Mountpoint $MOUNTPOINT is currently using ${usage_percent}% of available space."
 ```
 
-The only part left undefined here is the `sendMsg` function. For me, I send a [webhook notification](https://brandonrozek.com/blog/webhook-notifications-on-systemd-service-failure/) to Zulip in order to both get notified and have a log of these messages.
+The only part left undefined here is the `sendMsg` function. For me, I send a [webhook notification](https://brandonrozek.com/blog/webhook-notifications-on-systemd-service-failure/) to Zulip to both get notified and have a log of these messages.
 
 To have this check regularly automatically, we create a systemd service and timer files.
 
