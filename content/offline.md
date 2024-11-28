@@ -49,7 +49,7 @@ async function listPages() {
       if (post.headers.get('content-type').includes('text/html')) {
         const body = await post.text();
         console.log(body)
-        const title = body.match(/<title>(.*)<\/title>/)[1];
+        const title = body.match(/<title>(.*)<\/title>/)[1].replace("| Brandon Rozek", "");
         result.push({
           url,
           post,
