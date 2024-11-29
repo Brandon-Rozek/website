@@ -68,10 +68,17 @@ jobs:
           install -m 600 -D /dev/null ~/.ssh/id_rsa
           echo "${{ secrets.BUILD_SSH_KEY }}" > ~/.ssh/id_rsa
           echo "${{ secrets.HOST_KEY }}" > ~/.ssh/known_hosts
-          echo "Host brandonrozek.com
-              Hostname brandonrozek.com
-              user build
-              IdentityFile ~/.ssh/id_rsa" > ~/.ssh/config
+          cat <<EOL > ~/.ssh/config
+          Host Rozek-Cloud
+            Hostname 173.255.230.230
+            User build
+            IdentityFile ~/.ssh/id_rsa
 
+          Host Rozek-Stratus
+            Hostname 167.253.158.160
+            User build
+            IdentityFile ~/.ssh/id_rsa
+
+          EOL
       - name: Deploy
         run: ./deploy.sh
