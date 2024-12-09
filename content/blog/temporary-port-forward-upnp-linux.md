@@ -1,7 +1,7 @@
 ---
 title: "Temporary Port Forward using UPnP in Linux"
-date: 2024-12-07T21:04:51-05:00
-draft: true
+date: 2024-12-08T21:04:51-05:00
+draft: false
 tags: []
 math: false
 medium_enabled: false
