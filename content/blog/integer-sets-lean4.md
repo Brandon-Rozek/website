@@ -113,7 +113,7 @@ We can show this using a theorem from mathlib!
 exact eq_or_eq_neg_of_sq_eq_sq n 3 H1_1
 ```
 
-[(Quite the long name...)](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/GroupPower/Ring.html#eq_or_eq_neg_of_sq_eq_sq)
+[(Quite the long name...)](https://web.archive.org/web/20240106030817/https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/GroupPower/Ring.html#eq_or_eq_neg_of_sq_eq_sq)
 
 Lastly, we combine the two subset proofs to show equality
 

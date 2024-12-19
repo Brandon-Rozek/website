@@ -6,7 +6,7 @@ tags: [ "Amateur Radio" ]
 medium_enabled: true
 ---
 
-I feel like Ham Radio has been hiding in the background as I move through life. I knew someone that kept a Ham radio in his car, Noah talks about it frequently on his [podcast](http://www.asknoahshow.com/), and it seemed like the next step after [playing with](https://github.com/brandon-rozek/radiotuner)  [software defined radio](https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Telescopic/dp/B011HVUEME/ref=sr_1_3). 
+I feel like Ham Radio has been hiding in the background as I move through life. I knew someone that kept a Ham radio in his car, Noah talks about it frequently on his [podcast](https://asknoahshow.com/), and it seemed like the next step after [playing with](https://github.com/brandon-rozek/radiotuner)  [software defined radio](https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Telescopic/dp/B011HVUEME/ref=sr_1_3). 
 
 One of the things that I think pushed me over to wanting to get my Technician's license is the discovery of [digital data modes](http://www.arrl.org/digital-data-modes). Hams even have their own [email](https://www.winlink.org/)!
 

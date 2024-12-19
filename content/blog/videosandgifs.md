@@ -14,7 +14,7 @@ First of all, I wanted to include a video of a bot playing Pong. The video was a
 
 You just need to replace the `0.1` with the appropriate decimal number to change the speed.
 
-Giphy has a great [writeup](https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/) describing the commands to use in order to make your GIF look nice.
+Giphy has a great [writeup](https://web.archive.org/web/20200109095206/https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/) describing the commands to use in order to make your GIF look nice.
 
 ```bash
 ffmpeg -i inputvideo.mp4 -filter_complex "[0:v] palettegen" palette.png

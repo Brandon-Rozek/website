@@ -25,7 +25,7 @@ From my `subscriptions.xml` here's an example entry:
 <outline text="Jake Bauer" title="Jake Bauer" type="rss" xmlUrl="https://www.paritybit.ca/feed.xml" htmlUrl="https://www.paritybit.ca/"/>
 ```
 
-It looks like I need to extract the `title`, `xmlUrl`, and `htmlUrl` attributes in that specific order. I'll use the same technique from a previous post on [capturing quoated strings](/capturing-quoted-string-sed).
+It looks like I need to extract the `title`, `xmlUrl`, and `htmlUrl` attributes in that specific order. I'll use the same technique from a previous post on [capturing quoated strings](/blog/capturing-quoted-string-sed).
 
 ```bash
 grep "xmlUrl" subscriptions.xml |\

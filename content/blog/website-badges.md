@@ -11,7 +11,7 @@ I've been coming across more [neocities](https://neocities.org/) websites recent
 
 ![Example Badge](/badges/fedora.gif)
 
-These web badges are often small images that shows a product or message. Historically, it dates back to when Netscape in 1996 made the [Netscape Now!](https://sillydog.org/netscape/now.html) badge. 
+These web badges are often small images that shows a product or message. Historically, it dates back to when Netscape in 1996 made the [Netscape Now!](https://web.archive.org/web/20240914044400/https://sillydog.org/netscape/now.html) badge. 
 
 Since then, the Geocities picked it up and standardized many of the web badges to have a pixel size of 88x31. These badges are sometimes animated as GIFs, though they usually don't hold dynamic information.
 

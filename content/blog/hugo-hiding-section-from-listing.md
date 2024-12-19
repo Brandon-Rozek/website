@@ -32,7 +32,7 @@ There are two types of hidden that I can think of:
 - You don't want any pages within unlisted to render at all.
 - You want it to render, but not appear in the section listing
 
-For the first case, [Filosophy suggests](https://filosophy.org/code/disabling-a-specific-section-in-hugo/) to rename the section so that it starts with a dot. For example, `.unlisted`.
+For the first case, [Filosophy suggests](https://web.archive.org/web/20210125075337/https://filosophy.org/code/disabling-a-specific-section-in-hugo/) to rename the section so that it starts with a dot. For example, `.unlisted`.
 
 For the second case, we need to introduce a page variable to help us choose when to display it. Let us call that page variable `hidden`. To set it to true, you need to add it to the frontmatter of `content/unlisted/_index.md`.
 
