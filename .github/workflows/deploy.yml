@@ -69,8 +69,8 @@ jobs:
           echo "${{ secrets.BUILD_SSH_KEY }}" > ~/.ssh/id_rsa
           echo "${{ secrets.HOST_KEY }}" > ~/.ssh/known_hosts
           cat <<EOL > ~/.ssh/config
-          Host Rozek-Cloud
-            Hostname 173.255.230.230
+          Host Rozek-Fog
+            Hostname 208.99.44.108
             User build
             IdentityFile ~/.ssh/id_rsa
 
