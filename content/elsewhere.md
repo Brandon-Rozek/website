@@ -9,6 +9,8 @@ description: Other places you can find Brandon at
 - [Google Scholar](https://scholar.google.com/citations?user=JrgtnwgAAAAJ&hl=en)
 - [IndieWeb](https://indieweb.org/User:Brandonrozek.com)
 - [Keybase](https://keybase.io/brozek)
+- [Keyoxide (HKP)](https://keyoxide.org/hkp/brozek%40brandonrozek.com)
+- [Keyoxide (WKD)](https://keyoxide.org/wkd/brozek%40brandonrozek.com)
 - [NPM](https://www.npmjs.com/~brandonrozek)
 - [OpenStreetMap](https://www.openstreetmap.org/user/Brandon%20Rozek)
 - [ORCiD](https://orcid.org/0000-0002-4537-559X)
