@@ -58,16 +58,20 @@ Please select what kind of key you want:
    (4) RSA (sign only)
    (5) Elgamal (encrypt only)
    (6) RSA (encrypt only)
+  (10) ECC (sign only)
+  (12) ECC (encrypt only)
   (14) Existing key from card
 Your selection? 
 ```
 
 As before, I recommend going with the default signing key option.
-In this case it's `(3) DSA (sign only)`. 
+I recently chose `(10) ECC (sign only)`. 
 
 ```
-DSA keys may be between 1024 and 3072 bits long.
-What keysize do you want? (2048) 
+Please select which elliptic curve you want:
+   (1) Curve 25519 *default*
+   (4) NIST P-384
+   (6) Brainpool P-256
 ```
 
 As before, either stick with the default or tweak based
@@ -92,7 +96,7 @@ sec  rsa3072/3E40C8DB05FCCFAD
      trust: ultimate      validity: ultimate
 ssb  rsa3072/50CC6B37C26F7882
      created: 2022-12-18  expires: 2023-12-18   usage: E 
-ssb  dsa2048/5C1B6FCA0DABB046
+ssb  ed25519/5C1B6FCA0DABB046
      created: 2022-12-18  expires: 2023-12-18   usage: S   
 [ultimate] (1). TestKey
 ```
