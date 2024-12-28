@@ -88,7 +88,7 @@ curl https://brandonrozek.com/cc
 │     Email:  brozek@brandonrozek.com              │
 │       Web:  https://brandonrozek.com             │
 │                                                  │
-│  Mastodon:  https://fossotdon.org/@brozek        │
+│  Mastodon:  https://fosstodon.org/@brozek        │
 │    GitHub:  https://github.com/Brandon-Rozek     │
 │                                                  │
 │      Card:  curl -sL brandonrozek.com/cc         │
