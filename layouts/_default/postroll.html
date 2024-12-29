@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ partial "header.html" . }}
+<main>
+  <article>
+
+    {{ .Content }}
+
+    {{ $items := getJSON "https://api.brandonrozek.com/postroll"}}
+
+    {{ if not $items }}
+        {{ warnf "Failed to fetch postroll items from API." }}
+        {{ $items = dict }}
+    {{ end }}
+
+    {{ with $items.Ok }}{{ range . }}
+        <div style="text-align: left;">
+        <p><a href="{{ .url }}"><strong style="font-size: 1.6rem;">{{ .title }}</strong></a> by {{ .author }}</p>
+        <p>{{ .comment }}</p>
+        </div>
+    {{ end }}{{ end }}
+  </article>
+</main>
+{{ end }}
