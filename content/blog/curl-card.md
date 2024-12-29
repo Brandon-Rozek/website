@@ -1,5 +1,5 @@
 ---
-title: "Curl Card"
+title: "Curl-able Business Cards"
 date: 2024-12-26T09:12:58-05:00
 draft: false
 tags: []
