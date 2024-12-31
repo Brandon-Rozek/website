@@ -9,7 +9,7 @@ The best way to get a hold of me is through email. I advocate the use of [plaint
 
 I support PGP encryption! My current fingerprint is:
 ```
-5F37 830B FA46 FF78 81F4 7AC7 8DF7 9C3D C5FC 658A
+1623 A4C6 0EF7 B422 D2C8 9D5D 0610 BBE9 9025 8018
 ```
 
 You can query my keys through [WKD](https://wiki.gnupg.org/WKD) ([Direct Link](/.well-known/openpgpkey/hu/o1dbwkdx683fduwgzmrbwa3yip41frdn)) and the [OpenPGP Keyserver](https://keys.openpgp.org/search?q=brozek%40brandonrozek.com) ([Direct Link](https://keys.openpgp.org/pks/lookup?op=get&options=mr&search=brozek@brandonrozek.com)).
@@ -30,3 +30,9 @@ This above encryption is performed locally on your machine with [OpenPGP.js](htt
 ## ActivityPub
 
 You're also welcome to message me on Mastodon. My handle is [@brozek@fosstodon.org](https://fosstodon.org/@brozek).
+
+## Verification
+
+Received a PGP-signed message from me? You can use the form below to verify locally that it was signed using my key. This method trusts that a malicious actor hasn't overriden my key on [keys.opengpg.org](https://keys.openpgp.org/).
+
+{{< pgpverify "https://keys.openpgp.org/pks/lookup?op=get&options=mr&search=brozek@brandonrozek.com" >}}
