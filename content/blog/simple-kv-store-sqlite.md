@@ -20,7 +20,7 @@ The SQL to create this table is[^2]
 
 ```sql
 CREATE TABLE config(
-    name TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
     value TEXT
 );
 ```
@@ -123,5 +123,5 @@ $ ./sqlite3_getkv.sh test.db a
 ```
 
 [^1]: Somehow my idea of easier, simpler, and more maintainable is writing bash scripts.
-[^2]: Thanks Justin for helping me simplify it from `NOT NULL UNIQUE` to `PRIMARY KEY`.
+[^2]: Unfortantely, we can't only use the `PRIMARY KEY` qualifier for the name field as sqlite has a [historical quirk](https://www.sqlite.org/quirks.html) which allows primary keys to be null. 
 
