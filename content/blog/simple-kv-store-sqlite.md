@@ -9,14 +9,14 @@ medium_enabled: false
 
 A lot of software nowadays are built for scale. You have to setup a Kubernetes cluster and deploy Redis for duplication in order to have a key-value store. Though for many small projects, I feel like it's overkill. 
 
-I'll show in this post, that we can have a nice simple[^1] key-value store using `sqlite3`. This gives us the benefit that we don't need to use system resources to run a daemon the entire time and only spin up a process when we need it.
+I'll show in this post, that we can have a nice simple[^1] key-value store using `sqlite3`[^2]. This gives us the benefit that we don't need to use system resources to run a daemon the entire time and only spin up a process when we need it.
 
 For our key-value store, we're going to use a table with two columns:
 
 - A key, which we'll call `name`. This will be a unique `TEXT` type that has to be set.
 - The value, which we'll call `value` (Creative, I know.) For our purposes, this will also be a `TEXT` type.
 
-The SQL to create this table is[^2]
+The SQL to create this table is[^3]
 
 ```sql
 CREATE TABLE config(
@@ -123,5 +123,6 @@ $ ./sqlite3_getkv.sh test.db a
 ```
 
 [^1]: Somehow my idea of easier, simpler, and more maintainable is writing bash scripts.
-[^2]: Unfortantely, we can't only use the `PRIMARY KEY` qualifier for the name field as sqlite has a [historical quirk](https://www.sqlite.org/quirks.html) which allows primary keys to be null. 
+[^2]: Justin pointed out that the [CPython implementation](https://github.com/python/cpython/blob/a15a584bf3f94ea11ab9363548c8872251364000/Lib/dbm/sqlite3.py#L7) works similarly.
+[^3]: Unfortantely, we can't only use the `PRIMARY KEY` qualifier for the name field as sqlite has a [historical quirk](https://www.sqlite.org/quirks.html) which allows primary keys to be null. 
 
