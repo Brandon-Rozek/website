@@ -16,7 +16,7 @@
       <h1 class="author title p-name">{{ .Site.Params.Author }}</h1>
       <a style="display: none" rel="me" class="u-url" href="{{ .Site.BaseURL }}"></a>
       <!-- description -->
-      <p class="p-note">
+      <p class="p-note" style="margin-top: -1rem;">
         {{ .Site.Params.description | safeHTML }}
       </p>
       <!-- Site Navigation -->
@@ -28,7 +28,7 @@
         </ul>
       </nav>
       <!-- Social Navigation -->
-      <p>You can also find me on:</p>
+      <p>Feel free to <a href='/contact'>reach out</a>:</p>
       <nav class="nav-home">
         <ul class="space-evenly">
           {{ range .Site.Menus.profile }}

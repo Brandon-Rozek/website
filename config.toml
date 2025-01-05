@@ -16,7 +16,7 @@ ignoreErrors = ["error-remote-getjson"]
     author = "Brandon Rozek"
     avatar = "avatar.jpg"
     favicon = "favicon.ico"
-    description = "PhD Student @ RPI studying Automated Reasoning in AI and Linux Enthusiast."
+    description = "PhD Student @ RPI, Writer of Tidbits, and Linux Enthusiast."
     email = "brozek@brandonrozek.com"
     identities = [
         "https://github.com/brandon-rozek",
@@ -87,13 +87,25 @@ ignoreErrors = ["error-remote-getjson"]
     weight = 20
 
 [[menu.main]]
+    identifier = "postroll"
+    name = "Postroll"
+    pre = "<i class='fas fa-scroll'></i>"
+    url = "/postroll"
+    weight = 30
+
+[[menu.main]]
     identifier = "community"
     name = "Community"
     pre = "<i class='fa fa-user-friends fa-lg'></i>"
     url = "/community/"
     weight = 40
 
-
+[[menu.profile]]
+    identifier = "email"
+    name = "Email"
+    pre = "<i class='fa fa-envelope fa-lg'></i>"
+    url = "mailto:brozek@brandonrozek.com"
+    weight = 75
 
 [[menu.profile]]
     identifier = "mastodon"
@@ -108,18 +120,3 @@ ignoreErrors = ["error-remote-getjson"]
     pre = "<i class='fab fa-github fa-lg'></i>"
     url = "https://github.com/brandon-rozek"
     weight = 85
-
-[[menu.profile]]
-    identifier = "scholar"
-    name = "Google Scholar"
-    pre = "<i class='fas fa-graduation-cap'></i>"
-    url = "https://scholar.google.com/citations?user=JrgtnwgAAAAJ&hl=en&oi=ao"
-    weight = 90
-
-
-[[menu.profile]]
-    identifier = "email"
-    name = "Email"
-    pre = "<i class='fa fa-envelope fa-lg'></i>"
-    url = "mailto:brozek@brandonrozek.com"
-    weight = 95
