@@ -13,11 +13,23 @@
     {{ end }}
 
     {{ with $items.Ok }}{{ range . }}
-        <div style="text-align: left;">
-        <p><a href="{{ .url }}"><strong style="font-size: 1.6rem;">{{ .title }}</strong></a> by {{ .author }}</p>
-        <p>{{ .comment }}</p>
+        <div class="postroll-item" style="text-align: left;">
+          <p><a href="{{ .url }}"><strong style="font-size: 1.7rem;">{{ .title }}</strong></a> by <span class="postroll-author">{{ .author }}</span></p>
+          <p>{{ .comment }}</p>
+          <p>Added: <span class="postroll-date"> {{ .dateadded }} </span></p>
         </div>
+        <hr/>
     {{ end }}{{ end }}
+    <style>
+      .postroll-item {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: left;
+      }
+      .postroll-author, .postroll-date {
+        color: #800000;
+      }
+    </style>
   </article>
 </main>
 {{ end }}
