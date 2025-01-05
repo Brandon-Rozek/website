@@ -16,7 +16,7 @@ ignoreErrors = ["error-remote-getjson"]
     author = "Brandon Rozek"
     avatar = "avatar.jpg"
     favicon = "favicon.ico"
-    description = "PhD Student @ RPI, Writer of Tidbits, and Linux Enthusiast."
+    description = "PhD Student @ RPI, Writer of Tidbits, and Linux Enthusiast"
     email = "brozek@brandonrozek.com"
     identities = [
         "https://github.com/brandon-rozek",

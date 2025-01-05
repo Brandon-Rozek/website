@@ -1,5 +1,5 @@
 ---
-Title: Locations Visited
+Title: Places Visited
 showthedate: false
 ---
 
