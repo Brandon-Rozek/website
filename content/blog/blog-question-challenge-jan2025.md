@@ -68,8 +68,8 @@ My blog is coming up on its 10-year anniversary this April which is mind-bogglin
 
 **Retrospectives:** With the blog anniversary coming up, I'm thinking about looking at some older pieces and see how my perspective has changed over time. I'm also open to talking more about my life in general.
 
-**State of TOPIC:** Back in 2019, what services did I run on my homelab? Unfortunately, I can't recall! With all the technical posts, we can likely infer that I ran a service that I talked about.  However, it would be much simpler and likely more useful to people if I cataloged everything that I'm doing at a particular moment for TOPIC. Currently thinking of my website and homelab.
+**State of TOPIC:** Back in 2019, what services did I run on my homelab? Unfortunately, I can't recall! With all the technical posts, we can likely infer that I ran a service that I talked about.  However, it would be much simpler and likely more useful to people if I cataloged everything that I'm doing at a particcular moment for TOPIC. Currently thinking of my website and homelab.
 
 ## Who will participate next?
 
-I tag [Ethan Martin](https://emar10.dev/), [Zak](https://html-chunder.neocities.org/), and [bacardi55](bacardi55). Hopefully you'll take part, and if you do, I'll link your response below.
+I tag [Ethan Martin](https://emar10.dev/), [Zak](https://html-chunder.neocities.org/), and [bacardi55](https://bacardi55.io/). Hopefully you'll take part, and if you do, I'll link your response below.
