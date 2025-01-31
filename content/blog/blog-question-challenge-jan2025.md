@@ -73,3 +73,8 @@ My blog is coming up on its 10-year anniversary this April which is mind-bogglin
 ## Who will participate next?
 
 I tag [Ethan Martin](https://emar10.dev/), [Zak](https://html-chunder.neocities.org/), and [bacardi55](https://bacardi55.io/). Hopefully you'll take part, and if you do, I'll link your response below.
+
+**Update**:
+- [bacardi55's response](https://bacardi55.io/2025/01/31/blog-question-challenge-jan-2025/)
+
+
