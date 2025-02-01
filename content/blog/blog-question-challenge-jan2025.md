@@ -76,5 +76,6 @@ I tag [Ethan Martin](https://emar10.dev/), [Zak](https://html-chunder.neocities.
 
 **Update**:
 - [bacardi55's response](https://bacardi55.io/2025/01/31/blog-question-challenge-jan-2025/)
+- [Zak's response](https://html-chunder.neocities.org/blog/blogging/)
 
 
