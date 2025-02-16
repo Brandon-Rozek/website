@@ -49,7 +49,7 @@ medium_enabled: false
     "icon": "{{ .Site.BaseURL }}img/{{ .Site.Params.avatar }}",
     "language": "en-US",
     "authors": [
-        {{with $.Site.Author.name }}
+        {{with $.Site.Params.name }}
             { "name": "{{ . }}" }
         {{ end }}
     ],
@@ -71,7 +71,7 @@ My `list.json.json` follows the [JSON Feed](https://jsonfeed.org/) specification
     "url": "{{ .Permalink }}",
     "title": {{ .Title | jsonify }},
     "authors": [
-        {{with $.Site.Author.name }}
+        {{with $.Site.Params.Author }}
             { "name": "{{ . }}" }
         {{ end }}
     ],

@@ -204,7 +204,17 @@ We'll have to add the following contents to `theme/layouts/shortcodes/displayOnl
 {{ $url := urls.Parse (.Get 0) }}
 {{ $status_id := index (last 1 (split $url.Path "/")) 0 }}
 {{ $api_url := printf "%s://%s/api/v1/statuses/%s" $url.Scheme $url.Host $status_id }}
-{{ $dataJ := getJSON $api_url }}
+{{ $dataJ := dict }}
+{{ $url := $api_url }}
+{{ with try (resources.GetRemote $url) }}
+  {{ with .Err }}
+    {{ errorf "Unable to get remote resource %s: %s" $url . }}
+  {{ else with .Value }}
+    {{ $dataJ = . | transform.Unmarshal }}
+  {{ else }}
+    {{ errorf "Unable to get remote resource %s" $url }}
+  {{ end }}
+{{ end }}
 
 {{ with $dataJ }}
 {{ if ne .content "" }}

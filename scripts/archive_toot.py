@@ -11,7 +11,7 @@ import argparse
 import json
 import sys
 
-SAVE_DIR = "static/data/toots"
+SAVE_DIR = "assets/data/toots"
 
 # Grab arguments
 parser = argparse.ArgumentParser(description="Save a toot")

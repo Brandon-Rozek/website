@@ -1,0 +1,27 @@
+{{/* Get remote data. */}}
+{{ $items := dict }}
+{{ $url := "https://api.brandonrozek.com/postroll" }}
+{{ with try (resources.GetRemote $url ) }}
+  {{ with .Err }}
+    {{ errorf "Unable to get remote resource %s: %s" $url . }}
+  {{ else with .Value }}
+    {{ $items = . | transform.Unmarshal }}
+  {{ else }}
+    {{ errorf "Unable to get remote resource %s" $url }}
+  {{ end }}
+{{ end }}
+
+{{ range $items.Ok }}
+    {{ $content := dict "mediaType" "text/markdown" "value" .comment }}
+    {{ $dates := dict "date" (time.AsTime .dateadded) }}
+    {{ $params := dict "url" .url "author" .author }}
+    {{ $page := dict
+      "content" $content
+      "dates" $dates
+      "kind" "page"
+      "params" $params
+      "path" .title
+      "title" .title
+    }}
+    {{ $.AddPage $page }}
+{{ end }}

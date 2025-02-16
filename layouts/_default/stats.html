@@ -81,7 +81,17 @@
         <tr>
           <td>Total Wikipedia Edits</td>
           <td>
-            {{ $data := getJSON "https://en.wikipedia.org/w/api.php?action=query&list=users&ususers=BrandonRozek&usprop=editcount&format=json" }}
+            {{ $data := dict }}
+            {{ $url := "https://en.wikipedia.org/w/api.php?action=query&list=users&ususers=BrandonRozek&usprop=editcount&format=json" }}
+            {{ with try (resources.GetRemote $url) }}
+              {{ with .Err }}
+                {{ errorf "Unable to get remote resource %s: %s" $url . }}
+              {{ else with .Value }}
+                {{ $data = .Content | transform.Unmarshal }}
+              {{ else }}
+                {{ errorf "Unable to get remote resource %s" $url }}
+              {{ end }}
+            {{ end }}
             {{ range first 1 $data.query.users }}
             {{ .editcount }}
             {{ end }}
@@ -90,7 +100,17 @@
         <tr>
           <td>Total OpenStreetMap Edits</td>
           <td>
-            {{ $data := getJSON "https://api.openstreetmap.org/api/0.6/user/16068861.json" }}
+            {{ $data := dict }}
+            {{ $url := "https://api.openstreetmap.org/api/0.6/user/16068861.json" }}
+            {{ with try (resources.GetRemote $url) }}
+              {{ with .Err }}
+                {{ errorf "Unable to get remote resource %s: %s" $url . }}
+              {{ else with .Value }}
+                {{ $data = .Content | transform.Unmarshal }}
+              {{ else }}
+                {{ errorf "Unable to get remote resource %s" $url }}
+              {{ end }}
+            {{ end }}
             {{ $data.user.changesets.count }}
           </td>
         </tr>

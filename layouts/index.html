@@ -56,7 +56,18 @@
         <p><strong>Recorded Walk: </strong><a href="{{ .Permalink }}">{{ .Title }}</a></p>
       {{ end }}
 
-      {{ $data := getJSON "https://en.wikipedia.org/w/api.php?action=query&format=json&list=usercontribs&ucuser=BrandonRozek&uclimit=1" }}
+
+      {{ $data := dict }}
+      {{ $url := "https://en.wikipedia.org/w/api.php?action=query&format=json&list=usercontribs&ucuser=BrandonRozek&uclimit=1" }}
+      {{ with try (resources.GetRemote $url) }}
+        {{ with .Err }}
+          {{ errorf "Unable to get remote resource %s: %s" $url . }}
+        {{ else with .Value }}
+          {{ $data = .Content | transform.Unmarshal }}
+        {{ else }}
+          {{ errorf "Unable to get remote resource %s" $url }}
+        {{ end }}
+      {{ end }}
       {{ range first 1 $data.query.usercontribs }}
         <p><strong>Last Wikipedia Edit: </strong><a href="https://en.wikipedia.org/?curid={{ .pageid }}">{{ .title }}</a></p>
       {{ end }}

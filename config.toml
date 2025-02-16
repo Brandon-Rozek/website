@@ -3,7 +3,9 @@ languageCode = "en-us"
 title = "Brandon Rozek"
 theme = "pulp"
 enableGitInfo = true
-ignoreErrors = ["error-remote-getjson"]
+
+[security.http]
+mediaTypes = ['^application/json']
 
 [taxonomies]
   series = "series"

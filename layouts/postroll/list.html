@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{ partial "header.html" . }}
+<main>
+  <article>
+
+    {{ .Content }}
+
+    {{ range .Pages }}
+    <div class="postroll-item" style="text-align: left;">
+      <p><a href="{{ .Params.url }}"><strong style="font-size: 1.7rem;">{{ .Title }}</strong></a> by <span class="postroll-author">{{ .Params.author }}</span></p>
+      <p>{{ .Content }}</p>
+      {{ $singlePageDateFormat := .Site.Params.singlePageDateFormat | default "January 2, 2006"}}
+      {{ $pubdate := .Date.Format $singlePageDateFormat }}
+      <p>Added: <span class="postroll-date"> {{ $pubdate }} </span></p>
+    </div>
+    <hr/>
+    {{ end }}
+    <style>
+      .postroll-item {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: left;
+      }
+      .postroll-author, .postroll-date {
+        color: #800000;
+      }
+    </style>
+  </article>
+</main>
+{{ end }}
