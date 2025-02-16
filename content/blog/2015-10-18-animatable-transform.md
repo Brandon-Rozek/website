@@ -29,112 +29,83 @@ This is not a comprehensize list. If you want one of those, please check out MDN
 
 Animatable: Transform goes with a [CodePen demo](http://codepen.io/brandonrozek/full/ojoMyE){.broken_link} I made. Please check it out, as I will be referencing it later on in the post.
 
-### <a href="#rotate()" name="rotate()"></a>rotate() {#rotate()}
+### rotate()
 
 The rotate() function moves the element around a fixed point as defined by the [transform-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin) property. In the Codepen demo (#1), the star continously rotates 360 degrees.
 
-<pre><code class="language-css">@keyframes rotate {
-
+```css
+@keyframes rotate {
   to { transform: rotate(360deg);}
-
 }
 
 .rotate {
-
   width: 6rem;
-
   height: 6rem;
-
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Star_full.svg/2000px-Star_full.svg.png");
-
   background-size: cover;
-
   transform: none;
-
   animation: rotate 1s ease 0s infinite;
 }
-</code></pre>
+```
 
-### <a href="#scale()" name="scale()"></a>scale() {#scale()}
+### scale()
 
 Scale(sx, sy) modifies the size of the element by taking 2 arguments: sx and sy. Where sx is the multiplier that scales the element in the x-direction while sy is the multiplier that scales the element in the y-direction. In the CodePen demo (#2), the little ninja man scales to half his size and back to normal again.
 
-<pre><code class="language-css">@keyframes scale {
-
+```css
+@keyframes scale {
   to { transform: scale(.5); }
-
 }
 
 .scale {
-
   width: 6rem;
-
   height: 6rem;
-
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/71/Monocromaticman.JPG");
-
   background-size: contain;
-
   background-repeat: no-repeat;
-
   transform: none;
-
   animation: scale 1s ease 0s infinite alternate;
 }
-</code></pre>
+```
 
-### <a href="#skew()" name="skew()"></a>skew() {#skew()}
+### skew()
 
 Skew distorts the element by moving each point to a certain angle determined by it’s distance from the origin. In the CodePen demo (#3), the square skews -20 degrees, making it appear as a parallelogram.
 
-<pre><code class="language-css">@keyframes skew {
-
+```css
+@keyframes skew {
   to { transform: skew(-20deg); }
-
 }
 
 .skew {
-
   height: 6rem;
-
   width: 6rem;
-
   background-color: lightblue;
-
   transform: none;
-
   animation: skew .75s ease 0s infinite alternate;
 }
-</code></pre>
+```
 
-### <a href="#translate()" name="translate()"></a>translate() {#translate()}
+### translate()
 
 Transform(tx, ty) moves the element as specified by it’s two parameters tx and ty. Tx tells the browser how many units to move it in the x direction while ty tells the browser how many units to move the element in the y direction. In the CodePen demo (#4), the car moves forward 10rem and back again.
 
-<pre><code class="language-css">@keyframes translate {
-
+```css
+@keyframes translate {
   to { transform: translate(10rem);}
-
 }
 
 .translate {
-
   height: 6rem;
-
   width: 6rem;
-
   background-image: url("http://res.freestockphotos.biz/pictures/15/15685-illustration-of-a-red-cartoon-car-pv.png");
-
   background-size: contain;
-
   background-repeat: no-repeat;
-
   transform: none;
-
   animation: translate 1s ease 0s infinite alternate;
 }
-</code></pre>
+```
 
-### <a href="#conclusion" name="conclusion"></a>Conclusion {#conclusion}
+### Conclusion
 
 It is now the end of the Animatable series. I am sad to see this first completed series of mine go. It’s okay though, I’m bound to think of another series to write for you guys in no time. My goal in Animatable, is to show you (and me) what is possible using CSS animations. With this small reference completed, we have a good overview of the different tools available. Now with our new toolbelt, go out and craft meaningful experinces!

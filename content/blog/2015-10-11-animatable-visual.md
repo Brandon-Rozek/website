@@ -19,7 +19,7 @@ Hello everyone! This is part 5 of my series on animation. Today’s post will be
 
 <!--more-->
 
-I’ll give a shout-out to <http://csstriggers.com>, if you are interested in [CSS Animation performance](https://blogs.adobe.com/webplatform/2014/03/18/css-animations-and-transitions-performance/), then check them out to see what triggers a repaint and/or reflow. Take a look at the other posts in this series!
+I’ll give a shout-out to [http://csstriggers.com](http://csstriggers.com), if you are interested in [CSS Animation performance](https://blogs.adobe.com/webplatform/2014/03/18/css-animations-and-transitions-performance/), then check them out to see what triggers a repaint and/or reflow. Take a look at the other posts in this series!
 
   * Part 1 — [Animatable: Border](https://brandonrozek.com/2015/05/animatable-border/)
   * Part 2 — [Animatable: Box Model](https://brandonrozek.com/2015/09/animatable-box-model/)
@@ -28,88 +28,63 @@ I’ll give a shout-out to <http://csstriggers.com>, if you are interested in [C
 
 This post goes with a [Codepen demo](http://codepen.io/brandonrozek/full/rOzeyO/){.broken_link} I made, I’ll reference it later in this post.
 
-### <a href="#color" name="color"></a>color {#color}
+### Color
 
   * Accepts any [color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) value
-  * Typically inherits it&#8217;s color from the parent element
+  * Typically inherits its color from the parent element
 
-The color property sets the color of an element’s text content and its decoration. During the animation, the browser sees the colors in their red, green, and blue (rgb) components, then increments/decrements those values until it reaches the color it’s animating to. For example, in the Codepen demo (#1), the color of the text is changing from <code class="language-css">red</code> or <code class="language-css">rgb(255, 0, 0)</code> to <code class="language-css">green</code> or <code class="language-css">rgb(0, 255, 0)</code>. Meaning the red component is going from 255 to 0 and the green component is going from 0 to 255 during the animation.
+The color property sets the color of an element’s text content and its decoration. During the animation, the browser sees the colors in their red, green, and blue (rgb) components, then increments/decrements those values until it reaches the color it’s animating to. For example, in the Codepen demo (#1), the color of the text is changing from `red` or `rgb(255, 0, 0)` to `green` or `rgb(0, 255, 0)`. Meaning the red component is going from 255 to 0 and the green component is going from 0 to 255 during the animation.
 
-<pre><code class="language-css">@keyframes color {
-
+```css
+@keyframes color {
   to { color: green; }
-
 }
 
 .color {
-
   font-size: 2rem;
-
   color: red;
-
   text-decoration: underline;
-
   animation: color 1.5s ease-in 0s infinite alternate;
-
 }
-</code></pre>
+```
 
-### <a href="#opacity" name="opacity"></a>opacity {#opacity}
+### opacity
 
   * Accepts any number from [0, 1]
   * Initial Value: 1
 
-Opacity sets the transparency of an element and it’s decendants. Unlike <code class="language-css">display: none;</code>, when the element is <code class="language-css">opacity: 0;</code> the element still holds it’s space on the page. In the Codepen demo (#2), you can see the element and it’s children fading out.
+Opacity sets the transparency of an element and it’s decendants. Unlike `display: none;`, when the element is `opacity: 0;` the element still holds it’s space on the page. In the Codepen demo (#2), you can see the element and it’s children fading out.
 
-<pre><code class="language-css">@keyframes opacity {
-
+```css
+@keyframes opacity {
   to { opacity: 0; }
-
 }
 
 .opacity {
-
   height: 5rem;
-
   width: 5rem;
-
   background-color: #cd86e4;
-
   opacity: 1;
-
   animation: opacity 2s linear 0s infinite alternate;
-
 }
 
 .opacity div {
-
   margin-left: auto;
-
   margin-right: auto;
-
   height: 3rem;
-
   width: 3rem;
-
   background-color: lightblue;
-
 }
 
 .opacity div div {
-
   margin-left: auto;
-
   margin-right: auto;
-
   height: 1rem;
-
   width: 1rem;
-
   background-color: #00b300;
-
 }
-</code></pre>
+```
 
-### <a href="#conclusion" name="conclusion"></a>Conclusion {#conclusion}
+### Conclusion
 
 I used to work on a chat application called Babbler. In it, I used opacity to fade in the messages as the user recieved them. With all these different types of animations, you can visually show the user what’s going on in your website/application. Doing this series helps me, (as well as you, I hope) recognize all the different properties and possibilities for animation. This is the second to last part of this series, meaning that the next part is the finale. I’m somewhat sad to see this series ending but excited at the same time. Until next time, have fun animating. 🙂

@@ -24,9 +24,9 @@ Javascript, like most other programming languages, include ways to run blocks of
 
 This post is part of my lecture series for Math I/O. There is no pre-reading for this lecture.
 
-### <a href="#if-statement" name="if-statement"></a>If Statement {#if-statement}
+### If Statement
 
-To run a block of code when a condition is true, use an <code class="language-javascript">if</code> statement.
+To run a block of code when a condition is true, use an `if` statement.
 
 ```javascript
 if (condition) {
@@ -34,7 +34,7 @@ if (condition) {
 }
 ```
 
-You can also run a block of code when a condition is false using the <code class="language-javascript">else</code> statement.
+You can also run a block of code when a condition is false using the `else` statement.
 
 ```javascript
 if (condition) {
@@ -44,9 +44,9 @@ if (condition) {
 }
 ```
 
-### <a href="#switch-statement" name="switch-statement"></a>Switch statement {#switch-statement}
+### Switch statement
 
-If you want to check a variable for **equality** against multiple different cases, use a <code class="language-javascript">switch</code> statement.
+If you want to check a variable for **equality** against multiple different cases, use a `switch` statement.
 
 ```javascript
 switch (variable) {
@@ -64,9 +64,9 @@ switch (variable) {
 
 The default statement runs when the variable doesn’t equal any of the cases.
 
-### <a href="#while-loop" name="while-loop"></a>While loop {#while-loop}
+### While loop
 
-To run a block of code over and over again until a condition is false, use a <code class="language-javascript">while</code> loop.
+To run a block of code over and over again until a condition is false, use a `while` loop.
 
 ```javascript
 while (condition) {
@@ -74,11 +74,11 @@ while (condition) {
 }
 ```
 
-Don’t forget to include something in the loop that will eventually make the condition <code class="language-javascript">false</code>, otherwise you run into an infinite loop. (Which is a loop that never stops repeating itself; most likely crashing your browser)
+Don’t forget to include something in the loop that will eventually make the condition `false`, otherwise you run into an infinite loop. (Which is a loop that never stops repeating itself; most likely crashing your browser)
 
-### <a href="#for-loop" name="for-loop"></a>For loop {#for-loop}
+### For loop
 
-If you want to run something a certain amount of times, use a &#8220;<code class="language-javascript">for"</code> loop. For loops can be broken down into three components: an initiating statement, a condition, and a statement that runs after every loop.
+If you want to run something a certain amount of times, use a `for` loop. For loops can be broken down into three components: an initiating statement, a condition, and a statement that runs after every loop.
 
 ```javascript
 for (var i = 0; i &lt; 5; i++) {
@@ -86,9 +86,9 @@ for (var i = 0; i &lt; 5; i++) {
 }
 ```
 
-Here you have the initiating statement of <code class="language-javascript">var i = 0</code>. From there you check, is <code class="language-javascript">i</code> less than 5? Yes, so then we <code class="language-javascript">doSomething();</code>. After we <code class="language-javascript">doSomething();</code>, we add 1 to <code class="language-javascript">i</code>. Now <code class="language-javascript">i</code> equals 2. Is <code class="language-javascript">i</code> still less than 5? Yes, so we <code class="language-javascript">doSomething();</code>. Then we add 1 to <code class="language-javascript">i</code> again. This loop will keep happening until <code class="language-javascript">i</code> is not less than 5.
+Here you have the initiating statement of `var i = 0`. From there you check, is `i` less than 5? Yes, so then we `doSomething();`. After we `doSomething();`, we add 1 to `i`. Now `i` equals 2. Is`i` still less than 5? Yes, so we `doSomething();`. Then we add 1 to `i` again. This loop will keep happening until `i` is not less than 5.
 
-### <a href="#conclusion" name="conclusion"></a>Conclusion {#conclusion}
+### Conclusion
 
 Having different control/conditional statements helps keep the state of any application you’re making. Did the user say not to notify them? Then don’t, otherwise (else) notify them. That’s all I have to say for this week. Hope this post helps you get a little more used to this big world called programming.
 

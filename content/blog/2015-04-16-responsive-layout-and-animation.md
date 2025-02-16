@@ -17,6 +17,7 @@ mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
   - 'a:1:{s:6:"author";a:0:{}}'
 tags: ["Web", "CSS"]
+math: true
 ---
 I saw [Mike Riethmuller&#8217;s](http://madebymike.com.au/) precision typography [pen](http://codepen.io/MadeByMike/pen/YPJJYv){.broken_link}, and was highly impressed. I think the equation used has other purposes as well
 
@@ -26,7 +27,13 @@ Side Note: I changed the form of the equation to something similar to y = mx + b
 
 #### Responsive Layout
 
-There are many occasions where I want an element on the page to move between two points. The navigation in the header of my site (at the time of writing) is a great example of this. So knowing the two points I want it to lie between and having the screen width as the variable, I can plug in&#8230; [<img class="aligncenter size-full wp-image-58" src="https://brandonrozek.com/wp-content/uploads/2015/04/responsivelayoutequation.gif" alt="f(x) = (100 * (b - a)/(d - c))X + (ad - bc) / (d - c)" width="219" height="36" />](https://brandonrozek.com/wp-content/uploads/2015/04/responsivelayoutequation.gif){.broken_link} where a is the start pixel b is the end pixel c is the start media query d is the end media query and X is the screen width out of 100 otherwise known as 1vw \*\*Don't forget to keep track of your units!! Whether it's px/rem/em/etc.\*\* Say I want to push a box towards the right a minimum of 5px, a maximum of 20px and for the push to vary between the widths 400-800px. Then I would write&#8230;
+There are many occasions where I want an element on the page to move between two points. The navigation in the header of my site (at the time of writing) is a great example of this. So knowing the two points I want it to lie between and having the screen width as the variable, I can plug in:
+
+$$$
+f(x) = (100 * (b - a)/(d - c))X + (ad - bc) / (d - c)
+$$$
+
+where a is the start pixel b is the end pixel c is the start media query d is the end media query and X is the screen width out of 100 otherwise known as 1vw \*\*Don't forget to keep track of your units!! Whether it's px/rem/em/etc.\*\* Say I want to push a box towards the right a minimum of 5px, a maximum of 20px and for the push to vary between the widths 400-800px. Then I would write&#8230;
 
 ```css
 @media (min-width: 400px) and (max-width: 800px) {
@@ -66,7 +73,14 @@ This is exactly like Mike's pen, but instead he uses the equation to adjust the 
 
 #### Animation
 
-This is where the majority of my research went towards. It's not as practical as say positioning an element is but I find it interesting. Like, what if I can manipulate the acceleration of the function? [<img class="aligncenter size-full wp-image-62" src="https://brandonrozek.com/wp-content/uploads/2015/04/accelerationequation.gif" alt="f(x) = ((b - a) / (d^n - c^n))X^n + (ad^n - bc^n) / (d^n - c^n) " width="202" height="36" />](https://brandonrozek.com/wp-content/uploads/2015/04/accelerationequation.gif){.broken_link} Where a is the start unit b is the end unit c is the start time d is the end time n is the acceleration modifier and X is time The interesting part of the function here is the n. If I keep n at 1, then the acceleration is constant. If it's less than one, then it's fast in the beginning and slows down at the end. If it's greater than one, then it's the opposite. I also made a little pen [here](http://codepen.io/brandonrozek/pen/RNzdOV){.broken_link} to demo this for you.
+This is where the majority of my research went towards. It's not as practical as say positioning an element is but I find it interesting. Like, what if I can manipulate the acceleration of the function?
+
+$$$
+f(x) = ((b - a) / (d^n - c^n))X^n + (ad^n - bc^n) / (d^n - c^n) 
+
+$$$
+
+Where a is the start unit b is the end unit c is the start time d is the end time n is the acceleration modifier and X is time The interesting part of the function here is the n. If I keep n at 1, then the acceleration is constant. If it's less than one, then it's fast in the beginning and slows down at the end. If it's greater than one, then it's the opposite. I also made a little pen [here](http://codepen.io/brandonrozek/pen/RNzdOV) to demo this for you.
 
 #### Conclusion
 
