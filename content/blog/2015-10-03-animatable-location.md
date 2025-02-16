@@ -19,7 +19,7 @@ mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
 tags: ["Web", "CSS"]
 ---
-Animating the location of objects is one of the most common types of animation. It&#8217;s interesting to animate this way because you need to keep in mind how each of the element&#8217;s interact with each other to constitute a page.
+Animating the location of objects is one of the most common types of animation. It's interesting to animate this way because you need to keep in mind how each of the elements interact with each other to constitute a page.
 
 <!--more-->
 
@@ -29,7 +29,7 @@ This is part 4 of my series on animation. Check out the other parts of this seri
   * Part 2 — [Animatable: Box Model](https://brandonrozek.com/2015/09/animatable-box-model/)
   * Part 3 — [Animatable: Text](https://brandonrozek.com/2015/10/animatable-text/)
 
-This post goes along well with this [Codepen demo](http://codepen.io/brandonrozek/full/NGbWzo/){.broken_link}, I&#8217;ll reference it multiple times in this post. Now onto animations!
+This post goes along well with this [Codepen demo](http://codepen.io/brandonrozek/full/NGbWzo/){.broken_link}, I'll reference it multiple times in this post. Now onto animations!
 
 ### background-position
 
@@ -37,87 +37,60 @@ This post goes along well with this [Codepen demo](http://codepen.io/brandonroze
   * Offset-x | Offset-Y
   * Initial Value: 0% 0%
 
-Background-position sets where the background is relative to it&#8217;s background-origin. In the Codepen demo (#1), you can see the background image scrolling horizontally.
+Background-position sets where the background is relative to its background-origin. In the Codepen demo (#1), you can see the background image scrolling horizontally.
 
-<pre><code class="language-css"> 
+```css
 @keyframes background-position {
-
  to { background-position: 100% 0%; }
-
 }
 
 .background-position {
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d3/Tajik_mountains_edit.jpg);
-
   height: 6rem;
-
   width: 8rem;
-
   background-size: 200% 100%;
-
   background-position: 0% 0%;
-
   animation: background-position 5s linear .1s infinite alternate;
-
 }
-</code></pre>
+```
+
+
 
 ### position with left, right, top, bottom
 
   * Accepts length, percentage, or some keywords
   * Initial value: auto
 
-The left, right, top, and bottom properties require the position to be set to something other than static. When you add a value to any of these properties just imagine that value pushing the element on that side. For example: for &#8220;left: 2rem&#8221; imagine that the element is being pushed on the left side by 2rem, making it move to the right 2rem. In the demo (#2), the box is being pushed in a square path.
+The left, right, top, and bottom properties require the position to be set to something other than static. When you add a value to any of these properties just imagine that value pushing the element on that side. For example: for `left: 2rem` imagine that the element is being pushed on the left side by 2rem, making it move to the right 2rem. In the demo (#2), the box is being pushed in a square path.
 
-<pre><code class="language-css">
+```css
 @keyframes position {
-
   25% {
-
     top: 0;
-    
     left: 3rem;
-
   }
 
   50% {
-
     top: 3rem;
-    
     left: 3rem;
-
   }
 
   75% {
-
     top: 3rem;
-    
     left: 0;
-
   }
-
 }
 
 .position {
-
   position: relative;
-
   top: 0;
-
   left: 0;
-
   height: 3rem;
-
   width: 3rem;
-
   background-color: lightblue;
-
   animation: position 1.5s ease .1s infinite;
-
 }
-</code></pre>
-
- 
+```
 
 ### vertical-align
 
@@ -126,23 +99,18 @@ The left, right, top, and bottom properties require the position to be set to so
 
 Vertical-align sets how vertically the inline element or text is compared to the baseline. In the Codepen demo (#3), the question has its vertical align being manipulated which causes the &#8220;Maybe&#8221; to bounce up and down.
 
-<pre><code class="language-css">
+```css
 @keyframes vertical-align {
-
   to { vertical-align: 1rem; }
-
 }
 
 .vertical-align {
-
   font-size: 1.5rem;
-
   vertical-align: 0;
-
   animation: vertical-align 1s ease-out .1s infinite alternate;
-
 }
-</code></pre>
+```
+
 
 ### z-index
 
@@ -151,78 +119,58 @@ Vertical-align sets how vertically the inline element or text is compared to the
 
 If elements overlap, z-index determines which element appears on top. If the z-index is the same, then it is controlled by source order. In the demo (#4), The z-index of the biggest box changes, revealing what is under it.
 
-<pre><code class="language-css">
+```css
 @keyframes z-index {
-
   to { z-index: 0; }
-
 }
 
 .z-index {
-
   position: absolute;
-
   left: 1rem;
-
   display: inline-block;
-
 }
 
 .z-index:nth-child(1) {
-
   height: 1rem;
-
   width: 1rem;
-
   background-color: lightgreen;
-
   z-index: 4;
-
 }
 
 .z-index:nth-child(2) {
-
   height: 2rem;
-
   width: 2rem;
-
   background-color: #F4FFA4;
-
   z-index: 3;
-
 }
 
 .z-index:nth-child(3) {
-
   height: 3rem;
-
   width: 3rem;
-
   background-color: #DEB0ED;
-
   z-index: 2;
-
 }
 
 .z-index:nth-child(4) {
-
   height: 4rem;
-
   width: 4rem;
-
   background-color: #D8EADF;
-
   z-index: 5;
-
   animation: z-index 1s ease .1s infinite alternate;
-
 }
-</code></pre>
+```
 
 ### Conclusion
 
-By animating the location of an element, it opens up a whole bunch of different opportunities. Using motion, you can signify that the user has indeed pressed the button, instead of what would otherwise leave them there clicking on the button multiple times thinking that nothing has happened. Using motion, you can bring a webpage that would&#8217;ve otherwise been boring to life. Use these animations to work, and I&#8217;ll be back with another animatable post soon!
+By animating the location of an element, it opens up a whole bunch of different opportunities. Using motion, you can signify that the user has indeed pressed the button, instead of what would otherwise leave them there clicking on the button multiple times thinking that nothing has happened. Using motion, you can bring a webpage that would've otherwise been boring to life. Use these animations to work, and I'll be back with another animatable post soon!
 
 #### The links
 
-<https://developer.mozilla.org/en-US/docs/Web/CSS/background-position> <https://developer.mozilla.org/en-US/docs/Web/CSS/left> <https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align> <https://developer.mozilla.org/en-US/docs/Web/CSS/z-index> <https://docs.webplatform.org/wiki/css/properties/background-position>{.broken_link} <https://docs.webplatform.org/wiki/css/properties/left>{.broken_link} <https://docs.webplatform.org/wiki/css/properties/vertical-align>{.broken_link} <https://docs.webplatform.org/wiki/css/properties/z-index>{.broken_link}
+- https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+- https://developer.mozilla.org/en-US/docs/Web/CSS/left
+- https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
+- https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+- https://docs.webplatform.org/wiki/css/properties/background-position
+- https://docs.webplatform.org/wiki/css/properties/left
+- https://docs.webplatform.org/wiki/css/properties/vertical-align
+- https://docs.webplatform.org/wiki/css/properties/z-index

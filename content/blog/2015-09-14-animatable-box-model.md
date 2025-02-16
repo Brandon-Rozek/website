@@ -18,7 +18,7 @@ mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
 tags: ["Web", "CSS"]
 ---
-This post is part 2 of an animation series I am doing; you can read part 1 [here](https://brandonrozek.com/2015/05/animatable-border/). In this post, we&#8217;ll look at the different parts of the box model (margin, padding, height, and width) and see how they can be animated.
+This post is part 2 of an animation series I am doing; you can read part 1 [here](https://brandonrozek.com/2015/05/animatable-border/). In this post, we'll look at the different parts of the box model (margin, padding, height, and width) and see how they can be animated.
 
 <!--more-->
 
@@ -30,37 +30,26 @@ The W3C has a great starting reference for the [CSS Box Model](http://www.w3.org
   * If you use 4 values, the first value is the top margin and the rest follow in a clockwise fashion
   * Initial value: 0
 
-Margins can be described as the space around an element. In the Codepen demo (#1), it shows 2 boxes. The first box has a margin-right that is increasing, making it seem as though it&#8217;s pushing the second box away.
+Margins can be described as the space around an element. In the Codepen demo (#1), it shows 2 boxes. The first box has a margin-right that is increasing, making it seem as though it's pushing the second box away.
 
-<pre><code class="language-css">
+```css
 @keyframes margin {
-
-to { margin-right: 7rem; }
-
+  to { margin-right: 7rem; }
 }
 
 .margin {
-
-display: inline-block;
-
-height: 5rem;
-
-width: 5rem;
-
-background-color: lightblue;
-
-vertical-align: top;
-
+  display: inline-block;
+  height: 5rem;
+  width: 5rem;
+  background-color: lightblue;
+  vertical-align: top;
 }
 
 .margin:first-of-type {
-
-margin-right: 0;
-
-animation: margin 4s ease 0s infinite;
-
+  margin-right: 0;
+  animation: margin 4s ease 0s infinite;
 }
-</code></pre>
+```
 
 ### Padding
 
@@ -70,7 +59,7 @@ animation: margin 4s ease 0s infinite;
 
 Padding is the space between the content and the border of an element. In the demo (#2),  it shows a box in which its padding is increasing.
 
-<pre><code class="language-css">
+```css
 @keyframes padding {
 
 to { padding: 2rem; }
@@ -78,113 +67,90 @@ to { padding: 2rem; }
 }
 
 .padding {
-
-display: inline-block;
-
-padding: 0;
-
-background-color: lightgreen;
-
-animation: padding 2.5s ease 0s infinite;
-
+  display: inline-block;
+  padding: 0;
+  background-color: lightgreen;
+  animation: padding 2.5s ease 0s infinite;
 }
-</code></pre>
+```
+
 
 ### Height
 
   * Accepts a non-negative number, this number is overridden however by (min/max)-height
   * Initial value: auto
 
-&#8220;Height&#8221; is the height of an element without its <span><span> padding, border, or margin. In the demo (#3) you can see the boxes&#8217; height shrink, and each box begins it&#8217;s animation at a different time. </span></span>
+&#8220;Height&#8221; is the height of an element without its padding, border, or margin. In the demo (#3) you can see the boxes' height shrink, and each box begins its animation at a different time. 
 
-<pre><code class="language-css">
+```css
 @keyframes height {
-
-to { height: .01rem; }
-
+  to { height: .01rem; }
 }
 
 .height {
-
-display: inline-block;
-
-height: 4rem;
-
-width: 3rem;
-
-background-color: violet;
-
-animation: height 1.25s ease 0s infinite;
-
-vertical-align: top;
-
+  display: inline-block;
+  height: 4rem;
+  width: 3rem;
+  background-color: violet;
+  animation: height 1.25s ease 0s infinite;
+  vertical-align: top;
 }
 
 .height:nth-of-type(n) {
-
-animation: height 1.25s ease .2s infinite alternate;
-
+  animation: height 1.25s ease .2s infinite alternate;
 }
 
 .height:nth-of-type(2n) {
-
-animation: height 1.25s ease .4s infinite alternate;
-
+  animation: height 1.25s ease .4s infinite alternate;
 }
 
 .height:nth-of-type(3n) {
-
-animation: height 1.25s ease .6s infinite alternate;
-
+  animation: height 1.25s ease .6s infinite alternate;
 }
-</code></pre>
+```
 
 ### Width
 
   * Accepts a non-negative number, this number is overridden however by (min/max)-width
   * Initial value: auto
 
-&#8220;Width&#8221; is the width of an element without its <span><span> padding, border, or margin. In the demo (#4), it is similar to #3, however, it&#8217;s the width being affected as opposed to the height. </span></span>
+&#8220;Width&#8221; is the width of an element without its  padding, border, or margin. In the demo (#4), it is similar to #3, however, its the width being affected as opposed to the height.
 
-<pre><code class="language-css">
+```css
 @keyframes width {
-
-to { width: .01rem; }
-
+  to { width: .01rem; }
 }
 
 .width {
-
-margin-bottom: .2rem;
-
-height: 3rem;
-
-width: 6.5rem;
-
-background-color: bisque;
-
+  margin-bottom: .2rem;
+  height: 3rem;
+  width: 6.5rem;
+  background-color: bisque;
 }
 
 .width:nth-of-type(n) {
-
-animation: width 1.25s ease .2s infinite alternate;
-
+  animation: width 1.25s ease .2s infinite alternate;
 }
 
 .width:nth-of-type(2n) {
-
-animation: width 1.25s ease .4s infinite alternate;
-
+  animation: width 1.25s ease .4s infinite alternate;
 }
 
 .width:nth-of-type(3n) {
-
-animation: width 1.25s ease .6s infinite alternate;
-
+  animation: width 1.25s ease .6s infinite alternate;
 }
-
-</code></pre>
+```
 
 ### Conclusion
 
-And so with this we can add another collection of animations to our toolbelt! If you&#8217;re wondering why I left border out of this box-model post, it&#8217;s because I have already written a post dedicated to just the [border animation](https://brandonrozek.com/2015/05/animatable-border/). Here are some of the resources I looked at for this post. Hopefully I&#8217;ll come back with another animatable post soon! <https://developer.mozilla.org/en-US/docs/Web/CSS/margin> <https://web.archive.org/web/20151112043907/https://docs.webplatform.org/wiki/css/properties/margin> <https://developer.mozilla.org/en-US/docs/Web/CSS/padding> <https://docs.webplatform.org/wiki/css/properties/padding>{.broken_link} <https://developer.mozilla.org/en-US/docs/Web/CSS/height> <https://docs.webplatform.org/wiki/css/properties/height>{.broken_link} <https://developer.mozilla.org/en-US/docs/Web/CSS/width> <https://web.archive.org/web/20150919163210/https://docs.webplatform.org/wiki/css/properties/width>
+And so with this we can add another collection of animations to our toolbelt! If you're wondering why I left border out of this box-model post, its because I have already written a post dedicated to just the [border animation](https://brandonrozek.com/2015/05/animatable-border/). Here are some of the resources I looked at for this post. Hopefully I'll come back with another animatable post soon!
+
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/margin
+- https://web.archive.org/web/20151112043907/https://docs.webplatform.org/wiki/css/properties/margin
+- https://developer.mozilla.org/en-US/docs/Web/CSS/padding
+- https://docs.webplatform.org/wiki/css/properties/padding
+- https://developer.mozilla.org/en-US/docs/Web/CSS/height
+- https://docs.webplatform.org/wiki/css/properties/height
+- https://developer.mozilla.org/en-US/docs/Web/CSS/width
+- https://web.archive.org/web/20150919163210/https://docs.webplatform.org/wiki/css/properties/width

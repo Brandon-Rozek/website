@@ -18,11 +18,11 @@ mf2_cite:
   - 'a:1:{s:6:"author";a:0:{}}'
 tags: ["Web", "CSS"]
 ---
-This is part 1 of an animation series I&#8217;m doing. It is inspired by Lea Verou&#8217;s talk called &#8220;[The Humble Border-Radius.](https://www.youtube.com/watch?v=JSaMl2OKjfQ)&#8221; I looked at her site and she has a good demo of a bunch of different animations [here](http://lea.verou.me/2011/10/animatable-a-css-transitions-gallery/). My goal here is to create a more comprehensive guide to these different animatable properties&#8211;mainly for future reference. Animations play a big part in adding interactivity to the web, so why not explore some possible options?
+This is part 1 of an animation series I'm doing. It is inspired by Lea Verou's talk called &#8220;[The Humble Border-Radius.](https://www.youtube.com/watch?v=JSaMl2OKjfQ)&#8221; I looked at her site and she has a good demo of a bunch of different animations [here](http://lea.verou.me/2011/10/animatable-a-css-transitions-gallery/). My goal here is to create a more comprehensive guide to these different animatable properties&#8211;mainly for future reference. Animations play a big part in adding interactivity to the web, so why not explore some possible options?
 
 <!--more-->
 
-This post follows well along with my Codepen [demo](http://codepen.io/brandonrozek/full/waWMWR/){.broken_link}, where I&#8217;ll state the box number that applies to what I&#8217;m talking about. \*\*Initial values must be explicitly stated, implicit initial values are generally ignored in animation\*\* \*\\*\*In English terms, you must have already stated a value for what you are animating before you animate it\*\**
+This post follows well along with my Codepen [demo](http://codepen.io/brandonrozek/full/waWMWR/){.broken_link}, where I'll state the box number that applies to what I'm talking about. \*\*Initial values must be explicitly stated, implicit initial values are generally ignored in animation\*\* \*\\*\*In English terms, you must have already stated a value for what you are animating before you animate it\*\**
 
 ### Border-color {#border-color}
 
@@ -30,7 +30,7 @@ This post follows well along with my Codepen [demo](http://codepen.io/brandonroz
   * Each value corresponds to each side of the border (starting from the top and going clockwise)
   * Initial Value: currentColor
 
-Border-color animates by splitting the colors to their red, green and blue components and raises/lowers them to it&#8217;s new value. ([Demo](http://codepen.io/brandonrozek/pen/PqzPMe){.broken_link}) ([Spec](http://www.w3.org/TR/css3-transitions/#animtype-color)) Example of animation corresponds to #1 in the pen, but I will rewrite the relevant code here.
+Border-color animates by splitting the colors to their red, green and blue components and raises/lowers them to its new value. ([Demo](http://codepen.io/brandonrozek/pen/PqzPMe){.broken_link}) ([Spec](http://www.w3.org/TR/css3-transitions/#animtype-color)) Example of animation corresponds to #1 in the pen, but I will rewrite the relevant code here.
 
 ```css
 @keyframes color {
@@ -102,7 +102,7 @@ For animation, this corresponds to #3 in the pen I made at the top. I&#8217;ll r
 
 ### Conclusion
 
-Animations are quite enjoyable. The last box in my Codepen demo tries combining all three of those animations. (Super Wacky!)  You don&#8217;t need to use keyframe animations to achieve this, you can also use the transition property. I used keyframes so you can better visualize what&#8217;s going on. There are plenty of other animatable properties to go through, so I&#8217;ll get started on those. In the meantime, if you want to look at some of the sites I used for research I&#8217;ll include the links below. 
+Animations are quite enjoyable. The last box in my Codepen demo tries combining all three of those animations. (Super Wacky!)  You don't need to use keyframe animations to achieve this, you can also use the transition property. I used keyframes so you can better visualize what's going on. There are plenty of other animatable properties to go through, so I'll get started on those. In the meantime, if you want to look at some of the sites I used for research I'll include the links below. 
 - <https://developer.mozilla.org/en-US/docs/Web/CSS/animation> 
 - <http://www.w3.org/TR/css3-transitions/#animatable-css> 
 - <https://developer.mozilla.org/en-US/docs/Web/CSS/border-color> 
