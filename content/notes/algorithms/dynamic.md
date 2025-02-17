@@ -49,7 +49,7 @@ IterFibo(n):
 
 Here the linear complexity becomes super apparent!
 
-<u>Interesting snippet</u>
+*Interesting snippet*
 
 "We had a very interesting gentleman in Washington named Wilson. He was secretary of Defense, and he actually had a pathological fear and hatred of the word *research*. I’m not using the term lightly; I’m using it precisely. His face would suffuse, he would turn red, and he would get violent if people used the term *research* in his presence. You can imagine how he felt, then, about the term *mathematical*.... I felt I had to do something to shield Wilson and the Air Force from the fact that I was really doing mathematics inside the RAND Corporation. What title, what name, could I choose?"
 

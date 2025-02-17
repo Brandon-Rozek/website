@@ -24,12 +24,12 @@ The default theme for Java Swing components is a cross-platform theme called &#8
 
 In the init method of your java application, place the following code.
 
-<pre class='language-java'><code class='language-java'>
+```java
 try {
     UIManager.setLookAndFeel(UIManager
                                .getSystemLookAndFeelClassName());
 } catch(Exception e) {}
-</code></pre>
+```
 
 Here the application will attempt to look up the system theme and set that as the default styles for the Swing components. If the lookup fails, then it will default back to the metal theme.
 
@@ -37,6 +37,6 @@ For more information, check out this page from [Oracle](http://docs.oracle.com/j
 
 ### Discussion
 
-If it is so easy to set up applications that look native to each desktop environment, why not have that by default? With the cross platform metal theme, you can ensure that the style of your application is the same across all the operating systems. In this fashion, you don&#8217;t need to worry about spacing between components and have full control of the &#8220;look and feel&#8221; of your application. 
+If it is so easy to set up applications that look native to each desktop environment, why not have that by default? With the cross platform metal theme, you can ensure that the style of your application is the same across all the operating systems. In this fashion, you don't need to worry about spacing between components and have full control of the &#8220;look and feel&#8221; of your application. 
 
-Since I am used to development for the web, I don&#8217;t have strong motivation to have an application look the same on all platforms. I prefer the application to match the system theme and look like it was built for the platform that I am on. One loses partial control on the presentation of your application across different desktop environmnets, but with a strong layout, it is possible to make it look organized and integrated.
+Since I am used to development for the web, I don't have strong motivation to have an application look the same on all platforms. I prefer the application to match the system theme and look like it was built for the platform that I am on. One loses partial control on the presentation of your application across different desktop environmnets, but with a strong layout, it is possible to make it look organized and integrated.

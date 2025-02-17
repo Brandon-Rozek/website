@@ -76,28 +76,28 @@ coefficients of CUST2 and the y-intercept.
 ##### Checking the Conditions for Inference
 
 Before we conclude with the analysis, we must first check the conditions for inference to see if the technique is appropriate for our data.  
-<u>Independence Assumption:</u>  
+**Independence Assumption:**
 A house’s selling price can depend on another’s so this condition is not met.  
-<u>Randomization Condition:</u>  
+**Randomization Condition:**
 The dataset is comprised of a random sample of records of resale of homes which satisfies the  
 randomization condition.  
-<u>Straight Enough Condition:</u>  
+**Straight Enough Condition:**
 The scatterplot matrix in Figure 20 shows that for the predictors square footage and tax that the  
 scatterplot is straight enough and doesn’t have any bends or curves.  
-<u>Equal Variance Assumption:</u>  
+**Equal Variance Assumption:**
 The residual analysis in Figure 21 shows that the outliers are not spread equally on the  
 scatterplot. Therefore, the equal variance assumption is not met.  
-<u>Nearly Normal Condition:</u>  
+**Nearly Normal Condition:**
 The QQ-Plot in Figure 21 shows that the residuals follow a unimodal and symmetric distribution.  
 Taking out the outliers in the model also did not introduce any new outliers in the boxplot.  
-<u>Missing At Random Condition:</u>  
+**Missing At Random Condition:**
 7The discussion in the descriptive statistics section about the missing data tells us that the data  
 is missing evenly with respect to the different variables. Therefore, it is safe to assume that the  
 data is missing at random  
-<u>Multicollinearity Condition:</u>  
+**Multicollinearity Condition:**
 All of the VIF values are lower than 10, therefore this condition is met.
 
-The conditions for inference are not fully met due to the equal variance assumption. This means that our model will be more inaccurate for some price range of homes than others. Looking at our residual analysis, it appears that the inaccuracies happen when the price of the home is higher. There weren’t many outliers in the dataset (6 out of 117 or 5%) so removing these outliers makes the model more representative to the majority of the houses in the market. Since this model is intended to be used when analyzing prices of homes in the area, it is better not to include the outliers that most people don&#8217;t intend to buy. Since the error term is unimodal and symmetric, we can be at ease that there isn’t any other confounding factor in our model. Overall, this is a good model to use for inference and prediction as long as one doesn’t use it to describe the outliers.
+The conditions for inference are not fully met due to the equal variance assumption. This means that our model will be more inaccurate for some price range of homes than others. Looking at our residual analysis, it appears that the inaccuracies happen when the price of the home is higher. There weren’t many outliers in the dataset (6 out of 117 or 5%) so removing these outliers makes the model more representative to the majority of the houses in the market. Since this model is intended to be used when analyzing prices of homes in the area, it is better not to include the outliers that most people don't intend to buy. Since the error term is unimodal and symmetric, we can be at ease that there isn’t any other confounding factor in our model. Overall, this is a good model to use for inference and prediction as long as one doesn’t use it to describe the outliers.
 
 ### Conclusion
 

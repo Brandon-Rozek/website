@@ -76,7 +76,7 @@ The third underline is the number of decimal places
 
 The the final underline is the specifier `f` for decimal and `d` for integer
 
-<u>Example</u>
+**Example**
 
 ```java
 double amount = 0.5;

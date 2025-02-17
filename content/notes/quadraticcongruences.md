@@ -6,7 +6,7 @@ math: true
 
 ## Number of Solutions
 
-<u>For congruences mod 2</u>
+*For congruences mod 2*
 
 **Proposition 16.1**. Let $f(x) = ax^2 + bx + c$ with $a$ odd, and let $\Delta = b^2 - 4ac$ be the discriminant of $f(x)$. Then,
 

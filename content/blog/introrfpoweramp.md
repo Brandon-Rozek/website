@@ -18,7 +18,7 @@ I opened up mini-circuits and was greeted with the following table. (Shorted for
 | LZV-22+      | 0.1         | 200          | 43        | 8.9     | 42   | 52         | 1.4        | 4           | 24          | 6000         |
 | ZHL-1W-63-S+ | 600         | 6000         | 35        | 12      | 30   | 35         | 2.5        | 3.5         | 15          | 1000         |
 
-<u>Definitions</u>
+### Definitions
 
 F Low: Lowest frequency supported by the power amplifier
 

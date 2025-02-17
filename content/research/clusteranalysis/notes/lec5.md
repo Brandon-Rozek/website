@@ -11,9 +11,9 @@ Hierarchal Clustering techniques can be subdivided depending on the method of go
 
 First there are two different methods in forming the clusters *Agglomerative* and *Divisive*
 
-<u>Agglomerative</u> is when you combine the n individuals into groups through each iteration
+**Agglomerative** is when you combine the n individuals into groups through each iteration
 
-<u>Divisive</u> is when you are separating one giant group into finer groupings with each iteration.
+**Divisive** is when you are separating one giant group into finer groupings with each iteration.
 
 Hierarchical methods are an irrevocable algorithm, once it joins or separates a grouping, it cannot be undone. As Kaufman and Rousseeuw (1990) colorfully comment: *"A hierarchical method suffers from the defect that it can never repair what was done in previous steps"*. 
 

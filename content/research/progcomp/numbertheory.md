@@ -130,7 +130,7 @@ These events coincide every twenty years, because $lcm(4, 10) = 20$.
 
 We are not always interested in full answers, however. Sometimes the remainder suffices for our purposes.
 
-<u>Example:</u> Suppose your birthday this year falls on a Wednesday. What day of the week will it fall on next year?
+**Example:** Suppose your birthday this year falls on a Wednesday. What day of the week will it fall on next year?
 
 The remainder of the number of days between now and then (365 or 366) mod the number of days in a week. $365$ mod $7 = 1$. Which means that your birthday will fall on a Thursday.
 
@@ -138,7 +138,7 @@ The remainder of the number of days between now and then (365 or 366) mod the nu
 
 **Addition**: $(x + y)$ mod $n$ $=$ $((x $ mod $n) + (y$ mod $n))$ mod $n$
 
-<u>Example:</u> How much small change will I have if given \$123.45 by my mother and \$94.67 by my father?
+**Example:** How much small change will I have if given \$123.45 by my mother and \$94.67 by my father?
 $$
 \begin{align*}
 (12345 \text{ mod } 100) + (9467 \text{ mod } 100) &= (45 + 67) \text{ mod } 100 \\
@@ -147,7 +147,7 @@ $$
 $$
 **Subtraction** (Essentially addition with negatives):
 
-<u>Example:</u> Based on the previous example, how much small change will I have after spending \$52.53?
+**Example:** Based on the previous example, how much small change will I have after spending \$52.53?
 $$
 (12 \text{ mod } 100) - (53 \text{ mod } 100) = -41 \text{ mod } 100 = 59 \text{ mod } 100
 $$
@@ -159,7 +159,7 @@ $$
 $$
 xy \text{ mod } n  = (x \text{ mod } n)(y \text{ mod } n) \text{ mod n}
 $$
-<u>Example:</u> How much change will you have if you earn \$17.28 per hour for 2,143 hours?
+**Example:** How much change will you have if you earn \$17.28 per hour for 2,143 hours?
 $$
 \begin{align*}
 (1728 * 2143) \text{ mod } 100 &= (28 \text{ mod } 100)(43 \text{ mod 100}) \\
@@ -170,7 +170,7 @@ $$
 $$
 x^y \text{ mod } n =(x \text{ mod n})^y \text{ mod } n
 $$
-<u>Example:</u> What is the last digit of $2^{100}$?
+**Example:** What is the last digit of $2^{100}$?
 $$
 \begin{align*}
 2^3 \text{ mod } 10 &= 8 \\

@@ -18,13 +18,14 @@ tags: ["Java"]
 ---
 When you use an IDE there are many things you can take for granted. A section of an intro level computer science course at my university uses [JGrasp](http://www.jgrasp.org/) to build Java Applets.
 
-Following around using a normal text editor, I found that I couldn&#8217;t just compile and run the code like I have with my java programs in the past. To be able to help around and assist in the course, I need to be able to build and run these applications. The rest of this article describes the process I underwent to be able to use my existing setup to write and build java applets. Of course you can always install JGrasp and have that all built in, but it&#8217;s always nice to not have to change your workflow.
-
-<!--more-->
+Following around using a normal text editor, I found that I couldn't just compile and run the code like I have with my java programs in the past. To be able to help around and assist in the course, I need to be able to build and run these applications. The rest of this article describes the process I underwent to be able to use my existing setup to write and build java applets. Of course you can always install JGrasp and have that all built in, but it's always nice to not have to change your workflow.
 
 When I tried following along, I would receive the following error
 
+```
     Main method not found in class HelloWorld, please define main method as...
+```
+
 
 Which makes sense since I have never defined a main method inside my source code. So how do I go about doing this?
 
@@ -32,20 +33,20 @@ Which makes sense since I have never defined a main method inside my source code
 
 Java Applets are meant to run on web pages, because of this one needs an html file to host the applet. The following code gives you the bare minimum for setting up the html file. I called it `HelloWorld.html`.
 
-<pre class='language-html'><code class='language-html'>
-&lt;html&gt;
-    &lt;head&gt;&lt;title&gt;Applet Container&lt;title&gt;
-    &lt;body&gt;
-        &lt;applet code='HelloWorld.class' width=400 height=400&gt;&lt;/applet&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+```html
+<html>;
+    <head><title>Applet Container</title>
+    <body>
+        <applet code='HelloWorld.class' width=400 height=400></applet>
+    </body>
+</html>
+```
 
 ## Hello World Program
 
 To get it up and running, I will show a &#8220;Hello World&#8221; like application for applets.
 
-<pre class='language-java'><code class='language-java'>
+```java
 import javax.swing.JApplet;
 import java.awt.Graphics;
 
@@ -54,17 +55,21 @@ public class HelloWorld extends JApplet {
         g.drawString("Hello World", 30, 30);
     }
 } 
-</code></pre>
+```
 
 ## Running the Applet
 
 Now we need to compile the code
 
-<pre class='langauge-bash'><code class='language-bash'>javac HelloWorld.java</code></pre>
+```bash
+javac HelloWorld.java
+```
 
 Then run the appletviewer
 
-<pre class='language-bash'><code class='language-bash'>appletviewer HelloWorld.html</code></pre>
+```bash
+appletviewer HelloWorld.html
+```
 
 ## Conclusion
 

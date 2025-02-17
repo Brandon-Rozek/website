@@ -17,9 +17,7 @@ tags: ["Web", "JS"]
 ---
 Ever had a snippet of code that appears multiple times in different places in your program? Whenever you had to change that snippet, you end up playing this game of search and replace. Functions can help. They exist to abstract your code, making it not only easier to change that little snippet, but to read and debug your code as well.
 
-<!--more-->
-
-### <a href="#how-to-create/execute-a-function" name="how-to-create/execute-a-function"></a>How to create/execute a function {#how-to-create/execute-a-function}
+### How to create/execute a function
 
 To make a function
 
@@ -35,7 +33,7 @@ To call the above function to execute
     doSomething();
 ```
 
-### <a href="#arguments" name="arguments"></a>Arguments {#arguments}
+### Arguments
 
 You can also add in arguments (parameters that go inside the paraenthesis next to the word function) for the functions to use.
 
@@ -51,13 +49,13 @@ And when you use the `return` keyword, like the function above. You can store th
     var total = add(1, 3);
 ```
 
-<code class="language-javascript">total</code> here will equal `4`
+`total` here will equal `4`
 
-### <a href="#scope" name="scope"></a>Scope {#scope}
+### Scope
 
 Functions create their own scope, which means that variables created inside the function will only be able available within that function.
 
-The snippet below will output an error like <code class="language-javascript">total is not defined</code>
+The snippet below will output an error like `total is not defined`.
 
 ```javascript
     var add = function(number1, number2) {
@@ -80,7 +78,7 @@ Below is a correct example of the concept
 
 It’s also important to note that functions can use variables outside of it; granted it resides in the same scope.
 
-Here is an example of a variable that doesn&#8217;t reside in the same scope as the function. (The below code will fail)
+Here is an example of a variable that doesn't reside in the same scope as the function. (The below code will fail)
 
 ```javascript
     var something = function() {
@@ -104,8 +102,8 @@ Below, is an example of where the variable does reside in the same scope as the 
     var sum = addX(6);
 ```
 
-<code class="language-javascript">sum</code> here will equal <code class="language-javascript">11</code>
+`sum` here will equal `11`
 
-### <a href="#conclusion" name="conclusion"></a>Conclusion {#conclusion}
+### Conclusion
 
 As long as you name them appropriately, functions are useful for abstracting your code, making them easier to understand. This concludes another lecture made for the members over at Math I/O. Until next week 🙂

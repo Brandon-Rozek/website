@@ -71,9 +71,9 @@ An ideal $J$ of a commutative ring is said to be a **prime ideal** if for any tw
 $$
 ab \in J \implies a \in J \text{ or } b \in J
 $$
-<u>Theorem:</u> If $J$ is a prime ideal of a community ring with unity $A$, then the quotient ring $A / J$ is an integral domain.
+**Theorem:** If $J$ is a prime ideal of a community ring with unity $A$, then the quotient ring $A / J$ is an integral domain.
 
 An ideal $J$ of $A$ with $J \ne A$ is called a **maximal ideal** if there exists no proper ideal $K$ of $A$ such that $J \subseteq K$ with $J \ne K$.
 
-<u>Theorem:</u> If $A$ is a commutative ring with unity, then $J$ is a maximal ideal of $A$ iff $A/J$ is a field.
+**Theorem:** If $A$ is a commutative ring with unity, then $J$ is a maximal ideal of $A$ iff $A/J$ is a field.
 

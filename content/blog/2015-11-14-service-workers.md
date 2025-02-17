@@ -62,7 +62,7 @@ var offlineFundamentals = [
 ```
 
 
-Since <code class="language-javascript">cache.addAll()</code> hasn’t been implemented yet in any of the browsers, and the polyfill implementation didn’t work for my needs. I pieced together my own.
+Since `cache.addAll()` hasn’t been implemented yet in any of the browsers, and the polyfill implementation didn’t work for my needs. I pieced together my own.
 
 ```javascript
 var updateStaticCache = function() {
@@ -85,8 +85,8 @@ var updateStaticCache = function() {
 
 Let’s go through this chunk of code.
 
-  1. Open the cache called <code class="language-javascript">'v2.0.24:fundamentals'</code>
-  2. Go through all of the <code class="language-javascript">offlineFundamental</code>‘s URLs 
+  1. Open the cache called `'v2.0.24:fundamentals'`
+  2. Go through all of the `offlineFundamental`‘s URLs 
       * Does the file I ask for come from the same domain as my site?
       * No. Then, make the request ‘no-cors’ (I had difficulty getting my asset files in cors mode. If the cors headers are included in the response, then you can take out this line)
       * Fetch the file from the network and then cache it.
@@ -140,7 +140,7 @@ self.addEventListener("activate", function(event) {
 
 The cool thing about service worker’s is that it can handle file requests. We could cache all files requested for offline use, and if a fetch for a resource failed, then the service worker can look for it in the cache or provide an alternative. This is a large section, so I’m going to attempt to break it down as much as I can.
 
-## Limit the cache {#limit-the-cache}
+## Limit the cache
 
 If the visitor started browsing all of the pages on my site, his or her cache would start to get bloated with files. To not burden my visitors, I decided to only keep the latest 25 pages and latest 10 images in the cache.
 
@@ -159,7 +159,7 @@ We’ll call it later in the code.
 
 ## Fetch from network and cache
 
-Every time I fetch a file from the network I throw it into a specific cache container. <code class="language-javascript">'pages'</code> for HTML files, <code class="language-javascript">'images'</code> for CSS files, and <code class="language-javascript">'assets'</code> for any other file. This is so I can handle the cache limiting above easier. Defined within the `fetch` event.
+Every time I fetch a file from the network I throw it into a specific cache container: `'pages'` for HTML files, `'images'` for CSS files, and `'assets'` for any other file. This is so I can handle the cache limiting above easier. Defined within the `fetch` event.
 
 ```javascript
 var fetchFromNetwork = function(response) {

@@ -24,7 +24,7 @@ This algorithm is called *iterative policy evaluation*.
 
 To produce each successive approximation, $v_{k + 1}$ from $v_k$, iterative policy evaluation applies the same operation to each state $s$: it replaces the old value of $s$ with a new value obtained from the old values of the successor states of $s$, and the expected immediate rewards, along all the one-step transitions possible under the policy being evaluated.
 
-<u>**Iterative Policy Evaluation**</u>
+**Iterative Policy Evaluation**
 
 ```
 Input π, the policy to be evaluated
@@ -69,7 +69,7 @@ Each policy is guaranteed to be a strict improvement over the previous one (unle
 
 This way of finding an optimal policy is called *policy iteration*.
 
-<u>Algorithm</u>
+**Algorithm**
 
 ```
 1.  Initialization

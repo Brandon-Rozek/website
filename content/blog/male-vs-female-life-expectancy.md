@@ -14,7 +14,6 @@ tags: ["Statistics"]
 
 It is well known that females live longer than males, but does that statement hold statistically? Matthew Martinez and I set out to find out.
 
-<!--more-->
 
 ## Population and the hypothesis
 
@@ -26,7 +25,7 @@ HA: The average female life expectancy is higher than the average male life expe
 
 ## Data preparation
 
-Since the website gives us an overlook at all of the counties in the United States we want to take a small sample of that so we can perform statistics. Using the entire dataset will result in looking at population parameters which doesn&#8217;t leave room for inference.
+Since the website gives us an overlook at all of the counties in the United States we want to take a small sample of that so we can perform statistics. Using the entire dataset will result in looking at population parameters which doesn't leave room for inference.
 
 A random number was chosen to pick the state and then the county. This was done a total of 101 times. The CSV file is located [here](https://brandonrozek.com/wp-content/uploads/2017/03/LifeExpectancy.csv) for convenience. 
 
@@ -46,9 +45,9 @@ femaleExpectancy = LifeExpectancy$Life.Expectancy.Female
 
 ## Summary Statistics
 
-Before we begin our inferential statistics, it is a good idea to look at what we have in our sample. It will give us a good feeling for what we&#8217;re working with and help us answer some questions involving the assumptions in parametric tests. 
+Before we begin our inferential statistics, it is a good idea to look at what we have in our sample. It will give us a good feeling for what we're working with and help us answer some questions involving the assumptions in parametric tests. 
 
-We&#8217;re interested in the minimum, mean, maximum, and interquartile range of the data
+We're interested in the minimum, mean, maximum, and interquartile range of the data
 
 ```R
 # Summary statistics
@@ -65,7 +64,7 @@ Looking at the table below, we can see that the average male lives to be around 
 summary
 ##         Min   Mean  Max   IQR
 ## Male   69.0 74.952 80.9 2.775
-## Female 76.1 80.416 84.1 2.350</code></pre>
+## Female 76.1 80.416 84.1 2.350
 ```
 
 ## Inferential Statistics
@@ -78,11 +77,11 @@ Since our data is quantitative in nature, we will attempt to perform a two sampl
 
 Performing a t-test comes with several assumptions we need to check before confidently reporting our results.
 
-<u>Independence Condition:</u> One county&#8217;s life span does not affect the lifespan of another.
+**Independence Condition:** One county's life span does not affect the lifespan of another.
 
-<u>Independent groups assumption:</u> The lifespan of a male does not directly impact a lifespan of a female.
+**Independent groups assumption:** The lifespan of a male does not directly impact a lifespan of a female.
 
-<u>Nearly Normal Condition:</u> We need to check the histograms to see if they&#8217;re unimodal and symmetric and check to see if any outliers exist
+**Nearly Normal Condition:** We need to check the histograms to see if they're unimodal and symmetric and check to see if any outliers exist
 
 The male life expectancy distribution appears to be unimodal and symmetric.
 
@@ -91,7 +90,7 @@ The male life expectancy distribution appears to be unimodal and symmetric.
 hist(maleExpectancy, main = "Male Life Expectancy", xlab = "Age")
 ```
 
-<img src="https://brandonrozek.com/wp-content/uploads/2017/03/maleLifeExpectancyHist.png" width="672" /> 
+![](https://brandonrozek.com/wp-content/uploads/2017/03/maleLifeExpectancyHist.png)
 
 Same with the female life expectancy distribution
 
@@ -99,15 +98,16 @@ Same with the female life expectancy distribution
 hist(femaleExpectancy, main = "Female Life Expectancy", xlab = "Age")
 ```
 
-<img src="https://brandonrozek.com/wp-content/uploads/2017/03/femaleLifeExpectancyHist.png" width="672" /> 
+![](https://brandonrozek.com/wp-content/uploads/2017/03/femaleLifeExpectancyHist.png)
 
-Looking at the boxplot, we can see that the IQR of the female life expectancy is higher than the one of the males. The hypothesis test will show us if this is of significant difference. On the male&#8217;s side there are two outliers. This violates the Nearly Normal Condition so we must proceed with caution in our test.
+
+Looking at the boxplot, we can see that the IQR of the female life expectancy is higher than the one of the males. The hypothesis test will show us if this is of significant difference. On the male's side there are two outliers. This violates the Nearly Normal Condition so we must proceed with caution in our test.
 
 ```R
 boxplot(maleExpectancy, femaleExpectancy, names = c("Male Life Expectancy", "Female Life Expectancy"), ylab = "Age")
 ```
 
-<img src="https://brandonrozek.com/wp-content/uploads/2017/03/LifeExpectancyBoxplot.png" width="672" /> 
+![](https://brandonrozek.com/wp-content/uploads/2017/03/LifeExpectancyBoxplot.png)
 
 Since the nearly normal condition was not met, we do not meet the assumptions necessary to perform a t-test. However, since the condition was violated by an outlier, let us perform a t-test with the outlier and without the outlier and compare the results.
 
@@ -175,7 +175,7 @@ Looking at the boxplot, there are no more outliers present
 boxplot(maleExpectancy2, ylab = "Age", main = "Male Life Expectancy w/o Outliers")
 ```
 
-<img src="https://brandonrozek.com/wp-content/uploads/2017/03/MLifeExpectBoxplotNoOutliers.png" width="672" /> 
+![](https://brandonrozek.com/wp-content/uploads/2017/03/MLifeExpectBoxplotNoOutliers.png)
 
 The histogram still appears to be unimodal and symmetric
 
@@ -183,7 +183,7 @@ The histogram still appears to be unimodal and symmetric
 hist(maleExpectancy2, xlab = "Age", main = "Male Life Expectancy w/o Outliers")
 ```
 
-<img src="https://brandonrozek.com/wp-content/uploads/2017/03/MLifeExpectHistNoOutliers.png" width="672" /> 
+![](https://brandonrozek.com/wp-content/uploads/2017/03/MLifeExpectHistNoOutliers.png)
 
 Without the outliers present, the nearly normal condition is now met. We can perform the t-test.
 

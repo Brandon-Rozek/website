@@ -24,11 +24,11 @@ An extensive list of similarity measures for binary data exist, the reason for s
 
 In some cases, zero-zero matches are equivalent to one-one matches and therefore should be included in the calculated similarity measure
 
-<u>Example</u>: Gender, where there is no preference as to which of the two categories should be coded as zero or one
+**Example**: Gender, where there is no preference as to which of the two categories should be coded as zero or one
 
 In other cases the inclusion or otherwise of the matches is more problematic
 
-<u>Example</u>: When the zero category corresponds to the genuine absence of some property, such as wings in a study of insects
+**Example**: When the zero category corresponds to the genuine absence of some property, such as wings in a study of insects
 
 The question that then needs to be asked is do the co-absences contain useful information about the similarity of the two objects?
 
@@ -152,7 +152,7 @@ Since for correlation coefficients we have that $-1 \le \phi_{ij} \le 1$ with th
 
 The use of correlation coefficients in this context is far more contentious than its noncontroversial role in assessing the linear relationship between two variables based on $n$ observations.
 
-When correlations between two individuals are used to quantify their similarity the <u>rows of the data matrix are standardized</u>, not its columns.
+When correlations between two individuals are used to quantify their similarity the *rows of the data matrix are standardized*, not its columns.
 
 **Disadvantages**
 
@@ -164,7 +164,7 @@ In addition, the correlation coefficient is unable to measure the difference in 
 
 However, the use of a correlation coefficient can be justified for situations where all of the variables have been measured on the same scale and precise values taken are important only to the extent that they provide information about the subject's relative profile
 
-<u>Example:</u> In classifying animals or plants, the absolute size of the organisms or their parts are often less important than their shapes. In such studies the investigator requires a dissimilarity coefficient that takes the value zero if and only if two individuals' profiles are multiples of each other. The angular separation dissimilarity measure has this property.
+**Example:** In classifying animals or plants, the absolute size of the organisms or their parts are often less important than their shapes. In such studies the investigator requires a dissimilarity coefficient that takes the value zero if and only if two individuals' profiles are multiples of each other. The angular separation dissimilarity measure has this property.
 
 **Further considerations**
 
@@ -271,25 +271,26 @@ By also employing within-group correlations, the Mahalanobis distance takes acco
 
 The use of Mahalanobis implies that the investigator is willing to **assume** that the covariance matrices are at least approximately the same in the two groups. When this is not so, this measure is an inappropriate inter-group measure. Other alternatives exist such as the one proposed by Anderson and Bahadur
 
-<img src="http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczM3L2UwLXMzL2VpL3RtYTBjMGdzY2QwLmkxLWdtaWY-" alt="equation">
+![](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczM3L2UwLXMzL2VpL3RtYTBjMGdzY2QwLmkxLWdtaWY-)
 
 Another alternative is the *normal information radius* suggested by Jardine and Sibson
 
-<img src="http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczM4L2UwLXMzL2VpL3RtYTBjMGdzY2QwLmkxLWdtaWY-" alt="equation">
+![](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczM4L2UwLXMzL2VpL3RtYTBjMGdzY2QwLmkxLWdtaWY-)
+
 
 ### Inter-group Proximity Based on Group Summaries for Categorical Data
 
 Approaches for measuring inter-group dissimilarities between groups of individuals for which categorical variables have been observed have been considered by a number of authors. Balakrishnan and Sanghvi (1968), for example, proposed a dissimilarity index of the form
 
-![equation](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczMwL2UwLXMzL2VpL3RtYTBjMGdzY2QwLmkyLWdtaWY-)
+![](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczMwL2UwLXMzL2VpL3RtYTBjMGdzY2QwLmkyLWdtaWY-)
 
-where $p_{Akl}$ and $p_{Bkl}$ are the proportions of the lth category of the kth variable in group A and B respectively, ![img](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczNmL2VnMi8zbGVpL3RtYTBjbmdzaWUuMGlpbg--), ck + 1 is the number of categories for the kth variable and p is the number of variables.
+where $p_{Akl}$ and $p_{Bkl}$ are the proportions of the lth category of the kth variable in group A and B respectively, ![](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczNmL2VnMi8zbGVpL3RtYTBjbmdzaWUuMGlpbg--), ck + 1 is the number of categories for the kth variable and p is the number of variables.
 
 Kurczynski (1969) suggested adapting the generalized Mahalanobis distance, with categorical variables replacing quantitative variables. In its most general form, this measure for inter-group distance is given by
 
-![equation](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczMxL2UwLXMzL2VpL3RtYTBjMGdzY2QwLmkyLWdtaWY-)
+![](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczMxL2UwLXMzL2VpL3RtYTBjMGdzY2QwLmkyLWdtaWY-)
 
-where ![img](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczNmL2VnMy8zbGVpL3RtYTBjbmdzaWUuMGlpbg--) contains sample proportions in group A and ![img](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczNmL2VnNC8zbGVpL3RtYTBjbmdzaWUuMGlpbg--) is defined in a similar manner, and ![img](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczNmL2VnNS8zbGVpL3RtYTBjbmdzaWUuMGlpbg--) is the m × m common sample covariance matrix, where ![img](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczNmL2VnNi8zbGVpL3RtYTBjbmdzaWUuMGlpbg--). 
+where ![](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczNmL2VnMy8zbGVpL3RtYTBjbmdzaWUuMGlpbg--) contains sample proportions in group A and ![](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczNmL2VnNC8zbGVpL3RtYTBjbmdzaWUuMGlpbg--) is defined in a similar manner, and ![](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczNmL2VnNS8zbGVpL3RtYTBjbmdzaWUuMGlpbg--) is the m × m common sample covariance matrix, where ![](http://proquest.safaribooksonline.com.ezproxy.umw.edu/getfile?item=cjlhZWEzNDg0N2R0cGMvaS9zMG1nODk0czcvN3MwczNmL2VnNi8zbGVpL3RtYTBjbmdzaWUuMGlpbg--). 
 
 ## Weighting Variables
 

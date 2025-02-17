@@ -16,7 +16,7 @@ Recall that the value of a state is the expected return -- expected cumulative f
 
 Each occurrence of state $s$ in an episode is called a *visit* to $s$. The *first-visit MC method* estimates $v_\pi(s)$ as the average of the returns following first visits to $s$, whereas the *every-visit MC method* averages the returns following all visits to $s$. These two Monte Carlo methods are very similar but have slightly different theoretical properties. 
 
-<u>First-visit MC prediction</u>
+**First-visit MC prediction**
 
 ```
 Initialize:
@@ -45,7 +45,7 @@ This is the general problem of *maintaining exploration*. For policy evaluation 
 
 We made two unlikely assumptions above in order to easily obtain this guarantee of convergence for the Monte Carlo method. One was that the episodes have exploring starts, and the other was that policy evaluation could be done with an infinite number of episodes. 
 
-<u>Monte Carlo Exploring Starts</u>
+**Monte Carlo Exploring Starts**
 
 ```
 Initialize, for all s ∈ S, a ∈ A(s):
@@ -74,7 +74,7 @@ On-policy methods attempt to evaluate or improve the policy that is used to make
 
 In on-policy control methods the policy is generally *soft*, meaning that $\pi(a|s)$ for all $a \in \mathcal{A}(s)$. The on-policy methods in this section uses $\epsilon$-greedy policies, meaning that most of the time they choose an action that has maximal estimated action value, but with probability $\epsilon$ they instead select an action at random. 
 
-<u>On-policy first-visit MC control (for $\epsilon$-soft policies)</u>
+**On-policy first-visit MC control (for $\epsilon$-soft policies)**
 
 ```
 

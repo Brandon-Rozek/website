@@ -31,7 +31,7 @@ HA: The random numbers outputted do not follow the uniform distribution
 
 I wrote a small [website](http://share.zeropointshift.com/files/2017/03/random.html) and obtained my data by getting the CSV outputted when I use IE11, Firefox, and Chrome.
 
-The website works by producing a random number using <code class='language-javascript'>Math.random()</code> between 1 and 1000 inclusive and calls the function 1,000,000 times. Storing it&#8217;s results in a file
+The website works by producing a random number using `Math.random()` between 1 and 1000 inclusive and calls the function 1,000,000 times. Storing its results in a file
 
 This website produces a file with all the numbers separated by a comma. We want these commas to be replaced by newlines. To do so, we can run a simple command in the terminal
 
@@ -45,13 +45,13 @@ Here are a copy of my files for [Firefox](https://brandonrozek.com/wp-content/up
 
 ## Check Conditions
 
-Since we&#8217;re interested in if the random values occur uniformly, we need to perform a Chi-Square test for Goodness of Fit. With every test comes some assumptions
+Since we're interested in if the random values occur uniformly, we need to perform a Chi-Square test for Goodness of Fit. With every test comes some assumptions
 
-<u>Counted Data Condition:</u> The data can be converted from quantatative to count data.
+**Counted Data Condition:** The data can be converted from quantatative to count data.
 
-<u>Independence Assumption:</u> One random value does not affect another.
+**Independence Assumption:** One random value does not affect another.
 
-<u>Expected Cell Frequency Condition:</u> The expected counts are going to be 10000
+**Expected Cell Frequency Condition:** The expected counts are going to be 10000
 
 Since all of the conditions are met, we can use the Chi-square test of Goodness of Fit
 

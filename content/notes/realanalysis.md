@@ -64,7 +64,7 @@ Let $s_1 > 0$ be arbitrary, and define $s_{n + 1} = \frac{1}{2}(s_n + \frac{a}{s
 
 **Corollary:** If $X = (x_n) \subseteq \mathbb{R}$ has a subsequence that diverges then $X$ diverges.
 
-**Monotone Sequence Theorem**: If $X = (x_n) \subseteq \mathbb{R}$, then it contains a <u>monotone subsequence</u>.
+**Monotone Sequence Theorem**: If $X = (x_n) \subseteq \mathbb{R}$, then it contains a *monotone subsequence*.
 
 **Bolzano-Weierstrass Theorem:** Every bounded sequence in $\mathbb{R}$ has a convergent subsequence.
 

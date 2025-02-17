@@ -14,7 +14,7 @@ mf2_syndication:
   - 'a:1:{i:0;s:60:"https://twitter.com/B_RozekJournal/status/955308388384235521";}'
 tags: []
 ---
-This article is based on one written by [Markus Konrad](https://datascience.blog.wzb.eu/author/markus_konrad/) at this link <a href='https://datascience.blog.wzb.eu/2016/07/13/autocorrecting-misspelled-words-in-python-using-hunspell/' target='_blank' >https://datascience.blog.wzb.eu/2016/07/13/autocorrecting-misspelled-words-in-python-using-hunspell/</a>
+This article is based on one written by [Markus Konrad](https://datascience.blog.wzb.eu/author/markus_konrad/) at this link [https://datascience.blog.wzb.eu/2016/07/13/autocorrecting-misspelled-words-in-python-using-hunspell/](https://datascience.blog.wzb.eu/2016/07/13/autocorrecting-misspelled-words-in-python-using-hunspell/).
 
 I assume in this article that you have hunspell and it's integration with python installed. If not, please refer to the article mention above and follow the prerequisite steps.
 
@@ -24,8 +24,10 @@ This article is inspired from the need to correct misspelled words in the [Dress
 
 Misspelled words are common when dealing with survey data or data where humans type in the responses manually. In the Dress Attributes Dataset this is apparent when looking at the sleeve lengths of the different dresses.
 
-<pre><code class='language-python' lang='python'>dresses_data[&#39;SleeveLength&#39;].value_counts()
-</code></pre><figure> 
+```python
+dresses_data['SleeveLength'].value_counts()
+```
+
 
 | Word           | Frequency |
 | -------------- | --------- |
@@ -45,7 +47,7 @@ Misspelled words are common when dealing with survey data or data where humans t
 | turndowncollor | 1         |
 | sleveless      | 1         |
 | butterfly      | 1         |
-| threequater    | 1         |</figure> 
+| threequater    | 1         |
 
 Ouch, so many misspelled words. This is when my brain is racking up all the ways I can automate this problem away. Hence my stumbling upon Markus' post.
 
@@ -55,20 +57,22 @@ First, I decided to completely ignore what Markus warns in his post and automati
 
 To begin the code, let's import and create an instance of the spellchecker:
 
-<pre><code class='language-python' lang='python'>from hunspell import HunSpell
-spellchecker = HunSpell(&#39;/usr/share/hunspell/en_US.dic&#39;, &#39;/usr/share/hunspell/en_US.aff&#39;)
-</code></pre>
+```python
+from hunspell import HunSpell
+spellchecker = HunSpell('/usr/share/hunspell/en_US.dic', '/usr/share/hunspell/en_US.aff')
+```
 
 I modified his `correct_words` function so that it only corrects one word and so I can `apply` it along the `SleeveLength` column. 
 
-<pre><code class='language-python' lang='python'>def correct_word(checker, word, add_to_dict=[]):
+```python
+def correct_word(checker, word, add_to_dict=[]):
     "Takes in a hunspell object and a word and corrects the word if needed"   
     # Add custom words to the dictionary
     for w in add_to_dict:
         checker.add(w)
 
     corrected = ""
-    # Check to see if it&#39;s a string
+    # Check to see if it's a string
     if isinstance(word, str):
         # Check the spelling
         ok = checker.spell(word)
@@ -89,15 +93,17 @@ I modified his `correct_words` function so that it only corrects one word and so
         ## Not a string. Return original
         corrected = word
     return corrected
-</code></pre>
+```
 
 Now let's apply the function over the `SleeveLength` column of the dataset:
 
-<pre><code class='language-python' lang='python'>dresses_data[&#39;SleeveLength&#39;] = dresses_data[&#39;SleeveLength&#39;].apply(
-    lambda x: correct_word(spellchecker, x))
-</code></pre>
+```python
+dresses_data['SleeveLength'] = dresses_data['SleeveLength'].apply(
+    lambda x: correct_word(spellchecker, x)
+)
+```
 
-Doing so creates the following series:<figure> 
+Doing so creates the following series:
 
 | Word           | Frequency |
 | -------------- | --------- |
@@ -114,7 +120,7 @@ Doing so creates the following series:<figure>
 | turndowncollor | 1         |
 | half           | 1         |
 | landownership  | 1         |
-| forequarter    | 1         |</figure> 
+| forequarter    | 1         |
 
 As you might be able to tell, this process didn't go as intended. `landownership` isn't even a length of a sleeve!
 
@@ -124,7 +130,8 @@ This is when I have to remember, technology isn't perfect. Instead we should rel
 
 Keeping that in mind, I modified the function again to take in a list of the data, and return a dictionary that has the misspelled words as the keys and suggestions as the values represented as a list.
 
-<pre><code class='language-python' lang='python'>def list_word_suggestions(checker, words, echo = True, add_to_dict=[]):
+```python
+def list_word_suggestions(checker, words, echo = True, add_to_dict=[]):
     "Takes in a list of words and returns a dictionary with mispellt words as keys and suggestions as a list. Also prints it out"
     # add custom words to the dictionary
     for w in add_to_dict:
@@ -141,31 +148,34 @@ Keeping that in mind, I modified the function again to take in a list of the dat
                 elif echo:
                     print(word + ": " + "[", ", ".join(repr(i) for i in suggestions[word]), "]")
     return suggestions
-</code></pre>
+```
 
 With that, I can use the function on my data. To do so, I convert the pandas values to a list and pass it to the function:
 
-<pre><code class='language-python' lang='python'>s = list_word_suggestions(spellchecker, dresses_data[&#39;SleeveLength&#39;].values.tolist())
-</code></pre>
+```python
+s = list_word_suggestions(spellchecker, dresses_data['SleeveLength'].values.tolist())
+```
 
 These are the suggestions it produces:
 
-<pre><code class='language-python' lang='python'>sleevless: [ &#39;sleeveless&#39;, &#39;sleepless&#39;, &#39;sleeves&#39;, &#39;sleekness&#39;, &#39;sleeve&#39;, &#39;lossless&#39; ]
-threequarter: [ &#39;three quarter&#39;, &#39;three-quarter&#39;, &#39;forequarter&#39; ]
-halfsleeve: [&#39;half sleeve&#39;, &#39;half-sleeve&#39;, &#39;sleeveless&#39; ]
+```
+sleevless: [ 'sleeveless', 'sleepless', 'sleeves', 'sleekness', 'sleeve', 'lossless' ]
+threequarter: [ 'three quarter', 'three-quarter', 'forequarter' ]
+halfsleeve: ['half sleeve', 'half-sleeve', 'sleeveless' ]
 turndowncollor: No suggestions
-threequater: [ &#39;forequarter&#39; ]
-capsleeves: [ &#39;cap sleeves&#39;, &#39;cap-sleeves&#39;, &#39;capsules&#39; ]
-sleeevless: [ &#39;sleeveless&#39;, &#39;sleepless&#39;, &#39;sleeves&#39;, &#39;sleekness&#39;, &#39;sleeve&#39; ]
-urndowncollor: [ &#39;landownership&#39; ]
-thressqatar: [ &#39;throatiness&#39; ]
-sleveless: [ &#39;sleeveless&#39;, &#39;levelness&#39;, &#39;valveless&#39;, &#39;loveless&#39;, &#39;sleepless&#39; ]
-</code></pre>
+threequater: [ 'forequarter' ]
+capsleeves: [ 'cap sleeves', 'cap-sleeves', 'capsules' ]
+sleeevless: [ 'sleeveless', 'sleepless', 'sleeves', 'sleekness', 'sleeve' ]
+urndowncollor: [ 'landownership' ]
+thressqatar: [ 'throatiness' ]
+sleveless: [ 'sleeveless', 'levelness', 'valveless', 'loveless', 'sleepless' ]
+```
 
 From here, you can analyze the output and do the replacements yourself:
 
-<pre><code class='language-python' lang='python'>dresses_data[&#39;SleeveLength&#39;].replace(&#39;sleevless&#39;, &#39;sleeveless&#39;, inplace = True)
-</code></pre>
+```python
+dresses_data['SleeveLength'].replace('sleevless', 'sleeveless', inplace = True)
+```
 
 ### What's the Benefit?
 

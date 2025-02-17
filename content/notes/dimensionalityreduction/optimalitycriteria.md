@@ -6,7 +6,7 @@ Falling under wrapper methods, optimality criterion are often used to aid in mod
 
 ## Akaike Information Criterion (AIC)
 
-AIC is an estimator of <u>relative</u> quality of statistical models for a given set of data. Given a collection of models for the data, AIC estimates the quality  of each model relative to each other.
+AIC is an estimator of *relative<* quality of statistical models for a given set of data. Given a collection of models for the data, AIC estimates the quality  of each model relative to each other.
 
 This way, AIC provides a means for model selection. AIC offers an estimate of the relative information lost when a given model is used. 
 
@@ -79,7 +79,7 @@ $$
 
 ## Deviance Information Criterion
 
-The DIC is a hierarchical modeling generalization of the AIC and BIC. it is useful in Bayesian model selection problems where posterior distributions of the model was <u>obtained by a Markov Chain Monte Carlo simulation</u>.
+The DIC is a hierarchical modeling generalization of the AIC and BIC. it is useful in Bayesian model selection problems where posterior distributions of the model was *obtained by a Markov Chain Monte Carlo simulation*.
 
 This method is only valid if the posterior distribution is approximately multivariate normal.
 
