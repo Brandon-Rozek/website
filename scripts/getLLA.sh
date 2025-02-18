@@ -15,16 +15,16 @@ if [ "$#" -ne 1 ]; then
 fi
 
 # Check that relevant command exist
-if ! command -v identify > /dev/null; then
-    echo "Command identify from imagemagick not found. Exiting..."
+if ! command -v magick > /dev/null; then
+    echo "Command magick from imagemagick not found. Exiting..."
 fi
 
 IMAGE_FILE="$1"
-LAT=$(identify -format "%[EXIF:GPSLatitude]\n" "$IMAGE_FILE")
-LAT_DIR=$(identify -format "%[EXIF:GPSLatitudeRef]\n" "$IMAGE_FILE")
-LON=$(identify -format "%[EXIF:GPSLongitude]\n" "$IMAGE_FILE")
-LON_DIR=$(identify -format "%[EXIF:GPSLongitudeRef]\n" "$IMAGE_FILE")
-ALT=$(identify -format "%[EXIF:GPSAltitude]\n" "$IMAGE_FILE")
+LAT=$(magick identify -format "%[EXIF:GPSLatitude]\n" "$IMAGE_FILE")
+LAT_DIR=$(magick identify -format "%[EXIF:GPSLatitudeRef]\n" "$IMAGE_FILE")
+LON=$(magick identify -format "%[EXIF:GPSLongitude]\n" "$IMAGE_FILE")
+LON_DIR=$(magick identify -format "%[EXIF:GPSLongitudeRef]\n" "$IMAGE_FILE")
+ALT=$(magick identify -format "%[EXIF:GPSAltitude]\n" "$IMAGE_FILE")
 
 DegreesToDecimal() {
 	L0=$(echo "$1" | cut -d "," -f 1)

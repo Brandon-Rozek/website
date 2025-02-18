@@ -24,7 +24,7 @@ if [[ "$1" != *.jpg ]]; then
 fi
 
 # Check that relevant commands exist
-if ! command -v mogrify > /dev/null; then
+if ! command -v magick > /dev/null; then
     echo "Command magick not found. Exiting..."
 fi
 if ! command -v jpegoptim > /dev/null; then
@@ -32,6 +32,6 @@ if ! command -v jpegoptim > /dev/null; then
 fi
 
 cp "$1" "$1.bak"
-mogrify -resize "$WIDTH" "$1"
+magick mogrify -resize "$WIDTH" "$1"
 jpegoptim "$1"
 
