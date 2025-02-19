@@ -69,7 +69,7 @@ location /.well-known/openpgpkey {
 
 Now we can check our setup using the website:
 
-https://metacode.biz/openpgp/web-key-directory
+https://WebKeyDirectory.com
 
 ## Using WKD
 
