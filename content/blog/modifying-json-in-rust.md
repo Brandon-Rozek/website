@@ -2,7 +2,7 @@
 title: "Modifying JSON in Rust"
 date: 2024-08-03T07:59:15-07:00
 draft: false
-tags: []
+tags: ["Rust"]
 math: false
 medium_enabled: false
 ---
