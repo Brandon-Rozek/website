@@ -90,6 +90,10 @@
         <p><strong>Recipe: </strong><a href="{{ .Permalink }}">{{ .Title }}</a></p>
       {{ end }}
 
+      {{ $items := (where site.RegularPages "Type" "postroll").ByDate }}
+      {{ range last 1 $items }}
+        <p><strong>Outside Post Read:  </strong><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+      {{ end }}
 
 
 
