@@ -8,6 +8,11 @@ aliases:
 
 ## Publications
 
+A Modal Logic of Optimality (Student Abstract)
+- Authors: James T. Oswald, *Brandon Rozek*, Thomas M. Ferguson, Selmer Bringsjord
+- Venue: AAAI Conference on Artificial Intelligence, 2025.
+- Paper to appear
+
 [Modeling C0 Family Logics for Artificial Intelligence: Doxastic-Temporal Logics for Reasoning About Goals](/paper/2405.02)
 - Authors: James T. Oswald, *Brandon Rozek*, and Thomas M. Ferguson
 - Venue: Künstliche Intelligenz (KI), 2024
@@ -53,15 +58,15 @@ Verification of Automatically Synthesized Cryptosystems ](/paper/2109.01/)
 
 ## Papers
 
-Initial Steps in Planning under Qualitative Uncertainty
+[Initial Steps in Planning under Qualitative Uncertainty](/paper/2406.02)
 - Authors: *Brandon Rozek* and Selmer Bringsjord
 - Venue: International Workshop on Human-Aware and Explainable Planning (HAXP), 2024
-- Paper to appear mid 2024
+- [Paper](https://openreview.net/pdf?id=soH9BIp0pL)
 
-Guiding Hiearchical Reinforcement Learning in Partially Observable Environments with AI Planning
+[Guiding Hiearchical Reinforcement Learning in Partially Observable Environments with AI Planning](/paper/2406.01)
 - Authors: *Brandon Rozek*, Junkyu Lee, Harsha Kokel, Michael Katz, Shirin Sohrabi
 - Venue: International Workshop on Bridging the Gap Between AI Planning and Reinforcement Learning (PRL), 2024
-- Paper to appear mid 2024
+- [Paper](https://prl-theworkshop.github.io/prl2024-icaps/papers/12.pdf)
  
 [CryptoSolve: Towards a Tool for the Symbolic Analysis of Cryptographic Algorithms](/paper/2203.01/)
 - Authors: D Chichester, W Du, R Kauffman, H Lin, C Lynch, A M. Marshall, C Meadows, P Narendran, V Ravishankar, L Rovira, *B Rozek*
