@@ -1,7 +1,7 @@
 ---
 title: "Weather Forcecasts on the Command-Line with the National Weather Service API"
 date: 2025-03-16T15:33:49-04:00
-draft: true
+draft: false 
 tags: []
 math: false
 medium_enabled: false
