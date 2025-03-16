@@ -73,12 +73,6 @@ jobs:
             Hostname 208.99.44.108
             User build
             IdentityFile ~/.ssh/id_rsa
-
-          Host Rozek-Stratus
-            Hostname 167.253.158.160
-            User build
-            IdentityFile ~/.ssh/id_rsa
-
           EOL
       - name: Deploy
         run: ./deploy.sh
