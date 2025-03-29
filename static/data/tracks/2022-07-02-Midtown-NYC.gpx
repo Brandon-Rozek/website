@@ -9,172 +9,172 @@
 </metadata>
 <wpt lat="40.756533" lon="-73.981616">
         <ele>39.940000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_183340368_exported_1132_1656807019031.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_183340368_exported_1132_1656807019031.jpg&quot;/&gt;</desc>
 </wpt>
 [rozek@Rozek-Ideapad 2022-07-02]$ find . -name "*.jpg" -exec /home/rozek/repo/website/getWPT.sh {} \;
 <wpt lat="40.752883" lon="-73.977318">
         <ele>18.490000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_182051407.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_182051407.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.752872" lon="-73.977302">
         <ele>17.730000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_182203108.MP.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_182203108.MP.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.755105" lon="-73.978660">
         <ele>32.420000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_182925937.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_182925937.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.756283" lon="-73.981435">
         <ele>65.590000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_183328431.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_183328431.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.756533" lon="-73.981616">
         <ele>39.940000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_183340368_exported_1132_1656807019031.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_183340368_exported_1132_1656807019031.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.756758" lon="-73.981979">
         <ele>12.830000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_183452281.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_183452281.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.757888" lon="-73.985405">
         <ele>14.290000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_183857570.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_183857570.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.757888" lon="-73.985405">
         <ele>14.290000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_183905251.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_183905251.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.758411" lon="-73.985288">
         <ele>12.600000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_184055390.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_184055390.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.759041" lon="-73.985077">
         <ele>16.830000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_184322134.MP.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_184322134.MP.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.759041" lon="-73.985077">
         <ele>16.830000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_184329813.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_184329813.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.758216" lon="-73.985233">
         <ele>16.200000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_184942321.MP.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_184942321.MP.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.758069" lon="-73.985427">
         <ele>16.100000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_190906324.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_190906324.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.758069" lon="-73.985427">
         <ele>16.100000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_190915986.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_190915986.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.749666" lon="-73.987596">
         <ele>2.900000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_192626217.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_192626217.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.748583" lon="-73.985785">
         <ele>269.290000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_195124386.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_195124386.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.748521" lon="-73.985733">
         <ele>258.940000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_195238699.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_195238699.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.748521" lon="-73.985733">
         <ele>258.940000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_195241156.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_195241156.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.748419" lon="-73.985733">
         <ele>259.430000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_195356778.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_195356778.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.748394" lon="-73.985638">
         <ele>269.500000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_195450041.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_195450041.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.748396" lon="-73.985499">
         <ele>269.500000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_195744514.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_195744514.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.750388" lon="-73.994938">
         <ele>21.800000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_204232224.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_204232224.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.749274" lon="-73.994905">
         <ele>21.700000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_205157067_exported_932_1656806487103.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_205157067_exported_932_1656806487103.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.750122" lon="-73.995055">
         <ele>21.800000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_205202829.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_205202829.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.751613" lon="-74.000022">
         <ele>16.500000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_205920316.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_205920316.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.752047" lon="-74.001063">
         <ele>26.700000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_210141792.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_210141792.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.752186" lon="-74.001130">
         <ele>1.410000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_210205575_exported_100_1656806462923.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_210205575_exported_100_1656806462923.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.752330" lon="-74.001544">
         <ele>26.700000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_210258906.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_210258906.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.752633" lon="-74.002205">
         <ele>26.700000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_210338993_exported_399_1656806448177.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_210338993_exported_399_1656806448177.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.753058" lon="-74.002933">
         <ele>20.000000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_210538891.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_210538891.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.753252" lon="-74.003741">
         <ele>20.000000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_210902688.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_210902688.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.751155" lon="-74.002425">
         <ele>6.520000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_211519638.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_211519638.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.748288" lon="-74.004266">
         <ele>25.390000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_212004925.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_212004925.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.755441" lon="-73.998777">
         <ele>14.000000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_215131505.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_215131505.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.755483" lon="-73.991341">
         <ele>61.630000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_220433235.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_220433235.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.756413" lon="-73.989963">
         <ele>18.700000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_220559204_exported_732_1656806306094.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_220559204_exported_732_1656806306094.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.756997" lon="-73.989721">
         <ele>17.600000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_220708065.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_220708065.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.757036" lon="-73.987791">
         <ele>59.040000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_221420858.MP.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_221420858.MP.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.756233" lon="-73.987427">
         <ele>14.200000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_221515348_exported_799_1656806269626.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_221515348_exported_799_1656806269626.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.755419" lon="-73.985499">
         <ele>77.110000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_221815836.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_221815836.jpg&quot;/&gt;</desc>
 </wpt>
 <wpt lat="40.753177" lon="-73.979454">
         <ele>25.500000</ele>
-        <name>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_222556327.jpg&quot;/&gt;</name>
+        <desc>&lt;img src=&quot;https://brandonrozek.com/files/images/tracks/2022-07-02/PXL_20220702_222556327.jpg&quot;/&gt;</desc>
 </wpt>
 <trk>
     <name>Tracked with OSMTracker for Android™</name>
