@@ -1,0 +1,12 @@
+{
+    "id": "{{ .Params.url }}",
+    "url": "{{ .Params.url }}",
+    "title": {{ .Title | jsonify }},
+    "authors": ["{{ .Params.author }}"],
+    {{ $pre := "<p><strong>Brandon's Comment:</strong></p>" }}
+    {{ $content := .Content  }}
+    {{ $combined := printf "%s%s" $pre $content}}
+    {{ $combined := $combined | jsonify (dict "noHTMLEscape" true) }}
+    "content_html": {{ $combined }},
+    "date_published": "{{ .Date.Format "2006.01.02" }}"
+}
