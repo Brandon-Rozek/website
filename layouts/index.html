@@ -27,15 +27,7 @@
           {{ end }}
         </ul>
       </nav>
-      <!-- Social Navigation -->
-      <p>Feel free to <a href='/contact'>contact me</a>:</p>
-      <nav class="nav-home">
-        <ul class="space-evenly">
-          {{ range .Site.Menus.profile }}
-            <li><a href="{{ .URL }}" rel="me" aria-label="{{ .Identifier }}">{{ .Pre }}<br>{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-      </nav>
+      <p>Feel free to <a href='/contact'>get in touch</a>!</p>
     </div>
     <div style="text-align: left; max-width: 750px">
 
@@ -92,7 +84,7 @@
 
       {{ $items := (where site.RegularPages "Type" "postroll").ByDate }}
       {{ range last 1 $items }}
-        <p><strong>Outside Post Read:  </strong><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+        <p><strong>Last Postroll:  </strong><a href="{{ .Params.url }}">{{ .Title }}</a></p>
       {{ end }}
 
 
