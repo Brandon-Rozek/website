@@ -32,6 +32,7 @@
       </author>
       <activity:object-type>http://activitystrea.ms/schema/1.0/article</activity:object-type>
       <title>{{ .Title }}</title>
+      <link href="{{ .Params.url }}"/>
       <id>{{ .Params.url }}</id>
       {{ printf `<content type="html"><![CDATA[<p><strong>Brandon's Comment:</strong></p>%s]]></description>` .Content | safeHTML }}
       <activity:verb>http://activitystrea.ms/schema/1.0/create</activity:verb>
