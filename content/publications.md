@@ -11,7 +11,7 @@ aliases:
 A Modal Logic of Optimality (Student Abstract)
 - Authors: James T. Oswald, *Brandon Rozek*, Thomas M. Ferguson, Selmer Bringsjord
 - Venue: AAAI Conference on Artificial Intelligence, 2025.
-- Paper to appear
+- [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/35286/37441)
 
 [Modeling C0 Family Logics for Artificial Intelligence: Doxastic-Temporal Logics for Reasoning About Goals](/paper/2405.02)
 - Authors: James T. Oswald, *Brandon Rozek*, and Thomas M. Ferguson
