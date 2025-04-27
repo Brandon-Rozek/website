@@ -2,7 +2,7 @@
 title: "Writing Unit Tests in Lean 4"
 date: 2024-08-05T20:43:52-07:00
 draft: false
-tags: []
+tags: ["Formal Methods"]
 math: false
 medium_enabled: false
 ---

@@ -2,7 +2,7 @@
 title: "Polymorphic Functions w/ Wildcard Matching in Lean 4"
 date: 2024-08-04T07:21:07-07:00
 draft: false
-tags: []
+tags: ["Formal Methods"]
 math: false
 medium_enabled: false
 ---
