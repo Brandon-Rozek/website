@@ -20,14 +20,14 @@ bridgy_syndication:
 ---
 Looking at Aaron Parecki's [&#8220;Fun with QR Codes&#8221;](https://aaronparecki.com/articles/2015/10/05/1/fun-with-qr-codes) inspired me to play with QR Codes myself. Using the tool [QArt Coder](http://research.swtch.com/qr/draw) made by [Russ Cox](https://plus.google.com/116810148281701144465), I made a QR Code with my face in it!
 
-![](https://brandonrozek.com/wp-content/uploads/2016/10/qrcode-large-1.png)
+![](/files/images/blog/qrcode-large-1.png)
 
 
 ### Why QR Codes?
 
 QR Codes aren't prevalent in the United States of America. In fact, they're often viewed by technologists as a [joke](http://picturesofpeoplescanningqrcodes.tumblr.com/). But as [Christina Xu](http://www.christinaxu.org/) points out on her Medium post [&#8220;Pictures of Chinese People Scanning QR Codes&#8221;](https://medium.com/chrysaora-weekly/pictures-of-chinese-people-scanning-qr-codes-a564047ec58f), it's not a joke everywhere. In fact, many people actually depend on this humble little QR code to get by in their day. Another story, my family and I go out to eat sometimes. Occasionally, we'll knock into a Heinz Ketchup bottle. 
 
-![Picture of Heinz ketch bottle with QR Code](https://brandonrozek.com/wp-content/uploads/2016/10/heinz-2-768x1024.jpg)
+![Picture of Heinz ketch bottle with QR Code](/files/images/blog/heinz-2-768x1024.jpg)
 
 Image by Azad Zahoory.
 

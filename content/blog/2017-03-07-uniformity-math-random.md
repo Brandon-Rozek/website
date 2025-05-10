@@ -41,7 +41,7 @@ grep -oE '[0-9]+' Random.csv &gt; Random_corrected.csv
 
 Do this with all three files and make sure to keep track of which is which.
 
-Here are a copy of my files for [Firefox](https://brandonrozek.com/wp-content/uploads/2017/03/Firefox_corrected.csv), [Chrome](https://brandonrozek.com/wp-content/uploads/2017/03/Chrome_corrected-1.csv), and [IE11](https://brandonrozek.com/wp-content/uploads/2017/03/IE11_corrected.csv)
+Here are a copy of my files for [Firefox](/data/browser-random/Firefox_corrected.csv), [Chrome](/data/browser-random/Chrome_corrected-1.csv), and [IE11](/data/browser-random/IE11_corrected.csv)
 
 ## Check Conditions
 
@@ -70,19 +70,19 @@ ie11 = read.csv("~/IE11_corrected.csv", header = F)
 hist(ie11$V1, main = "Distribution of Random Values for IE11", xlab = "Random Value")
 ```
 
-![](https://brandonrozek.com/wp-content/uploads/2017/03/ie11hist.png) 
+![](/files/images/blog/ie11hist.png) 
 
 ```R
 hist(firefox$V1, main = "Distribution of Random Values for Firefox", xlab = "Random Value")
 ```
 
-![](https://brandonrozek.com/wp-content/uploads/2017/03/firefoxhist.png) 
+![](/files/images/blog/firefoxhist.png) 
 
 ```R
 hist(chrome$V1, main = "Distribution of Random Values for Chrome", xlab = "Random Value")
 ```
 
-![](https://brandonrozek.com/wp-content/uploads/2017/03/chromehist.png) 
+![](/files/images/blog/chromehist.png) 
 
 ## Chi-Square Test
 

@@ -7,7 +7,7 @@ layout: revision
 guid: http://brandonrozek.com/2016/10/360-revision-v1/
 permalink: /2016/10/360-revision-v1/
 ---
-![](https://brandonrozek.com/wp-content/uploads/2016/10/SentenceWorthy.jpg)
+![](/files/images/projects/SentenceWorthy.jpg)
 
 ### [Sentence Worthy](http://sentenceworthy.com)
 

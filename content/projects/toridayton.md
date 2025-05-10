@@ -8,7 +8,7 @@ guid: http://brandonrozek.com/2016/10/364-revision-v1/
 permalink: /2016/10/364-revision-v1/
 ---
 
-![Screenshot of Tori Dayton's website](https://brandonrozek.com/wp-content/uploads/2016/10/Tori-Dayton-1.png)
+![Screenshot of Tori Dayton's website](/files/images/projects/Tori-Dayton-1.png)
 
 ### [Tori Dayton](http://toridayton.com) {.project-title}
 

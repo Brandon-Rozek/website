@@ -46,7 +46,7 @@ The formula for a circle centered at the origin with radius one is $$x^2 + y^2 =
 
 Let us focus again on the first quadrent, and do a Monte Carlo simulation to find the area of the quarter-circle
 
-![](https://brandonrozek.com/wp-content/uploads/2017/03/circlefilled.png) 
+![](/files/images/blog/circlefilled.png) 
 
 We can do this by what is called the dart board method. We generate a random x and y between 0 and 1. If it satisfies the inequality $$x^2 + y^2 \leq 1$$ then it counts as being inside the circle, if not then it lies outside the circle.
 

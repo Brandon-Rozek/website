@@ -26,7 +26,7 @@ Buttons are created using the JButton component. The constructor takes the text 
 JButton stopBtn = new JButton("Stop");
 ```
 
-![](https://brandonrozek.com/wp-content/uploads/2017/06/stopbutton.png)
+![](/files/images/blog/stopbutton.png)
 
 
 You can also add images inside a button. To do that you need to get the image and make it into an icon. The following code grabs the image file &#8220;smallpanda.jpg&#8221; from the current working directory.
@@ -51,7 +51,7 @@ this.add(stopBtn);
 this.add(feedBtn);
 ```
 
-![](https://brandonrozek.com/wp-content/uploads/2017/06/smallpandabutton.png)
+![](/files/images/blog/smallpandabutton.png)
 
 
 ### Labels and Textfields
@@ -71,7 +71,7 @@ One of the most common forms of input is a text field, usually distinguished wit
     this.add(nameInput);
 ```
 
-![](https://brandonrozek.com/wp-content/uploads/2017/06/labeltextfield.png)
+![](/files/images/blog/labeltextfield.png)
 
 
 ### Checkboxes
@@ -87,7 +87,7 @@ Checkboxes are commonly used when giving the possibility for multiple answers. S
     this.add(rice);
 ```
 
-![](https://brandonrozek.com/wp-content/uploads/2017/06/checkboxes.png)
+![](/files/images/blog/checkboxes.png)
 
 
 You can even replace the default look of the checkbox with an image. To do this, you need to make image icons for both when it's checked and when it's unchecked.
@@ -105,8 +105,8 @@ checkbox.setSelectedIcon(checkedIcon);
 this.add(checkbox);
 ```
 
-![](https://brandonrozek.com/wp-content/uploads/2017/06/unchecked.png)
-![](https://brandonrozek.com/wp-content/uploads/2017/06/checked.png)
+![](/files/images/blog/unchecked.png)
+![](/files/images/blog/checked.png)
 
 
 ### Text Areas
@@ -123,7 +123,7 @@ By default, when the someone inputs more text than the size can hold, it will au
 JScrollPane scrollPane = new JScrollPane(textarea);
 ```
 
-![](https://brandonrozek.com/wp-content/uploads/2017/06/textarea.png)
+![](/files/images/blog/textarea.png)
 
 ### Radio Buttons
 
@@ -147,7 +147,7 @@ this.add(radio2);
 this.add(radio3);
 ```
 
-![](https://brandonrozek.com/wp-content/uploads/2017/06/radiobuttons.png)
+![](/files/images/blog/radiobuttons.png)
 
 
 ### JList
@@ -188,7 +188,7 @@ list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 this.add(sp);
 ```
 
-![](https://brandonrozek.com/wp-content/uploads/2017/06/JList.png)
+![](/files/images/blog/JList.png)
 
 ### JComboBox
 
@@ -205,4 +205,4 @@ cb.addItem("Steak");
 this.add(cb);
 ```
 
-![](https://brandonrozek.com/wp-content/uploads/2017/06/JComboBox.png)
+![](/files/images/blog/JComboBox.png)

@@ -23,4 +23,4 @@ First go to File->Knit Document. If this is your first time, then it will instal
 
 Once that is downloaded, it will let you choose between three different file formats (HTML, PDF, MS Word). For the purposes of blog posts, I like to output it in HTML so I can copy and paste the code. But for personal use, I like using PDFs
 
-After you select the file format, hit compile, and voila! A nice neat compiled report is created for you. Here is a [pdf](https://brandonrozek.com/wp-content/uploads/2017/03/LifeExpectancy.pdf) example of the report I made.
+After you select the file format, hit compile, and voila! A nice neat compiled report is created for you. Here is a [pdf](/files/reports/LifeExpectancy.pdf) example of the report I made.

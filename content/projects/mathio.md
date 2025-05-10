@@ -8,7 +8,7 @@ guid: http://brandonrozek.com/2016/10/362-revision-v1/
 permalink: /2016/10/362-revision-v1/
 ---
 
-![Screenshot of the Math I/O Website](https://brandonrozek.com/wp-content/uploads/2016/10/Math-I-O.png)
+![Screenshot of the Math I/O Website](/files/images/projects/Math-I-O.png)
 
 ### [Math I/O](http://math-io.com)
 
