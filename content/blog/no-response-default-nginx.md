@@ -70,3 +70,14 @@ server {
 }
 ```
 
+You can test to see if this works by trying to query your IP directly using curl.
+
+```bash
+curl 173.255.230.230
+```
+
+This should return:
+```
+curl: (52) Empty reply from server
+```
+
