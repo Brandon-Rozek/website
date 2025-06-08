@@ -1,0 +1,40 @@
+{{/* Get remote data. */}}
+{{ $items := dict }}
+{{ $url := "https://api.brandonrozek.com/toots" }}
+{{ with try (resources.GetRemote $url ) }}
+  {{ with .Err }}
+    {{ errorf "Unable to get remote resource %s: %s" $url . }}
+  {{ else with .Value }}
+    {{ $items = . | transform.Unmarshal }}
+  {{ else }}
+    {{ errorf "Unable to get remote resource %s" $url }}
+  {{ end }}
+{{ end }}
+
+{{ range $items.toots }}
+    {{ $content := dict "mediaType" "text/html" "value" .content }}
+    {{ $dates := dict "date" (time.AsTime .created_at) }}
+    {{ $params := dict
+      "favourites_count" .favourites_count
+      "syndication" .url
+      "author" "@brozek@fosstodon.org"
+      "account" (dict
+        "display_name" "@brozek"
+        "avatar" "https://cdn.fosstodon.org/accounts/avatars/108/219/415/927/856/966/original/bae9f46f23936e79.jpg"
+      )
+      "media_attachments" .media_attachments
+      "reblogs_count" .reblogs_count
+      "replies_count" .replies_count
+
+    }}
+    {{ $page := dict
+      "content" $content
+      "dates" $dates
+      "kind" "page"
+      "params" $params
+      "path" .id
+      "title" ""
+      "build" (dict "render" "never")
+    }}
+    {{ $.AddPage $page }}
+{{ end }}
