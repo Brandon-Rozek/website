@@ -2,10 +2,6 @@
 	path = themes/pulp
 	url = git@github.com:Brandon-Rozek/website-theme.git
 	branch = master
-[submodule "content/toots"]
-	path = content/toots
-	url = git@github.com:Brandon-Rozek/website-toots.git
-	branch = main
 [submodule "content/observations"]
 	path = content/observations
 	url = git@github.com:Brandon-Rozek/website-observations.git
