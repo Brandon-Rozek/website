@@ -43,21 +43,6 @@ jobs:
           tar -xvzf hugo.tar.gz
           sudo mv hugo /usr/local/bin
 
-
-      - name: Install Rust
-        run: |
-          sudo apt update
-          sudo apt install -y rustc cargo
-
-      - name: Build Website-Toots
-        run: |
-          cd content/toots/.scripts
-          cargo build --release
-
-      - name: Pre-build script
-        run: |
-          ./build.sh
-
       - name: Build Hugo Website
         id: build
         run: |
