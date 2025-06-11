@@ -2,7 +2,3 @@
 	path = themes/pulp
 	url = git@github.com:Brandon-Rozek/website-theme.git
 	branch = master
-[submodule "content/observations"]
-	path = content/observations
-	url = git@github.com:Brandon-Rozek/website-observations.git
-	branch = main
