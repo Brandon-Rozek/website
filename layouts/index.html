@@ -68,8 +68,8 @@
       {{ $items := (where site.RegularPages "Type" "observations").ByDate }}
       {{ range last 1 $items }}
         {{ $name := "" }}
-        {{ if (ne .Params.taxon.common_name "") }}
-            {{ $name = .Params.taxon.common_name }}
+        {{ if (ne .Params.taxon.preferred_common_name "") }}
+            {{ $name = .Params.taxon.preferred_common_name }}
         {{ else }}
             {{ $name = .Params.taxon.name }}
         {{ end }}
