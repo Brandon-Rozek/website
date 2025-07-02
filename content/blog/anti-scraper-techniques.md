@@ -8,11 +8,11 @@ medium_enabled: false
 ---
 
 Nowadays it seems like every tech company is eager to scrape the web. Unfortunately, it seems like 
-[^1] the majority of traffic that comes to this small site are scrappers. While my static website is able to handle the load, the same cannot be said about everyone.
+[^1] the majority of traffic that comes to this small site are scrapers. While my static website is able to handle the load, the same cannot be said about everyone.
 
 [^1]: At least I don't think a human using Chrome would try to visit my homepage every minute.
 
-Overall, the techinques I've seen website owners use aim to make scrapping more difficult. Though it's a balance. The harder we make it for bots to access a website, the more we turn away regular humans as well. Here's a short and non-exhaustive list of techinques:
+Overall, the techinques I've seen website owners use aim to make scraping more difficult. Though it's a balance. The harder we make it for bots to access a website, the more we turn away regular humans as well. Here's a short and non-exhaustive list of techinques:
 
 1. User Agent Filtering
 2. CAPTCHA solving
@@ -41,7 +41,7 @@ Sitemap: https://www.example.com/sitemap.xml
 
 The `*` here is the Klenne star which means that it can match any string. Before the bot requests a page, the idea is that they first request this `robots.txt` file, find the rules that match their user agent, and follow it's instructions.
 
-As you might imagine, not everyone writes scrappers that follow these rules. This depends on how well-written the bot was and how considerate the developer is. An alternative to this approach is to block the request at the web server. For example, here's how you would do that using `nginx`
+As you might imagine, not everyone writes scrapers that follow these rules. This depends on how well-written the bot was and how considerate the developer is. An alternative to this approach is to block the request at the web server. For example, here's how you would do that using `nginx`
 
 ```nginx
 if ($http_user_agent = "Googlebot"){
@@ -78,11 +78,11 @@ I'm also unsure how successful this is against the LLM web scrapers. Nowadays th
 
 ### Proof of work
 
-We talked about how CAPTCHAs are difficult for computers but easy for humans. Proof of work is difficult for both computers and humans. This helps reduce the number of scrappers by making it *costly* to request resources from the website. By making the web browser solve some proof of work challenge (usually involving hash functions), the request consumes additional CPU cycles and takes additional time. 
+We talked about how CAPTCHAs are difficult for computers but easy for humans. Proof of work is difficult for both computers and humans. This helps reduce the number of scrapers by making it *costly* to request resources from the website. By making the web browser solve some proof of work challenge (usually involving hash functions), the request consumes additional CPU cycles and takes additional time. 
 
 Similar to rate limiting, how *difficult* you make the problem has a direct impact on user experience. The more difficult, the longer it'll take for the web browser to solve it. This will deter more bots, but after a few seconds will also deter human visitors. [According to a study performed by Google and SOASTA Research in 2017](https://web.archive.org/web/20250121155519/https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/page-load-time-statistics/), if a user has to wait 3 seconds instead of 1 second, then the probability that they *bounce* (leave the page) increases by 32%.
 
-Recently, open-source projects [Anubis](https://anubis.techaro.lol/) and [go-away](https://git.gammaspectra.live/git/go-away) gained popularity for making it easy to implement this technique. It's popular for git forges like [sourcehut's](https://git.sr.ht/) as scrapping those incurs a lot of CPU cycles in traversing git repositories.
+Recently, open-source projects [Anubis](https://anubis.techaro.lol/) and [go-away](https://git.gammaspectra.live/git/go-away) gained popularity for making it easy to implement this technique. It's popular for git forges like [sourcehut's](https://git.sr.ht/) as scraping those incurs a lot of CPU cycles in traversing git repositories.
 
 ### Identification
 
@@ -96,7 +96,7 @@ Another interesting idea that I haven't seen widely implemented is requiring som
 
 ### Conclusion
 
-We're in a special time period where everyone is fighting to become the top AI company. Long term, I feel that the scrapper activity will die down. Similar to how there weren't as many web search scrappers out there.
+We're in a special time period where everyone is fighting to become the top AI company. Long term, I feel that the scraper activity will die down. Similar to how there weren't as many web search scrapers out there.
 
 In the meantime, these are multiple techniques to consider if your website is suffering under heavy load. As for myself, I don't currently implement any of these as my website is mostly static and I haven't noticed my servers being overloaded.
 
