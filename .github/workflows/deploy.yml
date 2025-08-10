@@ -55,7 +55,7 @@ jobs:
           echo "${{ secrets.HOST_KEY }}" > ~/.ssh/known_hosts
           cat <<EOL > ~/.ssh/config
           Host Rozek-Fog
-            Hostname 208.99.44.108
+            Hostname 162.249.169.228
             User build
             IdentityFile ~/.ssh/id_rsa
           EOL
