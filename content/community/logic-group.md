@@ -17,6 +17,8 @@ I presented the following:
 
 | Date       | Title                                                        |
 | ---------- | ------------------------------------------------------------ |
+| 04/23/2025 | Lean 4 as a Programming Language and Theorem Prover (along with James Oswald) |
+| 03/26/2025 | What can go into a classical planning model? |
 | 12/04/2024 | An Introduction to Situation Calculus (along with James Oswald) |
 | 10/16/2024 | Alternative Theories of Uncertainty: Dempster-Shafer and Possibility Theory |
 | 03/27/2024 | CryptoSolve: A Tool for the Analysis of Cryptographic Modes of Operation |
