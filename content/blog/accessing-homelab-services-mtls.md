@@ -149,9 +149,12 @@ When running this command, it'll ask for an export password. You'll need to reme
 
 Before we can import `user.pfx` on our favorite device, we need to have our device trust the root certificate authority. Since we created our own and didn't go through a CA like Let's Encrypt, devices will not trust the certificates by default.
 
+On Fedora, copy `ca.pem` to `/etc/pki/ca-trust/source/anchors/` and then run `sudo update-ca-trust`. 
+
 On Android you can import `ca.pem` via `More security & privacy > Encryption & credentials -> Install a certificate -> CA certificate`.
 
-Then you can install `user.pfx` via `More security & privacy > Encryption & credentials -> Install a certificate -> VPN & app user certificate`.
+After install the CA public certificate, we can install `user.pfx` via `More security & privacy > Encryption & credentials -> Install a certificate -> VPN & app user certificate`. On Fedora, you can do this within Firefox.
+
 
 ### Nginx Authenticated Proxy Setup
 
