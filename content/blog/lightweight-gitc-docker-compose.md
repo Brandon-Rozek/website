@@ -11,6 +11,8 @@ title: Deploying a Lightweight Git Server with CGit using Docker-Compose
 
 In this post, I'll talk about how we can setup CGit within a docker-compose setup. We'll be using the [ClearLinux CGit](https://hub.docker.com/r/clearlinux/cgit) container.
 
+**Note:** Intel has discountinued the Clear Linux project, and as such the CGit docker container is no longer available. There are other CGit containers on DockerHub, but I have not tested any of them since I (as of Oct 2025) use Forgejo as my Git Forge. Please write in if you've had success following these instructions with any of the other images out there.
+
 ## Configuring Apache Webserver
 
 Within the CGit container, an apache webserver is setup to execute the CGit CGI scripts. This configuration is very similar to the [default one](https://github.com/clearlinux/dockerfiles/blob/256680f7c6be8423081e67153de0bff1206f6b63/cgit/httpd-cgit.conf) provided by ClearLinux. However, the default holds your repositories in the `/cgit` subfolder as I wanted it on the root `/` folder.
