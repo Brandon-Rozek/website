@@ -14,7 +14,7 @@ After installing `nginx` fresh on a server, this classic quote is part of a welc
 
 This page mostly exists to make sure that everything is squared away after installation. However, how can we get rid of the page once we have all the site configurations loaded?
 
-We'll show how to get rid of the default welcome page by changing the `default.conf` file.
+We'll show how to get rid of the default welcome page by changing the `default.conf` file and go an extra step to ignore domain names that we're not serving.
 
 When you type in `https://brandonrozek.com` in your web browser, your system will first (1) look up the IP (at the time of writing it's `173.255.230.230`) and then (2) send a HTTP request with the header including `Host('brandonrozek.com')`. It's the `Host` header that lets `nginx` know which content to serve.
 
@@ -48,7 +48,9 @@ server {
 }
 ```
 
-All together, a modified `default.conf` looks like:
+Now we'll want to save this to a file called `_default.conf`. Note that it has an underscore in the front. This is because we want this file to be the first configuration file to appear in our folder. When a client connects via HTTPS (unless we have SNI enabled), we have no way to know which host name they wish to connect to. That's because that information is encrypted! The default behavior in nginx is to then use the first configuration file.
+
+All together, `_default.conf` looks like:
 
 ```nginx
 server {
