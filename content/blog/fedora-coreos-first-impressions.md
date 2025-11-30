@@ -2,7 +2,11 @@
 title: "Fedora CoreOS: First Impressions"
 date: 2025-11-28T10:47:11-05:00
 draft: false
-tags: []
+tags:
+  - Fedora CoreOS
+  - Podman
+  - SELinux
+  - nftables
 math: false
 medium_enabled: false
 ---
