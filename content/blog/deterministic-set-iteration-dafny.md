@@ -2,7 +2,11 @@
 title: "Deterministically Iterating over a set within Dafny functions"
 date: 2025-07-06T12:27:01-04:00
 draft: false
-tags: ["Formal Methods"]
+tags:
+    - Dafny
+    - Formal methods
+    - Deterministic algorithm
+    - Total order
 math: false
 medium_enabled: false
 ---

@@ -2,7 +2,10 @@
 title: "Setting up Ollama with CUDA on Podman Quadlets"
 date: 2025-03-29T09:59:55-04:00
 draft: false
-tags: []
+tags:
+  - Ollama
+  - Podman
+  - CUDA
 math: false
 medium_enabled: false
 ---

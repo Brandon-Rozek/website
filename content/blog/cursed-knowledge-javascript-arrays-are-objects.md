@@ -2,7 +2,8 @@
 title: "Cursed Knowledge: Javascript Arrays Are Objects"
 date: 2025-09-01T09:47:01-04:00
 draft: false
-tags: []
+tags:
+    - JavaScript
 math: true
 medium_enabled: false
 ---

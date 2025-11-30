@@ -2,7 +2,9 @@
 title: "Adventures in Rust WebAssembly"
 date: 2025-02-21T10:13:17-05:00
 draft: false
-tags: ["Rust", "Web"]
+tags:
+    - WebAssembly
+    - Rust
 math: false
 medium_enabled: false
 ---

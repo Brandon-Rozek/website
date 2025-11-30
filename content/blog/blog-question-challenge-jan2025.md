@@ -2,7 +2,8 @@
 title: "Blog Question Challenge (Jan 2025)"
 date: 2025-01-29T21:18:03-05:00
 draft: false
-tags: []
+tags:
+  - blogging
 math: false
 medium_enabled: false
 ---

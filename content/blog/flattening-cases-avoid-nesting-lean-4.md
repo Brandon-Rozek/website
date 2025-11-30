@@ -2,7 +2,10 @@
 title: "Flattening Cases to Avoid Nesting in Lean 4"
 date: 2025-10-05T19:38:20-04:00
 draft: false
-tags: []
+tags:
+  - Lean
+  - Proof assistant
+  - Formal Proof
 math: true
 medium_enabled: false
 ---

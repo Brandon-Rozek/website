@@ -2,7 +2,14 @@
 title: "Verifying Proofs with Type Checkers"
 date: 2025-05-27T09:27:59-04:00
 draft: false
-tags: ["Formal Methods"]
+tags:
+  - Formal methods
+  - proof assistant
+  - Curry-Howard correspondence
+  - lambda cube
+  - calculus of constructions
+  - dependent type
+  - type theory
 math: true
 medium_enabled: false
 ---

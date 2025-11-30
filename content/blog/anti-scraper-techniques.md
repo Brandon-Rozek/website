@@ -2,7 +2,12 @@
 title: "Dealing with Web Scrapers"
 date: 2025-07-02T09:10:23-04:00
 draft: false
-tags: []
+tags:
+  - web scraping
+  - CAPTCHA
+  - rate limiting
+  - robots.txt
+  - proof of work
 math: false
 medium_enabled: false
 ---

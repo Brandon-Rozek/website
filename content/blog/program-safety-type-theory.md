@@ -2,7 +2,9 @@
 title: "Is this program safe? Lessons from Type Theory"
 date: 2025-05-10T09:28:07-04:00
 draft: false 
-tags: []
+tags:
+  - type theory
+  - type inference
 math: true
 medium_enabled: false
 ---

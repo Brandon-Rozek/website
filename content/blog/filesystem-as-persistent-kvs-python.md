@@ -2,7 +2,10 @@
 title: "Filesystem as a persistent key-value store in Python"
 date: 2025-04-27T13:39:49-04:00
 draft: false
-tags: []
+tags:
+  - key-value database
+  - file system
+  - Python
 math: false
 medium_enabled: false
 ---

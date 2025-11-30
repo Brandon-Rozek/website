@@ -2,7 +2,11 @@
 title: "Weather Forcecasts on the Command-Line with the National Weather Service API"
 date: 2025-03-16T15:33:49-04:00
 draft: false 
-tags: []
+tags:
+  - Command-line interface
+  - National Weather Service
+  - Bash
+  - jq
 math: false
 medium_enabled: false
 ---

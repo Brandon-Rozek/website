@@ -2,7 +2,9 @@
 title: "Quick Lean: if-then-else statement in hypothesis"
 date: 2025-04-26T10:58:42-04:00
 draft: false
-tags: ["Formal Methods"]
+tags:
+  - Lean
+  - Proof assistant
 math: false
 medium_enabled: false
 ---

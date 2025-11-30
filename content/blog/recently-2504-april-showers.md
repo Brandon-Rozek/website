@@ -2,7 +2,8 @@
 title: "Recently: April Showers Bring..."
 date: 2025-04-12T10:38:45-04:00
 draft: false
-tags: []
+tags:
+  - homelab
 math: false
 medium_enabled: false
 ---

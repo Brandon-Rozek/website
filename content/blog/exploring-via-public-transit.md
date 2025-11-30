@@ -2,7 +2,8 @@
 title: "Exploring via Public Transit"
 date: 2025-06-15T21:38:02-04:00
 draft: false
-tags: []
+tags:
+  - public transport
 math: false
 medium_enabled: false
 ---
