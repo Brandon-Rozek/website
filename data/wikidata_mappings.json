@@ -1,0 +1,344 @@
+{
+  "fedora-coreos": {
+    "entities": [
+      {
+        "id": "Q98405060",
+        "url": "https://www.wikidata.org/wiki/Q98405060",
+        "description": "Linux distribution"
+      }
+    ]
+  },
+  "podman": {
+    "entities": [
+      {
+        "id": "Q70876440",
+        "url": "https://www.wikidata.org/wiki/Q70876440",
+        "description": "daemonless OCI-compliant container runtime"
+      }
+    ]
+  },
+  "selinux": {
+    "entities": [
+      {
+        "id": "Q116038",
+        "url": "https://www.wikidata.org/wiki/Q116038",
+        "description": "Linux kernel security module"
+      }
+    ]
+  },
+  "nftables": {
+    "entities": [
+      {
+        "id": "Q7021717",
+        "url": "https://www.wikidata.org/wiki/Q7021717",
+        "description": "userspace utility for Linux packet filtering"
+      }
+    ]
+  },
+  "lean": {
+    "entities": [
+      {
+        "id": "Q6509476",
+        "url": "https://www.wikidata.org/wiki/Q6509476",
+        "description": "software for interactive and automated theorem proving"
+      }
+    ]
+  },
+  "proof-assistant": {
+    "entities": [
+      {
+        "id": "Q11387554",
+        "url": "https://www.wikidata.org/wiki/Q11387554",
+        "description": "software tool to assist with the development of formal proofs by human-machine collaboration"
+      }
+    ]
+  },
+  "formal-proof": {
+    "entities": [
+      {
+        "id": "Q2762418",
+        "url": "https://www.wikidata.org/wiki/Q2762418",
+        "description": "establishment of a theorem using inference from the axioms"
+      }
+    ]
+  },
+  "javascript": {
+    "entities": [
+      {
+        "id": "Q2005",
+        "url": "https://www.wikidata.org/wiki/Q2005",
+        "description": "high-level programming language"
+      }
+    ]
+  },
+  "dafny": {
+    "entities": [
+      {
+        "id": "Q48989398",
+        "url": "https://www.wikidata.org/wiki/Q48989398",
+        "description": "programming language"
+      }
+    ]
+  },
+  "formal-methods": {
+    "entities": [
+      {
+        "id": "Q1049183",
+        "url": "https://www.wikidata.org/wiki/Q1049183",
+        "description": "mathematical program specification intended to allow correctness proofs, including algorithmically"
+      }
+    ]
+  },
+  "deterministic-algorithm": {
+    "entities": [
+      {
+        "id": "Q1064349",
+        "url": "https://www.wikidata.org/wiki/Q1064349",
+        "description": "algorithm which, given a particular input, will always produce the same output"
+      }
+    ]
+  },
+  "total-order": {
+    "entities": [
+      {
+        "id": "Q369377",
+        "url": "https://www.wikidata.org/wiki/Q369377",
+        "description": "ordering relation where all elements can be compared; binary relation on some set, which is antisymmetric, transitive, and total"
+      }
+    ]
+  },
+  "web-scraping": {
+    "entities": [
+      {
+        "id": "Q665452",
+        "url": "https://www.wikidata.org/wiki/Q665452",
+        "description": "data scraping used for extracting data from websites"
+      }
+    ]
+  },
+  "captcha": {
+    "entities": [
+      {
+        "id": "Q484598",
+        "url": "https://www.wikidata.org/wiki/Q484598",
+        "description": "computer test to discriminate human users from spambots"
+      }
+    ]
+  },
+  "rate-limiting": {
+    "entities": [
+      {
+        "id": "Q3420050",
+        "url": "https://www.wikidata.org/wiki/Q3420050",
+        "description": "Limiting the data rate on network controllers."
+      }
+    ]
+  },
+  "robots.txt": {
+    "entities": [
+      {
+        "id": "Q80776",
+        "url": "https://www.wikidata.org/wiki/Q80776",
+        "description": "standard used to advise web crawlers and scrapers not to index a web page or site"
+      }
+    ]
+  },
+  "proof-of-work": {
+    "entities": [
+      {
+        "id": "Q7249984",
+        "url": "https://www.wikidata.org/wiki/Q7249984",
+        "description": "a system that regulates the formation of blocks on a blockchain"
+      }
+    ]
+  },
+  "user-agent-http-header": {
+    "entities": [
+      {
+        "id": "Q115124801",
+        "url": "https://www.wikidata.org/wiki/Q115124801",
+        "description": "HTTP request header indicating the initiating software (e.g. browser)"
+      }
+    ]
+  },
+  "public-transport": {
+    "entities": [
+      {
+        "id": "Q178512",
+        "url": "https://www.wikidata.org/wiki/Q178512",
+        "description": "shared transportation service for use by the general public"
+      }
+    ]
+  },
+  "curry-howard-correspondence": {
+    "entities": [
+      {
+        "id": "Q975734",
+        "url": "https://www.wikidata.org/wiki/Q975734",
+        "description": "the direct relationship between computer programs and mathematical proofs"
+      }
+    ]
+  },
+  "lambda-cube": {
+    "entities": [
+      {
+        "id": "Q2036661",
+        "url": "https://www.wikidata.org/wiki/Q2036661",
+        "description": "a framework"
+      }
+    ]
+  },
+  "calculus-of-constructions": {
+    "entities": [
+      {
+        "id": "Q858320",
+        "url": "https://www.wikidata.org/wiki/Q858320",
+        "description": "formal system"
+      }
+    ]
+  },
+  "dependent-type": {
+    "entities": [
+      {
+        "id": "Q997433",
+        "url": "https://www.wikidata.org/wiki/Q997433",
+        "description": "data type whose definition depends on a value"
+      }
+    ]
+  },
+  "type-theory": {
+    "entities": [
+      {
+        "id": "Q1056428",
+        "url": "https://www.wikidata.org/wiki/Q1056428",
+        "description": "concept in mathematical logic and computer science"
+      }
+    ]
+  },
+  "type-inference": {
+    "entities": [
+      {
+        "id": "Q586459",
+        "url": "https://www.wikidata.org/wiki/Q586459",
+        "description": "automatic detection of the data type of an expression in a programming language"
+      }
+    ]
+  },
+  "key-value-database": {
+    "entities": [
+      {
+        "id": "Q20706915",
+        "url": "https://www.wikidata.org/wiki/Q20706915",
+        "description": "data storage paradigm designed for storing, retrieving, and managing associative arrays"
+      }
+    ]
+  },
+  "file-system": {
+    "entities": [
+      {
+        "id": "Q174989",
+        "url": "https://www.wikidata.org/wiki/Q174989",
+        "description": "concrete format or program for storing files and directories on a data storage device"
+      }
+    ]
+  },
+  "python": {
+    "entities": [
+      {
+        "id": "Q28865",
+        "url": "https://www.wikidata.org/wiki/Q28865",
+        "description": "general-purpose programming language"
+      }
+    ]
+  },
+  "homelab": {
+    "entities": [
+      {
+        "id": "Q750110",
+        "url": "https://www.wikidata.org/wiki/Q750110",
+        "description": "computing server located in a private residence providing services to other devices inside or outside the household through a home network or the Internet"
+      }
+    ]
+  },
+  "ollama": {
+    "entities": [
+      {
+        "id": "Q124636097",
+        "url": "https://www.wikidata.org/wiki/Q124636097",
+        "description": "large-language-model open-source software library"
+      }
+    ]
+  },
+  "cuda": {
+    "entities": [
+      {
+        "id": "Q477690",
+        "url": "https://www.wikidata.org/wiki/Q477690",
+        "description": "parallel computing platform and programming model"
+      }
+    ]
+  },
+  "command-line-interface": {
+    "entities": [
+      {
+        "id": "Q189053",
+        "url": "https://www.wikidata.org/wiki/Q189053",
+        "description": "type of computer interface based on entering text commands and viewing text output"
+      }
+    ]
+  },
+  "national-weather-service": {
+    "entities": [
+      {
+        "id": "Q1066823",
+        "url": "https://www.wikidata.org/wiki/Q1066823",
+        "description": "U.S. forecasting agency of the National Oceanic and Atmospheric Administration"
+      }
+    ]
+  },
+  "bash": {
+    "entities": [
+      {
+        "id": "Q189248",
+        "url": "https://www.wikidata.org/wiki/Q189248",
+        "description": "GNU Project implementation of the standard Unix shell"
+      }
+    ]
+  },
+  "jq": {
+    "entities": [
+      {
+        "id": "Q28801607",
+        "url": "https://www.wikidata.org/wiki/Q28801607",
+        "description": "command-line JSON processor"
+      }
+    ]
+  },
+  "webassembly": {
+    "entities": [
+      {
+        "id": "Q20155677",
+        "url": "https://www.wikidata.org/wiki/Q20155677",
+        "description": "portable, efficient virtual machine and bytecode format for compiled code on the Web"
+      }
+    ]
+  },
+  "rust": {
+    "entities": [
+      {
+        "id": "Q575650",
+        "url": "https://www.wikidata.org/wiki/Q575650",
+        "description": "memory-safe programming language without garbage collection"
+      }
+    ]
+  },
+  "blogging": {
+    "entities": [
+      {
+        "id": "Q21124681",
+        "url": "https://www.wikidata.org/wiki/Q21124681",
+        "description": "action of writing articles or maintaining a weblog"
+      }
+    ]
+  }
+}
