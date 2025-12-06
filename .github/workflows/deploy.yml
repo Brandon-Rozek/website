@@ -76,7 +76,7 @@ jobs:
 
       - name: Build Onion Website
         run: |
-          hugo --baseURL "brozek63j22jry6gof2vszo27vh2ed327bqismqu3somrqu622z73eid.onion" --destination "public-onion"
+          hugo --baseURL "http://brozek63j22jry6gof2vszo27vh2ed327bqismqu3somrqu622z73eid.onion/" --destination "public-onion"
 
       - name: Deploy onion website
         run: |
