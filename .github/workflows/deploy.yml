@@ -63,10 +63,21 @@ jobs:
       - name: Deploy
         run: ./deploy.sh
 
+      - name: Install Onion SSH Key
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_onion
+          echo "${{ secrets.ONION_BUILD_SSH_KEY }}" > ~/.ssh/id_onion
+          cat <<EOL >> ~/.ssh/config
+          Host Rozek-Nimbus-Onion
+            Hostname 158.69.216.99
+            User build
+            IdentityFile ~/.ssh/id_onion
+          EOL
+
       - name: Build Onion Website
         run: |
           hugo --baseURL "brozek63j22jry6gof2vszo27vh2ed327bqismqu3somrqu622z73eid.onion" --destination "public-onion"
 
       - name: Deploy onion website
         run: |
-          rsync -Pazc --exclude=*.bak --delete public-onion/ build@Rozek-Nimbus:brandonrozek-onion/
+          rsync -Pazc --exclude=*.bak --delete public-onion/ build@Rozek-Nimbus-Onion:brandonrozek-onion/
