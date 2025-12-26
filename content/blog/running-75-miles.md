@@ -13,7 +13,7 @@ Back in August, I started running regularly and recording my sessions. I recentl
 
 Over the summer, I lived and worked in Austin, Texas. For the prior months of the year, I've lived a fairly sedimentary lifestyle. I enjoy these summers where I am forced to walk more places and [take public transit](/blog/exploring-via-public-transit/) since I don't have access to a vehicle.
 
-Two of my coworkers were really into running and one of them even regularly ran a few miles outside in the [95+ degree Fahrenheit weather](/blog/embrace-the-heat/). This didn't immediately convince me to start myself, but it definitely planted the seed. Towards the end of the summer, I asked myself "What's stopping me from running?" and took this as an oppurtunity to prove something to myself.
+Two of my coworkers were really into running and one of them even regularly ran a few miles outside in the [95+ degree Fahrenheit weather](/blog/embrace-the-heat/). This didn't immediately convince me to start myself, but it definitely planted the seed. Towards the end of the summer, I asked myself "What's stopping me from running?" and took this as an opportunity to prove something to myself.
 
 > What do I need to get started?
 
