@@ -37,7 +37,7 @@ The transition between summer and fall in New York state is lovely. It makes for
 
 Some people swear by running outdoors versus using a treadmill. I'm fine with either, but there are definitely trade-offs.
 
-With outdoor running there is much more visual stimuli. Instead of staring at a wall, the scenery changes as you move around. This is a huge pro when it comes to starving off boredom; which I find very important for a successful workout. The uneven ground also prevents repetitive strain injuries.
+With outdoor running there is much more visual stimuli. Instead of staring at a wall, the scenery changes as you move around. This is a huge pro when it comes to staving off boredom; which I find very important for a successful workout. The uneven ground also prevents repetitive strain injuries.
 
 On the other hand, it's very easy to keep pace with a treadmill. Another benefit is that you don't have to plan out a route ahead of time. Though, I find it imperative to have some sort of distraction ready for when I do my treadmill runs. Initially I turned to watching YouTube videos, but I noticed that my posture would then suffer. I find podcasts to be a nice compromise.
 
