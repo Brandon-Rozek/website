@@ -8,6 +8,16 @@ aliases:
 
 ## Publications
 
+Filtering Goals of Necessity-Optimal Agents in Qualitative Possibilistic Recognition via Planning
+- Authors: *Brandon Rozek* and Selmer Bringsjord
+- Venue: International Conference on Agents and Artificial Inteligence, 2026.
+
+
+VSPursuer: A Tool for Finding Matrices Witnessing the Variable Sharing Property
+- Authors: *Brandon Rozek* and Andrew Tedder
+- Venue: Journal of Logic, Language, and Information, Forthcoming.
+
+
 A Modal Logic of Optimality (Student Abstract)
 - Authors: James T. Oswald, *Brandon Rozek*, Thomas M. Ferguson, Selmer Bringsjord
 - Venue: AAAI Conference on Artificial Intelligence, 2025.
