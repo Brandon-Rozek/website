@@ -72,7 +72,7 @@ mediaTypes = ['^application/json']
 
 [outputs]
     section = ["json", "html", "rss", "atom", "as2"]
-    page = ["html", "amp", "json"]
+    page = ["html", "json"]
 
 [[menu.main]]
     identifier = "blog"
