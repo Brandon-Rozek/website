@@ -11,7 +11,7 @@ On April 16 2015, I wrote my first two [blog](/blog/2015-04-16-function-two-poin
 
 I thought it would be nice to look back over the last ten years, and talk about my favorite blog posts of each year. What I've come to realize in this exercise is that I really came a long way. I mean, it's not that hard to beat my first blog post where I just scanned a sheet of paper!
 
-*Disclaimer:* Posts before mid-2019 were on Wordpress, and let's just say that the migration to Hugo hasn't been perfect...
+*Disclaimer:* Posts before mid-2019 were on WordPress, and let's just say that the migration to Hugo hasn't been perfect...
 
 ## 2015
 
@@ -77,7 +77,7 @@ On August 2022, I joined Mastodon and like all new people had to figure out wher
 
 This was also the year I introduced the [tracks](/tracks) feature on my website. I really enjoy going on walks, and having a section of my website that shows where I walked and the pictures along the way is wicked cool. I fully described the implementation of this feature in the post [Displaying Hikes with gpx.studio](/blog/displaying-hikes-with-gpxstudio/).
 
-Lastly, professionally I was a teaching assistant. A couple posts were born from seeing student mistakes. My favorites were [Loop Invariants in Dafny](/blog/proving-loop-invariants/) and [Most Common Mistake in Induction Proofs](/blog/common-mistake-induction-proofs/).
+Lastly, professionally I was a teaching assistant. A couple of posts were born from seeing student mistakes. My favorites were [Loop Invariants in Dafny](/blog/proving-loop-invariants/) and [Most Common Mistake in Induction Proofs](/blog/common-mistake-induction-proofs/).
 
 ## 2023
 
@@ -95,7 +95,7 @@ Since I work on multiple devices, I make more merge conflicts than I like to adm
 
 In contrast to what I said in the [blog questions challenge](/blog/blog-question-challenge-jan2025/), my favorite blog post last year was one where I wrote a hash function based on an Emoji list. I don't use emojis nearly enough in my daily life and there's more than 5042 of them to chose from!
 
-Winters here in New York is cold and I often don't want to go outside. One of the events I look forward to is watching my university's hockey games. Therefore a close second place for last year is when I wrote about my [experience watching ice hockey](/blog/ice-hockey/). Another yearly tradition of Clare and I is to go [Apple Picking](/blog/hunter-gathering-apple-picking/) in the fall.
+Winters here in New York is cold and I often don't want to go outside. One of the events I look forward to is watching my university's hockey games. Therefore, a close second place for last year is when I wrote about my [experience watching ice hockey](/blog/ice-hockey/). Another yearly tradition of Clare and I is to go [Apple Picking](/blog/hunter-gathering-apple-picking/) in the fall.
 
 In terms of software, I wrote about a way you can [access your homelab remotely using mTLS](/blog/accessing-homelab-services-mtls/). Also, I really appreciate the mission of the [Tildeverse](/blog/tildeverse/) and last year wrote [WordGuess: A game for the Tildeverse](/blog/wordguess/). Lastly, my favorite writeup related to my research last year is [Constraints and Safety in PDDL](/blog/safety-constraints-pddl/)
 
