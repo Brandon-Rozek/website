@@ -17,7 +17,7 @@ We later moved to New York. For the next few years, we would travel to see frien
 
 Around us in upstate New York, there are several bonfire events in January. There's one in particular that we've attended for several New Year's Eve. What's special about this bonfire is that the fuel of the fire is not prepared as chopped wood in advance. Instead, it is sourced from the community.
 
-Let me paint a picture. It's a cold Christmas night, and there is a group of around 20-30 people bundled up in full winter gear staying close to the bonfire. As time progresses, the fire gets smaller and smaller, and we get closer to try to feel some of its heat.  Then, a person in a pickup truck arrives, gets out of their vehicle, and chucks their Christmas tree from the bed of the truck onto the fire. The fire rages.
+Let me paint a picture. It's a cold winter night, and there is a group of around 20-30 people bundled up in full winter gear staying close to the bonfire. As time progresses, the fire gets smaller and smaller, and we get closer to try to feel some of its heat.  Then, a person in a pickup truck arrives, gets out of their vehicle, and chucks their Christmas tree from the bed of the truck onto the fire. The fire rages.
 
 ![Christmas tree burning in a bonfire](/files/images/blog/bonfire2025.jpg)
 
