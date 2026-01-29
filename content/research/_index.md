@@ -7,25 +7,36 @@ Description: A list of my research Projects
 
 **Broad Research Interests:** Automated Reasoning, Automated Planning, Artificial Intelligence, Formal Methods
 
+Currently, I'm a Computer Science PhD Candidate at Rensselaer Polytechnic Institute. I enjoy using logic-based techniques and designing algorithms to solve problems.
+
+Jump to:
+- [Planning under uncertainty](#planning-under-uncertainty)
+- [Logic](#logic)
+- [Symbolic Methods for Cryptography](#symbolic-methods-for-cryptography)
+
 ## Planning under Uncertainty
 
-During my PhD I have been primarily focused on investigating planning and sequential decision
-making under uncertainty:
-- I created a new framework which allows agents to make plans under *qualitative uncertainty*.
-This helps in settings where the user doesn't have exact probabilities that various
-facts holds, but can instead bucket them into different likelihood values.
-This work is supervised under [Selmer Bringsjord](https://homepages.rpi.edu/~brings/).
-- Additionally with Selmer Bringsjord in the [RAIR Lab](https://rair.cogsci.rpi.edu/), I have looked at planning through automated reasoning.
-I further developed [Spectra](https://github.com/rairlab/spectra) and the underlying
-planning with formulas framework to show classes of uncertainty problems that
-are easy to encode. Additionally, I wrote a QA algorithm for ShadowProver to integrate to Spectra
-for planning under epistemic uncertatinty.
+My dissertation topic is on automatically finding and recognizing plans
+when agents are uncertain about the environment but can compare the
+uncertainty between events *qualitatively*. For example, it is totally
+expected when we stack a block that it stays on the top. However, there is a
+smaller likelihood that the block falls off.
+How can we best make use of this qualitative uncertainty?
+- Agents when operating under uncertainty will seek plans which maximize the likelihood of their goals.
+I designed an algorithm for recognizing these plans under qualitative possibility theory. This work is supervised under [Selmer Bringsjord](https://kryten.mm.rpi.edu/selmerbringsjord.html) (Paper to be released soon)
+- Additionally with Selmer Bringsjord in the [RAIR Lab](https://rair.cogsci.rpi.edu/), I created a framework that captures
+situations where agents are able to bucket the likelihood of facts within their environment. I then provide an effective
+techinque for using classical planners to find plans which maximize the agent's likelihood of success. ([Paper](/paper/2406.02))
+- In the RAIR Lab, I also further developed [Spectra](https://github.com/rairlab/spectra) --
+an automated planner built on automated theorem proving. I showed how a class of problems
+under uncertainty can be easily encoded and wrote a question-answer algorithm
+for ShadowProver so that Spectra can find plans under epistemic uncertainty. ([Paper](/paper/2405.01/))
 - With [Junkyu Lee](https://researcher.ibm.com/researcher/view.php?person=ibm-Junkyu.Lee),
 [Michael Katz](https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Michael.Katz1),
 [Harsha Kokel](https://harshakokel.com/), and [Shirin Sohrabi](https://researcher.watson.ibm.com/researcher/view.php?person=us-ssohrab) at IBM I developed an algorithm
-for guiding hiearchical reinforcement agents under partial observability when domain knowledge
-can be encoded for characterizing discovery of unknown predicates.
-
+for guiding hierarchical reinforcement agents under partial observability. Specifically,
+I focused on situations where the agent knows what they don't know and compiled that knowledge
+so that a fully-observable non-deterministic planner can decompose the overall problem. ([Paper](/paper/2406.01))
 
 ## Logic
 
@@ -46,7 +57,7 @@ Related Notes:
 
 - [Automated Theorem Proving](atp/)
 - [Term Reasoning](termreasoning/)
-
+ 
 
 ## Symbolic Methods for Cryptography
 Worked with [Andrew Marshall](https://www.marshallandrew.net/) and others in applying term reasoning within computational logic
@@ -73,6 +84,11 @@ Collaborators:
 
 Group Website: [https://cryptosolvers.github.io](https://cryptosolvers.github.io)
 
+---
+
+**Note:** From this point on, the projects listed happened over 5 years ago.
+
+---
 
 ## Reinforcement Learning
 
