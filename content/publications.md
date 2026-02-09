@@ -13,12 +13,13 @@ Filtering Goals of Necessity-Optimal Agents in Qualitative Possibilistic Recogni
 - Venue: International Conference on Agents and Artificial Inteligence, 2026.
 
 
-VSPursuer: A Tool for Finding Matrices Witnessing the Variable Sharing Property
+[VSPursuer: A Tool for Finding Matrices Witnessing the Variable Sharing Property](/paper/2602.01)
 - Authors: *Brandon Rozek* and Andrew Tedder
-- Venue: Journal of Logic, Language, and Information, Forthcoming.
+- Venue: Journal of Logic, Language, and Information, 2026.
+- [Paper](https://link.springer.com/article/10.1007/s10849-026-09454-2) | [Codebase](https://github.com/brandon-rozek/vspursuer)
 
 
-A Modal Logic of Optimality (Student Abstract)
+[A Modal Logic of Optimality (Student Abstract)](/paper/2504.01)
 - Authors: James T. Oswald, *Brandon Rozek*, Thomas M. Ferguson, Selmer Bringsjord
 - Venue: AAAI Conference on Artificial Intelligence, 2025.
 - [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/35286/37441)
