@@ -10,7 +10,7 @@ aliases:
 
 Filtering Goals of Necessity-Optimal Agents in Qualitative Possibilistic Recognition via Planning
 - Authors: *Brandon Rozek* and Selmer Bringsjord
-- Venue: International Conference on Agents and Artificial Inteligence, 2026.
+- Venue: International Conference on Agents and Artificial Intelligence, 2026.
 
 
 [VSPursuer: A Tool for Finding Matrices Witnessing the Variable Sharing Property](/paper/2602.01)
@@ -74,7 +74,7 @@ Verification of Automatically Synthesized Cryptosystems ](/paper/2109.01/)
 - Venue: International Workshop on Human-Aware and Explainable Planning (HAXP), 2024
 - [Paper](https://openreview.net/pdf?id=soH9BIp0pL)
 
-[Guiding Hiearchical Reinforcement Learning in Partially Observable Environments with AI Planning](/paper/2406.01)
+[Guiding Hierarchical Reinforcement Learning in Partially Observable Environments with AI Planning](/paper/2406.01)
 - Authors: *Brandon Rozek*, Junkyu Lee, Harsha Kokel, Michael Katz, Shirin Sohrabi
 - Venue: International Workshop on Bridging the Gap Between AI Planning and Reinforcement Learning (PRL), 2024
 - [Paper](https://prl-theworkshop.github.io/prl2024-icaps/papers/12.pdf)
@@ -121,7 +121,7 @@ Coherent Control of Atomic Population Using the Genetic Algorithm
 - [Presentation](/files/research/coherentcontrolofatomicpopulation.pdf)
 
 
-Modelling Population Dynamics of Incoherent and Coherent Excitation
+Modeling Population Dynamics of Incoherent and Coherent Excitation
 - Authors: Hannah Killian and *Brandon Rozek*
 - Venue: Virginia Academy of Science, 2017.
 - [Poster](/files/research/modellingpopulationdynamics.pdf) | [Program](/files/research/VAS-Proceedings-95-2017.pdf#page=6)
