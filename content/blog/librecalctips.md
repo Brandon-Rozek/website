@@ -83,3 +83,27 @@ Strings separated by `&` are concatenated together.
 ```excel
 "Hello " & "World."
 ```
+
+**Mirror a cell from a different sheet**[^1]
+
+Suppose there's a value in a different sheet at the same position that we want. For example, a common header bar, a summary table, etc.
+
+```excel
+=LET(val, INDIRECT("Sheet1." & ADDRESS(ROW(),COLUMN())), IF(val="", "", val))
+```
+
+Place this in `A1` and we'll get the value from `Sheet1:A1`.
+
+The `ADDRESS` command takes two required parameters: the row value and column value. From this, it produces a string representing the cell location.
+
+The `INDIRECT` command creates a *reference* based on the cell location represented as a string.
+
+The `LET` command takes three parameters:
+
+- The variable name
+- The value that the variable name evaluates to
+- The expression which uses the variable name
+
+The `IF` command is used so that if the referenced cell is empty then it does not show a zero.
+
+[^1]: Thanks to hwn for this suggestion!
