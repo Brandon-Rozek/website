@@ -4,6 +4,7 @@ description: Ways to subscribe to Brandon Rozek
 ---
 
 - [Blog Posts](/blog/index.xml)
+- [Postroll](/postroll/index.xml)
 - Mastodon
   - [Follow directly](https://fosstodon.org/users/brozek/remote_follow)
   - [Via RSS](/toots/index.xml)
