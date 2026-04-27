@@ -64,7 +64,7 @@ The following menu contains meals that are in rotation at my home. These are mad
 - Pre-made Indian Curries
     * Tikka Marsala
 - Pre-made Japanese Vermont curry
-- [Fettuccine Alfredo](fettuccine-alfredo/)
+- [Alfredo](alfredo/)
 - Pad Thai
 - [White Pepper Spaetzle](white-pepper-spaetzle/)
 - [Korma](korma/)
