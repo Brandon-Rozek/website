@@ -75,7 +75,7 @@ Pork
 - [Pork/Chicken Katsu](pork-chicken-katsu/)
 - Pulled Pork Sandwiches
 - [Jambalaya](jambalaya/)
-
+- [Paella](paella/)
 
 Beef
 - [Beef Stew](beef-stew/)
@@ -97,6 +97,9 @@ Poultry
 - [Chicken Asparagus Risotto](chicken-asparagus-risotto/)
 - Turkey Tacos
 - Chicken Tinga
+
+Fish
+- [Baked Salmon](baked-salmon/)
 
 ## {{< vegetarian >}} Sides
 
