@@ -8,10 +8,10 @@ aliases:
 
 ## Publications
 
-Filtering Goals of Necessity-Optimal Agents in Qualitative Possibilistic Recognition via Planning
+[Filtering Goals of Necessity-Optimal Agents in Qualitative Possibilistic Recognition via Planning](/paper/2603.01)
 - Authors: *Brandon Rozek* and Selmer Bringsjord
 - Venue: International Conference on Agents and Artificial Intelligence, 2026.
-
+-[Paper](https://doi.org/10.5220/0014347900004052) | [Paper](https://www.scitepress.org/Papers/2026/143479/143479.pdf)
 
 [VSPursuer: A Tool for Finding Matrices Witnessing the Variable Sharing Property](/paper/2602.01)
 - Authors: *Brandon Rozek* and Andrew Tedder
