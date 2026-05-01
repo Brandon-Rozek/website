@@ -3,8 +3,19 @@ title: Teaching Assistant
 description: My work as a teaching assistent
 ---
 
+## Spring 2026
+I was a TA for Dr. Selmer Bringsjord's COGS-4962 Introduction to Logic-Based AI.
+
+Office Hours: Thursday 1000-1200
+
+## Fall 2025
+
+I was a TA for Dr. Ana Milanova's CSCI-4430 Programming Langauges. 
+
+Office Hours: Thursday 1400-1800
+
 ## Spring 2022
-I am a TA for Dr. Konstantin Kuzmin's CSCI 2600 Principles of Software
+I was a TA for Dr. Konstantin Kuzmin's CSCI 2600 Principles of Software.
 
 Recitation: Wednesday 1200-1250 / 1300-1350
 
