@@ -15,7 +15,7 @@ Cook Time: 10 minutes
 - 1 tblspoon lemon
 - 3 tblspoon soy sauce
 - some amount of honey
-- 1/4 bar of butter
+- 2 tablespoons of butter
 - Sushi Rice
 - Kewpie Mayo
 - Avocado
