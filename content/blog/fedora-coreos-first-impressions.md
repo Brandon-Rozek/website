@@ -27,7 +27,7 @@ When I was following the documentation, one of the parts I got tripped up on was
 
 In other words, if you're fine with the defaults and there's a DHCP server running on your network, then the  *base Butane config outlined in the documentation is sufficient*.
 
-From the official documentation:
+From the official documentation (write this to a file such as `config.bu`):
 
 ```yaml
 variant: fcos
@@ -40,6 +40,11 @@ passwd:
 ```
 
 Where you replace the `ssh-rsa` line with your own SSH public key file.
+
+Then, in order to get the ignition file, we can run the following command:
+```bash
+podman run --interactive --rm quay.io/coreos/butane:release --pretty --strict < config.bu > config.ign
+```
 
 ## Running Software
 
