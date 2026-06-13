@@ -1,7 +1,7 @@
 ---
 title: "Synchronizing my Static Website with Object Storage"
-date: 2026-06-13T15:51:08-04:00
-draft: true
+date: 2026-06-13T17:51:08-04:00
+draft: false 
 tags: []
 math: false
 medium_enabled: false
