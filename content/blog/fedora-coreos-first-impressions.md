@@ -27,7 +27,7 @@ When I was following the documentation, one of the parts I got tripped up on was
 
 In other words, if you're fine with the defaults and there's a DHCP server running on your network, then the  *base Butane config outlined in the documentation is sufficient*.
 
-From the official documentation (write this to a file such as `config.bu`):
+Here's an example configuration we can write to `config.bu`:
 
 ```yaml
 variant: fcos
@@ -37,11 +37,32 @@ passwd:
     - name: core
       ssh_authorized_keys:
         - ssh-rsa AAAA...
+      groups:
+        - wheel
 ```
 
 Where you replace the `ssh-rsa` line with your own SSH public key file.
 
-Then, in order to get the ignition file, we can run the following command:
+The `wheel` group allows that user to run commands with `sudo`, if you don't want that then you can remove that line. If you want to add a password, you'll need to generate a password hash using the following command:
+
+```bash
+podman run -ti --rm quay.io/coreos/mkpasswd --method=yescrypt
+```
+
+It'll return some string `$y...`
+
+Then, we can add it to our config:
+
+```yaml
+# ...
+users:
+  - name: core
+    password_hash: $y..
+    # ...
+```
+
+After that, in order to get the ignition file, we can run the following command:
+
 ```bash
 podman run --interactive --rm quay.io/coreos/butane:release --pretty --strict < config.bu > config.ign
 ```
