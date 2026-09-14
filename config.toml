@@ -12,13 +12,13 @@ mediaTypes = ['^application/json']
   tags = "tags"
 
 [author]
-    name = "Brandon Rozek"
+    name = "Dr. Brandon Rozek"
 
 [params]
-    author = "Brandon Rozek"
+    author = "Dr. Brandon Rozek"
     avatar = "avatar.jpg"
     favicon = "favicon.ico"
-    description = "Computer Science PhD Candidate @ RPI, Writer of Tidbits, and Linux Enthusiast"
+    description = "Lean4 Expert @ Amazon, Writer of Tidbits, and Linux Enthusiast"
     email = "brozek@brandonrozek.com"
     identities = [
         "https://github.com/brandon-rozek",
